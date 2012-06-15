@@ -9,27 +9,33 @@
 
 <body>
 
-	<header>
-		<img src="images/dan-denney-badge.png" alt="Dan Denney - Super Social Front-End Dev" />
-	</header>
-
-	<nav>
-
-		<a href="about.php">About Me</a>
-		<a href="posts.php">Blog Posts</a>
-
-	</nav>
-
 	<section>
 
-		<h2>I believe that technology and design make our lives better. It's why I work on the web.</h2>
-		<h3>I work with primarily HTML, CSS and Javascript because they come naturally and I am able to use them to help people build wonderful things.</h3>
+		<img src="images/dan-denney-character.png" alt="Dan Denney character" />
+
+		<p>Hey! Someone got all up in my Wordpress database and was injecting nastiness. So, I scrapped the site and the db and I'm starting over fresh.</p>
+
+		<p>I'm going to slowly rebuild and I'll share along the way. Gotta grab some font icons, a Typekit account and stuffs like that to start making a site.</p>
 
 	</section>
 
 	<footer>
-		&copy; Dan Denney
+		&copy; Dan Denney - I'm on the Twitters as <a href="http://twitter.com/dandenney">@dandenney</a>
 	</footer>
+
+	<script type="text/javascript">
+	  var _gauges = _gauges || [];
+	  (function() {
+	    var t   = document.createElement('script');
+	    t.type  = 'text/javascript';
+	    t.async = true;
+	    t.id    = 'gauges-tracker';
+	    t.setAttribute('data-site-id', '4f8f96b2f5a1f546a80000f8');
+	    t.src = '//secure.gaug.es/track.js';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(t, s);
+	  })();
+	</script>
 
 
 </body>

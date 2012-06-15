@@ -3,3 +3,29 @@
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
    	GLOBAL 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+   body {
+   	line-height: 1.4;
+   	margin: 2em auto;
+   	max-width: 680px;
+   	width: 90%;
+   }
+
+   section {
+   	font-size: 1.5em;
+   	overflow: hidden;
+   }
+
+   footer {
+   	margin-top: 2em;
+   }
+
+   img, p {
+   	float: left;
+   	width: 50%;
+   }
+
+   a {
+   	color: #b51f24;
+   	text-decoration: none;
+   }
