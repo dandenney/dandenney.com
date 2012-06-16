@@ -17,7 +17,7 @@
 
 		<p>I'm going to slowly rebuild and I'll share along the way. Gotta grab some font icons, a Typekit account and stuffs like that to start making a site.</p>
 
-		<p>I might have done something cool with Github.</p>
+		<p>I might have done something cool with Github. One more try.</p> 
 
 	</section>
 
