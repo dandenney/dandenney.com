@@ -1,14 +1,8 @@
-<!DOCTYPE html>  
-<html lang="en">  
-
-<head>
-	<meta charset="utf-8" />  
-	<title>Dan Denney - A Super Social Front-End Dev</title>
-	<link rel="stylesheet" type="text/css" href="../stylesheets/screen.css">  
-	<?php include "shared/typekit.php" ?> 
+<?php include "../shared/page-open-inception.php" ?>
+	<title>Posts</title>
 </head>  
 
-<body class="temp-broken">
+<body>
 
 	<section>
 

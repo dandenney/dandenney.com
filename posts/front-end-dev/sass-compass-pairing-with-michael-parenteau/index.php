@@ -1,11 +1,5 @@
-<!DOCTYPE html>  
-<html lang="en">  
-
-<head>
-	<meta charset="utf-8" />  
+<?php include "shared/page-open.php" ?>
 	<title>Sass + Compass Pairing with Michael Parenteau</title>
-	<link rel="stylesheet" type="text/css" href="../../../stylesheets/screen.css">  
-	<?php include "../../../shared/typekit.php" ?> 
 </head>  
 
 <body>

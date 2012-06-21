@@ -1,11 +1,5 @@
-<!DOCTYPE html>  
-<html lang="en">  
-
-<head>
-	<meta charset="utf-8" />  
+<?php include "../../../shared/page-open-inception-cant-go-more-than-3-levels-deep.php" ?>
 	<title>A Sass Noob Using Math for Flexible Widths</title>
-	<link rel="stylesheet" type="text/css" href="../../../stylesheets/screen.css">  
-	<?php include "../../../shared/typekit.php" ?> 
 </head>  
 
 <body>
