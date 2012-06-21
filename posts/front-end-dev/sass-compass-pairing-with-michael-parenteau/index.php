@@ -1,4 +1,4 @@
-<?php include "shared/page-open.php" ?>
+<?php include "../../../shared/page-open-inception-cant-go-more-than-3-levels-deep.php" ?>
 	<title>Sass + Compass Pairing with Michael Parenteau</title>
 </head>  
 

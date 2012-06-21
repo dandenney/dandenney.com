@@ -25,6 +25,7 @@
    body {
       color: $main-color;
       font-family: $font-base;
+      font-size: 1em;
       font-weight: 400;
    }
 
@@ -34,7 +35,7 @@
    }
 
    h1 {
-      font-size: 2em;
+      font-size: 2rem;
    }
 
    h2 {
@@ -64,6 +65,10 @@
 
    ul, ol {
       margin-left: 1.25em;
+   }
+
+   ol ul {
+      margin-top: 1rem;
    }
 
    li {
@@ -109,7 +114,7 @@
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
    .post-standard {
-      font-size: 1.25rem;
+      font-size: 1rem;
       line-height: 1.4;
       margin: 2rem auto;
       max-width: 688px;
@@ -141,6 +146,15 @@
       color: $alt-color;
       font-family: 'Courier New', Courier, monospace;
       font-size: .75em;
+   }
+
+   @media only screen and (min-width : 768px){ 
+      .post-standard {
+         font-size: 1.25rem; }
+   }
+
+   .center-content {
+      text-align: center;
    }
 
    .temp-broken {

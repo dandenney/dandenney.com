@@ -1,4 +1,4 @@
-<?php include "shared/page-open.php" ?>
+<?php include "../../../shared/page-open-inception-cant-go-more-than-3-levels-deep.php" ?>
 	<title>Rebuilding</title>
 </head>  
 
@@ -23,13 +23,25 @@
 		<p>I don't get a lot of traffic, but those of you who made it here will get to see this process and I'll share how things go. Here are my to-dos:</p>
 
 		<ol>
-			<li>Build a list of all the things that I use to rebuild.</li>
+			<li>Build a list of all the things that I use to rebuild. (ongoing)
+				<ul>
+					<li>15" Macbook Pro</li>
+					<li>Sublime Text 2</li>
+					<li>Codekit</li>
+					<li>Github</li>
+					<li>Mediatemple Hosting</li>
+					<li>Typekit</li>
+				</ul>
+			</li>
 			<li><strike>Set up Github, both for versioning and to deploy to the server.</strike></li>
-			<li>Gather the resources that I know I'll need for design (fonts and images).</li>
-			<li>Define how to structure the files.</li>
+			<li><strike>Gather the resources that I know I'll need for design (fonts and images).</strike></li>
+			<li><strike>Define how to structure the files.</strike></li>
 			<li>Design the nav.</li>
 			<li>Design the basic post style.</li>
-			<li>Get recent posts back up in the basic post style.</li>
+			<li>Get recent posts back up in the basic post style.
+				<ul>
+					<li><a href="/posts/front-end-dev/sass-compass-pairing-with-michael-parenteau">Sass and Compass Pairing with Michael Parenteau</a></li>
+					<li><a href="/posts/front-end-dev/a-sass-noob-using-math-for-flexible-widths">A Sass Noob Using Math for Flexible Widths</a></li>
 		</ol>
 
 		<p>That will get me started and I'll have a MVW (minimum viable website). Getting the recent posts back up are important to me because I had shared how much a few people had helped me recently and I want those back up so others know how awesome they are.</p>

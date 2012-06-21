@@ -2,7 +2,7 @@
 	<title>Dan Denney - A Super Social Front-End Dev</title>
 </head>  
 
-<body class="temp-broken">
+<body>
 
 	<section>
 
