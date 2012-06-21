@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8" />  
 	<title>A Sass Noob Using Math for Flexible Widths</title>
-	<link rel="stylesheet" type="text/css" href="../../stylesheets/screen.css">  
+	<link rel="stylesheet" type="text/css" href="../../../stylesheets/screen.css">  
+	<?php include "../../../shared/typekit.php" ?> 
 </head>  
 
 <body>
@@ -57,9 +58,9 @@ Sass::Script::Number.precision = 10
 
 	</article>
 
-	<footer>
-		&copy; Dan Denney
-	</footer>
+	<?php include "../../../shared/footer.php" ?>
+
+	<?php include "../../../shared/scripts.php" ?>
 
 
 </body>

@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8" />  
 	<title>Sass + Compass Pairing with Michael Parenteau</title>
-	<link rel="stylesheet" type="text/css" href="../../stylesheets/screen.css">  
+	<link rel="stylesheet" type="text/css" href="../../../stylesheets/screen.css">  
+	<?php include "../../../shared/typekit.php" ?> 
 </head>  
 
 <body>
@@ -178,9 +179,9 @@ button:active {
 
 	</article>
 
-	<footer>
-		&copy; Dan Denney
-	</footer>
+	<?php include "../../../shared/footer.php" ?>
+
+	<?php include "../../../shared/scripts.php" ?>
 
 
 </body>
