@@ -59,7 +59,9 @@
    }
 
    a {
-   	color: $main-link-color;
+   	background: $main-link-color;
+      color: #fff;
+      padding: .15em .25em;
    	text-decoration: none;
    }
 
@@ -107,6 +109,14 @@
       background: $main-color;
       color: #fff;
       padding: 1em;
+
+      a {
+         background: $alt-color;
+      }
+
+      small {
+         float: right;
+      }
    }
 
    /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
