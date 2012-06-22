@@ -6,10 +6,10 @@
       Colors 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
    
-   $main-color: #231f20;
-   $alt-color: #1B5F73;
-   $feature-color: #f9f9f9;
-   $main-link-color: #921820;
+   $color-main: #231f20;
+   $color-alt: #1B5F73;
+   $color-feature: #f9f9f9;
+   $color-link-main: #921820;
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       Fonts 
@@ -23,7 +23,7 @@
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
    body {
-      color: $main-color;
+      color: $color-main;
       font-family: $font-base;
       font-size: 1em;
       font-weight: 400;
@@ -59,9 +59,9 @@
    }
 
    a {
-   	background: $main-link-color;
-      color: #fff;
-      padding: .15em .25em;
+   	background: $color-link-main;
+      color: #ffffff;
+      padding: .05em .25em;
    	text-decoration: none;
    }
 
@@ -86,9 +86,10 @@
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
    header {
-      background: $feature-color;
+      background: $color-main;
       border-bottom: 1px solid #f5f5f5;
       color: #8f8f8f;
+      height: 3px;
       padding: 1em;
 
       h2 {
@@ -106,12 +107,13 @@
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
    footer {
-      background: $main-color;
+      background: $color-main;
       color: #fff;
       padding: 1em;
 
       a {
-         background: $alt-color;
+         background: $color-alt;
+         color: #ffffff;
       }
 
       small {
@@ -148,12 +150,12 @@
    }
 
    .post-standard pre {
-      background: $feature-color;
+      background: $color-feature;
       padding: 0 1em;
    }
 
    .post-standard code {
-      color: $alt-color;
+      color: $color-alt;
       font-family: 'Courier New', Courier, monospace;
       font-size: .75em;
    }
