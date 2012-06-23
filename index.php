@@ -22,6 +22,16 @@
 
 	<?php include "shared/scripts.php" ?>
 
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="/js/jquery.fittext.js"></script>
+    <script>
+    	$(function() {
+    		$(".intro h1").fitText(.48);
+    	});
+    </script>
+
 </body>
 
 </html>

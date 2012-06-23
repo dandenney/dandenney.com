@@ -2,7 +2,7 @@
 
 	<a href="/" class="logo">
 		
-		<img src="/images/dan-denney-character.png" width="75" alt="Dan Denney character" />
+		<img src="/images/dan-denney-character.png" alt="Dan Denney character" />
 
 		<h3>Dan Denney <span>Super Social Front-End Dev</span></h3>
 

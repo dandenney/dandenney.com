@@ -65,6 +65,8 @@
 
 	</article>
 
+	<?php include "../../../shared/posts-footer.php" ?>
+
 	<?php include "../../../shared/footer.php" ?>
 
 	<?php include "../../../shared/scripts.php" ?>
