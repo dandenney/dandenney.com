@@ -4,11 +4,9 @@
 
 <body>
 
-	<article class="post-standard">
+	<?php include "shared/header.php" ?>
 
-		<div class="center-content">
-			<img src="images/dan-denney-character.png" alt="Dan Denney character" />
-		</div>
+	<article class="post-standard">
 
 		<h1>Rebuilding</h1>
 
@@ -35,6 +33,9 @@
 					<li>Github</li>
 					<li>Mediatemple Hosting</li>
 					<li>Typekit</li>
+					<li>Muji Notebook</li>
+					<li>Some random pen</li>
+					<li>Icomoon</li>
 				</ul>
 			</li>
 			<li><strike>Set up Github, both for versioning and to deploy to the server.</strike></li>
@@ -60,6 +61,8 @@
 		</div>
 
 	</article>
+
+	<?php include "shared/footer.php" ?>
 
 	<?php include "shared/scripts.php" ?>
 
