@@ -4,7 +4,9 @@
 
 <body>
 
-	<article class="post-standard">
+	<?php include "../../../shared/header.php" ?>
+
+<article class="post-standard">
 
 		<h1>Rebuilding</h1>
 
@@ -31,17 +33,24 @@
 					<li>Github</li>
 					<li>Mediatemple Hosting</li>
 					<li>Typekit</li>
+					<li>Muji Notebook</li>
+					<li>Some random pen</li>
+					<li>Icomoon</li>
+					<li>xScope</li>
+					<li>Kuler</li>
+					<li>0to255</li>
 				</ul>
 			</li>
 			<li><strike>Set up Github, both for versioning and to deploy to the server.</strike></li>
 			<li><strike>Gather the resources that I know I'll need for design (fonts and images).</strike></li>
 			<li><strike>Define how to structure the files.</strike></li>
-			<li>Design the nav.</li>
-			<li>Design the basic post style.</li>
-			<li>Get recent posts back up in the basic post style.
+			<li><strike>Design the nav.</strike></li>
+			<li><strike>Design the basic post style.</strike></li>
+			<li>Get recent posts back up in the basic post style. (The ones below have content but you'll need your back button)
 				<ul>
 					<li><a href="/posts/front-end-dev/sass-compass-pairing-with-michael-parenteau">Sass and Compass Pairing with Michael Parenteau</a></li>
 					<li><a href="/posts/front-end-dev/a-sass-noob-using-math-for-flexible-widths">A Sass Noob Using Math for Flexible Widths</a></li>
+				</ul>
 		</ol>
 
 		<p>That will get me started and I'll have a MVW (minimum viable website). Getting the recent posts back up are important to me because I had shared how much a few people had helped me recently and I want those back up so others know how awesome they are.</p>

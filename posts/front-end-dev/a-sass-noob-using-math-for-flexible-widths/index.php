@@ -4,6 +4,8 @@
 
 <body>
 
+	<?php include "../../../shared/header.php" ?>
+
 	<article class="post-standard">
 
 		<h2>A Sass Noob using Math for Flexible Widths</h2>

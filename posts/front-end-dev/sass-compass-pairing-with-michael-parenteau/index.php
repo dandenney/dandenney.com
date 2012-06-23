@@ -4,6 +4,8 @@
 
 <body>
 
+  <?php include "../../../shared/header.php" ?>
+
 	<article class="post-standard">
 
 		<h2>Sass + Compass Pairing with Michael Parenteau</h2>

@@ -4,6 +4,10 @@
 
 <body>
 
+	<?php include "../shared/header.php" ?>
+
+	<h1>Posts</h1>
+
 	<section>
 
 		<ul>

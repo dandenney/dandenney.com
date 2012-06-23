@@ -44,7 +44,12 @@
    	GLOBAL 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
+   html {
+      background: $color-feature;
+   }
+
    body {
+      background: #fff;
       color: $color-main;
       font-family: $font-base;
       font-size: 1em;
@@ -52,6 +57,7 @@
    }
 
    h1, h2, h3, h4, h5, h6 {
+      color: #3b2415;
       font-family: $font-featured;
       font-weight: 700;
    }
@@ -81,9 +87,7 @@
    }
 
    a {
-   	background: $color-link-main;
-      color: #ffffff;
-      padding: .05em .25em;
+      color: $color-alt;
    	text-decoration: none;
    }
 
@@ -103,7 +107,11 @@
       margin-top: 2em;
    }
 
-   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+   strike {
+      color: lighten($color-main, 30%);
+   }
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       HEADER 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -163,9 +171,9 @@
       
    }
 
-   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       FOOTER 
-   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
    footer {
       @include box-shadow (inset 0 .15em .15em rgba(0,0,0,.2));
@@ -173,19 +181,14 @@
       color: #fff;
       padding: 1em;
 
-      a {
-         background: $color-alt;
-         color: #ffffff;
-      }
-
       small {
          float: right;
       }
    }
 
-   /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-      POSTS 
-   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+   POSTS 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
    .post-standard {
       font-size: 1rem;
@@ -212,20 +215,108 @@
    }
 
    .post-standard pre {
-      background: $color-feature;
+      background: $color-alt;
       padding: 0 1em;
    }
 
    .post-standard code {
-      color: $color-alt;
+      color: $color-feature;
       font-family: 'Courier New', Courier, monospace;
       font-size: .75em;
    }
 
-   @media only screen and (min-width : 768px){ 
-      .post-standard {
-         font-size: 1.25rem; }
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+   MODULES
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+   .columns-three {
+      margin: 0 auto;
+      max-width: 90%;
+      overflow: hidden;
+
+      .column {
+         float: left;
+         margin-left: 5%;
+         width: 30%;
+      }
+
+      .column:first-child {
+         margin-left: 0;
+      }
    }
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+   PAGE SPECIFIC 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+   .home {
+      background: $color-main;
+   }
+
+   .intro {
+      color: $color-feature;
+      margin: 1em auto;
+      max-width: 90%;
+
+      h1 {
+         color: $color-feature;
+         font-size: 11em;
+         line-height: .9;
+         margin: .2em 0;
+         text-align: center;
+         text-shadow: .02em .02em .05em rgba(0,0,0,.9);
+      }
+
+      h1 span {
+         display: block;
+      }
+
+      [data-icon]:before {
+         color: $color-link-main;
+         text-shadow: .02em .02em .05em rgba(0,0,0,1);
+      }
+
+      div {
+         font-size: .435em;
+      }
+
+      h2 {
+         color: $color-feature;
+         text-shadow: .05em .05em .05em rgba(0,0,0,.9);
+      }
+
+      h3 {
+         color: $color-feature;
+         font-family: $font-base;
+         line-height: 1.5;
+         text-shadow: .1em .1em .1em rgba(0,0,0,.9);
+      }
+
+      a {
+         background: $color-alt;
+         color: $color-feature;
+         padding: 0 .25em;
+         text-shadow: 1px 1px 1px darken($color-alt, 80%);
+      }
+   }
+
+   @media only screen and (min-width : 768px){ 
+   
+      .intro {
+      
+         h1 {
+            font-size: 14em;
+         }
+
+         h1 span {
+            display: inline;
+         }
+      
+       }
+
+      .post-standard {
+            font-size: 1.25rem; }
+      }
 
    .center-content {
       text-align: center;
