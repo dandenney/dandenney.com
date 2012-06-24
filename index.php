@@ -30,7 +30,6 @@
     	$(function() {
     		$(".intro h1").fitText(.48);
     	});
-    	
     </script>
 
 </body>

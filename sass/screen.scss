@@ -10,7 +10,9 @@
    $color-main-light: #989898;
    $color-alt: #1B5F73;
    $color-feature: #f9f9f9;
-   $color-link-main: #921820;
+   $color-title: #3b2415;
+   $color-link-main: #1B5F73;
+   $color-link-alt: #921820;
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       Fonts 
@@ -58,7 +60,7 @@
    }
 
    h1, h2, h3, h4, h5, h6 {
-      color: #3b2415;
+      color: $color-title;
       font-family: $font-featured;
       font-weight: 700;
    }
@@ -89,7 +91,7 @@
    }
 
    a {
-      color: $color-alt;
+      color: $color-link-main;
       font-weight: 700;
    	text-decoration: none;
    }
@@ -149,7 +151,7 @@
          background: none; }
 
       .logo h3 {
-         color: $color-main-light;
+         color: $color-title;
          @include text-shadow(inset 2px 2px 0 rgba(250,250,250,1));
          float: left;
          font-size: 1.5em;
@@ -157,7 +159,7 @@
       }
 
       .logo span {
-         color: #c4c4c4;
+         color: $color-link-alt;
          display: block;
          font-size: .75em;
       }
@@ -184,7 +186,7 @@
       }
 
       [data-icon]:before {
-         color: $color-main-light;
+         color: $color-link-main;
          font-size: 2em;
          margin-right: .15em; 
       }
@@ -315,7 +317,7 @@
       }
 
       [data-icon]:before {
-         color: $color-link-main;
+         color: $color-link-alt;
          text-shadow: .02em .02em .05em rgba(0,0,0,1);
       }
 
@@ -338,9 +340,7 @@
       }
 
       a {
-         background: $color-alt;
-         color: $color-feature;
-         padding: 0 .25em;
+         color: lighten($color-link-main, 15%);
          text-shadow: 1px 1px 1px darken($color-alt, 80%);
       }
    }
