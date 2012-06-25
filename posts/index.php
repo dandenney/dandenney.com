@@ -15,6 +15,7 @@
 			<h2>Front-End Dev</h2>
 
 			<ul>
+				<li><a href="front-end-dev/HTML-but-with-an-a-and-less-code">HTML, But With an A and Less Code</a></li>
 				<li><a href="front-end-dev/a-sass-noob-using-math-for-flexible-widths/">A Sass Noob Using Math for Flexible Widths</a></li>
 				<li><a href="front-end-dev/sass-compass-pairing-with-michael-parenteau/">Sass + Compass Pairing with Michael Parenteau</a></li>
 			</ul>
