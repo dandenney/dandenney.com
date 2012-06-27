@@ -14,18 +14,19 @@
 
 		%header
 
-			<a href="/" class="logo">
-				
-			<img src="/images/dan-denney-character.png" alt="Dan Denney character" />
+			%a.logo(href="/")
 
-			<h3>Dan Denney<span> Super Social Front-End Dev</span></h3>
-
-			</a>
+				%img(src="/images/dan-denney-character.png" alt="Dan Denney character")
+				%h3 
+					Dan Denney
+					%span 
+						Super Social Front-End Dev
 
 			%nav
 				%ul
 					%li.nav-item
-						<a href="/posts" data-icon="&#x0026;" aria-hidden="true"><span>Posts</span></a>
+						%a.icon-pencil(href="/posts" data-icon="&#x0026" aria-hidden="true")
+							%span Posts
 		
 		%article.post-standard
 
@@ -100,6 +101,8 @@
 			%nav
 				%ul
 					%li.nav-item
-						<a href="/posts" data-icon="&#x0026;" aria-hidden="true"><span>Posts</span></a></li>
+						%a(href='/posts' data-icon='&#x0026' aria-hidden='true')
+							%span Posts
 			%small
-				&copy; Dan Denney - I'm on the Twitters as <a href="http://twitter.com/dandenney">@dandenney</a>
+				&copy; Dan Denney - I'm on the Twitters as 
+				%a(href='http://twitter.com/dandenney') @dandenney
