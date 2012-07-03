@@ -27,6 +27,7 @@
 			<h2>General</h2>
 
 			<ul>
+				<li><a href="general/growing-with-envy">Growing with Envy</a></li>
 				<li><a href="general/rebuilding">Rebuilding</a></li>
 				<li><a href="general/fluid">Fluid</a></li>
 			</ul>

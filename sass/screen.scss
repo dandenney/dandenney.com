@@ -107,6 +107,7 @@
       speak: none;
    }
 
+
    ul, ol {
       margin-left: 1.25em;
    }
@@ -125,6 +126,10 @@
 
    strike {
       color: lighten($color-main, 30%);
+   }
+
+   img, embed, object, iframe {
+      max-width: 100%;
    }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
