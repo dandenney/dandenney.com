@@ -8,12 +8,12 @@
 
 	<article class="post-standard">
 
-		<small>I try not to 'rock the boat' too often. However, it is impossible to share this post without pointing out the differences in the cultures that I have worked in during my first few years in the web design industry. Out of respect for the ones that aren't getting shone in the best review, I don't want to name names of the companies. I want to be sure to say that I have also had a couple positions with great company cultures that ended for other reasons.</small>
+		<small>I try not to 'rock the boat' too often. However, it is impossible to share this post without pointing out the differences in the cultures that I have worked in during my first few years in the web design industry. Out of respect for the ones that aren't getting the best review, I don't want to name names of the companies. I want to be sure to say that I have also had a couple positions with great company cultures that ended for other reasons.</small>
 
     <p>My early exposure to web design and front-end development as a profession was more of a culture of 'production first'.</p>
 
     <h2>Production First Culture</h2>
-    <p>By 'production first', I mean that producing something as a deliverable is the number one priority. While this might not be stated outright, it is created by the guidelines by which you work. There were positions that felt that at all times my hand should be on the keyboard or a mouse and in a tool that produces a deliverable. Research was a secondary optiom and it would usually be offered with the words "spend a couple of minutes".</p>
+    <p>By 'production first', I mean that producing something as a deliverable is the number one priority. While this might not be stated outright, it is created by the guidelines by which you work. There were positions that felt that at all times my hand should be on the keyboard or a mouse and in a tool that produces a deliverable. Research was a secondary option and it would usually be offered with the words "spend a couple of minutes".</p>
 
     <p>The lesson I learned: My time at work is meant to be producing something. Research and efficiency are not as important as the fact that you are currently manipulating something into a deliverable.</p>
 
