@@ -9,7 +9,7 @@
 	<article class="post-standard">
 
         <h1>Mondays Rock</h1>
-        <p>Mondays have a tendency to suck in most jobs. As I've been bragging, though, I now work for a company that does things a little differently. I wake up at 6 a.m., get ready and drive 2 hours over to Orlando on Mondays now and I'm happy do it.</p>
+        <p>Mondays have a tendency to suck in most jobs. As I've been bragging, though, I now work for a company that does things a little differently. I wake up at 6 a.m., get ready and drive 2 hours over to Orlando on Mondays now and I'm happy to do it.</p>
 
         <p>Now I'm not sure if this is a routine thing, but the past 3 Mondays have started off with <a href="http://twitter.com/nickawalsh">Nick</a> showing us how to do something rad. </p>
 
@@ -17,7 +17,7 @@
         <p>The front-end dev team here thinks things through and implements things in a very smart way. It is the type of atmosphere that I have been dying to be a part of. I wish I could say that I harnessed a bunch of Chi and instantly became part of the think tank. Not so much.</p>
 
         <h2>What if someone sees us</h2>
-        <p>On one of Mondays, Nick wanted to share the process for creating a slider for a project we're working on. So he, <a href="http://twitter.com/drewbarontini">Drew</a> and I paired to work on it. As Drew and I were sitting behind him, I couldn't help being a little uneasy. "What if someone sees us not typing something, but instead huddled around a computer." Well, everyone that walked in saw us because we have glass walls. The boss man, Gregg, saw us and waved 'good morning' to us on his way in. That was that. No checking in to see what was preventing us from typing, no casual recommendation to get back to producing something or to only spend a couple minutes with this (as I have experienced in my past). Wow.</p>
+        <p>On one of our recent Mondays, Nick wanted to share the process for creating a slider for a project we're working on. So he, <a href="http://twitter.com/drewbarontini">Drew</a> and I paired to work on it. As Drew and I were sitting behind him, I couldn't help being a little uneasy. "What if someone sees us not typing something, but instead huddled around a computer." Well, everyone that walked in saw us because we have glass walls. The boss man, Gregg, saw us and waved 'good morning' to us on his way in. That was that. No checking in to see what was preventing us from typing, no casual recommendation to get back to producing something or to only spend a couple minutes with this (as I have experienced in my past). Wow.</p>
 
         <h2>The benefits of this approach</h2>
         <p>For this particular slider, an optimistic estimate for me to do it on my own would have been a couple of hours. Getting it into CoffeeScript would have added a bit since I'm new to that too. Instead, WE WROTE CODE ON A WHITEBOARD AND TALKED THROUGH IT. It was so cool. We talked through how this particular slider needed to work, named things on the board and worked it out in our heads and on the whiteboard. Then Nick typed it up and we worked through the kinks. </p>
