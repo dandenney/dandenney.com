@@ -1,4 +1,0 @@
-@mixin flexible-width ($context, $target) {
-	/* Do your responsive math, e.g. $context = 960, $target = 240 */
-	width: (($target / $context) * 100%);
-}
