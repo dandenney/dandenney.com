@@ -4,7 +4,7 @@
  <title>Dan Denney - Super Social Front-End Dev</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-11-14T22:07:53-05:00</updated>
+ <updated>2012-11-14T22:19:49-05:00</updated>
  <id>http://dandenney.com</id>
  <author>
    <name>Edward Hyde</name>
@@ -944,37 +944,35 @@
  		<link href="http://dandenney.com/posts/front-end-dev/production-vs-shipping"/>
  		<updated>2012-07-16T00:00:00-04:00</updated>
  		<id>http://dandenney.com/posts/front-end-dev/production-vs-shipping</id>
- 		<content type="html">&lt;article class='post-standard'&gt;
-  &lt;small&gt;I try not to 'rock the boat' too often. However, it is impossible to share this post without pointing out the differences in the cultures that I have worked in during my first few years in the web design industry. Out of respect for the ones that aren't getting the best review, I don't want to name names of the companies. I want to be sure to say that I have also had a couple positions with great company cultures that ended for other reasons.&lt;/small&gt;
-  &lt;p&gt;My early exposure to web design and front-end development as a profession was more of a culture of 'production first'.&lt;/p&gt;
-  &lt;h2&gt;Production First Culture&lt;/h2&gt;
-  &lt;p&gt;By 'production first', I mean that producing something as a deliverable is the number one priority. While this might not be stated outright, it is created by the guidelines by which you work. There were positions that felt that at all times my hand should be on the keyboard or a mouse and in a tool that produces a deliverable. Research was a secondary option and it would usually be offered with the words &quot;spend a couple of minutes&quot;.&lt;/p&gt;
-  &lt;p&gt;The lesson I learned: My time at work is meant to be producing something. Research and efficiency are not as important as the fact that you are currently manipulating something into a deliverable.&lt;/p&gt;
-  &lt;h3&gt;My problem&lt;/h3&gt;
-  &lt;p&gt;To grow my skills, I had to spend time outside of work reading, doing tutorials, attending events and doing online training. I would leave work and read about how all of these other companies and people work. I would read that people talked with their co-workers about projects (outside of client meetings), sketched things while 'on the clock', took breaks when they were stuck on something (even doing fun things like ping pong or video games), paired with another person (where they both figured out a code solution together) and many other examples. So, I would read about these and then I would go back to work and not be able to apply any of them.&lt;/p&gt;
-  &lt;h3&gt;The White Whale&lt;/h3&gt;
-  &lt;p&gt;After a couple of positions with 'production first' company cultures, I started to question the things posted online. It began to feel like these companies were like unicorns or Bigfoot. Luckily, I get around to a lot of events and had great conversations with people that confirmed that some of these things were real. However, that left me 'chasing the white whale'.&lt;/p&gt;
-  &lt;h2&gt;I found one&lt;/h2&gt;
-  &lt;p&gt;So, now that I found one I feel compelled to share. I want everyone to know that not only do these companies exist, there's at least one here in Florida (where 4 out of my 5 blog readers live. Hi, mom.)&lt;/p&gt;
-  &lt;h2&gt;A 'Shipping Culture'&lt;/h2&gt;
-  &lt;p&gt;I now work at Envy Labs, which is based in Orlando. I would say that their culture has a focus on 'shipping'. In a shipping culture, the focus is a lot more holistic. While deliverables are the ultimate goal, everything involved in that process is important because it all affects how efficiently you ship and the quality of the things that you ship. It's doing things in the right way, but also choosing the right things to do.&lt;/p&gt;
-  &lt;p&gt;An example: In a 'production first' culture, you may deal with network latency or slow tools for months or years in the name of getting things done. In a 'shipping culture', you dedicate some time to have things run better. (Recently at Code School, we had 2 devs jump off of other tasks in order to upgrade Ruby. Now the app runs faster for everyone that touches it locally. These guys spent some time working on a non-deliverable that makes everyone on the team get to a deliverable more efficiently.)&lt;/p&gt;
-  &lt;p&gt;Here are some of the things that affect the overall process as I have seen them so far.&lt;/p&gt;
-  &lt;h3&gt;Work space&lt;/h3&gt;
-  &lt;p&gt;We have a beautiful office, located in the heart of downtown Orlando and on the 20th floor of a tower. There are separate rooms for types of work being done: design, project management and development. Then there are shared spaces like the couches, kitchen and ping pong 'arena'. (Oh and remember about the mystical practice of pairing? We have a room dedicated to anyone doing that.)&lt;/p&gt;
-  &lt;p&gt;So, with all of these things you would think that maybe they do it to make sure that people are there all day. Nope. It's up to you when you work in the office. I can tell you firsthand that the combination of the people, the amenities and the freedom make me want to be in the office every day.&lt;/p&gt;
-  &lt;h3&gt;Transparency&lt;/h3&gt;
-  &lt;p&gt;Everything about the company is wide open for discussion amongst the team. We have weekly standups where this communication is planned as well as some optional team building times like Whiskey Wednesdays or Free Lunch Fridays. The bulk of the communication happens online, though, via Campfire and Basecamp. This transparency makes me already feel like part of the team and that it would be perfectly ok for me to ask any question about projects, the team, financials, etc.&lt;/p&gt;
-  &lt;h3&gt;Team Building&lt;/h3&gt;
-  &lt;p&gt;The combination of a fantastic workspace and dedicated time to team building and transparency results in a desire to be part of the team. You want to be there and you want to help out others because you feel like you are a part of something special. You could think that this is just me being new, but I routinely see requests for help (or even task swapping) go into Campfire and they are fulfilled with the quickness. Plus, I witnessed the team knocking out to-dos and fixing things in support for Code School customers throughout the 4th of July.&lt;/p&gt;
-  &lt;h3&gt;Paid to Think&lt;/h3&gt;
-  &lt;p&gt;I am now paid to think. Think first, then do what is the best solution or what will lead you to the best solution. Then, ship it.&lt;/p&gt;
-  &lt;p&gt;
-    I want to share how this works specifically related to the front-end side of things but I thought I should break up the posts a bit. If you're interested, check out:
-    &lt;a href='/posts/front-end-dev/mondays-rock/'&gt;Mondays Rock&lt;/a&gt;
-  &lt;/p&gt;
-  &lt;small&gt;July 16, 2012&lt;/small&gt;
-&lt;/article&gt;
+ 		<content type="html">&lt;small&gt;I try not to 'rock the boat' too often. However, it is impossible to share this post without pointing out the differences in the cultures that I have worked in during my first few years in the web design industry. Out of respect for the ones that aren't getting the best review, I don't want to name names of the companies. I want to be sure to say that I have also had a couple positions with great company cultures that ended for other reasons.&lt;/small&gt;
+&lt;p&gt;My early exposure to web design and front-end development as a profession was more of a culture of 'production first'.&lt;/p&gt;
+&lt;h2&gt;Production First Culture&lt;/h2&gt;
+&lt;p&gt;By 'production first', I mean that producing something as a deliverable is the number one priority. While this might not be stated outright, it is created by the guidelines by which you work. There were positions that felt that at all times my hand should be on the keyboard or a mouse and in a tool that produces a deliverable. Research was a secondary option and it would usually be offered with the words &quot;spend a couple of minutes&quot;.&lt;/p&gt;
+&lt;p&gt;The lesson I learned: My time at work is meant to be producing something. Research and efficiency are not as important as the fact that you are currently manipulating something into a deliverable.&lt;/p&gt;
+&lt;h3&gt;My problem&lt;/h3&gt;
+&lt;p&gt;To grow my skills, I had to spend time outside of work reading, doing tutorials, attending events and doing online training. I would leave work and read about how all of these other companies and people work. I would read that people talked with their co-workers about projects (outside of client meetings), sketched things while 'on the clock', took breaks when they were stuck on something (even doing fun things like ping pong or video games), paired with another person (where they both figured out a code solution together) and many other examples. So, I would read about these and then I would go back to work and not be able to apply any of them.&lt;/p&gt;
+&lt;h3&gt;The White Whale&lt;/h3&gt;
+&lt;p&gt;After a couple of positions with 'production first' company cultures, I started to question the things posted online. It began to feel like these companies were like unicorns or Bigfoot. Luckily, I get around to a lot of events and had great conversations with people that confirmed that some of these things were real. However, that left me 'chasing the white whale'.&lt;/p&gt;
+&lt;h2&gt;I found one&lt;/h2&gt;
+&lt;p&gt;So, now that I found one I feel compelled to share. I want everyone to know that not only do these companies exist, there's at least one here in Florida (where 4 out of my 5 blog readers live. Hi, mom.)&lt;/p&gt;
+&lt;h2&gt;A 'Shipping Culture'&lt;/h2&gt;
+&lt;p&gt;I now work at Envy Labs, which is based in Orlando. I would say that their culture has a focus on 'shipping'. In a shipping culture, the focus is a lot more holistic. While deliverables are the ultimate goal, everything involved in that process is important because it all affects how efficiently you ship and the quality of the things that you ship. It's doing things in the right way, but also choosing the right things to do.&lt;/p&gt;
+&lt;p&gt;An example: In a 'production first' culture, you may deal with network latency or slow tools for months or years in the name of getting things done. In a 'shipping culture', you dedicate some time to have things run better. (Recently at Code School, we had 2 devs jump off of other tasks in order to upgrade Ruby. Now the app runs faster for everyone that touches it locally. These guys spent some time working on a non-deliverable that makes everyone on the team get to a deliverable more efficiently.)&lt;/p&gt;
+&lt;p&gt;Here are some of the things that affect the overall process as I have seen them so far.&lt;/p&gt;
+&lt;h3&gt;Work space&lt;/h3&gt;
+&lt;p&gt;We have a beautiful office, located in the heart of downtown Orlando and on the 20th floor of a tower. There are separate rooms for types of work being done: design, project management and development. Then there are shared spaces like the couches, kitchen and ping pong 'arena'. (Oh and remember about the mystical practice of pairing? We have a room dedicated to anyone doing that.)&lt;/p&gt;
+&lt;p&gt;So, with all of these things you would think that maybe they do it to make sure that people are there all day. Nope. It's up to you when you work in the office. I can tell you firsthand that the combination of the people, the amenities and the freedom make me want to be in the office every day.&lt;/p&gt;
+&lt;h3&gt;Transparency&lt;/h3&gt;
+&lt;p&gt;Everything about the company is wide open for discussion amongst the team. We have weekly standups where this communication is planned as well as some optional team building times like Whiskey Wednesdays or Free Lunch Fridays. The bulk of the communication happens online, though, via Campfire and Basecamp. This transparency makes me already feel like part of the team and that it would be perfectly ok for me to ask any question about projects, the team, financials, etc.&lt;/p&gt;
+&lt;h3&gt;Team Building&lt;/h3&gt;
+&lt;p&gt;The combination of a fantastic workspace and dedicated time to team building and transparency results in a desire to be part of the team. You want to be there and you want to help out others because you feel like you are a part of something special. You could think that this is just me being new, but I routinely see requests for help (or even task swapping) go into Campfire and they are fulfilled with the quickness. Plus, I witnessed the team knocking out to-dos and fixing things in support for Code School customers throughout the 4th of July.&lt;/p&gt;
+&lt;h3&gt;Paid to Think&lt;/h3&gt;
+&lt;p&gt;I am now paid to think. Think first, then do what is the best solution or what will lead you to the best solution. Then, ship it.&lt;/p&gt;
+&lt;p&gt;
+  I want to share how this works specifically related to the front-end side of things but I thought I should break up the posts a bit. If you're interested, check out:
+  &lt;a href='/posts/front-end-dev/mondays-rock/'&gt;Mondays Rock&lt;/a&gt;
+&lt;/p&gt;
+&lt;small&gt;July 16, 2012&lt;/small&gt;
 </content>
  	</entry>
  
@@ -1099,70 +1097,68 @@
  		<link href="http://dandenney.com/posts/front-end-dev/HTML-but-with-an-a-and-less-code"/>
  		<updated>2012-06-26T00:00:00-04:00</updated>
  		<id>http://dandenney.com/posts/front-end-dev/HTML-but-with-an-a-and-less-code</id>
- 		<content type="html">&lt;article class='post-standard'&gt;
-  &lt;p&gt;
-    &lt;strong&gt;This is just me sharing as I learn something, definitely not a tutorial.&lt;/strong&gt;
-  &lt;/p&gt;
-  &lt;h2&gt;HTML, but with an A and less code&lt;/h2&gt;
-  &lt;p&gt;
-    What do you do when you're joining a team that actually has &quot;Mr. Haml&quot; on it? Well, you spend some time learning Haml. (To be clear, &lt;a href=&quot;http://twitter.com/nickawalsh&quot;&gt;Nick Walsh&lt;/a&gt; didn't create Haml, he just has been dubbed that by the front-end team at &lt;a href=&quot;http://envylabs.com&quot;&gt;Envy Labs&lt;/a&gt; because he &lt;a href=&quot;http://www.netmagazine.com/tutorials/craft-cleaner-more-concise-html-haml&quot;&gt;wrote about it for .Net&lt;/a&gt; and &lt;a href=&quot;http://futureofwebdesign.com/new-york-2011/speakers/&quot;&gt;spoke on it at FOWD NYC 2011&lt;/a&gt;. In Nick's words, Haml is a way to craft cleaner, more concise HTML.
-  &lt;/p&gt;
-  &lt;h2&gt;Haml and Me&lt;/h2&gt;
-  &lt;p&gt;
-    Originally created by &lt;a href=&quot;http://hamptoncatlin.com&quot;&gt;Hampton Catlin&lt;/a&gt;, Haml is an HTML preprocessor that is primarily used in Rails apps. Normally, you would just use a .haml extension on a file in a Rails app and it just works. However, if you want to play with it elsewhere you can have it work immediately with &lt;a href=&quot;http://incident57.com/codekit/&quot;&gt;Codekit&lt;/a&gt;.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Not to toot my own horn too much, but I am really pleased that I have just redone my site without a CMS. The main reason being that this post is actually being written in Haml in order to learn it. Because I didn't bind myself to templates, I can craft up this entire page in Haml and not have to worry about the rest of the site. (I'm not sure about how I will keep the nav updated dynamically but I'll broach that as we go.)
-  &lt;/p&gt;
-  &lt;h2&gt;Building this post&lt;/h2&gt;
-  &lt;p&gt;
-    So, first things first I need a document structure. Now I could read a bit about how to set one up in the docs but I thought I'd just follow what Nick and Drew put together for &lt;a href=&quot;https://github.com/mvcss/MVCSS&quot;&gt;MVCSS&lt;/a&gt;. That was super easy to follow to get the basic page structure rolling. Then, I tried sharing the code in here and that gets a little &lt;a href=&quot;http://www.urbandictionary.com/define.php?term=cray+cray&quot;&gt;cray, cray&lt;/a&gt;. Luckily, I found &lt;a href=&quot;http://stackoverflow.com/questions/1993993/haml-with-pre-how-to-remove-unwanted-intend#_=_&quot;&gt;this&lt;/a&gt; on the wonderful Stack Overflow.
-  &lt;/p&gt;
-  &lt;p&gt;
-    So this below is what it takes to build up a basic page ready for content, pulling in my sitewide CSS and &lt;a href=&quot;http://typekit.com&quot;&gt;Typekit&lt;/a&gt;.
-  &lt;/p&gt;
-  &lt;pre&gt;&lt;code class='language-markup'&gt;!!! 5&amp;#x000A;%html{:lang =&gt; &quot;en&quot;}&amp;#x000A;	%head&amp;#x000A;		%meta(http-equiv='X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1')&amp;#x000A;		%meta(charset='utf-8')&amp;#x000A;		%meta(name='viewport' content='width=device-width,initial-scale=1')&amp;#x000A;		%title &quot;HTML, but with an A and less code&quot;&amp;#x000A;		%link(href=&quot;/stylesheets/screen.css&quot; rel=&quot;stylesheet&quot;)&amp;#x000A;	%body&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
-  &lt;p&gt;
-    On save, Codekit does it's magic compiling and this is what gets created:
-  &lt;/p&gt;
-  &lt;pre&gt;&lt;code class='language-markup'&gt;&amp;lt;!DOCTYPE html&amp;gt;
-  &amp;lt;html lang='en'&amp;gt;
-    &amp;lt;head&amp;gt;
-      &amp;lt;meta http-equiv='X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge,chrome=1'&amp;gt;
-      &amp;lt;meta charset='utf-8'&amp;gt;
-      &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width,initial-scale=1&amp;quot;&amp;gt;
-      &amp;lt;title&amp;gt;&amp;quot;HTML, but with an A and less code&amp;quot;&amp;lt;/title&amp;gt;
-      &amp;lt;link href='/stylesheets/screen.css' rel='stylesheet'&amp;gt;
-    &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;
-  &amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-  &lt;p&gt;
-    It took a little bit to get there and to figure out the rules on indenting, but it is mighty clean code and I get the feeling that the &amp;lt; and &amp;gt; keys are going to be getting a little bit of a break as I work more in Haml.
-  &lt;/p&gt;
-  &lt;h2&gt;The Content&lt;/h2&gt;
-  &lt;p&gt;
-    As I was looking for solutions, I found this article about why you &lt;a href=&quot;http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content/&quot;&gt;shouldn't be using Haml for content&lt;/a&gt;. While I'm doing the exact opposite as I learn the ins-and-outs of it, there are some cool things about Haml in that article. Basically, you can decide how you want to write your content. Use haml for your structure and pop in raw HTML as needed, use markdown, textile, etc. That is pretty cool.
-  &lt;/p&gt;
-  &lt;p&gt;
-    So far, this part has been easy but links are a little tricky. Getting in some of the special HTML5 items like icons called by data values with entities and aria-hidden are giving me some challenges. I'll follow up with the rest of the page shortly because I don't want to share where I have regular HTML mixed in.
-  &lt;/p&gt;
-  &lt;small&gt;
-    June 24, 2012
-  &lt;/small&gt;
-  &lt;h2&gt;Moving to Codepen&lt;/h2&gt;
-  &lt;p&gt;
-    I wanted to share the whole bit of code in here but it actually makes a lot more sense if you can see it in action. So, I popped &lt;a href=&quot;http://codepen.io/dandenney/pen/4/2&quot;&gt; the whole post up on Codepen.&lt;/a&gt;
-  &lt;/p&gt;
-  &lt;p&gt;
-    You won't get the fonts from Typekit but I popped the CSS in there, so you can get to see the style. I'd recommend making the HTML panel the whole window and then toggling to the HAML link in there to see the HTML. It'll be much better than what you would see in here. You can edit the code and play with different sections to see what compiles and you'll get some fun with Haml errors.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Thanks for checking this out, I'm sorry if it wasn't very informative. This was more a way to practice a new skill and type my way through it.
-  &lt;/p&gt;
-  &lt;small&gt;
-    June 26, 2012
-  &lt;/small&gt;
-&lt;/article&gt;
+ 		<content type="html">&lt;p&gt;
+  &lt;strong&gt;This is just me sharing as I learn something, definitely not a tutorial.&lt;/strong&gt;
+&lt;/p&gt;
+&lt;h2&gt;HTML, but with an A and less code&lt;/h2&gt;
+&lt;p&gt;
+  What do you do when you're joining a team that actually has &quot;Mr. Haml&quot; on it? Well, you spend some time learning Haml. (To be clear, &lt;a href=&quot;http://twitter.com/nickawalsh&quot;&gt;Nick Walsh&lt;/a&gt; didn't create Haml, he just has been dubbed that by the front-end team at &lt;a href=&quot;http://envylabs.com&quot;&gt;Envy Labs&lt;/a&gt; because he &lt;a href=&quot;http://www.netmagazine.com/tutorials/craft-cleaner-more-concise-html-haml&quot;&gt;wrote about it for .Net&lt;/a&gt; and &lt;a href=&quot;http://futureofwebdesign.com/new-york-2011/speakers/&quot;&gt;spoke on it at FOWD NYC 2011&lt;/a&gt;. In Nick's words, Haml is a way to craft cleaner, more concise HTML.
+&lt;/p&gt;
+&lt;h2&gt;Haml and Me&lt;/h2&gt;
+&lt;p&gt;
+  Originally created by &lt;a href=&quot;http://hamptoncatlin.com&quot;&gt;Hampton Catlin&lt;/a&gt;, Haml is an HTML preprocessor that is primarily used in Rails apps. Normally, you would just use a .haml extension on a file in a Rails app and it just works. However, if you want to play with it elsewhere you can have it work immediately with &lt;a href=&quot;http://incident57.com/codekit/&quot;&gt;Codekit&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  Not to toot my own horn too much, but I am really pleased that I have just redone my site without a CMS. The main reason being that this post is actually being written in Haml in order to learn it. Because I didn't bind myself to templates, I can craft up this entire page in Haml and not have to worry about the rest of the site. (I'm not sure about how I will keep the nav updated dynamically but I'll broach that as we go.)
+&lt;/p&gt;
+&lt;h2&gt;Building this post&lt;/h2&gt;
+&lt;p&gt;
+  So, first things first I need a document structure. Now I could read a bit about how to set one up in the docs but I thought I'd just follow what Nick and Drew put together for &lt;a href=&quot;https://github.com/mvcss/MVCSS&quot;&gt;MVCSS&lt;/a&gt;. That was super easy to follow to get the basic page structure rolling. Then, I tried sharing the code in here and that gets a little &lt;a href=&quot;http://www.urbandictionary.com/define.php?term=cray+cray&quot;&gt;cray, cray&lt;/a&gt;. Luckily, I found &lt;a href=&quot;http://stackoverflow.com/questions/1993993/haml-with-pre-how-to-remove-unwanted-intend#_=_&quot;&gt;this&lt;/a&gt; on the wonderful Stack Overflow.
+&lt;/p&gt;
+&lt;p&gt;
+  So this below is what it takes to build up a basic page ready for content, pulling in my sitewide CSS and &lt;a href=&quot;http://typekit.com&quot;&gt;Typekit&lt;/a&gt;.
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-markup'&gt;!!! 5&amp;#x000A;%html{:lang =&gt; &quot;en&quot;}&amp;#x000A;	%head&amp;#x000A;		%meta(http-equiv='X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1')&amp;#x000A;		%meta(charset='utf-8')&amp;#x000A;		%meta(name='viewport' content='width=device-width,initial-scale=1')&amp;#x000A;		%title &quot;HTML, but with an A and less code&quot;&amp;#x000A;		%link(href=&quot;/stylesheets/screen.css&quot; rel=&quot;stylesheet&quot;)&amp;#x000A;	%body&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  On save, Codekit does it's magic compiling and this is what gets created:
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-markup'&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang='en'&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta http-equiv='X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge,chrome=1'&amp;gt;
+    &amp;lt;meta charset='utf-8'&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width,initial-scale=1&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;&amp;quot;HTML, but with an A and less code&amp;quot;&amp;lt;/title&amp;gt;
+    &amp;lt;link href='/stylesheets/screen.css' rel='stylesheet'&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  It took a little bit to get there and to figure out the rules on indenting, but it is mighty clean code and I get the feeling that the &amp;lt; and &amp;gt; keys are going to be getting a little bit of a break as I work more in Haml.
+&lt;/p&gt;
+&lt;h2&gt;The Content&lt;/h2&gt;
+&lt;p&gt;
+  As I was looking for solutions, I found this article about why you &lt;a href=&quot;http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content/&quot;&gt;shouldn't be using Haml for content&lt;/a&gt;. While I'm doing the exact opposite as I learn the ins-and-outs of it, there are some cool things about Haml in that article. Basically, you can decide how you want to write your content. Use haml for your structure and pop in raw HTML as needed, use markdown, textile, etc. That is pretty cool.
+&lt;/p&gt;
+&lt;p&gt;
+  So far, this part has been easy but links are a little tricky. Getting in some of the special HTML5 items like icons called by data values with entities and aria-hidden are giving me some challenges. I'll follow up with the rest of the page shortly because I don't want to share where I have regular HTML mixed in.
+&lt;/p&gt;
+&lt;small&gt;
+  June 24, 2012
+&lt;/small&gt;
+&lt;h2&gt;Moving to Codepen&lt;/h2&gt;
+&lt;p&gt;
+  I wanted to share the whole bit of code in here but it actually makes a lot more sense if you can see it in action. So, I popped &lt;a href=&quot;http://codepen.io/dandenney/pen/4/2&quot;&gt; the whole post up on Codepen.&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  You won't get the fonts from Typekit but I popped the CSS in there, so you can get to see the style. I'd recommend making the HTML panel the whole window and then toggling to the HAML link in there to see the HTML. It'll be much better than what you would see in here. You can edit the code and play with different sections to see what compiles and you'll get some fun with Haml errors.
+&lt;/p&gt;
+&lt;p&gt;
+  Thanks for checking this out, I'm sorry if it wasn't very informative. This was more a way to practice a new skill and type my way through it.
+&lt;/p&gt;
+&lt;small&gt;
+  June 26, 2012
+&lt;/small&gt;
 </content>
  	</entry>
  
@@ -1225,48 +1221,45 @@
  		<link href="http://dandenney.com/posts/front-end-dev/sass-compass-pairing-with-michael-parenteau"/>
  		<updated>2012-06-17T00:00:00-04:00</updated>
  		<id>http://dandenney.com/posts/front-end-dev/sass-compass-pairing-with-michael-parenteau</id>
- 		<content type="html">&lt;article class='post-standard'&gt;
-  &lt;h2&gt;Sass + Compass Pairing with Michael Parenteau&lt;/h2&gt;
-  &lt;p&gt;&lt;a href='http://michaelparenteau.com'&gt;Michael Parenteau&lt;/a&gt;, aka
-    &lt;a href='http://twitter.com/parenteau'&gt;@parenteau&lt;/a&gt;
-    recently offered to show me the ropes of getting started with Sass and Compass on a project. He works for
-    &lt;a href='http://thinkrelevance.com'&gt;Relevance&lt;/a&gt;
-    and does some really fun side projects so I jumped at the chance.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Prior to this, I have overanalyzed preprocessors. I've probably read 30 articles, glazed over at least that many repos of code and gotten a feel for which type my favorite people are using, if any. My only real experience was converting files to .scss so I could smoosh them with
-    &lt;a href='http://incident57.com/codekit'&gt;Codekit&lt;/a&gt;
-    I had decided to go with Sass with the SCSS syntax and to master it before jumping into Compass. Michael changed all that pretty quickly.
-  &lt;/p&gt;
-  &lt;p&gt;
-    I knew that my end goal was to get to Compass too, but I wanted to be sure I could write my own Sass mixins competently first. In this case, though, I think I'll learn more by using Compass and studying the
-    &lt;a href='http://compass-style.org/reference/compass'&gt;reference&lt;/a&gt;
-    to learn how to write solid mixins. Plus, there are just so many great design patterns in there.
-  &lt;/p&gt;
-  &lt;p&gt;
-    One big win is the automated handling of vendor prefixes. As a disclaimer, I don't write vendor prefixes. I either copy and paste them from things like
-    &lt;a href='http://css3please.com'&gt;CSS3Please.com&lt;/a&gt;
-    or use
-    &lt;a href='http://prefixr.com'&gt;Prefixr&lt;/a&gt;
-    (I've recently had loads of trouble with Prefixr if I have the super cross-browser gradient CSS in my file, though.) So, Compass helps by writing all of the prefixes for me. I can just write something that makes sense to me and then it goes and gets all the stuff to make me a competent front-end dev.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Here is a really basic conversion of code that is just so much more friendly to write. This button code was from this repo:
-    &lt;a href='https://github.com/ubuwaits/css3-buttons'&gt;CSS3 Buttons&lt;/a&gt;
-  &lt;/p&gt;
-  &lt;pre&gt;&lt;code class='language-css'&gt;button {&amp;#x000A;  background-color: #7fbf4d;&amp;#x000A;  background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));&amp;#x000A;  /* Saf4+, Chrome */&amp;#x000A;  background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  background-image: linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  border: 1px solid #63a62f;&amp;#x000A;  border-bottom: 1px solid #5b992b;&amp;#x000A;  -webkit-border-radius: 3px;&amp;#x000A;  -moz-border-radius: 3px;&amp;#x000A;  -ms-border-radius: 3px;&amp;#x000A;  -o-border-radius: 3px;&amp;#x000A;  border-radius: 3px;&amp;#x000A;  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  -ms-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  -o-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  color: #fff;&amp;#x000A;  float: right;&amp;#x000A;  font-size: 1.5em;&amp;#x000A;  line-height: 1;&amp;#x000A;  padding: .75em 0 .8em 0;&amp;#x000A;  text-align: center;&amp;#x000A;  text-shadow: 0 -1px 0 #4c9021;&amp;#x000A;  width: 150px; }&amp;#x000A;  &amp;#x000A;button.more_info {&amp;#x000A;  font-size: 1em;&amp;#x000A;  padding: .25em 0 .4em 0; }&amp;#x000A;&amp;#x000A; button:hover {&amp;#x000A;    background-color: #76b347;&amp;#x000A;    background-image: -webkit-gradient(linear, left top, left bottom, from(#76b347), to(#5e9e2e));&amp;#x000A;    /* Saf4+, Chrome */&amp;#x000A;    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    background-image: linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    -moz-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    -ms-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    -o-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    cursor: pointer; }&amp;#x000A;&amp;#x000A;button:active {&amp;#x000A;    border: 1px solid #5b992b;&amp;#x000A;    border-bottom: 1px solid #538c27;&amp;#x000A;    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;    -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;    -ms-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;    -o-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; }&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
-  &lt;p&gt;That's a whole lotta CSS, huh? Think I'm ever going back in there to pull those vendor prefixes once they're approved? Not likely. However, Compass stays on top of them so if I ever recompile the file it will irradicate unnecessary ones for me. Again, making me better than I am.&lt;/p&gt;
-  &lt;p&gt;Now, we did some extra stuff to the new version of the button but here is the new code:&lt;/p&gt;
-  &lt;pre&gt;&lt;code class='language-css'&gt;button {&amp;#x000A;  @include button(#7fbf4d, #63a62f, 3px, 1px solid #63a62f);&amp;#x000A;  @include box-shadow(inset 0 1px 0 0 #96ca6d);&amp;#x000A;  border-bottom: 1px solid #5b992b;&amp;#x000A;  color: #fff;&amp;#x000A;  float: right;&amp;#x000A;  font-size: 1.5em;&amp;#x000A;  line-height: 1;&amp;#x000A;  padding: .75em 0 .8em 0;&amp;#x000A;  text-shadow: 0 -1px 0 #4c9021;&amp;#x000A;  width: 150px;&amp;#x000A;  &amp;:hover {&amp;#x000A;    @include box-shadow(inset 0 1px 0 0 #8dbf67);&amp;#x000A;  }&amp;#x000A;  &amp;:active {&amp;#x000A;    @include box-shadow(inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee);&amp;#x000A;    border: 1px solid #5b992b;&amp;#x000A;      border-bottom: 1px solid #538c27;&amp;#x000A;  } &amp;#x000A;}&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
-  &lt;p&gt;Not only is that more concise, it is waaaay more powerful and extendable. We made our own button mixin that sets the things that will be on every button to be written right away. I won't go into the full breakdown here but this is the kind of code that I want to be writing. Lean and mean, man.&lt;/p&gt;
-  &lt;p&gt;Now, Compass writes all of the boring stuff for me and this is the end result:&lt;/p&gt;
-  &lt;pre&gt;&lt;code class='language-css'&gt;button {&amp;#x000A;  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));&amp;#x000A;  background-image: -webkit-linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  background-image: -moz-linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  background-image: -o-linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  background-image: -ms-linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  background-image: linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  *zoom: 1;&amp;#x000A;  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF7FBF4D', endColorstr='#FF63A62F');&amp;#x000A;  -webkit-border-radius: 3px;&amp;#x000A;  -moz-border-radius: 3px;&amp;#x000A;  -ms-border-radius: 3px;&amp;#x000A;  -o-border-radius: 3px;&amp;#x000A;  border-radius: 3px;&amp;#x000A;  border: 1px solid #63a62f;&amp;#x000A;  text-align: center;&amp;#x000A;  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  border-bottom: 1px solid #5b992b;&amp;#x000A;  color: #fff;&amp;#x000A;  float: right;&amp;#x000A;  font-size: 1.5em;&amp;#x000A;  line-height: 1;&amp;#x000A;  padding: .75em 0 .8em 0;&amp;#x000A;  text-shadow: 0 -1px 0 #4c9021;&amp;#x000A;  width: 150px;&amp;#x000A;}&amp;#x000A;button:hover {&amp;#x000A;  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72b240), color-stop(100%, #61a22e));&amp;#x000A;  background-image: -webkit-linear-gradient(#72b240, #61a22e);&amp;#x000A;  background-image: -moz-linear-gradient(#72b240, #61a22e);&amp;#x000A;  background-image: -o-linear-gradient(#72b240, #61a22e);&amp;#x000A;  background-image: -ms-linear-gradient(#72b240, #61a22e);&amp;#x000A;  background-image: linear-gradient(#72b240, #61a22e);&amp;#x000A;  *zoom: 1;&amp;#x000A;  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF72B240', endColorstr='#FF61A22E');&amp;#x000A;  cursor: pointer;&amp;#x000A;}&amp;#x000A;button:hover {&amp;#x000A;  -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;  -moz-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;  box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;}&amp;#x000A;button:active {&amp;#x000A;  -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;  -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;  box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;  border: 1px solid #5b992b;&amp;#x000A;  border-bottom: 1px solid #538c27;&amp;#x000A;}&lt;/code&gt;&lt;/pre&gt;
-  &lt;p&gt;
-    I want to give a huge thank you to Michael. We paired for a little over 2 hours but he also showed me a ton and gave me a breakdown of Ribbons. Plus, showed off a rad deploy script he set up. He gave me the nudge I needed to really dive into this stuff and learn it. I'm going to be a much better developer for it, too. If you want a nudge, he really digs sharing so you might want to
-    &lt;a href='http://twitter.com/parenteau'&gt;@ him on Twitter&lt;/a&gt;
-    and see if he'd like to pair with you when he has some time.
-  &lt;/p&gt;
-&lt;/article&gt;
+ 		<content type="html">&lt;p&gt;&lt;a href='http://michaelparenteau.com'&gt;Michael Parenteau&lt;/a&gt;, aka
+  &lt;a href='http://twitter.com/parenteau'&gt;@parenteau&lt;/a&gt;
+  recently offered to show me the ropes of getting started with Sass and Compass on a project. He works for
+  &lt;a href='http://thinkrelevance.com'&gt;Relevance&lt;/a&gt;
+  and does some really fun side projects so I jumped at the chance.
+&lt;/p&gt;
+&lt;p&gt;
+  Prior to this, I have overanalyzed preprocessors. I've probably read 30 articles, glazed over at least that many repos of code and gotten a feel for which type my favorite people are using, if any. My only real experience was converting files to .scss so I could smoosh them with
+  &lt;a href='http://incident57.com/codekit'&gt;Codekit&lt;/a&gt;
+  I had decided to go with Sass with the SCSS syntax and to master it before jumping into Compass. Michael changed all that pretty quickly.
+&lt;/p&gt;
+&lt;p&gt;
+  I knew that my end goal was to get to Compass too, but I wanted to be sure I could write my own Sass mixins competently first. In this case, though, I think I'll learn more by using Compass and studying the
+  &lt;a href='http://compass-style.org/reference/compass'&gt;reference&lt;/a&gt;
+  to learn how to write solid mixins. Plus, there are just so many great design patterns in there.
+&lt;/p&gt;
+&lt;p&gt;
+  One big win is the automated handling of vendor prefixes. As a disclaimer, I don't write vendor prefixes. I either copy and paste them from things like
+  &lt;a href='http://css3please.com'&gt;CSS3Please.com&lt;/a&gt;
+  or use
+  &lt;a href='http://prefixr.com'&gt;Prefixr&lt;/a&gt;
+  (I've recently had loads of trouble with Prefixr if I have the super cross-browser gradient CSS in my file, though.) So, Compass helps by writing all of the prefixes for me. I can just write something that makes sense to me and then it goes and gets all the stuff to make me a competent front-end dev.
+&lt;/p&gt;
+&lt;p&gt;
+  Here is a really basic conversion of code that is just so much more friendly to write. This button code was from this repo:
+  &lt;a href='https://github.com/ubuwaits/css3-buttons'&gt;CSS3 Buttons&lt;/a&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-css'&gt;button {&amp;#x000A;  background-color: #7fbf4d;&amp;#x000A;  background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));&amp;#x000A;  /* Saf4+, Chrome */&amp;#x000A;  background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  background-image: linear-gradient(top, #7fbf4d, #63a62f);&amp;#x000A;  border: 1px solid #63a62f;&amp;#x000A;  border-bottom: 1px solid #5b992b;&amp;#x000A;  -webkit-border-radius: 3px;&amp;#x000A;  -moz-border-radius: 3px;&amp;#x000A;  -ms-border-radius: 3px;&amp;#x000A;  -o-border-radius: 3px;&amp;#x000A;  border-radius: 3px;&amp;#x000A;  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  -ms-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  -o-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  color: #fff;&amp;#x000A;  float: right;&amp;#x000A;  font-size: 1.5em;&amp;#x000A;  line-height: 1;&amp;#x000A;  padding: .75em 0 .8em 0;&amp;#x000A;  text-align: center;&amp;#x000A;  text-shadow: 0 -1px 0 #4c9021;&amp;#x000A;  width: 150px; }&amp;#x000A;  &amp;#x000A;button.more_info {&amp;#x000A;  font-size: 1em;&amp;#x000A;  padding: .25em 0 .4em 0; }&amp;#x000A;&amp;#x000A; button:hover {&amp;#x000A;    background-color: #76b347;&amp;#x000A;    background-image: -webkit-gradient(linear, left top, left bottom, from(#76b347), to(#5e9e2e));&amp;#x000A;    /* Saf4+, Chrome */&amp;#x000A;    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    background-image: linear-gradient(top, #76b347, #5e9e2e);&amp;#x000A;    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    -moz-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    -ms-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    -o-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;    cursor: pointer; }&amp;#x000A;&amp;#x000A;button:active {&amp;#x000A;    border: 1px solid #5b992b;&amp;#x000A;    border-bottom: 1px solid #538c27;&amp;#x000A;    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;    -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;    -ms-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;    -o-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; }&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's a whole lotta CSS, huh? Think I'm ever going back in there to pull those vendor prefixes once they're approved? Not likely. However, Compass stays on top of them so if I ever recompile the file it will irradicate unnecessary ones for me. Again, making me better than I am.&lt;/p&gt;
+&lt;p&gt;Now, we did some extra stuff to the new version of the button but here is the new code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-css'&gt;button {&amp;#x000A;  @include button(#7fbf4d, #63a62f, 3px, 1px solid #63a62f);&amp;#x000A;  @include box-shadow(inset 0 1px 0 0 #96ca6d);&amp;#x000A;  border-bottom: 1px solid #5b992b;&amp;#x000A;  color: #fff;&amp;#x000A;  float: right;&amp;#x000A;  font-size: 1.5em;&amp;#x000A;  line-height: 1;&amp;#x000A;  padding: .75em 0 .8em 0;&amp;#x000A;  text-shadow: 0 -1px 0 #4c9021;&amp;#x000A;  width: 150px;&amp;#x000A;  &amp;:hover {&amp;#x000A;    @include box-shadow(inset 0 1px 0 0 #8dbf67);&amp;#x000A;  }&amp;#x000A;  &amp;:active {&amp;#x000A;    @include box-shadow(inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee);&amp;#x000A;    border: 1px solid #5b992b;&amp;#x000A;      border-bottom: 1px solid #538c27;&amp;#x000A;  } &amp;#x000A;}&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Not only is that more concise, it is waaaay more powerful and extendable. We made our own button mixin that sets the things that will be on every button to be written right away. I won't go into the full breakdown here but this is the kind of code that I want to be writing. Lean and mean, man.&lt;/p&gt;
+&lt;p&gt;Now, Compass writes all of the boring stuff for me and this is the end result:&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-css'&gt;button {&amp;#x000A;  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));&amp;#x000A;  background-image: -webkit-linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  background-image: -moz-linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  background-image: -o-linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  background-image: -ms-linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  background-image: linear-gradient(#7fbf4d, #63a62f);&amp;#x000A;  *zoom: 1;&amp;#x000A;  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF7FBF4D', endColorstr='#FF63A62F');&amp;#x000A;  -webkit-border-radius: 3px;&amp;#x000A;  -moz-border-radius: 3px;&amp;#x000A;  -ms-border-radius: 3px;&amp;#x000A;  -o-border-radius: 3px;&amp;#x000A;  border-radius: 3px;&amp;#x000A;  border: 1px solid #63a62f;&amp;#x000A;  text-align: center;&amp;#x000A;  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  box-shadow: inset 0 1px 0 0 #96ca6d;&amp;#x000A;  border-bottom: 1px solid #5b992b;&amp;#x000A;  color: #fff;&amp;#x000A;  float: right;&amp;#x000A;  font-size: 1.5em;&amp;#x000A;  line-height: 1;&amp;#x000A;  padding: .75em 0 .8em 0;&amp;#x000A;  text-shadow: 0 -1px 0 #4c9021;&amp;#x000A;  width: 150px;&amp;#x000A;}&amp;#x000A;button:hover {&amp;#x000A;  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72b240), color-stop(100%, #61a22e));&amp;#x000A;  background-image: -webkit-linear-gradient(#72b240, #61a22e);&amp;#x000A;  background-image: -moz-linear-gradient(#72b240, #61a22e);&amp;#x000A;  background-image: -o-linear-gradient(#72b240, #61a22e);&amp;#x000A;  background-image: -ms-linear-gradient(#72b240, #61a22e);&amp;#x000A;  background-image: linear-gradient(#72b240, #61a22e);&amp;#x000A;  *zoom: 1;&amp;#x000A;  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF72B240', endColorstr='#FF61A22E');&amp;#x000A;  cursor: pointer;&amp;#x000A;}&amp;#x000A;button:hover {&amp;#x000A;  -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;  -moz-box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;  box-shadow: inset 0 1px 0 0 #8dbf67;&amp;#x000A;}&amp;#x000A;button:active {&amp;#x000A;  -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;  -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;  box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&amp;#x000A;  border: 1px solid #5b992b;&amp;#x000A;  border-bottom: 1px solid #538c27;&amp;#x000A;}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  I want to give a huge thank you to Michael. We paired for a little over 2 hours but he also showed me a ton and gave me a breakdown of Ribbons. Plus, showed off a rad deploy script he set up. He gave me the nudge I needed to really dive into this stuff and learn it. I'm going to be a much better developer for it, too. If you want a nudge, he really digs sharing so you might want to
+  &lt;a href='http://twitter.com/parenteau'&gt;@ him on Twitter&lt;/a&gt;
+  and see if he'd like to pair with you when he has some time.
+&lt;/p&gt;
 </content>
  	</entry>
  
