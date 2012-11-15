@@ -5,3 +5,5 @@ rdiscount:
     extensions: [smart]
 permalink: /posts/:categories/:title
 paginate: 3
+ftp_host: s64462.gridserver.com
+ftp_dir: /domains/dandenney.com/html
