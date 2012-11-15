@@ -1,0 +1,162 @@
+---
+layout: default
+title: Playing With CSS Hat
+category: front-end-dev
+date: July 21, 2012
+--- 
+
+%link(href="/stylesheets/posts/front-end-dev/playing-with-css-hat.css" rel="stylesheet")
+
+%article#playing-with-css-hat.post
+
+  .wrapper
+
+    %h2 Playing with CSS Hat
+
+    %p
+      %a(href="http://csshat.com")CSS Hat
+      is a photoshop plugin from the team that will hopefully bring us
+      %a(href="http://csspiffle.com")CSS Pifffle. 
+      I had been anxiously awaiting for it to be released because I wanted to see what the team was capable of. They are currently working on a new app for web creation, intended to replace Photoshop and Fireworks for us.
+
+    %h3 It surprised me
+
+    %p 
+      I was skeptical because most things that automate code output some crazy ish. The code that comes out of CSS Hat is very usable. I'd prefer if there was a way to alphabetize the properties as an option, but I have 
+      %a(href="http://procssor.com")procssor
+      for that. I'm using Compass or Sass mixins a lot these days so I wouldn't necessarily copy and paste the code at all. To me, it is a quick way to get the nitty gritty stuff: hex codes, opacity percentages, shadow ratios, etc. 
+
+    %h3 Building something with it
+
+    %p
+      A while ago I had this little dream that every day I would code out a psd resource from sites like 365psd and share them as a gallery. I didn't follow through, but I did do one. So, I'm going to compare that with what I can grab straight out of the psd.
+
+  .light
+
+    .container
+
+      .sample
+        
+        %h4 Original Image
+
+        %img(src="/images/posts/front-end-dev/playing-with-css-hat/day155.png" alt="Day 155 nav from 365psd")
+
+      .sample
+
+        %h4 Original Conversion
+
+        .day155
+
+          #code-version
+
+            %nav
+              %a.first(href="#")Day
+              %a(href="#")Week
+              %a(href="#")Month
+              %a.last(href="#")List
+
+    .container
+
+      .sample
+
+        %h4 CSS Hat Version
+
+        .csshat
+
+          %nav
+            %a.first(href="#")Day
+            %a(href="#")Week
+            %a(href="#")Month
+            %a.last(href="#")List
+
+      .sample
+
+        %h4 With a little padding
+
+        .csshat.padded
+
+          %nav
+            %a.first(href="#")Day
+            %a(href="#")Week
+            %a(href="#")Month
+            %a.last(href="#")List
+
+  .wrapper 
+
+    %h3 Ok, so it's not plug and play
+
+    %p
+      This particular psd brings out some flaws, but not necessarily flaws with CSS Hat. It's more of a general flaw in using Photoshop to make things intended to be built with CSS. Here is the error the notes from CSS Hat:
+
+      %blockquote
+        *Stroke has a gradient fill type, but there is no way to express that in CSS, writing the average color instead. Blending modes are used in gradient fill and inner shadow, but they are impossible to realistically transfer to CSS.
+
+    %p
+      Our designer used blending modes which are not CSS friendly. It's not that you can't replicate the end result, it's that there is no way to automate it. You can't (yet with browser support) set something like "blendmode: overlay;".
+
+    %p
+      When I originally coded up my version, I spent a good deal of time with the eyedropper trying to nail down the colors for the beginning and end colors for the gradients.
+
+    %p
+      There are a couple of things that you could grab from the outputted code, like the border-radius for example. Other than that, though, the blending modes killed this one. As you can see there are some other things that you'd have to use tools to get too. The padding, for example, would have to come from using rulers or something. (I use 
+      %a(href="http://iconfactory.com/software/xscope")xScope
+      for all measuring and colors now.) As usual, fonts are off as well. It calls for a 13px Helvetica Neue Bold but I changed it to normal. 
+
+  .wrapper
+
+    %h3 Build something without blending modes
+
+    %p 
+      I wanted to try something without blending modes to see how it works out. It gets better, but you'll see there are still some issues.
+
+  .light
+
+    .container
+
+      .sample
+
+        %h4 Original Image
+
+        %img(src="/images/posts/front-end-dev/playing-with-css-hat/200days-4.png" alt="200 Days of Awesomeness #4")
+
+      .sample
+
+        %h4 CSS Hat Styles
+
+        .awesome-4
+
+          %nav
+            %a(href="#")Home
+            %a(href="#")Portfolio
+            %a(href="#")About
+            %a(href="#")Contact
+  .container          
+    
+    %p
+      Now I made some quick tweaks to get it in the range of the original. Padding, margin, font-family, font-size, max-width, etc.
+
+  .light
+
+    .container 
+
+      %h4 With quick adjustments
+
+      .awesome-4.adjusted
+
+        %nav
+          %a(href="#")Home
+          %a(href="#")Portfolio
+          %a(href="#")About
+          %a(href="#")Contact
+
+  .wrapper
+    
+    %p
+      You can see that it missed some of the details. The thin stroke didn't make it in correctly and the gradient color shifted a bit. The stroke is just a matter of needing it to be 2 pixels inside the element and 1px around and I'm guessing the gradient issue is that a scale of 28% was used. I bet they're not set up to grab scaling gradients.
+
+    %h3 Final thought: It's ok
+
+    %p
+      So it's on the way but as it is, it can only be used as a shortcut to getting some of the property values. It still leaves me hopeful for their upcoming tool. I imagine if all of the options within the tool had to have a direct CSS equivalent, there would be much better accuracy. For me, it's $20 so if it saves me at least 30 minutes (ever) it was worth the price of admission.
+
+    %small July 21, 2012

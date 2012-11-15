@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Thoughts"
+---
+
+<div class="post-standard">
+  <h1>Thoughts and Shares</h1>
+</div>
+
+<div class="thoughts">
+
+  {% for post in site.posts %}
+  {% if post.category == "thoughts" %}
+    <article class="post-standard">
+      <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+      {{post.content}}
+    </article>
+  {% endif %}
+  {% endfor %}
+
+</div>

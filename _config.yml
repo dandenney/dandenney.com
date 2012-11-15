@@ -1,0 +1,7 @@
+site_name: 'Dan Denney - Super Social Front-End Dev'
+site_url: 'http://dandenney.com'
+markdown: rdiscount
+rdiscount:
+    extensions: [smart]
+permalink: /posts/:categories/:title
+paginate: 3

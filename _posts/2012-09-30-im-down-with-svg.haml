@@ -1,0 +1,81 @@
+---
+layout: default
+title: I'm Down With SVG
+category: front-end-dev
+date: September 30, 2012
+--- 
+
+%article.post
+
+  .container
+
+    %h1 I'm Down with SVG... Yeah You Know Me
+
+    %p 
+      After coming across a couple of articles
+      %a(href="http://samsoff.es/posts/wrangling-svgs") Wrangling SVGs
+      and 
+      %a(href="http://dcurt.is/pixel-fitting") Pixel Fitting
+      , I wanted to check out what SVG can do. While many people are using them for icons and logos, I was particularly interested in how they can render 
+      %a(href="http://ricardogimenes.com") Ricardo Gimenes' 
+      awesome illustrations for the 
+      %a(href="http://frontendconf.com") Front-End Conf site.
+
+    %p 
+      The crazy cool part about SVG is that you can just save one out from Illustrator and put it into an image tag. Of course, not for IE8 and lower but that's luckily not a concern. (There are polyfills for them for those, though.) Let's get right into comparing a transparent png and an svg of a character. I chose the one for 
+      %a(href="http://www.gdifeterici.com/") Gio Difeterici
+      because it has a good level of detail and it's just so cool.
+
+    %h3 Original size from the site
+
+    .columns-two
+      .column
+        %img(src="/images/posts/front-end-dev/im-down-with-svg/gio-difeterici.png" alt="Gio DiFeterici character as a png")
+        %p
+          %small Transparent .png, 401px x 466px, 21kb
+      .column
+        %img(src="/images/posts/front-end-dev/im-down-with-svg/gio-difeterici.svg" alt="Gio DiFeterici character as svg")
+        %p
+          %small SVG, 401px x 466px, 15kb
+
+    %p I'm using a retina MBP, so at regular size I can see the png start to lose detail. On the other hand, the svg is shimmering like Ricardo just finished making it in Illustrator. It looks amazing.
+
+    %h3 Resizing with CSS to 50%
+
+    .columns-two.small-screen
+      .column
+        %img(src="/images/posts/front-end-dev/im-down-with-svg/gio-difeterici.png" alt="Gio DiFeterici character as a png")
+        %p
+          %small Transparent .png, 200px x 232px, 21kb
+      .column
+        %img(src="/images/posts/front-end-dev/im-down-with-svg/gio-difeterici.svg" alt="Gio DiFeterici character as svg")
+        %p
+          %small SVG, 200px x 232px, 15kb
+
+    %p This would represent shrinking an image down for the pixel density. They both look really good and each have minor issues. The png gets a little blurry in the top of the hair and the svg has some sharp pixel issues on the tip of the paintbrush. Of the two, I'd still pick the svg. It is slightly more sharp and 6kb smaller.
+
+  .container
+    %h3 Flexible width set to fill 100% of the container
+
+  .columns-two.large-screen
+    .column
+      %img(src="/images/posts/front-end-dev/im-down-with-svg/gio-difeterici.png" alt="Gio DiFeterici character as a png")
+      %p
+        %small Transparent .png, Set to 100% width, 21kb
+    .column
+      %img(src="/images/posts/front-end-dev/im-down-with-svg/gio-difeterici.svg" alt="Gio DiFeterici character as svg")
+      %p
+        %small SVG, Set to 100% width, 15kb
+
+  .container
+    %p This is where the magic happens. The clarity is fantastic scaling up. There are some slight pixel issues around the tip of the paint brush, which is why Sam Soffes recommends making the svg the actual intended size. The cool part is that even with doing a small and large version, there will only be 2 versions instead of doing 2 small and 2 large ones to include the retina screens.
+
+    %h3 I'll be using SVG for the realign
+    %p Based on what I have seen here, I will be converting all of the characters to svg for the realign. I would love to have a good solution for a red curtain background that I use as it is one of the biggest hits for file size. If I find a good solution for that, I will definitely share.
+
+    %small September 30, 2012
+
+  <ul class="list-inline list-actions">
+          
+
+%link(href="/stylesheets/posts/front-end-dev/im-down-with-svg.css" rel="stylesheet")

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+  <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+  <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+  <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+  <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+      <meta charset='utf-8' />
+      <meta name='viewport' content='width=device-width,initial-scale=1' />
+      <title>Dan Denney - Super Social Front-End Dev</title>
+      <script src="http://use.typekit.com/cxh3ytl.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script>
+      <link href="/stylesheets/screen.css" rel="stylesheet">
+    </head>
+
+    <body>
+      
+      <header>
+        <a href="/" class="logo"><img src="/images/dan-code-school.svg" alt="Dan Denney character" /> <h3>Dan Denney<span>Super Social Front-End Dev</span></h3></a> 
+
+        <nav>
+          <ul>
+            <li class='nav-item'>
+              <a href="/work.html" data-icon="&#x0029;" aria-hidden="true"><span>Work</span></a>
+            </li>
+            <li class='nav-item'>
+              <a href="/posts.html" data-icon="&#x0026;" aria-hidden="true"><span>Posts</span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <article class="post-standard">
+
+	<h2>Sass and Compass Pairing with Michael Parenteau</h2>
+
+	<article class='post-standard'>
+  <h2>Sass + Compass Pairing with Michael Parenteau</h2>
+  <p><a href='http://michaelparenteau.com'>Michael Parenteau</a>, aka
+    <a href='http://twitter.com/parenteau'>@parenteau</a>
+    recently offered to show me the ropes of getting started with Sass and Compass on a project. He works for
+    <a href='http://thinkrelevance.com'>Relevance</a>
+    and does some really fun side projects so I jumped at the chance.
+  </p>
+  <p>
+    Prior to this, I have overanalyzed preprocessors. I've probably read 30 articles, glazed over at least that many repos of code and gotten a feel for which type my favorite people are using, if any. My only real experience was converting files to .scss so I could smoosh them with
+    <a href='http://incident57.com/codekit'>Codekit</a>
+    I had decided to go with Sass with the SCSS syntax and to master it before jumping into Compass. Michael changed all that pretty quickly.
+  </p>
+  <p>
+    I knew that my end goal was to get to Compass too, but I wanted to be sure I could write my own Sass mixins competently first. In this case, though, I think I'll learn more by using Compass and studying the
+    <a href='http://compass-style.org/reference/compass'>reference</a>
+    to learn how to write solid mixins. Plus, there are just so many great design patterns in there.
+  </p>
+  <p>
+    One big win is the automated handling of vendor prefixes. As a disclaimer, I don't write vendor prefixes. I either copy and paste them from things like
+    <a href='http://css3please.com'>CSS3Please.com</a>
+    or use
+    <a href='http://prefixr.com'>Prefixr</a>
+    (I've recently had loads of trouble with Prefixr if I have the super cross-browser gradient CSS in my file, though.) So, Compass helps by writing all of the prefixes for me. I can just write something that makes sense to me and then it goes and gets all the stuff to make me a competent front-end dev.
+  </p>
+  <p>
+    Here is a really basic conversion of code that is just so much more friendly to write. This button code was from this repo:
+    <a href='https://github.com/ubuwaits/css3-buttons'>CSS3 Buttons</a>
+  </p>
+  <pre><code class='language-css'>button {&#x000A;  background-color: #7fbf4d;&#x000A;  background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#63a62f));&#x000A;  /* Saf4+, Chrome */&#x000A;  background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);&#x000A;  background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);&#x000A;  background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);&#x000A;  background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);&#x000A;  background-image: linear-gradient(top, #7fbf4d, #63a62f);&#x000A;  border: 1px solid #63a62f;&#x000A;  border-bottom: 1px solid #5b992b;&#x000A;  -webkit-border-radius: 3px;&#x000A;  -moz-border-radius: 3px;&#x000A;  -ms-border-radius: 3px;&#x000A;  -o-border-radius: 3px;&#x000A;  border-radius: 3px;&#x000A;  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;&#x000A;  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;&#x000A;  -ms-box-shadow: inset 0 1px 0 0 #96ca6d;&#x000A;  -o-box-shadow: inset 0 1px 0 0 #96ca6d;&#x000A;  box-shadow: inset 0 1px 0 0 #96ca6d;&#x000A;  color: #fff;&#x000A;  float: right;&#x000A;  font-size: 1.5em;&#x000A;  line-height: 1;&#x000A;  padding: .75em 0 .8em 0;&#x000A;  text-align: center;&#x000A;  text-shadow: 0 -1px 0 #4c9021;&#x000A;  width: 150px; }&#x000A;  &#x000A;button.more_info {&#x000A;  font-size: 1em;&#x000A;  padding: .25em 0 .4em 0; }&#x000A;&#x000A; button:hover {&#x000A;    background-color: #76b347;&#x000A;    background-image: -webkit-gradient(linear, left top, left bottom, from(#76b347), to(#5e9e2e));&#x000A;    /* Saf4+, Chrome */&#x000A;    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);&#x000A;    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);&#x000A;    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);&#x000A;    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);&#x000A;    background-image: linear-gradient(top, #76b347, #5e9e2e);&#x000A;    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;&#x000A;    -moz-box-shadow: inset 0 1px 0 0 #8dbf67;&#x000A;    -ms-box-shadow: inset 0 1px 0 0 #8dbf67;&#x000A;    -o-box-shadow: inset 0 1px 0 0 #8dbf67;&#x000A;    box-shadow: inset 0 1px 0 0 #8dbf67;&#x000A;    cursor: pointer; }&#x000A;&#x000A;button:active {&#x000A;    border: 1px solid #5b992b;&#x000A;    border-bottom: 1px solid #538c27;&#x000A;    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&#x000A;    -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&#x000A;    -ms-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&#x000A;    -o-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&#x000A;    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee; }&#x000A;</code></pre>
+  <p>That's a whole lotta CSS, huh? Think I'm ever going back in there to pull those vendor prefixes once they're approved? Not likely. However, Compass stays on top of them so if I ever recompile the file it will irradicate unnecessary ones for me. Again, making me better than I am.</p>
+  <p>Now, we did some extra stuff to the new version of the button but here is the new code:</p>
+  <pre><code class='language-css'>button {&#x000A;  @include button(#7fbf4d, #63a62f, 3px, 1px solid #63a62f);&#x000A;  @include box-shadow(inset 0 1px 0 0 #96ca6d);&#x000A;  border-bottom: 1px solid #5b992b;&#x000A;  color: #fff;&#x000A;  float: right;&#x000A;  font-size: 1.5em;&#x000A;  line-height: 1;&#x000A;  padding: .75em 0 .8em 0;&#x000A;  text-shadow: 0 -1px 0 #4c9021;&#x000A;  width: 150px;&#x000A;  &:hover {&#x000A;    @include box-shadow(inset 0 1px 0 0 #8dbf67);&#x000A;  }&#x000A;  &:active {&#x000A;    @include box-shadow(inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee);&#x000A;    border: 1px solid #5b992b;&#x000A;      border-bottom: 1px solid #538c27;&#x000A;  } &#x000A;}&#x000A;</code></pre>
+  <p>Not only is that more concise, it is waaaay more powerful and extendable. We made our own button mixin that sets the things that will be on every button to be written right away. I won't go into the full breakdown here but this is the kind of code that I want to be writing. Lean and mean, man.</p>
+  <p>Now, Compass writes all of the boring stuff for me and this is the end result:</p>
+  <pre><code class='language-css'>button {&#x000A;  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));&#x000A;  background-image: -webkit-linear-gradient(#7fbf4d, #63a62f);&#x000A;  background-image: -moz-linear-gradient(#7fbf4d, #63a62f);&#x000A;  background-image: -o-linear-gradient(#7fbf4d, #63a62f);&#x000A;  background-image: -ms-linear-gradient(#7fbf4d, #63a62f);&#x000A;  background-image: linear-gradient(#7fbf4d, #63a62f);&#x000A;  *zoom: 1;&#x000A;  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF7FBF4D', endColorstr='#FF63A62F');&#x000A;  -webkit-border-radius: 3px;&#x000A;  -moz-border-radius: 3px;&#x000A;  -ms-border-radius: 3px;&#x000A;  -o-border-radius: 3px;&#x000A;  border-radius: 3px;&#x000A;  border: 1px solid #63a62f;&#x000A;  text-align: center;&#x000A;  -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;&#x000A;  -moz-box-shadow: inset 0 1px 0 0 #96ca6d;&#x000A;  box-shadow: inset 0 1px 0 0 #96ca6d;&#x000A;  border-bottom: 1px solid #5b992b;&#x000A;  color: #fff;&#x000A;  float: right;&#x000A;  font-size: 1.5em;&#x000A;  line-height: 1;&#x000A;  padding: .75em 0 .8em 0;&#x000A;  text-shadow: 0 -1px 0 #4c9021;&#x000A;  width: 150px;&#x000A;}&#x000A;button:hover {&#x000A;  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #72b240), color-stop(100%, #61a22e));&#x000A;  background-image: -webkit-linear-gradient(#72b240, #61a22e);&#x000A;  background-image: -moz-linear-gradient(#72b240, #61a22e);&#x000A;  background-image: -o-linear-gradient(#72b240, #61a22e);&#x000A;  background-image: -ms-linear-gradient(#72b240, #61a22e);&#x000A;  background-image: linear-gradient(#72b240, #61a22e);&#x000A;  *zoom: 1;&#x000A;  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF72B240', endColorstr='#FF61A22E');&#x000A;  cursor: pointer;&#x000A;}&#x000A;button:hover {&#x000A;  -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;&#x000A;  -moz-box-shadow: inset 0 1px 0 0 #8dbf67;&#x000A;  box-shadow: inset 0 1px 0 0 #8dbf67;&#x000A;}&#x000A;button:active {&#x000A;  -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&#x000A;  -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&#x000A;  box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;&#x000A;  border: 1px solid #5b992b;&#x000A;  border-bottom: 1px solid #538c27;&#x000A;}</code></pre>
+  <p>
+    I want to give a huge thank you to Michael. We paired for a little over 2 hours but he also showed me a ton and gave me a breakdown of Ribbons. Plus, showed off a rad deploy script he set up. He gave me the nudge I needed to really dive into this stuff and learn it. I'm going to be a much better developer for it, too. If you want a nudge, he really digs sharing so you might want to
+    <a href='http://twitter.com/parenteau'>@ him on Twitter</a>
+    and see if he'd like to pair with you when he has some time.
+  </p>
+</article>
+
+
+  <div id="disqus_thread">
+    <script type="text/javascript">
+    var disqus_shortname = 'dandenney';
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+  </div>
+
+</article>
+
+      <footer>
+        <nav>
+          <ul>
+            <li class='nav-item'>
+              <a href="/work.html" data-icon="&#x0029;" aria-hidden="true"><span>Work</span></a></li>
+            </li>
+            <li class='nav-item'>
+              <a href="/posts.html" data-icon="&#x0026;" aria-hidden="true"><span>Posts</span></a></li>
+            </li>
+          </ul>
+        </nav>
+        <small>
+          &copy; Dan Denney - I'm on the Twitters as
+          <a href='http://twitter.com/dandenney'>@dandenney</a>
+        </small>
+      </footer>
+    
+    </body>
+
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+    <script src='/javascripts/jquery.fittext.js'></script>
+    <script src='/javascripts/prism.js'></script>
+    <script>
+      $(function() {
+        $(".intro h1").fitText(.48);
+      });
+    </script>
+    <script>
+      window.jQuery || document.write('<\/script>')
+  
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7445.js?"+Math.floor(new Date().getTime()/3600000);
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f8f96b2f5a1f546a80000f8');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>  
+
+  </html>

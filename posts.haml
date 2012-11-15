@@ -1,0 +1,38 @@
+---
+layout: default
+title: "News from London Archive"
+---
+
+.wrapper
+
+  %nav.posts-nav.columns-two
+    
+    .column
+      %h2
+        Front-End Dev
+      {% for post in site.posts %}
+      {% if post.category == "front-end-dev" %}
+      %h4
+        %a(href="{{post.url}}"){{post.title}}
+      {% endif %}
+      {% endfor %}
+
+    .column
+
+      %h2
+        General
+      {% for post in site.posts %}
+      {% if post.category == "general" %}
+      %h4
+        %a(href="{{post.url}}"){{post.title}}
+      {% endif %}
+      {% endfor %}
+
+      %h2
+        Conferences
+      {% for post in site.posts %}
+      {% if post.category == "conferences" %}
+      %h4
+        %a(href="{{post.url}}"){{post.title}}
+      {% endif %}
+      {% endfor %}

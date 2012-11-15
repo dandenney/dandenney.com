@@ -1,0 +1,48 @@
+@import "partials/mixins"
+
+html
+  
+  background: url('/images/invitations/curtain-mask.png') no-repeat #111
+  background-size: 100% auto
+
+body
+  background: none
+
+h1
+  color: #fff
+  font-size: 1.5em
+  margin: 1.5em auto 0
+  max-width: 650px
+  width: 50%
+  +respond-to(768px)
+    font-size: 2em
+  +respond-to(768px)
+    font-size: 3em
+  +respond-to(1200px)
+    font-size: 4em
+
+body > p
+  color: #999
+  margin: 1em auto 0
+  max-width: 650px
+  width: 50%
+  +respond-to(1024px)
+    font-size: 1.5em
+
+section
+  background: #fff
+  margin: 0 auto
+  max-width: 650px
+  padding: 1em
+  position: relative
+  top: 2em
+  width: 90%
+  h2
+    color: #b51f24
+    text-shadow: 1px 1px 0 rgba(#000, .1)
+  a
+    color: #b51f24
+    &:hover
+      color: darken(#b51f24, 10%)
+  +respond-to(768px)
+    width: 70%
