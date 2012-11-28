@@ -4,13 +4,26 @@
  <title>Dan Denney - Super Social Front-End Dev</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-11-26T22:46:42-05:00</updated>
+ <updated>2012-11-27T22:25:02-05:00</updated>
  <id>http://dandenney.com</id>
  <author>
    <name>Edward Hyde</name>
    <email>fake@mijingo.com</email>
  </author>
 
+ 
+ 	<entry>
+ 		<title>Cherry Picking from Frameworks</title>
+ 		<link href="http://dandenney.com/posts/thoughts/bootstrap-customization-ftw"/>
+ 		<updated>2012-11-27T00:00:00-05:00</updated>
+ 		<id>http://dandenney.com/posts/thoughts/bootstrap-customization-ftw</id>
+ 		<content type="html">&lt;p&gt;If there is such a thing as front-end framework camps, I have been carrying the &lt;a href=&quot;http://foundation.zurb.com&quot;&gt;Foundation&lt;/a&gt; flag for a while. As a full framework, I prefer it over &lt;a href=&quot;http://twitter.github.com/bootstrap&quot;&gt;Bootstrap&lt;/a&gt;. I prefer the code style and the use of Sass instead of Less, primarily. I also like that there&amp;rsquo;s less in it and it is more tightly bundled.&lt;/p&gt;
+
+&lt;p&gt;However, my team and I don&amp;rsquo;t use a framework for projects. So when I&amp;rsquo;m looking at their docs, it&amp;rsquo;s to determine some best practices for specific modules. This is where Bootstrap excels. Their documentation and their code lends itself to cherry picking more easily than Foundation does. The fact that you can &lt;a href=&quot;http://twitter.github.com/bootstrap/customize.html&quot;&gt;customize your Bootstrap download&lt;/a&gt; sealed the deal on it being the better resource for cherry picking.&lt;/p&gt;
+
+&lt;p&gt;As an aside, I think it&amp;rsquo;s great that they are going different directions. Bootstrap seems to be moving towards being a collection of small systems and Foundation is focused on being a single system. It will keep them both growing instead of duplicating and competing, which rocks.&lt;/p&gt;
+</content>
+ 	</entry>
  
  	<entry>
  		<title>Production-Shipping Balance</title>
