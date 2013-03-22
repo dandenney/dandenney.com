@@ -4,13 +4,329 @@
  <title>Dan Denney - Super Social Front-End Dev</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-11-27T23:49:38-05:00</updated>
+ <updated>2013-03-21T23:14:50-04:00</updated>
  <id>http://dandenney.com</id>
  <author>
    <name>Edward Hyde</name>
    <email>fake@mijingo.com</email>
  </author>
 
+ 
+ 	<entry>
+ 		<title>Playing With Data URIs</title>
+ 		<link href="http://dandenney.com/posts/front-end-dev/playing-with-data-uris"/>
+ 		<updated>2013-03-21T00:00:00-04:00</updated>
+ 		<id>http://dandenney.com/posts/front-end-dev/playing-with-data-uris</id>
+ 		<content type="html">&lt;img src='/images/posts/front-end-dev/playing-with-data-uris/grossness.jpg' /&gt;
+&lt;p&gt;
+  Following up on
+  &lt;a href='/posts/front-end-dev/going-live-with-number-five'&gt;my post yesterday,&lt;/a&gt;
+  I thought I should quickly play with data URIs to see what they can do for performance. This is strictly sharing my learning and testing, not an explanation of how data URIs work.
+&lt;/p&gt;
+&lt;h2&gt;I have no idea what I'm doing.&lt;/h2&gt;
+&lt;p&gt;
+  I really don't have a grasp on this tech yet. I've read about them in lots of posts, but haven't really messed with them much. I mean, I understand that they are a way of writing the code for an asset directly into the HTML. How that works, how to troubleshoot or how to explain oddities are currently beyond my skillzzz.
+&lt;/p&gt;
+&lt;p&gt;
+  Chris' recent post on
+  &lt;a href='http://css-tricks.com/using-svg'&gt;using them with SVGS&lt;/a&gt;
+  convinced me to try them out. Plus, Neil really digs them and actually
+  &lt;a href='http://base64.neil.mixture.io'&gt;made an encoder.&lt;/a&gt;
+  You know, for kicks while he was coding out a project.
+&lt;/p&gt;
+&lt;h2&gt;I feel dirty and better at the same time.&lt;/h2&gt;
+&lt;p&gt;
+  Using them is kind of like drinking a natural vegetable shake. You know it's good for you, but it's icky and makes you shudder. The code that makes them is insane. Putting Sublime Text into full screen mode with my 1440x900 resolution, it takes 3-4 full swipes to scroll past the code.
+&lt;/p&gt;
+&lt;p&gt;
+  It is really easy, though. You drag your image into an encoder, copy, and paste the code into the src=&quot;&quot; of your image. Boom!
+&lt;/p&gt;
+&lt;h2&gt;The Results (Home Page Only So Far)&lt;/h2&gt;
+&lt;p&gt;
+  I'm not 100% sure about the results. What I can see is that the page weight went down (very surprisingly, but thanks to gzip). The page load time went down, but the requests stayed the same. This was a little bit of a WTF moment for me. I'll spend a little more time trying to dig up an answer because I was expecting it to be reduced by the 10 SVGs that are now data URIs.
+&lt;/p&gt;
+&lt;h4&gt;Page Weight&lt;/h4&gt;
+&lt;p&gt;
+  &lt;small&gt;linked SVG&lt;/small&gt;
+  229 KB vs. 185 KB
+  &lt;small&gt;data URI&lt;/small&gt;
+&lt;/p&gt;
+&lt;h4&gt;HTTP Requests:&lt;/h4&gt;
+&lt;p&gt;
+  &lt;small&gt;linked SVG&lt;/small&gt;
+  20 vs. 20
+  &lt;small&gt;data URI&lt;/small&gt;
+&lt;/p&gt;
+&lt;h4&gt;Page Load Time:&lt;/h4&gt;
+&lt;p&gt;
+  &lt;small&gt;linked SVG&lt;/small&gt;
+  1.67 seconds vs. 1.29 seconds
+  &lt;small&gt;data URI&lt;/small&gt;
+&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Going Live With Number Five</title>
+ 		<link href="http://dandenney.com/posts/front-end-dev/going-live-with-number-five"/>
+ 		<updated>2013-03-20T00:00:00-04:00</updated>
+ 		<id>http://dandenney.com/posts/front-end-dev/going-live-with-number-five</id>
+ 		<content type="html">&lt;img src='/images/posts/front-end-dev/going-live-with-number-five/stage.png' /&gt;
+&lt;h2&gt;A Month (or so) Late&lt;/h2&gt;
+&lt;p&gt;
+  I have been planning to write this since before I launched this year's
+  &lt;a href='http://frontendconf.com'&gt;Front-End Design Conference&lt;/a&gt;
+  site. Instead of timing it with the launch of the site, I'm piggybacking on the launch of the app that I used to build it:
+  &lt;a href='http://mixture.io'&gt;Mixture.io&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  I got lucky and scored a copy of the alpha for the app and have been chatting and learning from
+  &lt;a href='http://twitter.com/neiltak'&gt;Neil Kinnish&lt;/a&gt;
+  as they have been building it.
+&lt;/p&gt;
+&lt;h3&gt;Goals for this year's site&lt;/h3&gt;
+&lt;p&gt;
+  I really dug the look of the '12 version, but felt pretty horrible about the markup and the performance. It was done in a rush and those things suffered.
+&lt;/p&gt;
+&lt;p&gt;
+  For the '13 version I wanted to significantly reduce the HTTP requests, make better use of preprocessors, reduce page weight, reduce the amount of text and move away from Rails.
+&lt;/p&gt;
+&lt;h3&gt;From Prototype to Production&lt;/h3&gt;
+&lt;p&gt;
+  I began using Mixture to prototype mainly for the ability to use some includes and fake some data (attendee profiles). I quickly learned that all of the front-end best practices were baked into the app: CSS minification, JS concatenation and minification, image optimization, S3 asset hosting and gzipping to mention a few.
+&lt;/p&gt;
+&lt;p&gt;
+  Luckily, Neil offered to let me test using their pro option to host the site and I was no longer building a prototype!
+&lt;/p&gt;
+&lt;p&gt;I still have some loose ends and can do some more optimization, but here is how the new version is stacking up. Keep in mind I haven't had to even think about minifiying, S3, etc. It was all done for me with Mixture.&lt;/p&gt;
+&lt;h3&gt;
+  Home Visual Comparison:
+  &lt;a href='http://frontenddesignconf.heroku.com'&gt;2012&lt;/a&gt;
+  vs.
+  &lt;a href='http://frontenddesignconference.com'&gt;2013&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;There is one major change that is kind of cheating the comparison. I realized it was pretty irresponsible to automatically load all of the attendee profiles.&lt;/p&gt;
+&lt;h4&gt;Home Page Weight&lt;/h4&gt;
+&lt;p&gt;
+  &lt;small&gt;2012&lt;/small&gt;
+  1.8 MB vs. 229 KB
+  &lt;small&gt;2013&lt;/small&gt;
+&lt;/p&gt;
+&lt;h4&gt;Home HTTP Requests:&lt;/h4&gt;
+&lt;p&gt;
+  &lt;small&gt;2012&lt;/small&gt;
+  261 vs. 20
+  &lt;small&gt;2013&lt;/small&gt;
+&lt;/p&gt;
+&lt;h4&gt;Home Page Load Time:&lt;/h4&gt;
+&lt;p&gt;
+  &lt;small&gt;2012&lt;/small&gt;
+  13.83 seconds vs. 1.67 seconds
+  &lt;small&gt;2013&lt;/small&gt;
+&lt;/p&gt;
+&lt;h3&gt;
+  Prior Year Visual Comparison:
+  &lt;a href='http://frontenddesignconf.heroku.com/2011'&gt;2012&lt;/a&gt;
+  vs.
+  &lt;a href='http://frontenddesignconference.com/2011'&gt;2013&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The page is actually a little heavier but that is because I added in 9 sponsor logos. Overall, I'm still happy with the improvement in reducing the requests and load time.&lt;/p&gt;
+&lt;h4&gt;Prior Year (2011) Page Weight&lt;/h4&gt;
+&lt;p&gt;
+  &lt;small&gt;2012&lt;/small&gt;
+  625 KB vs. 641 KB
+  &lt;small&gt;2013&lt;/small&gt;
+&lt;/p&gt;
+&lt;h4&gt;Prior Year (2011) HTTP Requests:&lt;/h4&gt;
+&lt;p&gt;
+  &lt;small&gt;2012&lt;/small&gt;
+  54 vs. 39
+  &lt;small&gt;2013&lt;/small&gt;
+&lt;/p&gt;
+&lt;h4&gt;Prior Year (2011) Page Load Time:&lt;/h4&gt;
+&lt;p&gt;
+  &lt;small&gt;2012&lt;/small&gt;
+  6.47 seconds vs. 2.28 seconds
+  &lt;small&gt;2013&lt;/small&gt;
+&lt;/p&gt;
+&lt;h3&gt;Wanna play?&lt;/h3&gt;
+&lt;p&gt;
+  It's hard to explain how rad Mixture is without a video. If you want to play,
+  &lt;a href='http://mixture.io'&gt;download Mixture&lt;/a&gt;
+  and
+  &lt;a href='https://github.com/dandenney/front-end-conf'&gt;grab the front-end-conf repo.&lt;/a&gt;
+&lt;/p&gt;
+&lt;style&gt;
+  p + h3 { margin-top: 2em; }
+&lt;/style&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Ricardo Rally Time</title>
+ 		<link href="http://dandenney.com/posts/general/ricardo-rally-time"/>
+ 		<updated>2013-02-27T00:00:00-05:00</updated>
+ 		<id>http://dandenney.com/posts/general/ricardo-rally-time</id>
+ 		<content type="html">&lt;img src='/images/posts/general/ricardo-rally-time/all2.png' /&gt;
+&lt;h2&gt;Help Me, Help Ricardo&lt;/h2&gt;
+&lt;p&gt;
+  Ricardo Gimenes, who does all of the illustrations for Front-End Conf, is crowd funding an iPad app.
+  &lt;a href='http://catarse.me/en/vectorlooza'&gt;Vectorlooza&lt;/a&gt;
+  is his take on how an illustrator app on the iPad should look and feel.
+&lt;/p&gt;
+&lt;p&gt;
+  The video is entertaining and it looks like it would be a rad app. I'm a huge Ricardo fanboy, so I want to try to help with the last push for him to make his goal.
+&lt;/p&gt;
+&lt;h3&gt;You know you want a character...&lt;/h3&gt;
+&lt;p&gt;
+  I backed the project at a level that will reward me with 3 characters (if the project reaches its goal). I will gladly give these characters away in exchange for some social sharing.
+&lt;/p&gt;
+&lt;p&gt;
+  Tweet something to promote Vectorlooza, link up
+  &lt;a href='http://catarse.me/en/vectorlooza'&gt;http://catarse.me/en/vectorlooza&lt;/a&gt;
+  and include #frontendconf so I can track them.
+&lt;/p&gt;
+&lt;p&gt;
+  If the project reaches its goal, I will do a random draw from those who share for the characters.
+&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Sass Color Variable Pop Quiz</title>
+ 		<link href="http://dandenney.com/posts/front-end-dev/sass-color-variable-pop-quiz"/>
+ 		<updated>2013-01-21T00:00:00-05:00</updated>
+ 		<id>http://dandenney.com/posts/front-end-dev/sass-color-variable-pop-quiz</id>
+ 		<content type="html">&lt;h2&gt;I had a question about color variables&lt;/h2&gt;
+&lt;p&gt;
+  Each project has some really easy to define colors that can get you started. Base font color, a highlight color, link color, etc. Once you're a few hundred lines in though, you start coming across more colors that are used for shading, borders, highlights, etc.
+&lt;/p&gt;
+&lt;p&gt;
+  I knew
+  &lt;a href='http://twitter.com/nickawalsh'&gt;Nick&lt;/a&gt;
+  and
+  &lt;a href='http://twitter.com/drewbarontini'&gt;Drew&lt;/a&gt;
+  would have answers, so I popped some questions into the Envy Design Campfire.
+&lt;/p&gt;
+&lt;h3&gt;
+  How many times do you have to use a color before it should be a variable and how do you conjure up names beyond the first 6 or 7?
+&lt;/h3&gt;
+&lt;p&gt;
+  Nick chimed in with &quot;if I use it more than three-ish times, it's usually time to variableize it or if it's a completely different color that doesn't fall into a sass-adjustment case (e.g blue theme, random green button appears)&quot;. Drew followed up with a gist of examples that was something like this:
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-css'&gt;&lt;!-- / ----- Variables ----- // --&gt;
+&lt;!-- / Brand Colors --&gt;
+$color-brand-a: #606E67
+$color-brand-b: #C98344
+&lt;!-- / Base Colors --&gt;
+$color-base: #636365
+$color-body: #EFEDDF
+$color-border: #A9A9A9
+$color-header: #3F4944
+$color-input: #DCD7CE
+&lt;!-- / Button Colors --&gt;
+$color-btn-a: #228B9B
+$color-btn-b: #783737
+$color-btn-c: #BFBEB2
+&lt;!-- / Utility Colors --&gt;
+$color-error: $color-btn-b
+$color-success: $color-header
+&lt;!-- / Container Colors --&gt;
+$color-block-a: $color-header
+$color-block-b: desaturate(darken($color-body, 4%), 11%)
+$color-block-c: #D4D5C2
+$color-card-a: lighten($color-body, 4%)
+$color-card-b: $color-block-b&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;To the Twitters!&lt;/h3&gt;
+&lt;p&gt;
+  I thought that this might be something cool that other people would have an opinion on. So I tweeted the questions and I'm sharing the answers below. Please chime in if you have a method. I love learning how other people approach these types of things.
+&lt;/p&gt;
+&lt;dl&gt;
+  &lt;dt&gt;
+    Daniel Peplow aka
+    &lt;a href='http://twitter.com/danielpeplow'&gt;@danielpeplow&lt;/a&gt;
+  &lt;/dt&gt;
+  &lt;dd&gt;
+    How many times before variableizing?
+    &lt;b&gt;1&lt;/b&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;
+    Naming approach?
+    &lt;b&gt;red1, red2, darkred1, darkred2, primarybrand, secondarybrand depending on what is required&lt;/b&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;
+    Chris Brauckmuller aka
+    &lt;a href='http://twitter.com/cbrauckmuller'&gt;@cbrauckmuller&lt;/a&gt;
+  &lt;/dt&gt;
+  &lt;dd&gt;
+    How many times before variableizing?
+    &lt;b&gt;1&lt;/b&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;
+    Naming approach?
+    &lt;b&gt;
+      It depends. For neutrals I usually have $gray, $gray-light and $gray-dark. For the main brand colors, I would name the original color something like $brand-green. Then if I needed variants of that, I might do $brand-green-lighterX, where X just represents how many percent lighter it is versus the original.
+    &lt;/b&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;
+    Sample?
+    &lt;a href='https://github.com/cbrauckmuller/helium/blob/master/scss/config.scss'&gt;https://github.com/cbrauckmuller/helium/blob/master/scss/config.scss&lt;/a&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;
+    Elyse Holladay aka
+    &lt;a href='http://twitter.com/elyseholladay'&gt;@elyseholladay&lt;/a&gt;
+  &lt;/dt&gt;
+  &lt;dd&gt;
+    How many times before variableizing?
+    &lt;b&gt;3&lt;/b&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;
+    Naming approach?
+    &lt;b&gt;
+      In a small/personal project, sometimes I'll just say 'blue' 'darkblue', etc.
+      In the large apps I work on, especially ones that require theming, I try to cut down on # of available colors by using darken/lighten in SASS rather than 2 different shades of blue. I name &quot;global&quot; colors like black/white by their names. For themable colors, I go primary/secondary/tertiary/highlight/error/success, and so on.
+    &lt;/b&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;
+    Sample?
+    &lt;a href='https://gist.github.com/4550373'&gt;https://gist.github.com/4550373&lt;/a&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;
+    Chase Woodford aka
+    &lt;a href='http://twitter.com/chase1263070'&gt;@chase1263070&lt;/a&gt;
+  &lt;/dt&gt;
+  &lt;dd&gt;
+    How many times before variableizing?
+    &lt;b&gt;2&lt;/b&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;
+    Naming approach?
+    &lt;b&gt;
+      I try to stick to a ${groupName}-{differentiator} naming convention.
+    &lt;/b&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;
+    Sample?
+    &lt;a href='https://github.com/chasewoodford/chasewoodford.com/blob/master/css/sass/_variables.scss'&gt;https://github.com/chasewoodford/chasewoodford.com/blob/master/css/sass/_variables.scss&lt;/a&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Tech Conference Diversity</title>
+ 		<link href="http://dandenney.com/posts/thoughts/tech-conference-diversity"/>
+ 		<updated>2013-01-06T00:00:00-05:00</updated>
+ 		<id>http://dandenney.com/posts/thoughts/tech-conference-diversity</id>
+ 		<content type="html">&lt;p&gt;The lack of gender diversity in tech conferences hit the tipping point last week. Another all-male lineup was announced and I&amp;rsquo;m guessing the speaker count being so high added the extra frustration.&lt;/p&gt;
+
+&lt;p&gt;Since then, we have gotten &lt;a href=&quot;http://support.iawriter.com/help/kb/general-questions/markdown-syntax-reference-guide&quot;&gt;real pledges&lt;/a&gt;, &lt;a href=&quot;http://conferencequotas.com&quot;&gt;awful satire pledges&lt;/a&gt; and countless Twitter arguments.&lt;/p&gt;
+
+&lt;p&gt;We could benefit from more diversity in our conference lineups, but the solution isn&amp;rsquo;t any form of affirmative action. We need the people that organize conferences to be considerate and to make an effort to discover new people that would love to share their knowledge and experience.&lt;/p&gt;
+
+&lt;p&gt;I can speak from experience on this one and they are very easy to find.&lt;/p&gt;
+</content>
+ 	</entry>
  
  	<entry>
  		<title>Cherry Picking from Frameworks</title>
