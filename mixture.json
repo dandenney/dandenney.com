@@ -2,7 +2,7 @@
   "convertHtmlOutput": null,
   "customRubyPath": null,
   "debug": false,
-  "domain": null,
+  "domain": "dandenney.com",
   "followLeader": true,
   "lintScripts": false,
   "modelSource": null,

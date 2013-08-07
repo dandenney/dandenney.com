@@ -7,7 +7,7 @@ slug: /conferences/front-end-conf-13
 published: true
 ---
 
-%h1 Front-End Conf '13
+%h1 {{ model.title }}
 
 %img(src="https://s3.amazonaws.com/mixture-mixed/161/355/public/images/photos/2013/photo-booth/131.jpg"){:alt => "Front-End Conf"}
 
@@ -27,7 +27,8 @@ published: true
 %p
   Before I share this next bit, I want to be sure to say that as long as we are running Front-End Conf there will be an annual event in St. Petersburg. We have a huge group of people that have supported us and we won't take it away. That said, we do have ideas for other cities and for different events as well. You'll likely see the first location at the end of the video...
 
-%iframe{:allowfullscreen => "", :frameborder => "0", :height => "387", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/70512830?byline=0&portrait=0", :webkitallowfullscreen => "", :width => "688"}
+.video-wrapper
+  %iframe{:allowfullscreen => "", :frameborder => "0", :height => "387", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/70512830?byline=0&portrait=0", :webkitallowfullscreen => "", :width => "688"}
 
 %h2 Thank you Github and MailChimp
 
@@ -128,8 +129,5 @@ published: true
   %a{:href => "http://twitter.com/cherriedenney", :title => "http://twitter.com/cherriedenney"} Cherrie
   for all of the hard work that she does to make the days special.
 
-
-{{ post.date }}
-{{ posts.date }}
-{{ collection.date }}
-{{ article. date }}
+.date
+  {{ model.date | date:'%a %b %d %Y' }}

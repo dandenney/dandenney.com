@@ -10,7 +10,7 @@
 			
 			{% collection "tinkerings" by 100 order desc %}
 				{% include "articles/article" with collection.items %}
-				{% include "articles/paging" %}
+				<!-- {% include "articles/paging" %} -->
 			{% endcollection %}
 			
 		</ul>
