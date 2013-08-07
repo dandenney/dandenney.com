@@ -1,9 +1,0 @@
-site_name: 'Dan Denney - Super Social Front-End Dev'
-site_url: 'http://dandenney.com'
-markdown: rdiscount
-rdiscount:
-    extensions: [smart]
-permalink: /posts/:categories/:title
-paginate: 3
-ftp_host: s64462.gridserver.com
-ftp_dir: /domains/dandenney.com/html

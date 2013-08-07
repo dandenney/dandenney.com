@@ -1,0 +1,52 @@
+// *************************************
+//
+//   Header
+//   -> This is the site header
+//
+// *************************************
+
+.header--site
+  @extend %group
+  +transition(opacity 0.5s linear)
+  border-bottom: $base-border
+  color: #272826
+  opacity: 0.25
+  padding: 0 $base-whitespace
+  p
+    float: left
+    font-size: rem(14px)
+  nav
+    float: right
+    font-size: rem(14px)
+    margin: 1em 0
+  +respond-to(768px)
+    padding: 0 ($base-whitespace * 2)
+  &:hover
+    opacity: 1
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Submodule ----- //
+
+// .module-submodule
+

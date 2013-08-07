@@ -1,0 +1,62 @@
+// *************************************
+//
+//   Base
+//   -> Base-level tags (body, p, etc.)
+//
+// *************************************
+
+html
+  background: $base-background
+  font-size: ($base-fontSize * 0.875)
+  +respond-to(768px)
+    font-size: $base-fontSize
+
+body
+  color: $base-color
+  font-family: $base-fontFamily
+  font-weight: 300
+  line-height: $base-lineHeight
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+p
+  font-size: rem(18px)
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+strong
+  font-weight: 400
+  
+img
+  max-width: 100%
+
+a
+  +transition(color 0.25s ease-out)
+  color: $base-link-color
+  font-weight: 400
+  position: relative
+  text-decoration: none
+  &:before
+    +transition(all 0.25s linear)
+    border-bottom: $base-border
+    border-top: $base-border
+    bottom: -0.25em
+    content: ""
+    left: 50%
+    position: absolute
+    right: -0.25em
+    top: -0.25em
+    width: 0
+    z-index: -1
+  &:hover,
+  &:focus
+    color: scale-color($base-link-color, $lightness: 20%)
+    &:before
+      left: -0.25em
+      width: -webkit-calc(100% + 0.5em)
+      width: calc(100% + 0.5em)
+  

@@ -1,0 +1,20 @@
+{% layout "index" %}
+{% block content %} 
+	
+	<section class="posts">
+		
+		<h1>Blog Posts</h1>
+		<p>The typical article-styled writings</p>
+			
+		<ul>
+			
+			{% collection "posts" by 100 order desc %}
+				{% include "articles/article" with collection.items %}
+				{% include "articles/paging" %}
+			{% endcollection %}
+			
+		</ul>
+
+	</section>
+
+{% endblock %}

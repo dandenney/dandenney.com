@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Dan Denney{% endblock %} Front-End Dev at Envy Labs</title>
+    <link rel="shortcut icon" type="image/ico" href="{{ "favicon.ico" | asset_url }}" />
+    {{ "application.css" | asset_url | stylesheet_tag }}
+    {{ model.css }}
+  </head>
+  
+  <body>
+    {% include "header" %}
+    <header class="tinkerings-header">
+      <h1 class="tinkerings-title">{{ model.title }}</h1>
+      <div class="tinkerings-meta">Posted: <span>{{ model.date | date:'%a %b %d %Y' }}</span></div>
+{% comment %} Tags: {{ article.tags | join:', ' }}.{% endcomment %}
+    </header>
+    <div class="content--tinkerings">
+      
+      {% block content %}{% endblock %}
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    {{ "tinkerings.js" | asset_url | script_tag }}
+    {{ model.js }}
+  </body>
+
+</html>
+

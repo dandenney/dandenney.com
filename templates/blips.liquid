@@ -1,0 +1,20 @@
+{% layout "index" %}
+{% block content %} 
+	
+	<section class="posts">
+		
+		<h1>Blips</h1>
+		<p>Quick thoughts and reactions</p>
+			
+		<ul>
+			
+			{% collection "blips" by 100 order desc %}
+				{% include "articles/article" with collection.items %}
+				{% include "articles/paging" %}
+			{% endcollection %}
+			
+		</ul>
+
+	</section>
+
+{% endblock %}

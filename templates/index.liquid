@@ -1,0 +1,66 @@
+{% layout "index" %}
+{% block content %} 
+	
+	<section class="home">
+
+		<h1>I'm Dan Denney, a front-end dev at <a href="http://envylabs.com">Envy Labs</a> and founder of <a href="http://frontendconf.com">Front-End Conf</a>.<br/>
+		<small>I'm currently revamping this site as my personal playground.</small></h1>
+	
+		<div class="home-featured">
+
+			<header class="header--home-featured">
+				<h2>Blog Posts</h2>
+				<p>The typical article-styled writings</p>
+			</header>
+			
+			<ul class="list--something">
+				{% collection "posts" by 3 order desc %}
+					{% include "articles/article" with collection.items %}
+				{% endcollection %}
+				<li class="pseudoNav--more">
+					<a href="/posts">See All Blog Posts</a>
+				</li>
+			</ul>
+
+		</div>
+		
+
+		<div class="home-featured">
+
+			<header class="header--home-featured">
+				<h2>Blips</h2>
+				<p>Quick thoughts and reactions</p>
+			</header>
+
+			<ul class="list--something">
+				{% collection "blips" by 3 order desc %}
+					{% include "articles/article" with collection.items %}
+				{% endcollection %}
+				<li class="pseudoNav--more">
+					<a href="/blips">See All Blips</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="home-featured">
+			
+			<header class="header--home-featured">
+				<h2>Tinkerings</h2>
+				<p>Front-end devign mini projects</p>
+			</header>
+			
+			<ul class="list--something">
+				{% collection "tinkerings" by 3 order desc %}
+					{% include "articles/article" with collection.items %}
+				{% endcollection %}
+				<!-- <li class="pseudoNav--more">
+					<a href="/tinkerings">See All Tinkerings</a>
+				</li> -->
+			</ul>
+			
+		</div>
+
+	</section>
+
+{% endblock %}

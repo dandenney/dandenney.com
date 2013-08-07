@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Dan Denney{% endblock %} Front-End Dev at Envy Labs</title>
+    <link rel="shortcut icon" type="image/ico" href="{{ "favicon.ico" | asset_url }}" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900,300italic' rel='stylesheet' type='text/css'>
+    {{ "application.css" | asset_url | stylesheet_tag }}
+  </head>
+  <body>
+    
+    {% include "header" %}
+    <main class="content">
+      {% block content %}{% endblock %}
+    </main>
+    {% include "footer" %}
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    
+    {{ "app.js" | asset_url | script_tag }}
+  </body>
+</html>

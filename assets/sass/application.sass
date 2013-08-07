@@ -1,0 +1,138 @@
+// *************************************
+//
+//   Application
+//   -> MVCSS v3.0.1
+//
+// *************************************
+
+// -------------------------------------
+//   Compass
+// -------------------------------------
+
+@import "compass"
+
+// -------------------------------------
+//   Core
+// -------------------------------------
+
+// ----- Reset ----- //
+
+@import "core/reset"
+
+// ----- Settings ----- //
+
+@import "core/settings"
+
+// ----- Helpers ----- //
+
+@import "core/helpers"
+
+// ----- Base ----- //
+
+@import "core/base"
+
+// ----- Content ----- //
+
+@import "core/content"
+
+// ----- Layout ----- //
+
+@import "core/layout"
+
+// -------------------------------------
+//   Modules
+// -------------------------------------
+
+@import "modules/example"
+@import "modules/buttons"
+@import "modules/header"
+@import "modules/footer"
+@import "modules/pseudoNav"
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
+
+
+
+.posts
+  margin: ($base-whitespace * 2) auto
+
+.home
+  h1
+    font-weight: 300
+    margin: 0 0 ($base-whitespace * 2)
+    a
+      font-weight: 300
+  padding: $base-whitespace
+  +respond-to(768px)
+    padding: ($base-whitespace * 2)
+  
+  .pseudoNav
+    h2
+      font-size: rem(16px)
+    .date,
+    p
+      font-size: rem(12px)
+
+.home-featured
+  +box-sizing(border-box)
+  margin-bottom: $base-whitespace
+  +respond-to(980px)
+    display: inline-block
+    margin: 0 -4px 0 0
+    vertical-align: top
+    width: 30%
+    + .home-featured
+      margin-left: 5%
+    
+.header--home-featured
+  // border: $base-border
+  border-bottom: 0
+  padding: ($base-whitespace / 2) 0
+  h2,
+  p
+    margin: 0
+  p
+    color: $base-color--light
+    margin-top: -(rem(10px))
+
+
+.divider
+  color: $base-border-color
+
+.tinkerings-header
+  background: #454545
+  text-align: center
+
+.tinkerings-title,
+.tinkerings-meta
+  color: #fff
+  display: inline-block
+  
+.tinkerings-title
+  font-size: 1.25em
+  
+.tinkerings-meta
+  font-size: 0.8em
+  margin-left: 1em
+  opacity: 0.5
+  
+.posts
+  h1
+    margin-bottom: 0
+    + p 
+      margin-top: 0
+  +respond-to(1000px)
+    text-align: center
+      
+
+// Article Specific
+
+.split
+  display: inline-block
+  margin: 0 -4px 0 0
+  width: 50%
+  
+.freddie
+  max-width: 90%

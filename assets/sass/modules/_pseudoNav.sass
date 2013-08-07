@@ -1,0 +1,64 @@
+// *************************************
+//
+//   Pseudo Nav
+//   -> This is a list of items as navigation
+//
+// *************************************
+
+.pseudoNav
+  h2
+    color: $base-link-color
+  a
+    +transition(opacity 0.35s linear)
+    display: block
+    padding: 1em 0
+  h2,
+  p
+    margin: 0  
+  .date
+    color: $base-color--light
+    font-weight: 300
+  &.not--hovered
+    a
+      opacity: 0.25
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.btn--a
+  @extend %btn
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.home
+  .pseudoNav
+    a
+      padding: 0.5em 0
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Submodule ----- //
+
+.pseudoNav--more
+  background: #fcfcfc
+  border: $base-border
+  margin-top: $base-whitespace
+  text-align: center
+  a
+    display: block
+    padding: 1em
+    &:before,
+    &:after
+      display: none
+
