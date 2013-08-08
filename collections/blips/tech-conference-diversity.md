@@ -5,8 +5,6 @@ date: January 6, 2013
 published: true
 ---
 
-# Tech Conference Diversity
-
 The lack of gender diversity in tech conferences hit the tipping point last week. Another all-male lineup was announced and I'm guessing the speaker count being so high added the extra frustration. 
 
 Since then, we have gotten [real pledges](http://support.iawriter.com/help/kb/general-questions/markdown-syntax-reference-guide), [awful satire pledges](http://conferencequotas.com) and countless Twitter arguments.

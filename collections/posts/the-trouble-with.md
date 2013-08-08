@@ -7,8 +7,6 @@ slug: /general/the-trouble-with
 published: true
 ---
 
-# The Trouble with "The Trouble with Code School"
-
 Zach Wentz was recently invited to Medium, and for his first post, he wrote ["The Trouble with Code School"](http://medium.com/i-m-h-o/56ed7faaad58). (Actually he wrote CodeSchool, but I wanted to fix that.) In it, he accurately describes a flaw in online education platforms in that they do not teach every bit of technology leading up to the scoped piece of technology that they describe.
 
 In many ways, he's right. If you are looking to learn programming, you absolutely should understand the concepts [that he shared in his post](http://medium.com/i-m-h-o/56ed7faaad58). That said, Zach's trouble comes with misunderstanding or misstating the purpose of something and then generalizing that something with other somethings.

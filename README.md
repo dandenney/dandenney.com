@@ -1,3 +1,8 @@
-# Neil Kinnish Blog
+# Dan Denney's Personal Playground
 
-This is a work in progress while I play around with new blog ideas for my personal site.
+Sing it with me: This used to be my playground...
+
+Well, not it is again. I'm following Rdio's lead and starting with almost just text. I'll work my way up and improve my UI skills as I play around with the evolving design.
+
+### Dependencies
+[Mixture](http://mixture.io) - you'll need to use this if you want to run the site locally.

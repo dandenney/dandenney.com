@@ -3,15 +3,15 @@
 <rss version="2.0">
 	<channel>
 		<generator>Mixture</generator>
-		<title>Neil Kinnish : Articles</title>
-		<link>http://neilkinnish.com</link>
-		<description>Previously TAK! now... Developer / Creative / Consultant. Currently meddling with new technology and ideas. Co-founder @teammixture @workfu.</description>
+		<title>Dan Denney : Articles</title>
+		<link>http://dandenney.com</link>
+		<description>Front-End Dev at Envy Labs and Founder of Front-End Conf</description>
 		<language>en</language>
-		<webMaster>hello@neilkinnish.com</webMaster>
-		<copyright>&amp;copy;{{ 'now' | date: "%Y" }} Neil Kinnish</copyright>
+		<webMaster>dd.subscriptions@gmail.com</webMaster>
+		<copyright>&amp;copy;{{ 'now' | date: "%Y" }} Dan Denney</copyright>
 		<pubDate>Thu, 06 Jun 2013 12:17:05 GMT</pubDate>
 		<lastBuildDate>Thu, 06 Jun 2013 12:17:05 GMT</lastBuildDate>
-		{% collection "article" by 10 order desc %}
+		{% collection "posts" by 10 order desc %}
 			{% include "articles/rss-item" with collection.items %}
 		{% endcollection %}
 	</channel>

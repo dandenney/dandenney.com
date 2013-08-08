@@ -10,14 +10,17 @@
   <body>
     
     {% include "header" %}
+    
     <main class="content">
       {% block content %}{% endblock %}
     </main>
+    
     {% include "footer" %}
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     
     {{ "app.js" | asset_url | script_tag }}
+    
     <script type="text/javascript">
       var _gauges = _gauges || [];
       (function() {
@@ -31,5 +34,6 @@
         s.parentNode.insertBefore(t, s);
       })();
     </script>
+  
   </body>
 </html>

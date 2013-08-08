@@ -5,8 +5,6 @@ date: September 15, 2012
 published: true
 ---
 
-# Execution is All That Matters
-
 Working in the 'online world', it is hard to not have multiple ideas per day on things that you would like to create. More than anything else, what I have learned is that execution is all that matters. 
 
 Shipping is vital. It's not the only thing that matters, but getting your idea into something that people can interact with has to be your number one goal. How you execute (along with some or the random market stuff) will determine how successful your idea is, but you can't know how well you execute until you actually do.
