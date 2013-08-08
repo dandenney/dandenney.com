@@ -1,0 +1,69 @@
+// *************************************
+//
+//   Home
+//   -> Styles specific to the home page
+//
+// *************************************
+
+.home
+  h1
+    font-weight: 300
+    margin: 0 0 ($base-whitespace * 2)
+    a
+      font-weight: 300
+  padding: $base-whitespace
+  +respond-to(768px)
+    padding: ($base-whitespace * 2)
+  
+  .pseudoNav
+    h2
+      font-size: rem(16px)
+    .date,
+    p
+      font-size: rem(12px)
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Home Featured ----- //
+
+.home-featured
+  +box-sizing(border-box)
+  margin-bottom: $base-whitespace
+  +respond-to(980px)
+    display: inline-block
+    margin: 0 -4px 0 0
+    vertical-align: top
+    width: 30%
+    + .home-featured
+      margin-left: 5%
+      
+.header--home-featured
+  border-bottom: 0
+  padding: ($base-whitespace / 2) 0
+  h2,
+  p
+    margin: 0
+  p
+    color: $base-color--light
+    margin-top: -(rem(10px))
+

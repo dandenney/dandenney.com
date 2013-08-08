@@ -635,6 +635,10 @@ ol {
   }
 }
 
+.pseudoNav {
+  border: 1px solid #efefef;
+  border-top: 0;
+}
 .pseudoNav h2 {
   color: #b51f24;
 }
@@ -678,6 +682,17 @@ ol {
 
 .posts {
   margin: 40px auto;
+}
+.posts h1 {
+  margin-bottom: 0;
+}
+.posts h1 + p {
+  margin-top: 0;
+}
+@media screen and (min-width: 1000px) {
+  .posts {
+    text-align: center;
+  }
 }
 
 .home {
@@ -732,43 +747,6 @@ ol {
 .header--home-featured p {
   color: #999999;
   margin-top: -0.625rem;
-}
-
-.divider {
-  color: #efefef;
-}
-
-.tinkerings-header {
-  background: #454545;
-  text-align: center;
-}
-
-.tinkerings-title,
-.tinkerings-meta {
-  color: white;
-  display: inline-block;
-}
-
-.tinkerings-title {
-  font-size: 1.25em;
-}
-
-.tinkerings-meta {
-  font-size: 0.8em;
-  margin-left: 1em;
-  opacity: 0.5;
-}
-
-.posts h1 {
-  margin-bottom: 0;
-}
-.posts h1 + p {
-  margin-top: 0;
-}
-@media screen and (min-width: 1000px) {
-  .posts {
-    text-align: center;
-  }
 }
 
 .split {
