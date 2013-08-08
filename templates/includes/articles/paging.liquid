@@ -1,14 +1,13 @@
-<div class="paging">
-	{% if collection.previous %}
-		{% capture prev %}{{ collection.current_page | minus:1 }}{% endcapture %}
-		{% if prev == "1" %}
-			<a href="/" class="previous">Previous</a>
-		{% else %}
-			<a href="/page-{{ prev }}" class="previous">Previous</a>
-		{% endif %}
+<div class="posts-paging">
+
+  {% if collection == posts %}
+		
+		<a href="/posts">Back to All Blog Posts</a>
+
+	{% else collection == blips %}
+
+		<a href="/blips">Back to All Blips</a>
+
 	{% endif %}
-	<span>Showing items {{ collection.current_offset | plus: 1 }}-{% if collection.next %}{{ paging.current_offset | plus: collection.page_size }}{% else %}{{ collection.size }}{% endif %} of {{ collection.size }}</span>
-	{% if collection.next %}
-		<a href="/page-{{ collection.current_page | plus:1 }}" class="next">Next</a>
-	{% endif %}
+
 </div>

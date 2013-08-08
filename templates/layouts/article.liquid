@@ -16,6 +16,7 @@
         <h1>{{ model.title }}</h1>
         {% block content %}{% endblock %}
         <small class="date">{{ model.date | date:'%b %d %Y' }}</small>
+        {% include "articles/paging" %}
       </article>
     </main>
     

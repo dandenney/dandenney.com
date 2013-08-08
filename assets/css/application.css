@@ -472,6 +472,10 @@ html {
 }
 
 body {
+  -webkit-animation: 0.5s 0 forwards fadeIn;
+  -moz-animation: 0.5s 0 forwards fadeIn;
+  -ms-animation: 0.5s 0 forwards fadeIn;
+  animation: 0.5s 0 forwards fadeIn;
   color: #111111;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -799,16 +803,16 @@ main {
   padding: 0.5em;
 }
 
-.pseudoNav--more {
+.pseudoNav--more, .posts-paging {
   background: #fcfcfc;
   border: 1px solid #efefef;
   text-align: center;
 }
-.pseudoNav--more a {
+.pseudoNav--more a, .posts-paging a {
   display: block;
   padding: 1em;
 }
-.pseudoNav--more a:before, .pseudoNav--more a:after {
+.pseudoNav--more a:before, .posts-paging a:before, .pseudoNav--more a:after, .posts-paging a:after {
   display: none;
 }
 
@@ -825,6 +829,11 @@ main {
   .posts {
     text-align: center;
   }
+}
+
+.posts-paging {
+  margin: 40px 0;
+  text-align: center;
 }
 
 .home h1 {
