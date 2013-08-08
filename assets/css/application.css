@@ -758,8 +758,8 @@ main {
   bottom: 0;
   color: #272826;
   position: fixed;
-  right: -240px;
-  width: 15rem;
+  right: -260px;
+  width: 260px;
   z-index: 2;
 }
 .footer--site p {
