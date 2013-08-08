@@ -13,7 +13,11 @@
   a
     +transition(opacity 0.35s linear)
     display: block
-    padding: 1em 0
+    padding: 1em
+    &:hover
+      &:before,
+      &:after
+        display: none
   h2,
   p
     margin: 0  
@@ -44,7 +48,7 @@
 .home
   .pseudoNav
     a
-      padding: 0.5em 0
+      padding: 0.5em
 
 // -------------------------------------
 //   Submodules
@@ -55,7 +59,7 @@
 .pseudoNav--more
   background: #fcfcfc
   border: $base-border
-  margin-top: $base-whitespace
+  border-top: 0
   text-align: center
   a
     display: block

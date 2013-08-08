@@ -648,7 +648,10 @@ ol {
   -o-transition: opacity 0.35s linear;
   transition: opacity 0.35s linear;
   display: block;
-  padding: 1em 0;
+  padding: 1em;
+}
+.pseudoNav a:hover:before, .pseudoNav a:hover:after {
+  display: none;
 }
 .pseudoNav h2,
 .pseudoNav p {
@@ -663,13 +666,13 @@ ol {
 }
 
 .home .pseudoNav a {
-  padding: 0.5em 0;
+  padding: 0.5em;
 }
 
 .pseudoNav--more {
   background: #fcfcfc;
   border: 1px solid #efefef;
-  margin-top: 20px;
+  border-top: 0;
   text-align: center;
 }
 .pseudoNav--more a {
@@ -737,8 +740,8 @@ ol {
 }
 
 .header--home-featured {
-  border-bottom: 0;
-  padding: 10px 0;
+  border: 1px solid #efefef;
+  padding: 10px;
 }
 .header--home-featured h2,
 .header--home-featured p {
