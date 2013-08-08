@@ -6,6 +6,7 @@
 // *************************************
 
 @import "compass"
+@import "core/reset"
 
 // For the full height sidebar, all parents must be set to 100%
 %fullHeight
@@ -21,12 +22,10 @@ body
 // -------------------------------------
 
 .content--tinkerings
-  height: 85%
-  min-height: 85%
+  @extend %fullHeight
   
 .ui-slidebar
-  height: 85%
-  min-height: 85%
+  @extend %fullHeight
   overflow-x: hidden
   overflow-y: scroll
   position: relative
@@ -54,10 +53,12 @@ body
 .slidebar-content
   +transition(all 0.3s linear)
   +translate(-250px, 0)
+  opacity: 0
   visibility: hidden
   width: 250px
   .is--expanded &
     +translate(0, 0)
+    opacity: 1
     visibility: visible
 
 .toggle-is--expanded
@@ -123,6 +124,7 @@ body
       display: block
       padding: 0.5em
       text-align: center
+      text-decoration: none
       &:hover
         background: scale-color(#b23b29, $lightness: -10%)
         text-decoration: none
