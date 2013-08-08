@@ -472,10 +472,10 @@ html {
 }
 
 body {
-  -webkit-animation: 0.5s 0 forwards fadeIn;
-  -moz-animation: 0.5s 0 forwards fadeIn;
-  -ms-animation: 0.5s 0 forwards fadeIn;
-  animation: 0.5s 0 forwards fadeIn;
+  -webkit-animation: 0.5s forwards fadeIn;
+  -moz-animation: 0.5s forwards fadeIn;
+  -ms-animation: 0.5s forwards fadeIn;
+  animation: 0.5s forwards fadeIn;
   color: #111111;
   font-family: "Lato", sans-serif;
   font-weight: 300;
