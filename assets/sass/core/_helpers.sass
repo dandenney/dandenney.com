@@ -71,3 +71,34 @@
 //   Animations
 // -------------------------------------
 
+// keyframes mixin to shorten up entries
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+// mixin for calling animation with browser prefixes
+=animation($arguments...) 
+  -webkit-animation: $arguments
+  -moz-animation: $arguments
+  -ms-animation: $arguments
+  animation: $arguments
+    
+// fade in from opaque
++keyframes(fadeIn)
+  from
+    opacity: 0
+  to
+    opacity: 1
+    
+// fade in from opaque
++keyframes(fadeOut)
+  from
+    opacity: 1
+  to
+    opacity: 0

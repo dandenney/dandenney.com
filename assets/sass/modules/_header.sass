@@ -5,24 +5,28 @@
 //
 // *************************************
 
+main
+  overflow-x: hidden
+  overflow-y: scroll
+  position: relative
+
 .header--site
   @extend %group
-  +transition(opacity 0.5s linear)
+  +transition(all 0.35s linear)
+  +translate(240px, 0)
+  background: #fff
+  border: $base-border
   border-bottom: $base-border
+  border-right: none
+  bottom: 0
   color: #272826
-  opacity: 0.25
-  padding: 0 $base-whitespace
-  p
-    float: left
-    font-size: rem(14px)
-  nav
-    float: right
-    font-size: rem(14px)
-    margin: 1em 0
-  +respond-to(768px)
-    padding: 0 ($base-whitespace * 2)
-  &:hover
-    opacity: 1
+  width: rem(240px)  
+  top: 0
+  right: 0
+  position: fixed
+  z-index: 1
+  &.is--expanded
+    +translate(0, 0)
 
 // -------------------------------------
 //   Modifiers
@@ -48,5 +52,42 @@
 
 // ----- Submodule ----- //
 
-// .module-submodule
+.header--site-trigger
+  background: #fff
+  border: $base-border
+  box-shadow: none
+  color: $base-color--light
+  display: block
+  font-size: rem(40px)
+  line-height: 0.75
+  padding: 0 rem(12px) rem(10px)
+  position: absolute
+  right: 100%
+  top: -1px
+  
+.header--site-content
+  text-align: center
+  h5
+    margin: 0
+    + p
+      margin-top: 0
+  p
+    font-size: rem(14px)
+
+.header--site-nav
+  a
+    +transition(color 0.25s linear)
+    background: $base-color--highlight
+    border-bottom: $base-border
+    display: block
+    padding: 0.5em
+    text-align: center
+    &:first-child
+      border-top: $base-border
+    &:hover
+      &:before,
+      &:after
+        display: none
+    &.not--hovered
+      color: rgba($base-link-color, 0.25)
 

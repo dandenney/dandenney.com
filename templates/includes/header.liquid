@@ -1,7 +1,21 @@
 <header class="header--site">
-	<p>Dan Denney <span class="divider">|</span> Front-End Dev at <a href="http://envylabs.com">Envy Labs</a></p>
+
+  <button class="header--site-trigger">&equiv;</button>
+  
+  <section class="header--site-content">
+
+    <img src="{{ "dan-code-school.svg" | asset_url }}" alt="Dan Denney" width="100" />
+	 <h5>Dan Denney</h5>
+    <p>Front-End Dev at <a href="http://envylabs.com">Envy Labs</a> and founder of <a href="http://frontendconf.com">Front-End Conf</a>.</p>
+
+  </section>
+
 	<!-- TODO: Need to create a full nav, including a sidebar with info -->
-  <nav>
-    <a href="/"><span>Home</span></a>
+  <nav class="header--site-nav">
+    <a href="/">Home</a>
+    <a href="/posts">Blog Posts</a>
+    <a href="/blips">Blips</a>
+    <a href="/tinkerings">Tinkerings</a>
   </nav>
+
 </header>

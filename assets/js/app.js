@@ -42,11 +42,15 @@
     };
   })(jQuery);
 
-  $(".pseudoNav").hover((function() {
+  $(".pseudoNav, .header--site-nav a").hover((function() {
     $(this).siblings().addClass("not--hovered");
     return $(this).removeClass("not--hovered");
   }), function() {
     return $(this).siblings().removeClass("not--hovered");
+  });
+
+  $(".header--site-trigger").on("click", function() {
+    return $(".header--site, .footer--site").toggleClass("is--expanded");
   });
 
   jQuery(function($) {
