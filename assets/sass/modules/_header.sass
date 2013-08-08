@@ -13,14 +13,14 @@ main
 .header--site
   @extend %group
   +transition(all 0.35s linear)
-  +translate(240px, 0)
+  +translate(260px, 0)
   background: #fff
   border: $base-border
   border-bottom: $base-border
   border-right: none
   bottom: 0
   color: #272826
-  width: rem(240px)  
+  width: 260px
   top: 0
   right: 0
   position: fixed
@@ -58,14 +58,16 @@ main
   box-shadow: none
   color: $base-color--light
   display: block
-  font-size: rem(40px)
+  font-size: 40px
   line-height: 0.75
-  padding: 0 rem(12px) rem(10px)
+  padding: 0 12px 10px
   position: absolute
   right: 100%
   top: -1px
   
 .header--site-content
+  margin: 0 auto
+  width: 200px
   text-align: center
   h5
     margin: 0
