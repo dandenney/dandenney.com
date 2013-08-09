@@ -476,10 +476,10 @@ body {
   -moz-animation: 0.5s forwards fadeIn;
   -ms-animation: 0.5s forwards fadeIn;
   animation: 0.5s forwards fadeIn;
-  color: #111111;
-  font-family: "Lato", sans-serif;
+  color: #3d3d3d;
+  font-family: "museo-sans-1", "museo-sans-2";
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.9;
 }
 
 p {
@@ -532,8 +532,8 @@ a:hover:before, a:focus:before {
 h1, h2, h3,
 h4, h5, h6 {
   color: #5e5e5e;
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
+  font-family: "proxima-nova-1", "proxima-nova-2";
+  font-weight: 700;
 }
 
 h1, .c-h1 {
@@ -715,7 +715,7 @@ main {
 
 .header--site-content {
   margin: 0 auto;
-  width: 200px;
+  width: 210px;
   text-align: center;
 }
 .header--site-content h5 {
@@ -795,7 +795,6 @@ main {
 }
 .pseudoNav .date {
   color: #999999;
-  font-weight: 300;
 }
 .pseudoNav.not--hovered a {
   opacity: 0.25;
