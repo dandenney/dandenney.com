@@ -844,6 +844,11 @@ main {
 .home h1 a {
   font-weight: 300;
 }
+.home h1 small {
+  color: #999999;
+  display: block;
+  margin-top: -1rem;
+}
 @media screen and (min-width: 768px) {
   .home h1 {
     text-align: center;
