@@ -847,12 +847,14 @@ main {
 .home h1 small {
   color: #999999;
   display: block;
-  margin-top: -1rem;
 }
 @media screen and (min-width: 768px) {
   .home h1 {
     text-align: center;
     margin: 20px 0;
+  }
+  .home small {
+    margin-top: -1rem;
   }
 }
 .home .pseudoNav h2 {
