@@ -1,0 +1,62 @@
+// *************************************
+//
+//   SVG Cassette
+//   -> Playing with CSS and Animations in SVG
+//
+// *************************************
+
+@import "compass"
+@import "application"
+
+// -------------------------------------
+//   Animation Setup
+// -------------------------------------
+
+// keyframes mixin to shorten up entries
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+// mixin for calling animation with browser prefixes
+=animation($arguments...) 
+  -webkit-animation: $arguments
+  -moz-animation: $arguments
+  -ms-animation: $arguments
+  animation: $arguments
+  
+// fade in from opaque
++keyframes(spinThatIsh)
+  from
+    +transform(rotate(0deg))
+  to
+    +transform(rotate(360deg))
+
+.explanation
+  margin: 0 auto
+  max-width: 700px
+  width: 87.5%
+
+// -------------------------------------
+//   UI Slidebar
+// -------------------------------------
+
+svg
+  // +animation(1s infinite spinThatIsh)
+  display: block
+  margin: 100px auto
+
+.reel-left,
+.reel-right
+  fill: #fffb00
+  
+.circle-sample
+  +animation(1s infinite spinThatIsh)
+  fill: #fffb00
+  height: 70px
+  width: 70px
