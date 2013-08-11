@@ -50,13 +50,11 @@ svg
   // +animation(1s infinite spinThatIsh)
   display: block
   margin: 100px auto
+  &:hover
+    .reel-right,
+    .reel-left
+      +animation(1s infinite spinThatIsh)
 
 .reel-left,
 .reel-right
   fill: #fffb00
-  
-.circle-sample
-  +animation(1s infinite spinThatIsh)
-  fill: #fffb00
-  height: 70px
-  width: 70px
