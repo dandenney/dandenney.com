@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: Execution is All That Matters
 date: September 15, 2012
 published: true

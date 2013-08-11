@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: Subtly Seeking Svbtle
 date: November 12, 2012
 published: true

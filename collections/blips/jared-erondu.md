@@ -1,5 +1,6 @@
 ---
 title: Jared Erondu
+section: blips
 category: blips
 date: October 2, 2012
 published: true

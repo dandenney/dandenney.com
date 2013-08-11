@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: Production-Shipping Balance
 date: November 14, 2012
 published: true

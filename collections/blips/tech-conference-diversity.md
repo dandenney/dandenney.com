@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: Tech Conference Diversity
 date: January 6, 2013
 published: true

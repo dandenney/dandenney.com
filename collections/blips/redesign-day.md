@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: Redesign Day
 date: October 3, 2012
 published: true

@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: Ideas
 date: October 1, 2012
 published: true

@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: Cherry Picking from Frameworks
 date: November 27, 2012
 published: true

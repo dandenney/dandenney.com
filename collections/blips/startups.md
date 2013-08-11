@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: Startups
 date: September 24, 2012
 published: true

@@ -1,5 +1,6 @@
 ---
 layout: article
+section: posts
 title: The Trouble with "The Trouble with Code School"
 category: General
 date: April 30, 2013

@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: I Missed RSS
 date: August 9, 2013
 published: true

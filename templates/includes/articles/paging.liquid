@@ -1,12 +1,12 @@
 <div class="posts-paging">
 
-  {% if model == posts %}
+  {% if model.section == "posts" %}
 		
 		<a href="/posts">Back to All Blog Posts</a>
 
-	{% else model == blips %}
+  {% else %}
 
-		<a href="/blips">Back to All Blips</a>
+    <a href="/blips">Back to All Blips</a>
 
 	{% endif %}
 

@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: I'm an Aethestics Snob
 date: October 4, 2012
 published: true

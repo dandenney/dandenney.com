@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: I Love Kippt
 date: September 15, 2012
 published: true

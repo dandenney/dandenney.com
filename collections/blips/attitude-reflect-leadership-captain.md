@@ -1,5 +1,6 @@
 ---
 layout: article
+section: blips
 title: Attitude Reflect Leadership, Captain
 date: September 18, 2012
 published: true
