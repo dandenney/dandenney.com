@@ -127,7 +127,14 @@ c-0.533,3.418-1.893,6.558-3.871,9.214l-4.199-4.198l-4.223,4.225l4.211,4.214c-2.6
 c-3.525-0.44-6.775-1.759-9.529-3.729l4.516-4.516l-4.227-4.225l-4.605,4.607c-2.146-2.74-3.627-6.027-4.188-9.623h6.715v-5.973
 h-6.789c0.477-3.672,1.898-7.043,4.023-9.86l4.844,4.845l4.225-4.226l-4.832-4.833c2.82-2.098,6.188-3.495,9.848-3.955v6.711h5.975
 v-6.609c3.557,0.573,6.812,2.045,9.531,4.174l-4.516,4.513l4.225,4.226l4.424-4.423c1.953,2.729,3.266,5.947,3.717,9.438h-6.064
-v5.973H114.633z"/>
+v5.973H114.633z">
+<animateTransform attributeName="transform" attributeType="XML" type="rotate"
+from="0, 91, 91" to="-360, 91, 91"
+begin="0s" dur="10s"
+repeatCount="indefinite"/>
+</path>
+
+
 
 <path class="reel-left" fill="#FFFFFF" d="M230.863,56.947c-18.951,0-34.312,15.362-34.313,34.312c0,18.952,15.362,34.313,34.313,34.313
 c18.949,0,34.312-15.361,34.312-34.313C265.176,72.31,249.812,56.947,230.863,56.947z M251.521,94.517
@@ -135,12 +142,14 @@ c-0.535,3.418-1.895,6.558-3.869,9.214l-4.199-4.198l-4.227,4.225l4.211,4.214c-2.6
 v6.167c-3.527-0.44-6.775-1.759-9.529-3.729l4.514-4.516l-4.225-4.225l-4.606,4.607c-2.147-2.74-3.626-6.027-4.188-9.623h6.717
 v-5.973h-6.789c0.476-3.672,1.898-7.043,4.021-9.86l4.846,4.845l4.225-4.226l-4.832-4.833c2.818-2.098,6.188-3.495,9.848-3.955
 v6.711h5.973v-6.609c3.561,0.573,6.812,2.045,9.533,4.174l-4.516,4.513l4.225,4.226l4.424-4.423
-c1.953,2.729,3.266,5.947,3.719,9.438h-6.064v5.973H251.521z"/>
+c1.953,2.729,3.266,5.947,3.719,9.438h-6.064v5.973H251.521z">
+</path>
 
 <rect x="23.797" y="126.184" fill="#EC008C" width="277.432" height="15.888"/>
 </g>
 
 </svg>
+
 
 .explanation
   %p
@@ -148,5 +157,8 @@ c1.953,2.729,3.266,5.947,3.719,9.438h-6.064v5.973H251.521z"/>
     %a(href="http://codepen.io/noahblon/pen/lxukH") pen
     and I have been wanting to learn about styling and animating SVGs. So I'm tinkering with this and the goals are to change the appearance of the cassette with CSS and to make the reels spin.
   %p
-    The first issue that I've run into is rotating pieces of the SVG is tricky as the axis is different. Rotating the whole SVG in place is easy. If you hover on the cassette, you'll see what happens with the reels with a basic 360 rotation.
+    %strike
+      The first issue that I've run into is rotating pieces of the SVG is tricky as the axis is different. Rotating the whole SVG in place is easy. If you hover on the cassette, you'll see what happens with the reels with a basic 360 rotation.
+  %p
+    Learned about animatetransform, but I'm not able to nail down the x coordinates yet. I'm very close, but just by hacking around.
 

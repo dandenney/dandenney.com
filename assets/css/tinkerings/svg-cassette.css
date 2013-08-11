@@ -990,13 +990,6 @@ svg {
   display: block;
   margin: 100px auto;
 }
-svg:hover .reel-right,
-svg:hover .reel-left {
-  -webkit-animation: 1s infinite spinThatIsh;
-  -moz-animation: 1s infinite spinThatIsh;
-  -ms-animation: 1s infinite spinThatIsh;
-  animation: 1s infinite spinThatIsh;
-}
 
 .reel-left,
 .reel-right {
