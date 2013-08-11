@@ -6,6 +6,11 @@
     <script type="text/javascript" src="//use.typekit.net/cxh3ytl.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     {{ "application.css" | asset_url | stylesheet_tag }}
+    {% if model.code-sample %}
+    
+      {{ "prism.css" | asset_url | stylesheet_tag }}
+    
+    {% endif %}
     {{ model.css }}
   </head>
   <body>
@@ -38,6 +43,12 @@
     {% include "footer" %}
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    {% if model.code-sample %}
+    
+      {{ "prism.js" | asset_url | script_tag }}
+    
+    {% endif %}
     
     {{ "app.js" | asset_url | script_tag }}
 
