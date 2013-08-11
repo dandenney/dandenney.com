@@ -1,0 +1,116 @@
+.l-bucket {
+  margin: 3em auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.post {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+}
+.post h1, .post h2 {
+  color: black;
+  font-family: "proxima-nova-alt-1", "proxima-nova-alt-2";
+  text-transform: uppercase;
+}
+.post a {
+  -webkit-transition: color 400ms linear;
+  -moz-transition: color 400ms linear;
+  -o-transition: color 400ms linear;
+  transition: color 400ms linear;
+  color: #8f261f;
+}
+.post a:hover {
+  color: #651b16;
+  text-decoration: underline;
+}
+
+.container, #disqus_thread,
+h1,
+.date,
+.posts-paging {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+.container img, #disqus_thread img,
+h1 img,
+.date img,
+.posts-paging img {
+  border: 0.5em solid #711a0d;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+}
+.rebuild-speaker {
+  background: #711a0d;
+  margin: 3em 0 1em;
+  position: relative;
+}
+.rebuild-speaker h3 {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  color: white;
+  font-family: "proxima-nova-alt-1", "proxima-nova-alt-2";
+  font-size: 2em;
+  letter-spacing: -2px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 35%;
+  width: 100%;
+  z-index: 2;
+}
+.rebuild-speaker img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  position: relative;
+  z-index: 1;
+}
+.rebuild-speaker + p {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .rebuild-speaker h3 {
+    font-size: 6em;
+  }
+}
+.block-speaker {
+  background: whitesmoke;
+  padding-bottom: 1em;
+}
+.block-speaker:hover .rebuild-speaker img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.block-speaker:hover .rebuild-speaker h3 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+  opacity: 0.1;
+}
+
+.date {
+  display: block;
+  margin-top: 2em;
+}
+
+.posts-paging {
+  margin: 3em auto;
+}
