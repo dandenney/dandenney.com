@@ -260,7 +260,7 @@ v-6.609c3.557,0.573,6.812,2.045,9.531,4.174l-4.516,4.513l4.225,4.226l4.424-4.423
 v5.973H114.633z">
 <animateTransform attributeName="transform" attributeType="XML" type="rotate"
 from="0, 93.97, 92.07" to="-360, 93.97, 92.07"
-begin="0s" dur="10s"
+begin="0s" dur="1.5s"
 repeatCount="indefinite"/>
 </path>
 
@@ -273,7 +273,7 @@ v6.711h5.973v-6.609c3.561,0.573,6.812,2.045,9.533,4.174l-4.516,4.513l4.225,4.226
 c1.953,2.729,3.266,5.947,3.719,9.438h-6.064v5.973H251.521z">
 <animateTransform attributeName="transform" attributeType="XML" type="rotate"
 from="0, 231.064, 92.07" to="-360, 231.064, 92.07"
-begin="0s" dur="10s"
+begin="0s" dur="1.5s"
 repeatCount="indefinite"/>
 </path>
 
@@ -290,7 +290,7 @@ repeatCount="indefinite"/>
     %strike
       The first issue that I've run into is rotating pieces of the SVG is tricky as the axis is different. Rotating the whole SVG in place is easy. If you hover on the cassette, you'll see what happens with the reels with a basic 360 rotation.
   %p
-    Learned about animatetransform and struggled hacking around to get the right coordinates. Turns out I would have never gotten it right. Ended up recreating the SVG in Illustrator and using the navigator to get the coordinates. Fractions of a pixel, FTW!
+    Learned about animatetransform and struggled hacking around to get the right coordinates. Turns out I would have never gotten it right. Ended up recreating the SVG in Illustrator and using the navigator to get the coordinates. Fractions of a pixel, FTW! I tweaked the timing to speed it up and looks like It's still not the exact midpoint.
 
   %img{ :src => "/assets/images/tinkerings/cassette-screenshot.png", :alt => "cassette SVG in Illustrator", :width => "344" }
 
