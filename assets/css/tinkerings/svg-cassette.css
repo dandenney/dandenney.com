@@ -777,6 +777,7 @@ main {
 }
 .pseudoNav h2 {
   color: #b51f24;
+  line-height: 1.2;
 }
 .pseudoNav a {
   -webkit-transition: opacity 0.35s linear;
