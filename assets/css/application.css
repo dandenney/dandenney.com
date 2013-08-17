@@ -500,7 +500,6 @@ a {
   -o-transition: color 0.25s ease-out;
   transition: color 0.25s ease-out;
   color: #b51f24;
-  font-weight: 400;
   position: relative;
   text-decoration: none;
 }

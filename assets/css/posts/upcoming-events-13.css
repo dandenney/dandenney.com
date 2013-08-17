@@ -1,0 +1,236 @@
+.l-bucket {
+  max-width: 100%;
+  width: 100%;
+}
+
+.container, h1, .posts-paging, #disqus_thread, .date {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 87.5%;
+}
+
+h2.container, h2.posts-paging, h2#disqus_thread, h2.date {
+  margin: 1em auto;
+}
+
+.posts-paging {
+  margin: 2em auto;
+}
+
+#disqus_thread {
+  background: white;
+  padding: 1em;
+}
+
+.date {
+  color: #999999;
+  display: block;
+  margin-top: 1em;
+}
+
+.btn, .convergefl-conf .convergefl-conf-btn, .circles-conf .circles-conf-btn, .webafternoon-conf .webafternoon-conf-btn, .aea-conf .aea-conf-btn, .blend-conf .blend-conf-btn, .edge-conf .edge-conf-btn, .brooklynBeta-conf .brooklynBeta-conf-btn {
+  border-radius: 0.25em;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 3;
+  padding: 0 1em;
+}
+
+.convergefl-conf {
+  background: #04375b;
+  color: white;
+  margin-top: 1em;
+  padding: 0.25em 0 2em;
+}
+.convergefl-conf h3 {
+  color: white;
+}
+.convergefl-conf a {
+  color: #f2bf46;
+}
+.convergefl-conf a:hover {
+  color: white;
+}
+.convergefl-conf .convergefl-conf-btn {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  background: white;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #d32113;
+}
+.convergefl-conf .convergefl-conf-btn:hover {
+  background: #d32113 url("/assets/images/posts/conferences/upcoming-events-13/check-bg.png");
+  color: white;
+}
+
+.circles-conf {
+  background: #0d0c14;
+  color: white;
+  padding: 0.25em 0 2em;
+}
+.circles-conf h3 {
+  color: white;
+}
+.circles-conf a {
+  color: #ef3d59;
+}
+.circles-conf a:hover {
+  color: #56d0c6;
+}
+.circles-conf .circles-conf-btn {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  background: #ef3d59;
+  color: white;
+}
+.circles-conf .circles-conf-btn:hover {
+  background: #56d0c6;
+  color: white;
+}
+
+.webafternoon-conf {
+  background: #070d3c;
+  color: white;
+  padding: 0.25em 0 2em;
+}
+.webafternoon-conf h3 {
+  color: white;
+}
+.webafternoon-conf a {
+  color: #cccccc;
+}
+.webafternoon-conf a:hover {
+  color: #da1905;
+}
+.webafternoon-conf .webafternoon-conf-btn {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3480f), color-stop(100%, #da1905));
+  background-image: -webkit-linear-gradient(#f3480f, #da1905);
+  background-image: -moz-linear-gradient(#f3480f, #da1905);
+  background-image: -o-linear-gradient(#f3480f, #da1905);
+  background-image: linear-gradient(#f3480f, #da1905);
+  color: white;
+}
+.webafternoon-conf .webafternoon-conf-btn:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #da1905), color-stop(100%, #f3480f));
+  background-image: -webkit-linear-gradient(#da1905, #f3480f);
+  background-image: -moz-linear-gradient(#da1905, #f3480f);
+  background-image: -o-linear-gradient(#da1905, #f3480f);
+  background-image: linear-gradient(#da1905, #f3480f);
+  color: white;
+}
+
+.aea-conf {
+  background: #efece4;
+  color: #222222;
+  padding: 0.25em 0 2em;
+}
+.aea-conf h3 {
+  color: #222222;
+}
+.aea-conf a {
+  color: #ff3000;
+}
+.aea-conf a:hover {
+  color: #ea0800;
+}
+.aea-conf .aea-conf-btn {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  background: #ff3000;
+  color: white;
+}
+.aea-conf .aea-conf-btn:hover {
+  background: #ea0800;
+  color: white;
+}
+
+.blend-conf {
+  background: #63b3b8;
+  color: #3d4142;
+  padding: 0.25em 0 2em;
+}
+.blend-conf h3 {
+  color: #3d4142;
+}
+.blend-conf a {
+  color: white;
+}
+.blend-conf a:hover {
+  color: #d84328;
+}
+.blend-conf .blend-conf-btn {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  background: #dc563e;
+  color: white;
+}
+.blend-conf .blend-conf-btn:hover {
+  background: #d84328;
+  color: white;
+}
+
+.edge-conf {
+  background: black;
+  color: white;
+  padding: 0.25em 0 2em;
+}
+.edge-conf h3 {
+  color: white;
+}
+.edge-conf a {
+  color: #1a56ff;
+}
+.edge-conf a:hover {
+  color: #f9f900;
+}
+.edge-conf .edge-conf-btn {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  background: #f9f900;
+  color: black;
+}
+.edge-conf .edge-conf-btn:hover {
+  background: #1a56ff;
+  color: white;
+}
+
+.brooklynBeta-conf {
+  background: #b82a29;
+  color: white;
+  padding: 0.25em 0 2em;
+}
+.brooklynBeta-conf h3 {
+  color: white;
+}
+.brooklynBeta-conf a {
+  color: #362b23;
+}
+.brooklynBeta-conf a:hover {
+  color: #211b16;
+}
+.brooklynBeta-conf .brooklynBeta-conf-btn {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  background: #362b23;
+  color: white;
+}
+.brooklynBeta-conf .brooklynBeta-conf-btn:hover {
+  background: #211b16;
+  color: white;
+}

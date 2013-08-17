@@ -1,0 +1,244 @@
+// *************************************
+//
+//   Upcoming Events in 2103
+//   -> CSS for the custom post
+//
+// *************************************
+
+@import "compass"
+
+// -------------------------------------
+//   Overrides
+// -------------------------------------
+
+.l-bucket
+  max-width: 100%
+  width: 100%
+
+.container
+  margin: 0 auto
+  max-width: 700px
+  width: 87.5%
+  
+h1
+  @extend .container
+  
+h2.container
+  margin: 1em auto
+  
+.posts-paging
+  @extend .container
+  margin: 2em auto
+  
+#disqus_thread
+  @extend .container
+  background: #fff
+  padding: 1em
+
+.date
+  @extend .container
+  color: #999
+  display: block
+  margin-top: 1em
+  
+.btn
+  border-radius: 0.25em
+  display: inline-block
+  font-weight: 400
+  line-height: 3
+  padding: 0 1em
+  
+// -------------------------------------
+//   Events
+// -------------------------------------
+
+// ----- ConvergeFL ----- //
+
+$convergefl-conf-background: #04375b
+$convergefl-conf-color: #fff
+$convergefl-conf-padding: 0.25em 0 2em
+$convergefl-conf-link-color: #f2bf46
+$convergefl-conf-link-hover: #fff
+
+.convergefl-conf 
+  background: $convergefl-conf-background
+  color: $convergefl-conf-color
+  margin-top: 1em
+  padding: $convergefl-conf-padding
+  h3 
+    color: $convergefl-conf-color
+  a 
+    color: $convergefl-conf-link-color
+    &:hover 
+      color: $convergefl-conf-link-hover
+  .convergefl-conf-btn
+    @extend .btn
+    +transition(all 0.25s ease-out)
+    background: $convergefl-conf-color
+    box-shadow: 4px 4px 0 rgba(0, 0, 0 , 0.5)
+    color: #d32113
+    &:hover
+      background: #d32113 url('/assets/images/posts/conferences/upcoming-events-13/check-bg.png')
+      color: $convergefl-conf-link-hover
+
+// ----- Circles Conf ----- //
+
+$circles-conf-background: #0d0c14
+$circles-conf-color: #fff
+$circles-conf-padding: 0.25em 0 2em
+$circles-conf-link-color: #ef3d59
+$circles-conf-link-hover: #56d0c6
+
+.circles-conf 
+  background: $circles-conf-background
+  color: $circles-conf-color
+  padding: $circles-conf-padding
+  h3 
+    color: $circles-conf-color
+  a 
+    color: $circles-conf-link-color
+    &:hover 
+      color: $circles-conf-link-hover
+  .circles-conf-btn
+    @extend .btn
+    +transition(all 0.25s ease-out)
+    background: $circles-conf-link-color
+    color: $circles-conf-color
+    &:hover
+      background: $circles-conf-link-hover
+      color: $circles-conf-color
+      
+// ----- Web Afternoon ----- //
+
+$webafternoon-conf-background: #070d3c
+$webafternoon-conf-color: #fff
+$webafternoon-conf-padding: 0.25em 0 2em
+$webafternoon-conf-link-color: #ccc
+$webafternoon-conf-link-hover: #da1905
+
+.webafternoon-conf 
+  background: $webafternoon-conf-background
+  color: $webafternoon-conf-color
+  padding: $webafternoon-conf-padding
+  h3 
+    color: $webafternoon-conf-color
+  a 
+    color: $webafternoon-conf-link-color
+    &:hover 
+      color: $webafternoon-conf-link-hover
+  .webafternoon-conf-btn
+    @extend .btn
+    +transition(all 0.25s ease-out)
+    +background-image(linear-gradient(#f3480f, #da1905))
+    color: $webafternoon-conf-color
+    &:hover
+      +background-image(linear-gradient(#da1905, #f3480f))
+      color: $webafternoon-conf-color
+      
+// ----- AEA ----- //
+
+$aea-conf-background: #efece4
+$aea-conf-color: #222222
+$aea-conf-padding: 0.25em 0 2em
+$aea-conf-link-color: #ff3000
+$aea-conf-link-hover: #ea0800
+
+.aea-conf 
+  background: $aea-conf-background
+  color: $aea-conf-color
+  padding: $aea-conf-padding
+  h3 
+    color: $aea-conf-color
+  a 
+    color: $aea-conf-link-color
+    &:hover 
+      color: $aea-conf-link-hover
+  .aea-conf-btn
+    @extend .btn
+    +transition(all 0.25s ease-out)
+    background: $aea-conf-link-color
+    color: #fff
+    &:hover
+      background: $aea-conf-link-hover
+      color: #fff
+      
+// ----- Blend Conf ----- //
+
+$blend-conf-background: #63b3b8
+$blend-conf-color: #3d4142
+$blend-conf-padding: 0.25em 0 2em
+$blend-conf-link-color: #dc563e
+$blend-conf-link-hover: #d84328
+
+.blend-conf 
+  background: $blend-conf-background
+  color: $blend-conf-color
+  padding: $blend-conf-padding
+  h3 
+    color: $blend-conf-color
+  a 
+    color: #fff
+    &:hover 
+      color: $blend-conf-link-hover
+  .blend-conf-btn
+    @extend .btn
+    +transition(all 0.25s ease-out)
+    background: $blend-conf-link-color
+    color: #fff
+    &:hover
+      background: $blend-conf-link-hover
+      color: #fff
+      
+// ----- Blend Conf ----- //
+
+$edge-conf-background: #000000
+$edge-conf-color: #fff
+$edge-conf-padding: 0.25em 0 2em
+$edge-conf-link-color: #1a56ff
+$edge-conf-link-hover: #f9f900
+
+.edge-conf 
+  background: $edge-conf-background
+  color: $edge-conf-color
+  padding: $edge-conf-padding
+  h3 
+    color: $edge-conf-color
+  a 
+    color: $edge-conf-link-color
+    &:hover 
+      color: $edge-conf-link-hover
+  .edge-conf-btn
+    @extend .btn
+    +transition(all 0.25s ease-out)
+    background: $edge-conf-link-hover
+    color: $edge-conf-background
+    &:hover
+      background: $edge-conf-link-color
+      color: #fff
+      
+// ----- Brooklyn Beta ----- //
+
+$brooklynBeta-conf-background: #b82a29
+$brooklynBeta-conf-color: #fff
+$brooklynBeta-conf-padding: 0.25em 0 2em
+$brooklynBeta-conf-link-color: #362b23
+$brooklynBeta-conf-link-hover: #211b16
+
+.brooklynBeta-conf 
+  background: $brooklynBeta-conf-background
+  color: $brooklynBeta-conf-color
+  padding: $brooklynBeta-conf-padding
+  h3 
+    color: $brooklynBeta-conf-color
+  a 
+    color: $brooklynBeta-conf-link-color
+    &:hover 
+      color: $brooklynBeta-conf-link-hover
+  .brooklynBeta-conf-btn
+    @extend .btn
+    +transition(all 0.25s ease-out)
+    background: $brooklynBeta-conf-link-color
+    color: $brooklynBeta-conf-color
+    &:hover
+      background: $brooklynBeta-conf-link-hover
+      color: $brooklynBeta-conf-color
