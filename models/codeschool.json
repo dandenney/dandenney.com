@@ -1,0 +1,351 @@
+{
+   "user":{
+      "username":"dandenney",
+      "member_since":"2012-04-11T00:27:15Z",
+      "total_score":"<b>197500</b>Total Points",
+      "avatar":"http://gravatar.com/avatar/cd62d88a83461e0b1daa8f2fa31c4dcb.jpg?s=80&r=pg"
+   },
+   "courses":{
+      "completed":[
+         {
+            "title":"Anatomy of Backbone.js",
+            "url":"http://www.codeschool.com/courses/anatomy-of-backbonejs",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/11/anatomy-of-backbonejs-9856061c43aad32b00081bcc3bad4c19.png"
+         },
+         {
+            "title":"Assembling Sass",
+            "url":"http://www.codeschool.com/courses/assembling-sass",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/17/assembling-sass-fa33134d838368c5edb2371a983d2e54.png"
+         },
+         {
+            "title":"Functional HTML5 & CSS3",
+            "url":"http://www.codeschool.com/courses/functional-html5-css3",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/4/functional-html5-css3-f88add668640fd2b172fc2ff418c1cf3.png"
+         },
+         {
+            "title":"Try Git",
+            "url":"http://www.codeschool.com/courses/try-git",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/19/try-git-1d5111823aae2bb9d14fbcb663998353.png"
+         },
+         {
+            "title":"CoffeeScript",
+            "url":"http://www.codeschool.com/courses/coffeescript",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/8/coffeescript-692a57b37adb815da3c75f5095615fac.png"
+         },
+         {
+            "title":"jQuery Air: Captain's Log",
+            "url":"http://www.codeschool.com/courses/jquery-air-captains-log",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/7/jquery-air-captains-log-0f4b90723003d3c9c132ed6270298be5.png"
+         },
+         {
+            "title":"jQuery Air: First Flight",
+            "url":"http://www.codeschool.com/courses/jquery-air-first-flight",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/3/jquery-air-first-flight-6072ff35bda50090240523d8bf034f45.png"
+         },
+         {
+            "title":"Rails for Zombies",
+            "url":"http://www.codeschool.com/courses/rails-for-zombies",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/1/rails-for-zombies-245a73e57217e92710e1e15ce206f6e1.png"
+         },
+         {
+            "title":"Journey Into Mobile",
+            "url":"http://www.codeschool.com/courses/journey-into-mobile",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/12/journey-into-mobile-b3e446afa712d0f6cea7aafdb3159df1.png"
+         }
+      ],
+      "in_progress":[
+         {
+            "title":"iOS Operation: MapKit",
+            "url":"http://www.codeschool.com/courses/ios-operation-mapkit",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/97/ios-operation-mapkit-1de49437d7999696885179345c443692.png"
+         },
+         {
+            "title":"Rails 4: Zombie Outlaws",
+            "url":"http://www.codeschool.com/courses/rails-4-zombie-outlaws",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/28/rails-4-zombie-outlaws-34baf50cb535a8ef10496a09cb6f9e07.png"
+         },
+         {
+            "title":"Ruby Bits",
+            "url":"http://www.codeschool.com/courses/ruby-bits",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/20/ruby-bits-925de89ab10eeeb27330ae7683c0aec0.png"
+         },
+         {
+            "title":"iOS Operation: Models",
+            "url":"http://www.codeschool.com/courses/ios-operation-models",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/31/ios-operation-models-b9c9b1d2c84fa625152d056e80085390.png"
+         },
+         {
+            "title":"Try Ruby",
+            "url":"http://www.codeschool.com/courses/try-ruby",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/6/try-ruby-2545443181adf574183b4f7b06b8ad73.png"
+         },
+         {
+            "title":"Fundamentals of Design",
+            "url":"http://www.codeschool.com/courses/fundamentals-of-design",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/99/fundamentals-of-design-f6939f1a28ee35c6542eb813fe763d36.png"
+         },
+         {
+            "title":"Anatomy of Backbone.js Part 2",
+            "url":"http://www.codeschool.com/courses/anatomy-of-backbonejs-part-2",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/26/anatomy-of-backbonejs-part-2-0e88a63959ce35c5a7511004f4f4be7d.png"
+         },
+         {
+            "title":"Discover DevTools",
+            "url":"http://www.codeschool.com/courses/discover-devtools",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/27/discover-devtools-f78b78944d7fecf40a40c8f61df99a70.png"
+         },
+         {
+            "title":"jQuery: The Return Flight",
+            "url":"http://www.codeschool.com/courses/jquery-the-return-flight",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/98/jquery-the-return-flight-6bf0a32c22a6804cc007ee71308a5afd.png"
+         },
+         {
+            "title":"Try Objective-C",
+            "url":"http://www.codeschool.com/courses/try-objective-c",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/64/try-objective-c-d2ebeb17d5acfd77df0bf3ae3d2b89f7.png"
+         },
+         {
+            "title":"Try R",
+            "url":"http://www.codeschool.com/courses/try-r",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/25/try-r-a0fcb9f1893a2a771b287df5c086e0e4.png"
+         },
+         {
+            "title":"Try jQuery",
+            "url":"http://www.codeschool.com/courses/try-jquery",
+            "badge":"https://d1ffx7ull4987f.cloudfront.net/images/courses/large_badge/29/try-jquery-799b20f65cd0fdcfb1b79c009305c017.png"
+         }
+      ]
+   },
+   "badges":[
+      {
+         "name":"Completed jQuery Air: First Flight",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/3/completed-jquery-air-first-flight-6072ff35bda50090240523d8bf034f45.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-air-first-flight"
+      },
+      {
+         "name":"Completed Rails for Zombies",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/1/completed-rails-for-zombies-245a73e57217e92710e1e15ce206f6e1.png",
+         "course_url":"http://www.codeschool.com/courses/rails-for-zombies"
+      },
+      {
+         "name":"Completed Functional HTML5 & CSS3",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/4/completed-functional-html5-css3-f88add668640fd2b172fc2ff418c1cf3.png",
+         "course_url":"http://www.codeschool.com/courses/functional-html5-css3"
+      },
+      {
+         "name":"Completed jQuery Air: Captain's Log",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/30/completed-jquery-air-captain-s-log-0f4b90723003d3c9c132ed6270298be5.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-air-captains-log"
+      },
+      {
+         "name":"Completed CoffeeScript",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/34/completed-coffeescript-692a57b37adb815da3c75f5095615fac.png",
+         "course_url":"http://www.codeschool.com/courses/coffeescript"
+      },
+      {
+         "name":"Level 1 on CSS Cross-Country",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/41/level-1-on-css-cross-country-20653bc60513a9777a06331a5c6183c7.png",
+         "course_url":"http://www.codeschool.com/courses/css-cross-country"
+      },
+      {
+         "name":"Level 1 on jQuery Air: First Flight",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/13/level-1-on-jquery-air-first-flight-e7a748d0dac0fde64acf9cefae94277c.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-air-first-flight"
+      },
+      {
+         "name":"Level 1 on jQuery Air: Captain's Log",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/31/level-1-on-jquery-air-captain-s-log-882b4107e321a8705a4a6b21eec118d4.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-air-captains-log"
+      },
+      {
+         "name":"Level 1 on CoffeeScript",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/35/level-1-on-coffeescript-bbe7c44e871aefb3576d33e65329e105.png",
+         "course_url":"http://www.codeschool.com/courses/coffeescript"
+      },
+      {
+         "name":"Level 1 on Functional HTML5 & CSS3",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/20/level-1-on-functional-html5-css3-0f8ac508eb82a75be3e52ee4e7740694.png",
+         "course_url":"http://www.codeschool.com/courses/functional-html5-css3"
+      },
+      {
+         "name":"Level 1 on Git Real",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/126/level-1-on-git-real-98cb588073d39461bd889c745a314d6a.png",
+         "course_url":"http://www.codeschool.com/courses/git-real"
+      },
+      {
+         "name":"Level 1 on Assembling Sass",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/147/level-1-on-assembling-sass-a2427de16b67a7971e3de8197d987289.png",
+         "course_url":"http://www.codeschool.com/courses/assembling-sass"
+      },
+      {
+         "name":"Level 1 on jQuery: The Return Flight",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/267/level-1-on-jquery-the-return-flight-db2dfaa94d1aa1c2410ebb145a5e44a0.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-the-return-flight"
+      },
+      {
+         "name":"Level 1 on Anatomy of Backbone.js",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/95/level-1-on-anatomy-of-backbone-js-36ec7d2d22da9f5931ac1f209bea8b8a.png",
+         "course_url":"http://www.codeschool.com/courses/anatomy-of-backbonejs"
+      },
+      {
+         "name":"Level 1 on Discover DevTools",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/198/level-1-on-discover-devtools-5be926afcba5761b10bddb2f2d914381.png",
+         "course_url":"http://www.codeschool.com/courses/discover-devtools"
+      },
+      {
+         "name":"Level 2 on jQuery Air: Captain's Log",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/32/level-2-on-jquery-air-captain-s-log-8f75f42e567250ace49c517eed777bd8.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-air-captains-log"
+      },
+      {
+         "name":"Level 2 on jQuery Air: First Flight",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/14/level-2-on-jquery-air-first-flight-6f61fb08e686a779c963c59b3906a369.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-air-first-flight"
+      },
+      {
+         "name":"Level 2 on Functional HTML5 & CSS3",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/21/level-2-on-functional-html5-css3-05c6bb17a0d8c17b57c21c982fc80f5f.png",
+         "course_url":"http://www.codeschool.com/courses/functional-html5-css3"
+      },
+      {
+         "name":"Level 2 on CoffeeScript",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/36/level-2-on-coffeescript-9cb50149cf1d4da14b31617e6197e3cd.png",
+         "course_url":"http://www.codeschool.com/courses/coffeescript"
+      },
+      {
+         "name":"Level 2 on Discover DevTools",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/199/level-2-on-discover-devtools-739a793d391908372a5580646d3f4eb8.png",
+         "course_url":"http://www.codeschool.com/courses/discover-devtools"
+      },
+      {
+         "name":"Level 2 on Git Real",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/127/level-2-on-git-real-7758793b04c095c96d377b2be3979fa2.png",
+         "course_url":"http://www.codeschool.com/courses/git-real"
+      },
+      {
+         "name":"Level 2 on Anatomy of Backbone.js",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/96/level-2-on-anatomy-of-backbone-js-f604b8c7b406b55d8605d5089ab0db58.png",
+         "course_url":"http://www.codeschool.com/courses/anatomy-of-backbonejs"
+      },
+      {
+         "name":"Level 2 on Assembling Sass",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/148/level-2-on-assembling-sass-d691ebfc11ac721e353094f041c3ce87.png",
+         "course_url":"http://www.codeschool.com/courses/assembling-sass"
+      },
+      {
+         "name":"Level 3 on Assembling Sass",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/149/level-3-on-assembling-sass-fab6be13e3444ddc84b9ffda31bb514d.png",
+         "course_url":"http://www.codeschool.com/courses/assembling-sass"
+      },
+      {
+         "name":"Level 3 on Git Real",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/128/level-3-on-git-real-c39389a781e96eee5c4650c60e2556f8.png",
+         "course_url":"http://www.codeschool.com/courses/git-real"
+      },
+      {
+         "name":"Level 3 on jQuery Air: First Flight",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/15/level-3-on-jquery-air-first-flight-789c4aa85be5d3c202b4150ce9e2f1fa.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-air-first-flight"
+      },
+      {
+         "name":"Level 3 on jQuery Air: Captain's Log",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/33/level-3-on-jquery-air-captain-s-log-9e1a1584d80426b68d698f161c4c7c90.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-air-captains-log"
+      },
+      {
+         "name":"Level 3 on Functional HTML5 & CSS3",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/22/level-3-on-functional-html5-css3-514549f8e7eafdf90ff59125e3076be9.png",
+         "course_url":"http://www.codeschool.com/courses/functional-html5-css3"
+      },
+      {
+         "name":"Level 3 on CoffeeScript",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/37/level-3-on-coffeescript-16ca94084c4dd09eae44f8bc6b20344f.png",
+         "course_url":"http://www.codeschool.com/courses/coffeescript"
+      },
+      {
+         "name":"Level 3 on Anatomy of Backbone.js",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/97/level-3-on-anatomy-of-backbone-js-09ab6edbd467f21de5c3ceb782af3584.png",
+         "course_url":"http://www.codeschool.com/courses/anatomy-of-backbonejs"
+      },
+      {
+         "name":"Level 4 on CoffeeScript",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/38/level-4-on-coffeescript-4613b8bc9264e554e5c09894973fd093.png",
+         "course_url":"http://www.codeschool.com/courses/coffeescript"
+      },
+      {
+         "name":"Level 4 on Functional HTML5 & CSS3",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/23/level-4-on-functional-html5-css3-dc14c1ffd85a039cb25853ecaec8381c.png",
+         "course_url":"http://www.codeschool.com/courses/functional-html5-css3"
+      },
+      {
+         "name":"Level 4 on Git Real",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/129/level-4-on-git-real-7b5c1ccc39b1a7a6a05543c20658f688.png",
+         "course_url":"http://www.codeschool.com/courses/git-real"
+      },
+      {
+         "name":"Level 4 on Assembling Sass",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/150/level-4-on-assembling-sass-b0ba168544a2826029631a73d62962a7.png",
+         "course_url":"http://www.codeschool.com/courses/assembling-sass"
+      },
+      {
+         "name":"Level 4 on Anatomy of Backbone.js",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/98/level-4-on-anatomy-of-backbone-js-b0439992b1fb8eacb8dab41169f2e6c5.png",
+         "course_url":"http://www.codeschool.com/courses/anatomy-of-backbonejs"
+      },
+      {
+         "name":"Level 4 on jQuery Air: First Flight",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/16/level-4-on-jquery-air-first-flight-ea9f9ef521ec1ff6d5046f0edfb042bd.png",
+         "course_url":"http://www.codeschool.com/courses/jquery-air-first-flight"
+      },
+      {
+         "name":"Level 5 on Anatomy of Backbone.js",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/99/level-5-on-anatomy-of-backbone-js-b4322a933a6ca04bf0203b140e2754fb.png",
+         "course_url":"http://www.codeschool.com/courses/anatomy-of-backbonejs"
+      },
+      {
+         "name":"Level 5 on CoffeeScript",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/39/level-5-on-coffeescript-cc685eefa2c031e381f86a8212a57c0e.png",
+         "course_url":"http://www.codeschool.com/courses/coffeescript"
+      },
+      {
+         "name":"Level 5 on Assembling Sass",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/151/level-5-on-assembling-sass-a0fcbef58b55a8bdd0dfd1dfe742ed31.png",
+         "course_url":"http://www.codeschool.com/courses/assembling-sass"
+      },
+      {
+         "name":"Level 6 on Anatomy of Backbone.js",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/100/level-6-on-anatomy-of-backbone-js-1b739602227cd9332cfaacbf9a7ea05d.png",
+         "course_url":"http://www.codeschool.com/courses/anatomy-of-backbonejs"
+      },
+      {
+         "name":"Level 6 on Assembling Sass",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/154/level-6-on-assembling-sass-56dcbf1233c033263e5906bb41f02da8.png",
+         "course_url":"http://www.codeschool.com/courses/assembling-sass"
+      },
+      {
+         "name":"Beta Tester",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/161/beta-tester-460fa1b058c3f082f5e533bf3e6c4fe9.png",
+         "course_url":"http://www.codeschool.com/courses/try-ios"
+      },
+      {
+         "name":"Completed Anatomy of Backbone.js",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/94/completed-anatomy-of-backbone-js-9856061c43aad32b00081bcc3bad4c19.png",
+         "course_url":"http://www.codeschool.com/courses/anatomy-of-backbonejs"
+      },
+      {
+         "name":"Completed Try Git",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/121/completed-try-git-1d5111823aae2bb9d14fbcb663998353.png",
+         "course_url":"http://www.codeschool.com/courses/try-git"
+      },
+      {
+         "name":"Code School Enrollment",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/123/code-school-enrollment-3ba86b46cdeffc308d1a7d640ee5f9bd.png",
+         "course_url":"http://www.codeschool.com/enroll"
+      },
+      {
+         "name":"Completed Assembling Sass",
+         "badge":"https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/146/completed-assembling-sass-fa33134d838368c5edb2371a983d2e54.png",
+         "course_url":"http://www.codeschool.com/courses/assembling-sass"
+      }
+   ]
+}

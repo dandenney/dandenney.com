@@ -4,4 +4,9 @@
     return $(".js-expand").toggleClass("is--expanded");
   });
 
+  $(".js-drawer--toggle").on("click", function() {
+    $(this).siblings().removeClass("is--expanded");
+    return $(this).toggleClass("is--expanded");
+  });
+
 }).call(this);
