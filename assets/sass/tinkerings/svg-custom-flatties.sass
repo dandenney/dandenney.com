@@ -1,0 +1,47 @@
+// *************************************
+//
+//   SVG Custom Flatties
+//   -> Playing with CSS Customization of SVGs
+//
+// *************************************
+
+@import "compass"
+@import "application"
+
+// -------------------------------------
+//   Tinkering Base
+// -------------------------------------
+
+.explanation
+  margin: 2em auto 0
+  max-width: 700px
+  width: 87.5%
+
+// -------------------------------------
+//   Flatties
+// -------------------------------------
+
+svg
+  height: 100px
+  margin: 0 1em 1em 0
+  width: 100px
+
+svg:hover
+  .flatties-bg
+    fill-opacity: 0.6
+
+.flatties-bg
+  fill: #e8c04f
+  fill-opacity: 0.8
+
+.flatties-bg--email
+  @extend .flatties-bg
+  
+.flatties-bg--beer
+  @extend .flatties-bg
+  
+.flatties-bg--coffee
+  @extend .flatties-bg
+
+.flatties-coffee-handle
+  fill: #ab8518
