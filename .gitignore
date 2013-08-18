@@ -2,3 +2,5 @@
 .DS_Store
 .htaccess
 collections/.cache/*
+collections/.cache/processed.json
+collections/.cache/indexed.json
