@@ -1,7 +1,7 @@
 ---
 layout: article
 section: blips
-title: Our Industry's Blame Problem
+title: Our Industry's Drinking Problem?
 date: October 24, 2013
 published: true
 ---
