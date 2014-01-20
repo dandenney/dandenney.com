@@ -69,3 +69,27 @@
   
 .freddie
   max-width: 90%
+  
+.events--upcoming
+  margin: 4em 4% 2em
+  
+  .list--item
+    +respond-to(768px)
+      +box-sizing(border-box)
+      display: inline-block
+      margin-right: -4px
+      padding: 1em 0.5em
+      vertical-align: top
+      width: 33%
+
+    +respond-to(1000px)
+      width: 25%
+    +respond-to(1200px)
+      width: 20%
+
+.events--title
+  margin: 0
+
+.events--meta
+  font-size: 85%
+  margin: 0

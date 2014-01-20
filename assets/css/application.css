@@ -907,3 +907,38 @@ main {
 .freddie {
   max-width: 90%;
 }
+
+.events--upcoming {
+  margin: 4em 4% 2em;
+}
+@media screen and (min-width: 768px) {
+  .events--upcoming .list--item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -4px;
+    padding: 1em 0.5em;
+    vertical-align: top;
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .events--upcoming .list--item {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .events--upcoming .list--item {
+    width: 20%;
+  }
+}
+
+.events--title {
+  margin: 0;
+}
+
+.events--meta {
+  font-size: 85%;
+  margin: 0;
+}
