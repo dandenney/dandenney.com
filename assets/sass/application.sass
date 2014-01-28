@@ -74,18 +74,20 @@
   margin: 4em 4% 2em
   
   .list--item
+    text-align: center
     +respond-to(768px)
       +box-sizing(border-box)
+      border: 1px solid #efefef
       display: inline-block
-      margin-right: -4px
-      padding: 1em 0.5em
+      margin: 1em 0.5em
+      padding: 1em
       vertical-align: top
       width: 33%
 
     +respond-to(1000px)
-      width: 25%
+      width: 24.5%
     +respond-to(1200px)
-      width: 20%
+      width: 18%
 
 .events--title
   margin: 0
@@ -93,3 +95,9 @@
 .events--meta
   font-size: 85%
   margin: 0
+  
+.attending--image
+  border-radius: 60px
+  display: block
+  margin: 0 auto 0.5em
+

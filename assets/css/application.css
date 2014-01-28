@@ -911,26 +911,30 @@ main {
 .events--upcoming {
   margin: 4em 4% 2em;
 }
+.events--upcoming .list--item {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .events--upcoming .list--item {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border: 1px solid #efefef;
     display: inline-block;
-    margin-right: -4px;
-    padding: 1em 0.5em;
+    margin: 1em 0.5em;
+    padding: 1em;
     vertical-align: top;
     width: 33%;
   }
 }
 @media screen and (min-width: 1000px) {
   .events--upcoming .list--item {
-    width: 25%;
+    width: 24.5%;
   }
 }
 @media screen and (min-width: 1200px) {
   .events--upcoming .list--item {
-    width: 20%;
+    width: 18%;
   }
 }
 
@@ -941,4 +945,10 @@ main {
 .events--meta {
   font-size: 85%;
   margin: 0;
+}
+
+.attending--image {
+  border-radius: 60px;
+  display: block;
+  margin: 0 auto 0.5em;
 }
