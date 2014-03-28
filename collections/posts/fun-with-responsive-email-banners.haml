@@ -1,0 +1,82 @@
+---
+layout: article
+section: posts
+title: Fun With Responsive Email Banners
+category: Front-End Dev
+date: March 27, 2014
+slug: /front-end-dev/fun-with-responsive-email-banners
+published: true
+---
+
+.container
+
+  %h2
+    Backstory
+  %p
+    We're working on a series of Orientation emails for people who are new to Code School. Since they are all focused on sharing information about features, we want to make them distinctive. <a href="http://twitter.com/drewbarontini">Drew</a> and <a href="http://twitter.com/justinmezzell">Justin</a> had a hilarious "over the shoulder via Hipchat" art direction session to come up with this. Needless to say, I love it.
+
+  %p
+    %img{ :alt => "code school orientation", :src => "/assets/images/posts/front-end-dev/fun-with-responsive-email-banners/banner--orientation.png"}/
+
+  %h2 Heavy Breathing
+  %p
+    This morning, I opened it up with fresh eyes in order to start building a layout. Peeking a little closer, I was thinking that those different color stripes look nice and the ribbon looks awesome coming over the edge like that.
+
+  %p
+    The coffee kicked in and I was all like "WAIT A MINUTE, THIS HAS TO GO INTO A RESPONSIVE TABLE. THIS ISN'T NAM, THERE ARE RULES!". "How will I do this? Is this the thing that will finally prove to the world that I can't front-end?" "Does Drew hate me? What did I do to him? Was it the joke about the folder organization?"
+
+  %p
+    A pack of Welch's fruit snacks calmed me down and I dove into solving this.
+
+  %h2 The Problems
+  %p
+    Most importantly, we don't want a harsh cut off. We want those stripes at the top to run to the edges of the client and to look like it's a layered stack of elements. Scaling is the enemy here, as the height of those will change.
+  %p
+    %img{ :alt => "screenshot of header lines", :src => "/assets/images/posts/front-end-dev/fun-with-responsive-email-banners/screenshot--header.png"}/
+
+  %p
+    In modern browsers, this is easily achieved with a background image and background-size. You could be extra cool and even do a CSS gradient. Email clients laugh in the face of web standards, though. Background images aren't even fully supported.
+
+  %p
+    %img{ :alt => "screenshot of background support", :src => "/assets/images/posts/front-end-dev/fun-with-responsive-email-banners/screenshot--background-support.png"}/
+
+  %p
+    The next problem is the overlay of the image. Negative margins, fixed positions, etc. are like Bigfoot to email client builders. Some people swear they exist and even have footage of them in the wild. Not everyone listens, though.
+
+  %p
+    %img{ :alt => "screenshot of position support", :src => "/assets/images/posts/front-end-dev/fun-with-responsive-email-banners/screenshot--position-support.png"}/
+
+  %h2 CSS like it's '99
+  %p
+    I first learned markup by slicing up PSDs and doing table tricks to make layouts. Luckily, my memory hasn't gone yet.
+
+  %h2 Rows to the Rescue
+  %p
+    This "header" is now going to be three rows, with two nested tables.
+
+  %p
+    The first row is going to be a solid background color. We'll use a media query to change the height of it at smaller resolutions.
+
+  %p
+    The second row is going to have a solid background color. It will have a nested table for an image with just the top of the badge. The nested table will be a max width of 600px. The sliced image top will be as wide as the main image, so that it will scale the same and control the height of the row.
+
+  %p
+    The third row will have a solid background color. It will have a nested table with the rest of the image. Like the previous one, it will have a max width of 600px and height will be determined by image scaling.
+
+  %h2 It works
+  %p
+    Here's a screenshot of the responsive table version and the original image.
+  %p
+    %img{ :alt => "screenshot of both", :src => "/assets/images/posts/front-end-dev/fun-with-responsive-email-banners/screenshot--both.png"}/
+
+  %h2 The Images
+  %p
+    %img{ :alt => "sliced ribbon top", :src => "/assets/images/posts/front-end-dev/fun-with-responsive-email-banners/banner--orientation-top.png"}/
+
+  %p
+    %img{ :alt => "sliced ribbon and banner", :src => "/assets/images/posts/front-end-dev/fun-with-responsive-email-banners/banner--orientation-bottom.png"}/
+
+%h2 The Code
+
+<p data-height="268" data-theme-id="0" data-slug-hash="hFzgn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/dandenney/pen/hFzgn/'>hFzgn</a> by Dan Denney (<a href='http://codepen.io/dandenney'>@dandenney</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>

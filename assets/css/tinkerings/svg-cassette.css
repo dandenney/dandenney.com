@@ -898,6 +898,10 @@ main {
   margin-top: -0.625rem;
 }
 
+.center {
+  text-align: center;
+}
+
 .split {
   display: inline-block;
   margin: 0 -4px 0 0;
