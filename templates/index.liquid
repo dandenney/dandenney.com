@@ -1,19 +1,19 @@
 {% layout "index" %}
-{% block content %} 
-	
+{% block content %}
+
 	<section class="home">
 
 		<img src="{{ "dan-social-avatar.png" | asset_url }}" alt="Dan Denney" class="home-avatar" />
 
 		<h1>I'm Dan Denney, a front-end dev at <a href="http://envylabs.com">Envy Labs</a> and founder of <a href="http://frontendconf.com">Front-End Conf</a>.</h1>
-	
+
 		<div class="home-featured">
 
 			<header class="header--home-featured">
 				<h2>Blog Posts</h2>
 				<p>The typical article-styled writings</p>
 			</header>
-			
+
 			<ul class="list--something">
 				{% collection "posts" by 3 order desc %}
 					{% include "articles/article" with collection.items %}
@@ -24,7 +24,7 @@
 			</ul>
 
 		</div>
-		
+
 
 		<div class="home-featured">
 
@@ -45,12 +45,12 @@
 		</div>
 
 		<div class="home-featured">
-			
+
 			<header class="header--home-featured">
 				<h2>Tinkerings</h2>
 				<p>Front-end devign mini projects</p>
 			</header>
-			
+
 			<ul class="list--something">
 				{% collection "tinkerings" by 3 order desc %}
 					{% include "articles/article" with collection.items %}
@@ -59,7 +59,7 @@
 					<a href="/tinkerings">See All Tinkerings</a>
 				</li> -->
 			</ul>
-			
+
 		</div>
 
 	</section>
@@ -70,7 +70,7 @@
 
 		<ul class="list--events">
 
-			<li class="list--item">
+			<li class="list--item is-past">
 				<img alt="Grok" class="attending--image" src="{{ "attending--playlist-live.png" | asset_url }}" width="120" />
 				<h5 class="events--title"><a href="http://playlist-live.com/welcome">Playlist Live</a></h5>
 				<p class="events--meta">March 21-23, 2014
@@ -78,14 +78,14 @@
 				Orlando, FL</p>
 			</li>
 
-			<li class="list--item">
+			<li class="list--item is-past">
 				<img alt="Grok" class="attending--image" src="{{ "attending--grok.jpg" | asset_url }}" width="120" />
 				<h5 class="events--title"><a href="http://theironyard.com/events/grok">Greenville Grok</a></h5>
-				<p class="events--meta">April 3-5, 2014 
+				<p class="events--meta">April 3-5, 2014
 				<br />Greenville, SC</p>
 			</li>
 
-			<li class="list--item">
+			<li class="list--item is-past">
 				<img alt="Creative South" class="attending--image" src="{{ "attending--creative-south.jpg" | asset_url }}" width="120" />
 				<h5 class="events--title"><a href="http://creativesouthga.com">Creative South</a></h5>
 				<p class="events--meta">April 11-12, 2014
@@ -109,7 +109,7 @@
 			<li class="list--item">
 				<img alt="Front-End Conf" class="attending--image" src="{{ "attending--front-end-conf.png" | asset_url }}" width="120" />
 				<h5 class="events--title"><a href="http://frontendconf.com">Front-End Conf</a></h5>
-				<p class="events--meta">August ?, 2014
+				<p class="events--meta">August 21-22, 2014
 				<br />Portland, OR</p>
 			</li>
 
@@ -118,6 +118,13 @@
 				<h5 class="events--title"><a href="http://blendconf.com">Blend Conf</a></h5>
 				<p class="events--meta">September 11-13, 2014
 				<br />Charlotte, NC</p>
+			</li>
+
+			<li class="list--item">
+				<img alt="Sass Conf" class="attending--image" src="{{ "attending--sass-conf.png" | asset_url }}" width="120" />
+				<h5 class="events--title"><a href="http://sassconf.com">Sass Conf</a></h5>
+				<p class="events--meta">October 2-4, 2014
+				<br />New York City, NY</p>
 			</li>
 
 		</ul>
