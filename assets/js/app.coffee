@@ -37,11 +37,11 @@
 ) jQuery
 
 # Toggle Class for expanding
-$(".pseudoNav, .header--site-nav a").hover (->
-  $(this).siblings().addClass "not--hovered"
-  $(this).removeClass "not--hovered"
-  ), ->
-    $(this).siblings().removeClass "not--hovered"
+# $(".pseudoNav, .header--site-nav a").hover (->
+#   $(this).siblings().addClass "not--hovered"
+#   $(this).removeClass "not--hovered"
+#   ), ->
+#     $(this).siblings().removeClass "not--hovered"
 
 # Toggle header
 $(".header--site-trigger").on "click", ->

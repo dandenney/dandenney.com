@@ -1,0 +1,26 @@
+{
+  "name": "dandenney.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dandenney/dandenney.com",
+  "authors": [
+    "dandenney <dd.subscriptions@gmail.com>"
+  ],
+  "description": "Bower yo",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "perfbar": "~0.0.2"
+  }
+}

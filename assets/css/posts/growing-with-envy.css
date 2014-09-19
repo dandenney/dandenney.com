@@ -4,7 +4,7 @@
     background-image: -webkit-linear-gradient(white, #dbedb6);
     background-image: -moz-linear-gradient(white, #dbedb6);
     background-image: -o-linear-gradient(white, #dbedb6);
-    background-image: linear-gradient(#ffffff, #dbedb6);
+    background-image: linear-gradient(white, #dbedb6);
   }
 
   .columns {

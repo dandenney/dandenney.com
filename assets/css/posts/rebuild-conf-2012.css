@@ -9,7 +9,7 @@
   font-size: 0.9em;
 }
 .post h1, .post h2 {
-  color: black;
+  color: #000;
   font-family: "proxima-nova-alt-1", "proxima-nova-alt-2";
   text-transform: uppercase;
 }
@@ -59,7 +59,7 @@ h1 {
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  color: white;
+  color: #fff;
   font-family: "proxima-nova-alt-1", "proxima-nova-alt-2";
   font-size: 2em;
   letter-spacing: -2px;
@@ -94,7 +94,7 @@ h1 {
   }
 }
 .block-speaker {
-  background: whitesmoke;
+  background: #f5f5f5;
   padding-bottom: 1em;
 }
 .block-speaker:hover .rebuild-speaker img {

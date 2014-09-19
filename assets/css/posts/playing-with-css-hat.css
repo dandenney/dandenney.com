@@ -10,7 +10,7 @@
   width: 87.5%;
 }
 #playing-with-css-hat .light {
-  background: whitesmoke;
+  background: #f5f5f5;
   padding: 0 0 2em 0;
 }
 #playing-with-css-hat .container {
@@ -48,7 +48,7 @@
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.31, #1f2126), color-stop(0.95, #2a2b2e), color-stop(1, #454854));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#272930', EndColorStr='#1f2126');
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#272930', EndColorStr='#1f2126')";
-  color: white;
+  color: #ffffff;
   float: left;
   font-weight: normal;
   line-height: 1;
@@ -56,7 +56,7 @@
   padding: 4px 13px 6px 13px;
   text-decoration: none;
   text-rendering: optimizeLegibility;
-  text-shadow: 0 1px 0 black;
+  text-shadow: 0 1px 0 #000000;
 }
 #playing-with-css-hat .day155 #code-version nav > a:first-child {
   -moz-border-radius: 4px 0 0 4px;
@@ -106,11 +106,11 @@
   background-image: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
   background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
-  color: white;
+  color: #fff;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 13px;
   font-weight: normal;
-  text-shadow: 0 1px 0 black;
+  text-shadow: 0 1px 0 #000;
 }
 #playing-with-css-hat .csshat nav a:hover {
   background-color: #1d1d23;
@@ -160,7 +160,7 @@
   background-image: -o-linear-gradient(90deg, rgba(145, 33, 100, 0.47) 0%, rgba(175, 50, 125, 0.47) 100%);
   background-image: -webkit-linear-gradient(90deg, rgba(145, 33, 100, 0.47) 0%, rgba(175, 50, 125, 0.47) 100%);
   background-image: linear-gradient(90deg, rgba(145, 33, 100, 0.47) 0%, rgba(175, 50, 125, 0.47) 100%);
-  color: white;
+  color: #fff;
   text-shadow: 0 -1px 1px #7e1654;
 }
 #playing-with-css-hat .awesome-4 nav a:hover {

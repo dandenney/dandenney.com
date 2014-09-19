@@ -388,9 +388,9 @@ body, .content--tinkerings, .ui-slidebar, .slidebar {
 }
 
 .slidebar {
-  -webkit-transition: width 0.3s linear, padding 0.3s linear;
   -moz-transition: width 0.3s linear, padding 0.3s linear;
   -o-transition: width 0.3s linear, padding 0.3s linear;
+  -webkit-transition: width 0.3s linear, padding 0.3s linear;
   transition: width 0.3s linear, padding 0.3s linear;
   background: #e5e5e5;
   bottom: 0;
@@ -408,24 +408,22 @@ body, .content--tinkerings, .ui-slidebar, .slidebar {
 }
 
 .slidebar-content {
-  -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  -webkit-transform: translate(-250px, 0);
   -moz-transform: translate(-250px, 0);
   -ms-transform: translate(-250px, 0);
-  -o-transform: translate(-250px, 0);
+  -webkit-transform: translate(-250px, 0);
   transform: translate(-250px, 0);
   opacity: 0;
   visibility: hidden;
   width: 250px;
 }
 .is--expanded .slidebar-content {
-  -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
   opacity: 1;
   visibility: visible;
@@ -446,10 +444,9 @@ body, .content--tinkerings, .ui-slidebar, .slidebar {
 .is--expanded .content {
   -webkit-transition: -webkit-transform 0.28s linear, opacity 0.34s ease-out;
   transition: transform 0.28s linear, opacity 0.34s ease-out;
-  -webkit-transform: translate(200px, 0);
   -moz-transform: translate(200px, 0);
   -ms-transform: translate(200px, 0);
-  -o-transform: translate(200px, 0);
+  -webkit-transform: translate(200px, 0);
   transform: translate(200px, 0);
   opacity: 0.25;
 }
@@ -465,9 +462,9 @@ body, .content--tinkerings, .ui-slidebar, .slidebar {
   background: #e34c34;
 }
 .amenities .toggle-is--expanded {
-  -webkit-transition: background 0.25s ease-in;
   -moz-transition: background 0.25s ease-in;
   -o-transition: background 0.25s ease-in;
+  -webkit-transition: background 0.25s ease-in;
   transition: background 0.25s ease-in;
   background: #fe553b;
   border: 2px solid #b23b29;
@@ -481,27 +478,27 @@ body, .content--tinkerings, .ui-slidebar, .slidebar {
   background: #de4932;
 }
 .amenities .content {
-  color: white;
+  color: #fff;
   padding: 0 2em 2em;
 }
 .amenities .content img {
-  border: 5px solid white;
+  border: 5px solid #fff;
   border-radius: 3px;
   float: left;
   margin-right: 1em;
   max-width: 100%;
 }
 .amenities .slidebar-content {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: white;
+  color: #fff;
   padding-top: 3.5em;
 }
 .amenities .slidebar-content a {
   background: #b23b29;
   border-bottom: 1px solid #a93827;
-  color: white;
+  color: #fff;
   display: block;
   padding: 0.5em;
   text-align: center;

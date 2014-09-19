@@ -385,84 +385,68 @@ table {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
-
 @-moz-keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
-
 @-ms-keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadeOut {
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
   }
 }
-
 @-moz-keyframes fadeOut {
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
   }
 }
-
 @-ms-keyframes fadeOut {
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
   }
 }
-
 @keyframes fadeOut {
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
   }
 }
-
 html {
-  background: white;
+  background: #fff;
   font-size: 14px;
 }
 @media screen and (min-width: 768px) {
@@ -495,18 +479,18 @@ img {
 }
 
 a {
-  -webkit-transition: color 0.25s ease-out;
   -moz-transition: color 0.25s ease-out;
   -o-transition: color 0.25s ease-out;
+  -webkit-transition: color 0.25s ease-out;
   transition: color 0.25s ease-out;
   color: #b51f24;
   position: relative;
   text-decoration: none;
 }
 a:before {
-  -webkit-transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
   -o-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
   border-bottom: 1px solid #efefef;
   border-top: 1px solid #efefef;
@@ -669,16 +653,15 @@ main {
 }
 
 .header--site {
-  -webkit-transition: all 0.35s linear;
   -moz-transition: all 0.35s linear;
   -o-transition: all 0.35s linear;
+  -webkit-transition: all 0.35s linear;
   transition: all 0.35s linear;
-  -webkit-transform: translate(260px, 0);
   -moz-transform: translate(260px, 0);
   -ms-transform: translate(260px, 0);
-  -o-transform: translate(260px, 0);
+  -webkit-transform: translate(260px, 0);
   transform: translate(260px, 0);
-  background: white;
+  background: #fff;
   border: 1px solid #efefef;
   border-bottom: 1px solid #efefef;
   border-right: none;
@@ -691,18 +674,17 @@ main {
   z-index: 1;
 }
 .header--site.is--expanded {
-  -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
 .header--site-trigger {
-  background: white;
+  background: #fff;
   border: 1px solid #efefef;
   box-shadow: none;
-  color: #999999;
+  color: #999;
   display: block;
   font-size: 40px;
   line-height: 0.75;
@@ -728,9 +710,9 @@ main {
 }
 
 .header--site-nav a {
-  -webkit-transition: color 0.25s linear;
   -moz-transition: color 0.25s linear;
   -o-transition: color 0.25s linear;
+  -webkit-transition: color 0.25s linear;
   transition: color 0.25s linear;
   background: #fcfcfc;
   border-bottom: 1px solid #efefef;
@@ -749,9 +731,9 @@ main {
 }
 
 .footer--site {
-  -webkit-transition: all 0.35s linear;
   -moz-transition: all 0.35s linear;
   -o-transition: all 0.35s linear;
+  -webkit-transition: all 0.35s linear;
   transition: all 0.35s linear;
   border-top: 1px solid #efefef;
   bottom: 0;
@@ -779,12 +761,15 @@ main {
   line-height: 1.2;
 }
 .pseudoNav a {
-  -webkit-transition: opacity 0.35s linear;
   -moz-transition: opacity 0.35s linear;
   -o-transition: opacity 0.35s linear;
+  -webkit-transition: opacity 0.35s linear;
   transition: opacity 0.35s linear;
   display: block;
   padding: 1em;
+}
+.pseudoNav a:hover {
+  opacity: 0.6;
 }
 .pseudoNav a:hover:before, .pseudoNav a:hover:after {
   display: none;
@@ -794,7 +779,7 @@ main {
   margin: 0;
 }
 .pseudoNav .date {
-  color: #999999;
+  color: #999;
 }
 .pseudoNav.not--hovered a {
   opacity: 0.25;
@@ -845,7 +830,7 @@ main {
   font-weight: 300;
 }
 .home h1 small {
-  color: #999999;
+  color: #999;
   display: block;
 }
 @media screen and (min-width: 768px) {
@@ -872,8 +857,8 @@ main {
 }
 
 .home-featured {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 20px;
 }
@@ -894,7 +879,7 @@ main {
   margin: 0;
 }
 .header--home-featured p {
-  color: #999999;
+  color: #999;
   margin-top: -0.625rem;
 }
 
@@ -904,6 +889,14 @@ main {
 
 .center {
   text-align: center;
+}
+
+.mhc {
+  margin: 0 auto;
+}
+
+.twitter-tweet {
+  margin: 10px auto !important;
 }
 
 .split {
@@ -924,8 +917,8 @@ main {
 }
 @media screen and (min-width: 768px) {
   .events--upcoming .list--item {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #efefef;
     display: inline-block;
@@ -967,76 +960,60 @@ main {
 
 @-webkit-keyframes spinThatIsh {
   from {
-    -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   to {
-    -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @-moz-keyframes spinThatIsh {
   from {
-    -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   to {
-    -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @-ms-keyframes spinThatIsh {
   from {
-    -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   to {
-    -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @keyframes spinThatIsh {
   from {
-    -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   to {
-    -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 .explanation {
   margin: 0 auto;
   max-width: 700px;

@@ -394,7 +394,7 @@ body,
 }
 
 body {
-  color: #333333;
+  color: #333;
 }
 
 ul {
@@ -413,9 +413,9 @@ li {
 }
 
 .course-feature {
-  -webkit-transition: right 0.25s ease-out;
   -moz-transition: right 0.25s ease-out;
   -o-transition: right 0.25s ease-out;
+  -webkit-transition: right 0.25s ease-out;
   transition: right 0.25s ease-out;
   border-left: 1px solid #e5e5e5;
   cursor: pointer;
@@ -474,7 +474,7 @@ li {
   border: none;
   border-radius: 0.25em;
   box-shadow: 0;
-  color: white;
+  color: #fff;
   display: block;
   line-height: 2.5;
   margin: 0 auto;

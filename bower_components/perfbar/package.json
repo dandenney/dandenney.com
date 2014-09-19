@@ -1,0 +1,14 @@
+{
+  "name": "perfbar",
+  "version": "0.0.2",
+  "homepage": "http://lafikl.github.io/perfBar",
+  "description": "Tracking performance metrics never been easier",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khalid Lafi",
+  "license": "MIT",
+  "dependencies": {
+    "hbsfy": "^2.0.0"
+  }
+}

@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  background: white;
+  background: #fff;
   margin: 0 auto;
   max-width: 700px;
   padding: 1.5em;
@@ -19,7 +19,7 @@ h1 {
   padding: 0;
 }
 .circles-talks li {
-  background: white;
+  background: #fff;
   list-style: none;
   margin: 0;
   padding: 1em 0 130px 0;
@@ -46,7 +46,7 @@ h1 {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background: white;
+  background: #fff;
   height: 220px;
   margin: -160px auto 0 auto;
   padding: 10px;
@@ -54,12 +54,12 @@ h1 {
 }
 
 #disqus_thread {
-  background: white;
+  background: #fff;
   padding: 1em;
 }
 
 .date {
-  color: white;
+  color: #fff;
   display: block;
   margin-top: 1em;
 }
