@@ -958,6 +958,18 @@ main {
   opacity: 0.5;
 }
 
+.mbf {
+  margin-bottom: 0;
+}
+
+.mtf {
+  margin-top: 0;
+}
+
+.mbl {
+  margin-bottom: 2em;
+}
+
 @-webkit-keyframes spinThatIsh {
   from {
     -moz-transform: rotate(0deg);

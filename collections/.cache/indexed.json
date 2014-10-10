@@ -1568,6 +1568,21 @@
         "ticks": 1409371200.0,
         "mixture_month_year": "08/2014",
         "mixture_date": "2014-08-30T00:00:00-04:00"
+      },
+      "/posts/conferences/give-back": {
+        "layout": "article",
+        "section": "posts",
+        "title": "Give Back",
+        "category": "general",
+        "date": "2014-10-07 04:00:00 UTC",
+        "slug": "/posts/conferences/give-back",
+        "published": true,
+        "body": "<p class='center'>\n  <img class='mhc' src='/assets/images/posts/general/give-back/give-back.jpg'>\n  <br>\n  <small>Two of my favorite people <a href=\"https://twitter.com/carlsmith\">Carl Smith</a> and <a href=\"https://twitter.com/andigrahambsd\">Andi Graham</a>, who are always giving back to the community.</small>\n</p>\n<p>\n  Some wonderful got together and made us an <a href=\"http://frontendthanks.com\">awesome site</a> and printed off t-shirts. Thank you again to everyone involved and specifically to <a href=\"https://twitter.com/michigangraham\">Matt Graham</a> and <a href=\"https://twitter.com/bencallahan\">Ben Callahan</a> for heading things up. They also donated the proceeds from Cotton Bureau to us. Needless to say, we never planned on pocketing that.\n</p>\n<h2 class='mbf'>Giving It Back</h2>\n<p>\n  There's an awesome opportunity to give back in a couple of ways. We really want this project to get funded: <a href=\"https://www.indiegogo.com/projects/code-debugging-the-gender-gap\">CODE: Debugging the Gender Gap</a>. Additionally, one of the rewards gets someone 6 months of <a href=\"http:codeschool.com\">Code School</a>. I love working there and the idea of someone getting 6 months to increase their skills.\n</p>\n<p>\n  So, we bought 2 of the $100 levels where someone gets the Code School reward and I want to give the rewards away.\n</p>\n<h2 class='mbf'>We Need Your Help</h2>\n<h5 class='mbf'>Step one:</h5>\n<p class='mtf'>\n  We need to know who to give these 2 rewards to. Are you in a point in your career where this could really make a difference? Or, do you know someone that it could really make a difference to? Pop your or their name in the form below and I'll do a random draw on Friday (October 10th).\n</p>\n<h5 class='mbf'>Step two:</h5>\n<p class='mtf mbl'>\n  <a href=\"https://www.indiegogo.com/projects/code-debugging-the-gender-gap\">Share the project!</a> It has 4 days left and only needs $1,750 (at this moment).\n</p>\n<h4>Congratulations to Fasina and Ryan, our winners!</h4>\n",
+        "month": "10",
+        "year": "2014",
+        "ticks": 1412654400.0,
+        "mixture_month_year": "10/2014",
+        "mixture_date": "2014-10-07T00:00:00-04:00"
       }
     },
     "index": {
@@ -1679,6 +1694,9 @@
         ],
         "/posts/front-end-dev/experiment-personal-json-based-api": [
           "/posts/front-end-dev/experiment-personal-json-based-api"
+        ],
+        "/posts/conferences/give-back": [
+          "/posts/conferences/give-back"
         ]
       },
       "transliterated-slug": {
@@ -1789,6 +1807,9 @@
         ],
         "/posts/front-end-dev/experiment-personal-json-based-api": [
           "/posts/front-end-dev/experiment-personal-json-based-api"
+        ],
+        "/posts/conferences/give-back": [
+          "/posts/conferences/give-back"
         ]
       },
       "category": {
@@ -1832,7 +1853,8 @@
           "/posts/general/ricardo-rally-time",
           "/posts/general/the-trouble-with",
           "/posts/i-forgot-about-dre",
-          "/posts/general/growing-with-envy"
+          "/posts/general/growing-with-envy",
+          "/posts/conferences/give-back"
         ]
       },
       "transliterated-category": {
@@ -1876,7 +1898,8 @@
           "/posts/general/ricardo-rally-time",
           "/posts/general/the-trouble-with",
           "/posts/i-forgot-about-dre",
-          "/posts/general/growing-with-envy"
+          "/posts/general/growing-with-envy",
+          "/posts/conferences/give-back"
         ]
       },
       "layout": {
@@ -1915,7 +1938,8 @@
           "/posts/front-end-dev/html-but-with-an-a-and-less-code",
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
-          "/posts/front-end-dev/experiment-personal-json-based-api"
+          "/posts/front-end-dev/experiment-personal-json-based-api",
+          "/posts/conferences/give-back"
         ],
         "article-full": [
           "/posts/conferences/front-end-conf-finales"
@@ -1957,7 +1981,8 @@
           "/posts/front-end-dev/html-but-with-an-a-and-less-code",
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
-          "/posts/front-end-dev/experiment-personal-json-based-api"
+          "/posts/front-end-dev/experiment-personal-json-based-api",
+          "/posts/conferences/give-back"
         ],
         "article-full": [
           "/posts/conferences/front-end-conf-finales"
@@ -2071,6 +2096,9 @@
         ],
         "experiment - personal json-based api": [
           "/posts/front-end-dev/experiment-personal-json-based-api"
+        ],
+        "give back": [
+          "/posts/conferences/give-back"
         ]
       },
       "transliterated-title": {
@@ -2181,6 +2209,9 @@
         ],
         "experiment---personal-json-based-api": [
           "/posts/front-end-dev/experiment-personal-json-based-api"
+        ],
+        "give-back": [
+          "/posts/conferences/give-back"
         ]
       },
       "section": {
@@ -2220,7 +2251,8 @@
           "/posts/front-end-dev/html-but-with-an-a-and-less-code",
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
-          "/posts/front-end-dev/experiment-personal-json-based-api"
+          "/posts/front-end-dev/experiment-personal-json-based-api",
+          "/posts/conferences/give-back"
         ]
       },
       "transliterated-section": {
@@ -2260,7 +2292,8 @@
           "/posts/front-end-dev/html-but-with-an-a-and-less-code",
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
-          "/posts/front-end-dev/experiment-personal-json-based-api"
+          "/posts/front-end-dev/experiment-personal-json-based-api",
+          "/posts/conferences/give-back"
         ]
       },
       "month": {
@@ -2318,7 +2351,8 @@
           "/posts/conferences/diversity"
         ],
         "10": [
-          "/posts/conferences/future-of-front-end-conf"
+          "/posts/conferences/future-of-front-end-conf",
+          "/posts/conferences/give-back"
         ]
       },
       "year": {
@@ -2362,7 +2396,8 @@
           "/posts/front-end-dev/fun-with-responsive-email-banners",
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
-          "/posts/front-end-dev/experiment-personal-json-based-api"
+          "/posts/front-end-dev/experiment-personal-json-based-api",
+          "/posts/conferences/give-back"
         ]
       },
       "ticks": {
@@ -2467,6 +2502,9 @@
         ],
         "1409371200.0": [
           "/posts/front-end-dev/experiment-personal-json-based-api"
+        ],
+        "1412654400.0": [
+          "/posts/conferences/give-back"
         ]
       },
       "mixture_month_year": {
@@ -2545,6 +2583,9 @@
         ],
         "09/2014": [
           "/posts/conferences/diversity"
+        ],
+        "10/2014": [
+          "/posts/conferences/give-back"
         ]
       },
       "mixture_date": {
@@ -2649,6 +2690,9 @@
         ],
         "2014-08-30t00:00:00-04:00": [
           "/posts/front-end-dev/experiment-personal-json-based-api"
+        ],
+        "2014-10-07t00:00:00-04:00": [
+          "/posts/conferences/give-back"
         ]
       },
       "css": {

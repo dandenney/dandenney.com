@@ -957,3 +957,15 @@ main {
 .is-past {
   opacity: 0.5;
 }
+
+.mbf {
+  margin-bottom: 0;
+}
+
+.mtf {
+  margin-top: 0;
+}
+
+.mbl {
+  margin-bottom: 2em;
+}

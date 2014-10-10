@@ -7,23 +7,23 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     {{ "application.css" | asset_url | stylesheet_tag }}
     {% if model.code-sample %}
-    
+
       {{ "prism.css" | asset_url | stylesheet_tag }}
-    
+
     {% endif %}
     {{ model.css }}
   </head>
   <body>
-    
+
     {% include "header" %}
-    
+
     <main class="content">
       <article class="l-bucket">
         <h1>{{ model.title }}</h1>
         {% block content %}{% endblock %}
         <small class="date">{{ model.date | date:'%b %d %Y' }}</small>
         {% include "articles/paging" %}
-        
+
         <div id="disqus_thread">
           <script type="text/javascript">
           var disqus_shortname = 'dandenney';
@@ -34,36 +34,32 @@
           })();
           </script>
           <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
-        </div> 
-          
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+
       </article>
     </main>
-    
+
     {% include "footer" %}
-    
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
     {% if model.code-sample %}
-    
+
       {{ "prism.js" | asset_url | script_tag }}
-    
+
     {% endif %}
-    
+
     {{ "app.js" | asset_url | script_tag }}
 
-    <script type="text/javascript">
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4f8f96b2f5a1f546a80000f8');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-3589831-2', 'auto');
+      ga('send', 'pageview');
     </script>
   </body>
 </html>
