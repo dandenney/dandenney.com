@@ -1583,6 +1583,21 @@
         "ticks": 1412654400.0,
         "mixture_month_year": "10/2014",
         "mixture_date": "2014-10-07T00:00:00-04:00"
+      },
+      "/posts/conferences/front-end-conf-lives": {
+        "layout": "article",
+        "section": "posts",
+        "title": "Front-End Conf Lives!",
+        "category": "Conferences",
+        "date": "2014-10-23 04:00:00 UTC",
+        "slug": "/posts/conferences/front-end-conf-lives",
+        "published": true,
+        "body": "<style>\n  h1, h2, h3, h4 { color: #b51f24; }\n</style>\n<p class='center'>\n  <img src='/assets/images/posts/conferences/front-end-conf-lives/plan-comes-together.jpg' width='400'>\n</p>\n<p>\n  The decision to stop running Front-End Conf was a very tough one and the reaction of the people both in St. Petersburg and Portland made it even more hard. Luckily, I knew it was going to be tough and I decided to call out a few of my friends. The awesome crew from <a href=\"http://unmatchedstyle.com/\">Unmatched Style</a>, who run <a href=\"http://convergese.com/\">ConvergeSE</a>, <a href=\"http://convergefl.com/\">ConvergeFL</a>, <a href=\"http://convergerva.com/\">ConvergeRVA</a>, and the <a href=\"https://bdconf.com/\">Breaking Development confs</a> (amongst other things) came up on stage to give me a gift. I returned the favor by calling them out on the possibility of running a conf in St. Pete because that's the kind of thing friends can get away with. We've been chatting since and they're officially taking over!\n</p>\n<p class='center'>\n  <img src='/assets/images/posts/conferences/front-end-conf-lives/converge-crew.jpg' width='100%'>\n</p>\n<h2>The Best Possible Outcome</h2>\n<p>\n  Front-End Conf will continue on and will be in St. Petersburg in 2015! They will be handling all of the logistics and running the conf, which is the part Cherrie and I were struggling to keep up with. They're pros and I've learned so much from them as we've been sharing our conf running experiences over the past 6 years. (We missed each other's first confs, but I've traveled up for every ConvergeSE since 2010 and they've come down to St. Pete for every one since then as well.) The best part is that they still want us to be involved! So, we'll be helping out in every way that we can to work on the conf with friends to continue celebrating with this awesome community.\n</p>\n<h2>Stay in the loop!</h2>\n<p>\n  We have a <a href=\"http://frontendconf.com\">new landing page</a> whipped up the team, with some of Giovanni's awesome artistry. Be sure to sign up for updates for when we have details...\n</p>\n",
+        "month": "10",
+        "year": "2014",
+        "ticks": 1414036800.0,
+        "mixture_month_year": "10/2014",
+        "mixture_date": "2014-10-23T00:00:00-04:00"
       }
     },
     "index": {
@@ -1697,6 +1712,9 @@
         ],
         "/posts/conferences/give-back": [
           "/posts/conferences/give-back"
+        ],
+        "/posts/conferences/front-end-conf-lives": [
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "transliterated-slug": {
@@ -1810,6 +1828,9 @@
         ],
         "/posts/conferences/give-back": [
           "/posts/conferences/give-back"
+        ],
+        "/posts/conferences/front-end-conf-lives": [
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "category": {
@@ -1843,7 +1864,8 @@
           "/posts/conferences/future-of-front-end-conf",
           "/posts/conferences/circles-conf-2012",
           "/posts/conferences/thank-you",
-          "/posts/conferences/diversity"
+          "/posts/conferences/diversity",
+          "/posts/conferences/front-end-conf-lives"
         ],
         "general": [
           "/posts/general/fluid",
@@ -1888,7 +1910,8 @@
           "/posts/conferences/future-of-front-end-conf",
           "/posts/conferences/circles-conf-2012",
           "/posts/conferences/thank-you",
-          "/posts/conferences/diversity"
+          "/posts/conferences/diversity",
+          "/posts/conferences/front-end-conf-lives"
         ],
         "general": [
           "/posts/general/fluid",
@@ -1939,7 +1962,8 @@
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
           "/posts/front-end-dev/experiment-personal-json-based-api",
-          "/posts/conferences/give-back"
+          "/posts/conferences/give-back",
+          "/posts/conferences/front-end-conf-lives"
         ],
         "article-full": [
           "/posts/conferences/front-end-conf-finales"
@@ -1982,7 +2006,8 @@
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
           "/posts/front-end-dev/experiment-personal-json-based-api",
-          "/posts/conferences/give-back"
+          "/posts/conferences/give-back",
+          "/posts/conferences/front-end-conf-lives"
         ],
         "article-full": [
           "/posts/conferences/front-end-conf-finales"
@@ -2099,6 +2124,9 @@
         ],
         "give back": [
           "/posts/conferences/give-back"
+        ],
+        "front-end conf lives!": [
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "transliterated-title": {
@@ -2212,6 +2240,9 @@
         ],
         "give-back": [
           "/posts/conferences/give-back"
+        ],
+        "front-end-conf-lives": [
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "section": {
@@ -2252,7 +2283,8 @@
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
           "/posts/front-end-dev/experiment-personal-json-based-api",
-          "/posts/conferences/give-back"
+          "/posts/conferences/give-back",
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "transliterated-section": {
@@ -2293,7 +2325,8 @@
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
           "/posts/front-end-dev/experiment-personal-json-based-api",
-          "/posts/conferences/give-back"
+          "/posts/conferences/give-back",
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "month": {
@@ -2352,7 +2385,8 @@
         ],
         "10": [
           "/posts/conferences/future-of-front-end-conf",
-          "/posts/conferences/give-back"
+          "/posts/conferences/give-back",
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "year": {
@@ -2397,7 +2431,8 @@
           "/posts/conferences/thank-you",
           "/posts/conferences/diversity",
           "/posts/front-end-dev/experiment-personal-json-based-api",
-          "/posts/conferences/give-back"
+          "/posts/conferences/give-back",
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "ticks": {
@@ -2505,6 +2540,9 @@
         ],
         "1412654400.0": [
           "/posts/conferences/give-back"
+        ],
+        "1414036800.0": [
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "mixture_month_year": {
@@ -2585,7 +2623,8 @@
           "/posts/conferences/diversity"
         ],
         "10/2014": [
-          "/posts/conferences/give-back"
+          "/posts/conferences/give-back",
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "mixture_date": {
@@ -2693,6 +2732,9 @@
         ],
         "2014-10-07t00:00:00-04:00": [
           "/posts/conferences/give-back"
+        ],
+        "2014-10-23t00:00:00-04:00": [
+          "/posts/conferences/front-end-conf-lives"
         ]
       },
       "css": {
