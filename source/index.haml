@@ -1,0 +1,36 @@
+---
+blog: posts
+pageable: true
+per_page: 10
+---
+
+%section.row
+  .cell.cell--s
+    .well
+
+      =image_tag 'dan-denney-avatar.png', alt: 'Dan Denney illustration by Ricardo Gimenes', class: 'db mhc mtm', width: '200'
+
+      %h1.mbm.mtm.tsl
+        Hi! I'm Dan Denney, a front-end dev at
+        =link_to 'Code School', 'http://codeschool.com'
+        and founder of
+        =link_to 'Front-End Conf', 'http://frontendconf.com'
+
+      %h2 Here are some recent blog posts:
+
+      - if paginate && num_pages > 1
+        %p
+          Page #{page_number} of #{num_pages}
+        - if prev_page
+          %p= link_to 'Previous page', prev_page
+      - page_articles.each_with_index do |article, i|
+        %h4.mbm
+          = link_to article.title, article
+          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+        /
+          use article.summary(250) if you have Nokogiri available to show just
+          the first 250 characters
+        / <haml_loud> article.body </haml_loud>
+      - if paginate
+        - if next_page
+          %p= link_to 'Next page', next_page

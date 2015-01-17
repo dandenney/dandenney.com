@@ -13,8 +13,11 @@ html
   line-height: $b-lineHeight
 
 body
-  font-size: 100%
+  font-size: 77%
   font-weight: 300
+
+  +respond-to($g-m)
+    font-size: 100%
 
 // -------------------------------------
 //   Block Content
