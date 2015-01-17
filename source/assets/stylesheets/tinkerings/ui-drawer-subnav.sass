@@ -1,0 +1,148 @@
+// *************************************
+//
+//   Tinkerings
+//   -> Drawer Subnav
+//
+// *************************************
+
+@import "core/reset"
+
+// -------------------------------------
+//   Global
+// -------------------------------------
+
+// ----- Settings ----- //
+
+$border-base: 1px solid #e5e5e5
+
+$color-base-layout: #42623f
+
+// ----- Silent Selectors ----- //
+
+// For the full height sidebar, all parents must be set to 100%
+%fullHeight
+  min-height: 100%
+  height: 100%
+
+%split
+  display: inline-block
+  position: relative
+  vertical-align: top
+  width: 50%
+  &:first-child
+    margin-right: -4px
+    
+// ----- Base ----- //
+  
+html,
+body,
+.content--tinkerings,
+.ui-drawer-subnav
+  @extend %fullHeight
+  
+body
+  color: #333
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+li
+  margin: 0
+  padding: 0
+
+// -------------------------------------
+//   Course Sidebar
+// -------------------------------------
+
+.course-sidebar
+  @extend %fullHeight
+  @extend %split
+  
+// ----- Course Features ----- //
+
+.course-features
+  @extend %fullHeight
+  border-right: $border-base
+
+// ----- Course Features ----- //
+
+.course-feature
+  @extend %fullHeight
+  +transition(right 0.25s ease-out)
+  border-left: $border-base
+  cursor: pointer
+  margin: 0
+  padding: 0
+  position: absolute
+  right: 0
+  width: 30px
+  z-index: 2
+  &:nth-child(2)
+    right: 60px
+  &:nth-child(3)  
+    right: 30px
+  &:nth-child(4)  
+    right: 90px
+  i
+    display: block
+    margin: 1em auto 0
+    opacity: 0.4
+    width: 20px
+  &.is--expanded
+    left: 0
+    right: 0
+    width: auto
+    z-index: 1
+    i
+      margin: 1em 0 0 1em
+    
+// ----- Features Content ----- //
+
+.course-feature-content
+  display: none
+  line-height: 1.5
+  padding: 1em 6.625em 1em 1em
+  .is--expanded &
+    display: block
+  
+// -------------------------------------
+//   Course Content
+// -------------------------------------
+
+.course-content
+  @extend %fullHeight
+  @extend %split
+
+// ----- Challenge Editor ----- //
+
+%editor-items
+  border-bottom: $border-base
+  padding: 1em
+
+.challenge-items
+  @extend %editor-items
+
+.challenge-editor
+  padding: 1em
+  
+.challenge-submit
+  background: #7ec145
+  border: none
+  border-radius: 0.25em
+  box-shadow: 0
+  color: #fff
+  display: block
+  line-height: 2.5
+  margin: 0 auto
+  padding: 0 1em
+  text-shadow: 0 -1px 0 darken(#7ec145, 10%)
+  width: auto
+
+// ----- Resource Editor ----- //
+
+.resource-items
+  @extend %editor-items
+  margin: 0 -1em
+

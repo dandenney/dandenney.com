@@ -1,0 +1,91 @@
+---
+layout: tinkering
+title: UI Drawer Subnav
+tags: UI
+date: August 16, 2013
+css: tinkerings/ui-drawer-subnav
+---
+
+.ui-drawer-subnav.js-expand.amenities
+
+  %aside.course-sidebar
+    %ul.course-features
+      
+      %li.js-drawer--toggle.course-feature.course-nav
+        %i
+          %img{:src => "/assets/images/tinkerings/drawer-subnav/hamburger-alt.svg", :width => "20"}
+      
+      %li.js-drawer--toggle.course-feature.challenge-options
+        
+        %i
+          %img{:src => "/assets/images/tinkerings/drawer-subnav/resource-03.svg", :width => "20"}
+
+        .course-feature-content
+
+          %h2 Slides
+
+          %h2 Video
+
+          %h2 Hints
+      
+      %li.js-drawer--toggle.course-feature.challenge-resources
+        %i
+          %img{:src => "/assets/images/tinkerings/drawer-subnav/file-alt.svg", :width => "20"}
+        .course-feature-content
+          .resource-items
+            %ul.resource-item-list
+              %li.resource-item
+                resource-filename.rb
+          .rescource-editor
+            %pre
+              %code{:contenteditable => "true"}
+                :preserve
+                  class Review < ActiveRecord::Base
+                    belongs_to :item
+
+                    def add_to_item
+                      # We'll fill this in next!
+                    end
+
+                    private
+
+                    def bad_words?
+                      description =~ /BAD_WORD/
+                    end
+                  end
+      
+      %li.js-drawer--toggle.course-feature.challenge-meta.is--expanded
+        %i
+          %img{:src => "/assets/images/tinkerings/drawer-subnav/info.svg", :width => "20"}
+        .course-feature-content
+          %h2
+            1.1 Section Title I - 250 Points
+          %p
+            Our controllers are kind of chubby, so let's make things better. Replace the two conditionals that involve validating and creating a review with a single call to review.add_to_item that returns a boolean. Don't worry, we'll implement this method next.
+    
+  %section.course-content
+    .challenge-items
+      %ul.challenge-item-list
+        %li.challenge-item
+          filename.rb
+    .challenge-editor
+      %pre
+        %code{:contenteditable => "true"}
+          :preserve
+            class Review < ActiveRecord::Base
+              belongs_to :item
+
+              def add_to_item
+                # We'll fill this in next!
+              end
+
+              private
+
+              def bad_words?
+                description =~ /BAD_WORD/
+              end
+            end
+    .challenge-actions
+      %button.challenge-submit
+        Check my code
+    

@@ -1,26 +1,14 @@
 {
-  "name": "dandenney.com",
-  "version": "0.0.0",
-  "homepage": "https://github.com/dandenney/dandenney.com",
+  "name": "Baseman",
+  "version": "1.1.0",
+  "homepage": "https://github.com/drewbarontini/baseman",
+  "description": "A base Middleman application",
   "authors": [
-    "dandenney <dd.subscriptions@gmail.com>"
-  ],
-  "description": "Bower yo",
-  "moduleType": [
-    "es6",
-    "globals",
-    "node"
+    "Drew Barontini"
   ],
   "license": "MIT",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
-    "perfbar": "~0.0.2"
+    "jquery": "~2.1.1"
   }
 }
