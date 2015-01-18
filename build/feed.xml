@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/posts</id>
+  <link href="http://blog.url.com/posts"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2014-10-22T20:00:00-04:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Front-End Conf Lives!</title>
+    <link rel="alternate" href="http://blog.url.com/posts/conferences/front-end-conf-lives"/>
+    <id>http://blog.url.com/posts/conferences/front-end-conf-lives</id>
+    <published>2014-10-22T20:00:00-04:00</published>
+    <updated>2015-01-16T23:39:45-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;style&gt;
+  h1, h2, h3, h4 { color: #b51f24; }
+&lt;/style&gt;
+&lt;p class='center'&gt;
+  &lt;img class='db mhc' src='/assets/images/posts/conferences/front-end-conf-lives/plan-comes-together.jpg' width='400'&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  The decision to stop running Front-End Conf was a very tough one and the reaction of the people both in St. Petersburg and Portland made it even more hard. Luckily, I knew it was going to be tough and I decided to call out a few of my friends. The awesome crew from &lt;a href='http://unmatchedstyle.com/'&gt;Unmatched Style&lt;/a&gt;, who run &lt;a href='http://convergese.com/'&gt;ConvergeSE&lt;/a&gt;, &lt;a href='http://convergefl.com/'&gt;ConvergeFL&lt;/a&gt;, &lt;a href='http://convergerva.com/'&gt;ConvergeRVA&lt;/a&gt;, and the &lt;a href='https://bdconf.com/'&gt;Breaking Development confs&lt;/a&gt; (amongst other things) came up on stage to give me a gift. I returned the favor by calling them out on the possibility of running a conf in St. Pete because that's the kind of thing friends can get away with. We've been chatting since and they're officially taking over!
+&lt;/p&gt;
+&lt;p class='center'&gt;
+  &lt;img src='/assets/images/posts/conferences/front-end-conf-lives/converge-crew.jpg' width='100%'&gt;
+&lt;/p&gt;
+&lt;h2&gt;The Best Possible Outcome&lt;/h2&gt;
+&lt;p&gt;
+  Front-End Conf will continue on and will be in St. Petersburg in 2015! They will be handling all of the logistics and running the conf, which is the part Cherrie and I were struggling to keep up with. They're pros and I've learned so much from them as we've been sharing our conf running experiences over the past 6 years. (We missed each other's first confs, but I've traveled up for every ConvergeSE since 2010 and they've come down to St. Pete for every one since then as well.) The best part is that they still want us to be involved! So, we'll be helping out in every way that we can to work on the conf with friends to continue celebrating with this awesome community.
+&lt;/p&gt;
+&lt;h2&gt;Stay in the loop!&lt;/h2&gt;
+&lt;p&gt;
+  We have a &lt;a href='http://frontendconf.com'&gt;new landing page&lt;/a&gt; whipped up by the team, with some of Giovanni's awesome artistry. Be sure to sign up for updates for when we have details...
+&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Give Back</title>
+    <link rel="alternate" href="http://blog.url.com/posts/general/give-back"/>
+    <id>http://blog.url.com/posts/general/give-back</id>
+    <published>2014-10-06T20:00:00-04:00</published>
+    <updated>2015-01-16T22:31:59-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p class='center'&gt;
+  &lt;img class="mhc" width="640" height="640" src="assets/images/posts/general/give-back/give-back.jpg" /&gt;
+  &lt;br&gt;
+  &lt;small&gt;Two of my favorite people &lt;a href="https://twitter.com/carlsmith"&gt;Carl Smith&lt;/a&gt; and &lt;a href="https://twitter.com/andigrahambsd"&gt;Andi Graham&lt;/a&gt;, who are always giving back to the community.&lt;/small&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Some wonderful got together and made us an &lt;a href="http://frontendthanks.com"&gt;awesome site&lt;/a&gt; and printed off t-shirts. Thank you again to everyone involved and specifically to &lt;a href="https://twitter.com/michigangraham"&gt;Matt Graham&lt;/a&gt; and &lt;a href="https://twitter.com/bencallahan"&gt;Ben Callahan&lt;/a&gt; for heading things up. They also donated the proceeds from Cotton Bureau to us. Needless to say, we never planned on pocketing that.
+&lt;/p&gt;
+&lt;h2 class='mbf'&gt;Giving It Back&lt;/h2&gt;
+&lt;p&gt;
+  There's an awesome opportunity to give back in a couple of ways. We really want this project to get funded: &lt;a href="https://www.indiegogo.com/projects/code-debugging-the-gender-gap"&gt;CODE: Debugging the Gender Gap&lt;/a&gt;. Additionally, one of the rewards gets someone 6 months of &lt;a href="http:codeschool.com"&gt;Code School&lt;/a&gt;. I love working there and the idea of someone getting 6 months to increase their skills.
+&lt;/p&gt;
+&lt;p&gt;
+  So, we bought 2 of the $100 levels where someone gets the Code School reward and I want to give the rewards away.
+&lt;/p&gt;
+&lt;h2 class='mbf'&gt;We Need Your Help&lt;/h2&gt;
+&lt;h5 class='mbf'&gt;Step one:&lt;/h5&gt;
+&lt;p class='mtf'&gt;
+  We need to know who to give these 2 rewards to. Are you in a point in your career where this could really make a difference? Or, do you know someone that it could really make a difference to? Pop your or their name in the form below and I'll do a random draw on Friday (October 10th).
+&lt;/p&gt;
+&lt;h5 class='mbf'&gt;Step two:&lt;/h5&gt;
+&lt;p class='mtf mbl'&gt;
+  &lt;a href="https://www.indiegogo.com/projects/code-debugging-the-gender-gap"&gt;Share the project!&lt;/a&gt; It has 4 days left and only needs $1,750 (at this moment).
+&lt;/p&gt;
+&lt;h4&gt;Congratulations to Fasina and Ryan, our winners!&lt;/h4&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Experiment - Personal JSON-based API</title>
+    <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/experiment-personal-json-based-api"/>
+    <id>http://blog.url.com/posts/front-end-dev/experiment-personal-json-based-api</id>
+    <published>2014-08-29T20:00:00-04:00</published>
+    <updated>2015-01-16T20:08:57-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;
+  The most important thing that I can say right now is that this is an experiment. I am sharing as I learn, so please don't consider this a tutorial. I prefer to share as I bumble through things because it might help other people in the same spot and experts usually offer good tips for improving.
+&lt;/p&gt;
+&lt;h2&gt;Why I am doing this&lt;/h2&gt;
+&lt;p&gt;
+  I've been a fan of data since I was young. In my teens, I used newspapers to track stocks to see what would happen if I day traded with $100k. Later, I moved to watching patterns in dog racing results and started betting them occasionally. I got distracted from this stuff for a while, but data visualization on the web is exploding and the
+  &lt;a href='http://en.wikipedia.org/wiki/Quantified_Self'&gt;quantified self&lt;/a&gt;
+  movement is intriguing. There are great tools for collecting and displaying data and I want to learn.
+&lt;/p&gt;
+&lt;h2&gt;Big goals, small steps&lt;/h2&gt;
+&lt;p&gt;
+  Sites like
+  &lt;a href='http://aprilzero.com'&gt;AprilZero.com&lt;/a&gt;
+  and
+  &lt;a href='http://feltron.com'&gt;Feltron.com&lt;/a&gt;
+  are my inspiration. To achieve things like they have, I'll need a database, third-party APIs, and top-notch skills in data visualization. While those are the goals, I'm starting very simply and learning. That way when I'm done, I can go full Drake and be all like "started from the bottom now I'm here".
+&lt;/p&gt;
+&lt;h2&gt;Step One: Store Data as JSON&lt;/h2&gt;
+&lt;p&gt;
+  I knew that I wanted to use
+  &lt;a href='https://www.firebase.com'&gt;Firebase&lt;/a&gt;
+  to get started. I've been fascinated with the power that it offers for someone like me who has no experience with back-end development. It can be used to store and access data in real-time and their docs are fantastic.
+&lt;/p&gt;
+&lt;p&gt;
+  Knowing that this will be a work in progress, I didn't spend much time planning out data. I know there were a few things that I would want to be able to display on the site, so I created a small JSON file with them.
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-javascript'&gt;{&amp;#x000A;  "personal" : {&amp;#x000A;    "firstName" : "Dan",&amp;#x000A;    "lastName" : "Denney",&amp;#x000A;    "dob" : "12/26/77"&amp;#x000A;  },&amp;#x000A;  "work" : {&amp;#x000A;    "workTitle" : "Front-End Dev",&amp;#x000A;    "workCompany" : "Code School"&amp;#x000A;  },&amp;#x000A;  "social" : {&amp;#x000A;    "website" : "dandenney.com",&amp;#x000A;    "twitter" : "dandenney",&amp;#x000A;    "codepen" : "dandenney",&amp;#x000A;    "github" : "dandenney",&amp;#x000A;    "gplus" : "+DanDenneydd"&amp;#x000A;  }&amp;#x000A;}&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  Importing that to Firebase, I get a structure that looks like this. (The recentFinds came later, but I'll explain that next.)
+&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src='/assets/images/posts/front-end-dev/experiment-personal-json-api/screenshot-json.png'&gt;
+&lt;/figure&gt;
+&lt;h2&gt;Step Two: Write to the JSON&lt;/h2&gt;
+&lt;p&gt;
+  The prior stuff was static (borinnnggg). What I'm interested in is writing to the JSON. A simple example seemed to be to list awesome things I've found on the web recently. So, I created a recentFinds object.
+&lt;/p&gt;
+&lt;p&gt;
+  One important thing to share is that I don't know how to structure JSON manually by memory, so I use this &lt;a href="http://jsonformatter.curiousconcept.com"&gt;JSON Formatter&lt;/a&gt;.
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-javascript'&gt;{&amp;#x000A;  "personal" : {&amp;#x000A;    "firstName" : "Dan",&amp;#x000A;    "lastName" : "Denney",&amp;#x000A;    "dob" : "12/26/77"&amp;#x000A;  },&amp;#x000A;  "work" : {&amp;#x000A;    "workTitle" : "Front-End Dev",&amp;#x000A;    "workCompany" : "Code School"&amp;#x000A;  },&amp;#x000A;  "social" : {&amp;#x000A;    "website" : "dandenney.com",&amp;#x000A;    "twitter" : "dandenney",&amp;#x000A;    "codepen" : "dandenney",&amp;#x000A;    "github" : "dandenney",&amp;#x000A;    "gplus" : "+DanDenneydd"&amp;#x000A;  },&amp;#x000A;  "recentFinds" : [&amp;#x000A;    {&amp;#x000A;      "title" : "perfBar",&amp;#x000A;      "url" : "http://lafikl.github.io/perfBar",&amp;#x000A;      "description" : "Simple way to collect and look at your website performance metrics quickly"&amp;#x000A;    }&amp;#x000A;  ]&amp;#x000A;}&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  This is a static example, but it's only to get the structure into Firebase in the way that I want it. I don't understand their UI for creating JSON structures, so it's way easier to write what I want and import it.
+&lt;/p&gt;
+&lt;p&gt;
+  The Firebase JS is 28k and has functions that allow accessing and updating data. The following code is a combo of Firebase code and some quick and dirty Coffeescript that I made as a proof of concept.
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-javascript'&gt;# Create a global recentFinds reference&amp;#x000A;recentFindsref = new Firebase("https://dandenney.firebaseio.com/recentFinds")&amp;#x000A;&amp;#x000A;# Send recentFind data to Firebase on click of #findSubmit&amp;#x000A;$("#findSubmit").click -&gt;&amp;#x000A;&amp;#x000A;  # Get the data from the inputs&amp;#x000A;  findTitle = $("#findTitle").val()&amp;#x000A;  findUrl = $("#findUrl").val()&amp;#x000A;  findDescription = $("#findDescription").val()&amp;#x000A;&amp;#x000A;  # Update the recent finds list&amp;#x000A;  recentFindsref.push({&amp;#x000A;    title: findTitle&amp;#x000A;    url: findUrl&amp;#x000A;    description: findDescription&amp;#x000A;  })&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  I actually started by sending static information to make sure that
+  &lt;code&gt;recentFindsref.push&lt;/code&gt;
+  worked, but the goal was to be able to send info from a form. I strayed with the event trigger because using a submit input or button causes a page refresh that I don't want.
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-markup'&gt;&amp;lt;form&amp;gt;
+  &amp;lt;fieldset&amp;gt;
+    &amp;lt;label for=&amp;quot;findTitle&amp;quot;&amp;gt;Title&amp;lt;/label&amp;gt;
+    &amp;lt;input id=&amp;quot;findTitle&amp;quot; name=&amp;quot;findTitle&amp;quot; type=&amp;quot;text&amp;quot; /&amp;gt;
+  &amp;lt;/fieldset&amp;gt;
+  &amp;lt;fieldset&amp;gt;
+    &amp;lt;label for=&amp;quot;findName&amp;quot;&amp;gt;URL&amp;lt;/label&amp;gt;
+    &amp;lt;input id=&amp;quot;findUrl&amp;quot; name=&amp;quot;findUrl&amp;quot; type=&amp;quot;text&amp;quot; /&amp;gt;
+  &amp;lt;/fieldset&amp;gt;
+  &amp;lt;fieldset&amp;gt;
+    &amp;lt;label for=&amp;quot;findDescription&amp;quot;&amp;gt;Description&amp;lt;/label&amp;gt;
+    &amp;lt;input id=&amp;quot;findDescription&amp;quot; name=&amp;quot;findDescription&amp;quot; type=&amp;quot;text&amp;quot; /&amp;gt;
+  &amp;lt;/fieldset&amp;gt;
+  &amp;lt;p id=&amp;quot;findSubmit&amp;quot; name=&amp;quot;findSubmit&amp;quot;&amp;gt;Add&amp;lt;/p&amp;gt;
+&amp;lt;/form&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  Testing this out with a few entries shows that the data is being saved to my JSON and Firebase is assigning a unique ID for each one as well.
+&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src='/assets/images/posts/front-end-dev/experiment-personal-json-api/screenshot-recentfinds.png'&gt;
+&lt;/figure&gt;
+&lt;h2&gt;Step Three: Read from the JSON&lt;/h2&gt;
+&lt;p&gt;
+  At this point, I had data stored in JSON and the ability to add more data to it. I wanted to be sure that I could then access and display that data in order to know that I would be able to use this in the way that I want to.
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class='language-markup'&gt;&amp;lt;ul id=&amp;quot;recentFinds&amp;quot;&amp;gt;
+  &amp;lt;!-- Firebase data from https://dandenney.firebaseio.com/recentFinds --&amp;gt;
+&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class='language-javascript'&gt;# Retrieve recentFind data from Firebase on page document ready
+$ -&amp;gt;
+  recentFindsref.on 'child_added', (snapshot) -&amp;gt;
+    url = snapshot.val().url
+    title = snapshot.val().title
+    description = snapshot.val().description
+
+    # Append an li to the ul#recentFinds for each item in recentFinds
+    $(&amp;quot;#recentFinds&amp;quot;).append(
+      &amp;quot;&amp;lt;li&amp;gt;&amp;quot; + &amp;quot;&amp;lt;h3&amp;gt;&amp;quot; +  &amp;quot;&amp;lt;a href='&amp;quot; + url + &amp;quot;'&amp;gt;&amp;quot; + title + &amp;quot;&amp;lt;/a&amp;gt;&amp;quot; + &amp;quot;&amp;lt;/h3&amp;gt;&amp;quot; + &amp;quot;&amp;lt;p&amp;gt;&amp;quot; + description + &amp;quot;&amp;lt;/p&amp;gt;&amp;quot; +&amp;quot;&amp;lt;/li&amp;gt;&amp;quot;
+    )&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;It Works!&lt;/h2&gt;
+&lt;p&gt;
+  So here's a GIF of it in action. Pardon the fact that it's hideous, this was quick experimentation so I had no concern about aesthetics or usability yet. The awesome thing about Firebase is that it's realtime. Nothing I ever record will ever deserve that amount of speed, but it's nice to have. You'll see in the GIF how fast it is. This example is sending the data to Firebase and back into the page without any delay. (If you don't count me trying to find the add "button".)
+&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src='/assets/images/posts/front-end-dev/experiment-personal-json-api/by-golly-it-works.gif'&gt;
+&lt;/figure&gt;
+&lt;h2&gt;Next Steps&lt;/h2&gt;
+&lt;p&gt;
+  Now I know that it works and in looking at the documentation I'll be able to set the number of items to find and assign ordering. Next up is figuring out what I would like to record and then refactoring the code.
+&lt;/p&gt;
+&lt;p&gt;
+  Recent Finds is something that I would like to keep, but I think it could benefit from a date as well. I'll need to make sure that I have a field for that and pre-populate today's date. I'm also thinking of tracking some personal stuff like workouts and beers consumed because they have a cause and effect relationship that might be interesting to see as a joke.
+&lt;/p&gt;
+&lt;p&gt;
+  For the Coffeescript, I'll use &lt;a href="https://github.com/spellbook/spellbook"&gt;Spellbook&lt;/a&gt; for our organization practices and stop polluting the global space with all of that jelly.
+&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Thank You</title>
+    <link rel="alternate" href="http://blog.url.com/posts/conferences/thank-you"/>
+    <id>http://blog.url.com/posts/conferences/thank-you</id>
+    <published>2014-08-27T20:00:00-04:00</published>
+    <updated>2015-01-16T20:11:28-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;style&gt;
+  h1 { display: none; }
+&lt;/style&gt;
+&lt;p class='center mtl'&gt;
+  &lt;img class='mhc' src='/assets/images/posts/conferences/thank-you/thank-you.svg'&gt;
+&lt;/p&gt;
+&lt;p class='center'&gt;
+  &lt;img class='mhc' src='/assets/images/posts/conferences/thank-you/matt-graham.jpg'&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  So last Friday on the morning of Front-End Conf Portland, I had run downstairs to get coffee. As I'm known to do, I checked Twitter while waiting my turn and saw this tweet.
+&lt;/p&gt;
+&lt;div class='mhc'&gt;
+  &lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;We love &lt;a href="https://twitter.com/dandenney"&gt;@dandenney&lt;/a&gt; and &lt;a href="https://twitter.com/CherrieDenney"&gt;@CherrieDenney&lt;/a&gt;! Lets let them know how much &lt;a href="https://twitter.com/frontendconf"&gt;@frontendconf&lt;/a&gt; peeps! &lt;a href="http://t.co/Ib19F3vomz"&gt;http://t.co/Ib19F3vomz&lt;/a&gt; &amp;#10;&amp;#10;&lt;a href="https://twitter.com/hashtag/frontendthanks?src=hash"&gt;#frontendthanks&lt;/a&gt;&lt;/p&gt;&amp;mdash; Matt Graham (@michigangraham) &lt;a href="https://twitter.com/michigangraham/statuses/502813335130472448"&gt;August 22, 2014&lt;/a&gt;&lt;/blockquote&gt;
+  &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;p&gt;I only got a quick peek at it before it was my turn, so I just texted Cherrie: "Did you see what Matt made?" Fast forward 5 minutes and I walked into our hotel room to see Cherrie like this:&lt;/p&gt;
+&lt;p class='center'&gt;
+  &lt;img class='mhc' src='/assets/images/posts/conferences/thank-you/emobrit.gif'&gt;
+&lt;/p&gt;
+&lt;h2&gt;Oh. My. Goodness.&lt;/h2&gt;
+&lt;p&gt;
+  I sit down to take a peek and I was absolutely floored. There's a full site, dozens of messages, photos, and a Cotton Bureau shirt that's gorgeous?! The &lt;a href="http://seesparkbox.com"&gt;Sparkbox&lt;/a&gt; folks are involved as well...
+&lt;/p&gt;
+&lt;div class='mhc'&gt;
+  &lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;We love &lt;a href="https://twitter.com/dandenney"&gt;@dandenney&lt;/a&gt; and &lt;a href="https://twitter.com/CherrieDenney"&gt;@CherrieDenney&lt;/a&gt;! Lets let them know how much &lt;a href="https://twitter.com/frontendconf"&gt;@frontendconf&lt;/a&gt; peeps! &lt;a href="http://t.co/RqjBTb6EiD"&gt;http://t.co/RqjBTb6EiD&lt;/a&gt; &amp;#10;&amp;#10;&lt;a href="https://twitter.com/hashtag/frontendthanks?src=hash"&gt;#frontendthanks&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sparkbox (@hearsparkbox) &lt;a href="https://twitter.com/hearsparkbox/statuses/502814493081358336"&gt;August 22, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;p&gt;
+  I immediately realize that some serious time and planning went into this project. Completely stunned and honored, I started reading through the messages and that was the best part. You don't always know what kind of impact that you have on people, but here was a site with a bunch of our favorite people sharing exactly that. It's been a week and I still can't put into words just how awesome this was.
+&lt;/p&gt;
+&lt;h2&gt;We have the best friends&lt;/h2&gt;
+&lt;p&gt;
+  To get an idea of all of the people involved, check out &lt;a href="http://frontendthanks.com"&gt;the site&lt;/a&gt; and the &lt;a href="https://github.com/mattgraham/frontendthanks"&gt;Github repo&lt;/a&gt;. That was just the start, too! Throughout the day there were tweets on the hashtag and people buying shirts for their whole team. It was crazy and it's all because we have been so lucky to meet such amazing people throughout the past 6 years while running the conference. This is the kind of thing that will stick with us for our entire lives.
+&lt;/p&gt;
+&lt;p&gt;
+  Thank you so very, very much to everyone. You made our year! Extra thank yous go to &lt;a href="https://twitter.com/michigangraham"&gt;Matt Graham&lt;/a&gt; for heading up this huge undertaking and rallying everyone, to &lt;a href="https://twitter.com/bencallahan"&gt;Ben Callahan&lt;/a&gt; for setting up the Cotton Bureau project, and to &lt;a href="https://twitter.com/jeremyloyd"&gt;Jeremy Loyd&lt;/a&gt; for designing the awesome shirt.
+&lt;/p&gt;
+&lt;p&gt;
+  Speaking of the shirt, it feels weird promoting it because we are benefitting from it but they are only available for a limited run. If you want one, there's &lt;a href="https://cottonbureau.com/products/to-dan-and-cherrie"&gt;6 days left&lt;/a&gt; to grab it. I can't wait to rock one.
+&lt;/p&gt;
+&lt;p class='center'&gt;
+  &lt;img class='mhc' src='/assets/images/posts/conferences/thank-you/give-back-shirt.jpg'&gt;
+&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>No Sleep til Portland</title>
+    <link rel="alternate" href="http://blog.url.com/posts/conferences/no-sleep-til-brooklyn"/>
+    <id>http://blog.url.com/posts/conferences/no-sleep-til-brooklyn</id>
+    <published>2014-07-20T20:00:00-04:00</published>
+    <updated>2015-01-16T20:10:33-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;
+  Ok, we will sleep.
+  &lt;a href='http://twitter.com/carlsmith'&gt;Carl Smith&lt;/a&gt;
+  made it clear how important sleep is during his awesome talk in St. Pete. It's more like "Portland or Bust", but
+  &lt;a href='http://twitter.com/nathanyoder'&gt;Nathan Yoder&lt;/a&gt;
+  just claimed that recently as he moved there.
+&lt;/p&gt;
+&lt;img src='/assets/images/posts/conferences/no-sleep-til-portland/portland-or-bust.png'&gt;
+&lt;h2&gt;Can we promote a conf in 5 weeks?&lt;/h2&gt;
+&lt;p&gt;
+  We knew the scheduling was going to be tight, but we underestimated the time that it would take to pull off St. Pete this year. Well, I did. Cherrie warned me many times. Anyhow, we have some details to still work out, but we're looking forward to celebrating front-end and meeting the Portland community.
+&lt;/p&gt;
+&lt;h2&gt;"We'll get by with a little help from our friends"&lt;/h2&gt;
+&lt;p&gt;
+  We will make the day happen. We have an awesome location and fantastic speakers coming out. However, there is no way that we can let enough people know that it is happening on our own.
+&lt;/p&gt;
+&lt;p&gt;
+  I'm usually like Joe Pesci in My Cousin Vinny, trying to do everything I can without help. However, I owe it to the speakers to make sure that enough people know about this so they get the chance to see them. So I'm swallowing my pride and asking for your help!
+&lt;/p&gt;
+&lt;h3&gt;#frontendconfpdx&lt;/h3&gt;
+&lt;p&gt;
+  Of course, I'd like to sweeten the deal a little bit. If you share some reason to attend and use the #frontendconfpdx hashtag, I'll do a random draw to win a gift. (I'll draw this Saturday, July 21) I &lt;a href="https://www.kickstarter.com/projects/essmaker/the-great-discontent-magazine-issue-1"&gt;backed The Great Discontent&lt;/a&gt;, so I have an unopened set with a magazine, tote bag, and poster. The URL:
+  &lt;a href='http://frontendconf.com'&gt;frontendconf.com&lt;/a&gt;
+&lt;/p&gt;
+&lt;img alt='photo of The Great Discontent package' src='/assets/images/posts/conferences/no-sleep-til-portland/tgd.jpg'&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Front-End Design Conference Finales</title>
+    <link rel="alternate" href="http://blog.url.com/posts/conferences/front-end-conf-finales"/>
+    <id>http://blog.url.com/posts/conferences/front-end-conf-finales</id>
+    <published>2014-06-08T20:00:00-04:00</published>
+    <updated>2015-01-17T14:39:44-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;img width="100%" src="assets/images/posts/conferences/front-end-conf-finales/dan-cherrie-stage.svg" /&gt;
+&lt;div class='row'&gt;
+  &lt;div class='cell cell--s well'&gt;
+    &lt;p&gt;
+      Running the Front-End Design Conference since 2009 has been amazing. We have met so many wonderful people, formed amazing friendships, and had so much fun along the way. As the saying goes, though, "all good things must come to an end". These two events in
+      &lt;a href='http://frontenddesignconference.com/st-pete'&gt;St. Pete&lt;/a&gt;
+      and
+      &lt;a href='http://frontenddesignconference.com/portland'&gt;Portland&lt;/a&gt;
+      will be the last of our Front-End Design Conferences.
+    &lt;/p&gt;
+    &lt;h2&gt;"Why?"&lt;/h2&gt;
+    &lt;p&gt;A lot has changed over the past five years. When we first started the conference, we were both working in-office jobs. Traveling wasn't an easy thing to do for us and there were almost no events in Florida. In fact, there weren't too many events to choose from in the U.S.&lt;/p&gt;
+    &lt;p&gt;Since traveling is now Cherrie's job, it has become a regular part of our lives. We love it, but it is hard to keep up with anything outside of our jobs.&lt;/p&gt;
+    &lt;p&gt;
+      The conference scene has changed greatly since 2009. There are so many conferences to choose from, with many of them expanding to Florida. Coming up this year there is
+      &lt;a href="http://convergefl.com"&gt;ConvergeFL&lt;/a&gt;, &lt;a href="http://aneventapart.com/event/orlando-2014"&gt;An Event Apart&lt;/a&gt;, &lt;a href="https://bdconf.com/events/orlando-2014"&gt;Breaking Development&lt;/a&gt;, and &lt;a href="http://twitter.com/norcross"&gt;Norcross&lt;/a&gt; is bringing a &lt;a href="http://2014.tampa.wordcamp.org"&gt;WordCamp&lt;/a&gt; to Tampa. We have made a lot of conference organizer friends and I know some of them won't bring events down in this area in order to not "compete". If we step aside, it'll open the doors to new events in the area.
+    &lt;/p&gt;
+    &lt;h2&gt;Passing the Torch&lt;/h2&gt;
+    &lt;p&gt;
+      There's also the opportunity for anyone reading this to decide to run one. Dream up an event you'd like, do some research, and make it happen! It wasn't local, but
+      &lt;a href='https://twitter.com/erikstmartin'&gt;Erik St. Martin&lt;/a&gt;
+      wanted to run a
+      &lt;a href='http://gophercon.com'&gt;Go conference&lt;/a&gt;
+      and they had to stop selling tickets at like 700 people.
+    &lt;/p&gt;
+    &lt;p&gt;
+      If you'd like something already rolling,
+      &lt;a href='http://webafternoon.com/host'&gt;A Web Afternoon&lt;/a&gt;
+      has a sort of franchising option where they share their system and help with planning and execution.
+    &lt;/p&gt;
+    &lt;h2&gt;We're not done running events...&lt;/h2&gt;
+    &lt;p&gt;We will still run some events, just with a smaller scale and focus. Working with &lt;a href="http://codeschool.com"&gt;Code School&lt;/a&gt; the past couple of years has emphasized my love for "learning by doing", so I'm wanting to be involved in some smaller things with hands-on learning. Cherrie loves running events and has seen people who could benefit from them in developing countries.&lt;/p&gt;
+    &lt;h2&gt;Come celebrate with us!&lt;/h2&gt;
+    &lt;p&gt;
+      In talking about this, the hardest part of the decision is knowing that we won't have this annual couple of days where we get to see so many people that we love. We originally started this out of my love for the community, but it immediately became a family event. My and Cherrie's family run it every year and it has become a part of their lives. Cherrie is especially sad because she has met so many amazing people and the community has embraced her even though she's not "technically" a designer/developer. So, make sure you come out and party with us for these last 2 confs! In fact, we'll start selling tickets to
+      &lt;a href='http://frontenddesignconference.com/portland'&gt;Portland&lt;/a&gt;
+      right now, even though all of the details aren't ironed out yet.
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;img class="db mhc" width="350" height="284" src="assets/images/posts/conferences/front-end-conf-finales/minion-kiss.gif" /&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>

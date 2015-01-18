@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Experiment - Personal JSON-based API</title>
+    <!-- Typekit -->
+    <script src="//use.typekit.net/ddg5xff.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="../../assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='posts posts_front-end-dev posts_front-end-dev_experiment-personal-json-based-api'>
+    <header>
+      <p class='dib'>
+        Dan Denney
+      </p>
+      <nav class='dib'>
+        <a class="mls" href="/posts">Posts</a>
+        <a class="mls" href="/blips">Blips</a>
+        <a class="mls" href="/tinkerings">Tinkerings</a>
+        <a class="mls" href="/">Home</a>
+      </nav>
+    </header>
+    <section class='row'>
+      <div class='cell cell--s'>
+        <article class='well'>
+          <h1>Experiment - Personal JSON-based API</h1>
+          <p>
+            The most important thing that I can say right now is that this is an experiment. I am sharing as I learn, so please don't consider this a tutorial. I prefer to share as I bumble through things because it might help other people in the same spot and experts usually offer good tips for improving.
+          </p>
+          <h2>Why I am doing this</h2>
+          <p>
+            I've been a fan of data since I was young. In my teens, I used newspapers to track stocks to see what would happen if I day traded with $100k. Later, I moved to watching patterns in dog racing results and started betting them occasionally. I got distracted from this stuff for a while, but data visualization on the web is exploding and the
+            <a href='http://en.wikipedia.org/wiki/Quantified_Self'>quantified self</a>
+            movement is intriguing. There are great tools for collecting and displaying data and I want to learn.
+          </p>
+          <h2>Big goals, small steps</h2>
+          <p>
+            Sites like
+            <a href='http://aprilzero.com'>AprilZero.com</a>
+            and
+            <a href='http://feltron.com'>Feltron.com</a>
+            are my inspiration. To achieve things like they have, I'll need a database, third-party APIs, and top-notch skills in data visualization. While those are the goals, I'm starting very simply and learning. That way when I'm done, I can go full Drake and be all like "started from the bottom now I'm here".
+          </p>
+          <h2>Step One: Store Data as JSON</h2>
+          <p>
+            I knew that I wanted to use
+            <a href='https://www.firebase.com'>Firebase</a>
+            to get started. I've been fascinated with the power that it offers for someone like me who has no experience with back-end development. It can be used to store and access data in real-time and their docs are fantastic.
+          </p>
+          <p>
+            Knowing that this will be a work in progress, I didn't spend much time planning out data. I know there were a few things that I would want to be able to display on the site, so I created a small JSON file with them.
+          </p>
+          <pre><code class='language-javascript'>{&#x000A;  "personal" : {&#x000A;    "firstName" : "Dan",&#x000A;    "lastName" : "Denney",&#x000A;    "dob" : "12/26/77"&#x000A;  },&#x000A;  "work" : {&#x000A;    "workTitle" : "Front-End Dev",&#x000A;    "workCompany" : "Code School"&#x000A;  },&#x000A;  "social" : {&#x000A;    "website" : "dandenney.com",&#x000A;    "twitter" : "dandenney",&#x000A;    "codepen" : "dandenney",&#x000A;    "github" : "dandenney",&#x000A;    "gplus" : "+DanDenneydd"&#x000A;  }&#x000A;}&#x000A;</code></pre>
+          <p>
+            Importing that to Firebase, I get a structure that looks like this. (The recentFinds came later, but I'll explain that next.)
+          </p>
+          <figure>
+            <img src='/assets/images/posts/front-end-dev/experiment-personal-json-api/screenshot-json.png'>
+          </figure>
+          <h2>Step Two: Write to the JSON</h2>
+          <p>
+            The prior stuff was static (borinnnggg). What I'm interested in is writing to the JSON. A simple example seemed to be to list awesome things I've found on the web recently. So, I created a recentFinds object.
+          </p>
+          <p>
+            One important thing to share is that I don't know how to structure JSON manually by memory, so I use this <a href="http://jsonformatter.curiousconcept.com">JSON Formatter</a>.
+          </p>
+          <pre><code class='language-javascript'>{&#x000A;  "personal" : {&#x000A;    "firstName" : "Dan",&#x000A;    "lastName" : "Denney",&#x000A;    "dob" : "12/26/77"&#x000A;  },&#x000A;  "work" : {&#x000A;    "workTitle" : "Front-End Dev",&#x000A;    "workCompany" : "Code School"&#x000A;  },&#x000A;  "social" : {&#x000A;    "website" : "dandenney.com",&#x000A;    "twitter" : "dandenney",&#x000A;    "codepen" : "dandenney",&#x000A;    "github" : "dandenney",&#x000A;    "gplus" : "+DanDenneydd"&#x000A;  },&#x000A;  "recentFinds" : [&#x000A;    {&#x000A;      "title" : "perfBar",&#x000A;      "url" : "http://lafikl.github.io/perfBar",&#x000A;      "description" : "Simple way to collect and look at your website performance metrics quickly"&#x000A;    }&#x000A;  ]&#x000A;}&#x000A;</code></pre>
+          <p>
+            This is a static example, but it's only to get the structure into Firebase in the way that I want it. I don't understand their UI for creating JSON structures, so it's way easier to write what I want and import it.
+          </p>
+          <p>
+            The Firebase JS is 28k and has functions that allow accessing and updating data. The following code is a combo of Firebase code and some quick and dirty Coffeescript that I made as a proof of concept.
+          </p>
+          <pre><code class='language-javascript'># Create a global recentFinds reference&#x000A;recentFindsref = new Firebase("https://dandenney.firebaseio.com/recentFinds")&#x000A;&#x000A;# Send recentFind data to Firebase on click of #findSubmit&#x000A;$("#findSubmit").click ->&#x000A;&#x000A;  # Get the data from the inputs&#x000A;  findTitle = $("#findTitle").val()&#x000A;  findUrl = $("#findUrl").val()&#x000A;  findDescription = $("#findDescription").val()&#x000A;&#x000A;  # Update the recent finds list&#x000A;  recentFindsref.push({&#x000A;    title: findTitle&#x000A;    url: findUrl&#x000A;    description: findDescription&#x000A;  })&#x000A;</code></pre>
+          <p>
+            I actually started by sending static information to make sure that
+            <code>recentFindsref.push</code>
+            worked, but the goal was to be able to send info from a form. I strayed with the event trigger because using a submit input or button causes a page refresh that I don't want.
+          </p>
+          <pre><code class='language-markup'>&lt;form&gt;
+            &lt;fieldset&gt;
+              &lt;label for=&quot;findTitle&quot;&gt;Title&lt;/label&gt;
+              &lt;input id=&quot;findTitle&quot; name=&quot;findTitle&quot; type=&quot;text&quot; /&gt;
+            &lt;/fieldset&gt;
+            &lt;fieldset&gt;
+              &lt;label for=&quot;findName&quot;&gt;URL&lt;/label&gt;
+              &lt;input id=&quot;findUrl&quot; name=&quot;findUrl&quot; type=&quot;text&quot; /&gt;
+            &lt;/fieldset&gt;
+            &lt;fieldset&gt;
+              &lt;label for=&quot;findDescription&quot;&gt;Description&lt;/label&gt;
+              &lt;input id=&quot;findDescription&quot; name=&quot;findDescription&quot; type=&quot;text&quot; /&gt;
+            &lt;/fieldset&gt;
+            &lt;p id=&quot;findSubmit&quot; name=&quot;findSubmit&quot;&gt;Add&lt;/p&gt;
+          &lt;/form&gt;</code></pre>
+          <p>
+            Testing this out with a few entries shows that the data is being saved to my JSON and Firebase is assigning a unique ID for each one as well.
+          </p>
+          <figure>
+            <img src='/assets/images/posts/front-end-dev/experiment-personal-json-api/screenshot-recentfinds.png'>
+          </figure>
+          <h2>Step Three: Read from the JSON</h2>
+          <p>
+            At this point, I had data stored in JSON and the ability to add more data to it. I wanted to be sure that I could then access and display that data in order to know that I would be able to use this in the way that I want to.
+          </p>
+          <pre><code class='language-markup'>&lt;ul id=&quot;recentFinds&quot;&gt;
+            &lt;!-- Firebase data from https://dandenney.firebaseio.com/recentFinds --&gt;
+          &lt;/ul&gt;</code></pre>
+          <pre><code class='language-javascript'># Retrieve recentFind data from Firebase on page document ready
+          $ -&gt;
+            recentFindsref.on 'child_added', (snapshot) -&gt;
+              url = snapshot.val().url
+              title = snapshot.val().title
+              description = snapshot.val().description
+          
+              # Append an li to the ul#recentFinds for each item in recentFinds
+              $(&quot;#recentFinds&quot;).append(
+                &quot;&lt;li&gt;&quot; + &quot;&lt;h3&gt;&quot; +  &quot;&lt;a href='&quot; + url + &quot;'&gt;&quot; + title + &quot;&lt;/a&gt;&quot; + &quot;&lt;/h3&gt;&quot; + &quot;&lt;p&gt;&quot; + description + &quot;&lt;/p&gt;&quot; +&quot;&lt;/li&gt;&quot;
+              )</code></pre>
+          <h2>It Works!</h2>
+          <p>
+            So here's a GIF of it in action. Pardon the fact that it's hideous, this was quick experimentation so I had no concern about aesthetics or usability yet. The awesome thing about Firebase is that it's realtime. Nothing I ever record will ever deserve that amount of speed, but it's nice to have. You'll see in the GIF how fast it is. This example is sending the data to Firebase and back into the page without any delay. (If you don't count me trying to find the add "button".)
+          </p>
+          <figure>
+            <img src='/assets/images/posts/front-end-dev/experiment-personal-json-api/by-golly-it-works.gif'>
+          </figure>
+          <h2>Next Steps</h2>
+          <p>
+            Now I know that it works and in looking at the documentation I'll be able to set the number of items to find and assign ordering. Next up is figuring out what I would like to record and then refactoring the code.
+          </p>
+          <p>
+            Recent Finds is something that I would like to keep, but I think it could benefit from a date as well. I'll need to make sure that I have a field for that and pre-populate today's date. I'm also thinking of tracking some personal stuff like workouts and beers consumed because they have a cause and effect relationship that might be interesting to see as a joke.
+          </p>
+          <p>
+            For the Coffeescript, I'll use <a href="https://github.com/spellbook/spellbook">Spellbook</a> for our organization practices and stop polluting the global space with all of that jelly.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class='row'>
+      <div class='cell cell--s'>
+        <div id="disqus_thread" class="well">
+        <script type="text/javascript">
+        var disqus_shortname = 'dandenney';
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class='dib'>
+        Dan Denney
+      </p>
+      <nav class='dib'>
+        <a class="mls" href="/posts">Posts</a>
+        <a class="mls" href="/blips">Blips</a>
+        <a class="mls" href="/tinkerings">Tinkerings</a>
+        <a class="mls" href="/">Home</a>
+      </nav>
+    </footer>
+    <!-- = javascript_include_tag  'vendor' -->
+    <!-- = javascript_include_tag  'application' -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-3589831-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </body>
+</html>

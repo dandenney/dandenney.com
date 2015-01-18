@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Playing With CSS Hat</title>
+    <!-- Typekit -->
+    <script src="//use.typekit.net/ddg5xff.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="../../assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='posts posts_front-end-dev posts_front-end-dev_playing-with-css-hat'>
+    <header>
+      <p class='dib'>
+        Dan Denney
+      </p>
+      <nav class='dib'>
+        <a class="mls" href="/posts">Posts</a>
+        <a class="mls" href="/blips">Blips</a>
+        <a class="mls" href="/tinkerings">Tinkerings</a>
+        <a class="mls" href="/">Home</a>
+      </nav>
+    </header>
+    <section class='row'>
+      <div class='cell cell--s'>
+        <article class='well'>
+          <h1>Playing With CSS Hat</h1>
+          <article class='post' id='playing-with-css-hat'>
+            <div class='wrapper'>
+              <h1>Playing With CSS Hat</h1>
+              <p>
+                <a href='http://csshat.com'>CSS Hat</a>
+                is a photoshop plugin from the team that will hopefully bring us
+                <a href='http://csspiffle.com'>CSS Pifffle.</a>
+                I had been anxiously awaiting for it to be released because I wanted to see what the team was capable of. They are currently working on a new app for web creation, intended to replace Photoshop and Fireworks for us.
+              </p>
+              <h3>It surprised me</h3>
+              <p>
+                I was skeptical because most things that automate code output some crazy ish. The code that comes out of CSS Hat is very usable. I'd prefer if there was a way to alphabetize the properties as an option, but I have
+                <a href='http://procssor.com'>procssor</a>
+                for that. I'm using Compass or Sass mixins a lot these days so I wouldn't necessarily copy and paste the code at all. To me, it is a quick way to get the nitty gritty stuff: hex codes, opacity percentages, shadow ratios, etc.
+              </p>
+              <h3>Building something with it</h3>
+              <p>
+                A while ago I had this little dream that every day I would code out a psd resource from sites like 365psd and share them as a gallery. I didn't follow through, but I did do one. So, I'm going to compare that with what I can grab straight out of the psd.
+              </p>
+            </div>
+            <div class='light'>
+              <div class='container'>
+                <div class='sample'>
+                  <h4>Original Image</h4>
+                  <img alt='Day 155 nav from 365psd' src='/assets/images/posts/front-end-dev/playing-with-css-hat/day155.png'>
+                </div>
+                <div class='sample'>
+                  <h4>Original Conversion</h4>
+                  <div class='day155'>
+                    <div id='code-version'>
+                      <nav>
+                        <a class='first' href='#'>Day</a>
+                        <a href='#'>Week</a>
+                        <a href='#'>Month</a>
+                        <a class='last' href='#'>List</a>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='container'>
+                <div class='sample'>
+                  <h4>CSS Hat Version</h4>
+                  <div class='csshat'>
+                    <nav>
+                      <a class='first' href='#'>Day</a>
+                      <a href='#'>Week</a>
+                      <a href='#'>Month</a>
+                      <a class='last' href='#'>List</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class='sample'>
+                  <h4>With a little padding</h4>
+                  <div class='csshat padded'>
+                    <nav>
+                      <a class='first' href='#'>Day</a>
+                      <a href='#'>Week</a>
+                      <a href='#'>Month</a>
+                      <a class='last' href='#'>List</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='wrapper'>
+              <h3>Ok, so it's not plug and play</h3>
+              <p>
+                This particular psd brings out some flaws, but not necessarily flaws with CSS Hat. It's more of a general flaw in using Photoshop to make things intended to be built with CSS. Here is the error the notes from CSS Hat:
+                <blockquote>
+                  *Stroke has a gradient fill type, but there is no way to express that in CSS, writing the average color instead. Blending modes are used in gradient fill and inner shadow, but they are impossible to realistically transfer to CSS.
+                </blockquote>
+              </p>
+              <p>
+                Our designer used blending modes which are not CSS friendly. It's not that you can't replicate the end result, it's that there is no way to automate it. You can't (yet with browser support) set something like "blendmode: overlay;".
+              </p>
+              <p>
+                When I originally coded up my version, I spent a good deal of time with the eyedropper trying to nail down the colors for the beginning and end colors for the gradients.
+              </p>
+              <p>
+                There are a couple of things that you could grab from the outputted code, like the border-radius for example. Other than that, though, the blending modes killed this one. As you can see there are some other things that you'd have to use tools to get too. The padding, for example, would have to come from using rulers or something. (I use
+                <a href='http://iconfactory.com/software/xscope'>xScope</a>
+                for all measuring and colors now.) As usual, fonts are off as well. It calls for a 13px Helvetica Neue Bold but I changed it to normal.
+              </p>
+            </div>
+            <div class='wrapper'>
+              <h3>Build something without blending modes</h3>
+              <p>
+                I wanted to try something without blending modes to see how it works out. It gets better, but you'll see there are still some issues.
+              </p>
+            </div>
+            <div class='light'>
+              <div class='container'>
+                <div class='sample'>
+                  <h4>Original Image</h4>
+                  <img alt='200 Days of Awesomeness #4' src='/assets/images/posts/front-end-dev/playing-with-css-hat/200days-4.png'>
+                </div>
+                <div class='sample'>
+                  <h4>CSS Hat Styles</h4>
+                  <div class='awesome-4'>
+                    <nav>
+                      <a href='#'>Home</a>
+                      <a href='#'>Portfolio</a>
+                      <a href='#'>About</a>
+                      <a href='#'>Contact</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='container'>
+              <p>
+                Now I made some quick tweaks to get it in the range of the original. Padding, margin, font-family, font-size, max-width, etc.
+              </p>
+            </div>
+            <div class='light'>
+              <div class='container'>
+                <h4>With quick adjustments</h4>
+                <div class='awesome-4 adjusted'>
+                  <nav>
+                    <a href='#'>Home</a>
+                    <a href='#'>Portfolio</a>
+                    <a href='#'>About</a>
+                    <a href='#'>Contact</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class='wrapper'>
+              <p>
+                You can see that it missed some of the details. The thin stroke didn't make it in correctly and the gradient color shifted a bit. The stroke is just a matter of needing it to be 2 pixels inside the element and 1px around and I'm guessing the gradient issue is that a scale of 28% was used. I bet they're not set up to grab scaling gradients.
+              </p>
+              <h3>Final thought: It's ok</h3>
+              <p>
+                So it's on the way but as it is, it can only be used as a shortcut to getting some of the property values. It still leaves me hopeful for their upcoming tool. I imagine if all of the options within the tool had to have a direct CSS equivalent, there would be much better accuracy. For me, it's $20 so if it saves me at least 30 minutes (ever) it was worth the price of admission.
+              </p>
+            </div>
+          </article>
+        </article>
+      </div>
+    </section>
+    <section class='row'>
+      <div class='cell cell--s'>
+        <div id="disqus_thread" class="well">
+        <script type="text/javascript">
+        var disqus_shortname = 'dandenney';
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class='dib'>
+        Dan Denney
+      </p>
+      <nav class='dib'>
+        <a class="mls" href="/posts">Posts</a>
+        <a class="mls" href="/blips">Blips</a>
+        <a class="mls" href="/tinkerings">Tinkerings</a>
+        <a class="mls" href="/">Home</a>
+      </nav>
+    </footer>
+    <!-- = javascript_include_tag  'vendor' -->
+    <!-- = javascript_include_tag  'application' -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-3589831-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </body>
+</html>

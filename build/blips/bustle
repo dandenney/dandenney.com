@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Bustle</title>
+    <!-- Typekit -->
+    <script src="//use.typekit.net/ddg5xff.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="../assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='blips blips_bustle'>
+    <header>
+      <p class='dib'>
+        Dan Denney
+      </p>
+      <nav class='dib'>
+        <a class="mls" href="/posts">Posts</a>
+        <a class="mls" href="/blips">Blips</a>
+        <a class="mls" href="/tinkerings">Tinkerings</a>
+        <a class="mls" href="/">Home</a>
+      </nav>
+    </header>
+    <section class='row'>
+      <div class='cell cell--s'>
+        <article class='well'>
+          <h1>Bustle</h1>
+          <p><a href="http://www.bustle.com">Bustle.com</a> came out recently and created a bunch of itself: excited activity and movement. People are up in arms over the amount of money that was raised for the startup ($6.5 million), the claims interpreted as saying that it's the first site for women, and the tech involved in the delivery of the content (primarly the JS templating of Ember). </p>
+          
+          <p>I wouldn't have ever stated things in the way the founder did, I wouldn't have dreamed of trying to score 6.5M for a blog and I wouldn't have combined Rails and Ember to deliver the content for a blog. I'm really glad that they did, though. It got my attention because everyone was pissed, but I love the site. The writing is fantastic and it's the best performing content site that I've been on. It instantly became a daily check for me.</p>
+          
+          <p>The one part I'm probably supposed to be against is using JS for serving up content, but I'm not. I think it is perfect for who they are targeting. They are targeting connected, modern, individuals of which SEO and non-JS browsers are not a concern. </p>
+          
+          <p><strong>I was wrong about the SEO part</strong>. RJ Ciccaglione, who heads up Product Direction at Bustle says:</p>
+          
+          <blockquote>
+            <p>"SEO is in fact, very important to us. We get around the JS/crawling issues by storing a cache of almost every page pre-rendered using phantomjs. You can access this cache with a ?nojs=true query string (warning: breaks JS on the page) or by simply curl-ing any URL on the site.") </p>
+          </blockquote>
+          
+          <p>Their demographics are using very modern technology and they find and share their information via social networks. </p>
+          
+          <p>Would it be an issue if a national news organization did the same thing? Probably. However, Bustle isn't that. My only hope is that they monetize well because I want the site around for a long time.</p>
+        </article>
+      </div>
+    </section>
+    <section class='row'>
+      <div class='cell cell--s'>
+        <div id="disqus_thread" class="well">
+        <script type="text/javascript">
+        var disqus_shortname = 'dandenney';
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class='dib'>
+        Dan Denney
+      </p>
+      <nav class='dib'>
+        <a class="mls" href="/posts">Posts</a>
+        <a class="mls" href="/blips">Blips</a>
+        <a class="mls" href="/tinkerings">Tinkerings</a>
+        <a class="mls" href="/">Home</a>
+      </nav>
+    </footer>
+    <!-- = javascript_include_tag  'vendor' -->
+    <!-- = javascript_include_tag  'application' -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-3589831-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </body>
+</html>

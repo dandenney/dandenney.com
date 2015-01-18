@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Upcoming Events in '13</title>
+    <!-- Typekit -->
+    <script src="//use.typekit.net/ddg5xff.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="../../assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/stylesheets/posts/upcoming-events-13.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='posts posts_conferences posts_conferences_upcoming-events-13'>
+    <header>
+      <p class='dib'>
+        Dan Denney
+      </p>
+      <nav class='dib'>
+        <a class="mls" href="/posts">Posts</a>
+        <a class="mls" href="/blips">Blips</a>
+        <a class="mls" href="/tinkerings">Tinkerings</a>
+        <a class="mls" href="/">Home</a>
+      </nav>
+    </header>
+    <div class='container intro'>
+      <h1>Upcoming Events in '13</h1>
+      <img src='http://f.cl.ly/items/3o3c3b0w1e1U1u322b3F/us-map.svg'>
+      <p>
+        <a href='https://twitter.com/cherriedenney'>Cherrie</a>
+        and I are about to embark on 6 weeks of craziness. We will be hitting up 6 other states, attending 3 weddings, and I will be attending 5 conferences. There are 2 that I am really sad to miss so I'm going to list them first and then share all the ones that I'll be attending. I hope to meet lots of new folks and especially lots of
+        <a href='http://codeschool.com'>Code School</a>
+        customers.
+      </p>
+      <h2>I'm very sad to miss...</h2>
+    </div>
+    <div class='convergefl-conf'>
+      <div class='container'>
+        <h3>
+          <a href='http://convergefl.com'>ConvergeFL</a>
+          <br>
+          September 11-13 In Jacksonville, FL
+        </h3>
+        <p>
+          ConvergeFL is one of the breakout events from the badass ConvergeSE team. It's their second year and this year
+          <a href='https://twitter.com/carlsmith'>Carl Smith</a>
+          is teaming up with them to help out. It is going to rock and I'm very sad to miss it, but a wedding came up in New York that weekend.
+        </p>
+        <p>
+          <a class='convergefl-conf-btn' href='https://account.unmatchedstyle.com/register/convergefl-2013/'>Register for ConvergeFL</a>
+        </p>
+      </div>
+    </div>
+    <div class='circles-conf'>
+      <div class='container'>
+        <h3>
+          <a href='http://circlesconference.com'>Circles Conference</a>
+          <br>
+          September 19-20 In Grapevine, TX
+        </h3>
+        <p>
+          Circles Conf is put on by
+          <a href='https://twitter.com/burciaga'>Ismael Burciaga</a>
+          and is a highly inspirational event. Cherrie and I really enjoyed it last year and planned to go, but a wedding came up in Pennyslvania the same weekend.
+        </p>
+        <p>
+          <a class='circles-conf-btn' href='https://circlesco.com/conference/registration/index.php'>Register for Circles Conf</a>
+        </p>
+      </div>
+    </div>
+    <h2 class='container'>I'm completely honored to speaking at...</h2>
+    <div class='webafternoon-conf'>
+      <div class='container'>
+        <h3>
+          <a href='http://webafternoon.com'>Web Afternoon Atlanta</a>
+          <br>
+            October 4th in Atlanta, GA
+          </br>
+        </h3>
+        <p>
+          Web Afternoon is a multi-city conference series organized by <a href="https://twitter.com/jc">J Cornelius</a>. They pack an amazing amount of speakers into a single afternoon of celebrating the web. I'm honored to be part of this
+          <a href='http://webafternoon.com/#tickets'>stellar lineup of speakers</a>
+          that will be sharing in Atlanta.
+        </p>
+        <p>
+          <a class='webafternoon-conf-btn' href='http://webafternoon.com/#tickets'>
+            Register for Web Afternoon
+          </a>
+        </p>
+      </div>
+    </div>
+    <h2 class='container'>I'm very happy to be attending...</h2>
+    <div class='aea-conf'>
+      <div class='container'>
+        <h3>
+          <a href='http://aneventapart.com/event/chicago-2013'>An Event Apart (Chicago)</a>
+          <br>
+          August 26th-28th in Chicago, IL
+        </h3>
+        <p>
+          Big thank you to
+          <a href='http://envylabs.com'>Envy Labs</a>
+          for sending the whole design team to AEA in Chicago. It's going to be informative, inspirational, and one hell of a good time.
+        </p>
+        <p>
+          Conference seating is sold out.
+        </p>
+        <p>
+          <a class='aea-conf-btn' href='http://aneventapart.com/event/chicago-2013'>
+            Register for the workshops
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class='blend-conf'>
+      <div class='container'>
+        <h3>
+          <a href='http://www.blendconf.com'>Blend Conf</a>
+          <br>
+          September 5th-7th in Charlotte, NC
+        </h3>
+        <p>
+          Blend Conference is a new event organized by Mr. <a href="http://twitter.com/bermonpainter">Bermon Painter</a>. It's a generalist event with a very diverse speaker lineup and a "no devices" policy.
+        </p>
+        <p>
+          <a class='blend-conf-btn' href='https://tito.io/blendconf/blendconf-2013'>
+            Register for Blend Conf
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class='edge-conf'>
+      <div class='container'>
+        <h3>
+          <a href=''>Edge Conference</a>
+          <br>
+          September 23 in New York, NY
+        </h3>
+        <p>
+          Edge is a new kind of non-profit one-day conference on advanced web technologies for developers and browser vendors. It has a selection process so I was really glad to get in.
+        </p>
+        <p>
+          <a class='edge-conf-btn' href='https://docs.google.com/a/envylabs.com/spreadsheet/viewform?formkey=dEJtUjA3UDR3MnQtbWdwdWM3Vm85Rnc6MA#gid=0'>Register Your Interest</a>
+        </p>
+      </div>
+    </div>
+    <div class='brooklynBeta-conf'>
+      <div class='container'>
+        <h3>
+          <a href='https://brooklynbeta.org/2013'>Brooklyn Beta</a>
+          <br>
+          October 9th-11th in Brooklyn, NY
+        </h3>
+        <p>
+          It was pretty exciting that Brooklyn Beta opened up to a lot more folks this year. I have wanted to attend the last two but didn't make it in time or win the lottery.
+        </p>
+        <p>
+          This one is sold out!
+        </p>
+      </div>
+    </div>
+    <div class='container'>
+      <h2>But wait, there's more...</h2>
+      <p>
+        There is a chance that I'll be heading out to 1 or 2 other events, but I won't share until I have a ticket. Also, I'm working on one to run in Orlando in November. I'll try to write wrap-up posts for each event, though it'll be a 'lil cray.
+      </p>
+      <p>
+        If all goes according to plan, I might be setting the record for number of events attended in 4 months by a non-evangelist. BOOM!
+      </p>
+      <p>
+        On top of the tech events, we'll also be attending family and friend events. Two of Cherrie's best friends are getting married in Park City, Utah and Pennsylvania and one of my cousins is getting married in Buffalo, NY.
+      </p>
+      <p>
+        <small>
+          In December, I'll likely be begging for change on the street corners.
+        </small>
+      </p>
+    </div>
+    <section class='row'>
+      <div class='cell cell--s'>
+        <div id="disqus_thread" class="well">
+        <script type="text/javascript">
+        var disqus_shortname = 'dandenney';
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class='dib'>
+        Dan Denney
+      </p>
+      <nav class='dib'>
+        <a class="mls" href="/posts">Posts</a>
+        <a class="mls" href="/blips">Blips</a>
+        <a class="mls" href="/tinkerings">Tinkerings</a>
+        <a class="mls" href="/">Home</a>
+      </nav>
+    </footer>
+    <!-- = javascript_include_tag  'vendor' -->
+    <!-- = javascript_include_tag  'application' -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-3589831-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </body>
+</html>

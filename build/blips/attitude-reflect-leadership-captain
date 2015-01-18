@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <!-- Favicon -->
+    <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <!-- Typekit -->
+    <script src="//use.typekit.net/ddg5xff.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Attitude Reflect Leadership, Captain</title>
+    <link href="../assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='blips blips_attitude-reflect-leadership-captain'>
+    <p>This weekend, Cherrie and I couldn't resist watching Remember the Titans when we came across it on TV. It's such a fantastic story. Anyhow, there is this one scene when the two future leaders square off about the issues with the team. Bertier says that Julius' "I'm gonna get mine" attitude is all wrong. Julius replies with "attitude reflect leadership, Captain". </p>
+    
+    <p>It is so true. While his was said in a negative time, I'm sharing how awesome it can be in good times. I'm the happiest that I have ever been professionally working with the <a href="http://envylabs.com">Envy Labs</a> team. My attitude is absolutely reflecting the leadership. </p>
+    
+    <p>While we are technically a flat company, there are leaders and they rock. There will never be a time where everyone agrees with every direction or decision, but the leadership at Envy is fantastic. They all have a great mix of leading by example: inspiring with high aspirations while maintaining a relaxed demeanor. </p>
+    
+    <p>They raise up the whole team and encourage us to be better (people in general) as well as better employees.</p>
+    <footer>
+      <p class='dib'>
+        Dan Denney
+      </p>
+      <nav class='dib'>
+        <a class="mls" href="/posts">Posts</a>
+        <a class="mls" href="/blips">Blips</a>
+        <a class="mls" href="/tinkerings">Tinkerings</a>
+        <a class="mls" href="/">Home</a>
+      </nav>
+    </footer>
+    <!-- = javascript_include_tag  'vendor' -->
+    <!-- = javascript_include_tag  'application' -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-3589831-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </body>
+</html>
