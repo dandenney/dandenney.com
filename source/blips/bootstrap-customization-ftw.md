@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Cherry Picking from Frameworks
 date: November 27, 2012
 ---

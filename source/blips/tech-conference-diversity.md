@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Tech Conference Diversity
 date: January 6, 2013
 ---

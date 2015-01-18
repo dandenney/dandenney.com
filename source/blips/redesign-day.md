@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Redesign Day
 date: October 3, 2012
 ---

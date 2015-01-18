@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Great Week for Front-End Articles
 date: October 24, 2013
 ---

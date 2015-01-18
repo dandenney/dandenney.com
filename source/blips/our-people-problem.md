@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Our Industry's Drinking Problem?
 date: October 24, 2013
 ---

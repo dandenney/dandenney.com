@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Jared Erondu
 section: blips
 tags: blips

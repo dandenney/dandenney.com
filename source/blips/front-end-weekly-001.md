@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Front-End Weekly - No. 1
 date: November 1, 2013
 ---

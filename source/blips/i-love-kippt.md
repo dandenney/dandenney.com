@@ -1,4 +1,5 @@
 ---
+layout: post
 title: I Love Kippt
 date: September 15, 2012
 ---

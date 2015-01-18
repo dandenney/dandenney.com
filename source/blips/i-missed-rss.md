@@ -1,4 +1,5 @@
 ---
+layout: post
 title: I Missed RSS
 date: August 9, 2013
 ---

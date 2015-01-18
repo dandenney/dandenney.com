@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Ideas
 date: October 1, 2012
 ---

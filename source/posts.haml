@@ -1,0 +1,15 @@
+---
+blog: posts
+---
+
+%section.row
+  .cell.cell--s
+    .well
+
+      %h1 Posts
+      %p "Official" blog posts
+
+      - blog.articles.each_with_index do | article,i |
+        %h4.mbm
+          = link_to article.title, article
+          %span.tcs.tsxs.twn= article.date.strftime('%b %e')

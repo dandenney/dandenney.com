@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Subtly Seeking Svbtle
 date: November 12, 2012
 ---

@@ -1,0 +1,15 @@
+---
+blog: blips
+---
+
+%section.row
+  .cell.cell--s
+    .well
+
+      %h1 Blips
+      %p (Usually) short, reactive thoughts
+
+      - blog.articles.each_with_index do | article,i |
+        %h4.mbm
+          = link_to article.title, article
+          %span.tcs.tsxs.twn= article.date.strftime('%b %e')

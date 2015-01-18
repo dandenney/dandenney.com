@@ -1,35 +1,37 @@
----
-blog: posts
-pageable: true
-per_page: 10
----
-
 %section.row
   .cell.cell--s
     .well
 
-      =image_tag 'dan-denney-avatar.png', alt: 'Dan Denney illustration by Ricardo Gimenes', class: 'db mhc mtm', width: '200'
+      = image_tag 'dan-denney-avatar.png', alt: 'Dan Denney illustration by Ricardo Gimenes', class: 'db mhc mtm', width: '200'
 
-      %h1.mbm.mtm.tsl
+      %h1.mtm.tsl
         Hi! I'm Dan Denney, a front-end dev at
-        =link_to 'Code School', 'http://codeschool.com'
+        = link_to 'Code School', 'http://codeschool.com'
         and founder of <a href="http://frontendconf.com">Front-End Conf</a>.
 
-      %h2 Here are some recent blog posts:
+      .card.mtl
 
-      - if paginate && num_pages > 1
-        %p
-          Page #{page_number} of #{num_pages}
-        - if prev_page
-          %p= link_to 'Previous page', prev_page
-      - page_articles.each_with_index do |article, i|
-        %h4.mbm
-          = link_to article.title, article
-          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
-        /
-          use article.summary(250) if you have Nokogiri available to show just
-          the first 250 characters
-        / <haml_loud> article.body </haml_loud>
-      - if paginate
-        - if next_page
-          %p= link_to 'Next page', next_page
+        %h2 Recent Posts
+
+        - blog('posts').articles[0...3].each_with_index do | article,i |
+          %h4
+            = link_to article.title, article
+            %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+
+      .card.mtm
+        
+        %h2 Recent Blips
+
+        - blog('blips').articles[0...3].each_with_index do | article,i |
+          %h4
+            = link_to article.title, article
+            %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+
+      .card.mtm
+
+        %h2 Recent Tinkerings
+
+        - blog('tinkerings').articles[0...3].each_with_index do | article,i |
+          %h4
+            = link_to article.title, article
+            %span.tcs.tsxs.twn= article.date.strftime('%b %e')

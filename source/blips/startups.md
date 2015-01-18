@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Startups
 date: September 24, 2012
 ---

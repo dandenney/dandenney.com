@@ -10,11 +10,22 @@ end
 # Creates pretty URLs
 activate :directory_indexes
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
+###
+# Helpers
+###
+
+# Determines if the current page is active
+#
+# == Parameters
+#
+# * +page+ - The page to check
+#
+# == Usage
+#
+#   = link_to 'Home', '/', class: ( 'is-active' if is_page_active('/') )
+#
+# def is_page_active(page)
+#   current_page.url == page
 # end
 
 ignore 'assets/javascripts/vendor/*'

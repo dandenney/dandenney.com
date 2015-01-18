@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Execution is All That Matters
 date: September 15, 2012
 ---

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Production-Shipping Balance
 date: November 14, 2012
 ---

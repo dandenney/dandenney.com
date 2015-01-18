@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Bustle
 date: August 17, 2013
 ---
