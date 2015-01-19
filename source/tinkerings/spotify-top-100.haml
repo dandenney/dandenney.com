@@ -2,9 +2,126 @@
 layout: tinkering
 date: January 17, 2015
 title: Spotify Data Project
+css: tinkerings/spotify-data-project
 ---
 
-%h1 
-	Spotify Project:
-	%strike Today's Top Hits
-	Top 100
+%section
+	- data.spotify.weeks.each do |w|
+		= w.date
+		%ul
+			- w.songs.each do |s|
+				%li
+					= s.position
+					= image_tag "tinkerings/spotify-data-project/#{s.image}", width: '200'
+					= s.title
+					= s.artist
+					= s.path
+
+%article.row
+	.cell.cell--s.well
+		.card
+			%h1 
+				Spotify Project:
+				%strike Today's Top Hits
+				Top 100 Data
+
+			%h2 The Idea
+			Visualize the top 10 of Spotify’s Today’s Top Hits playlist throughout 2015.
+
+			%p
+				In wanting to learn data visualization, it’s best for me to learn by projects. This process will help me understand data collection, sanitation, and visualization on a small scale. Plus, I love music and listen to this playlist often.
+
+			%h2 Manual Data Collection… yuk
+			%p
+				In time, I’ll find out if there is an automated way of getting this information. For the moment, I’ll manually grab the information from the playlist every Monday.
+
+			%p
+				I chose Mondays because Tuesday is the day for new music. It will allow 6 days for the new music to work through the list.
+
+			%p
+				I quickly learned that the Today's Top Hits list is more of a curated list, so I switched to grabbing data from the Top 100 Playlist which appears to be by data. I was lucky that I had done some sampling before the start of the year or I would have missed out on a week of info.
+
+			%h2 Attributes
+			%ul
+				%li Date
+				%li Position
+				%li Title
+				%li Artist
+				%li ID
+				%li Image URL
+
+			%h2 Grabbing Data
+			%p
+				I started by grabbing the information that Spotify makes easily available: HTTP Link, Spotify URI, and Embed Code. Here is an example of the information for the first song:
+			%ul
+				%li HTTP Link = http://open.spotify.com/track/4bBrKDo8rchikwZOtmXbIH
+				%li Spotify URI = spotify:track:4bBrKDo8rchikwZOtmXbIH
+				%li Embed Code = <iframe src="https://embed.spotify.com/?uri=spotify:track:4bBrKDo8rchikwZOtmXbIH" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+			%p
+				It seems that the ID is used for all of the attributes. There’s a lot of redundancy if I’m collecting 10 songs per week and it can all be generated if necessary automatically. All I need from that is the ID: 4bBrKDo8rchikwZOtmXbIH
+
+			%h2 Visualization Plans
+			%p
+				I know that I’ll be using D3 because this won’t be a simple graph. Over time, I’m guessing that there will be some interesting info to be shown and that it will require customization.
+
+			%p
+				While I have minimal data, the first decision is whether to display the dates horizontally or vertically. On a small screen, vertically makes the most sense. On a large screen, horizontal will allow for linear scrolling. Showing the path of a track through the weeks will always be tough on a small screen so that’ll be something to learn along the way.
+
+			%h2 Setup
+			%p
+				Fortunately, this will be very simple. There’s no need for a build system. An HTML file, the data file, and D3 should suffice for now. If there ends up being a way to grab this data from an API I would need to set up an app, but I’ll deal with that later if necessary.
+
+			%p
+				Everything will be in the repo: 
+
+			%h2 Design Decisions
+			%p
+				In playing with the sample data, there are already some decisions to make. While listing the #1 first feels right for the data, my eyes tend to follow the list to the right. If it stays horizontal, I think the #1 should be last.
+
+			=image_tag 'tinkerings/spotify-data-project/design-decisions.jpg', alt: 'screenshot of samples', height: 'auto'
+
+			%ul
+				%li Should dates run vertically or horizontally?
+				%li What data should be shown in the up state vs. a hover state?
+				%li What other data should be shown?
+				%li Where should additional data be shown?
+
+			%h2 January 18
+			
+			%p
+				Some changes are already in play. In playing with the arrangement and figuring out what data should be shown, it became clear to me that the individual song data is more interesting than the week-to-week.
+
+			%p
+				This means that I need to structure the data in a way that allows for tracking an individual song's stats as well as each week's. I'm picturing that each week will be 10 vertical rows with each song showing it's meta data and a graph of it's performance through the list. I'll need a way of designating the entry point of the song because that will be interesting info to show as well. 
+
+			%p
+				I was using Numbers to track this, exporting to CSV, using a CSV to JSON automater, and then working with the JSON. Now that I'm using Middleman, I think I'm going to use YML for a bit because of the clean structuring. If I ever tried grabbing all of the info from Spotify's API, I'd likely need to use JSON but I'm not sure I can pull off the structuring I need. 
+
+			%p
+				For example, this week I'm going to try using their API to make the data collection faster. They don't link to the image URL so that part will still be manual. You can grab <a href="https://developer.spotify.com/web-api/get-playlist/">playlist info</a>.
+
+			%p
+				I'm slightly scared of the maintenance of the solution for tracking the progress of the track. It's simple but requires backwards updates. You're probably just not supposed to do things like this without a database. We shall see...
+
+			%p
+				Final note for the day: I'm pretty sure that I want the embed available as an option. What's the fun of seeing a song if you can't play it, right? The embeds actually display all of the meta information that I am showing as well. They're so big, but I'm wondering what it'd look like with a bunch of them. So I'm going to replace the images for the moment and compare a couple things.
+
+			%p
+				Final note for the day: I'm pretty sure that I want the embed available as an option. What's the fun of seeing a song if you can't play it, right? The embeds actually display all of the meta information that I am showing as well. They're so big, but I'm wondering what it'd look like with a bunch of them. So I'm going to replace the images for the moment and compare a couple things.
+
+			%p
+				A page with images has 49 requests and weighs in at 1.1mb
+				A page with embeds has 428 requests and weighs in at 4.4mb
+
+			%p
+				It'd be irresponsible to do that for every set, so I'll have to work in the embeds in a different way.
+
+
+
+
+
+
+
+
+

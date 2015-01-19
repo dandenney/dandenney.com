@@ -1,0 +1,153 @@
+// *************************************
+//
+//   Spotify Data Project
+//   -> All of the styles for the tinkering
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .structure[.structure--modifier](.is-state)(.has-context)
+//   .structure-scaffolding
+//
+// *************************************
+
+// .structure
+
+// -------------------------------------
+//   Config
+// -------------------------------------
+
+// ----- Base ----- //
+
+$c-background-invert: #fefefe
+$c-background: #111111
+$c-border: #f5f5f5
+$c-highlight: #f5f5f5
+$c-subdue: #f5f5f5
+$c-text-invert: #111111
+$c-text: #ffffff
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 3px
+$b-borderStyle: solid
+$b-borderWidth: 1px
+$b-border: $b-borderWidth $b-borderStyle $c-border
+$b-boxShadow: 0 2px 0 rgba($c-text, 0.25)
+
+// ----- Typography ----- //
+
+$b-fontFamily-heading: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+$b-fontFamily: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+$b-fontSize: 18px
+$b-fontSize-xs: 60%
+$b-fontSize-s: 75%
+$b-fontSize-m: 90%
+$b-fontSize-l: 115%
+$b-fontSize-xl: 150%
+$b-fontWeight: 300
+$b-lineHeight: 1.75
+
+@import 'foundation/helpers'
+
+// ----- Sizing ----- //
+
+$b-maxWidth: em(1024px)
+$b-maxWidth-s: em(700px)
+$b-space: em(20px)
+$b-space-xs: $b-space * 0.25
+$b-space-s: $b-space * 0.5
+$b-space-l: $b-space * 2
+$b-space-xl: $b-space * 4
+
+// ----- Grid ----- //
+
+// Breakpoints
+
+$g-s: em(480px)
+$g-m: em(800px)
+$g-l: em(1024px)
+
+// Settings
+
+$g-columns: 12
+$g-defaults: 's' $g-s, 'm' $g-m, 'l' $g-l
+$g-gutter: 20px
+$g-silent: false
+
+// Selector
+
+$g-selector: if($g-silent, unquote("%"), unquote("."))
+
+@import 'components/bucket'
+@import 'components/card'
+@import 'components/cell'
+@import 'components/grid'
+@import 'components/row'
+@import 'components/well'
+
+
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+html
+	background: $c-background
+	color: $c-text
+	font-family: $b-fontFamily
+	font-weight: $b-fontWeight
+	line-height: $b-lineHeight
+
+h1, h2, h3, h4, h5
+	font-weight: $b-fontWeight
+	margin-bottom: 0
+
+img
+	max-width: 100%
+
+// .structure--modifier
+
+// -------------------------------------
+//   Card
+// -------------------------------------
+
+.card
+	background: $c-background-invert
+	color: $c-text-invert
+	padding: $b-space
+	position: relative
+
+// -------------------------------------
+//   Footer
+// -------------------------------------
+
+footer
+	color: $c-text
+	text-align: center
+
+	a
+		color: $c-text
+		margin-left: $b-space
+		&:hover
+			color: lighten($c-text, 10%)
+
+	p
+		display: inline-block
+	
+	nav
+		display: inline-block
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// .structure-scaffolding
+
