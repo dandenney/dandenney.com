@@ -19,4 +19,26 @@
     / = javascript_include_tag  'vendor'
     / = javascript_include_tag  'application'
 
+    = javascript_include_tag 'chartist'
+    = javascript_include_tag 'tinkerings/spotify-data-project/spotify-data-project'
+
+    %script
+      new Chartist.Line('.ct-chart', {
+      labels: ['Jan 5', 'Jan 12', 'Jan 19', 'Jan 26', 'Feb 2'],
+      series: [
+      [6,8,6,4,0]
+      ]
+      }, {
+      axisY: {
+      offset: 0,
+      showLabel: false,
+      showGrid: true,
+      scaleMinSpace: 20
+      },
+      height: 390,
+      high: 10,
+      low: 0,
+      showArea: true
+      });
+
     = partial 'partials/analytics'

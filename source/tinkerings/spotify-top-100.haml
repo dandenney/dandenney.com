@@ -6,16 +6,40 @@ css: tinkerings/spotify-data-project
 ---
 
 %section
-	- data.spotify.weeks.each do |w|
-		= w.date
-		%ul
-			- w.songs.each do |s|
-				%li
-					= s.position
-					= image_tag "tinkerings/spotify-data-project/#{s.image}", width: '200'
-					= s.title
-					= s.artist
-					= s.path
+	%table
+		%tr.twb.tac.tch.tsxl
+			%td &nbsp;
+			%td 10
+			%td 9
+			%td 8
+			%td 7
+			%td 6
+			%td 5
+			%td 4
+			%td 3
+			%td 2
+			%td 1
+		- data.spotify.weeks.each do |w|
+			%tr
+				%td.tac
+					= w.date
+					- w.songs.reverse.each do |s|
+						%td
+							/.dib= s.position
+							.dib
+								= image_tag "tinkerings/spotify-data-project/#{s.image}", width: '200'
+								/ %h4.tss= s.title
+								/ %h5.tsxs= s.artist
+								/ %p.tss= s.path
+
+%section
+	%table{ width: '99%'}
+		%tr
+			%td{ style: 'width: 300px;' }
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:1aKsg5b9sOngINaQXbB0P7" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+			%td{ style: 'width: auto;' }
+				.ct-chart
+				
 
 %article.row
 	.cell.cell--s.well
@@ -116,6 +140,17 @@ css: tinkerings/spotify-data-project
 
 			%p
 				It'd be irresponsible to do that for every set, so I'll have to work in the embeds in a different way.
+
+			%h2 January 19
+
+			%p
+				Grabbing data from the Spotify API is pretty straight forward but it's a lot of data. I can trim it down but I still have to comb through a lot. The nice thing is that I think it would be possible to grab all of the meta that I want from it if I wanted to. It's set to grab the current state of a playlist, though, so this would have to be set to an automated job or I would have to do it weekly. It may be worthwhile to set that up just in case.
+
+			%p
+				Already borked the data once. I put the concurrent weeks in the wrong order. Sooooo thankful for that numbers sheet. Added just the slightest bit of styles just so it didn't look like an explosion.
+
+			%p
+				Made a mess of things tonight. I need to learn Bower. I was able to install Chartist from it, but I'm not sure how to reference it from Middleman so I ended up just duping it in the repo. Also, writing the Chartist JS in Coffee is odd. It requires weird structuring. The saddest part is that I'm likely not going to be able to use it. I love the simplicity of it, the weight, and the styles. However, I think I need the customization of d3. I want the scales to increase by 1 so you can see 10 places and I need to invert the scale so that 6 is higher than 8, for example.
 
 
 
