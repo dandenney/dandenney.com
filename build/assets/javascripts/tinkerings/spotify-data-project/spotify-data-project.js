@@ -1,0 +1,1 @@
+(function(){var a;a=function(){return new Chartist.Line(".ct-chart",{labels:["Jan 5","Jan 12","Jan 19"],series:[[8,6,8]]},{axisY:{scaleMinSpace:22,showLabel:!1},offset:0,height:390,high:10,low:0,showArea:!0})}}).call(this);

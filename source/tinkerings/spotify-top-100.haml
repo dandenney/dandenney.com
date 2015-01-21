@@ -28,8 +28,8 @@ css: tinkerings/spotify-data-project
 							/.dib= s.position
 							.dib
 								= image_tag "tinkerings/spotify-data-project/#{s.image}", width: '200'
-								/ %h4.tss= s.title
-								/ %h5.tsxs= s.artist
+								%h4.tsm= s.title
+								/ %h5.tss= s.artist
 								/ %p.tss= s.path
 
 %section
@@ -39,7 +39,19 @@ css: tinkerings/spotify-data-project
 				<iframe src="https://embed.spotify.com/?uri=spotify:track:1aKsg5b9sOngINaQXbB0P7" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 			%td{ style: 'width: auto;' }
 				.ct-chart
-				
+
+%section{ style: 'background: #191919; padding: 2em;'}
+	- data.spotify.weeks.each do |w|
+		%ul.sample-list-short
+			%li.slt-date= w.date
+			- w.songs.each do |s|
+				%li
+					.meta
+						= image_tag "tinkerings/spotify-data-project/#{s.image}", width: '40'
+						.song.mls
+							%h4=s.title
+							%h5=s.artist
+
 
 %article.row
 	.cell.cell--s.well
@@ -151,6 +163,18 @@ css: tinkerings/spotify-data-project
 
 			%p
 				Made a mess of things tonight. I need to learn Bower. I was able to install Chartist from it, but I'm not sure how to reference it from Middleman so I ended up just duping it in the repo. Also, writing the Chartist JS in Coffee is odd. It requires weird structuring. The saddest part is that I'm likely not going to be able to use it. I love the simplicity of it, the weight, and the styles. However, I think I need the customization of d3. I want the scales to increase by 1 so you can see 10 places and I need to invert the scale so that 6 is higher than 8, for example.
+
+			%h2 January 20
+
+			%p
+				I guess it needs to be design time. I have the information I need in a structure that seems to work. There are patterns emerging in the data that give me an idea of what I want to show. I can't use Chartist for it, so now I need to figure out how I want it to look so that I know what to learn in d3.
+
+			%p
+				I've been 
+				= link_to 'stashing', 'http://www.pinterest.com/dandenney/data-visualization/'
+				a bunch of interesting data viz work for inspiration and there was 
+				= link_to 'a piece', 'https://www.behance.net/gallery/Weather-Dashboard-Global-Outlook-UIUX/12748107'
+				that caught my eye today. There are so many good ideas in that set and a few patterns that make sense for this project.
 
 
 
