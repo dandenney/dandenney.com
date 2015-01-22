@@ -1,5 +1,6 @@
 weeks:
 - date: 01/05/2015
+  datePretty: Jan 05
   songs:
     
     - position: "1"
@@ -73,6 +74,7 @@ weeks:
       path: "10,5,5"
 
 - date: 01/12/2015
+  datePretty: Jan 12
   songs:
     - position: "1"
       title: "Uptown Funk"
@@ -145,6 +147,7 @@ weeks:
       path: "7,10,0"
 
 - date: 01/19/2015
+  datePretty: Jan 19
   songs:
     - position: "1"
       title: "Uptown Funk"

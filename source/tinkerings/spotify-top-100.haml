@@ -1,57 +1,38 @@
 ---
 layout: tinkering
-date: January 17, 2015
+date: January 21, 2015
 title: Spotify Data Project
 css: tinkerings/spotify-data-project
 ---
 
 %section
 	%table
-		%tr.twb.tac.tch.tsxl
+		%tr.title-count
 			%td &nbsp;
 			%td 10
-			%td 9
-			%td 8
-			%td 7
-			%td 6
-			%td 5
-			%td 4
-			%td 3
-			%td 2
-			%td 1
+			%td 09
+			%td 08
+			%td 07
+			%td 06
+			%td 05
+			%td 04
+			%td 03
+			%td 02
+			%td 01
 		- data.spotify.weeks.each do |w|
 			%tr
 				%td.tac
-					= w.date
+					%h3.tac.tcs.twbl= w.datePretty
 					- w.songs.reverse.each do |s|
-						%td
+						%td{ class: "#{s.title}" } 
 							/.dib= s.position
 							.dib
-								= image_tag "tinkerings/spotify-data-project/#{s.image}", width: '200'
-								%h4.tsm= s.title
+								= image_tag "tinkerings/spotify-data-project/#{s.image}", class: 'db', width: '200'
+								%h4.grid-title.tsm= s.title
+
+
 								/ %h5.tss= s.artist
 								/ %p.tss= s.path
-
-%section
-	%table{ width: '99%'}
-		%tr
-			%td{ style: 'width: 300px;' }
-				<iframe src="https://embed.spotify.com/?uri=spotify:track:1aKsg5b9sOngINaQXbB0P7" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-			%td{ style: 'width: auto;' }
-				.ct-chart
-
-%section{ style: 'background: #191919; padding: 2em;'}
-	- data.spotify.weeks.each do |w|
-		%ul.sample-list-short
-			%li.slt-date= w.date
-			- w.songs.each do |s|
-				%li
-					.meta
-						= image_tag "tinkerings/spotify-data-project/#{s.image}", width: '40'
-						.song.mls
-							%h4=s.title
-							%h5=s.artist
-
 
 %article.row
 	.cell.cell--s.well
@@ -175,6 +156,15 @@ css: tinkerings/spotify-data-project
 				a bunch of interesting data viz work for inspiration and there was 
 				= link_to 'a piece', 'https://www.behance.net/gallery/Weather-Dashboard-Global-Outlook-UIUX/12748107'
 				that caught my eye today. There are so many good ideas in that set and a few patterns that make sense for this project.
+
+			%h2 January 21
+
+			%p
+				Archiving screenshots of things that I'm killing. User tested the layouts and everyone (Cherrie and Jasmine) prefer the grid of album covers. So, I'm rolling with that. Also killing the chartist stuff since I can't use it.
+
+			%p=image_tag 'tinkerings/spotify-data-project/sample-column-view.png', alt: 'screenshot of column layout', height: 'auto'
+
+			%p=image_tag 'tinkerings/spotify-data-project/sample-song-graph.png', alt: 'screenshot of column layout', height: 'auto'
 
 
 

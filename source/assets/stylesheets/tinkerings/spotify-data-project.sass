@@ -24,7 +24,7 @@ $c-background-invert: #fefefe
 $c-background: #111111
 $c-border: #f5f5f5
 $c-highlight: #89b700
-$c-subdue: #f5f5f5
+$c-subdue: darken(#ffffff, 75%)
 $c-text-invert: #111111
 $c-text: #ffffff
 
@@ -47,6 +47,8 @@ $b-fontSize-m: 90%
 $b-fontSize-l: 115%
 $b-fontSize-xl: 150%
 $b-fontWeight: 400
+$b-fontWeight-b: 700
+$b-fontWeight-bl: 800
 $b-lineHeight: 1.75
 
 @import 'foundation/helpers'
@@ -86,6 +88,19 @@ $g-selector: if($g-silent, unquote("%"), unquote("."))
 @import 'components/grid'
 @import 'components/row'
 @import 'components/well'
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+// -------------------------------------
+//   Shade
+//   -> Slightly darken a color
+//      Via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)
+//
+//   $color - the color to shade
+//   $percentage - the percentage of black to add to `$color`
+// -------------------------------------
 
 // -------------------------------------
 //   Tools
@@ -131,6 +146,15 @@ $g-selector: if($g-silent, unquote("%"), unquote("."))
 .tsxl
 	font-size: $b-fontSize-xl
 
+// ----- Size ----- //
+
+.twn
+	font-weight: $b-fontWeight
+.twb
+	font-weight: $b-fontWeight-b
+.twbl
+	font-weight: $b-fontWeight-bl
+
 // -------------------------------------
 //   Chartist
 // -------------------------------------
@@ -152,6 +176,10 @@ html
 	font-family: $b-fontFamily
 	font-weight: $b-fontWeight
 	line-height: $b-lineHeight
+
+body
+	margin: 0
+	padding: 0
 
 h1, h2
 	font-weight: 700
@@ -212,6 +240,9 @@ footer
 //   Inbox
 // -------------------------------------
 
+section
+	background: #161616
+
 img
 	display: block
 
@@ -229,124 +260,101 @@ li
 	margin-bottom: $b-space-l
 
 table
-	margin-bottom: $b-space-xl
+	border: 0
+	border-collapse: collapse
+	border-spacing: 0
+	margin: 0 auto $b-space-xl
 
 td
 	padding-bottom: $b-space
 	vertical-align: top
-	width: 9%
+	width: 130px
 
-.sample-list-short
-	display: inline-block
-	width: 300px
-	li
-		background: #111111
-		border-top: 1px solid $c-highlight
-		margin-bottom: 0
-		overflow: hidden
-		padding: $b-space-s 0
-		position: relative
-		&:first-child
-			background: none
-			border-top: 0
-		&:nth-child(2)
-			border-color: lighten($c-highlight, 30%)
-			&:after
-				content: "01"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-		&:nth-child(3)
-			border-color: lighten($c-highlight, 27%)
-			opacity: 0.97
-			&:after
-				content: "02"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-		&:nth-child(4)
-			border-color: lighten($c-highlight, 24%)
-			opacity: 0.94
-			&:after
-				content: "03"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-		&:nth-child(5)
-			border-color: lighten($c-highlight, 21%)
-			opacity: 0.91
-			&:after
-				content: "04"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-		&:nth-child(6)
-			border-color: lighten($c-highlight, 18%)
-			opacity: 0.88
-			&:after
-				content: "05"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-		&:nth-child(7)
-			border-color: lighten($c-highlight, 15%)
-			opacity: 0.85
-			&:after
-				content: "06"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-		&:nth-child(8)
-			border-color: lighten($c-highlight, 12%)
-			opacity: 0.82
-			&:after
-				content: "07"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-		&:nth-child(9)
-			border-color: lighten($c-highlight, 9%)
-			opacity: 0.79
-			&:after
-				content: "08"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-		&:nth-child(10)
-			border-color: lighten($c-highlight, 6%)
+	img
+		transition: opacity 0.3s ease-in-out
+	
+	&:first-child
+		padding-top: $b-space-l
+		width: 70px
+
+	&:nth-child(2)
+		img
+			opacity: 0.7
+		.grid-title
+			border-color: mix(black, $c-highlight, 30%)
+			color: mix(black, $c-text, 30%)
+
+	&:nth-child(3)
+		img
+			opacity: 0.73
+		.grid-title
+			border-color: mix(black, $c-highlight, 27%)
+			color: mix(black, $c-text, 27%)
+
+	&:nth-child(4)
+		img
 			opacity: 0.76
-			&:after
-				content: "09"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-		&:nth-child(11)
-			border-color: lighten($c-highlight, 6%)
-			opacity: 0.73x
-			&:after
-				content: "10"
-				font-size: $b-fontSize-xl
-				position: absolute
-				right: 5px
-				top: 10px
-	.meta
-		h4, h5
-			line-height: 1.4
-			margin: 0
-			text-transform: uppercase
-		h5
-			opacity: 0.6
-		img, .song
-			float: left
+		.grid-title
+			border-color: mix(black, $c-highlight, 24%)
+			color: mix(black, $c-text, 24%)
 
-		.song
-			margin-left: $b-space-xs
+	&:nth-child(5)
+		img
+			opacity: 0.79
+		.grid-title
+			border-color: mix(black, $c-highlight, 21%)
+			color: mix(black, $c-text, 21%)
+
+	&:nth-child(6)
+		img
+			opacity: 0.82
+		.grid-title
+			border-color: mix(black, $c-highlight, 18%)
+			color: mix(black, $c-text, 18%)
+
+	&:nth-child(7)
+		img
+			opacity: 0.85
+		.grid-title
+			border-color: mix(black, $c-highlight, 15%)
+			color: mix(black, $c-text, 15%)
+
+	&:nth-child(8)
+		img
+			opacity: 0.88
+		.grid-title
+			border-color: mix(black, $c-highlight, 12%)
+			color: mix(black, $c-text, 12%)
+
+	&:nth-child(9)
+		img
+			opacity: 0.91
+		.grid-title
+			border-color: mix(black, $c-highlight, 9%)
+			color: mix(black, $c-text, 9%)
+
+	&:nth-child(10)
+		img
+			opacity: 0.94
+		.grid-title
+			border-color: mix(black, $c-highlight, 6%)
+			color: mix(black, $c-text, 6%)
+
+	&:hover
+		img
+			opacity: 1
+
+.grid-title
+	background: $c-background
+	border-bottom: 2px solid $c-highlight
+	margin: 0
+	padding: $b-space-xs
+
+.title-count
+	color: $c-subdue
+	font-size: 300%
+	font-weight: $b-fontWeight-bl
+	text-align: center
+
+	td
+		padding: 0

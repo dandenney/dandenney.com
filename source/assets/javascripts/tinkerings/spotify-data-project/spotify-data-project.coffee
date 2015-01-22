@@ -38,3 +38,14 @@ spotifyCharts = ->
 # -------------------------------------------------
 
 # spotifyCharts()
+
+# -------------------------------------------------
+#   Highlight Trail
+# -------------------------------------------------
+
+highlightTrail = ->
+	$('td').on "click", ->
+  	classNames = $(this).attr("class")
+  	$(this).parent().siblings().find('td.(classNames)').addClass('boom')
+
+highlightTrail()
