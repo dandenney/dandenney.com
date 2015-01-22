@@ -45,7 +45,9 @@ spotifyCharts = ->
 
 highlightTrail = ->
 	$('td').on "click", ->
-  	classNames = $(this).attr("class")
-  	$(this).parent().siblings().find('td.(classNames)').addClass('boom')
-
+	  $('td').removeClass('is-pathItem')
+  	classNames = $(this).attr('class')
+  	console.log (classNames)
+  	$(this).addClass('is-pathItem')
+  	$(this).parent().siblings().find('td.' + classNames).addClass('is-pathItem')
 highlightTrail()

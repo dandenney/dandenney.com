@@ -24,7 +24,7 @@ css: tinkerings/spotify-data-project
 				%td.tac
 					%h3.tac.tcs.twbl= w.datePretty
 					- w.songs.reverse.each do |s|
-						%td{ class: "#{s.title}" } 
+						%td{ class: "#{slugify(s.title)}" } 
 							/.dib= s.position
 							.dib
 								= image_tag "tinkerings/spotify-data-project/#{s.image}", class: 'db', width: '200'
@@ -165,6 +165,12 @@ css: tinkerings/spotify-data-project
 			%p=image_tag 'tinkerings/spotify-data-project/sample-column-view.png', alt: 'screenshot of column layout', height: 'auto'
 
 			%p=image_tag 'tinkerings/spotify-data-project/sample-song-graph.png', alt: 'screenshot of column layout', height: 'auto'
+
+			%h2 January 22
+
+			%p
+				Drew had exactly what I needed the whole time as I fought to make the classes from the song titles last night. 
+				= link_to 'middleman library', 'https://github.com/drewbarontini/middleman-library'
 
 
 

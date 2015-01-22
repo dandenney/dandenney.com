@@ -28,6 +28,24 @@ activate :directory_indexes
 #   current_page.url == page
 # end
 
+helpers do
+
+  # Turns a string into a slugable string
+  #
+  # == Parameters
+  #
+  # * +string+ - The string to convert
+  #
+  # == Usage
+  #
+  #   slugify('This is my string')
+  #
+  def slugify(string)
+    string.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  end
+
+end
+
 ignore 'assets/javascripts/vendor/*'
 
 set :css_dir, 'assets/stylesheets'
