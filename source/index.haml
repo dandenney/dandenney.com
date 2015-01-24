@@ -1,37 +1,45 @@
-%section.row
-  .cell.cell--s
-    .well
+%section.bch.oh
+  .g
 
-      = image_tag 'dan-denney-avatar.png', alt: 'Dan Denney illustration by Ricardo Gimenes', class: 'db mhc mtm', width: '200'
+    .g-b.g-b--m--1of2.pal
 
-      %h1.mtm.tsl
-        Hi! I'm Dan Denney, a front-end dev at
-        = link_to 'Code School', 'http://codeschool.com'
-        and founder of <a href="http://frontendconf.com">Front-End Conf</a>.
+      .profile
 
-      .card.mtl
+        = image_tag 'dan-denney-avatar.png', alt: 'Dan Denney illustration by Ricardo Gimenes', class: 'db mhc mtm', width: '200'
 
-        %h2 Recent Posts
-
-        - blog('posts').articles[0...3].each_with_index do | article,i |
-          %h4
-            = link_to article.title, article
-            %span.tcs.tsxs.twn= article.date.strftime('%b %e')
-
-      .card.mtm
+        %h1.mtm.tsm.tcti
+          I'm Dan Denney, a front-end dev at
+          = link_to 'Code School', 'http://codeschool.com', class: 'tcti'
+          and founder of <a href="http://frontendconf.com" class="tcti">Front-End Conf</a>.
+    
+    .g-b.g-b--m--1of2.bci.pal
         
-        %h2 Recent Blips
+      %h2.mbf
+        %span.tsxl 35
+        =link_to 'Posts', '/posts', class: 'tss'
 
-        - blog('blips').articles[0...3].each_with_index do | article,i |
-          %h4
-            = link_to article.title, article
-            %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+      - blog('posts').articles[0...1].each_with_index do | article,i |
+        %p
+          %span.db.tcs.tss Most recent:  
+          = link_to article.title, article
+          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+        
+      %h2.mbf
+        %span.tsxl 18
+        =link_to 'Blips', '/blips', class: 'tss'
 
-      .card.mtm
+      - blog('blips').articles[0...1].each_with_index do | article,i |
+        %p
+          %span.db.tcs.tss Most recent:  
+          = link_to article.title, article
+          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+        
+      %h2.mbf
+        %span.tsxl 5
+        =link_to 'Tinkerings', '/tinkerings', class: 'tss'
 
-        %h2 Recent Tinkerings
-
-        - blog('tinkerings').articles[0...3].each_with_index do | article,i |
-          %h4
-            = link_to article.title, article
-            %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+      - blog('tinkerings').articles[0...1].each_with_index do | article,i |
+        %p
+          %span.db.tcs.tss Most recent: 
+          = link_to article.title, article
+          %span.tcs.tsxs.twn= article.date.strftime('%b %e')

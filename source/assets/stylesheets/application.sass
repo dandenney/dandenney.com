@@ -48,3 +48,17 @@
 //   Inbox
 // -------------------------------------
 
+.profile
+	color: $c-text-invert
+	margin: 0 auto
+	width: 200px
+	a
+		color: $c-text-invert
+		&:hover,
+		&:active
+			color: darken($c-text-invert, 15%)
+
+	+respond-to($g-m)
+		float: right
+		margin: 0
+
