@@ -15,6 +15,7 @@
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || 'Dan Denney'
 
+    %link{ rel: 'stylesheet', href: '/assets/javascripts/vendor/chartist/dist/chartist.min.css' }
     = stylesheet_link_tag 'application'
 
   %body{ class: page_classes }
@@ -25,5 +26,7 @@
 
     = javascript_include_tag  'vendor'
     / = javascript_include_tag  'application'
+    - if current_page.data.js
+      = javascript_include_tag 'home'
 
     = partial 'partials/analytics'

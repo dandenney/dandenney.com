@@ -6,3 +6,4 @@
 # *************************************
 
 #= require vendor/jquery/dist/jquery
+#= require vendor/chartist/dist/chartist

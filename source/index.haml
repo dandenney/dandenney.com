@@ -1,7 +1,11 @@
+---
+js: home 
+---
+
 %section.bch.oh
   .g
 
-    .g-b.g-b--m--1of2.pal
+    .g-b.g-b--m--1of2.pbl.pll.prl.ptm
 
       .profile
 
@@ -13,33 +17,54 @@
           and founder of <a href="http://frontendconf.com" class="tcti">Front-End Conf</a>.
     
     .g-b.g-b--m--1of2.bci.pal
-        
-      %h2.mbf
-        %span.tsxl 35
-        =link_to 'Posts', '/posts', class: 'tss'
 
-      - blog('posts').articles[0...1].each_with_index do | article,i |
-        %p
-          %span.db.tcs.tss Most recent:  
-          = link_to article.title, article
-          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+      .g
+        .g-b.g-b--l--1of3
         
-      %h2.mbf
-        %span.tsxl 18
-        =link_to 'Blips', '/blips', class: 'tss'
+          %h2.mbf
+            %span.tsxl 35
+            =link_to 'Posts', '/posts', class: 'tss'
 
-      - blog('blips').articles[0...1].each_with_index do | article,i |
-        %p
-          %span.db.tcs.tss Most recent:  
-          = link_to article.title, article
-          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+        .g-b.g-b--l--2of3
+
+          - blog('posts').articles[0...1].each_with_index do | article,i |
+            %p
+              %span.db.tcs.tss Most recent:  
+              = link_to article.title, article
+              %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+
+      .ct-chart.ct-posts
+
+      .g.ptl
+        .g-b.g-b--l--1of3
+      
+          %h2.mbf
+            %span.tsxl 18
+            =link_to 'Blips', '/blips', class: 'tss'
+
+        .g-b.g-b--l--2of3
+
+          - blog('blips').articles[0...1].each_with_index do | article,i |
+            %p
+              %span.db.tcs.tss Most recent:  
+              = link_to article.title, article
+              %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+
+      .ct-chart.ct-blips
+
+      .g.ptl
+        .g-b.g-b--l--1of3
         
-      %h2.mbf
-        %span.tsxl 5
-        =link_to 'Tinkerings', '/tinkerings', class: 'tss'
+          %h2.mbf
+            %span.tsxl 5
+            =link_to 'Tinkerings', '/tinkerings', class: 'tss'
 
-      - blog('tinkerings').articles[0...1].each_with_index do | article,i |
-        %p
-          %span.db.tcs.tss Most recent: 
-          = link_to article.title, article
-          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+        .g-b.g-b--l--2of3
+
+          - blog('tinkerings').articles[0...1].each_with_index do | article,i |
+            %p
+              %span.db.tcs.tss Most recent: 
+              = link_to article.title, article
+              %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+
+      .ct-chart.ct-tinkerings
