@@ -1,15 +1,22 @@
 {
-  "name": "Baseman",
-  "version": "1.1.0",
-  "homepage": "https://github.com/drewbarontini/baseman",
-  "description": "A base Middleman application",
+  "name": "dandenney.com",
+  "version": "7.7.7",
+  "homepage": "https://github.com/dandenney/dandenney.com",
   "authors": [
-    "Drew Barontini"
+    "Dan"
   ],
-  "license": "MIT",
-  "private": true,
+  "description": "Initial bower",
+  "license": "WTFPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "source/assets/javascripts/vendor"
+  ],
   "dependencies": {
-    "jquery": "~2.1.1",
-    "chartist": "~0.6.0"
+    "chartist": "~0.6.1",
+    "jquery": "~2.1.3"
   }
 }
