@@ -22,10 +22,12 @@ js: home
         .g-b.g-b--l--1of3
         
           %h2.mbf
-            %span.tsxl 35
+            %span.tsxl= blog('posts').articles.count
             =link_to 'Posts', '/posts', class: 'tss'
 
         .g-b.g-b--l--2of3
+
+
 
           - blog('posts').articles[0...1].each_with_index do | article,i |
             %p
@@ -39,7 +41,7 @@ js: home
         .g-b.g-b--l--1of3
       
           %h2.mbf
-            %span.tsxl 18
+            %span.tsxl= blog('blips').articles.count
             =link_to 'Blips', '/blips', class: 'tss'
 
         .g-b.g-b--l--2of3
@@ -56,7 +58,7 @@ js: home
         .g-b.g-b--l--1of3
         
           %h2.mbf
-            %span.tsxl 5
+            %span.tsxl= blog('tinkerings').articles.count
             =link_to 'Tinkerings', '/tinkerings', class: 'tss'
 
         .g-b.g-b--l--2of3
