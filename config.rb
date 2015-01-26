@@ -46,13 +46,18 @@ helpers do
 
 end
 
+###
+# Asset settings
+###
+
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
 
+
 ###
-# Blog settings
+# Blog 'posts' settings
 ###
 
 # Time.zone = "UTC"
@@ -84,6 +89,10 @@ activate :blog do |blog|
 end
 
 
+###
+# Blog 'blips' settings
+###
+
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.name = "blips"
@@ -109,6 +118,11 @@ activate :blog do |blog|
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
 end
+
+
+###
+# Blog 'tinkerings' settings
+###
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -136,9 +150,15 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+###
+# Blog feed settings
+###
+
 page "/feed.xml", layout: false
 
-# Build-specific configuration
+###
+# Build Configuration
+###
 configure :build do
   activate :minify_css
   activate :minify_javascript
