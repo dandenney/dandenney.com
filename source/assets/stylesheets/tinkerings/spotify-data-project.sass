@@ -21,7 +21,7 @@
 // ----- Base ----- //
 
 $c-background-invert: #fefefe
-$c-background: #111111
+$c-background: #222
 $c-border: #f5f5f5
 $c-highlight: #89b700
 $c-subdue: darken(#ffffff, 75%)
@@ -240,9 +240,6 @@ footer
 //   Inbox
 // -------------------------------------
 
-section
-	background: #161616
-
 img
 	display: block
 
@@ -250,7 +247,7 @@ h4, h5, p
 	margin: 0 0 $b-space-xs 0	
 
 h4
-	margin-top: $b-space-xs	
+	padding: $b-space-xs	
 
 h5
 	opacity: 0.6
@@ -274,90 +271,89 @@ td
 		transition: opacity 0.3s ease-in-out
 	
 	&:first-child
-		padding-top: $b-space-l
+		position: relative
+		top: 200px
 		width: 70px
 
 	&:nth-child(2)
+		position: relative
+		top: 180px
 		img
 			opacity: 0.7
-		.grid-title
-			border-color: mix(black, $c-highlight, 30%)
-			color: mix(black, $c-text, 30%)
 
 	&:nth-child(3)
+		position: relative
+		top: 160px
 		img
 			opacity: 0.73
-		.grid-title
-			border-color: mix(black, $c-highlight, 27%)
-			color: mix(black, $c-text, 27%)
 
 	&:nth-child(4)
+		position: relative
+		top: 140px
 		img
 			opacity: 0.76
-		.grid-title
-			border-color: mix(black, $c-highlight, 24%)
-			color: mix(black, $c-text, 24%)
 
 	&:nth-child(5)
+		position: relative
+		top: 120px
 		img
 			opacity: 0.79
-		.grid-title
-			border-color: mix(black, $c-highlight, 21%)
-			color: mix(black, $c-text, 21%)
 
 	&:nth-child(6)
+		position: relative
+		top: 100px
 		img
 			opacity: 0.82
-		.grid-title
-			border-color: mix(black, $c-highlight, 18%)
-			color: mix(black, $c-text, 18%)
 
 	&:nth-child(7)
+		position: relative
+		top: 80px
 		img
 			opacity: 0.85
-		.grid-title
-			border-color: mix(black, $c-highlight, 15%)
-			color: mix(black, $c-text, 15%)
 
 	&:nth-child(8)
+		position: relative
+		top: 60px
 		img
 			opacity: 0.88
-		.grid-title
-			border-color: mix(black, $c-highlight, 12%)
-			color: mix(black, $c-text, 12%)
 
 	&:nth-child(9)
+		position: relative
+		top: 40px
 		img
 			opacity: 0.91
-		.grid-title
-			border-color: mix(black, $c-highlight, 9%)
-			color: mix(black, $c-text, 9%)
 
 	&:nth-child(10)
+		position: relative
+		top: 20px
 		img
 			opacity: 0.94
-		.grid-title
-			border-color: mix(black, $c-highlight, 6%)
-			color: mix(black, $c-text, 6%)
 
 	&:hover
 		img
 			opacity: 1
 
-.grid-title
-	background: $c-background
-	border-bottom: 2px solid $c-highlight
-	margin: 0
-	padding: $b-space-xs
+//.grid-title
+//	background: $c-background
+//	border-bottom: 2px solid $c-highlight
+//	margin: 0
+//	padding: $b-space-xs
 
 .title-count
 	color: $c-subdue
-	font-size: 300%
+	font-size: 200%
 	font-weight: $b-fontWeight-bl
 	text-align: center
 
 	td
 		padding: 0
+
+.track
+	img
+		border-top: 2px solid rgba(#000, 0.3)
+		opacity: 1 !important
+	h4
+		background: rgba(#000, 0.3)
 
 .is-pathItem
 	opacity: 1 !important
