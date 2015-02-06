@@ -91,10 +91,8 @@
         <a class="mls" href="/">Home</a>
       </nav>
     </footer>
-    <!-- = javascript_include_tag  'vendor' -->
+    <script src="../assets/javascripts/vendor.js" type="text/javascript"></script>
     <!-- = javascript_include_tag  'application' -->
-    <script src="../assets/javascripts/jquery.js" type="text/javascript"></script>
-    <script src="../assets/javascripts/chartist.js" type="text/javascript"></script>
     <script src="../assets/javascripts/tinkerings/spotify-data-project/spotify-data-project.js" type="text/javascript"></script>
     <script>
       new Chartist.Line('.ct-chart', {

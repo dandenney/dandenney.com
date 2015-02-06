@@ -29,227 +29,19 @@
         </tr>
         <tr>
           <td class='tac'>
-            <h3 class='tac tcs twbl'>Jan 05</h3>
-            <td class='firestone'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/c2e52266c4ed1541003babec2964a99ce0350aa3.jpeg" />
-                <h4 class='grid-title tsm'>Firestone</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='all-about-that-bass'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/d7fe19b11c2814f98aa1449713cdc42668070a49.jpeg" />
-                <h4 class='grid-title tsm'>All About That Bass</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='love-me-harder'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ded7eb8e29384d0d75be7ffc2411bb8008f055b4.jpeg" />
-                <h4 class='grid-title tsm'>Love Me Harder</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='stay-with-me'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/72d5bd1ecd38f261de6b7987283f35cd13d02fbd.jpeg" />
-                <h4 class='grid-title tsm'>Stay With Me</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='blame'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
-                <h4 class='grid-title tsm'>Blame</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
+            <h3 class='tac tcs twbl'>Feb 02</h3>
             <td class='dangerous'>
               <!-- .dib= s.position -->
-              <div class='dib'>
+              <div class='dib track'>
                 <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ee915e50041ce0dd1dfde71cc6e2c28e078aa8e8.jpeg" />
                 <h4 class='grid-title tsm'>Dangerous</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='outside'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
-                <h4 class='grid-title tsm'>Outside</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='thinking-out-loud'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/646e9619750dfa3d1eadbbea959dc6f528a9109e.jpeg" />
-                <h4 class='grid-title tsm'>Thinking Out Loud</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='take-me-to-church'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0080bec0581fe6edb83293c14d3a0d01942b1798.jpeg" />
-                <h4 class='grid-title tsm'>Take Me To Church</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='uptown-funk'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/95f7f3bff78df3fbf5402ee304c9344aaec52890.jpeg" />
-                <h4 class='grid-title tsm'>Uptown Funk</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-          </td>
-        </tr>
-        <tr>
-          <td class='tac'>
-            <h3 class='tac tcs twbl'>Jan 12</h3>
-            <td class='stay-with-me'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/72d5bd1ecd38f261de6b7987283f35cd13d02fbd.jpeg" />
-                <h4 class='grid-title tsm'>Stay With Me</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='blame'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
-                <h4 class='grid-title tsm'>Blame</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='lips-are-movin'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/26b682beeb3bfefdfeed113bdbc0177bfb148b49.jpeg" />
-                <h4 class='grid-title tsm'>Lips Are Movin</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='dangerous'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ee915e50041ce0dd1dfde71cc6e2c28e078aa8e8.jpeg" />
-                <h4 class='grid-title tsm'>Dangerous</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='love-me-harder'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ded7eb8e29384d0d75be7ffc2411bb8008f055b4.jpeg" />
-                <h4 class='grid-title tsm'>Love Me Harder</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='firestone'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/c2e52266c4ed1541003babec2964a99ce0350aa3.jpeg" />
-                <h4 class='grid-title tsm'>Firestone</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='outside'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
-                <h4 class='grid-title tsm'>Outside</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='thinking-out-loud'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/646e9619750dfa3d1eadbbea959dc6f528a9109e.jpeg" />
-                <h4 class='grid-title tsm'>Thinking Out Loud</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='take-me-to-church'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0080bec0581fe6edb83293c14d3a0d01942b1798.jpeg" />
-                <h4 class='grid-title tsm'>Take Me To Church</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='uptown-funk'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/95f7f3bff78df3fbf5402ee304c9344aaec52890.jpeg" />
-                <h4 class='grid-title tsm'>Uptown Funk</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-          </td>
-        </tr>
-        <tr>
-          <td class='tac'>
-            <h3 class='tac tcs twbl'>Jan 19</h3>
-            <td class='blame'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
-                <h4 class='grid-title tsm'>Blame</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='dangerous'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ee915e50041ce0dd1dfde71cc6e2c28e078aa8e8.jpeg" />
-                <h4 class='grid-title tsm'>Dangerous</h4>
-                <!-- %h5.tss= s.artist -->
-                <!-- %p.tss= s.path -->
-              </div>
-            </td>
-            <td class='love-me-harder'>
-              <!-- .dib= s.position -->
-              <div class='dib'>
-                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ded7eb8e29384d0d75be7ffc2411bb8008f055b4.jpeg" />
-                <h4 class='grid-title tsm'>Love Me Harder</h4>
                 <!-- %h5.tss= s.artist -->
                 <!-- %p.tss= s.path -->
               </div>
             </td>
             <td class='gdfr'>
               <!-- .dib= s.position -->
-              <div class='dib'>
+              <div class='dib track'>
                 <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/b225984a1dec4cb4ea43345388ecae4f740cba0b.jpeg" />
                 <h4 class='grid-title tsm'>GDFR</h4>
                 <!-- %h5.tss= s.artist -->
@@ -258,7 +50,7 @@
             </td>
             <td class='cheerleader'>
               <!-- .dib= s.position -->
-              <div class='dib'>
+              <div class='dib track'>
                 <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/f3cf87bfde0748d389702a69e0ba01f6091e2403.jpeg" />
                 <h4 class='grid-title tsm'>Cheerleader</h4>
                 <!-- %h5.tss= s.artist -->
@@ -267,25 +59,43 @@
             </td>
             <td class='firestone'>
               <!-- .dib= s.position -->
-              <div class='dib'>
+              <div class='dib track'>
                 <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/c2e52266c4ed1541003babec2964a99ce0350aa3.jpeg" />
                 <h4 class='grid-title tsm'>Firestone</h4>
                 <!-- %h5.tss= s.artist -->
                 <!-- %p.tss= s.path -->
               </div>
             </td>
+            <td class='love-me-like-you-do'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/1c64a09fef47c954a6f5e779fbb21bf0245832dc.jpeg" />
+                <h4 class='grid-title tsm'>Love Me Like You Do</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
             <td class='outside'>
               <!-- .dib= s.position -->
-              <div class='dib'>
+              <div class='dib track'>
                 <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
                 <h4 class='grid-title tsm'>Outside</h4>
                 <!-- %h5.tss= s.artist -->
                 <!-- %p.tss= s.path -->
               </div>
             </td>
+            <td class='sugar'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/956a2c25a6a0cdfcf7e4d61af359b1b3e73575da.jpeg" />
+                <h4 class='grid-title tsm'>Sugar</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
             <td class='thinking-out-loud'>
               <!-- .dib= s.position -->
-              <div class='dib'>
+              <div class='dib track'>
                 <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/646e9619750dfa3d1eadbbea959dc6f528a9109e.jpeg" />
                 <h4 class='grid-title tsm'>Thinking Out Loud</h4>
                 <!-- %h5.tss= s.artist -->
@@ -294,7 +104,7 @@
             </td>
             <td class='take-me-to-church'>
               <!-- .dib= s.position -->
-              <div class='dib'>
+              <div class='dib track'>
                 <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0080bec0581fe6edb83293c14d3a0d01942b1798.jpeg" />
                 <h4 class='grid-title tsm'>Take Me To Church</h4>
                 <!-- %h5.tss= s.artist -->
@@ -303,7 +113,439 @@
             </td>
             <td class='uptown-funk'>
               <!-- .dib= s.position -->
-              <div class='dib'>
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/95f7f3bff78df3fbf5402ee304c9344aaec52890.jpeg" />
+                <h4 class='grid-title tsm'>Uptown Funk</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+          </td>
+        </tr>
+        <tr class='title-count'>
+          <td>&nbsp;</td>
+          <td>10</td>
+          <td>09</td>
+          <td>08</td>
+          <td>07</td>
+          <td>06</td>
+          <td>05</td>
+          <td>04</td>
+          <td>03</td>
+          <td>02</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <td class='tac'>
+            <h3 class='tac tcs twbl'>Jan 26</h3>
+            <td class='love-me-like-you-do'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/1c64a09fef47c954a6f5e779fbb21bf0245832dc.jpeg" />
+                <h4 class='grid-title tsm'>Love Me Like You Do</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='dangerous'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ee915e50041ce0dd1dfde71cc6e2c28e078aa8e8.jpeg" />
+                <h4 class='grid-title tsm'>Dangerous</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='cheerleader'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/f3cf87bfde0748d389702a69e0ba01f6091e2403.jpeg" />
+                <h4 class='grid-title tsm'>Cheerleader</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='gdfr'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/b225984a1dec4cb4ea43345388ecae4f740cba0b.jpeg" />
+                <h4 class='grid-title tsm'>GDFR</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='sugar'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/956a2c25a6a0cdfcf7e4d61af359b1b3e73575da.jpeg" />
+                <h4 class='grid-title tsm'>Sugar</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='outside'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
+                <h4 class='grid-title tsm'>Outside</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='firestone'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/c2e52266c4ed1541003babec2964a99ce0350aa3.jpeg" />
+                <h4 class='grid-title tsm'>Firestone</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='take-me-to-church'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0080bec0581fe6edb83293c14d3a0d01942b1798.jpeg" />
+                <h4 class='grid-title tsm'>Take Me To Church</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='thinking-out-loud'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/646e9619750dfa3d1eadbbea959dc6f528a9109e.jpeg" />
+                <h4 class='grid-title tsm'>Thinking Out Loud</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='uptown-funk'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/95f7f3bff78df3fbf5402ee304c9344aaec52890.jpeg" />
+                <h4 class='grid-title tsm'>Uptown Funk</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+          </td>
+        </tr>
+        <tr class='title-count'>
+          <td>&nbsp;</td>
+          <td>10</td>
+          <td>09</td>
+          <td>08</td>
+          <td>07</td>
+          <td>06</td>
+          <td>05</td>
+          <td>04</td>
+          <td>03</td>
+          <td>02</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <td class='tac'>
+            <h3 class='tac tcs twbl'>Jan 19</h3>
+            <td class='blame'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
+                <h4 class='grid-title tsm'>Blame</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='dangerous'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ee915e50041ce0dd1dfde71cc6e2c28e078aa8e8.jpeg" />
+                <h4 class='grid-title tsm'>Dangerous</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='love-me-harder'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ded7eb8e29384d0d75be7ffc2411bb8008f055b4.jpeg" />
+                <h4 class='grid-title tsm'>Love Me Harder</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='gdfr'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/b225984a1dec4cb4ea43345388ecae4f740cba0b.jpeg" />
+                <h4 class='grid-title tsm'>GDFR</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='cheerleader'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/f3cf87bfde0748d389702a69e0ba01f6091e2403.jpeg" />
+                <h4 class='grid-title tsm'>Cheerleader</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='firestone'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/c2e52266c4ed1541003babec2964a99ce0350aa3.jpeg" />
+                <h4 class='grid-title tsm'>Firestone</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='outside'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
+                <h4 class='grid-title tsm'>Outside</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='thinking-out-loud'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/646e9619750dfa3d1eadbbea959dc6f528a9109e.jpeg" />
+                <h4 class='grid-title tsm'>Thinking Out Loud</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='take-me-to-church'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0080bec0581fe6edb83293c14d3a0d01942b1798.jpeg" />
+                <h4 class='grid-title tsm'>Take Me To Church</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='uptown-funk'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/95f7f3bff78df3fbf5402ee304c9344aaec52890.jpeg" />
+                <h4 class='grid-title tsm'>Uptown Funk</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+          </td>
+        </tr>
+        <tr class='title-count'>
+          <td>&nbsp;</td>
+          <td>10</td>
+          <td>09</td>
+          <td>08</td>
+          <td>07</td>
+          <td>06</td>
+          <td>05</td>
+          <td>04</td>
+          <td>03</td>
+          <td>02</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <td class='tac'>
+            <h3 class='tac tcs twbl'>Jan 12</h3>
+            <td class='stay-with-me'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/72d5bd1ecd38f261de6b7987283f35cd13d02fbd.jpeg" />
+                <h4 class='grid-title tsm'>Stay With Me</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='blame'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
+                <h4 class='grid-title tsm'>Blame</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='lips-are-movin'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/26b682beeb3bfefdfeed113bdbc0177bfb148b49.jpeg" />
+                <h4 class='grid-title tsm'>Lips Are Movin</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='dangerous'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ee915e50041ce0dd1dfde71cc6e2c28e078aa8e8.jpeg" />
+                <h4 class='grid-title tsm'>Dangerous</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='love-me-harder'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ded7eb8e29384d0d75be7ffc2411bb8008f055b4.jpeg" />
+                <h4 class='grid-title tsm'>Love Me Harder</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='firestone'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/c2e52266c4ed1541003babec2964a99ce0350aa3.jpeg" />
+                <h4 class='grid-title tsm'>Firestone</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='outside'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
+                <h4 class='grid-title tsm'>Outside</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='thinking-out-loud'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/646e9619750dfa3d1eadbbea959dc6f528a9109e.jpeg" />
+                <h4 class='grid-title tsm'>Thinking Out Loud</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='take-me-to-church'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0080bec0581fe6edb83293c14d3a0d01942b1798.jpeg" />
+                <h4 class='grid-title tsm'>Take Me To Church</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='uptown-funk'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/95f7f3bff78df3fbf5402ee304c9344aaec52890.jpeg" />
+                <h4 class='grid-title tsm'>Uptown Funk</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+          </td>
+        </tr>
+        <tr class='title-count'>
+          <td>&nbsp;</td>
+          <td>10</td>
+          <td>09</td>
+          <td>08</td>
+          <td>07</td>
+          <td>06</td>
+          <td>05</td>
+          <td>04</td>
+          <td>03</td>
+          <td>02</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <td class='tac'>
+            <h3 class='tac tcs twbl'>Jan 05</h3>
+            <td class='firestone'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/c2e52266c4ed1541003babec2964a99ce0350aa3.jpeg" />
+                <h4 class='grid-title tsm'>Firestone</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='all-about-that-bass'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/d7fe19b11c2814f98aa1449713cdc42668070a49.jpeg" />
+                <h4 class='grid-title tsm'>All About That Bass</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='love-me-harder'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ded7eb8e29384d0d75be7ffc2411bb8008f055b4.jpeg" />
+                <h4 class='grid-title tsm'>Love Me Harder</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='stay-with-me'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/72d5bd1ecd38f261de6b7987283f35cd13d02fbd.jpeg" />
+                <h4 class='grid-title tsm'>Stay With Me</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='blame'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
+                <h4 class='grid-title tsm'>Blame</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='dangerous'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/ee915e50041ce0dd1dfde71cc6e2c28e078aa8e8.jpeg" />
+                <h4 class='grid-title tsm'>Dangerous</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='outside'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0e2747127c12222577e98ccec7ce44773c12c546.jpeg" />
+                <h4 class='grid-title tsm'>Outside</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='thinking-out-loud'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/646e9619750dfa3d1eadbbea959dc6f528a9109e.jpeg" />
+                <h4 class='grid-title tsm'>Thinking Out Loud</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='take-me-to-church'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
+                <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/0080bec0581fe6edb83293c14d3a0d01942b1798.jpeg" />
+                <h4 class='grid-title tsm'>Take Me To Church</h4>
+                <!-- %h5.tss= s.artist -->
+                <!-- %p.tss= s.path -->
+              </div>
+            </td>
+            <td class='uptown-funk'>
+              <!-- .dib= s.position -->
+              <div class='dib track'>
                 <img class="db" width="200" src="../assets/images/tinkerings/spotify-data-project/95f7f3bff78df3fbf5402ee304c9344aaec52890.jpeg" />
                 <h4 class='grid-title tsm'>Uptown Funk</h4>
                 <!-- %h5.tss= s.artist -->
@@ -444,6 +686,21 @@
             Drew had exactly what I needed the whole time as I fought to make the classes from the song titles last night.
             <a href="https://github.com/drewbarontini/middleman-library">middleman library</a>
           </p>
+          <h2>January 27</h2>
+          <p>
+            Negative numbers! It hit me today while driving that negative numbers would help with plotting and showing change from week to week. I still can't use Chartist because of the lack of control over the guides, but making 10 and 1 be -10 and -1 would allow for the graph to work properly.
+          </p>
+          <p><img alt="screenshot of graph with negative plots" height="auto" src="../assets/images/tinkerings/spotify-data-project/sample-graph-negative-plots.png" /></p>
+          <p>
+            Showing the change from week to week would work too: 4 - 2 = 2, but it's really a drop of 2 spots. If -4 and -2 are used, -4 - -2 = -2. We'll see what I can do with that.
+          </p>
+          <h2>Feb 2</h2>
+          <p>
+            I played with a staggered view a bit and I'll keep it for now. So far it's the best representaiton of the positions but I'm not sold on it.
+          </p>
+          <p>
+            Some interesting data is starting to form. There are definitely things that I want to be able to show: highest jump in the charts, best starting point, and total number of individual tracks are a few. Those will definitely take some learning and I hope it can be done with the data as is.
+          </p>
         </div>
       </div>
     </article>
@@ -458,10 +715,8 @@
         <a class="mls" href="/">Home</a>
       </nav>
     </footer>
-    <!-- = javascript_include_tag  'vendor' -->
+    <script src="../assets/javascripts/vendor.js" type="text/javascript"></script>
     <!-- = javascript_include_tag  'application' -->
-    <script src="../assets/javascripts/jquery.js" type="text/javascript"></script>
-    <script src="../assets/javascripts/chartist.js" type="text/javascript"></script>
     <script src="../assets/javascripts/tinkerings/spotify-data-project/spotify-data-project.js" type="text/javascript"></script>
     <script>
       new Chartist.Line('.ct-chart', {
