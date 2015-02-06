@@ -6,6 +6,28 @@ css: tinkerings/roulettingale
 ---
 
 %section.row
+	.cell.well
+
+		%article
+			- data.roulettingale.each do |s|
+				%ul.mbl
+					%li ID: #{s.id}
+					%li Wins: #{s.wins}
+					%li Total Spins: #{s.totalSpins}
+					%li Max Bet: #{s.maxBet}
+					%li Min Bankroll: #{s.minBankroll}
+					- if s.notes != ""
+						%li Notes: #{s.notes}
+					%li
+						%table
+							- s.spins.each do |sp|
+								%tr
+									%td=sp.amount
+									%td=sp.bet
+									%td=sp.number
+									%td=sp.result
+
+%section.row
 	.cell.cell--s.well
 		%h1
 			Roulettingale
@@ -363,6 +385,13 @@ css: tinkerings/roulettingale
 			Chartist gets closer to showing it, albeit with the usual range problem which I'll need to solve with d3 instead.
 
 		=image_tag 'tinkerings/roulettingale/example-chartist.jpg'
+
+		%p.tss
+			February 6, 2015
+
+		%p
+			Got a big JSON going and spewing out data. Let's get it on.
+
 
 
 
