@@ -52,10 +52,16 @@
 // Third-party style imports, if needed
 
 // -------------------------------------
-//   Foundation - Tools
+//   Foundation - Base
 // -------------------------------------
 
 @import 'foundation/tools'
+
+.troubleshoot
+	box-shadow: 0 0 0 1px pink
+
+body
+	font-size: 16px
 
 body,
 h1,
@@ -64,3 +70,41 @@ h3,
 h4,
 h5
 	font-family: 'Helvetica Neue'
+
+td,
+th
+	padding: 0 $b-space
+
+th
+	text-align: left
+
+dl,
+dt,
+dd
+	margin: 0
+	padding: 0
+
+.tsxxl
+	font-size: 350%
+
+dt
+	@extend .tsxxl
+	line-height: 1
+
+dd
+	@extend .ttu
+
+dd + dt
+	margin-top: $b-space-s
+
+article
+	margin-bottom: $b-space-xl
+
+// -------------------------------------
+//   Foundation - Structures
+// -------------------------------------
+
+.dollars:before
+	content: "$"
+	font-size: 50%
+	vertical-align: top

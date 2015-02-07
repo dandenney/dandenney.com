@@ -3,29 +3,50 @@ layout: tinkering
 date: February 5, 2015
 title: Roulettingale
 css: tinkerings/roulettingale
+js: tinkerings/roulettingale/roulettingale
 ---
 
 %section.row
 	.cell.well
 
-		%article
-			- data.roulettingale.each do |s|
-				%ul.mbl
-					%li ID: #{s.id}
-					%li Wins: #{s.wins}
-					%li Total Spins: #{s.totalSpins}
-					%li Max Bet: #{s.maxBet}
-					%li Min Bankroll: #{s.minBankroll}
-					- if s.notes != ""
-						%li Notes: #{s.notes}
-					%li
-						%table
-							- s.spins.each do |sp|
-								%tr
-									%td=sp.amount
-									%td=sp.bet
-									%td=sp.number
-									%td=sp.result
+		- data.roulettingale.each do |s|
+			%article
+				.g
+					.g-b.g-b--1of4
+						%aside
+
+							%dl.tac
+
+								%dt #{s.totalSpins}
+								%dd Spins
+
+								%dt.js-winnings.dollars #{s.wins}
+								%dd Profit
+
+								%dt.js-maxBet.dollars #{s.maxBet}
+								%dd Max Bet
+
+								%dt.js-minBankroll.dollars #{s.minBankroll}
+								%dd Min Bankroll
+
+							ID: #{s.id}
+							- if s.notes != ""
+								Notes: #{s.notes}
+					.g-b.g-b--1of4
+						%section
+							%h3 Spins
+							%table
+								%thead
+									%th Amount
+									%th Bet
+									%th Number
+									%th Result
+								- s.spins.each do |sp|
+									%tr
+										%td=sp.amount
+										%td=sp.bet
+										%td=sp.number
+										%td=sp.result
 
 %section.row
 	.cell.cell--s.well

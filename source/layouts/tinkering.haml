@@ -6,8 +6,8 @@
     %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1.0' }
 
     / Typekit
-    <script src="//use.typekit.net/tyi7qzy.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+    // <script src="//use.typekit.net/tyi7qzy.js"></script>
+    // <script>try{Typekit.load();}catch(e){}</script>
 
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || 'Dan Denney'
@@ -24,6 +24,9 @@
     / = javascript_include_tag  'application'
 
     = javascript_include_tag 'tinkerings/spotify-data-project/spotify-data-project'
+
+    -if current_page.data.js?
+      = javascript_include_tag current_page.data.js
 
     %script
       new Chartist.Line('.ct-chart', {
