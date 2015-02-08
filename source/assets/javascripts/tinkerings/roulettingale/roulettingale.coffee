@@ -102,6 +102,8 @@ redBlackPercentage = ->
 		redPercentage = (redRaw * 100).toFixed(2) + '%'
 		blackRaw = blackCount / redBlackTotal
 		blackPercentage = (blackRaw * 100).toFixed(2) + '%'
+		$(this).siblings().find('.js-count-red').html(redCount)
+		$(this).siblings().find('.js-count-black').html(blackCount)
 		$(this).siblings().find('.js-prct-red').html(redPercentage)
 		$(this).siblings().find('.js-prct-black').html(blackPercentage)
 
@@ -121,6 +123,8 @@ evenOddPercentage = ->
 		evenPercentage = (evenRaw * 100).toFixed(2) + '%'
 		oddRaw = oddCount / evenoddTotal
 		oddPercentage = (oddRaw * 100).toFixed(2) + '%'
+		$(this).siblings().find('.js-count-even').html(evenCount)
+		$(this).siblings().find('.js-count-odd').html(oddCount)
 		$(this).siblings().find('.js-prct-even').html(evenPercentage)
 		$(this).siblings().find('.js-prct-odd').html(oddPercentage)
 
@@ -140,6 +144,8 @@ n1181936Percentage = ->
 		n118Percentage = (n118Raw * 100).toFixed(2) + '%'
 		n1936Raw = n1936Count / n118n1936Total
 		n1936Percentage = (n1936Raw * 100).toFixed(2) + '%'
+		$(this).siblings().find('.js-count-118').html(n118Count)
+		$(this).siblings().find('.js-count-1936').html(n1936Count)
 		$(this).siblings().find('.js-prct-118').html(n118Percentage)
 		$(this).siblings().find('.js-prct-1936').html(n1936Percentage)
 
