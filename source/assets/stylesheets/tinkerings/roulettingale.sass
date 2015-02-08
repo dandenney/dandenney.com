@@ -34,7 +34,6 @@
 @import 'components/bucket'
 @import 'components/card'
 @import 'components/cell'
-@import 'components/grid'
 @import 'components/row'
 @import 'components/well'
 
@@ -51,6 +50,12 @@
 
 // Third-party style imports, if needed
 
+$tan: #f1e1cb
+$black: #0a100c
+$green: #186929
+$yellow: #fed275
+$red: #b52316
+
 // -------------------------------------
 //   Foundation - Base
 // -------------------------------------
@@ -62,6 +67,7 @@
 
 body
 	font-size: 16px
+	font-weight: 400
 
 body,
 h1,
@@ -69,14 +75,29 @@ h2,
 h3,
 h4,
 h5
-	font-family: 'Helvetica Neue'
+	font-family: 'proxima-nova-alt-ext-cond', 'Helvetica Neue'
 
-td,
-th
+.h5, h5
+	color: mix(#000000, $tan, 25%)
+	font-size: $b-fontSize
+	font-weight: normal
+	@extend .ttu
+	margin-top: -($b-space-s)
+
+th,
+td
 	padding: 0 $b-space
+	&:first-child
+		padding-left: 0
+
+tr:nth-child(even)
+	background: mix(#ffffff, $tan, 20%)
 
 th
 	text-align: left
+
+td
+	white-space: nowrap
 
 dl,
 dt,
@@ -84,27 +105,90 @@ dd
 	margin: 0
 	padding: 0
 
-.tsxxl
-	font-size: 350%
-
-dt
-	@extend .tsxxl
-	line-height: 1
-
-dd
-	@extend .ttu
-
 dd + dt
 	margin-top: $b-space-s
 
+ul
+	margin: 0
+	padding: 0
+
 article
-	margin-bottom: $b-space-xl
+	margin-top: $b-space-l
+
+
+.tsxxl
+	font-size: 350%
 
 // -------------------------------------
 //   Foundation - Structures
 // -------------------------------------
 
+.positive
+	color: $green
+
+.negative
+	color: $red
+
 .dollars:before
 	content: "$"
 	font-size: 50%
 	vertical-align: top
+
+// Session
+
+.session
+	color: mix(#000000, $tan, 55%)
+	display: flex
+	flex-direction: row
+
+.session-meta
+	background: mix(#ffffff, $tan, 50%)
+	padding: $b-space
+	@extend .tac
+
+.session-meta-list
+	align-content: space-between
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	width: 300px
+	li
+		width: 50%
+
+.session-meta-value
+	@extend .tsxxl
+	font-weight: 700
+	line-height: 1
+	margin: 0
+	padding: 0
+
+.proof
+	align-self: flex-start
+	text-align: left
+	width: 100%
+
+.session-meta-proof
+	@extend .positive
+
+.session-meta-id
+	background: mix(#ffffff, $tan, 35%)
+	border-radius: 50%
+	color: mix(#000000, $tan, 25%)
+	font-size: $b-fontSize-xl
+	height: 60px
+	line-height: 60px
+	text-align: center
+	width: 60px
+
+.session-stats
+	background: $tan
+	flex-grow: 5
+	position: relative
+
+.session-stats-result
+	color: $green
+
+// Session
+
+.post
+	font-family: 'Helvetica Neue'

@@ -7,48 +7,77 @@ js: tinkerings/roulettingale/roulettingale
 ---
 
 %section.row
-	.cell.well
 
-		- data.roulettingale.each do |s|
-			%article
-				.g
-					.g-b.g-b--1of4
-						%aside
+	- data.roulettingale.each do |s|
+		%article.session{ class: ("js-id" + (s.id)) }
+			%aside.session-meta
 
-							%dl.tac
+				.session-meta-id.mhc.mbm
+					#{s.id}
 
-								%dt #{s.totalSpins}
-								%dd Spins
+				%ul.session-meta-list
+					%li
+						%p.session-meta-value #{s.totalSpins}
+						%h5 Spins
 
-								%dt.js-winnings.dollars #{s.wins}
-								%dd Profit
+					%li
+						%p.session-meta-value.dollars.js-winnings #{s.wins}
+						%h5 Profit
 
-								%dt.js-maxBet.dollars #{s.maxBet}
-								%dd Max Bet
+					%li
+						%p.session-meta-value.dollars.js-minBet 50
+						%h5 Min Bet
 
-								%dt.js-minBankroll.dollars #{s.minBankroll}
-								%dd Min Bankroll
+					%li
+						%p.session-meta-value.dollars.js-maxBet #{s.maxBet}
+						%h5 Max Bet
 
-							ID: #{s.id}
-							- if s.notes != ""
-								Notes: #{s.notes}
-					.g-b.g-b--1of4
-						%section
-							%h3 Spins
-							%table
-								%thead
-									%th Amount
-									%th Bet
-									%th Number
-									%th Result
-								- s.spins.each do |sp|
-									%tr
-										%td=sp.amount
-										%td=sp.bet
-										%td=sp.number
-										%td=sp.result
+					%li
+						%p.session-meta-value.dollars.js-minBankroll #{s.minBankroll}
+						%h5 Min Bankroll
 
-%section.row
+				%table.proof
+					%tr
+						%td.h5
+							Mirage - ($25 - $20,000)
+						%td.session-meta-proof.js-checkMirage{ "data-maxbet" => s.maxBet }
+							&#10003;
+
+					%tr
+						%td.h5
+							MGM - ($25 - $10,000)
+						%td.session-meta-proof.js-checkMGM{ "data-maxbet" => s.maxBet }
+							&#10003;
+					%tr
+						%td.h5
+							Beau Rivage - ($10 - $15,000)
+						%td.session-meta-proof.js-checkBeau{ "data-maxbet" => s.maxBet }
+							&#10003;
+
+				.mtl
+					- if s.notes != ""
+						Notes: #{s.notes}
+
+			%section.session-stats.pam.pll
+
+				%h3 Spins
+
+				%table
+					%thead
+						%th Number
+						%th Bet
+						%th Amount
+						%th Result
+
+					- s.spins.each do |sp|
+						%tr
+							%td=sp.number
+							%td=sp.bet
+							%td= (sp.amount * 50)
+							%td.session-stats-result
+								%span{ class: ('negative' if sp.result == 'l') }= (sp.amount * 50)
+
+%section.row.post
 	.cell.cell--s.well
 		%h1
 			Roulettingale
@@ -412,6 +441,26 @@ js: tinkerings/roulettingale/roulettingale
 
 		%p
 			Got a big JSON going and spewing out data. Let's get it on.
+
+		%p.tss
+			February 7, 2015
+
+		%p
+			I went with the first color scheme, Casino Royale, and began adding some styles. I think this is a good time to learn some flexbox. I want some things vertically centered and I want the sidebar with information to have a different color background. The 2 columns are uneven and can vary as to which one is longer. There are hacks for that in the grid but I'd rather just learn flexbox since this is a side project and I'm not worried about people seeing it or what browser they're in.
+
+		%p
+			I'm doing a weird combination of Middleman math and JS math to get the values. When I do a session, I've started recording them as single unit values. Ultimately, I want to show the results for multiple bet amounts: $25, $50, $100, maybe $200. For now, I got it working at $50 and I'll work out how to make it more flexible when I'm ready.
+
+		%p.tss
+			February 8, 2015
+
+		%p
+			The beautiful thing about working with existing data to create the designs is that the data dictates the needs. Before organizing and colleting data, I imagined that a scatter chart showing all of the numbers would be interesting. While it may look interesting visually, it doesn't have much impact on the proofing that I'm doing. In this case, I really don't care about what numbers are there. I only care what category they are in, with categories being an available even-money bet type: 1-18, 19-36, odd, even, black, red. I'm not recording this information, but that's just because it's so much more effort and leaves room for error. I'll be using Middleman for this, comparing the individual number against a set of numbers. I'll get a rough version working with template logic and then bug Drew for how to write it better.
+
+		%p
+			Streaks are another thing of interest. They are the best or the worst thing that can happen to a session. A streak of wins is good, a streak of losses is bad. Right now, I can't get these at all. I'll need the results of the checks on the numbers to then identify streaks. Not sure how that will happen yet, but I'll work it out once I can see them.
+
+
 
 
 
