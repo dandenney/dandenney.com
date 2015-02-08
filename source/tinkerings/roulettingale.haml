@@ -24,23 +24,23 @@ js: tinkerings/roulettingale/roulettingale
 
 					%ul.session-meta-list
 						%li
-							%p.session-meta-value #{s.totalSpins}
+							%p.key-value #{s.totalSpins}
 							%h5 Spins
 
 						%li
-							%p.session-meta-value.dollars.js-winnings #{s.wins}
+							%p.key-value.dollars.js-winnings #{s.wins}
 							%h5 Profit
 
 						%li
-							%p.session-meta-value.dollars.js-minBet 50
+							%p.key-value.dollars.js-minBet 50
 							%h5 Min Bet
 
 						%li
-							%p.session-meta-value.dollars.js-maxBet #{s.maxBet}
+							%p.key-value.dollars.js-maxBet #{s.maxBet}
 							%h5 Max Bet
 
 						%li
-							%p.session-meta-value.dollars.js-minBankroll #{s.minBankroll}
+							%p.key-value.dollars.js-minBankroll #{s.minBankroll}
 							%h5 Min Bankroll
 
 					%table.proof
@@ -69,7 +69,7 @@ js: tinkerings/roulettingale/roulettingale
 
 					%h3.mtf.tac Spins
 
-					%table.spins
+					%table.spins.js-spins
 						%thead
 							%th Bet
 							%th Amount
@@ -84,7 +84,7 @@ js: tinkerings/roulettingale/roulettingale
 
 						- s.spins.each do |sp|
 							%tr
-								%td=sp.bet
+								%td.ttc=sp.bet
 								%td
 									%span.dollars--a $
 									= (sp.amount * 50)
@@ -93,7 +93,7 @@ js: tinkerings/roulettingale/roulettingale
 										%span.dollars--a $
 										= (sp.amount * 50)
 								%td.tac=sp.number
-								%td.tss
+								%td.tss.js-n-red
 									- if sp.number == 1
 										.positive--a &#10003;
 									- elsif sp.number == 3
@@ -133,7 +133,7 @@ js: tinkerings/roulettingale/roulettingale
 									- else
 										.negative--a &#10008;
 
-								%td.tss
+								%td.tss.js-n-black
 									- if sp.number == 2
 										.positive--a &#10003;
 									- elsif sp.number == 4
@@ -172,7 +172,8 @@ js: tinkerings/roulettingale/roulettingale
 										.positive--a &#10003;
 									- else
 										.negative--a &#10008;
-								%td.tss
+
+								%td.tss.js-n-even
 									- if sp.number == 2
 										.positive--a &#10003;
 									- elsif sp.number == 4
@@ -211,7 +212,8 @@ js: tinkerings/roulettingale/roulettingale
 										.positive--a &#10003;
 									- else
 										.negative--a &#10008;
-								%td.tss
+
+								%td.tss.js-n-odd
 									- if sp.number == 1
 										.positive--a &#10003;
 									- elsif sp.number == 3
@@ -250,7 +252,8 @@ js: tinkerings/roulettingale/roulettingale
 										.positive--a &#10003;
 									- else
 										.negative--a &#10008;
-								%td.tss
+
+								%td.tss.js-n-118
 									- if sp.number == 1
 										.positive--a &#10003;
 									- elsif sp.number == 2
@@ -289,7 +292,8 @@ js: tinkerings/roulettingale/roulettingale
 										.positive--a &#10003;
 									- else
 										.negative--a &#10008;
-								%td.tss
+
+								%td.tss.js-n-1936
 									- if sp.number == 19
 										.positive--a &#10003;
 									- elsif sp.number == 20
@@ -328,6 +332,38 @@ js: tinkerings/roulettingale/roulettingale
 										.positive--a &#10003;
 									- else
 										.negative--a &#10008;
+
+					%ul.spins-percentages.mtl
+
+						%li
+							%p.key-value.js-prct-red
+							%h5
+								Red
+
+						%li
+							%p.key-value.js-prct-black
+							%h5
+								Black
+
+						%li
+							%p.key-value.js-prct-even
+							%h5
+								Even
+
+						%li
+							%p.key-value.js-prct-odd
+							%h5
+								Odd
+
+						%li
+							%p.key-value.js-prct-118
+							%h5
+								1-18
+
+						%li
+							%p.key-value.js-prct-1936
+							%h5
+								19-36
 
 
 %section#details.row.post
@@ -689,7 +725,7 @@ js: tinkerings/roulettingale/roulettingale
 
 		=image_tag 'tinkerings/roulettingale/example-chartist.jpg'
 
-		%p.tss
+		%h3.mtm
 			February 6, 2015
 
 		%p
@@ -723,7 +759,7 @@ js: tinkerings/roulettingale/roulettingale
 		%p
 			You can see the results and the streaks here, but I also want them in graphs. This is a start, though, so I'm going to put these in. Visually, the check and the 'x' aren't big enough to follow cleanly so I'll do them in a different way.
 
-		- data.roulettingale.each do |es|
+		- data.roulettingale[0...3].each do |es|
 			%table.complex
 				%thead
 					%th Number
@@ -975,6 +1011,29 @@ js: tinkerings/roulettingale/roulettingale
 		%h4.mtl Digging this
 		%p
 			Seeing this in action, I think it's something that I'll want to keep (in addition to visualizing the percentages. It's really interesting and important to betting to see the streaks. Identifying long streaks allows to show how bad it couldn't have gotten in any one session.
+
+		%p
+			jQuery length will get me a lot of what I want so I'll probably start with that. Now that all of this stuff exists in the DOM I can loop over it pretty easily. One quick example is the number of times a number was 1-18 occurred in the first set. I chose this one because it's insanely low.
+
+		%code
+			%pre
+				examplePos = $('.js-id001 .js-n-118 .positive--a').length;
+				exampleNeg = $('.js-id001 .js-n-118 .negative--a').length;
+				exampleTot = examplePos + exampleNeg
+				examplePosPer = examplePos / exampleTot
+				exampleNegPer = exampleNeg / exampleTot
+				$('.example-positive').append(examplePosPer)
+				$('.example-negative').append(exampleNegPer)
+
+		.example
+			%p
+				1-18:
+				%strong.example-positive
+
+			%p
+				19-36:
+				%strong.example-negative
+
 
 
 
