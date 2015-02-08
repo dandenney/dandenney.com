@@ -1,0 +1,998 @@
+---
+layout: tinkering
+date: February 5, 2015
+title: Roulettingale
+css: tinkerings/roulettingale
+js: tinkerings/roulettingale/roulettingale
+---
+
+%section.row
+
+	%h1.mtm.tac Roulettingale
+	%p.tac
+		A data project observing the performance of the Martingale betting system in Roulette.
+		%a{ href: "#details" } Details
+
+	.cell
+
+		- data.roulettingale.each do |s|
+			%article.session{ class: ("js-id" + (s.id)) }
+				%aside.session-meta
+
+					.session-meta-id.mhc.mbs
+						#{s.id}
+
+					%ul.session-meta-list
+						%li
+							%p.session-meta-value #{s.totalSpins}
+							%h5 Spins
+
+						%li
+							%p.session-meta-value.dollars.js-winnings #{s.wins}
+							%h5 Profit
+
+						%li
+							%p.session-meta-value.dollars.js-minBet 50
+							%h5 Min Bet
+
+						%li
+							%p.session-meta-value.dollars.js-maxBet #{s.maxBet}
+							%h5 Max Bet
+
+						%li
+							%p.session-meta-value.dollars.js-minBankroll #{s.minBankroll}
+							%h5 Min Bankroll
+
+					%table.proof
+						%tr
+							%td.h5
+								Mirage - ($25 - $20,000)
+							%td.session-meta-proof.js-checkMirage{ "data-maxbet" => s.maxBet }
+								&#10003;
+
+						%tr
+							%td.h5
+								MGM - ($25 - $10,000)
+							%td.session-meta-proof.js-checkMGM{ "data-maxbet" => s.maxBet }
+								&#10003;
+						%tr
+							%td.h5
+								Beau Rivage - ($10 - $15,000)
+							%td.session-meta-proof.js-checkBeau{ "data-maxbet" => s.maxBet }
+								&#10003;
+
+					.mtl
+						- if s.notes != ""
+							Notes: #{s.notes}
+
+				%section.session-stats
+
+					%h3.mtf.tac Spins
+
+					%table.spins
+						%thead
+							%th Bet
+							%th Amount
+							%th Result
+							%th Number
+							%th Red
+							%th Black
+							%th Even
+							%th Odd
+							%th 1-18
+							%th 19-36
+
+						- s.spins.each do |sp|
+							%tr
+								%td=sp.bet
+								%td
+									%span.dollars--a $
+									= (sp.amount * 50)
+								%td.session-stats-result
+									%span{ class: ('negative' if sp.result == 'l') }
+										%span.dollars--a $
+										= (sp.amount * 50)
+								%td.tac=sp.number
+								%td.tss
+									- if sp.number == 1
+										.positive--a &#10003;
+									- elsif sp.number == 3
+										.positive--a &#10003;
+									- elsif sp.number == 5
+										.positive--a &#10003;
+									- elsif sp.number == 7
+										.positive--a &#10003;
+									- elsif sp.number == 9
+										.positive--a &#10003;
+									- elsif sp.number == 12
+										.positive--a &#10003;
+									- elsif sp.number == 14
+										.positive--a &#10003;
+									- elsif sp.number == 16
+										.positive--a &#10003;
+									- elsif sp.number == 18
+										.positive--a &#10003;
+									- elsif sp.number == 19
+										.positive--a &#10003;
+									- elsif sp.number == 21
+										.positive--a &#10003;
+									- elsif sp.number == 23
+										.positive--a &#10003;
+									- elsif sp.number == 25
+										.positive--a &#10003;
+									- elsif sp.number == 27
+										.positive--a &#10003;
+									- elsif sp.number == 30
+										.positive--a &#10003;
+									- elsif sp.number == 32
+										.positive--a &#10003;
+									- elsif sp.number == 34
+										.positive--a &#10003;
+									- elsif sp.number == 36
+										.positive--a &#10003;
+									- else
+										.negative--a &#10008;
+
+								%td.tss
+									- if sp.number == 2
+										.positive--a &#10003;
+									- elsif sp.number == 4
+										.positive--a &#10003;
+									- elsif sp.number == 6
+										.positive--a &#10003;
+									- elsif sp.number == 8
+										.positive--a &#10003;
+									- elsif sp.number == 10
+										.positive--a &#10003;
+									- elsif sp.number == 11
+										.positive--a &#10003;
+									- elsif sp.number == 13
+										.positive--a &#10003;
+									- elsif sp.number == 15
+										.positive--a &#10003;
+									- elsif sp.number == 17
+										.positive--a &#10003;
+									- elsif sp.number == 20
+										.positive--a &#10003;
+									- elsif sp.number == 22
+										.positive--a &#10003;
+									- elsif sp.number == 24
+										.positive--a &#10003;
+									- elsif sp.number == 26
+										.positive--a &#10003;
+									- elsif sp.number == 28
+										.positive--a &#10003;
+									- elsif sp.number == 29
+										.positive--a &#10003;
+									- elsif sp.number == 31
+										.positive--a &#10003;
+									- elsif sp.number == 33
+										.positive--a &#10003;
+									- elsif sp.number == 35
+										.positive--a &#10003;
+									- else
+										.negative--a &#10008;
+								%td.tss
+									- if sp.number == 2
+										.positive--a &#10003;
+									- elsif sp.number == 4
+										.positive--a &#10003;
+									- elsif sp.number == 6
+										.positive--a &#10003;
+									- elsif sp.number == 8
+										.positive--a &#10003;
+									- elsif sp.number == 10
+										.positive--a &#10003;
+									- elsif sp.number == 12
+										.positive--a &#10003;
+									- elsif sp.number == 14
+										.positive--a &#10003;
+									- elsif sp.number == 16
+										.positive--a &#10003;
+									- elsif sp.number == 18
+										.positive--a &#10003;
+									- elsif sp.number == 20
+										.positive--a &#10003;
+									- elsif sp.number == 22
+										.positive--a &#10003;
+									- elsif sp.number == 24
+										.positive--a &#10003;
+									- elsif sp.number == 26
+										.positive--a &#10003;
+									- elsif sp.number == 28
+										.positive--a &#10003;
+									- elsif sp.number == 30
+										.positive--a &#10003;
+									- elsif sp.number == 32
+										.positive--a &#10003;
+									- elsif sp.number == 34
+										.positive--a &#10003;
+									- elsif sp.number == 36
+										.positive--a &#10003;
+									- else
+										.negative--a &#10008;
+								%td.tss
+									- if sp.number == 1
+										.positive--a &#10003;
+									- elsif sp.number == 3
+										.positive--a &#10003;
+									- elsif sp.number == 5
+										.positive--a &#10003;
+									- elsif sp.number == 7
+										.positive--a &#10003;
+									- elsif sp.number == 9
+										.positive--a &#10003;
+									- elsif sp.number == 11
+										.positive--a &#10003;
+									- elsif sp.number == 13
+										.positive--a &#10003;
+									- elsif sp.number == 15
+										.positive--a &#10003;
+									- elsif sp.number == 17
+										.positive--a &#10003;
+									- elsif sp.number == 19
+										.positive--a &#10003;
+									- elsif sp.number == 21
+										.positive--a &#10003;
+									- elsif sp.number == 23
+										.positive--a &#10003;
+									- elsif sp.number == 25
+										.positive--a &#10003;
+									- elsif sp.number == 27
+										.positive--a &#10003;
+									- elsif sp.number == 29
+										.positive--a &#10003;
+									- elsif sp.number == 31
+										.positive--a &#10003;
+									- elsif sp.number == 33
+										.positive--a &#10003;
+									- elsif sp.number == 35
+										.positive--a &#10003;
+									- else
+										.negative--a &#10008;
+								%td.tss
+									- if sp.number == 1
+										.positive--a &#10003;
+									- elsif sp.number == 2
+										.positive--a &#10003;
+									- elsif sp.number == 3
+										.positive--a &#10003;
+									- elsif sp.number == 4
+										.positive--a &#10003;
+									- elsif sp.number == 5
+										.positive--a &#10003;
+									- elsif sp.number == 6
+										.positive--a &#10003;
+									- elsif sp.number == 7
+										.positive--a &#10003;
+									- elsif sp.number == 8
+										.positive--a &#10003;
+									- elsif sp.number == 9
+										.positive--a &#10003;
+									- elsif sp.number == 10
+										.positive--a &#10003;
+									- elsif sp.number == 11
+										.positive--a &#10003;
+									- elsif sp.number == 12
+										.positive--a &#10003;
+									- elsif sp.number == 13
+										.positive--a &#10003;
+									- elsif sp.number == 14
+										.positive--a &#10003;
+									- elsif sp.number == 15
+										.positive--a &#10003;
+									- elsif sp.number == 16
+										.positive--a &#10003;
+									- elsif sp.number == 17
+										.positive--a &#10003;
+									- elsif sp.number == 18
+										.positive--a &#10003;
+									- else
+										.negative--a &#10008;
+								%td.tss
+									- if sp.number == 19
+										.positive--a &#10003;
+									- elsif sp.number == 20
+										.positive--a &#10003;
+									- elsif sp.number == 21
+										.positive--a &#10003;
+									- elsif sp.number == 22
+										.positive--a &#10003;
+									- elsif sp.number == 23
+										.positive--a &#10003;
+									- elsif sp.number == 24
+										.positive--a &#10003;
+									- elsif sp.number == 25
+										.positive--a &#10003;
+									- elsif sp.number == 26
+										.positive--a &#10003;
+									- elsif sp.number == 27
+										.positive--a &#10003;
+									- elsif sp.number == 28
+										.positive--a &#10003;
+									- elsif sp.number == 29
+										.positive--a &#10003;
+									- elsif sp.number == 30
+										.positive--a &#10003;
+									- elsif sp.number == 31
+										.positive--a &#10003;
+									- elsif sp.number == 32
+										.positive--a &#10003;
+									- elsif sp.number == 33
+										.positive--a &#10003;
+									- elsif sp.number == 34
+										.positive--a &#10003;
+									- elsif sp.number == 35
+										.positive--a &#10003;
+									- elsif sp.number == 36
+										.positive--a &#10003;
+									- else
+										.negative--a &#10008;
+
+
+%section#details.row.post
+	.cell.cell--s.well
+		%h1
+			Roulettingale
+
+		%p.tss
+			February 5, 2015
+
+		%h2 The Idea
+		Track and visualize series of attempts to use the martingale betting system in Roulette.
+
+		%p
+			I recently learned of the Martingale betting system and how it's one of the popular betting systems used in roulette. I've always been a fan of number systems, especially ones that involve wagering: stocks and gambling.
+
+		%p
+			There are some decent roulette apps for iOS and the Mac. I'm going to run a series of tests using the system, record data, and visualize it.
+
+		%h2 Manual Data Collection… yuk
+		%p
+			This is all manual and I'll use a couple of different apps to get different results. I've been using an app on iOS called
+			%strong
+				Roulette - Casino Style
+			and I've already noticed a couple of patterns where it repeats numbers after a win.
+
+		%p
+			I do have some concerns about using these apps because they offer in-app purchases. While the odds alone would lead to plenty of purchases, it certainly seems like it would be easy to program some occasional lose streaks to help out.
+
+		%p
+			In my first day of testing, my longest losings streaks came from only betting black and using the system. I'll test more to see if that is normal.
+
+		%h2 What to Observe
+
+		%h4
+			I want to know a few things:
+
+		%ul
+			%li
+				How does it work over a long series of spins?
+			%li
+				How does it perform over short sessions with a goal of 10 wins?
+			%li
+				What bankroll would be necessary to complete the worst session?
+			%li
+				What bankroll would be necessary to complete the average session?
+			%li
+				What casino stakes allow for the worst session to be completed?
+			%li
+				What casino stakes allow for the average session to be completed?
+
+		%h2 The First Sessions
+
+		%p
+			I believe that this is what I want to know and display about individual sessions. This part tells the important part of the data:
+
+		%p
+			Can you successfully win 10 times your minimum wager within the stakes?
+
+		%p.mbf
+			If so, how much of a bankroll was necessary to achieve it and how many rolls did it take?
+
+		.mbl.tss
+			(It seems you can get in 35 - 112 spins per hour depending on the number of players. <a href="http://wizardofodds.com/ask-the-wizard/136/" class="tss">Reference</a> )
+
+		%article.tsm
+
+			%h3 Session 001
+
+			%dl
+
+				%dt Winnings
+				%dd 10x
+
+				%dt Spins
+				%dd 16
+
+				%dt Max Bet
+				%dd 4x
+
+				%dt Min Bankroll
+				%dd 7x
+
+			%dl
+
+				%dt Mirage ($25 - $20,000) (800, 400, 200)
+				%dd Yes, Yes, Yes
+
+				%dt Mirage ($100 - $20,000) (-, -, 200)
+				%dd -, -, Yes
+
+				%dt MGM ($25 - $10,000) (400, 200, 100)
+				%dd Yes, Yes, Yes
+
+				%dt Beau Rivage ($10 - $15,000) (600, 300, 150)
+				%dd Yes, Yes, Yes
+
+		%article.tsm
+
+			%h3 Session 002
+
+			%dl
+
+				%dt Winnings
+				%dd 10x
+
+				%dt Spins
+				%dd 21
+
+				%dt Max Bet
+				%dd 8x
+
+				%dt Min Bankroll
+				%dd 15x
+
+			%dl
+
+				%dt Mirage ($25 - $20,000) (800, 400, 200)
+				%dd Yes, Yes, Yes
+
+				%dt Mirage ($100 - $20,000) (-, -, 200)
+				%dd -, -, Yes
+
+				%dt MGM ($25 - $10,000) (400, 200, 100)
+				%dd Yes, Yes, Yes
+
+				%dt Beau Rivage ($10 - $15,000) (600, 300, 150)
+				%dd Yes, Yes, Yes
+
+		%article.tsm
+
+			%h3 Session 003
+
+			%dl
+
+				%dt Winnings
+				%dd 10x
+
+				%dt Spins
+				%dd 17
+
+				%dt Max Bet
+				%dd 4x
+
+				%dt Min Bankroll
+				%dd 7x
+
+			%dl
+
+				%dt Mirage ($25 - $20,000) (800, 400, 200)
+				%dd Yes, Yes, Yes
+
+				%dt Mirage ($100 - $20,000) (-, -, 200)
+				%dd -, -, Yes
+
+				%dt MGM ($25 - $10,000) (400, 200, 100)
+				%dd Yes, Yes, Yes
+
+				%dt Beau Rivage ($10 - $15,000) (600, 300, 150)
+				%dd Yes, Yes, Yes
+
+		%article.tsm
+
+			%h3 Session 004
+
+			%dl
+
+				%dt Winnings
+				%dd 10x
+
+				%dt Spins
+				%dd 31
+
+				%dt Max Bet
+				%dd 128x
+
+				%dt Min Bankroll
+				%dd 255x
+
+			%dl
+
+				%dt Mirage ($25 - $20,000) (800, 400, 200)
+				%dd Yes, Yes, Yes
+
+				%dt Mirage ($100 - $20,000) (-, -, 200)
+				%dd -, -, Yes
+
+				%dt MGM ($25 - $10,000) (400, 200, 100)
+				%dd Yes, Yes, No
+
+				%dt Beau Rivage ($10 - $15,000) (600, 300, 150)
+				%dd Yes, Yes, Yes
+
+		%article.tsm
+
+			%h3 Session 005
+
+			%dl
+
+				%dt Winnings
+				%dd 10x
+
+				%dt Spins
+				%dd 21
+
+				%dt Max Bet
+				%dd 16x
+
+				%dt Min Bankroll
+				%dd 31x
+
+			%dl
+
+				%dt Mirage ($25 - $20,000) (800, 400, 200)
+				%dd Yes, Yes, Yes
+
+				%dt Mirage ($100 - $20,000) (-, -, 200)
+				%dd -, -, Yes
+
+				%dt MGM ($25 - $10,000) (400, 200, 100)
+				%dd Yes, Yes, Yes
+
+				%dt Beau Rivage ($10 - $15,000) (600, 300, 150)
+				%dd Yes, Yes, Yes
+
+		%article.tsm
+
+			%h3 Session 006
+
+			%dl
+
+				%dt Winnings
+				%dd 10x
+
+				%dt Spins
+				%dd 22
+
+				%dt Max Bet
+				%dd 16x
+
+				%dt Min Bankroll
+				%dd 31x
+
+			%dl
+
+				%dt Mirage ($25 - $20,000) (800, 400, 200)
+				%dd Yes, Yes, Yes
+
+				%dt Mirage ($100 - $20,000) (-, -, 200)
+				%dd -, -, Yes
+
+				%dt MGM ($25 - $10,000) (400, 200, 100)
+				%dd Yes, Yes, Yes
+
+				%dt Beau Rivage ($10 - $15,000) (600, 300, 150)
+				%dd Yes, Yes, Yes
+
+		%article.tsm
+
+			%h3 Session 007
+
+			%dl
+
+				%dt Winnings
+				%dd 10x
+
+				%dt Spins
+				%dd 19
+
+				%dt Max Bet
+				%dd 4x
+
+				%dt Min Bankroll
+				%dd 7x
+
+			%dl
+
+				%dt Mirage ($25 - $20,000) (800, 400, 200)
+				%dd Yes, Yes, Yes
+
+				%dt Mirage ($100 - $20,000) (-, -, 200)
+				%dd -, -, Yes
+
+				%dt MGM ($25 - $10,000) (400, 200, 100)
+				%dd Yes, Yes, Yes
+
+				%dt Beau Rivage ($10 - $15,000) (600, 300, 150)
+				%dd Yes, Yes, Yes
+
+		%article.tsm
+
+			%h3 Session 008
+
+			%dl
+
+				%dt Winnings
+				%dd 10x
+
+				%dt Spins
+				%dd 21
+
+				%dt Max Bet
+				%dd 32x
+
+				%dt Min Bankroll
+				%dd 63x
+
+			%dl
+
+				%dt Mirage ($25 - $20,000) (800, 400, 200)
+				%dd Yes, Yes, Yes
+
+				%dt Mirage ($100 - $20,000) (-, -, 200)
+				%dd -, -, Yes
+
+				%dt MGM ($25 - $10,000) (400, 200, 100)
+				%dd Yes, Yes, Yes
+
+				%dt Beau Rivage ($10 - $15,000) (600, 300, 150)
+				%dd Yes, Yes, Yes
+
+		%h2 Session Spins and Bets
+
+		%p
+			I'm recording each spin and bet as well. While these aren't useful in answering the questions, they'll make for some interesting visualizations. I'll also need to learn how to compile and compare data sets, which is one of the goals of this little project.
+
+		%h2 Colors
+
+		%p
+			I searched for
+			%strong roulette
+			and
+			%strong casino
+			on
+			=link_to 'colourlovers.com', 'http://colourlovers.com'
+			and found a few options that I dig.
+
+			%ul
+				%li
+					=image_tag 'tinkerings/roulettingale/palette-casino-royale.png', width: '400'
+				%li
+					=image_tag 'tinkerings/roulettingale/palette-roulette.png', width: '400'
+				%li
+					=image_tag 'tinkerings/roulettingale/palette-russian-roulette.png', width: '400'
+				%li
+					=image_tag 'tinkerings/roulettingale/palette-russian-roulette-2.png', width: '400'
+				%li
+					=image_tag 'tinkerings/roulettingale/palette-vintage-casino.png', width: '400'
+
+		%h2 Graphs
+
+		%p
+			This is a loose example, but I'm thinking of plotting the rolls like this with the 00 through 36 on the Y axis and the X axis showing spin count and bet amount.
+
+		=image_tag 'tinkerings/roulettingale/example-plot-graph.png'
+
+		%p
+			Chartist gets closer to showing it, albeit with the usual range problem which I'll need to solve with d3 instead.
+
+		=image_tag 'tinkerings/roulettingale/example-chartist.jpg'
+
+		%p.tss
+			February 6, 2015
+
+		%p
+			Got a big JSON going and spewing out data. Let's get it on.
+
+		%h3
+			February 7, 2015
+
+		%p
+			I went with the first color scheme, Casino Royale, and began adding some styles. I think this is a good time to learn some flexbox. I want some things vertically centered and I want the sidebar with information to have a different color background. The 2 columns are uneven and can vary as to which one is longer. There are hacks for that in the grid but I'd rather just learn flexbox since this is a side project and I'm not worried about people seeing it or what browser they're in.
+
+		%p
+			I'm doing a weird combination of Middleman math and JS math to get the values. When I do a session, I've started recording them as single unit values. Ultimately, I want to show the results for multiple bet amounts: $25, $50, $100, maybe $200. For now, I got it working at $50 and I'll work out how to make it more flexible when I'm ready.
+
+		%h3
+			February 8, 2015
+
+		%p
+			The beautiful thing about working with existing data to create the designs is that the data dictates the needs. Before collecting and organizing, I imagined that a scatter chart showing all of the numbers would be interesting. While it may look interesting visually, it doesn't have much impact on the proofing that I'm doing. In this case, I really don't care about what numbers are there. I only care what category they are in, with categories being an available even-money bet type: 1-18, 19-36, odd, even, black, red. I'm not recording this information, but that's just because it's so much more effort and leaves room for error. I'll be using Middleman for this, comparing the individual number against a set of numbers. I'll get a rough version working with template logic and then bug Drew for how to write it better.
+
+		%p
+			Streaks are another thing of interest. They are the best or the worst thing that can happen to a session. A streak of wins is good, a streak of losses is bad. Right now, I can't get these at all. I'll need the results of the checks on the numbers to then identify streaks. Not sure how that will happen yet, but I'll work it out once I can see them.
+
+		%h4 Hitting a wall
+		%p
+			I have this data, but I don't know how to extract certain bits out of it. These things are easily done manually, but I want to do them programmatically. I want to be able to programmatically show what category of bet a spin number is and then graph the results of those.
+
+		%p
+			At this moment, I can't achieve that even with data that I do have recorded. In a session, I want to divide the numbers into their bet categories and graph opposing categories: Red vs. Black, Even vs. Odd, 1-18 vs. 19-36. I can create a table with some really complex if statements, but thinking that this may be a scenario where I have to combine Middleman and d3.
+
+		%p
+			You can see the results and the streaks here, but I also want them in graphs. This is a start, though, so I'm going to put these in. Visually, the check and the 'x' aren't big enough to follow cleanly so I'll do them in a different way.
+
+		- data.roulettingale.each do |es|
+			%table.complex
+				%thead
+					%th Number
+					%th Red
+					%th Black
+					%th Even
+					%th Odd
+					%th 1-18
+					%th 19-36
+				- es.spins.each do |esp|
+					%tr
+						%td= esp.number
+						%td
+							- if esp.number == 1
+								%span.positive &#10003;
+							- elsif esp.number == 3
+								%span.positive &#10003;
+							- elsif esp.number == 5
+								%span.positive &#10003;
+							- elsif esp.number == 7
+								%span.positive &#10003;
+							- elsif esp.number == 9
+								%span.positive &#10003;
+							- elsif esp.number == 12
+								%span.positive &#10003;
+							- elsif esp.number == 14
+								%span.positive &#10003;
+							- elsif esp.number == 16
+								%span.positive &#10003;
+							- elsif esp.number == 18
+								%span.positive &#10003;
+							- elsif esp.number == 19
+								%span.positive &#10003;
+							- elsif esp.number == 21
+								%span.positive &#10003;
+							- elsif esp.number == 23
+								%span.positive &#10003;
+							- elsif esp.number == 25
+								%span.positive &#10003;
+							- elsif esp.number == 27
+								%span.positive &#10003;
+							- elsif esp.number == 30
+								%span.positive &#10003;
+							- elsif esp.number == 32
+								%span.positive &#10003;
+							- elsif esp.number == 34
+								%span.positive &#10003;
+							- elsif esp.number == 36
+								%span.positive &#10003;
+							- else
+								%span.negative &#10008;
+
+						%td
+							- if esp.number == 2
+								%span.positive &#10003;
+							- elsif esp.number == 4
+								%span.positive &#10003;
+							- elsif esp.number == 6
+								%span.positive &#10003;
+							- elsif esp.number == 8
+								%span.positive &#10003;
+							- elsif esp.number == 10
+								%span.positive &#10003;
+							- elsif esp.number == 11
+								%span.positive &#10003;
+							- elsif esp.number == 13
+								%span.positive &#10003;
+							- elsif esp.number == 15
+								%span.positive &#10003;
+							- elsif esp.number == 17
+								%span.positive &#10003;
+							- elsif esp.number == 20
+								%span.positive &#10003;
+							- elsif esp.number == 22
+								%span.positive &#10003;
+							- elsif esp.number == 24
+								%span.positive &#10003;
+							- elsif esp.number == 26
+								%span.positive &#10003;
+							- elsif esp.number == 28
+								%span.positive &#10003;
+							- elsif esp.number == 29
+								%span.positive &#10003;
+							- elsif esp.number == 31
+								%span.positive &#10003;
+							- elsif esp.number == 33
+								%span.positive &#10003;
+							- elsif esp.number == 35
+								%span.positive &#10003;
+							- else
+								%span.negative &#10008;
+						%td
+							- if esp.number == 2
+								%span.positive &#10003;
+							- elsif esp.number == 4
+								%span.positive &#10003;
+							- elsif esp.number == 6
+								%span.positive &#10003;
+							- elsif esp.number == 8
+								%span.positive &#10003;
+							- elsif esp.number == 10
+								%span.positive &#10003;
+							- elsif esp.number == 12
+								%span.positive &#10003;
+							- elsif esp.number == 14
+								%span.positive &#10003;
+							- elsif esp.number == 16
+								%span.positive &#10003;
+							- elsif esp.number == 18
+								%span.positive &#10003;
+							- elsif esp.number == 20
+								%span.positive &#10003;
+							- elsif esp.number == 22
+								%span.positive &#10003;
+							- elsif esp.number == 24
+								%span.positive &#10003;
+							- elsif esp.number == 26
+								%span.positive &#10003;
+							- elsif esp.number == 28
+								%span.positive &#10003;
+							- elsif esp.number == 30
+								%span.positive &#10003;
+							- elsif esp.number == 32
+								%span.positive &#10003;
+							- elsif esp.number == 34
+								%span.positive &#10003;
+							- elsif esp.number == 36
+								%span.positive &#10003;
+							- else
+								%span.negative &#10008;
+						%td
+							- if esp.number == 1
+								%span.positive &#10003;
+							- elsif esp.number == 3
+								%span.positive &#10003;
+							- elsif esp.number == 5
+								%span.positive &#10003;
+							- elsif esp.number == 7
+								%span.positive &#10003;
+							- elsif esp.number == 9
+								%span.positive &#10003;
+							- elsif esp.number == 11
+								%span.positive &#10003;
+							- elsif esp.number == 13
+								%span.positive &#10003;
+							- elsif esp.number == 15
+								%span.positive &#10003;
+							- elsif esp.number == 17
+								%span.positive &#10003;
+							- elsif esp.number == 19
+								%span.positive &#10003;
+							- elsif esp.number == 21
+								%span.positive &#10003;
+							- elsif esp.number == 23
+								%span.positive &#10003;
+							- elsif esp.number == 25
+								%span.positive &#10003;
+							- elsif esp.number == 27
+								%span.positive &#10003;
+							- elsif esp.number == 29
+								%span.positive &#10003;
+							- elsif esp.number == 31
+								%span.positive &#10003;
+							- elsif esp.number == 33
+								%span.positive &#10003;
+							- elsif esp.number == 35
+								%span.positive &#10003;
+							- else
+								%span.negative &#10008;
+						%td
+							- if esp.number == 1
+								%span.positive &#10003;
+							- elsif esp.number == 2
+								%span.positive &#10003;
+							- elsif esp.number == 3
+								%span.positive &#10003;
+							- elsif esp.number == 4
+								%span.positive &#10003;
+							- elsif esp.number == 5
+								%span.positive &#10003;
+							- elsif esp.number == 6
+								%span.positive &#10003;
+							- elsif esp.number == 7
+								%span.positive &#10003;
+							- elsif esp.number == 8
+								%span.positive &#10003;
+							- elsif esp.number == 9
+								%span.positive &#10003;
+							- elsif esp.number == 10
+								%span.positive &#10003;
+							- elsif esp.number == 11
+								%span.positive &#10003;
+							- elsif esp.number == 12
+								%span.positive &#10003;
+							- elsif esp.number == 13
+								%span.positive &#10003;
+							- elsif esp.number == 14
+								%span.positive &#10003;
+							- elsif esp.number == 15
+								%span.positive &#10003;
+							- elsif esp.number == 16
+								%span.positive &#10003;
+							- elsif esp.number == 17
+								%span.positive &#10003;
+							- elsif esp.number == 18
+								%span.positive &#10003;
+							- else
+								%span.negative &#10008;
+						%td
+							- if esp.number == 19
+								%span.positive &#10003;
+							- elsif esp.number == 20
+								%span.positive &#10003;
+							- elsif esp.number == 21
+								%span.positive &#10003;
+							- elsif esp.number == 22
+								%span.positive &#10003;
+							- elsif esp.number == 23
+								%span.positive &#10003;
+							- elsif esp.number == 24
+								%span.positive &#10003;
+							- elsif esp.number == 25
+								%span.positive &#10003;
+							- elsif esp.number == 26
+								%span.positive &#10003;
+							- elsif esp.number == 27
+								%span.positive &#10003;
+							- elsif esp.number == 28
+								%span.positive &#10003;
+							- elsif esp.number == 29
+								%span.positive &#10003;
+							- elsif esp.number == 30
+								%span.positive &#10003;
+							- elsif esp.number == 31
+								%span.positive &#10003;
+							- elsif esp.number == 32
+								%span.positive &#10003;
+							- elsif esp.number == 33
+								%span.positive &#10003;
+							- elsif esp.number == 34
+								%span.positive &#10003;
+							- elsif esp.number == 35
+								%span.positive &#10003;
+							- elsif esp.number == 36
+								%span.positive &#10003;
+							- else
+								%span.negative &#10008;
+
+		%h4.mtl Digging this
+		%p
+			Seeing this in action, I think it's something that I'll want to keep (in addition to visualizing the percentages. It's really interesting and important to betting to see the streaks. Identifying long streaks allows to show how bad it couldn't have gotten in any one session.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

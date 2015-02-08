@@ -84,15 +84,6 @@ h5
 	@extend .ttu
 	margin-top: -($b-space-s)
 
-th,
-td
-	padding: 0 $b-space
-	&:first-child
-		padding-left: 0
-
-tr:nth-child(even)
-	background: mix(#ffffff, $tan, 20%)
-
 th
 	text-align: left
 
@@ -126,12 +117,29 @@ article
 .positive
 	color: $green
 
+.positive--a
+	background-color: rgba($green, 0.6)
+	color: $tan
+	text-align: center
+
 .negative
 	color: $red
+
+.negative--a
+	background-color: rgba($red, 0.6)
+	color: $tan
+	text-align: center
 
 .dollars:before
 	content: "$"
 	font-size: 50%
+	vertical-align: top
+
+.dollars--a
+	font-size: $b-fontSize-s
+	opacity: 0.6
+	position: relative
+	top: 3px
 	vertical-align: top
 
 // Session
@@ -164,8 +172,13 @@ article
 
 .proof
 	align-self: flex-start
+	margin: 0 auto
 	text-align: left
-	width: 100%
+	width: 70%
+
+	td:last-child
+		padding-right: 0
+		text-align: right
 
 .session-meta-proof
 	@extend .positive
@@ -174,21 +187,53 @@ article
 	background: mix(#ffffff, $tan, 35%)
 	border-radius: 50%
 	color: mix(#000000, $tan, 25%)
-	font-size: $b-fontSize-xl
-	height: 60px
-	line-height: 60px
+	font-size: $b-fontSize-s
+	height: 30px
+	line-height: 30px
 	text-align: center
-	width: 60px
+	width: 30px
 
 .session-stats
 	background: $tan
-	flex-grow: 5
+	flex-grow: 1
+	padding: $b-space 0
 	position: relative
 
 .session-stats-result
 	color: $green
 
+.session-spins-stats
+	background: $tan
+	flex-grow: 1
+	padding: $b-space
+	position: relative
+
 // Session
 
 .post
 	font-family: 'Helvetica Neue'
+
+// Spins
+
+.spins
+	margin: 0 auto
+	thead
+		border-bottom: 1px solid mix(#000, $tan, 10%)
+	th,
+	td
+		padding: $b-space-xs $b-space-s
+
+	tr:nth-child(even)
+		background: mix(#ffffff, $tan, 20%)
+
+	tr:nth-child(odd)
+		background: mix(#ffffff, $tan, 40%)
+
+	.positive--a,
+	.negative--a
+		border-radius: 50%
+		height: 24px
+		line-height: 26px
+		margin: 0 auto
+		width: 24px
+
