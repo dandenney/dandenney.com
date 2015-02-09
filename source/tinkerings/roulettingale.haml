@@ -89,7 +89,7 @@ js: tinkerings/roulettingale/roulettingale
 									%span.dollars--a $
 									= (sp.amount * 50)
 								%td.session-stats-result
-									%span{ class: ('negative' if sp.result == 'l') }
+									%span{ class: (sp.result == 'l' ? 'negative' : 'positive') }
 										%span.dollars--a $
 										= (sp.amount * 50)
 								%td.tac=sp.number
@@ -1182,6 +1182,15 @@ js: tinkerings/roulettingale/roulettingale
 				%td 1638350
 				%td 1638400
 				%td 3276700
+
+		%h4.mtl
+
+		%p
+			Drew fixed my two problems in minutes, like usual. For the ternary operator on classes, I just wasn't supposed to keep the word "if".
+
+		%code
+			%pre
+				span{ class: (sp.result == 'l' ? 'negative' : 'positive') }
 
 
 

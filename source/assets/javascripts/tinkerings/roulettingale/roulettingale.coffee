@@ -138,7 +138,7 @@ n1181936Percentage = ->
 	$('.js-spins').each ->
 		currentElement = $(this)
 		n118Count = $(this).find('.js-n-118 .positive--a').length
-		n1936Count = $(this).find('.js-n-1936 .negative--a').length
+		n1936Count = $(this).find('.js-n-118 .negative--a').length
 		n118n1936Total = n118Count + n1936Count
 		n118Raw = n118Count / n118n1936Total
 		n118Percentage = (n118Raw * 100).toFixed(2) + '%'
