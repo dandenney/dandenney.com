@@ -333,47 +333,50 @@ js: tinkerings/roulettingale/roulettingale
 									- else
 										.negative--a &#10008;
 
-					%ul.spins-percentages.mtl
+					%ul.spins-percentages
 
 						%li
-							%p.key-value.js-count-red
-							%h4.js-prct-red
+							%p.mbf.key-value.js-count-red
+							%p.mbf.mtf.js-prct-red
 							%h5
 								Red
 
 						%li
-							%p.key-value.js-count-black
-							%h4.js-prct-black
+							%p.mbf.key-value.js-count-black
+							%p.mbf.mtf.js-prct-black
 							%h5
 								Black
 
 						%li
-							%p.key-value.js-count-even
-							%h4.js-prct-even
+							%p.mbf.key-value.js-count-even
+							%p.mbf.mtf.js-prct-even
 							%h5
 								Even
 
 						%li
-							%p.key-value.js-count-odd
-							%h4.js-prct-odd
+							%p.mbf.key-value.js-count-odd
+							%p.mbf.mtf.js-prct-odd
 							%h5
 								Odd
 
 						%li
-							%p.key-value.js-count-118
-							%h4.js-prct-118
+							%p.mbf.key-value.js-count-118
+							%p.mbf.mtf.js-prct-118
 							%h5
 								1-18
 
 						%li
-							%p.key-value.js-count-1936
-							%h4.js-prct-1936
+							%p.mbf.key-value.js-count-1936
+							%p.mbf.mtf.js-prct-1936
 							%h5
 								19-36
 
 
 %section#details.row.post
 	.cell.cell--s.well
+
+		=image_tag 'tinkerings/roulettingale/roulette-board.svg', class: 'mbl mtl', width: '100%'
+
 		%h1
 			Roulettingale
 
@@ -387,7 +390,7 @@ js: tinkerings/roulettingale/roulettingale
 			I recently learned of the Martingale betting system and how it's one of the popular betting systems used in roulette. I've always been a fan of number systems, especially ones that involve wagering: stocks and gambling.
 
 		%p
-			There are some decent roulette apps for iOS and the Mac. I'm going to run a series of tests using the system, record data, and visualize it.
+			There are some decent roulette apps for iOS and the Mac so I'm going to run a series of tests using the system, record data, and visualize it.
 
 		%h2 Manual Data Collection… yuk
 		%p
@@ -1039,6 +1042,147 @@ js: tinkerings/roulettingale/roulettingale
 			%p
 				19-36:
 				%strong.example-negative
+
+		%h4.mtl Ready for Charting
+
+		%p
+			As usual, getting the data in helped make decisions. Once I could see the percentages I realized that they're not as important. They'll make for a good graph (maybe a donut chart), but seeing the spin counts make things more apparent. It's awesome to see 009, which was a perfect session.
+
+		%h4.mtl Bankroll Tables
+
+		%p
+			I've had this in a spreadsheet for reference but I'd rather have it here since I can see the streaks visually now.
+
+		%table.tableizer-table
+			%tr.tableizer-firstrow
+				%th Losses
+				%th Bets
+				%th Bankroll
+				%th Bets
+				%th Bankroll
+				%th Bets
+				%th Bankroll
+			%tr
+				%td 1
+				%td 25
+				%td 25
+				%td 50
+				%td 50
+				%td 100
+				%td 100
+			%tr
+				%td 2
+				%td 50
+				%td 75
+				%td 100
+				%td 150
+				%td 200
+				%td 300
+			%tr
+				%td 3
+				%td 100
+				%td 175
+				%td 200
+				%td 350
+				%td 400
+				%td 700
+			%tr
+				%td 4
+				%td 200
+				%td 375
+				%td 400
+				%td 750
+				%td 800
+				%td 1500
+			%tr
+				%td 5
+				%td 400
+				%td 775
+				%td 800
+				%td 1550
+				%td 1600
+				%td 3100
+			%tr
+				%td 6
+				%td 800
+				%td 1575
+				%td 1600
+				%td 3150
+				%td 3200
+				%td 6300
+			%tr
+				%td 7
+				%td 1600
+				%td 3175
+				%td 3200
+				%td 6350
+				%td 6400
+				%td 12700
+			%tr
+				%td 8
+				%td 3200
+				%td 6375
+				%td 6400
+				%td 12750
+				%td 12800
+				%td 25500
+			%tr
+				%td 9
+				%td 6400
+				%td 12775
+				%td 12800
+				%td 25550
+				%td 25600
+				%td 51100
+			%tr
+				%td 10
+				%td 12800
+				%td 25575
+				%td 25600
+				%td 51150
+				%td 51200
+				%td 102300
+			%tr
+				%td 11
+				%td 25600
+				%td 51175
+				%td 51200
+				%td 102350
+				%td 102400
+				%td 204700
+			%tr
+				%td 12
+				%td 51200
+				%td 102375
+				%td 102400
+				%td 204750
+				%td 204800
+				%td 409500
+			%tr
+				%td 13
+				%td 102400
+				%td 204775
+				%td 204800
+				%td 409550
+				%td 409600
+				%td 819100
+			%tr
+				%td 14
+				%td 204800
+				%td 409575
+				%td 409600
+				%td 819150
+				%td 819200
+				%td 1638300
+			%tr
+				%td 15
+				%td 409600
+				%td 819175
+				%td 819200
+				%td 1638350
+				%td 1638400
+				%td 3276700
+
 
 
 

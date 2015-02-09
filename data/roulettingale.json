@@ -5,7 +5,7 @@
 				"totalSpins": "16",
 				"maxBet": "4",
 				"minBankroll": "7",
-				"notes" : "",
+				"notes" : "Roulette Casino Style iOS",
 				"spins":[
 						 {
 								"amount":1,
@@ -111,7 +111,7 @@
 				"totalSpins": "21",
 				"maxBet": "8",
 				"minBankroll": "15",
-				"notes" : "",
+				"notes" : "Roulette Casino Style iOS",
 				"spins":[
 						 {
 								"amount":1,
@@ -247,7 +247,7 @@
 				"totalSpins": "17",
 				"maxBet": "4",
 				"minBankroll": "7",
-				"notes" : "",
+				"notes" : "Roulette Casino Style iOS",
 				"spins":[
 					{
 						"amount":1,
@@ -359,7 +359,7 @@
 			"totalSpins": "31",
 			"maxBet": "128",
 			"minBankroll": "255",
-			"notes" : "",
+			"notes" : "Roulette Casino Style iOS",
 			"spins":[
 				{
 			    "amount":1,
@@ -555,7 +555,7 @@
 			"totalSpins": "21",
 			"maxBet": "16",
 			"minBankroll": "31",
-			"notes" : "Bet rotation after each win",
+			"notes" : "Roulette Casino Style iOS, Bet rotation after each win",
 			"spins":[
 			  {
 			    "amount":1,
@@ -691,7 +691,7 @@
 			"totalSpins": "22",
 			"maxBet": "16",
 			"minBankroll": "31",
-			"notes" : "Unique bet rotation",
+			"notes" : "Roulette Casino Style iOS, Unique bet rotation",
 			"spins":[
 				{
 			    "amount":1,
@@ -833,7 +833,7 @@
 			"totalSpins": "19",
 			"maxBet": "4",
 			"minBankroll": "7",
-			"notes" : "Unique bet rotation, choosing by opposite of last bet",
+			"notes" : "Roulette Casino Style iOS, Unique bet rotation choosing by opposite of last bet",
 			"spins":[
 			  {
 			    "amount":1,
@@ -957,7 +957,7 @@
 			"totalSpins": "21",
 			"maxBet": "32",
 			"minBankroll": "63",
-			"notes" : "Single Bet",
+			"notes" : "Roulette Casino Style iOS, Single bet",
 			"spins":[
 				{
 			    "amount":1,
@@ -1087,7 +1087,7 @@
 			"totalSpins": "16",
 			"maxBet": "4",
 			"minBankroll": "7",
-			"notes" : "Bet rotation, opposite after 3 losses (if)",
+			"notes" : "Roulette Casino Style iOS, Bet rotation, opposite after 3 losses (if)",
 			"spins":[
 			  {
 			    "amount":1,
@@ -1193,7 +1193,7 @@
 			"totalSpins": "15",
 			"maxBet": "4",
 			"minBankroll": "7",
-			"notes" : "Bet rotation, opposite after 3 losses (if)",
+			"notes" : "Roulette Casino Style iOS, Bet rotation using opposite after 3 losses (if)",
 			"spins":[
 				{
 			    "amount":1,
@@ -1293,7 +1293,7 @@
 			"totalSpins": "16",
 			"maxBet": "8",
 			"minBankroll": "15",
-			"notes" : "Bet rotation, opposite after 3 losses (if)",
+			"notes" : "Roulette 3d iOS, Bet rotation, opposite after 3 losses (if)",
 			"spins":[
 				 {
 				    "amount":1,
@@ -1391,6 +1391,379 @@
 				    "number":29,
 				    "result":"w"
 				  }
+			]
+		},
+		{
+			"id": "012",
+			"wins": "10",
+			"totalSpins": "25",
+			"maxBet": "16",
+			"minBankroll": "31",
+			"notes" : "Roulette 3d Mac, Bet rotation after win, opposite after 3 losses (if), Got caught in this lopsided odds twice",
+			"spins":[
+				{
+			    "amount":1,
+			    "bet":"1-18",
+			    "number":3,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"even",
+			    "number":35,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"even",
+			    "number":35,
+			    "result":"l"
+			  },
+			  {
+			    "amount":4,
+			    "bet":"even",
+			    "number":17,
+			    "result":"l"
+			  },
+			  {
+			    "amount":8,
+			    "bet":"red",
+			    "number":8,
+			    "result":"l"
+			  },
+			  {
+			    "amount":16,
+			    "bet":"red",
+			    "number":18,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"black",
+			    "number":35,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"odd",
+			    "number":0,
+			    "result":"l"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"odd",
+			    "number":29,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"19-36",
+			    "number":14,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"19-36",
+			    "number":28,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"1-18",
+			    "number":28,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"1-18",
+			    "number":23,
+			    "result":"l"
+			  },
+			  {
+			    "amount":4,
+			    "bet":"1-18",
+			    "number":13,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"even",
+			    "number":33,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"even",
+			    "number":23,
+			    "result":"l"
+			  },
+			  {
+			    "amount":4,
+			    "bet":"even",
+			    "number":21,
+			    "result":"l"
+			  },
+			  {
+			    "amount":8,
+			    "bet":"black",
+			    "number":1,
+			    "result":"l"
+			  },
+			  {
+			    "amount":16,
+			    "bet":"black",
+			    "number":35,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"red",
+			    "number":23,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"even",
+			    "number":1,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"even",
+			    "number":1,
+			    "result":"l"
+			  },
+			  {
+			    "amount":4,
+			    "bet":"even",
+			    "number":20,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"odd",
+			    "number":0,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"odd",
+			    "number":13,
+			    "result":"w"
+			  }
+			]
+		},
+		{
+			"id": "013",
+			"wins": "10",
+			"totalSpins": "14",
+			"maxBet": "4",
+			"minBankroll": "7",
+			"notes" : "Roulette 3d iOS, Bet rotation after win, opposite after 3 losses (if), Best session yet",
+			"spins":[
+				{
+			    "amount":1,
+			    "bet":"1-18",
+			    "number":10,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"even",
+			    "number":28,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"red",
+			    "number":34,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"black",
+			    "number":28,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"odd",
+			    "number":15,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"19-36",
+			    "number":34,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"1-18",
+			    "number":23,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"1-18",
+			    "number":9,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"even",
+			    "number":17,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"even",
+			    "number":31,
+			    "result":"l"
+			  },
+			  {
+			    "amount":4,
+			    "bet":"even",
+			    "number":8,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"red",
+			    "number":3,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"black",
+			    "number":16,
+			    "result":"l"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"black",
+			    "number":20,
+			    "result":"w"
+			  }
+			]
+		},
+		{
+			"id": "014",
+			"wins": "10",
+			"totalSpins": "18",
+			"maxBet": "16",
+			"minBankroll": "31",
+			"notes" : "Roulette 3d iOS, Bet rotation after win, opposite after 3 losses (if)",
+			"spins":[
+				{
+			    "amount":1,
+			    "bet":"1-18",
+			    "number":26,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"1-18",
+			    "number":7,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"even",
+			    "number":33,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"even",
+			    "number":28,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"red",
+			    "number":23,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"black",
+			    "number":7,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"black",
+			    "number":18,
+			    "result":"l"
+			  },
+			  {
+			    "amount":4,
+			    "bet":"black",
+			    "number":31,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"odd",
+			    "number":15,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"19-36",
+			    "number":35,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"1-18",
+			    "number":10,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"even",
+			    "number":31,
+			    "result":"l"
+			  },
+			  {
+			    "amount":2,
+			    "bet":"even",
+			    "number":13,
+			    "result":"l"
+			  },
+			  {
+			    "amount":4,
+			    "bet":"even",
+			    "number":35,
+			    "result":"l"
+			  },
+			  {
+			    "amount":8,
+			    "bet":"red",
+			    "number":6,
+			    "result":"l"
+			  },
+			  {
+			    "amount":16,
+			    "bet":"red",
+			    "number":36,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"black",
+			    "number":15,
+			    "result":"w"
+			  },
+			  {
+			    "amount":1,
+			    "bet":"odd",
+			    "number":11,
+			    "result":"w"
+			  }
+
 			]
 		}
  ]
