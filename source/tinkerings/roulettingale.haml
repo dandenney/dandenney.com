@@ -15,7 +15,7 @@ js: tinkerings/roulettingale/roulettingale
 
 	.cell
 
-		- data.roulettingale.each do |s|
+		- data.roulettingale.reverse.each do |s|
 			%article.session{ class: ("js-id" + (s.id)) }
 				%aside.session-meta
 
@@ -1183,7 +1183,8 @@ js: tinkerings/roulettingale/roulettingale
 				%td 1638400
 				%td 3276700
 
-		%h4.mtl
+		%h3
+			February 8, 2015
 
 		%p
 			Drew fixed my two problems in minutes, like usual. For the ternary operator on classes, I just wasn't supposed to keep the word "if".
@@ -1191,6 +1192,35 @@ js: tinkerings/roulettingale/roulettingale
 		%code
 			%pre
 				span{ class: (sp.result == 'l' ? 'negative' : 'positive') }
+
+		%p
+			The comparisons are a bit more complicated. I need to set up a JSON with an array to compare to. It makes total sense, but I wouldn't have thought to do it on my own.
+
+		%h4 Cha cha cha changes
+
+		%p
+			Changing up one small thing and one significant thing. I'm going to display the sessions in reverse order. When I add a new one it's silly to have to scroll past them all. The bigger thing is longer sessions.
+
+		%p
+			In 15 sessions, the biggest bet was $6,400. While that was the last bet before disqualfying the MGM limits, there was one additional bet left for each of the others. It's time to push the system for some sessions to see where it breaks.
+
+		%p
+			It didn't affect the session outcome because I was betting a new bet every time in rotation, but it had a 9 loss streak that would have made it impossible to bet the necessary amount at any of the casinos. With 9 losses, you need to be able to bet $25,600 but the most lenient allows for $20,000.
+
+		%p
+			With a $20k cap, you'd have $45,550 invested and would win $40,000. The cap causes a $5,550 loss.
+			%br
+			With a $10k cap, you'd have $22,750 invested and would win $20,000. The cap causes a $2,750 loss.
+			%br
+			With a $15k cap, you'd have $40,550 invested and would win $30,000. The cap causes a $10,550 loss.
+
+		%p
+			Imagine if you lost the max bet!
+
+		%p
+			The $15k is clearly the worst loss, but you get to last one extra loss in that and the $20k. 8 losses in a row guarantees a financial loss at a $10k cap, 9 losses guarantees a financial loss at $15k and $20k caps.
+
+
 
 
 
