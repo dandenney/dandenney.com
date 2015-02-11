@@ -13,9 +13,14 @@ js: tinkerings/roulettingale/roulettingale
 		A data project observing the performance of the Martingale betting system in Roulette.
 		%a{ href: "#details" } Details
 
+	%p.tac
+		This one is retired,
+		=link_to 'v2', '/tinkerings/roulettingale-v2'
+		is in action.
+
 	.cell
 
-		- data.roulettingale.reverse.each do |s|
+		- data.roulettingale[1...20].reverse.each do |s|
 			%article.session{ class: ("js-id" + (s.id)) }
 				%aside.session-meta
 
@@ -1219,6 +1224,19 @@ js: tinkerings/roulettingale/roulettingale
 
 		%p
 			The $15k is clearly the worst loss, but you get to last one extra loss in that and the $20k. 8 losses in a row guarantees a financial loss at a $10k cap, 9 losses guarantees a financial loss at $15k and $20k caps.
+
+		%h3 February 10, 2015
+
+		%p
+			Moving on to a new version:
+
+		%h4 Why
+
+		%p
+			The purpose was to determine if it was possible to achieve a small number of wins before hitting a point in which the betting caps would force a loss. It's a small sample, but it is. In 20 sessions, the profit was $11,250. At this point, hitting the max bet but winning would still result in a profit. Hitting a the max bet is a whole other level of hurt.
+
+		%p
+			More importantly, I'm now fascinated with other things in the numbers and I want to revamp what I'm showing. For one, I need 0 and 00 in the data. I'm comparing percentages of rolls incorrectly without them. Additionally, every time a set is completed there are 2 other winning sets. These can be compared as well to indicate how the bet decisions affected the outcome. Basically, there's a lot more data to dive into and it'll requre a new design. I really want to keep this version, though, to show what I learend. This is v1, onto v2.
 
 
 

@@ -1,0 +1,132 @@
+// *************************************
+//
+//   Roulettingale
+//   -> Project styles for roulette and martingale
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .structure[.structure--modifier](.is-state)(.has-context)
+//   .structure-scaffolding
+//
+// *************************************
+
+// .structure
+
+// -------------------------------------
+//   Config
+// -------------------------------------
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+@import 'foundation/reset'
+@import 'foundation/helpers'
+@import 'foundation/config'
+@import 'foundation/base'
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import 'components/bucket'
+@import 'components/card'
+@import 'components/cell'
+@import 'components/row'
+@import 'components/well'
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+@import 'structures/header'
+@import 'structures/footer'
+
+// -------------------------------------
+//   Vendor
+// -------------------------------------
+
+// Third-party style imports, if needed
+
+$tan: #f1e1cb
+$black: #0a100c
+$green: #186929
+$yellow: #fed275
+$red: #b52316
+
+// -------------------------------------
+//   Foundation - Base
+// -------------------------------------
+
+@import 'foundation/tools'
+
+.troubleshoot
+	box-shadow: 0 0 0 1px pink
+
+body
+	font-size: 16px
+	font-weight: 400
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5
+	font-family: 'proxima-nova-alt-ext-cond', 'Helvetica Neue'
+
+.h5, h5
+	color: mix(#000000, $tan, 25%)
+	font-size: $b-fontSize
+	font-weight: normal
+	@extend .ttu
+	margin-top: -($b-space-s)
+
+th
+	text-align: left
+
+td
+	white-space: nowrap
+
+dl,
+dt,
+dd
+	margin: 0
+	padding: 0
+
+dd + dt
+	margin-top: $b-space-s
+
+ul
+	margin: 0
+	padding: 0
+
+article
+	margin-top: $b-space-l
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
+
+th,
+td
+	padding: $b-space-s
+	text-align: center
+
+.positive
+	color: $green
+
+.positive--a
+	background-color: rgba($green, 0.5)
+	color: $tan
+	text-align: center
+
+.negative
+	color: $red
+
+.negative--a
+	background-color: rgba($red, 0.5)
+	color: $tan
+	text-align: center

@@ -21,7 +21,7 @@ convertWinnings = ->
 		winningsDollars = (winningsCount * 50)
 		$(this).html(winningsDollars)
 
-convertWinnings()
+# convertWinnings()
 
 # -------------------------------------
 #   Convert Max Bet
@@ -34,7 +34,7 @@ convertMaxBet = ->
 		maxBetDollars = (betCount * 50)
 		$(this).html(maxBetDollars)
 
-convertMaxBet()
+# convertMaxBet()
 
 # -------------------------------------
 #   Convert Max Bet
@@ -47,7 +47,7 @@ convertMinBankroll = ->
 		minBankrollDollars = (betCount * 50)
 		$(this).html(minBankrollDollars)
 
-convertMinBankroll()
+# convertMinBankroll()
 
 # -------------------------------------
 #   Check Mirage
@@ -60,7 +60,7 @@ checkMirage = ->
 		if maxBet >= 400
 			$(this).html("&#10008;").addClass "negative"
 
-checkMirage()
+# checkMirage()
 
 # -------------------------------------
 #   Check MGM
@@ -73,7 +73,7 @@ checkMGM = ->
 		if maxBet >= 200
 			$(this).html("&#10008;").addClass "negative"
 
-checkMGM()
+# checkMGM()
 
 # -------------------------------------
 #   Check Beau
@@ -86,7 +86,7 @@ checkBeau = ->
 		if maxBet >= 300
 			$(this).html("&#10008;").addClass "negative"
 
-checkBeau()
+# checkBeau()
 
 # -------------------------------------
 #   Percentage Red/Black
@@ -107,7 +107,7 @@ redBlackPercentage = ->
 		$(this).siblings().find('.js-prct-red').html(redPercentage)
 		$(this).siblings().find('.js-prct-black').html(blackPercentage)
 
-redBlackPercentage()
+# redBlackPercentage()
 
 # -------------------------------------
 #   Percentage Even/Odd
@@ -128,7 +128,7 @@ evenOddPercentage = ->
 		$(this).siblings().find('.js-prct-even').html(evenPercentage)
 		$(this).siblings().find('.js-prct-odd').html(oddPercentage)
 
-evenOddPercentage()
+# evenOddPercentage()
 
 # -------------------------------------
 #   Percentage 1-18/19-36
@@ -149,7 +149,7 @@ n1181936Percentage = ->
 		$(this).siblings().find('.js-prct-118').html(n118Percentage)
 		$(this).siblings().find('.js-prct-1936').html(n1936Percentage)
 
-n1181936Percentage()
+# n1181936Percentage()
 
 # Example
 
@@ -162,4 +162,4 @@ example = ->
 	$('.example-positive').append(examplePosPer)
 	$('.example-negative').append(exampleNegPer)
 
-example()
+# example()

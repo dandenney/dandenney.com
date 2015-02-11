@@ -1,10 +1,10 @@
  [
 		{
 				"id": "001",
-				"wins": "10",
-				"totalSpins": "16",
-				"maxBet": "4",
-				"minBankroll": "7",
+				"wins": 10,
+				"totalSpins": 16,
+				"maxBet": 4,
+				"minBankroll": 7,
 				"notes" : "Roulette Casino Style iOS",
 				"spins":[
 						 {
@@ -107,10 +107,10 @@
 		},
 		{
 				"id": "002",
-				"wins": "10",
-				"totalSpins": "21",
-				"maxBet": "8",
-				"minBankroll": "15",
+				"wins": 10,
+				"totalSpins": 21,
+				"maxBet": 8,
+				"minBankroll": 15,
 				"notes" : "Roulette Casino Style iOS",
 				"spins":[
 						 {
@@ -243,10 +243,10 @@
 		},
 		{
 				"id": "003",
-				"wins": "10",
-				"totalSpins": "17",
-				"maxBet": "4",
-				"minBankroll": "7",
+				"wins": 10,
+				"totalSpins": 17,
+				"maxBet": 4,
+				"minBankroll": 7,
 				"notes" : "Roulette Casino Style iOS",
 				"spins":[
 					{
@@ -355,10 +355,10 @@
 		},
 		{
 			"id": "004",
-			"wins": "10",
-			"totalSpins": "31",
-			"maxBet": "128",
-			"minBankroll": "255",
+			"wins": 10,
+			"totalSpins": 31,
+			"maxBet": 128,
+			"minBankroll": 255,
 			"notes" : "Roulette Casino Style iOS",
 			"spins":[
 				{
@@ -551,10 +551,10 @@
 		},
 		{
 			"id": "005",
-			"wins": "10",
-			"totalSpins": "21",
-			"maxBet": "16",
-			"minBankroll": "31",
+			"wins": 10,
+			"totalSpins": 21,
+			"maxBet": 16,
+			"minBankroll": 31,
 			"notes" : "Roulette Casino Style iOS, Bet rotation after each win",
 			"spins":[
 			  {
@@ -687,10 +687,10 @@
 		},
 		{
 			"id": "006",
-			"wins": "10",
-			"totalSpins": "22",
-			"maxBet": "16",
-			"minBankroll": "31",
+			"wins": 10,
+			"totalSpins": 22,
+			"maxBet": 16,
+			"minBankroll": 31,
 			"notes" : "Roulette Casino Style iOS, Unique bet rotation",
 			"spins":[
 				{
@@ -829,10 +829,10 @@
 		},
 		{
 			"id": "007",
-			"wins": "10",
-			"totalSpins": "19",
-			"maxBet": "4",
-			"minBankroll": "7",
+			"wins": 10,
+			"totalSpins": 19,
+			"maxBet": 4,
+			"minBankroll": 7,
 			"notes" : "Roulette Casino Style iOS, Unique bet rotation choosing by opposite of last bet",
 			"spins":[
 			  {
@@ -953,10 +953,10 @@
 		},
 		{
 			"id": "008",
-			"wins": "10",
-			"totalSpins": "21",
-			"maxBet": "32",
-			"minBankroll": "63",
+			"wins": 10,
+			"totalSpins": 21,
+			"maxBet": 32,
+			"minBankroll": 63,
 			"notes" : "Roulette Casino Style iOS, Single bet",
 			"spins":[
 				{
@@ -1083,10 +1083,10 @@
 		},
 		{
 			"id": "009",
-			"wins": "10",
-			"totalSpins": "16",
-			"maxBet": "4",
-			"minBankroll": "7",
+			"wins": 10,
+			"totalSpins": 16,
+			"maxBet": 4,
+			"minBankroll": 7,
 			"notes" : "Roulette Casino Style iOS, Bet rotation, opposite after 3 losses (if)",
 			"spins":[
 			  {
@@ -1189,10 +1189,10 @@
 		},
 		{
 			"id": "010",
-			"wins": "10",
-			"totalSpins": "15",
-			"maxBet": "4",
-			"minBankroll": "7",
+			"wins": 10,
+			"totalSpins": 15,
+			"maxBet": 4,
+			"minBankroll": 7,
 			"notes" : "Roulette Casino Style iOS, Bet rotation using opposite after 3 losses (if)",
 			"spins":[
 				{
@@ -1289,10 +1289,10 @@
 		},
 		{
 			"id": "011",
-			"wins": "10",
-			"totalSpins": "16",
-			"maxBet": "8",
-			"minBankroll": "15",
+			"wins": 10,
+			"totalSpins": 16,
+			"maxBet": 8,
+			"minBankroll": 15,
 			"notes" : "Roulette 3d iOS, Bet rotation, opposite after 3 losses (if)",
 			"spins":[
 				 {
@@ -1395,10 +1395,10 @@
 		},
 		{
 			"id": "012",
-			"wins": "10",
-			"totalSpins": "25",
-			"maxBet": "16",
-			"minBankroll": "31",
+			"wins": 10,
+			"totalSpins": 25,
+			"maxBet": 16,
+			"minBankroll": 31,
 			"notes" : "Roulette 3d Mac, Bet rotation after win, opposite after 3 losses (if), Got caught in this lopsided odds twice",
 			"spins":[
 				{
@@ -1555,10 +1555,10 @@
 		},
 		{
 			"id": "013",
-			"wins": "10",
-			"totalSpins": "14",
-			"maxBet": "4",
-			"minBankroll": "7",
+			"wins": 10,
+			"totalSpins": 14,
+			"maxBet": 4,
+			"minBankroll": 7,
 			"notes" : "Roulette 3d iOS, Bet rotation after win, opposite after 3 losses (if), Best session yet",
 			"spins":[
 				{
@@ -1649,10 +1649,10 @@
 		},
 		{
 			"id": "014",
-			"wins": "10",
-			"totalSpins": "18",
-			"maxBet": "16",
-			"minBankroll": "31",
+			"wins": 10,
+			"totalSpins": 18,
+			"maxBet": 16,
+			"minBankroll": 31,
 			"notes" : "Roulette 3d iOS, Bet rotation after win, opposite after 3 losses (if)",
 			"spins":[
 				{
@@ -1768,10 +1768,10 @@
 		},
 		{
 			"id": "015",
-			"wins": "10",
-			"totalSpins": "18",
-			"maxBet": "8",
-			"minBankroll": "15",
+			"wins": 10,
+			"totalSpins": 18,
+			"maxBet": 8,
+			"minBankroll": 15,
 			"notes" : "Roulette 3d iOS, Bet rotation every bet",
 			"spins":[
 				{
@@ -1886,10 +1886,10 @@
 		},
 		{
 			"id": "016",
-			"wins": "15",
-			"totalSpins": "29",
-			"maxBet": "16",
-			"minBankroll": "31",
+			"wins": 15,
+			"totalSpins": 29,
+			"maxBet": 16,
+			"minBankroll": 31,
 			"notes" : "Roulette 3d iOS, Bet rotation every bet, Would’ve tied the fastest to 10 wins",
 			"spins":[
 				{
@@ -2070,10 +2070,10 @@
 		},
 		{
 			"id": "017",
-			"wins": "15",
-			"totalSpins": "28",
-			"maxBet": "16",
-			"minBankroll": "31",
+			"wins": 15,
+			"totalSpins": 28,
+			"maxBet": 16,
+			"minBankroll": 31,
 			"notes" : "Roulette 3d iOS, Bet rotation every win",
 			"spins":[
 				{
@@ -2249,10 +2249,10 @@
 		},
 		{
 			"id": "018",
-			"wins": "15",
-			"totalSpins": "24",
-			"maxBet": "8",
-			"minBankroll": "15",
+			"wins": 15,
+			"totalSpins": 24,
+			"maxBet": 8,
+			"minBankroll": 15,
 			"notes" : "Roulette 3d iOS, Bet rotation every win, Opposite after 3 losses",
 			"spins":[
 				{
@@ -2403,10 +2403,10 @@
 		},
 		{
 			"id": "019",
-			"wins": "15",
-			"totalSpins": "29",
-			"maxBet": "8",
-			"minBankroll": "15",
+			"wins": 15,
+			"totalSpins": 29,
+			"maxBet": 8,
+			"minBankroll": 15,
 			"notes" : "Roulette 3d iOS, Bet rotation every bet",
 			"spins":[
 				{
@@ -2587,10 +2587,10 @@
 		},
 		{
 			"id": "020",
-			"wins": "15",
-			"totalSpins": "32",
-			"maxBet": "16",
-			"minBankroll": "31",
+			"wins": 15,
+			"totalSpins": 32,
+			"maxBet": 16,
+			"minBankroll": 31,
 			"notes" : "Roulette 3d iOS, Single bet",
 			"spins":[
 				{
@@ -2722,7 +2722,7 @@
 			  {
 			    "amount":1,
 			    "bet":"black",
-			    "number":8,
+			    "number":18,
 			    "result":"l"
 			  },
 			  {

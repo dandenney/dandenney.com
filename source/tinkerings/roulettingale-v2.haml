@@ -1,0 +1,378 @@
+---
+layout: tinkering
+date: February 10, 2015
+title: Roulettingale v2
+css: tinkerings/roulettingale-v2
+js: tinkerings/roulettingale/roulettingale-v2
+---
+
+%section.row
+
+	%h1.mtm.tac Roulettingale v2
+	%p.tac
+		A data project observing the performance of the Martingale betting system in Roulette.
+
+	- data.roulettingale.reverse.each do |s|
+		%article.session{ class: ("js-id" + (s.id)) }
+
+			%section.session-stats
+
+				%p.key-value.dollars.js-winnings
+					= (s.wins * 50)
+				%h5 Profit
+
+				%p.key-value.dollars.js-maxBet
+					= (s.maxBet * 50)
+				%h5 Max Bet
+
+				%h3.mtf.tac Spins
+
+				%table.spins.js-spins
+					%thead
+						%th Number
+						%th Red
+						%th Black
+						%th Even
+						%th Odd
+						%th 1-18
+						%th 19-36
+						%th 0/00
+
+					- s.spins.each do |sp|
+						%tr
+							%td.tac=sp.number
+							%td.tss.js-n-red
+								- if sp.number == 1
+									.positive--a &#10003;
+								- elsif sp.number == 3
+									.positive--a &#10003;
+								- elsif sp.number == 5
+									.positive--a &#10003;
+								- elsif sp.number == 7
+									.positive--a &#10003;
+								- elsif sp.number == 9
+									.positive--a &#10003;
+								- elsif sp.number == 12
+									.positive--a &#10003;
+								- elsif sp.number == 14
+									.positive--a &#10003;
+								- elsif sp.number == 16
+									.positive--a &#10003;
+								- elsif sp.number == 18
+									.positive--a &#10003;
+								- elsif sp.number == 19
+									.positive--a &#10003;
+								- elsif sp.number == 21
+									.positive--a &#10003;
+								- elsif sp.number == 23
+									.positive--a &#10003;
+								- elsif sp.number == 25
+									.positive--a &#10003;
+								- elsif sp.number == 27
+									.positive--a &#10003;
+								- elsif sp.number == 30
+									.positive--a &#10003;
+								- elsif sp.number == 32
+									.positive--a &#10003;
+								- elsif sp.number == 34
+									.positive--a &#10003;
+								- elsif sp.number == 36
+									.positive--a &#10003;
+								- else
+									.negative--a &#10008;
+
+							%td.tss.js-n-black
+								- if sp.number == 2
+									.positive--a &#10003;
+								- elsif sp.number == 4
+									.positive--a &#10003;
+								- elsif sp.number == 6
+									.positive--a &#10003;
+								- elsif sp.number == 8
+									.positive--a &#10003;
+								- elsif sp.number == 10
+									.positive--a &#10003;
+								- elsif sp.number == 11
+									.positive--a &#10003;
+								- elsif sp.number == 13
+									.positive--a &#10003;
+								- elsif sp.number == 15
+									.positive--a &#10003;
+								- elsif sp.number == 17
+									.positive--a &#10003;
+								- elsif sp.number == 20
+									.positive--a &#10003;
+								- elsif sp.number == 22
+									.positive--a &#10003;
+								- elsif sp.number == 24
+									.positive--a &#10003;
+								- elsif sp.number == 26
+									.positive--a &#10003;
+								- elsif sp.number == 28
+									.positive--a &#10003;
+								- elsif sp.number == 29
+									.positive--a &#10003;
+								- elsif sp.number == 31
+									.positive--a &#10003;
+								- elsif sp.number == 33
+									.positive--a &#10003;
+								- elsif sp.number == 35
+									.positive--a &#10003;
+								- else
+									.negative--a &#10008;
+
+							%td.tss.js-n-even
+								- if sp.number == 2
+									.positive--a &#10003;
+								- elsif sp.number == 4
+									.positive--a &#10003;
+								- elsif sp.number == 6
+									.positive--a &#10003;
+								- elsif sp.number == 8
+									.positive--a &#10003;
+								- elsif sp.number == 10
+									.positive--a &#10003;
+								- elsif sp.number == 12
+									.positive--a &#10003;
+								- elsif sp.number == 14
+									.positive--a &#10003;
+								- elsif sp.number == 16
+									.positive--a &#10003;
+								- elsif sp.number == 18
+									.positive--a &#10003;
+								- elsif sp.number == 20
+									.positive--a &#10003;
+								- elsif sp.number == 22
+									.positive--a &#10003;
+								- elsif sp.number == 24
+									.positive--a &#10003;
+								- elsif sp.number == 26
+									.positive--a &#10003;
+								- elsif sp.number == 28
+									.positive--a &#10003;
+								- elsif sp.number == 30
+									.positive--a &#10003;
+								- elsif sp.number == 32
+									.positive--a &#10003;
+								- elsif sp.number == 34
+									.positive--a &#10003;
+								- elsif sp.number == 36
+									.positive--a &#10003;
+								- else
+									.negative--a &#10008;
+
+							%td.tss.js-n-odd
+								- if sp.number == 1
+									.positive--a &#10003;
+								- elsif sp.number == 3
+									.positive--a &#10003;
+								- elsif sp.number == 5
+									.positive--a &#10003;
+								- elsif sp.number == 7
+									.positive--a &#10003;
+								- elsif sp.number == 9
+									.positive--a &#10003;
+								- elsif sp.number == 11
+									.positive--a &#10003;
+								- elsif sp.number == 13
+									.positive--a &#10003;
+								- elsif sp.number == 15
+									.positive--a &#10003;
+								- elsif sp.number == 17
+									.positive--a &#10003;
+								- elsif sp.number == 19
+									.positive--a &#10003;
+								- elsif sp.number == 21
+									.positive--a &#10003;
+								- elsif sp.number == 23
+									.positive--a &#10003;
+								- elsif sp.number == 25
+									.positive--a &#10003;
+								- elsif sp.number == 27
+									.positive--a &#10003;
+								- elsif sp.number == 29
+									.positive--a &#10003;
+								- elsif sp.number == 31
+									.positive--a &#10003;
+								- elsif sp.number == 33
+									.positive--a &#10003;
+								- elsif sp.number == 35
+									.positive--a &#10003;
+								- else
+									.negative--a &#10008;
+
+							%td.tss.js-n-118
+								- if sp.number == 1
+									.positive--a &#10003;
+								- elsif sp.number == 2
+									.positive--a &#10003;
+								- elsif sp.number == 3
+									.positive--a &#10003;
+								- elsif sp.number == 4
+									.positive--a &#10003;
+								- elsif sp.number == 5
+									.positive--a &#10003;
+								- elsif sp.number == 6
+									.positive--a &#10003;
+								- elsif sp.number == 7
+									.positive--a &#10003;
+								- elsif sp.number == 8
+									.positive--a &#10003;
+								- elsif sp.number == 9
+									.positive--a &#10003;
+								- elsif sp.number == 10
+									.positive--a &#10003;
+								- elsif sp.number == 11
+									.positive--a &#10003;
+								- elsif sp.number == 12
+									.positive--a &#10003;
+								- elsif sp.number == 13
+									.positive--a &#10003;
+								- elsif sp.number == 14
+									.positive--a &#10003;
+								- elsif sp.number == 15
+									.positive--a &#10003;
+								- elsif sp.number == 16
+									.positive--a &#10003;
+								- elsif sp.number == 17
+									.positive--a &#10003;
+								- elsif sp.number == 18
+									.positive--a &#10003;
+								- else
+									.negative--a &#10008;
+
+							%td.tss.js-n-1936
+								- if sp.number == 19
+									.positive--a &#10003;
+								- elsif sp.number == 20
+									.positive--a &#10003;
+								- elsif sp.number == 21
+									.positive--a &#10003;
+								- elsif sp.number == 22
+									.positive--a &#10003;
+								- elsif sp.number == 23
+									.positive--a &#10003;
+								- elsif sp.number == 24
+									.positive--a &#10003;
+								- elsif sp.number == 25
+									.positive--a &#10003;
+								- elsif sp.number == 26
+									.positive--a &#10003;
+								- elsif sp.number == 27
+									.positive--a &#10003;
+								- elsif sp.number == 28
+									.positive--a &#10003;
+								- elsif sp.number == 29
+									.positive--a &#10003;
+								- elsif sp.number == 30
+									.positive--a &#10003;
+								- elsif sp.number == 31
+									.positive--a &#10003;
+								- elsif sp.number == 32
+									.positive--a &#10003;
+								- elsif sp.number == 33
+									.positive--a &#10003;
+								- elsif sp.number == 34
+									.positive--a &#10003;
+								- elsif sp.number == 35
+									.positive--a &#10003;
+								- elsif sp.number == 36
+									.positive--a &#10003;
+								- else
+									.negative--a &#10008;
+
+							%td.tss.js-n-0
+								- if sp.number == 0
+									.positive--a &#10003;
+								- else
+									.negative--a &#10008;
+
+
+
+				%table.bets
+
+					%thead
+						%th Bet
+						%th Amount
+						%th 25
+						%th 30
+						%th 35
+						%th 40
+						%th 45
+						%th 50
+						%th 60
+						%th 70
+						%th 80
+						%th 90
+						%th 100
+
+					- s.spins.each do |sp|
+
+						%tr
+
+							%td.ttc=sp.bet
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 25)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 30)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 35)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 40)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 45)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 50)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 60)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 70)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 80)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 90)
+
+							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+								= (sp.amount * 100)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
