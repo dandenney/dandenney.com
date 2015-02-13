@@ -102,12 +102,12 @@ redBlackPercentage = ->
 		redPercentage = (redRaw * 100).toFixed(2) + '%'
 		blackRaw = blackCount / redBlackTotal
 		blackPercentage = (blackRaw * 100).toFixed(2) + '%'
-		$(this).siblings().find('.js-count-red').html(redCount)
-		$(this).siblings().find('.js-count-black').html(blackCount)
-		$(this).siblings().find('.js-prct-red').html(redPercentage)
-		$(this).siblings().find('.js-prct-black').html(blackPercentage)
+		$(this).parent().siblings().find('.js-count-red').html(redCount)
+		$(this).parent().siblings().find('.js-count-black').html(blackCount)
+		$(this).parent().siblings().find('.js-prct-red').html(redPercentage)
+		$(this).parent().siblings().find('.js-prct-black').html(blackPercentage)
 
-# redBlackPercentage()
+redBlackPercentage()
 
 # -------------------------------------
 #   Percentage Even/Odd
@@ -123,12 +123,12 @@ evenOddPercentage = ->
 		evenPercentage = (evenRaw * 100).toFixed(2) + '%'
 		oddRaw = oddCount / evenoddTotal
 		oddPercentage = (oddRaw * 100).toFixed(2) + '%'
-		$(this).siblings().find('.js-count-even').html(evenCount)
-		$(this).siblings().find('.js-count-odd').html(oddCount)
-		$(this).siblings().find('.js-prct-even').html(evenPercentage)
-		$(this).siblings().find('.js-prct-odd').html(oddPercentage)
+		$(this).parent().siblings().find('.js-count-even').html(evenCount)
+		$(this).parent().siblings().find('.js-count-odd').html(oddCount)
+		$(this).parent().siblings().find('.js-prct-even').html(evenPercentage)
+		$(this).parent().siblings().find('.js-prct-odd').html(oddPercentage)
 
-# evenOddPercentage()
+evenOddPercentage()
 
 # -------------------------------------
 #   Percentage 1-18/19-36
@@ -144,22 +144,62 @@ n1181936Percentage = ->
 		n118Percentage = (n118Raw * 100).toFixed(2) + '%'
 		n1936Raw = n1936Count / n118n1936Total
 		n1936Percentage = (n1936Raw * 100).toFixed(2) + '%'
-		$(this).siblings().find('.js-count-118').html(n118Count)
-		$(this).siblings().find('.js-count-1936').html(n1936Count)
-		$(this).siblings().find('.js-prct-118').html(n118Percentage)
-		$(this).siblings().find('.js-prct-1936').html(n1936Percentage)
+		$(this).parent().siblings().find('.js-count-118').html(n118Count)
+		$(this).parent().siblings().find('.js-count-1936').html(n1936Count)
+		$(this).parent().siblings().find('.js-prct-118').html(n118Percentage)
+		$(this).parent().siblings().find('.js-prct-1936').html(n1936Percentage)
 
-# n1181936Percentage()
+n1181936Percentage()
 
-# Example
+# -------------------------------------
+#   Percentage 0
+# -------------------------------------
 
-example = ->
-	examplePos = $('.js-id001 .js-n-118 .positive--a').length;
-	exampleNeg = $('.js-id001 .js-n-118 .negative--a').length;
-	exampleTot = examplePos + exampleNeg
-	examplePosPer = examplePos / exampleTot
-	exampleNegPer = exampleNeg / exampleTot
-	$('.example-positive').append(examplePosPer)
-	$('.example-negative').append(exampleNegPer)
+n0Percentage = ->
+	$('.js-spins').each ->
+		currentElement = $(this)
+		n0Count = $(this).find('.js-n-0 .positive--a').length
+		$(this).parent().siblings().find('.js-count-0').html(n0Count)
 
-# example()
+n0Percentage()
+
+
+compareWagers = ->
+	$('.js-wagers').each ->
+		currentElement = $(this)
+		vsPlaced = parseInt($(this).find('.js-count-placed').text(),10)
+		vs118 = parseInt($(this).find('.js-count-118').text(),10)
+		vs1936 = parseInt($(this).find('.js-count-1936').text(),10)
+		vsOdd = parseInt($(this).find('.js-count-odd').text(),10)
+		vsEven = parseInt($(this).find('.js-count-even').text(),10)
+		vsRed = parseInt($(this).find('.js-count-red').text(),10)
+		vsBlack = parseInt($(this).find('.js-count-black').text(),10)
+		compare118 = (vsPlaced) - (vs118)
+		compare1936 = (vsPlaced) - (vs1936)
+		compareOdd = (vsPlaced) - (vsOdd)
+		compareEven = (vsPlaced) - (vsEven)
+		compareRed = (vsPlaced) - (vsRed)
+		compareBlack = (vsPlaced) - (vsBlack)
+
+		if vs118 > vs1936
+			$(this).find('.js-vs-118').html(compare118)
+			$(this).find('.js-vs-1936').html("-")
+		else
+			$(this).find('.js-vs-1936').html(compare1936)
+			$(this).find('.js-vs-118').html("-")
+
+		if vsOdd > vsEven
+			$(this).find('.js-vs-odd').html(compareOdd)
+			$(this).find('.js-vs-even').html("-")
+		else
+			$(this).find('.js-vs-even').html(compareEven)
+			$(this).find('.js-vs-odd').html("-")
+
+		if vsRed > vsBlack
+			$(this).find('.js-vs-red').html(compareRed)
+			$(this).find('.js-vs-black').html("-")
+		else
+			$(this).find('.js-vs-black').html(compareBlack)
+			$(this).find('.js-vs-red').html("-")
+
+compareWagers()

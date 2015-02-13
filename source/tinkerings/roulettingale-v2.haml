@@ -6,347 +6,610 @@ css: tinkerings/roulettingale-v2
 js: tinkerings/roulettingale/roulettingale-v2
 ---
 
+<script src="//use.typekit.net/yyc6dun.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
 %section.row
 
 	%h1.mtm.tac Roulettingale v2
 	%p.tac
 		A data project observing the performance of the Martingale betting system in Roulette.
 
-	- data.roulettingale.reverse.each do |s|
-		%article.session{ class: ("js-id" + (s.id)) }
+	.cell.well
 
-			%section.session-stats
+		%h2 Road Map
 
-				%p.key-value.dollars.js-winnings
-					= (s.wins * 50)
-				%h5 Profit
+		%p
+			This is a work in progress, here is a list of the most recent to-dos.
 
-				%p.key-value.dollars.js-maxBet
-					= (s.maxBet * 50)
-				%h5 Max Bet
+		%ul
+			%li
+				%strike Show all of the data I can get from Middleman and the JSON
+			%li
+				%strike Use JS to get counts
+			%li
+				%strike Compare bet results with the winners
+			%li
+				%strike Calculate totals across all sessions
+			%li
+				Some way of comparing the other winning categories across all sessions
+			%li Design and style
 
-				%h3.mtf.tac Spins
+		%h2.mtl Project Goals
 
-				%table.spins.js-spins
-					%thead
-						%th Number
-						%th Red
-						%th Black
-						%th Even
-						%th Odd
-						%th 1-18
-						%th 19-36
-						%th 0/00
+		%p
+			The true purpose behind this project is learning how to collect, organize, and visualize data. However, number systems are my crack. So, ultimately it's a chance for me to learn while pouring through numbers.
 
-					- s.spins.each do |sp|
+		%p
+			A toned-down explanation of the Martingale betting systems is that you bet a single amount on an even money bet. If you win, you collect the profit. If you lose, you continue doubling your bet until you win again. At that point, you will win 1 original betting unit.
+
+		%p
+			Mathematically, you can't lose in a system that is allowed to run forever. Therefore, casinos implement max bets. This is a series of sessions to see if you can hit "x" number of wins before hitting the maximum bet.
+
+		%h4 Questions:
+
+		%ul
+			%li Can you reach a certain number of wins before hitting the maximum allowable bet?
+			%li If so, how many times can you win consistently?
+			%li What is the maximum amount you could bet consistently?
+			%li What would be the profit and risk at that level?
+
+		%table.collective.mtl{ width: "100%"}
+			%thead
+				%th Sessions
+				%th Spins
+				%th Wins
+				%th Max Bet
+				%th Min Bankroll
+
+			%tr.tsxl
+				%td= data.roulettingale.count
+				%td= getSum([16,21,17,31,21,22,19,21,16,15,16,25,14,18,18,29,28,24,29,32,39,28,32,27,38])
+				%td=getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15])
+				%td
+					= maxBet
+					%span.tss (x)
+				%td
+					= minBankroll
+					%span.tss (x)
+
+		%table.stakes.mtl{ width: "100%" }
+			%thead
+				%th.tal Stakes
+				%th 25
+				%th 30
+				%th 35
+				%th 40
+				%th 45
+				%th 50
+				%th 60
+				%th 70
+				%th 80
+				%th 90
+				%th 100
+
+			%tr
+				%td.tal MGM ($25 - $10,000)
+				%td
+					- if maxBet < (10000 / 25)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 30)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 35)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 40)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 45)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 50)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 60)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 70)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 80)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 90)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (10000 / 100)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+
+			%tr
+				%td.tal Beau Rivage ($10 - $15,000)
+				%td
+					- if maxBet < (15000 / 25)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 30)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 35)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 40)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 45)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 50)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 60)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 70)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 80)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 90)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (15000 / 100)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+
+			%tr
+				%td.tal Mirage ($25 - $20,000)
+				%td
+					- if maxBet < (20000 / 25)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 30)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 35)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 40)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 45)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 50)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 60)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 70)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 80)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 90)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+				%td
+					- if maxBet < (20000 / 100)
+						.positive--a &#10003;
+					- else
+						.negative--a &#10005;
+
+		%h3.mtl.tac Profit
+
+		%table.stakes{ width: "100%" }
+			%thead
+				%th 25
+				%th 30
+				%th 35
+				%th 40
+				%th 45
+				%th 50
+				%th 60
+				%th 70
+				%th 80
+				%th 90
+				%th 100
+
+			%tr
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 25)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 30)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 35)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 50)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 45)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 50)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 60)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 70)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 80)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 90)
+				%td= (getSum([10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15]) * 100)
+
+		%h3.mtl.tac Max Bet
+
+		%table.stakes{ width: "100%" }
+			%thead
+				%th 25
+				%th 30
+				%th 35
+				%th 40
+				%th 45
+				%th 50
+				%th 60
+				%th 70
+				%th 80
+				%th 90
+				%th 100
+
+			%tr
+				%td= (maxBet * 25)
+				%td= (maxBet * 30)
+				%td= (maxBet * 35)
+				%td= (maxBet * 50)
+				%td= (maxBet * 45)
+				%td= (maxBet * 50)
+				%td= (maxBet * 60)
+				%td= (maxBet * 70)
+				%td= (maxBet * 80)
+				%td= (maxBet * 90)
+				%td= (maxBet * 100)
+
+		%h3.mtl.tac Minimum Bankroll
+
+		%table.stakes{ width: "100%" }
+			%thead
+				%th 25
+				%th 30
+				%th 35
+				%th 40
+				%th 45
+				%th 50
+				%th 60
+				%th 70
+				%th 80
+				%th 90
+				%th 100
+
+			%tr
+				%td= (minBankroll * 25)
+				%td= (minBankroll * 30)
+				%td= (minBankroll * 35)
+				%td= (minBankroll * 50)
+				%td= (minBankroll * 45)
+				%td= (minBankroll * 50)
+				%td= (minBankroll * 60)
+				%td= (minBankroll * 70)
+				%td= (minBankroll * 80)
+				%td= (minBankroll * 90)
+				%td= (minBankroll * 100)
+
+
+
+		- data.roulettingale.reverse.each do |s|
+			%article.session{ class: ("js-id" + (s.id)) }
+
+				%section.session-stats
+
+					%h2.tac= s.id
+
+
+					%h3.mtl.tac Money
+
+					%table.money{ width: "100%"}
+
+						%thead
+							%th &nbsp;
+							%th 25
+							%th 30
+							%th 35
+							%th 40
+							%th 45
+							%th 50
+							%th 60
+							%th 70
+							%th 80
+							%th 90
+							%th 100
+
 						%tr
-							%td.tac=sp.number
-							%td.tss.js-n-red
-								- if sp.number == 1
-									.positive--a &#10003;
-								- elsif sp.number == 3
-									.positive--a &#10003;
-								- elsif sp.number == 5
-									.positive--a &#10003;
-								- elsif sp.number == 7
-									.positive--a &#10003;
-								- elsif sp.number == 9
-									.positive--a &#10003;
-								- elsif sp.number == 12
-									.positive--a &#10003;
-								- elsif sp.number == 14
-									.positive--a &#10003;
-								- elsif sp.number == 16
-									.positive--a &#10003;
-								- elsif sp.number == 18
-									.positive--a &#10003;
-								- elsif sp.number == 19
-									.positive--a &#10003;
-								- elsif sp.number == 21
-									.positive--a &#10003;
-								- elsif sp.number == 23
-									.positive--a &#10003;
-								- elsif sp.number == 25
-									.positive--a &#10003;
-								- elsif sp.number == 27
-									.positive--a &#10003;
-								- elsif sp.number == 30
-									.positive--a &#10003;
-								- elsif sp.number == 32
-									.positive--a &#10003;
-								- elsif sp.number == 34
-									.positive--a &#10003;
-								- elsif sp.number == 36
-									.positive--a &#10003;
-								- else
-									.negative--a &#10008;
-
-							%td.tss.js-n-black
-								- if sp.number == 2
-									.positive--a &#10003;
-								- elsif sp.number == 4
-									.positive--a &#10003;
-								- elsif sp.number == 6
-									.positive--a &#10003;
-								- elsif sp.number == 8
-									.positive--a &#10003;
-								- elsif sp.number == 10
-									.positive--a &#10003;
-								- elsif sp.number == 11
-									.positive--a &#10003;
-								- elsif sp.number == 13
-									.positive--a &#10003;
-								- elsif sp.number == 15
-									.positive--a &#10003;
-								- elsif sp.number == 17
-									.positive--a &#10003;
-								- elsif sp.number == 20
-									.positive--a &#10003;
-								- elsif sp.number == 22
-									.positive--a &#10003;
-								- elsif sp.number == 24
-									.positive--a &#10003;
-								- elsif sp.number == 26
-									.positive--a &#10003;
-								- elsif sp.number == 28
-									.positive--a &#10003;
-								- elsif sp.number == 29
-									.positive--a &#10003;
-								- elsif sp.number == 31
-									.positive--a &#10003;
-								- elsif sp.number == 33
-									.positive--a &#10003;
-								- elsif sp.number == 35
-									.positive--a &#10003;
-								- else
-									.negative--a &#10008;
-
-							%td.tss.js-n-even
-								- if sp.number == 2
-									.positive--a &#10003;
-								- elsif sp.number == 4
-									.positive--a &#10003;
-								- elsif sp.number == 6
-									.positive--a &#10003;
-								- elsif sp.number == 8
-									.positive--a &#10003;
-								- elsif sp.number == 10
-									.positive--a &#10003;
-								- elsif sp.number == 12
-									.positive--a &#10003;
-								- elsif sp.number == 14
-									.positive--a &#10003;
-								- elsif sp.number == 16
-									.positive--a &#10003;
-								- elsif sp.number == 18
-									.positive--a &#10003;
-								- elsif sp.number == 20
-									.positive--a &#10003;
-								- elsif sp.number == 22
-									.positive--a &#10003;
-								- elsif sp.number == 24
-									.positive--a &#10003;
-								- elsif sp.number == 26
-									.positive--a &#10003;
-								- elsif sp.number == 28
-									.positive--a &#10003;
-								- elsif sp.number == 30
-									.positive--a &#10003;
-								- elsif sp.number == 32
-									.positive--a &#10003;
-								- elsif sp.number == 34
-									.positive--a &#10003;
-								- elsif sp.number == 36
-									.positive--a &#10003;
-								- else
-									.negative--a &#10008;
-
-							%td.tss.js-n-odd
-								- if sp.number == 1
-									.positive--a &#10003;
-								- elsif sp.number == 3
-									.positive--a &#10003;
-								- elsif sp.number == 5
-									.positive--a &#10003;
-								- elsif sp.number == 7
-									.positive--a &#10003;
-								- elsif sp.number == 9
-									.positive--a &#10003;
-								- elsif sp.number == 11
-									.positive--a &#10003;
-								- elsif sp.number == 13
-									.positive--a &#10003;
-								- elsif sp.number == 15
-									.positive--a &#10003;
-								- elsif sp.number == 17
-									.positive--a &#10003;
-								- elsif sp.number == 19
-									.positive--a &#10003;
-								- elsif sp.number == 21
-									.positive--a &#10003;
-								- elsif sp.number == 23
-									.positive--a &#10003;
-								- elsif sp.number == 25
-									.positive--a &#10003;
-								- elsif sp.number == 27
-									.positive--a &#10003;
-								- elsif sp.number == 29
-									.positive--a &#10003;
-								- elsif sp.number == 31
-									.positive--a &#10003;
-								- elsif sp.number == 33
-									.positive--a &#10003;
-								- elsif sp.number == 35
-									.positive--a &#10003;
-								- else
-									.negative--a &#10008;
-
-							%td.tss.js-n-118
-								- if sp.number == 1
-									.positive--a &#10003;
-								- elsif sp.number == 2
-									.positive--a &#10003;
-								- elsif sp.number == 3
-									.positive--a &#10003;
-								- elsif sp.number == 4
-									.positive--a &#10003;
-								- elsif sp.number == 5
-									.positive--a &#10003;
-								- elsif sp.number == 6
-									.positive--a &#10003;
-								- elsif sp.number == 7
-									.positive--a &#10003;
-								- elsif sp.number == 8
-									.positive--a &#10003;
-								- elsif sp.number == 9
-									.positive--a &#10003;
-								- elsif sp.number == 10
-									.positive--a &#10003;
-								- elsif sp.number == 11
-									.positive--a &#10003;
-								- elsif sp.number == 12
-									.positive--a &#10003;
-								- elsif sp.number == 13
-									.positive--a &#10003;
-								- elsif sp.number == 14
-									.positive--a &#10003;
-								- elsif sp.number == 15
-									.positive--a &#10003;
-								- elsif sp.number == 16
-									.positive--a &#10003;
-								- elsif sp.number == 17
-									.positive--a &#10003;
-								- elsif sp.number == 18
-									.positive--a &#10003;
-								- else
-									.negative--a &#10008;
-
-							%td.tss.js-n-1936
-								- if sp.number == 19
-									.positive--a &#10003;
-								- elsif sp.number == 20
-									.positive--a &#10003;
-								- elsif sp.number == 21
-									.positive--a &#10003;
-								- elsif sp.number == 22
-									.positive--a &#10003;
-								- elsif sp.number == 23
-									.positive--a &#10003;
-								- elsif sp.number == 24
-									.positive--a &#10003;
-								- elsif sp.number == 25
-									.positive--a &#10003;
-								- elsif sp.number == 26
-									.positive--a &#10003;
-								- elsif sp.number == 27
-									.positive--a &#10003;
-								- elsif sp.number == 28
-									.positive--a &#10003;
-								- elsif sp.number == 29
-									.positive--a &#10003;
-								- elsif sp.number == 30
-									.positive--a &#10003;
-								- elsif sp.number == 31
-									.positive--a &#10003;
-								- elsif sp.number == 32
-									.positive--a &#10003;
-								- elsif sp.number == 33
-									.positive--a &#10003;
-								- elsif sp.number == 34
-									.positive--a &#10003;
-								- elsif sp.number == 35
-									.positive--a &#10003;
-								- elsif sp.number == 36
-									.positive--a &#10003;
-								- else
-									.negative--a &#10008;
-
-							%td.tss.js-n-0
-								- if sp.number == 0
-									.positive--a &#10003;
-								- else
-									.negative--a &#10008;
-
-
-
-				%table.bets
-
-					%thead
-						%th Bet
-						%th Amount
-						%th 25
-						%th 30
-						%th 35
-						%th 40
-						%th 45
-						%th 50
-						%th 60
-						%th 70
-						%th 80
-						%th 90
-						%th 100
-
-					- s.spins.each do |sp|
+							%td
+								Winnings
+							%td
+								= (s.wins * 25)
+							%td
+								= (s.wins * 30)
+							%td
+								= (s.wins * 35)
+							%td
+								= (s.wins * 40)
+							%td
+								= (s.wins * 45)
+							%td
+								= (s.wins * 50)
+							%td
+								= (s.wins * 60)
+							%td
+								= (s.wins * 70)
+							%td
+								= (s.wins * 80)
+							%td
+								= (s.wins * 90)
+							%td
+								= (s.wins * 100)
 
 						%tr
+							%td
+								Max Bet
+							%td
+								= (s.maxBet * 25)
+							%td
+								= (s.maxBet * 30)
+							%td
+								= (s.maxBet * 35)
+							%td
+								= (s.maxBet * 40)
+							%td
+								= (s.maxBet * 45)
+							%td
+								= (s.maxBet * 50)
+							%td
+								= (s.maxBet * 60)
+							%td
+								= (s.maxBet * 70)
+							%td
+								= (s.maxBet * 80)
+							%td
+								= (s.maxBet * 90)
+							%td
+								= (s.maxBet * 100)
 
-							%td.ttc=sp.bet
+						%tr
+							%td
+								Min Bankroll
+							%td
+								= (s.minBankroll * 25)
+							%td
+								= (s.minBankroll * 30)
+							%td
+								= (s.minBankroll * 35)
+							%td
+								= (s.minBankroll * 40)
+							%td
+								= (s.minBankroll * 45)
+							%td
+								= (s.minBankroll * 50)
+							%td
+								= (s.minBankroll * 60)
+							%td
+								= (s.minBankroll * 70)
+							%td
+								= (s.minBankroll * 80)
+							%td
+								= (s.minBankroll * 90)
+							%td
+								= (s.minBankroll * 100)
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount)
+					%h3.mtl.tac Wagers
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 25)
+					%table.wagers.js-wagers.mhc
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 30)
+						%thead
+							%th Placed
+							%th 1-18
+							%th 19-36
+							%th Odd
+							%th Even
+							%th Red
+							%th Black
+							%th 0/00
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 35)
+						%tr
+							%td.js-count-placed= s.wins
+							%td.js-count-118
+							%td.js-count-1936
+							%td.js-count-odd
+							%td.js-count-even
+							%td.js-count-red
+							%td.js-count-black
+							%td.js-count-0
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 40)
+						%tr
+							%td -
+							%td.js-vs-118
+							%td.js-vs-1936
+							%td.js-vs-odd
+							%td.js-vs-even
+							%td.js-vs-red
+							%td.js-vs-black
+							%td -
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 45)
+					.dib
+						%h3.mtl.tac Wins/Losses
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 50)
+						%table.bets.tsm
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 60)
+							%thead
+								%th Bet
+								%th Amount
+								/ %th 25
+								/ %th 30
+								/ %th 35
+								/ %th 40
+								/ %th 45
+								%th 50
+								%th 60
+								%th 70
+								%th 80
+								%th 90
+								%th 100
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 70)
+							- s.spins.each do |sp|
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 80)
+								%tr
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 90)
+									%td.ttc=sp.bet
 
-							%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
-								= (sp.amount * 100)
+									%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+										= (sp.amount)
+
+									/ %td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+									/ 	= (sp.amount * 25)
+
+									/ %td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+									/ 	= (sp.amount * 30)
+
+									/ %td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+									/ 	= (sp.amount * 35)
+
+									/ %td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+									/ 	= (sp.amount * 40)
+
+									/ %td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+									/ 	= (sp.amount * 45)
+
+									%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+										= (sp.amount * 50)
+
+									%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+										= (sp.amount * 60)
+
+									%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+										= (sp.amount * 70)
+
+									%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+										= (sp.amount * 80)
+
+									%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+										= (sp.amount * 90)
+
+									%td{ class: (sp.result == 'l' ? 'negative dollars' : 'positive') }
+										= (sp.amount * 100)
+
+					.dib.pll
+
+						%h3.mtl.tac Spins
+
+						%table.spins.js-spins.tsm
+							%thead
+								%th Number
+								%th 1-18
+								%th 19-36
+								%th Odd
+								%th Even
+								%th Red
+								%th Black
+								%th 0/00
+
+							- s.spins.each do |sp|
+								%tr
+									%td.tac=sp.number
+									%td.tss.js-n-118
+										- if hasThing([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], sp.number)
+											.positive--a &#10003;
+										- else
+											.negative--a &#10005;
+
+									%td.tss.js-n-1936
+										- if hasThing([19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36], sp.number)
+											.positive--a &#10003;
+										- else
+											.negative--a &#10005;
+
+									%td.tss.js-n-odd
+										- if hasThing([1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35], sp.number)
+											.positive--a &#10003;
+										- else
+											.negative--a &#10005;
+
+									%td.tss.js-n-even
+										- if hasThing([2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36], sp.number)
+											.positive--a &#10003;
+										- else
+											.negative--a &#10005;
+
+									%td.tss.js-n-red
+										- if hasThing([1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36], sp.number)
+											.positive--a &#10003;
+										- else
+											.negative--a &#10005;
+
+									%td.tss.js-n-black
+										- if hasThing([2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 29, 31, 33, 35], sp.number)
+											.positive--a &#10003;
+										- else
+											.negative--a &#10005;
+
+									%td.tss.js-n-0
+										- if sp.number == 0
+											.positive--a &#10003;
+										- else
+											\-
 
 
 

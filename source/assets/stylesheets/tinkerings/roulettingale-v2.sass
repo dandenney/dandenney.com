@@ -66,29 +66,22 @@ $red: #b52316
 	box-shadow: 0 0 0 1px pink
 
 body
-	font-size: 16px
-	font-weight: 400
+	font-family: 'adelle', 'Helvetica Neue'
+	font-weight: 300
 
-body,
 h1,
 h2,
 h3,
 h4,
 h5
-	font-family: 'proxima-nova-alt-ext-cond', 'Helvetica Neue'
+	font-family: 'adelle', 'Helvetica Neue'
+	font-weight: 400
 
 .h5, h5
 	color: mix(#000000, $tan, 25%)
 	font-size: $b-fontSize
-	font-weight: normal
 	@extend .ttu
 	margin-top: -($b-space-s)
-
-th
-	text-align: left
-
-td
-	white-space: nowrap
 
 dl,
 dt,
@@ -110,6 +103,23 @@ article
 //   Inbox
 // -------------------------------------
 
+.vat
+	vertical-align: top
+
+.dib + .dib
+	padding-left: $b-space-xl
+
+th
+	font-weight: 400
+	text-align: left
+
+td
+	border: 1px solid #f5f5f5
+	white-space: nowrap
+
+	&:nth-child(odd)
+		background: #fcfcfc
+
 th,
 td
 	padding: $b-space-s
@@ -119,14 +129,16 @@ td
 	color: $green
 
 .positive--a
-	background-color: rgba($green, 0.5)
-	color: $tan
-	text-align: center
+	color: $green
+	// background-color: rgba($green, 0.5)
+	// color: $tan
+	// text-align: center
 
 .negative
 	color: $red
 
 .negative--a
-	background-color: rgba($red, 0.5)
-	color: $tan
-	text-align: center
+	color: $red
+	// background-color: rgba($red, 0.5)
+	// color: $tan
+	// text-align: center

@@ -44,6 +44,74 @@ helpers do
     string.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   end
 
+  # Gets the highest number in an array
+  #
+  # == Usage
+  #
+  #   getMax([6,6,8])
+  #
+  def getMax(nums)
+    maxBets = nums
+    maxBets.max
+  end
+
+  # Gets the sum of numbers in an array
+  #
+  # == Usage
+  #
+  #   getSum([6,6,8])
+  #
+  def getSum(nums)
+    sum = nums
+    sum.inject(:+)
+  end
+
+  # Checks if an array has a string value
+  #
+  # == Usage
+  #
+  #   hasThing(["i", "love", "arrays"], "love")
+  #
+  def hasThing(string1, string2)
+    has = string1
+    has.include?(string2)
+  end
+
+  # Calculates profit of all sessions
+  #
+  # == Usage
+  #
+  #   getProfit(num)
+  #
+  def getProfit(num1, num2)
+    sum = nums
+    sum.inject(:+)
+  end
+
+  # Calculates max bet of all sessions
+  #
+  # == Usage
+  #
+  #   maxBet
+  #
+  def maxBet
+    all = [4,8,4,128,16,16,4,32,4,4,8,16,4,16,8,16,16,8,8,16,32,32,128,16,128]
+    all.max
+  end
+
+  # Calculates minimum bankroll of all sessions
+  #
+  # == Usage
+  #
+  #   maxBet
+  #
+  def minBankroll
+    all = [7,15,7,255,31,31,7,63,7,7,15,31,7,31,15,31,31,15,15,31,63,63,255,31,255]
+    all.max
+  end
+
+
+
 end
 
 ###
