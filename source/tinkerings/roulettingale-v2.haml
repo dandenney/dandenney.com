@@ -110,7 +110,7 @@ js: tinkerings/roulettingale/roulettingale-v2
 
 		%h3.mtl.tac Stakes
 
-		%table.stakes.striped-h.mbxl{ width: "100%" }
+		%table.stakes.striped-h{ width: "100%" }
 			%thead
 				%th.bgn &nbsp;
 				%th 25
@@ -298,6 +298,26 @@ js: tinkerings/roulettingale/roulettingale-v2
 						.positive--b &#10003;
 					- else
 						.negative--a &#10005;
+
+		%h3.mtl.tac Hours of Play
+
+		%table.hours.striped-h.mbxl{ width: "100%" }
+			%thead
+				%th Players
+				%th 1
+				%th 2
+				%th 3
+				%th 4
+				%th 5
+				%th 6
+			%tr
+				%td Hours
+				%td.tcr= (totalSpins / 112)
+				%td.tcr= (totalSpins / 76)
+				%td.tcr= (totalSpins / 60)
+				%td.tcr= (totalSpins / 55)
+				%td.tcr= (totalSpins / 48)
+				%td.tcr= (totalSpins / 35)
 
 		- data.roulettingale.reverse.each do |s|
 
