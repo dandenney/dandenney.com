@@ -102,10 +102,10 @@ redBlackPercentage = ->
 		redPercentage = (redRaw * 100).toFixed(2) + '%'
 		blackRaw = blackCount / redBlackTotal
 		blackPercentage = (blackRaw * 100).toFixed(2) + '%'
-		$(this).parent().siblings().find('.js-count-red').html(redCount)
-		$(this).parent().siblings().find('.js-count-black').html(blackCount)
-		$(this).parent().siblings().find('.js-prct-red').html(redPercentage)
-		$(this).parent().siblings().find('.js-prct-black').html(blackPercentage)
+		$(this).siblings().find('.js-count-red').html(redCount)
+		$(this).siblings().find('.js-count-black').html(blackCount)
+		$(this).siblings().find('.js-prct-red').html(redPercentage)
+		$(this).siblings().find('.js-prct-black').html(blackPercentage)
 
 redBlackPercentage()
 
@@ -123,10 +123,10 @@ evenOddPercentage = ->
 		evenPercentage = (evenRaw * 100).toFixed(2) + '%'
 		oddRaw = oddCount / evenoddTotal
 		oddPercentage = (oddRaw * 100).toFixed(2) + '%'
-		$(this).parent().siblings().find('.js-count-even').html(evenCount)
-		$(this).parent().siblings().find('.js-count-odd').html(oddCount)
-		$(this).parent().siblings().find('.js-prct-even').html(evenPercentage)
-		$(this).parent().siblings().find('.js-prct-odd').html(oddPercentage)
+		$(this).siblings().find('.js-count-even').html(evenCount)
+		$(this).siblings().find('.js-count-odd').html(oddCount)
+		$(this).siblings().find('.js-prct-even').html(evenPercentage)
+		$(this).siblings().find('.js-prct-odd').html(oddPercentage)
 
 evenOddPercentage()
 
@@ -144,10 +144,10 @@ n1181936Percentage = ->
 		n118Percentage = (n118Raw * 100).toFixed(2) + '%'
 		n1936Raw = n1936Count / n118n1936Total
 		n1936Percentage = (n1936Raw * 100).toFixed(2) + '%'
-		$(this).parent().siblings().find('.js-count-118').html(n118Count)
-		$(this).parent().siblings().find('.js-count-1936').html(n1936Count)
-		$(this).parent().siblings().find('.js-prct-118').html(n118Percentage)
-		$(this).parent().siblings().find('.js-prct-1936').html(n1936Percentage)
+		$(this).siblings().find('.js-count-118').html(n118Count)
+		$(this).siblings().find('.js-count-1936').html(n1936Count)
+		$(this).siblings().find('.js-prct-118').html(n118Percentage)
+		$(this).siblings().find('.js-prct-1936').html(n1936Percentage)
 
 n1181936Percentage()
 
@@ -159,7 +159,7 @@ n0Percentage = ->
 	$('.js-spins').each ->
 		currentElement = $(this)
 		n0Count = $(this).find('.js-n-0 .positive--a').length
-		$(this).parent().siblings().find('.js-count-0').html(n0Count)
+		$(this).siblings().find('.js-count-0').html(n0Count)
 
 n0Percentage()
 
@@ -203,3 +203,17 @@ compareWagers = ->
 			$(this).find('.js-vs-red').html("-")
 
 compareWagers()
+
+# -------------------------------------
+#   Toggle
+# -------------------------------------
+
+toggleThing = ->
+	$('.js-toggler').on 'click', ->
+		$(this).toggleClass('is-toggled')
+		$(this).parent().parent().next().toggleClass('is-hidden')
+toggleThing()
+
+showFirst = ->
+	$('.session:first-of-type').find('.js-toggler').trigger('click')
+showFirst()

@@ -77,6 +77,28 @@ helpers do
     has.include?(string2)
   end
 
+  # Calculates total spins of all sessions
+  #
+  # == Usage
+  #
+  #   =totalSpins
+  #
+  def totalSpins
+    sum = data.roulettingale.map {|s| s["totalSpins"]}
+    sum.inject(:+)
+  end
+
+  # Calculates minimum bankroll of all sessions
+  #
+  # == Usage
+  #
+  #   =profitUnits
+  #
+  def totalWins
+    sum = data.roulettingale.map {|s| s["wins"]}
+    sum.inject(:+)
+  end
+
   # Calculates profit of all sessions
   #
   # == Usage
@@ -92,25 +114,51 @@ helpers do
   #
   # == Usage
   #
-  #   maxBet
+  #   =maxBet
   #
   def maxBet
-    all = [4,8,4,128,16,16,4,32,4,4,8,16,4,16,8,16,16,8,8,16,32,32,128,16,128]
-    all.max
+    data.roulettingale.map {|s| s["maxBet"]}.max
   end
 
   # Calculates minimum bankroll of all sessions
   #
   # == Usage
   #
-  #   maxBet
+  #   =minBankroll
   #
   def minBankroll
-    all = [7,15,7,255,31,31,7,63,7,7,15,31,7,31,15,31,31,15,15,31,63,63,255,31,255]
-    all.max
+    data.roulettingale.map {|s| s["minBankroll"]}.max
   end
 
+  # Outputs an array of all wins for Chartist
+  #
+  # == Usage
+  #
+  #   =chartistWins
+  #
+  def chartistWins
+    data.roulettingale.map {|s| s["wins"]}
+  end
 
+  # Outputs an array of all total spins for Chartist
+  #
+  # == Usage
+  #
+  #   =chartistSpins
+  #
+  def chartistSpins
+    data.roulettingale.map {|s| s["totalSpins"]}
+  end
+
+  # Outputs an array of all total spins for Chartist
+  #
+  # == Usage
+  #
+  #   =chartistSpins
+  #
+  def chartistBankroll
+    data.roulettingale.map {|s| s["minBankroll"]}
+  end
 
 end
 

@@ -32,7 +32,6 @@
 // -------------------------------------
 
 @import 'components/bucket'
-@import 'components/card'
 @import 'components/cell'
 @import 'components/row'
 @import 'components/well'
@@ -50,11 +49,11 @@
 
 // Third-party style imports, if needed
 
-$tan: #f1e1cb
-$black: #0a100c
-$green: #186929
-$yellow: #fed275
-$red: #b52316
+$yellow: #d8c166
+$greenDark: #588067
+$green: #a4bba2
+$brown: #7a6952
+$red: #c55842
 
 // -------------------------------------
 //   Foundation - Base
@@ -66,6 +65,7 @@ $red: #b52316
 	box-shadow: 0 0 0 1px pink
 
 body
+	background: mix(#fff, $green, 80%)
 	font-family: 'adelle', 'Helvetica Neue'
 	font-weight: 300
 
@@ -74,11 +74,12 @@ h2,
 h3,
 h4,
 h5
+	color: $brown
 	font-family: 'adelle', 'Helvetica Neue'
 	font-weight: 400
 
 .h5, h5
-	color: mix(#000000, $tan, 25%)
+	color: $brown
 	font-size: $b-fontSize
 	@extend .ttu
 	margin-top: -($b-space-s)
@@ -92,53 +93,349 @@ dd
 dd + dt
 	margin-top: $b-space-s
 
-ul
+ul,
+li
 	margin: 0
 	padding: 0
 
 article
 	margin-top: $b-space-l
 
+.tsxl
+	font-size: 200%
+
+.tar
+	text-align: right
+
+.tcgd
+	color: mix(#000, $green, 30%)
+
+.tcyd
+	color: mix(#000, $yellow, 20%)
+
+.tcr
+	color: $red
+
 // -------------------------------------
 //   Inbox
 // -------------------------------------
 
+.wheel
+	display: block
+	margin: $b-space-l auto 0
+	width: 240px
+
 .vat
 	vertical-align: top
 
-.dib + .dib
-	padding-left: $b-space-xl
+table
+	border-collapse: collapse
 
 th
 	font-weight: 400
 	text-align: left
-
-td
-	border: 1px solid #f5f5f5
-	white-space: nowrap
-
-	&:nth-child(odd)
-		background: #fcfcfc
 
 th,
 td
 	padding: $b-space-s
 	text-align: center
 
+article
+	background: mix(#fff, $green, 90%)
+	padding: $b-space
+
 .positive
-	color: $green
+	color: mix(#fff, $greenDark, 20%)
 
 .positive--a
-	color: $green
-	// background-color: rgba($green, 0.5)
-	// color: $tan
-	// text-align: center
+	color: $greenDark
+	border: 2px solid mix(#fff, $greenDark, 20%)
+	border-radius: 10px
+	color: mix(#fff, $greenDark, 20%)
+	display: inline-block
+	font-size: $b-fontSize-xs
+	height: 16px
+	line-height: 18px
+	text-align: center
+	width: 16px
+
+.positive--b
+	background: mix(#fff, $greenDark, 20%)
+	border: 2px solid $greenDark
+	border-radius: 10px
+	color: mix(#fff, $green, 80%)
+	display: inline-block
+	font-size: $b-fontSize-xs
+	height: 20px
+	line-height: 20px
+	text-align: center
+	width: 20px
 
 .negative
-	color: $red
+	color: mix(#fff, $red, 20%)
 
 .negative--a
 	color: $red
-	// background-color: rgba($red, 0.5)
-	// color: $tan
-	// text-align: center
+	background-color: mix(#fff, $red, 20%)
+	border: 2px solid $red
+	border-radius: 10px
+	color: mix(#fff, $green, 80%)
+	display: inline-block
+	font-size: $b-fontSize-xs
+	height: 16px
+	line-height: 21px
+	text-align: center
+	width: 16px
+
+.dollars:before
+	content: "$"
+	font-size: $b-fontSize-s
+	opacity: 0.6
+	position: relative
+	top: -1px
+	vertical-align: top
+
+// *************************************
+//
+//   Card
+//   -> Individual style containers
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .card
+//   / ...
+//
+// *************************************
+
+.card
+	background: mix(#fff, $green, 92%)
+	border: 1px solid mix(#fff, $brown, 70%)
+	padding: $b-space
+	position: relative
+
+// -------------------------------------
+//   Tables
+// -------------------------------------
+
+.striped-v
+
+	th
+		background: mix(#fff, $yellow, 55%)
+		color: $brown
+		border: 1px solid mix(#fff, $green, 80%)
+
+	td
+		border: 1px solid mix(#fff, $green, 80%)
+
+		&:nth-child(odd)
+			background: mix(#fff, $green, 69%)
+
+		&:nth-child(even)
+			background: mix(#fff, $green, 73%)
+
+	&.sub-heads
+		td:first-child
+			background: mix(#fff, $yellow, 55%)
+			color: $brown
+			font-weight: 400
+
+	.bgn
+		background: none
+
+.striped-h
+
+	th
+		background: mix(#fff, $yellow, 55%)
+		border: 1px solid mix(#fff, $green, 80%)
+		color: $brown
+
+	td
+		border: 1px solid mix(#fff, $green, 80%)
+
+	tr:nth-child(even)
+		td
+			background: mix(#fff, $green, 69%)
+
+	tr:nth-child(odd)
+		td
+			background: mix(#fff, $green, 73%)
+
+	.bgn
+		background: none
+
+.bets,
+.spins
+	td
+		padding: $b-space-xs $b-space-s
+
+.spins.golden
+	td
+		opacity: 0.2
+	tr:nth-child(4n + 1)
+		td:nth-child(2)
+			background: mix(#fff, $yellow, 70%)
+			opacity: 1
+	tr:nth-child(4n + 2)
+		td:nth-child(6)
+			background: mix(#fff, $yellow, 70%)
+			opacity: 1
+	tr:nth-child(4n + 3)
+		td:nth-child(3)
+			background: mix(#fff, $yellow, 70%)
+			opacity: 1
+	tr:nth-child(4n + 4)
+		td:nth-child(7)
+			background: mix(#fff, $yellow, 70%)
+			opacity: 1
+
+
+.bordered-h
+	td,
+	th
+		border-bottom: 1px solid mix(#fff, $green, 50%)
+
+	td + td,
+	th + th
+		border-left: 1px solid mix(#fff, $green, 72%)
+
+
+.stakes
+	.positive--b,
+	.negative--a
+		border-radius: 17px
+		font-size: $b-fontSize-s
+		height: 26px
+		line-height: 26px
+		width: 26px
+
+.categories
+	td
+		background: mix(#fff, $green, 69%)
+		line-height: 1
+		width: 35px
+		&:first-child
+			width: 80px
+		+ td
+			border-left: 0
+	.bgn
+		background: none
+
+// -------------------------------------
+//   Meta List
+// -------------------------------------
+
+.meta-list
+	width: 100%
+
+	li
+		display: inline-block
+		font-size: 120%
+		vertical-align: middle
+
+	small
+		color: mix(#fff, $c-text, 25%)
+
+.meta-list-id
+	width: 12%
+
+.meta-list-wins
+	width: 15%
+
+.meta-list-spins
+	width: 15%
+
+.meta-list-maxBet
+	width: 22%
+
+.meta-list-minBankroll
+	width: 22%
+
+.meta-list-action
+	width: 11%
+
+.id
+	background: mix(#fff, $green, 70%)
+	border-radius: 50%
+	color: $green
+	font-size: $b-fontSize-l
+	height: 60px
+	line-height: 60px
+	position: relative
+	width: 60px
+
+	.id-text
+		position: absolute
+		text-align: center
+		width: 100%
+
+// -------------------------------------
+//   Total List
+// -------------------------------------
+
+.total-list
+	margin-top: $b-space
+	line-height: 1.2
+	text-align: center
+	width: 100%
+
+	li
+		border-left: 1px solid mix(#fff, $green, 60%)
+		display: inline-block
+		font-size: 120%
+		vertical-align: middle
+		width: 19.5%
+
+		&:last-child
+			border-right: 1px solid mix(#fff, $green, 60%)
+
+	small
+		color: mix(#fff, $c-text, 25%)
+		font-size: $b-fontSize-s
+
+// -------------------------------------
+//   Toggle Row
+// -------------------------------------
+
+.toggler
+	background: $yellow
+	border: 0
+	border-radius: 50%
+	box-shadow: none
+	color: $brown
+	height: 30px
+	line-height: 28px
+	position: relative
+	transition: all 0.1s linear
+	top: 2px
+	width: 30px
+
+	&:before
+		content: "+"
+
+	&.is-toggled
+		background: mix(#000, $red, 20%)
+		color: #fff
+		&:before
+			content: "-"
+			position: relative
+			top: -1px
+
+	&:focus
+		outline: 0
+
+.is-hidden
+	display: none
+
+.ct-chart .ct-line
+	stroke-width: 2px !important
+
+.ct-chart .ct-series.ct-series-a .ct-line
+	stroke: $red !important
+
+.ct-chart .ct-series.ct-series-a .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-a .ct-area
+	fill: mix(#fff, $red, 20%) !important
+
+.ct-chart .ct-grid
+	stroke: mix(#fff, $green, 60%) !important
