@@ -163,6 +163,95 @@ n0Percentage = ->
 
 n0Percentage()
 
+# -------------------------------------
+#   Percentage All
+# -------------------------------------
+
+percentageAll = ->
+	$('.js-spins-all').each ->
+
+		currentElement = $(this)
+		n118Count = $(this).find('.js-n-118 .positive--a').length
+		n1936Count = $(this).find('.js-n-1936 .positive--a').length
+		evenCount = $(this).find('.js-n-even .positive--a').length
+		oddCount = $(this).find('.js-n-odd .positive--a').length
+		redCount = $(this).find('.js-n-red .positive--a').length
+		blackCount = $(this).find('.js-n-black .positive--a').length
+		n0Count = $(this).find('.js-n-0 .positive--a').length
+
+		$(this).find('.js-n-118-all').html(n118Count)
+		$(this).find('.js-n-1936-all').html(n1936Count)
+		$(this).find('.js-n-even-all').html(evenCount)
+		$(this).find('.js-n-odd-all').html(oddCount)
+		$(this).find('.js-n-red-all').html(redCount)
+		$(this).find('.js-n-black-all').html(blackCount)
+		$(this).find('.js-n-0-all').html(n0Count)
+
+		nAllTotal = (n118Count + n1936Count + evenCount + oddCount + redCount + blackCount + n0Count)
+
+		n118AllRaw = (n118Count / nAllTotal)
+		n118AllPercentage = (n118AllRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-118-prct').html(n118AllPercentage)
+
+		n1936AllRaw = (n1936Count / nAllTotal)
+		n1936AllPercentage = (n1936AllRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-1936-prct').html(n1936AllPercentage)
+
+		evenAllRaw = (evenCount / nAllTotal)
+		evenAllPercentage = (evenAllRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-even-prct').html(evenAllPercentage)
+
+		oddAllRaw = (oddCount / nAllTotal)
+		oddAllPercentage = (oddAllRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-odd-prct').html(oddAllPercentage)
+
+		redAllRaw = (redCount / nAllTotal)
+		redAllPercentage = (redAllRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-red-prct').html(redAllPercentage)
+
+		blackAllRaw = (blackCount / nAllTotal)
+		blackAllPercentage = (blackAllRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-black-prct').html(blackAllPercentage)
+
+		n0AllRaw = (n0Count / nAllTotal)
+		n0AllPercentage = (n0AllRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-0-prct').html(n0AllPercentage)
+
+		vs1181936 = (n118Count + n1936Count + n0Count)
+		vsOddEven = (oddCount + evenCount + n0Count)
+		vsRedBlack = (redCount + blackCount + n0Count)
+		vsn0 = (redCount + blackCount + n0Count)
+
+		n118VsRaw = (n118Count / vs1181936)
+		n118VsPercentage = (n118VsRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-118-vs').html(n118VsPercentage)
+
+		n1936VsRaw = (n1936Count / vs1181936)
+		n1936VsPercentage = (n1936VsRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-1936-vs').html(n1936VsPercentage)
+
+		evenVsRaw = (evenCount / vsOddEven)
+		evenVsPercentage = (evenVsRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-even-vs').html(evenVsPercentage)
+
+		oddVsRaw = (oddCount / vsOddEven)
+		oddVsPercentage = (oddVsRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-odd-vs').html(oddVsPercentage)
+
+		redVsRaw = (redCount / vsRedBlack)
+		redVsPercentage = (redVsRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-red-vs').html(redVsPercentage)
+
+		blackVsRaw = (blackCount / vsRedBlack)
+		blackVsPercentage = (blackVsRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-black-vs').html(blackVsPercentage)
+
+		n0VsRaw = (n0Count / vsn0)
+		n0VsPercentage = (n0VsRaw * 100).toFixed(2) + '%'
+		$(this).find('.js-n-0-vs').html(n0VsPercentage)
+
+percentageAll()
+
 
 compareWagers = ->
 	$('.js-wagers').each ->
@@ -203,6 +292,12 @@ compareWagers = ->
 			$(this).find('.js-vs-red').html("-")
 
 compareWagers()
+
+compareGolden = ->
+	$('.spins').on 'click', ->
+		$(this).toggleClass "golden"
+
+compareGolden()
 
 # -------------------------------------
 #   Toggle
