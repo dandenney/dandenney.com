@@ -216,6 +216,16 @@ compareWagers = ->
 
 compareWagers()
 
+pseudoStreak = ->
+	$('.js-n-118.js-l').parent().addClass 'js-l-118'
+	$('.js-n-1936.js-l').parent().addClass 'js-l-1936'
+	$('.js-n-odd.js-l').parent().addClass 'js-l-odd'
+	$('.js-n-even.js-l').parent().addClass 'js-l-even'
+	$('.js-n-red.js-l').parent().addClass 'js-l-red'
+	$('.js-n-black.js-l').parent().addClass 'js-l-black'
+
+pseudoStreak()
+
 # -------------------------------------
 #   Toggle
 # -------------------------------------
