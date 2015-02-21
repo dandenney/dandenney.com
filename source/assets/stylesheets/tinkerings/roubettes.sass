@@ -1,0 +1,267 @@
+// *************************************
+//
+//   Roulettingale
+//   -> Project styles for roulette and martingale
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .structure[.structure--modifier](.is-state)(.has-context)
+//   .structure-scaffolding
+//
+// *************************************
+
+// .structure
+
+// -------------------------------------
+//   Config
+// -------------------------------------
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+@import 'foundation/reset'
+@import 'foundation/helpers'
+@import 'foundation/config'
+@import 'foundation/base'
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import 'components/bucket'
+@import 'components/cell'
+@import 'components/row'
+@import 'components/well'
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+@import 'structures/header'
+@import 'structures/footer'
+
+// -------------------------------------
+//   Vendor
+// -------------------------------------
+
+// Third-party style imports, if needed
+
+$yellow: #f6febc
+$green: #acbb56
+$black: #0e1123
+$red: #b9323a
+$blue: #144f7e
+
+// -------------------------------------
+//   Foundation - Base
+// -------------------------------------
+
+@import 'foundation/tools'
+
+.troubleshoot
+	box-shadow: 0 0 0 1px pink
+
+body
+	background: #f8f0e6
+	font-family: 'adelle', 'Helvetica Neue'
+	font-weight: 300
+
+h1,
+h2,
+h3,
+h4,
+h5
+	color: $black
+	font-family: 'adelle', 'Helvetica Neue'
+	font-weight: 400
+
+.h5, h5
+	color: $black
+	font-size: $b-fontSize
+	@extend .ttu
+	margin-top: -($b-space-s)
+
+dl,
+dt,
+dd
+	margin: 0
+	padding: 0
+
+dd + dt
+	margin-top: $b-space-s
+
+ul,
+li
+	margin: 0
+	padding: 0
+
+article
+	margin-top: $b-space-l
+
+.tsxl
+	font-size: 200%
+
+.tar
+	text-align: right
+
+.tcgd
+	color: mix(#000, $green, 30%)
+
+.tcyd
+	color: mix(#000, $yellow, 20%)
+
+.tcr
+	color: $red
+
+.js-spins
+	background: #f1e1cc
+
+	td
+		font-size: $b-fontSize-s
+
+		&:nth-child(odd)
+			background: #f6ede0
+
+		&:nth-child(even)
+			background: #f3e7d6
+
+	.negative--a,
+	.positive--a
+		color: #fff
+		border-radius: 50%
+		margin: 0 auto
+
+	.negative--a
+		background: #d18477
+		border: 2px solid mix(#000, #d18477, 10%)
+		height: 10px
+		line-height: 10px
+		width: 10px
+
+	.positive--a
+		border: 2px solid mix(#fff, #86a67f, 50%)
+		height: 10px
+		line-height: 10px
+		width: 10px
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
+
+.categories
+	td
+		background: mix(#fff, $green, 69%)
+		line-height: 1
+		width: 35px
+		&:first-child
+			width: 80px
+		+ td
+			border-left: 0
+	.bgn
+		background: none
+
+.js-l-118 + .js-l-118
+	td:nth-child(2)
+		position: relative
+		&:before
+			background: mix(#000, #d18477, 10%)
+			content: ""
+			height: 12px
+			left: 50%
+			margin-left: -1px
+			position: absolute
+			top: -6px
+			width: 2px
+
+.js-l-1936 + .js-l-1936
+	td:nth-child(5)
+		position: relative
+		&:before
+			background: mix(#000, #d18477, 10%)
+			content: ""
+			height: 12px
+			left: 50%
+			margin-left: -1px
+			position: absolute
+			top: -6px
+			width: 2px
+
+.js-l-even + .js-l-even
+	td:nth-child(3)
+		position: relative
+		&:before
+			background: mix(#000, #d18477, 10%)
+			content: ""
+			height: 12px
+			left: 50%
+			margin-left: -1px
+			position: absolute
+			top: -6px
+			width: 2px
+
+.js-l-odd + .js-l-odd
+	td:nth-child(6)
+		position: relative
+		&:before
+			background: mix(#000, #d18477, 10%)
+			content: ""
+			height: 12px
+			left: 50%
+			margin-left: -1px
+			position: absolute
+			top: -6px
+			width: 2px
+
+.js-l-red + .js-l-red
+	td:nth-child(7)
+		position: relative
+		&:before
+			background: mix(#000, #d18477, 10%)
+			content: ""
+			height: 12px
+			left: 50%
+			margin-left: -1px
+			position: absolute
+			top: -6px
+			width: 2px
+
+.js-l-black + .js-l-black
+	td:nth-child(4)
+		position: relative
+		&:before
+			background: mix(#000, #d18477, 10%)
+			content: ""
+			height: 12px
+			left: 50%
+			margin-left: -1px
+			position: absolute
+			top: -6px
+			width: 2px
+
+
+.js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118
+	td:nth-child(2)
+		background: #b4a899
+
+.js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936
+	td:nth-child(5)
+		background: #b4a899
+
+.js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even
+	td:nth-child(3)
+		background: #b4a899
+
+.js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd
+	td:nth-child(6)
+		background: #b4a899
+
+.js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red
+	td:nth-child(7)
+		background: #b4a899
+
+.js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black
+	td:nth-child(4)
+		background: #b4a899
