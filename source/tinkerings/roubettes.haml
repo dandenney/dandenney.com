@@ -3,7 +3,7 @@ layout: tinkering
 date: February 21, 2015
 title: Roubettes
 css: tinkerings/roulettingale-v2
-js: tinkerings/roulettingale/roulettingale-v2
+js: tinkerings/roulettingale/roubettes
 ---
 
 %section.row
@@ -26,7 +26,7 @@ js: tinkerings/roulettingale/roulettingale-v2
 
 %section.row
 
-	%table.categories.bordered-h.mbl
+	%table.categories.bordered-h.mbl.tss
 		%tr
 			%td.bgn 1-18
 			%td 1
@@ -357,11 +357,11 @@ js: tinkerings/roulettingale/roulettingale-v2
 				%thead
 					%th Number
 					%th 1-18
+					%th Even
+					%th Black
 					%th 19-36
 					%th Odd
-					%th Even
 					%th Red
-					%th Black
 					%th 0/00
 
 				- data.roulettingale.reverse.each do |s|
@@ -371,8 +371,21 @@ js: tinkerings/roulettingale/roulettingale-v2
 
 							%td.tac=sp.number
 
-							%td.tss.js-n-118
-								- if hasThing([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], sp.number)
+							- if hasThing([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], sp.number)
+								%td.tss.js-n-118
+									.positive--a &nbsp;
+							- else
+								%td.tss.js-n-118.js-l
+									.negative--a &nbsp;
+
+							%td.tss.js-n-even
+								- if hasThing([2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36], sp.number)
+									.positive--a &nbsp;
+								- else
+									.negative--a &nbsp;
+
+							%td.tss.js-n-black
+								- if hasThing([2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35], sp.number)
 									.positive--a &nbsp;
 								- else
 									.negative--a &nbsp;
@@ -389,20 +402,8 @@ js: tinkerings/roulettingale/roulettingale-v2
 								- else
 									.negative--a &nbsp;
 
-							%td.tss.js-n-even
-								- if hasThing([2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36], sp.number)
-									.positive--a &nbsp;
-								- else
-									.negative--a &nbsp;
-
 							%td.tss.js-n-red
 								- if hasThing([1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36], sp.number)
-									.positive--a &nbsp;
-								- else
-									.negative--a &nbsp;
-
-							%td.tss.js-n-black
-								- if hasThing([2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35], sp.number)
 									.positive--a &nbsp;
 								- else
 									.negative--a &nbsp;

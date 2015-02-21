@@ -217,16 +217,6 @@ compareWagers = ->
 compareWagers()
 
 # -------------------------------------
-#   Highlight the Golden betting system
-# -------------------------------------
-
-compareGolden = ->
-	$('.spins').on 'click', ->
-		$(this).toggleClass "golden"
-
-compareGolden()
-
-# -------------------------------------
 #   Toggle
 # -------------------------------------
 
@@ -234,8 +224,10 @@ toggleThing = ->
 	$('.js-toggler').on 'click', ->
 		$(this).toggleClass('is-toggled')
 		$(this).parent().parent().next().toggleClass('is-hidden')
+
 toggleThing()
 
 showFirst = ->
 	$('.session:first-of-type').find('.js-toggler').trigger('click')
+
 showFirst()
