@@ -66,7 +66,7 @@ $blue: #144f7e
 
 body
 	background: #f8f0e6
-	font-family: 'adelle', 'Helvetica Neue'
+	font-family: 'proxima-nova-alt-ext-cond', 'Helvetica Neue'
 	font-weight: 300
 
 h1,
@@ -75,7 +75,7 @@ h3,
 h4,
 h5
 	color: $black
-	font-family: 'adelle', 'Helvetica Neue'
+	font-family: 'proxima-nova-alt-ext-cond', 'Helvetica Neue'
 	font-weight: 400
 
 .h5, h5
@@ -83,6 +83,9 @@ h5
 	font-size: $b-fontSize
 	@extend .ttu
 	margin-top: -($b-space-s)
+
+p
+	font-family: 'Helvetica Neue'
 
 dl,
 dt,
@@ -117,16 +120,15 @@ article
 	color: $red
 
 .js-spins
-	background: #f1e1cc
+	background: #f2e5d3
 
 	td
 		font-size: $b-fontSize-s
-
-		&:nth-child(odd)
-			background: #f6ede0
+		padding: $b-space-xs 0
+		width: 12.5%
 
 		&:nth-child(even)
-			background: #f3e7d6
+			background: #f6ede0
 
 	.negative--a,
 	.positive--a
@@ -137,24 +139,34 @@ article
 	.negative--a
 		background: #d18477
 		border: 2px solid mix(#000, #d18477, 10%)
-		height: 10px
-		line-height: 10px
-		width: 10px
+		height: 14px
+		line-height: 14px
+		width: 14px
 
 	.positive--a
 		border: 2px solid mix(#fff, #86a67f, 50%)
-		height: 10px
-		line-height: 10px
-		width: 10px
+		height: 14px
+		line-height: 14px
+		width: 14px
 
 // -------------------------------------
 //   Inbox
 // -------------------------------------
 
-.categories
+.striped-h
+
+	th
+		border: 1px solid #f2e5d3
+
 	td
-		background: mix(#fff, $green, 69%)
-		line-height: 1
+		border: 1px solid #f2e5d3
+
+.categories
+	background: #f6ede0
+	td
+		background: #f2e5d3
+		height: 35px
+		text-align: center
 		width: 35px
 		&:first-child
 			width: 80px
@@ -165,103 +177,173 @@ article
 
 .js-l-118 + .js-l-118
 	td:nth-child(2)
-		position: relative
-		&:before
-			background: mix(#000, #d18477, 10%)
-			content: ""
-			height: 12px
-			left: 50%
-			margin-left: -1px
-			position: absolute
-			top: -6px
-			width: 2px
+		.negative--a
+			position: relative
+			&:before
+				background: mix(#000, #d18477, 10%)
+				content: ""
+				height: 12px
+				left: 50%
+				margin-left: -1px
+				position: absolute
+				top: -14px
+				width: 2px
 
 .js-l-1936 + .js-l-1936
 	td:nth-child(5)
-		position: relative
-		&:before
-			background: mix(#000, #d18477, 10%)
-			content: ""
-			height: 12px
-			left: 50%
-			margin-left: -1px
-			position: absolute
-			top: -6px
-			width: 2px
+		.negative--a
+			position: relative
+			&:before
+				background: mix(#000, #d18477, 10%)
+				content: ""
+				height: 12px
+				left: 50%
+				margin-left: -1px
+				position: absolute
+				top: -14px
+				width: 2px
 
 .js-l-even + .js-l-even
 	td:nth-child(3)
-		position: relative
-		&:before
-			background: mix(#000, #d18477, 10%)
-			content: ""
-			height: 12px
-			left: 50%
-			margin-left: -1px
-			position: absolute
-			top: -6px
-			width: 2px
+		.negative--a
+			position: relative
+			&:before
+				background: mix(#000, #d18477, 10%)
+				content: ""
+				height: 12px
+				left: 50%
+				margin-left: -1px
+				position: absolute
+				top: -14px
+				width: 2px
 
 .js-l-odd + .js-l-odd
 	td:nth-child(6)
-		position: relative
-		&:before
-			background: mix(#000, #d18477, 10%)
-			content: ""
-			height: 12px
-			left: 50%
-			margin-left: -1px
-			position: absolute
-			top: -6px
-			width: 2px
+		.negative--a
+			position: relative
+			&:before
+				background: mix(#000, #d18477, 10%)
+				content: ""
+				height: 12px
+				left: 50%
+				margin-left: -1px
+				position: absolute
+				top: -14px
+				width: 2px
 
 .js-l-red + .js-l-red
 	td:nth-child(7)
-		position: relative
-		&:before
-			background: mix(#000, #d18477, 10%)
-			content: ""
-			height: 12px
-			left: 50%
-			margin-left: -1px
-			position: absolute
-			top: -6px
-			width: 2px
+		.negative--a
+			position: relative
+			&:before
+				background: mix(#000, #d18477, 10%)
+				content: ""
+				height: 12px
+				left: 50%
+				margin-left: -1px
+				position: absolute
+				top: -14px
+				width: 2px
 
 .js-l-black + .js-l-black
 	td:nth-child(4)
-		position: relative
-		&:before
-			background: mix(#000, #d18477, 10%)
-			content: ""
-			height: 12px
-			left: 50%
-			margin-left: -1px
-			position: absolute
-			top: -6px
-			width: 2px
+		.negative--a
+			position: relative
+			&:before
+				background: mix(#000, #d18477, 10%)
+				content: ""
+				height: 12px
+				left: 50%
+				margin-left: -1px
+				position: absolute
+				top: -14px
+				width: 2px
 
 
 .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118
 	td:nth-child(2)
-		background: #b4a899
+		background: mix(#000, #d18477, 10%)
+		.negative--a
+			background: #f6ede1
 
 .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936
 	td:nth-child(5)
-		background: #b4a899
+		background: mix(#000, #d18477, 10%)
+		.negative--a
+			background: #f6ede1
 
 .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even
 	td:nth-child(3)
-		background: #b4a899
+		background: mix(#000, #d18477, 10%)
+		.negative--a
+			background: #f6ede1
 
 .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd
 	td:nth-child(6)
-		background: #b4a899
+		background: mix(#000, #d18477, 10%)
+		.negative--a
+			background: #f6ede1
 
 .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red
 	td:nth-child(7)
-		background: #b4a899
+		background: mix(#000, #d18477, 10%)
+		.negative--a
+			background: #f6ede1
 
 .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black
 	td:nth-child(4)
-		background: #b4a899
+		background: mix(#000, #d18477, 10%)
+		.negative--a
+			background: #f6ede1
+
+.js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118 + .js-l-118
+	td:nth-child(2)
+		background: #f6ede1
+		border-color: mix(#000, #d18477, 20%)
+		&:before
+			background: mix(#000, #d18477, 20%)
+
+.js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936 + .js-l-1936
+	td:nth-child(5)
+		background: mix(#000, #d18477, 20%)
+		.negative--a
+			background: #f6ede1
+			border-color: mix(#000, #d18477, 20%)
+			&:before
+				background: mix(#000, #d18477, 20%)
+
+.js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even + .js-l-even
+	td:nth-child(3)
+		background: mix(#000, #d18477, 20%)
+		.negative--a
+			background: #f6ede1
+			border-color: mix(#000, #d18477, 20%)
+			&:before
+				background: mix(#000, #d18477, 20%)
+
+.js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd + .js-l-odd
+	td:nth-child(6)
+		background: mix(#000, #d18477, 20%)
+		.negative--a
+			background: #f6ede1
+			border-color: mix(#000, #d18477, 20%)
+			&:before
+				background: mix(#000, #d18477, 20%)
+
+.js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red + .js-l-red
+	td:nth-child(7)
+		background: mix(#000, #d18477, 20%)
+		.negative--a
+			background: #f6ede1
+			border-color: mix(#000, #d18477, 20%)
+			&:before
+				background: mix(#000, #d18477, 20%)
+
+.js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black + .js-l-black
+	td:nth-child(4)
+		background: mix(#000, #d18477, 20%)
+		.negative--a
+			background: #f6ede1
+			border-color: mix(#000, #d18477, 20%)
+			&:before
+				background: mix(#000, #d18477, 20%)
