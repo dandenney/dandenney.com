@@ -1,0 +1,1 @@
+(function(){var t,n,s;t=function(){return $(".js-result.js-l").parent().addClass("js-l")},t(),s=function(){return $(".js-toggler").on("click",function(){return $(this).toggleClass("is-toggled"),$(this).parent().parent().next().toggleClass("is-hidden")})},s(),(n=function(){return $(".session:first-of-type").find(".js-toggler").trigger("click")})()}).call(this);
