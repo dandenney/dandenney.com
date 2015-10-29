@@ -170,7 +170,7 @@
             </td>
           </tr>
           <tr>
-            <td class='tal'>Beau Rivage ($10 - $15,000)</td>
+            <td class='tal'>Beau Rivage ($10 - $10,000)</td>
             <td>
               <div class='positive--b'>&#10003;</div>
             </td>
@@ -184,13 +184,13 @@
               <div class='positive--b'>&#10003;</div>
             </td>
             <td>
-              <div class='positive--b'>&#10003;</div>
+              <div class='negative--a'>&#10005;</div>
             </td>
             <td>
-              <div class='positive--b'>&#10003;</div>
+              <div class='negative--a'>&#10005;</div>
             </td>
             <td>
-              <div class='positive--b'>&#10003;</div>
+              <div class='negative--a'>&#10005;</div>
             </td>
             <td>
               <div class='negative--a'>&#10005;</div>

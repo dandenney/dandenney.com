@@ -5,10 +5,45 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-10-22T20:00:00-04:00</updated>
+  <updated>2015-08-28T20:00:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>The Email Design Conference 2015</title>
+    <link rel="alternate" href="http://blog.url.com/posts/conferences/tedc-15-boston"/>
+    <id>http://blog.url.com/posts/conferences/tedc-15-boston</id>
+    <published>2015-08-28T20:00:00-04:00</published>
+    <updated>2015-08-29T22:53:28-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;iframe src="https://player.vimeo.com/video/137720165?color=b51f24&amp;byline=0" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p class='mtm'&gt;
+  I'm headed home from an amazing time at this year's
+  &lt;a href="https://litmus.com/conference/boston"&gt;Email Design Conference in Boston&lt;/a&gt;, organized by the wonderful people at &lt;a href="https://litmus.com"&gt;Litmus&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  Having heard so many great things about the event, I had high hopes that were blown away. The Litmus team puts so much love and attention into the organization and details, making it feel both professional and personal all at once. I'm not sure of the final count but I'd guess there was between 400-500 people overall, but it felt completely welcoming and friendly. There was a lot going on with 2 tracks and some additional events, but you always knew where and when everything was because they made sure you could get the schedule in 4-5 ways at any time.
+&lt;/p&gt;
+&lt;h2&gt;Presentations&lt;/h2&gt;
+&lt;p&gt;
+  There was a lot of thought and planning put into the chosen presentations and their order/pairing in the tracks. There was a wealth of knowledge shared and a great balance between what should be divided into breakout sessions and what everyone should be together for. I met a lot of people who's mind were blown with all of the information that they learned.
+&lt;/p&gt;
+&lt;h2&gt;Emphasis on Community&lt;/h2&gt;
+&lt;p&gt;
+  While most conferences are filled with information, this one is special in that they found ways to ensure that we were talking to each other. There were plenty of breaks allowing time for meeting people, but the addition of the group discussions during the workshops and the “email speed dating” sessions made it very comfortable for people to talk with speakers. I met a ton of nice people with interesting backgrounds and issues in building emails. The talks were awesome, but this was my favorite part.
+&lt;/p&gt;
+&lt;h2&gt;Thank You to Litmus&lt;/h2&gt;
+&lt;p&gt;
+  I want to say a giant THANK YOU to Litmus not only for putting this event together, but for letting me be a part of it. I was honored to get to share some of my email experience and the speed dating sessions let me really talk through some things with people for when they get back to work. I hope everyone takes me up on my offer to ping me with their templates so we can chat about setting up snippets.
+&lt;/p&gt;
+&lt;h2&gt;Thank you to everyone&lt;/h2&gt;
+&lt;p&gt;
+  THANK YOU to all of the attendees and speakers for making this a special event. I hope to keep in touch and see everyone next year!
+&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Front-End Conf Lives!</title>
     <link rel="alternate" href="http://blog.url.com/posts/conferences/front-end-conf-lives"/>
@@ -285,60 +320,6 @@ $ -&amp;gt;
   &lt;a href='http://frontendconf.com'&gt;frontendconf.com&lt;/a&gt;
 &lt;/p&gt;
 &lt;img alt='photo of The Great Discontent package' src='/assets/images/posts/conferences/no-sleep-til-portland/tgd.jpg'&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Front-End Design Conference Finales</title>
-    <link rel="alternate" href="http://blog.url.com/posts/conferences/front-end-conf-finales"/>
-    <id>http://blog.url.com/posts/conferences/front-end-conf-finales</id>
-    <published>2014-06-08T20:00:00-04:00</published>
-    <updated>2015-01-17T14:39:44-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;img width="100%" src="assets/images/posts/conferences/front-end-conf-finales/dan-cherrie-stage.svg" /&gt;
-&lt;div class='row'&gt;
-  &lt;div class='cell cell--s well'&gt;
-    &lt;p&gt;
-      Running the Front-End Design Conference since 2009 has been amazing. We have met so many wonderful people, formed amazing friendships, and had so much fun along the way. As the saying goes, though, "all good things must come to an end". These two events in
-      &lt;a href='http://frontenddesignconference.com/st-pete'&gt;St. Pete&lt;/a&gt;
-      and
-      &lt;a href='http://frontenddesignconference.com/portland'&gt;Portland&lt;/a&gt;
-      will be the last of our Front-End Design Conferences.
-    &lt;/p&gt;
-    &lt;h2&gt;"Why?"&lt;/h2&gt;
-    &lt;p&gt;A lot has changed over the past five years. When we first started the conference, we were both working in-office jobs. Traveling wasn't an easy thing to do for us and there were almost no events in Florida. In fact, there weren't too many events to choose from in the U.S.&lt;/p&gt;
-    &lt;p&gt;Since traveling is now Cherrie's job, it has become a regular part of our lives. We love it, but it is hard to keep up with anything outside of our jobs.&lt;/p&gt;
-    &lt;p&gt;
-      The conference scene has changed greatly since 2009. There are so many conferences to choose from, with many of them expanding to Florida. Coming up this year there is
-      &lt;a href="http://convergefl.com"&gt;ConvergeFL&lt;/a&gt;, &lt;a href="http://aneventapart.com/event/orlando-2014"&gt;An Event Apart&lt;/a&gt;, &lt;a href="https://bdconf.com/events/orlando-2014"&gt;Breaking Development&lt;/a&gt;, and &lt;a href="http://twitter.com/norcross"&gt;Norcross&lt;/a&gt; is bringing a &lt;a href="http://2014.tampa.wordcamp.org"&gt;WordCamp&lt;/a&gt; to Tampa. We have made a lot of conference organizer friends and I know some of them won't bring events down in this area in order to not "compete". If we step aside, it'll open the doors to new events in the area.
-    &lt;/p&gt;
-    &lt;h2&gt;Passing the Torch&lt;/h2&gt;
-    &lt;p&gt;
-      There's also the opportunity for anyone reading this to decide to run one. Dream up an event you'd like, do some research, and make it happen! It wasn't local, but
-      &lt;a href='https://twitter.com/erikstmartin'&gt;Erik St. Martin&lt;/a&gt;
-      wanted to run a
-      &lt;a href='http://gophercon.com'&gt;Go conference&lt;/a&gt;
-      and they had to stop selling tickets at like 700 people.
-    &lt;/p&gt;
-    &lt;p&gt;
-      If you'd like something already rolling,
-      &lt;a href='http://webafternoon.com/host'&gt;A Web Afternoon&lt;/a&gt;
-      has a sort of franchising option where they share their system and help with planning and execution.
-    &lt;/p&gt;
-    &lt;h2&gt;We're not done running events...&lt;/h2&gt;
-    &lt;p&gt;We will still run some events, just with a smaller scale and focus. Working with &lt;a href="http://codeschool.com"&gt;Code School&lt;/a&gt; the past couple of years has emphasized my love for "learning by doing", so I'm wanting to be involved in some smaller things with hands-on learning. Cherrie loves running events and has seen people who could benefit from them in developing countries.&lt;/p&gt;
-    &lt;h2&gt;Come celebrate with us!&lt;/h2&gt;
-    &lt;p&gt;
-      In talking about this, the hardest part of the decision is knowing that we won't have this annual couple of days where we get to see so many people that we love. We originally started this out of my love for the community, but it immediately became a family event. My and Cherrie's family run it every year and it has become a part of their lives. Cherrie is especially sad because she has met so many amazing people and the community has embraced her even though she's not "technically" a designer/developer. So, make sure you come out and party with us for these last 2 confs! In fact, we'll start selling tickets to
-      &lt;a href='http://frontenddesignconference.com/portland'&gt;Portland&lt;/a&gt;
-      right now, even though all of the details aren't ironed out yet.
-    &lt;/p&gt;
-    &lt;p&gt;
-      &lt;img class="db mhc" width="350" height="284" src="assets/images/posts/conferences/front-end-conf-finales/minion-kiss.gif" /&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 </content>
   </entry>
 </feed>
