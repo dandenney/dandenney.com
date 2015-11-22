@@ -13,6 +13,7 @@
     <script>try{Typekit.load();}catch(e){}</script>
 
     = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'vendor/prism'
 
   %body{ class: page_classes }
 
@@ -29,6 +30,6 @@
     = partial 'partials/footer'
 
     / = javascript_include_tag  'vendor'
-    / = javascript_include_tag  'application'
+    = javascript_include_tag  'vendor/prism'
 
     = partial 'partials/analytics'
