@@ -7,8 +7,8 @@
     <!-- Favicon -->
     <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
     <!-- Typekit -->
-    <script src="//use.typekit.net/ddg5xff.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+    <script src="https://use.typekit.net/ddg5xff.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Attitude Reflect Leadership, Captain</title>
     <link href='/assets/javascripts/vendor/chartist/dist/chartist.min.css' rel='stylesheet'>

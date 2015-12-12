@@ -27,7 +27,9 @@
       <div class='cell cell--s'>
         <article class='well'>
           <h1>The Email Design Conference 2015</h1>
-          <iframe src="https://player.vimeo.com/video/137720165?color=b51f24&byline=0" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div class='video-wrapper'>
+            <iframe src="https://player.vimeo.com/video/137720165?color=b51f24&byline=0" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
           <p class='mtm'>
             I'm headed home from an amazing time at this year's
             <a href="https://litmus.com/conference/boston">Email Design Conference in Boston</a>, organized by the wonderful people at <a href="https://litmus.com">Litmus</a>.

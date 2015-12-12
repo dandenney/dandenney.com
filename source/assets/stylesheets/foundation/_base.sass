@@ -18,7 +18,7 @@ body
   font-weight: 400
 
   +respond-to($g-l)
-    font-size: 112.5%
+    font-size: 125%
 
 // -------------------------------------
 //   Block Content
@@ -46,17 +46,26 @@ h4, .h4
   font-family: $b-fontFamily-heading
   font-weight: 600
   line-height: 1.5
-  margin-bottom: $b-space-xs
+  margin-bottom: $b-space-xxs
   margin-top: 0
 
 h1, .h1
-  font-size: 200%
+  font-size: 140%
+
+  +respond-to($g-l)
+    font-size: 200%
 
 h2, .h2
-  font-size: 150%
+  font-size: 130%
+
+  +respond-to($g-l)
+    font-size: 150%
 
 h3, .h3
-  font-size: 125%
+  font-size: 120%
+
+  +respond-to($g-l)
+    font-size: 125%
 
 h4, .h4
   font-size: 110%

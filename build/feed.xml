@@ -14,11 +14,13 @@
     <link rel="alternate" href="http://blog.url.com/posts/conferences/tedc-15-boston"/>
     <id>http://blog.url.com/posts/conferences/tedc-15-boston</id>
     <published>2015-08-28T20:00:00-04:00</published>
-    <updated>2015-08-29T22:53:28-04:00</updated>
+    <updated>2015-12-11T17:19:16-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;iframe src="https://player.vimeo.com/video/137720165?color=b51f24&amp;byline=0" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    <content type="html">&lt;div class='video-wrapper'&gt;
+  &lt;iframe src="https://player.vimeo.com/video/137720165?color=b51f24&amp;byline=0" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;p class='mtm'&gt;
   I'm headed home from an amazing time at this year's
   &lt;a href="https://litmus.com/conference/boston"&gt;Email Design Conference in Boston&lt;/a&gt;, organized by the wonderful people at &lt;a href="https://litmus.com"&gt;Litmus&lt;/a&gt;.
@@ -49,7 +51,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/conferences/front-end-conf-lives"/>
     <id>http://blog.url.com/posts/conferences/front-end-conf-lives</id>
     <published>2014-10-22T20:00:00-04:00</published>
-    <updated>2015-01-16T23:39:45-05:00</updated>
+    <updated>2015-12-11T17:19:16-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -80,7 +82,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/general/give-back"/>
     <id>http://blog.url.com/posts/general/give-back</id>
     <published>2014-10-06T20:00:00-04:00</published>
-    <updated>2015-01-16T22:31:59-05:00</updated>
+    <updated>2015-12-11T17:19:16-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -116,7 +118,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/experiment-personal-json-based-api"/>
     <id>http://blog.url.com/posts/front-end-dev/experiment-personal-json-based-api</id>
     <published>2014-08-29T20:00:00-04:00</published>
-    <updated>2015-01-16T20:08:57-05:00</updated>
+    <updated>2015-12-11T17:19:16-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -236,7 +238,7 @@ $ -&amp;gt;
     <link rel="alternate" href="http://blog.url.com/posts/conferences/thank-you"/>
     <id>http://blog.url.com/posts/conferences/thank-you</id>
     <published>2014-08-27T20:00:00-04:00</published>
-    <updated>2015-01-16T20:11:28-05:00</updated>
+    <updated>2015-12-11T17:19:16-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -291,7 +293,7 @@ $ -&amp;gt;
     <link rel="alternate" href="http://blog.url.com/posts/conferences/no-sleep-til-brooklyn"/>
     <id>http://blog.url.com/posts/conferences/no-sleep-til-brooklyn</id>
     <published>2014-07-20T20:00:00-04:00</published>
-    <updated>2015-01-16T20:10:33-05:00</updated>
+    <updated>2015-12-11T17:19:16-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
