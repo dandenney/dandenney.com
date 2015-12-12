@@ -30,7 +30,7 @@
 //   Foundation - Tools
 // -------------------------------------
 
-// @import 'foundation/tools'
+@import 'foundation/tools'
 
 // -------------------------------------
 //   Inbox
@@ -61,3 +61,37 @@
 
 //.ct-chart .ct-series.ct-series-a .ct-point
 //	stroke: $c-subdue
+
+.split
+
+  +respond-to($g-m)
+
+    display: flex
+
+.split-item
+
+  +respond-to($g-m)
+
+    flex: 0 1 50%
+
+.split--center
+
+  +respond-to($g-m)
+    align-items: center
+
+.trio
+
+  +respond-to($g-m)
+
+    display: flex
+
+.trio-item
+
+  +respond-to($g-m)
+
+    flex: 0 1 33.333%
+
+.trio--center
+
+  +respond-to($g-m)
+    align-items: center
