@@ -6,32 +6,15 @@
 // *************************************
 
 // -------------------------------------
-//   @font-face
-// -------------------------------------
-
-// ----- Open Sans ----- //
-
-// +font-face('OpenSans', 'OpenSans')
-// +font-face('OpenSans', 'OpenSansBold', bold)
-// +font-face('OpenSans', 'OpenSansItalic', normal, italic)
-
-// -------------------------------------
 //   Colors
 // -------------------------------------
 
 // ----- Palette ----- //
 
-$shadyLady: #a5a5a5
-
-// ----- Base ----- //
-
-$c-background-invert: #fff
-$c-background: #282834
-$c-border: lighten($shadyLady, 20%)
-$c-highlight: #b51f24
-$c-subdue: lighten($shadyLady, 10%)
-$c-text-invert: #fff
-$c-text: #535353
+$c-davyGrey: #535353 // Dark grey
+$c-firebrick: #b51f24 // dan denney red
+$c-shadyLady: #a5a5a5 // light gray
+$c-white: #ffffff // just to list all colors in the site
 
 // ----- Components ----- //
 
@@ -50,8 +33,8 @@ $c-text: #535353
 $b-borderRadius: 3px
 $b-borderStyle: solid
 $b-borderWidth: 1px
-$b-border: $b-borderWidth $b-borderStyle $c-border
-$b-boxShadow: 0 2px 0 rgba($c-text, 0.25)
+$b-border: $b-borderWidth $b-borderStyle lighten($c-shadyLady, 10%)
+$b-boxShadow: 0 2px 0 rgba($c-davyGrey, 0.25)
 
 // ----- Typography ----- //
 
