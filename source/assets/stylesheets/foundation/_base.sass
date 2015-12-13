@@ -83,7 +83,7 @@ a
   transition: color 0.3s linear
 
   &::before, &::after
-    background: lighten($c-firebrick, 15%)
+    background: $c-shadyLady
     content: ''
     height: 1px
     left: 0
@@ -111,11 +111,6 @@ a
   &:hover::before, &:focus::before
     opacity: 1
     transform: translateY(-3px)
-
-  // &:hover,
-  // &:focus
-  //   color: lighten($c-firebrick, 15%)
-
 
 strong
   font-weight: 900
