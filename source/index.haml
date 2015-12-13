@@ -10,53 +10,56 @@ js: home
 
   .split-item.pbl_m.pll_m.ptl_m
 
-    %h1.h2
+    %h1.h2.fitText--17
       I'm a front-end dev at <a href='http://codeschool.com'>Code School</a>.
 
     %p.twl
       That title has different meanings depending on who you ask. To me, it means that my primary role is writing HTML, CSS, and JavaScript to build things for the web. Within projects, I work with other people for project management, user experience, design, and development.
 
-%section.row
+%section.row.row--a
 
-  %h2 On this site
+  .well
 
-  .trio.trio--center
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 72.2" style="margin-bottom: -6em;"><style>.ots-st0{fill:#fff;} .ots-st1{font-family: 'canada-type-gibson'; font-weight: 700;} .ots-st2{font-size:99.5991px;}</style><text transform="translate(0 70.462)" class="ots-st0 ots-st1 ots-st2">ON THIS SITE</text></svg>
 
-    .trio-item
+    .trio.trio--center
 
-      %h2
-        %span{ style: 'font-size: 500%; font-weight: 700' }= blog('posts').articles.count
-        =link_to 'Posts', '/posts', class: 'tss'
+      .trio-item
 
-      - blog('posts').articles[0...1].each_with_index do | article,i |
-        %p
-          %span.db.tcs.tss Most recent:
-          = link_to article.title, article
-          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+        %h2.tac.mbs
+          .lh1.tsxxxl.twb= blog('posts').articles.count
+          =link_to 'Posts', '/posts', class: 'lh1 tsxxl'
 
-    .trio-item
+        - blog('posts').articles[0...1].each_with_index do | article,i |
+          .row
+            %p.bc-white.paxs.tac
+              %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
+              = link_to article.title, article
 
-      %h2
-        %span{ style: 'font-size: 500%; font-weight: 700' }= blog('blips').articles.count
-        =link_to 'Blips', '/blips', class: 'tss'
+      .trio-item
 
-      - blog('blips').articles[0...1].each_with_index do | article,i |
-        %p
-          %span.db.tcs.tss Most recent:
-          = link_to article.title, article
-          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+        %h2.tac.mbs
+          .lh1.tsxxxl.twb= blog('blips').articles.count
+          =link_to 'Blips', '/blips', class: 'lh1 tsxxl'
 
-    .trio-item
+        - blog('blips').articles[0...1].each_with_index do | article,i |
+          .row
+            %p.bc-white.paxs.tac
 
-      %h2
-        %span{ style: 'font-size: 500%; font-weight: 700' }= blog('tinkerings').articles.count
-        =link_to 'Tinkerings', '/tinkerings', class: 'tss'
+              %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
+              = link_to article.title, article
 
-      - blog('tinkerings').articles[0...1].each_with_index do | article,i |
-        %p
-          %span.db.tcs.tss Most recent:
-          = link_to article.title, article
-          %span.tcs.tsxs.twn= article.date.strftime('%b %e')
+      .trio-item
+
+        %h2.tac.mbs
+          .lh1.tsxxxl.twb= blog('tinkerings').articles.count
+          =link_to 'Tinkerings', '/tinkerings', class: 'lh1 tsxxl'
+
+        - blog('tinkerings').articles[0...1].each_with_index do | article,i |
+          .row
+            %p.bc-white.paxs.tac
+              %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
+              = link_to article.title, article
 
 -# %section.bch.oh
 -#   .g
