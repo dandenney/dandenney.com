@@ -18,61 +18,74 @@ js: home
 
 %section.row.row--a
 
-  .well
+  .well.por
 
-    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 72.2" style="margin-bottom: -6em;"><style>.ots-st0{fill:#fff;} .ots-st1{font-family: 'canada-type-gibson'; font-weight: 700;} .ots-st2{font-size:99.5991px;}</style><text transform="translate(0 70.462)" class="ots-st0 ots-st1 ots-st2">ON THIS SITE</text></svg>
+    .title-bg
 
-    .trio.trio--center
+      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 72.2"><style>.ots-st0{fill:#fff;} .ots-st1{font-family: 'canada-type-gibson'; font-weight: 700;} .ots-st2{font-size:99.5991px;}</style><text transform="translate(0 70.462)" class="ots-st0 ots-st1 ots-st2">ON THIS SITE</text></svg>
 
-      .trio-item
+    .ptxl.por.z1
 
-        %h2.tac.mbs
-          .lh1.tsxxxl.twb= blog('posts').articles.count
-          =link_to 'Posts', '/posts', class: 'lh1 tsxxl'
+      .trio.trio--center
 
-        - blog('posts').articles[0...1].each_with_index do | article,i |
-          .row
-            %p.bc-white.paxs.tac
-              %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
-              = link_to article.title, article
+        .trio-item
 
-      .trio-item
+          %h2.tac.mbs
+            .lh1.tsxxxl.twb= blog('posts').articles.count
+            =link_to 'Posts', '/posts', class: 'lh1 tsxxl'
 
-        %h2.tac.mbs
-          .lh1.tsxxxl.twb= blog('blips').articles.count
-          =link_to 'Blips', '/blips', class: 'lh1 tsxxl'
+          - blog('posts').articles[0...1].each_with_index do | article,i |
+            .row
+              %p.bc-white.paxs.tac
+                %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
+                = link_to article.title, article
 
-        - blog('blips').articles[0...1].each_with_index do | article,i |
-          .row
-            %p.bc-white.paxs.tac
+        .trio-item
 
-              %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
-              = link_to article.title, article
+          %h2.tac.mbs
+            .lh1.tsxxxl.twb= blog('blips').articles.count
+            =link_to 'Blips', '/blips', class: 'lh1 tsxxl'
 
-      .trio-item
+          - blog('blips').articles[0...1].each_with_index do | article,i |
+            .row
+              %p.bc-white.paxs.tac
 
-        %h2.tac.mbs
-          .lh1.tsxxxl.twb= blog('tinkerings').articles.count
-          =link_to 'Tinkerings', '/tinkerings', class: 'lh1 tsxxl'
+                %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
+                = link_to article.title, article
 
-        - blog('tinkerings').articles[0...1].each_with_index do | article,i |
-          .row
-            %p.bc-white.paxs.tac
-              %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
-              = link_to article.title, article
+        .trio-item
 
-%section.row.split.split--center
+          %h2.tac.mbs
+            .lh1.tsxxxl.twb= blog('tinkerings').articles.count
+            =link_to 'Tinkerings', '/tinkerings', class: 'lh1 tsxxl'
 
-  .split-item.pbl_m.prl_m.ptl_m.tac
+          - blog('tinkerings').articles[0...1].each_with_index do | article,i |
+            .row
+              %p.bc-white.paxs.tac
+                %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
+                = link_to article.title, article
 
-    =image_tag 'home/logo-code-school-ps.svg', width: '50%'
+%section.row
 
-    %p.dib.ptxs
-      At Code School, I work on <a href="https://www.codeschool.com/">codeschool.com</a>, which includes course UIs on what we call Campus. Learning how to build our HTML emails led to me helping teach a course as well: <a href="https://www.codeschool.com/courses/unmasking-html-emails">Unmasking HTML Emails</a>.
+  .well.well--l.por
 
-  .split-item.pbl_m.pll_m.ptl_m
+    .title-bg
+      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 608.7 137.6"><style>.work-st0{fill:#F5F5F5;} .work-st1{font-family:&apos;Gibson-Bold&apos;;} .work-st2{font-size:192.9441px;}</style><text transform="translate(1.928 133.606)" class="work-st0 work-st1 work-st2">WORK</text></svg>
 
-    =image_tag 'home/screenshot-unmasking-html-emails.png'
+    .ptxl.por.z1
+
+      .split.split--center
+
+        .split-item.pbl_m.prl_m.ptl_m.tac
+
+          =image_tag 'home/logo-code-school-ps.svg', width: '50%'
+
+          %p.dib.ptxs.tal.tac_m
+            At Code School I work on <a href="https://www.codeschool.com/">codeschool.com</a>, which includes course UIs on what we call Campus. Learning how to build our HTML emails led to me helping teach a course as well: <a href="https://www.codeschool.com/courses/unmasking-html-emails">Unmasking HTML Emails</a>.
+
+        .split-item.pbl_m.pll_m.ptl_m
+
+          =image_tag 'home/screenshot-unmasking-html-emails.png'
 
 -# %section.bch.oh
 -#   .g
