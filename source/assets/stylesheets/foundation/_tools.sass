@@ -9,12 +9,8 @@
 //   Background
 // -------------------------------------
 
-.bch
-  background: $c-highlight
-.bci
-  background: $c-background-invert
-.bcs
-  background: $c-subdue
+.bc-white
+  background: $c-white
 
 // -------------------------------------
 //   Display
@@ -28,6 +24,13 @@
   display: inline-block
 .dn
   display: none
+
+// -------------------------------------
+//   Line Height
+// -------------------------------------
+
+.lh1
+  line-height: 1
 
 // -------------------------------------
 //   Margins
@@ -132,6 +135,11 @@
 .paxl
   padding: $b-space-xl
 
++respond-to($g-m)
+
+  .pal_m
+    padding: $b-space-l
+
 // ----- Bottom ----- //
 
 .pbf
@@ -147,6 +155,11 @@
 .pbxl
   padding-bottom: $b-space-xl
 
++respond-to($g-m)
+
+  .pbl_m
+    padding-bottom: $b-space-l
+
 // ----- Left ----- //
 
 .plf
@@ -160,6 +173,11 @@
 .pll
   padding-left: $b-space-l
 
++respond-to($g-m)
+
+  .pll_m
+    padding-left: $b-space-l
+
 // ----- Right ----- //
 
 .prf
@@ -172,6 +190,11 @@
   padding-right: $b-space
 .prl
   padding-right: $b-space-l
+
++respond-to($g-m)
+
+  .prl_m
+    padding-right: $b-space-l
 
 // ----- Top ----- //
 
@@ -187,6 +210,11 @@
   padding-top: $b-space-l
 .ptxl
   padding-top: $b-space-xl
+
++respond-to($g-m)
+
+  .ptl_m
+    padding-top: $b-space-l
 
 // -------------------------------------
 //   Positioning
@@ -228,18 +256,15 @@
 .tal
   text-align: left
 
++respond-to($g-m)
+
+  .tac_m
+    text-align: center
+
 // ----- Color ----- //
 
-.tch
-  color: $c-highlight
-.tci
-  color: $c-text-invert
-.tcs
-  color: $c-subdue
-.tct
-  color: $c-text
-.tcti
-  color: $c-text-invert
+.c-davyGrey
+  color: $c-davyGrey
 
 // ----- Family ----- //
 
@@ -261,6 +286,12 @@
 .tsxl
   font-size: $b-fontSize-xl
 
+.tsxxl
+  font-size: 225%
+
+.tsxxxl
+  font-size: 800%
+
 // ----- Style ----- //
 
 .tsi
@@ -273,7 +304,14 @@
 
 // ----- Weight ----- //
 
-.twn
-  font-weight: 300
 .twb
   font-weight: 700
+.twl
+  font-weight: 300
+.twn
+  font-weight: 400
+
+// ----- Z ----- //
+
+.z1
+  z-index: 1

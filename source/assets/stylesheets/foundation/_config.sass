@@ -6,40 +6,16 @@
 // *************************************
 
 // -------------------------------------
-//   @font-face
-// -------------------------------------
-
-// ----- Open Sans ----- //
-
-// +font-face('OpenSans', 'OpenSans')
-// +font-face('OpenSans', 'OpenSansBold', bold)
-// +font-face('OpenSans', 'OpenSansItalic', normal, italic)
-
-// -------------------------------------
 //   Colors
 // -------------------------------------
 
 // ----- Palette ----- //
 
-$plum: #a5a5a5
-
-// ----- Base ----- //
-
-$c-background-invert: #fff
-$c-background: #282834
-$c-border: lighten($plum, 20%)
-$c-highlight: #b51f24
-$c-subdue: lighten($plum, 10%)
-$c-text-invert: #fff
-$c-text: #535353
-
-// ----- Components ----- //
-
-// ...
-
-// ----- Structures ----- //
-
-// ...
+$c-davyGrey: #535353 // Dark grey
+$c-firebrick: #b51f24 // dan denney red
+$c-shadyLady: #a5a5a5 // light gray
+$c-white: #ffffff // just to list all colors in the site
+$c-whiteSmoke: #f5f5f5 // lightest gray
 
 // -------------------------------------
 //   Base
@@ -50,14 +26,14 @@ $c-text: #535353
 $b-borderRadius: 3px
 $b-borderStyle: solid
 $b-borderWidth: 1px
-$b-border: $b-borderWidth $b-borderStyle $c-border
-$b-boxShadow: 0 2px 0 rgba($c-text, 0.25)
+$b-border: $b-borderWidth $b-borderStyle lighten($c-shadyLady, 10%)
+$b-boxShadow: 0 2px 0 rgba($c-davyGrey, 0.25)
 
 // ----- Typography ----- //
 
-$b-fontFamily-heading: "merriweather", serif
-$b-fontFamily: "merriweather", serif
-$b-fontSize: 18px
+$b-fontFamily-heading: "canada-type-gibson", serif
+$b-fontFamily: "canada-type-gibson", serif
+$b-fontSize: 16px
 $b-fontSize-xs: 60%
 $b-fontSize-s: 75%
 $b-fontSize-m: 90%
@@ -67,13 +43,15 @@ $b-lineHeight: 1.75
 
 // ----- Sizing ----- //
 
-$b-maxWidth: em(1024px)
-$b-maxWidth-s: em(700px)
-$b-space: em(20px)
-$b-space-xs: $b-space * 0.25
-$b-space-s: $b-space * 0.5
-$b-space-l: $b-space * 2
-$b-space-xl: $b-space * 4
+$b-maxWidth: 1024px
+$b-maxWidth-s: 700px
+$b-space: 32px
+$b-space-xxs: $b-space * 0.25
+$b-space-xs: $b-space * 0.5
+$b-space-s: $b-space * 0.75
+$b-space-l: $b-space * 1.5
+$b-space-xl: $b-space * 2
+$b-space-xxl: $b-space * 4
 
 // -------------------------------------
 //   Components
@@ -83,24 +61,17 @@ $b-space-xl: $b-space * 4
 
 // Breakpoints
 
-$g-s: em(480px)
-$g-m: em(800px)
-$g-l: em(1024px) !default
+$g-s: 480px
+$g-m: 760px
+$g-l: 1024px !default
 
 // Settings
 
 $g-columns: 12
 $g-defaults: 's' $g-s, 'm' $g-m, 'l' $g-l
-$g-gutter: 20px
+$g-gutter: 40px
 $g-silent: false
 
 // Selector
 
 $g-selector: if($g-silent, unquote("%"), unquote("."))
-
-// -------------------------------------
-//   Structures
-// -------------------------------------
-
-// ...
-

@@ -1,0 +1,14 @@
+{
+  "name": "fittext",
+  "homepage": "https://github.com/adactio/FitText.js",
+  "_release": "ebfc0a6a53",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ebfc0a6a53055b908fe22b1be5df442f1d95b18e"
+  },
+  "_source": "git://github.com/adactio/FitText.js.git",
+  "_target": "*",
+  "_originalSource": "fittext",
+  "_direct": true
+}
