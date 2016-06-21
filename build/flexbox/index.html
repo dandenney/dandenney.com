@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <!-- Favicon -->
+    <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Flexbox</title>
+    <link href="../assets/stylesheets/vendor/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/stylesheets/flexbox.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='flexbox flexbox_index'>
+    <div class='admin'>
+      <h5>Level 1</h5>
+      <div id='level-one'>
+        <header>
+          <nav class='flex-container'>
+            <a class='nav-logo flex-child' href='/'>
+              <img class='flex-grandchild' height='60' src='/assets/images/brand-bookmark-2.svg'>
+            </a>
+            <a class='nav-link flex-child' href='#'>About</a>
+            <a class='nav-link flex-child' href='#'>Teams</a>
+            <a class='nav-link flex-child' href='#'>Pricing</a>
+            <a class='nav-link flex-child' href='#'>Get Started</a>
+            <a class='nav-btn btn flex-child' href='#'>Sign In</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div class='admin'>
+      <h5>Level 2</h5>
+      <div id='level-two'>
+        <header>
+          <nav class='flex-container'>
+            <a class='nav-logo flex-child' href='/'>
+              <img class='flex-grandchild' height='60' src='/assets/images/brand-bookmark-2.svg'>
+            </a>
+            <a class='nav-link flex-child' href='#'>Teams</a>
+            <a class='nav-link flex-child' href='#'>Pricing</a>
+            <a class='nav-link flex-child' href='#'>Get Started</a>
+            <a class='nav-btn btn flex-child' href='#'>Sign In</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div id='level-four'>
+      <div id='level-three'>
+        <header>
+          <nav>
+            <a class='nav-logo' href='/'>
+              <img height='60' src='/assets/images/brand-bookmark-2.svg'>
+            </a>
+            <div class='nav-links'>
+              <a class='nav-link' href='#'>Teams</a>
+              <a class='nav-link' href='#'>Pricing</a>
+              <a class='nav-link' href='#'>Get Started</a>
+            </div>
+            <a class='nav-btn btn' href='#'>Sign In</a>
+          </nav>
+        </header>
+        <section class='hero'>
+          <h1>Add your first bookmark!</h1>
+          <form class='add'>
+            <i class='add-icon'></i>
+            <input class='add-url' type='text'>
+            <button class='btn btn-b add-btn'>Add Bookmark</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <div id='level-five'>
+      <section>
+        <h2>Trending Bookmarks</h2>
+        <ul class='list-bookmarks'>
+          <li class='list-bookmark'>
+            <h3>
+              <a href=''>99 Ways to Markup a Nav List</a>
+            </h3>
+            <p>This is a bookmark description. It is longer than a title and around the size of a small paragraph.</p>
+          </li>
+          <li class='list-bookmark'>
+            <h3>
+              <a href=''>Why Designers Should Code</a>
+            </h3>
+            <p>This is a bookmark description. It is longer than a title and around the size of a small paragraph.</p>
+          </li>
+          <li class='list-bookmark'>
+            <h3>
+              <a href=''>Why Designers Shouldn't Code</a>
+            </h3>
+            <p>This is a bookmark description. It is longer than a title and around the size of a small paragraph.</p>
+          </li>
+          <li class='list-bookmark'>
+            <h3>
+              <a href=''>No One Knows What the Hamburger Menu Is</a>
+            </h3>
+            <p>This is a bookmark description. It is longer than a title and around the size of a small paragraph. It is longer than a title and around the size of a small paragraph.</p>
+          </li>
+          <li class='list-bookmark'>
+            <h3>
+              <a href=''>The Hamburger Menu is the Most Recognizable UI Element</a>
+            </h3>
+            <p>This is a bookmark description. It is longer than a title and around the size of a small paragraph.</p>
+          </li>
+          <li class='list-bookmark'>
+            <h3>
+              <a href=''>Preprocesss All The Things</a>
+            </h3>
+            <p>This is a bookmark description. It is longer than a title and around the size of a small paragraph. It is longer than a title and around the size of a small paragraph.</p>
+          </li>
+          <li class='list-bookmark'>
+            <h3>
+              <a href=''>Stop Using Preprocessors</a>
+            </h3>
+            <p>This is a bookmark description. It is longer than a title and around the size of a small paragraph.</p>
+          </li>
+          <li class='list-bookmark'>
+            <h3>
+              <a href=''>I Heard React Was Good</a>
+            </h3>
+            <p>This is a bookmark description. It is longer than a title and around the size of a small paragraph.</p>
+          </li>
+          <li class='list-bookmark'>
+            <h3>
+              <a href=''>I Heard React Was Bad</a>
+            </h3>
+            <p>This is a bookmark description. It is longer than a title and around the size of a small paragraph.</p>
+          </li>
+        </ul>
+      </section>
+      <section class='pricing'>
+        <div class='pricing-individual'>
+          <div class='pricing-info'>
+            <h2>Individual Accounts</h2>
+            <p>Your bookmarks are yours and yours alone. Muahahahaha.</p>
+            <p class='price'>$9 Per Month</p>
+          </div>
+        </div>
+        <div class='pricing-team'>
+          <div class='pricing-info'>
+            <h2>Team Accounts</h2>
+            <p>Sharing is caring and you can care for your teammates.</p>
+            <p class='price'>Up to 5 Teammates, $7 Per Person</p>
+            <p class='price'>+5 Teammates, $5 Per Person</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

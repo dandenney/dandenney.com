@@ -1,0 +1,203 @@
+//@import url(https://fonts.googleapis.com/css?family=Lato:400,900)
+@import url(https://fonts.googleapis.com/css?family=Overlock)
+
+// ===== Colors ==================== //
+
+$yellow: #f7f5aa
+$green: #d1eda6
+$mustard: #dcd279
+$mauve: #d29f96
+$purple: #7a5574
+
+
+// ===== Global ==================== //
+*
+  box-sizing: border-box
+
+body
+  // background: linear-gradient(to right bottom, mix(#fff, $yellow, 80%), mix(#fff, $yellow, 60%))
+  color: mix(#fff, $purple, 15%)
+  //font-family: 'Lato', sans-serif
+  font-family: 'Overlock', cursive
+
+h1,
+h2,
+h3,
+h4,
+h5
+  color: $purple
+
+h3
+  font-size: 1.5em
+
+img
+  // height: auto
+  max-width: 100%
+
+.container
+  margin: 0 auto
+  max-width: 960px
+  padding: 0 20px
+
+// ===== Header ==================== //
+
+header
+  text-align: center
+
+.title
+  font-size: 1.5em
+  margin: 0
+  padding: 0
+
+// ===== Nav ==================== //
+
+.nav-brand
+  display: block
+  text-decoration: none
+
+.nav-link
+  border: 1px solid mix(#fff, $mauve, 70%)
+  border-radius: 6px
+  color: $mauve
+  display: inline-block
+  line-height: 2
+  margin-top: 10px
+  text-decoration: none
+  width: 90px
+
+@media screen and (min-width: 375px)
+
+  nav
+    align-items: stretch
+    display: flex
+    justify-content: center
+
+  .nav-link
+    margin: 0 20px
+
+  // .nav-clues
+  //   order: -1
+
+// ===== Clue ==================== //
+
+.clue-container
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.clue
+  // align-items: center
+  // background: #fff
+  border: 1px solid $green
+  display: flex
+  // border-radius: 6px
+  // display: flex
+  // flex: 0 1 47.5%
+  // margin-top: 40px
+  // overflow: hidden
+
+// .clue-img
+//   align-items: center
+//   align-self: stretch
+//   border-right: 1px solid $green
+//   display: flex
+//   flex: 0 0 35%
+//   padding: 20px
+//   justify-content: center
+//   text-align: center
+//
+// .clue-info
+//   align-items: center
+//   align-self: stretch
+//   background: mix(#fff, $green, 85%)
+//   display: flex
+//   flex: 1 1 60%
+//   padding: 20px
+
+.clue-title
+  margin: 0
+
+.clue-description
+  line-height: 1.3
+  margin: 5px 0 0 0
+
+  + .clue-title
+    margin-top: 10px
+
+.clue-primary
+  align-items: center
+  background: url('/assets/images/solverizer-main.png') no-repeat center center / cover
+  display: flex
+  flex: 1 1 100%
+
+  @media screen and (min-width: 700px)
+    min-height: 360px
+
+.clue-primary-title
+  background: rgba($mustard, 0.8)
+  color: #654760
+  font-size: 200%
+  padding: 10px
+
+// ===== Form ==================== //
+
+.form-container
+  background: mix(#fff, $mustard, 90%)
+  border:  1px solid $mustard
+  border-radius: 6px
+  margin: 60px auto
+  max-width: 920px
+  padding: 40px 20px
+
+  h2,
+  p
+    margin: 0
+    text-align: center
+
+  p
+    margin: 5px 0 30px 0
+
+.fieldset
+  align-items: center
+  display: flex
+  justify-content: space-between
+
+.add-label
+  color: mix(#000, $mauve, 20%)
+  flex: 0 0 40px
+
+.add-input
+  align-self: stretch
+  color: mix(#fff, $purple, 20%)
+  border: 1px solid $mauve
+  border-radius: 6px
+  flex: 1 0 auto
+  margin: 0 10px
+  outline: 0
+  padding: 0 10px
+
+.add-button
+  background: linear-gradient( to bottom, mix(#fff, $mauve, 20%), $mauve)
+  border: 1px solid mix(#000, $mauve, 20%)
+  border-radius: 6px
+  box-shadow: none
+  color: #fff
+  cursor: pointer
+  flex: 0 0 120px
+  line-height: 1
+  padding: 10px 20px
+  text-shadow: 0 1px 0 mix(#000, $mauve, 30%)
+
+  &:active,
+  &:focus,
+  &:hover
+    background: linear-gradient( to bottom, mix(#fff, $mauve, 20%), mix(#000, $mauve, 5%))
+
+// .level-1-many-media-elements
+//
+//   .clue
+//     flex-wrap: wrap-reverse
+
+// .clues
+//   display: flex
+//   flex-wrap: wrap
