@@ -68,15 +68,15 @@ header
 @media screen and (min-width: 375px)
 
   nav
-    align-items: stretch
+    align-items: center
     display: flex
     justify-content: center
 
   .nav-link
     margin: 0 20px
 
-  // .nav-clues
-  //   order: -1
+  .nav-clues
+    order: -1
 
 // ===== Clue ==================== //
 
@@ -86,15 +86,16 @@ header
   justify-content: space-between
 
 .clue
-  // align-items: center
-  // background: #fff
+  align-items: center
+  background: #fff
   border: 1px solid $green
   display: flex
-  // border-radius: 6px
-  // display: flex
-  // flex: 0 1 47.5%
-  // margin-top: 40px
-  // overflow: hidden
+  flex-wrap: wrap
+  border-radius: 6px
+  display: flex
+  flex: 0 1 47.5%
+  margin-top: 40px
+  overflow: hidden
 
 // .clue-img
 //   align-items: center

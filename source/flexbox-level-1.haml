@@ -4,7 +4,15 @@ layout: flexbox
 
 %style
   body{ padding: 20px; }
+  \.articles{ display: flex; flex-wrap: wrap; }
 
-%article.clue
-  %img{ src: '/assets/images/solverizer-pipe.png', height: '32', width: '100' }
-  %p This pipe was found outside the door of the amusement park office, soon after the ghost was seen flying by.
+
+.articles
+
+  %article.clue
+    %img{ src: '/assets/images/solverizer-pipe.png', height: '32', width: '100' }
+    %div
+      %h3.clue-title Tobacco Pipe
+      %p This pipe was found outside the door of the amusement park office, soon after the ghost was seen flying by.
+      %h3.clue-title Forensics
+      %p Fingerprints on the pipe didn't have a match and the grey whiskers have been sent for DNA testing.
