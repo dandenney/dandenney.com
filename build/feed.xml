@@ -5,10 +5,108 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-11-19T19:00:00-05:00</updated>
+  <updated>2016-06-25T20:00:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Pursuing a Nanodegree (1 of ?)</title>
+    <link rel="alternate" href="http://blog.url.com/posts/front-end/pursuing-a-nanodegree"/>
+    <id>http://blog.url.com/posts/front-end/pursuing-a-nanodegree</id>
+    <published>2016-06-25T20:00:00-04:00</published>
+    <updated>2016-06-26T21:29:01-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;style&gt;
+  /* line 1, (__TEMPLATE__) */
+  .img-stretch {
+    border: 10px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: relative; }
+    @media screen and (min-width: 840px) {
+      /* line 1, (__TEMPLATE__) */
+      .img-stretch {
+        left: -50px;
+        max-width: 800px; } }
+&lt;/style&gt;
+&lt;p&gt;
+  I've been wanting to learn functional JavaScript for a while. I've stocked up on some books, we've released some great &lt;a href="https://codeschool.com/paths/javascript"&gt;JavaScript courses at Code School&lt;/a&gt;, we have a team account at &lt;a href="https://frontendmasters.com"&gt;Front-end Masters&lt;/a&gt;, and I grabbed Wes Bos' &lt;a href="https://reactforbeginners.com"&gt;React for Beginners&lt;/a&gt;. Basically, I have all the things.
+&lt;/p&gt;
+&lt;p&gt;
+  What I've been missing was the right motivation. Of course being better at it will help some of tasks on our .com, but the impact I'd have is minimal so it hasn't felt pressing. I tried psyching myself up with a 30-day challenge but I'm not one of those folks. I think I made it about 4 days before I went on a random trip and lost momentum. Again, there wasn't a true goal. I'm a firm believe in Chris Coyier's reasoning on when and what to learn: &lt;a href="http://justbuildwebsites.com"&gt;Just Build Websites&lt;/a&gt;.
+&lt;/p&gt;
+&lt;h2&gt;Inspiration, Courtesy of a Buzzword&lt;/h2&gt;
+&lt;p&gt;
+  Progressive web apps are so hot right now. I was curious, so I dove into some posts and &lt;a href="https://www.youtube.com/watch?v=cmGr0RszHc8"&gt;Jake Archibald's talk&lt;/a&gt;. I love the ideas behind them and want to take a crack at building one. Somewhere in the mix I ended up on &lt;a href="https://www.udacity.com/course/senior-web-developer-nanodegree--nd802#"&gt;Udacity's Senior Web Developer Nanodgree&lt;/a&gt; and something clicked! They packaged up the motivation that I needed: a clear flow of tasks and interesting projects to build using technologies that I want to learn. Not sure if there's much motivation for me behind the actual nanodegree, but it's a perk. The final selling point was that it's a bit pricey and there's a reward for finishing early. Spending the money will be an extra kick in the ass to make progress.
+&lt;/p&gt;
+&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/syllabus.png' width='800'&gt;
+&lt;h2 class='mtm'&gt;Ulterior Motive&lt;/h2&gt;
+&lt;p&gt;
+  I'm also extremely interested in the teaching format itself. I'm a lifelong learner and I love sharing/teaching. So on top of learning, I'm learning about learning (yo dawg). I've been active in meetups, conferences and workshops and I work for Code School and (really) Pluralsight. The first few years of the explosion of online learning sites have been pretty freeform. We're starting to see multiple approaches into guided learning paths. I get to see a few firsthand, peeked at Treehouse's, and am now giving Udacity's a whirl.
+&lt;/p&gt;
+&lt;h2&gt;Sharing My Experience&lt;/h2&gt;
+&lt;p&gt;
+  So, I'll be sharing my experience as I go. This will be a series of posts as I take on each section. I'll be sharing what I'm learning as well as my take on the nanodegree program itself.
+&lt;/p&gt;
+&lt;h2&gt;Onboarding&lt;/h2&gt;
+&lt;p&gt;
+  The onboarding flow was really well done. The folks at &lt;a href="http://focuslabllc.com/"&gt;Focus Lab&lt;/a&gt; recently overhauled Udacity and they did an awesome job. The intro video was very human and there were a series of videos and modals explaining the benefits of the process as well as what you'll be learning.
+&lt;/p&gt;
+&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/video.png' width='800'&gt;
+&lt;p class='mtm'&gt;
+  I took some quick notes along the way:
+&lt;/p&gt;
+&lt;ul class='list-bulleted'&gt;
+  &lt;li&gt;Gorgeous payment form, very human (optional) video&lt;/li&gt;
+  &lt;li&gt;The features modal had key points but wasn’t necessary for me&lt;/li&gt;
+  &lt;li&gt;The Syllabus has a well-done intro video (ugh, they say learning by doing in the course intro video)&lt;/li&gt;
+  &lt;li&gt;They mix video with on-page content which is an awesome experience. (A couple small things are out of sync, I imagine that's a challenge when updating.)&lt;/li&gt;
+  &lt;li&gt;You're strongly encouraged to setup a profile (which I'd usually skip) but the flow was great and it seems important for feedback on progress&lt;/li&gt;
+  &lt;li&gt;There's a community for students in a forum and Slack&lt;/li&gt;
+  &lt;li&gt;Honor Code is an excellent idea, they talk through the importance of doing this to learn, not just to earn the nanodegree.&lt;/li&gt;
+  &lt;li&gt;"Be relentless in finding an answer on your own" was my favorite line in the explanation of how important it is for you to be learning, not just progressing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  My take at the end of the introductory session: I’m loving this, the videos are well done and lead off with a critical thinking exercise. That solidified things for me because it means they're walking the walk. I'm all in.
+&lt;/p&gt;
+&lt;h2&gt;Project 1: Meet-up Event Planner&lt;/h2&gt;
+&lt;p&gt;
+  The goal of this will be to create a small app that allows somoene to create an event, using some cool tech. This was super interesting to me since I do so many events and because I can see how the functionality can be used in many other ways. Since it's form-based, you start off learning about best practices for building forms. Cameron Pittman and Ido Green lead the way, with visits from the guy who literally wrote the &lt;a href="http://www.lukew.com/resources/web_form_design.asp"&gt;book on forms&lt;/a&gt;, Luke Wroblewski.
+&lt;/p&gt;
+&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/cameron-ido.jpg' width='800'&gt;
+&lt;p class='mtm'&gt;
+  The challenges are integrated well within the video space: you watch a bit, then answer a question or do a little bit of code in that same space. I was pretty used to this and it works well, but they took it to another level. The initial project is doing form validation with &lt;code&gt;setCustomValidity&lt;/code&gt; and they built a Chrome extension that runs tests on your code. Here's my first run:
+&lt;/p&gt;
+&lt;img class='img-stretch mbm' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/extension.png' width='800'&gt;
+&lt;p&gt;
+  Again, I took some notes along the way:
+&lt;/p&gt;
+&lt;ul class='list-bulleted'&gt;
+  &lt;li&gt;Quiz: Validate Some Inputs, things ramp up fast here. Having never done any regex for validations, I need to learn how to check for letter grades allowing punctuation (A, A+, A-, etc.). I got close, but Cameron's example was way better because I wasn't proofing for no marks on F.&lt;/li&gt;
+  &lt;li&gt;Had to install, learn to run Grunt for the local quiz on customValidity (based on forum suggestions). Kinda weird to do this before the next section on tooling, though arguably I could have run it in Middleman if I wanted to.&lt;/li&gt;
+  &lt;li&gt;I went down a dark hole of git commits trying to not commit the local node-modules, but that was a misstep on my part. I was so focused on the challenge that I accidentally committed it all.&lt;/li&gt;
+  &lt;li&gt;Had to learn the syntax for using regex to validate an input’s value, aka .test() &lt;a href="http://stackoverflow.com/questions/6603015/check-whether-a-string-matches-a-regex"&gt;Stack Overflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;By the time I was really ready, I was so close! I was missing one small thing: needing to set the nil validity for the second input and one big thing: needing to concatenate all of the errors into one message.&lt;/li&gt;
+  &lt;li&gt;The array idea from the forums was awesome and I know there’s a much better way to write what I did, but I got it working.&lt;/li&gt;
+  &lt;li&gt;Absolutely loved Luke’s breakdown of The Culture of Delivery.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Things I need to learn from the solution code:&lt;/h3&gt;
+&lt;ul class='list-bulleted mtm'&gt;
+  &lt;li&gt;.prototype&lt;/li&gt;
+  &lt;li&gt;switch functions&lt;/li&gt;
+  &lt;li&gt;defining functions in prototype and invoking them in another function (this is what I was trying to do with my initial individual pushes, but didn’t nail the syntax)&lt;/li&gt;
+  &lt;li&gt;The function for capturing the illegal character that was used and displaying it. I’m glad I thought of it, but should have fought through an attempt to make it happen.&lt;/li&gt;
+  &lt;li&gt;Efficient logic (his code only runs when the 2 passwords match, while mine runs regardless)&lt;/li&gt;
+  &lt;li&gt;\n&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  That's it for the first section. I'm hooked now and this felt so good:
+&lt;/p&gt;
+&lt;img class='img-stretch mbm' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/success-form.png' width='800'&gt;
+</content>
+  </entry>
   <entry>
     <title>TIL Executing Local Ruby</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/til-executing-local-ruby"/>
@@ -396,61 +494,6 @@ $ -&amp;gt;
 &lt;/p&gt;
 &lt;p&gt;
   For the Coffeescript, I'll use &lt;a href="https://github.com/spellbook/spellbook"&gt;Spellbook&lt;/a&gt; for our organization practices and stop polluting the global space with all of that jelly.
-&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Thank You</title>
-    <link rel="alternate" href="http://blog.url.com/posts/conferences/thank-you"/>
-    <id>http://blog.url.com/posts/conferences/thank-you</id>
-    <published>2014-08-27T20:00:00-04:00</published>
-    <updated>2016-03-03T16:52:01-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;style&gt;
-  h1 { display: none; }
-&lt;/style&gt;
-&lt;p class='center mtl'&gt;
-  &lt;img class='mhc' src='/assets/images/posts/conferences/thank-you/thank-you.svg'&gt;
-&lt;/p&gt;
-&lt;p class='center'&gt;
-  &lt;img class='mhc' src='/assets/images/posts/conferences/thank-you/matt-graham.jpg'&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  So last Friday on the morning of Front-End Conf Portland, I had run downstairs to get coffee. As I'm known to do, I checked Twitter while waiting my turn and saw this tweet.
-&lt;/p&gt;
-&lt;div class='mhc'&gt;
-  &lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;We love &lt;a href="https://twitter.com/dandenney"&gt;@dandenney&lt;/a&gt; and &lt;a href="https://twitter.com/CherrieDenney"&gt;@CherrieDenney&lt;/a&gt;! Lets let them know how much &lt;a href="https://twitter.com/frontendconf"&gt;@frontendconf&lt;/a&gt; peeps! &lt;a href="http://t.co/Ib19F3vomz"&gt;http://t.co/Ib19F3vomz&lt;/a&gt; &amp;#10;&amp;#10;&lt;a href="https://twitter.com/hashtag/frontendthanks?src=hash"&gt;#frontendthanks&lt;/a&gt;&lt;/p&gt;&amp;mdash; Matt Graham (@michigangraham) &lt;a href="https://twitter.com/michigangraham/statuses/502813335130472448"&gt;August 22, 2014&lt;/a&gt;&lt;/blockquote&gt;
-  &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;p&gt;I only got a quick peek at it before it was my turn, so I just texted Cherrie: "Did you see what Matt made?" Fast forward 5 minutes and I walked into our hotel room to see Cherrie like this:&lt;/p&gt;
-&lt;p class='center'&gt;
-  &lt;img class='mhc' src='/assets/images/posts/conferences/thank-you/emobrit.gif'&gt;
-&lt;/p&gt;
-&lt;h2&gt;Oh. My. Goodness.&lt;/h2&gt;
-&lt;p&gt;
-  I sit down to take a peek and I was absolutely floored. There's a full site, dozens of messages, photos, and a Cotton Bureau shirt that's gorgeous?! The &lt;a href="http://seesparkbox.com"&gt;Sparkbox&lt;/a&gt; folks are involved as well...
-&lt;/p&gt;
-&lt;div class='mhc'&gt;
-  &lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;We love &lt;a href="https://twitter.com/dandenney"&gt;@dandenney&lt;/a&gt; and &lt;a href="https://twitter.com/CherrieDenney"&gt;@CherrieDenney&lt;/a&gt;! Lets let them know how much &lt;a href="https://twitter.com/frontendconf"&gt;@frontendconf&lt;/a&gt; peeps! &lt;a href="http://t.co/RqjBTb6EiD"&gt;http://t.co/RqjBTb6EiD&lt;/a&gt; &amp;#10;&amp;#10;&lt;a href="https://twitter.com/hashtag/frontendthanks?src=hash"&gt;#frontendthanks&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sparkbox (@hearsparkbox) &lt;a href="https://twitter.com/hearsparkbox/statuses/502814493081358336"&gt;August 22, 2014&lt;/a&gt;&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;p&gt;
-  I immediately realize that some serious time and planning went into this project. Completely stunned and honored, I started reading through the messages and that was the best part. You don't always know what kind of impact that you have on people, but here was a site with a bunch of our favorite people sharing exactly that. It's been a week and I still can't put into words just how awesome this was.
-&lt;/p&gt;
-&lt;h2&gt;We have the best friends&lt;/h2&gt;
-&lt;p&gt;
-  To get an idea of all of the people involved, check out &lt;a href="http://frontendthanks.com"&gt;the site&lt;/a&gt; and the &lt;a href="https://github.com/mattgraham/frontendthanks"&gt;Github repo&lt;/a&gt;. That was just the start, too! Throughout the day there were tweets on the hashtag and people buying shirts for their whole team. It was crazy and it's all because we have been so lucky to meet such amazing people throughout the past 6 years while running the conference. This is the kind of thing that will stick with us for our entire lives.
-&lt;/p&gt;
-&lt;p&gt;
-  Thank you so very, very much to everyone. You made our year! Extra thank yous go to &lt;a href="https://twitter.com/michigangraham"&gt;Matt Graham&lt;/a&gt; for heading up this huge undertaking and rallying everyone, to &lt;a href="https://twitter.com/bencallahan"&gt;Ben Callahan&lt;/a&gt; for setting up the Cotton Bureau project, and to &lt;a href="https://twitter.com/jeremyloyd"&gt;Jeremy Loyd&lt;/a&gt; for designing the awesome shirt.
-&lt;/p&gt;
-&lt;p&gt;
-  Speaking of the shirt, it feels weird promoting it because we are benefitting from it but they are only available for a limited run. If you want one, there's &lt;a href="https://cottonbureau.com/products/to-dan-and-cherrie"&gt;6 days left&lt;/a&gt; to grab it. I can't wait to rock one.
-&lt;/p&gt;
-&lt;p class='center'&gt;
-  &lt;img class='mhc' src='/assets/images/posts/conferences/thank-you/give-back-shirt.jpg'&gt;
 &lt;/p&gt;
 </content>
   </entry>
