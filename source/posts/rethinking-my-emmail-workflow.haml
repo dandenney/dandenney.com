@@ -1,0 +1,114 @@
+---
+layout: post-custom
+title: Rethinking My eMMail Workflow
+tags: Front-End Dev
+date: June 21, 2016
+code-sample: true
+published: false
+---
+
+:sass
+  body
+    background: #f6f7f8
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5
+    color: #616f7d
+
+  .intro
+    overflow: hidden
+    position: relative
+
+    .mask-tri
+      position: relative
+      z-index: 1
+
+    &:after
+      bottom: 35%
+      box-shadow: 0 20px 20px rgba(#000, 0.1)
+      content: ""
+      left: -25%
+      position: absolute
+      right: -25%
+      transform: rotate(-7deg)
+      top: 0
+
+  .nudge
+    margin-top: -3.5em
+
+  article a
+    color: #e8703d
+    transition: color 0.3s linear
+
+    &:hover
+      color: mix(#000, #e8703d, 20%)
+
+    &::before,
+    &::after
+      background: mix(#fff, #616f7d, 80%)
+
+  .img-stretch
+    border: 10px solid #fff
+    box-shadow: 0 2px 5px rgba(#000, 0.15)
+    left: -50px
+    max-width: 800px
+    position: relative
+
+.intro
+
+  <svg class="mask-tri" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1002 216"><defs><clipPath id="clip-path" transform="translate(2)"><polygon points="-1 0 -1 216 1001 85 1001 0 -1 0" style="fill:none"/></clipPath></defs><title>rethinking</title><polygon points="0 0 0 216 1002 85 1002 0 0 0" style="fill:#fff"/><g style="clip-path:url(#clip-path)"><text transform="translate(145 136.67)" style="font-size:118.29645538330078px;fill:#616f7d;font-family:Gibson;font-weight:700">RETHINKING</text></g></svg>
+
+%section.row.nudge
+  .cell.cell--s
+    %article
+
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 669.63 72.74"><title>my-emmail-workflow</title><text transform="translate(0 58.43)" style="font-size:63.5px;fill:#616f7d;font-family:Gibson;font-weight:700">My eMMail Workflow</text></svg>
+
+      %p
+        In 2015, I was lucky enough to get to share <a href="https://speakerdeck.com/dandenney/the-organized-chaos-of-email-creation">The Organized Chaos of Email</a> Creation at <a href="https://litmus.com/conference">The Email Design Conference</a>. While I was on stage, people from the Litmus team were in the lobby demoing a game-changer: live client previews built into <a href="https://litmus.com/email-builder">Builder</a>.
+
+      %p
+        It instantly became a part of my workflow and since then I don't send an email without it. (Well I have, but it ended up borked in Gmail, sooo.) In my talk, I touted the benefits of building offline in a Middleman app I dubbed eMMail. The perks of doing so were reusable variables, partials, and custom reporting. Throughout the year, the Litmus folks have added a couple of those into Builder as well.
+
+      %p
+        Variables have other uses but are super handy for setting analytics trackers throughout your links, which they added. Plus, the on-the-fly CSS inlining removes a lot of the need for variables if you're using classes.
+
+      %p
+        Partials are now in beta and working well. This was the big one for me as I maintain 40+ transactional emails. When something needs to change in our header or footer, it has to change in every file. This was the primary reason I was using Middleman and it's in Builder now.
+
+      %p
+        I doubt they'll tackle the reporting bit anytime soon since that's more related to your ESP, but I hit a wall with mine. I want historical data to show performance of an email over time and that isn't straight-forward when hijacking the frontmatter in Middleman. It's super easy and readable in a Google Docs spreadsheet, though.
+
+      %img.img-stretch{ src: "/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-spreadsheet.png", width: "800" }
+
+      %h2.mtm I'm Out of Excuses
+
+      %p
+        At this point, I don't have any excuses left to be building/maintaining my own system. Every email I create now ends up in Builder, so it makes sense to just start there. There's only a few small trade-offs: no Haml/Sass, no global variables, and I have to be online to build. I've been debating dropping Haml and Sass anyhow, since it's hard to share my code with others who don't use them and the variables can be handled by classes and snippets. I do a fair amount of traveling, so the online bit will require a little bit of maneuvering, but I already have it taken care of.
+
+      %h2.mtm My New Flow
+
+      %p
+        As always, this is a work-in-progress. I'm a couple months in the tracking parts and only a few weeks into the building. Things will change but it's been feeling gooooood.
+
+      %h3 Create a Master Doc
+      %p
+        In studing successful product teams, I've found that most of them document projects (features, campaigns, etc.) and the team at Pluralsight create great ones for email campaigns. I kind of made a frankenbaby of them for each of our emails. (I have not gone through and done them for all emails yet but it's a bucket list item.)
+
+      %p
+        These have become increasingly important as we are doing more event-driven transactional emails. It is super easy to lose track of those and for only 1-2 people to know how they work. Writing them is mundane but an excellent feature for your team.
+
+      %h3 Build and Organize in Builder
+      %p
+        Each email starts in Builder and I'm slowly cleaning up my folders. I was pretty haphazard about them before because I was primarily using it for testing right before sending. Now I need to be able to access emails for updates so organization is a major key to success.
+
+      %h3 Track in Google Docs
+      %p
+        Reporting must be the hardest thing for ESPs to perfect. I'm sure I'm not alone in having specific metrics that I'm interested in, but it's unlikely that I want them the same way and for the same time ranges as others. I've found that creating my own reports is the most efficient and something about manually handling the data imprints it in my brain so I can remember stats to share with the team.
+
+      %h3 Backup in GitHub
+      %p
+        This is vital. I have great faith in the Litmus team, but we're all one major server failure away from losing things. Once an email is sent, inproduction as a transactional or edited, I commit it to our emails repo. I also keep this repo locally which will handle my offline needs. I'll always be able to get one going offline using a prior email as a starting ground.

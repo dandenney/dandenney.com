@@ -12,7 +12,7 @@
     <link href="../../assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
     <link href="../../assets/stylesheets/vendor/prism.css" rel="stylesheet" type="text/css" />
   </head>
-  <body class='posts posts_front-end posts_front-end_pursuing-a-nanodegree'>
+  <body class='posts posts_front-end-dev posts_front-end-dev_pursuing-a-nanodegree'>
     <header>
       <p class='dib'>
         Dan Denney
@@ -45,7 +45,7 @@
             I've been wanting to learn functional JavaScript for a while. I've stocked up on some books, we've released some great <a href="https://codeschool.com/paths/javascript">JavaScript courses at Code School</a>, we have a team account at <a href="https://frontendmasters.com">Front-end Masters</a>, and I grabbed Wes Bos' <a href="https://reactforbeginners.com">React for Beginners</a>. Basically, I have all the things.
           </p>
           <p>
-            What I've been missing was the right motivation. Of course being better at it will help some of tasks on our .com, but the impact I'd have is minimal so it hasn't felt pressing. I tried psyching myself up with a 30-day challenge but I'm not one of those folks. I think I made it about 4 days before I went on a random trip and lost momentum. Again, there wasn't a true goal. I'm a firm believe in Chris Coyier's reasoning on when and what to learn: <a href="http://justbuildwebsites.com">Just Build Websites</a>.
+            What I've been missing was the right motivation. Of course being better at it will help some of tasks on our .com, but the impact I'd have is minimal so it hasn't felt pressing. I tried psyching myself up with a 30-day challenge but I'm not one of those folks. I think I made it about 4 days before I went on a random trip and lost momentum. Again, there wasn't a true goal. I'm a firm believer in Chris Coyier's reasoning on when and what to learn: <a href="http://justbuildwebsites.com">Just Build Websites</a>.
           </p>
           <h2>Inspiration, Courtesy of a Buzzword</h2>
           <p>
