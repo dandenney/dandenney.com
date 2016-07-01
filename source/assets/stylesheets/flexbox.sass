@@ -142,11 +142,13 @@ header
 
 // ===== Form ==================== //
 
+// Level 4 //
+
 .form-container
   background: mix(#fff, $mustard, 90%)
   border:  1px solid $mustard
   border-radius: 6px
-  margin: 60px auto
+  margin: 20px auto
   max-width: 920px
   padding: 40px 20px
 
@@ -161,21 +163,20 @@ header
 .fieldset
   align-items: center
   display: flex
-  justify-content: space-between
 
 .add-label
   color: mix(#000, $mauve, 20%)
-  flex: 0 0 40px
 
 .add-input
   align-self: stretch
   color: mix(#fff, $purple, 20%)
   border: 1px solid $mauve
   border-radius: 6px
-  flex: 1 0 auto
+  flex-shrink: 1
   margin: 0 10px
   outline: 0
   padding: 0 10px
+  min-width: 0
 
 .add-button
   background: linear-gradient( to bottom, mix(#fff, $mauve, 20%), $mauve)
@@ -184,7 +185,7 @@ header
   box-shadow: none
   color: #fff
   cursor: pointer
-  flex: 0 0 120px
+  flex-shrink: 0
   line-height: 1
   padding: 10px 20px
   text-shadow: 0 1px 0 mix(#000, $mauve, 30%)
@@ -193,6 +194,58 @@ header
   &:focus,
   &:hover
     background: linear-gradient( to bottom, mix(#fff, $mauve, 20%), mix(#000, $mauve, 5%))
+
+// .form-container
+//   background: mix(#fff, $mustard, 90%)
+//   border:  1px solid $mustard
+//   border-radius: 6px
+//   margin: 60px auto
+//   max-width: 920px
+//   padding: 40px 20px
+//
+//   h2,
+//   p
+//     margin: 0
+//     text-align: center
+//
+//   p
+//     margin: 5px 0 30px 0
+//
+// .fieldset
+//   align-items: center
+//   display: flex
+//   justify-content: space-between
+//
+// .add-label
+//   color: mix(#000, $mauve, 20%)
+//   flex: 0 0 40px
+//
+// .add-input
+//   align-self: stretch
+//   color: mix(#fff, $purple, 20%)
+//   border: 1px solid $mauve
+//   border-radius: 6px
+//   flex: 1 0 auto
+//   margin: 0 10px
+//   outline: 0
+//   padding: 0 10px
+//
+// .add-button
+//   background: linear-gradient( to bottom, mix(#fff, $mauve, 20%), $mauve)
+//   border: 1px solid mix(#000, $mauve, 20%)
+//   border-radius: 6px
+//   box-shadow: none
+//   color: #fff
+//   cursor: pointer
+//   flex: 0 0 120px
+//   line-height: 1
+//   padding: 10px 20px
+//   text-shadow: 0 1px 0 mix(#000, $mauve, 30%)
+//
+//   &:active,
+//   &:focus,
+//   &:hover
+//     background: linear-gradient( to bottom, mix(#fff, $mauve, 20%), mix(#000, $mauve, 5%))
 
 // .level-1-many-media-elements
 //
