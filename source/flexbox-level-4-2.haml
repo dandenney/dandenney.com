@@ -2,24 +2,11 @@
 layout: flexbox
 ---
 
-%header
-
-  %nav.container
-
-    %a.nav-brand{ href: "/" }
-      %img.brand{ src: '/assets/images/solverizer.svg' }
-      %h1.title Solverizer
-
-    %a.nav-link.nav-clues{ href: "#" } Clues
-    %a.nav-link.nav-suspects{ href: "#" } Suspects
+:sass
+  body
+    padding: 0 20px
 
 %section.container.clue-container
-
-  %article.clue.clue-primary
-
-    %h2.clue-primary-title
-
-      The Curious Case of the Mothball Menace
 
   %article.clue
     .clue-img
@@ -52,17 +39,3 @@ layout: flexbox
       %div
         %h3.clue-title Cane
         %p.clue-description There’s a dusting of hard-candy sugar along this solid-oak cane, which is ideal for enthusiastic pointing while lecturing whippersnappers.
-
-.container
-  %section.form-container
-
-    %h2 Stay In the Know
-
-    %p Sign up below to receive updates when new clues are added.
-
-    %form
-
-      .fieldset
-        %label.add-label Email
-        %input.add-input{ type: "text" }
-        %button.add-button Send

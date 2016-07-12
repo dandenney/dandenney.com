@@ -6,15 +6,23 @@ layout: flexbox
   body
     padding: 0 20px
 
-%section.container.form-container
+-# %section.container.form-container
+-#
+-#   %h2 Stay In the Know
+-#
+-#   %p Sign up below to receive updates when new clues are added.
+-#
+-#   %form
+-#
+-#     .fieldset
+-#       %label.add-label Email
+-#       %input.add-input{ type: "text" }
+-#       %button.add-button Send
 
-  %h2 Notifications
-
-  %p Get notified when a new clue is added.
-
-  %form
-
-    .fieldset
-      %label.add-label Email
-      %input.add-input{ type: "text" }
-      %button.add-button Send
+%article.clue
+  .clue-img
+    %img{ src: '/assets/images/solverizer-pipe.png', width: '100' }
+  .clue-info
+    %div
+      %h3.clue-title Tobacco Pipe
+      %p.clue-description The musty smell of old tobacco wafts from this vintage pipe — which wasn’t actually vintage when the owner purchased it new.
