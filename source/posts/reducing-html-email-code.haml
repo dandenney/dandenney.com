@@ -1,0 +1,350 @@
+---
+layout: post
+title: Reducing HTML Email Code
+tags: front-end-dev
+date: July 16, 2016
+code-sample: true
+---
+
+:sass
+
+	.stretch
+		border: 10px solid #ffffff
+		box-sizing: border-box
+		box-shadow: 0 2px 5px rgba(#000, 0.15)
+		position: relative
+
+		@media screen and (min-width: 840px)
+			left: -50px
+			max-width: 800px
+			width: 800px
+
+	.stretch--a
+		border: 10px solid #f9f9f9
+
+	.stretch--b
+		border: 0
+		box-shadow: none
+
+	table
+		border-collapse: collapse
+		width: 100%
+
+	th
+		background: #f1f1f1
+		border: 1px solid #f1f1f1
+		font-weight: 600
+		padding: 0 4px
+		text-align: left
+
+	td
+		border: 1px solid #f1f1f1
+		padding: 0 4px
+
+	strong
+		font-weight: 600
+
+	pre
+		font-size: 16px
+
+	@media screen and (max-width: 479px)
+		thead
+			display: none
+
+		td
+			display: block
+
+			&:before
+				content: attr(data-th)
+				display: inline-block
+				font-weight: 600
+				width: 50%
+
+%p
+	I recently came across an article, <a href="https://medium.com/@cloverfounders/the-problem-with-email-newsletters-f606a485ccc1#.56k4k0uh3">The Problem with Email Newsletters</a>. I was really curious about the problems that people run into with creating them, but I was surprised by the main problem that this one covered:
+
+.stretch.stretch--a
+	%blockquote.tsl
+		"The problem is that 102KB is tiny. An email with a little bit of text and a single photo is larger than 102KB. For Clover, we would need to delete 75% of the content in our current letter in order to squeak in under Gmail’s clipping restrictions."
+
+%p.mtm
+	The only time that I could remember running into this problem is when I was doing extreme stuff like converting images into tables filled with colors and creating data visualizations using table colors. I peeked at all of my Code School emails and the largest one I had created was 54kb, so I thought I should take a crack at reducing the code in it.
+
+%h2 The Results May Be Misleading
+
+%table.mts
+	%thead
+		%th File
+		%th Expanded
+		%th Minified
+		%th Images
+		%th Total
+	%tr
+		%td{"data-th" => "File"} clover.html
+		%td{"data-th" => "Expanded"} 134kb
+		%td{"data-th" => "Minified"} 74kb
+		%td{"data-th" => "Images"} 436kb
+		%td{"data-th" => "Total"} 570kb
+	%tr
+		%td{"data-th" => "File"} clover-alt.html
+		%td{"data-th" => "Expanded"} 42kb
+		%td{"data-th" => "Minified"} 33kb
+		%td{"data-th" => "Images"} 356kb
+		%td{"data-th" => "Total"} 398kb
+
+%p.mtm
+	I was able to reduce the amount of code significantly, from 134kb to 42kb by picking through it and <a href="https://imageoptim.com/mac">ImageOptim</a> took care of the images. This seems great and like I should just share it with them, right? Not so fast...
+
+%h2 The Formula for Redundancy
+
+%p
+	A template created for general use and a non-developer adding content will almost always result in redundant code. It's probably the most common problem in CMS-driven content because it's so hard to solve. It's the reason we switched to me creating all of the HTML emails that we send at Code School and why the front-end team handles the formatting of all blog posts there as well. I'll break down the good, the "coulde be better", and the fixes in this particular instance.
+
+%h2 The Good
+
+%p
+	The template is really well done. The code is great and it works well across all screen sizes. They were able to customize it to the look and feel that they wanted and maintain consistency in their data entry, too.
+
+%h2 The "Could Be Better"
+
+%h4.mbf.mts Some CSS is not being utilized
+%p.mtf
+	The template is intended to have content entered using HTML elements for titles and text (H1, H2, H3, H4, H5, p). However, none of that is being used.
+
+%h4.mbf Nesting could be reduced
+%p.mtf
+	There are some deeply nested tables that could be moved up a few levels.
+
+%h4.mbf Spongy vs. multiple cell approach
+%p.mtf
+	There are a few ways to mark up templates that will work well across multiple resolutions. This one is using the spongy approach, which has code for ghost tables.
+
+%h4.mbf Too many styles are inlined
+%p.mtf
+	There is some code that only works in specific clients which could be only in the head. Admittedly, this is tricky depending on what is handling the inlining.
+
+%h4.mbf Style fights
+%p.mtf
+	There is code in the template to handle size, colors, etc. for content, but it isn't the desired styles. Each bit of text has styles added to counter the existing ones.
+
+%h2 Possible Fixes
+
+%p
+	I'm going to share what I did to trim things down, but I can't stress enough that this isn't "the way". These could trim things down but ultimately it would be a balance of tailoring the template to the content and ensuring that no extra styles are added each time content is entered. The real fix is process.
+
+%h4.mbf Unutilized CSS
+%p
+	Since the title and paragraph elements aren't beind used, I removed all of the CSS in the template for them. Ultimately the better fix is to use them in content entry but I admit that I don't use them in our emails. Here's a little bit of it:
+
+%pre.stretch.stretch--b
+	%code.language-css
+		:preserve
+
+			h1 {
+				color:#000000 !important;
+				display:block;
+				font-family:Helvetica;
+				font-size:60px;
+				font-style:normal;
+				font-weight:normal;
+				line-height:125%;
+				letter-spacing:normal;
+				margin:0;
+				text-align:center; }
+
+			h2 {
+				color:#000000 !important;
+				display:block;
+				font-family:Helvetica;
+				font-size:26px;
+				font-style:normal;
+				font-weight:normal;
+				line-height:125%;
+				letter-spacing:normal;
+				margin:0;
+				text-align:center; }
+
+			h3 {
+				color:#000000 !important;
+				display:block;
+				font-family:Helvetica;
+				font-size:20px;
+				font-style:normal;
+				font-weight:normal;
+				line-height:125%;
+				letter-spacing:normal;
+				margin:0;
+				text-align:center; }
+
+			h4 {
+				color:#000000 !important;
+				display:block;
+				font-family:Helvetica;
+				font-size:16px;
+				font-style:normal;
+				font-weight:normal;
+				line-height:125%;
+				letter-spacing:normal;
+				margin:0;
+				text-align:left; }
+
+			@media only screen and (max-width: 480px){
+				h1 {
+					font-size:24px !important;
+					line-height:125% !important;
+				} }
+
+			@media only screen and (max-width: 480px){
+				h2 {
+					font-size:20px !important;
+					line-height:125% !important;
+				} }
+
+			@media only screen and (max-width: 480px){
+				h3 {
+					font-size:18px !important;
+					line-height:125% !important;
+				} }
+
+			@media only screen and (max-width: 480px){
+				h4 {
+					font-size:16px !important;
+					line-height:125% !important;
+				} }
+
+%h4.mbf.mtm Nesting
+%p
+	To reduce nesting and to divide up the areas that you're editing, I divided the template into 3 sections: header, content, footer.
+
+%pre.stretch.stretch--b
+	%code.language-markup
+		:preserve
+
+			&lt;!-- HEADER --&gt;
+			&lt;table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"&gt;...
+
+			&lt;!-- CONTENT --&gt;
+			&lt;table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"&gt;...
+
+			&lt;!-- FOOTER --&gt;
+			&lt;table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"&gt;...
+
+%h4.mbf.mtm The multiple cell approach
+%p
+	It's a small amount of code per table, but the combination of saving lines without the ghose tables and reducing nesting helps reduce the overall code.
+
+%p.mbf
+	%strong Ghost Tables
+
+%pre.stretch.stretch--b
+	%code.language-markup
+		:preserve
+			&lt;!--[if mso]&gt;
+				&lt;table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"&gt;
+					&lt;tr&gt;
+			&lt;![endif]--&gt;
+			&lt;!--[if mso]&gt;
+				&lt;td valign="top" width="600" style="width:600px;"&gt;
+			&lt;![endif]--&gt;
+			&lt;table style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="100%"&gt;
+				&lt;tbody&gt;
+					&lt;tr&gt;
+						&lt;td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 15px;line-height: 200%;text-align: left;" valign="top"&gt;
+							&lt;div style="text-align: center;"&gt;
+								&lt;span style="font-size:18px; line-height:22px"&gt;&lt;strong&gt;Let’s be real: We know you spent yesterday Amazon Prime-ing your way to happiness. Here’s what you missed while you were trying to score fancy headphones and half-priced Kindles.&lt;/strong&gt;&lt;/span&gt;
+							&lt;/div&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/tbody&gt;
+			&lt;/table&gt;
+			&lt;!--[if mso]&gt;
+			&lt;/td&gt;
+			&lt;![endif]--&gt;
+			&lt;!--[if mso]&gt;
+				&lt;/tr&gt;
+			&lt;/table&gt;
+			&lt;![endif]--&gt;
+
+%p.mbf.mtm
+	%strong Multiple cells
+
+%pre.stretch.stretch--b
+	%code.language-html
+		:preserve
+
+			&lt;!-- Content Container --&gt;
+			&lt;table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size"&gt;
+				&lt;tr&gt;
+					&lt;td style="font-size: 0;"&gt;&nbsp;&lt;/td&gt;
+					&lt;td width="564"&gt;
+
+						&lt;!--- Content Content ---&gt;
+						&lt;table border="0" cellpadding="0" cellspacing="0" width="100%"&gt;
+							&lt;tr&gt;
+								&lt;td class="mcnTextContent" style="color: #000000; font-family: Helvetica; font-size: 18px; line-height: 30px; -ms-text-size-adjust: 100%; text-align: center; word-break: break-word; padding-top: 36px;"&gt;
+									&lt;strong&gt;Let's be real: We know you spent yesterday Amazon Prime-ing your way to happiness. Here's what you missed while you were trying to score fancy headphones and half-priced Kindles.&lt;/strong&gt;
+								&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/table&gt;
+
+					&lt;td style="font-size: 0;"&gt;&nbsp;&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/table&gt;
+
+%h4.mbf.mtm Reducing inlined styles
+%p
+	This is a little challenging if you're using MailChimp templates. You have to add the code to a campaign and turn off their CSS inlining to be sure that these don't get inlined. (Or use another tool like Builder and assign the value to not inline them and then paste into a campaign.)
+
+%p
+	These two rules are in the code 112 times. The lack of gzip in email clients means that is 111 times too many (but only because these two targeted clients will read from a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code>). For giggles, I saved 111 into a file and it's 7kb. (There's also a "ms" rule but I'm not entirely sure if microsoft phone clients read the <code>&lt;style&gt;</code> tag.)
+
+%pre.stretch.stretch--b
+	%code.language-css
+		:preserve
+			mso-line-height-rule: exactly;
+			&dash;webkit-text-size-adjust: 100%;
+
+%h4.mbf.mtm Reducing style fights
+%p
+	While my fixes work in this one-off context, it would require editing the main template and then discussing the process for creating content. The correct styles would need to be in the containing cell and it would need to be clear that styles shouldn't be added via the UI.
+
+%p
+	In this sample, you can see that the sizes and colors are set in the <code>&lt;td&gt;</code>, but they're being countered by a <code>&lt;div&gt;</code>, an <code>&lt;a&gt;</code>, and a <code>&lt;span&gt;</code>.
+
+%pre.stretch.stretch--b
+	%code.language-html
+		:preserve
+
+			&lt;td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: center;"
+			valign="top"&gt;
+				&lt;div style="text-align: left;"&gt;&lt;span style="font-size:18px; line-height:22px"&gt;&lt;strong&gt;Bernie Says He's “Proud To Stand” with Hillary&lt;/strong&gt;
+					&lt;br&gt;
+					&lt;br&gt;
+					Bernie Sanders, progressive millennial hero and America’s favorite grandpa, officially endorsed his longtime frenemy Hillary Clinton. "Let me begin by thanking the 13 million Americans who voted for me during the Democratic primaries," he said, &lt;a href="http://www.cnn.com/2016/07/11/politics/hillary-clinton-bernie-sanders/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;"&gt;&lt;span style="color:#1cc7f2"&gt;before eventually congratulating Clinton on her victory&lt;/span&gt;&lt;/a&gt;
+
+%p.mts
+	Here you can see that the styles to match the desired look are in the <code>&lt;td&gt;</code> and that only specific styles to the link are put on the <code>&lt;a&gt;</code>.
+
+%pre.stretch.stretch--b
+	%code.language-html
+		:preserve
+
+			&lt;td class="mcnTextContent" style="color: #000000; font-family: Helvetica; font-size: 18px; line-height: 22px; -ms-text-size-adjust: 100%; padding-top: 18px; word-break: break-word;"&gt;
+				Bernie Sanders, progressive millennial hero and America's favorite grandpa, officially endorsed his longtime frenemy Hillary Clinton. "Let me begin by thanking the 13 million Americans who voted for me during the Democratic primaries," he said, &lt;a href="http://www.cnn.com/2016/07/11/politics/hillary-clinton-bernie-sanders/" target="_blank" style="color: #1cc7f2; font-weight: bold; text-decoration: none;"&gt;before eventually congratulating Clinton on her victory&lt;/a&gt;
+
+%h2.mtm The Comparison
+
+%p
+	My alternative takes all of these into play and I tried to do them in a way that would be repeatable within the original template and still be edited from the UI. It's not perfect, I seemingly deleted some style that reduces the header text on small screens but I didn't want to track that down. This was more about what would happen if you trimmed code.
+
+%p.mbf
+	%strong The Original
+
+.stretch.stretch--b
+	<script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="9306f30"></script>
+
+%p.mbf
+	%strong My Alternative
+
+.stretch.stretch--b
+	<script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="b896771"></script>

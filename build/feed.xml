@@ -5,16 +5,220 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2016-06-29T20:00:00-04:00</updated>
+  <updated>2016-07-15T20:00:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Reducing HTML Email Code</title>
+    <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/reducing-html-email-code"/>
+    <id>http://blog.url.com/posts/front-end-dev/reducing-html-email-code</id>
+    <published>2016-07-15T20:00:00-04:00</published>
+    <updated>2016-07-16T16:23:37-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;style&gt;
+  /* line 1, (__TEMPLATE__) */
+  .stretch {
+    border: 10px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: relative; }
+    @media screen and (min-width: 840px) {
+      /* line 1, (__TEMPLATE__) */
+      .stretch {
+        left: -50px;
+        max-width: 800px;
+        width: 800px; } }
+  
+  /* line 12, (__TEMPLATE__) */
+  .stretch--a {
+    border: 10px solid #f9f9f9; }
+  
+  /* line 15, (__TEMPLATE__) */
+  .stretch--b {
+    border: 0;
+    box-shadow: none; }
+  
+  /* line 19, (__TEMPLATE__) */
+  table {
+    border-collapse: collapse;
+    width: 100%; }
+  
+  /* line 23, (__TEMPLATE__) */
+  th {
+    background: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    font-weight: 600;
+    padding: 0 4px;
+    text-align: left; }
+  
+  /* line 30, (__TEMPLATE__) */
+  td {
+    border: 1px solid #f1f1f1;
+    padding: 0 4px; }
+  
+  /* line 34, (__TEMPLATE__) */
+  strong {
+    font-weight: 600; }
+  
+  /* line 37, (__TEMPLATE__) */
+  pre {
+    font-size: 16px; }
+  
+  @media screen and (max-width: 479px) {
+    /* line 41, (__TEMPLATE__) */
+    thead {
+      display: none; }
+  
+    /* line 44, (__TEMPLATE__) */
+    td {
+      display: block; }
+      /* line 47, (__TEMPLATE__) */
+      td:before {
+        content: attr(data-th);
+        display: inline-block;
+        font-weight: 600;
+        width: 50%; } }
+&lt;/style&gt;
+&lt;p&gt;
+  I recently came across an article, &lt;a href="https://medium.com/@cloverfounders/the-problem-with-email-newsletters-f606a485ccc1#.56k4k0uh3"&gt;The Problem with Email Newsletters&lt;/a&gt;. I was really curious about the problems that people run into with creating them, but I was surprised by the main problem that this one covered:
+&lt;/p&gt;
+&lt;div class='stretch stretch--a'&gt;
+  &lt;blockquote class='tsl'&gt;
+    "The problem is that 102KB is tiny. An email with a little bit of text and a single photo is larger than 102KB. For Clover, we would need to delete 75% of the content in our current letter in order to squeak in under Gmail’s clipping restrictions."
+  &lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;p class='mtm'&gt;
+  The only time that I could remember running into this problem is when I was doing extreme stuff like converting images into tables filled with colors and creating data visualizations using table colors. I peeked at all of my Code School emails and the largest one I had created was 54kb, so I thought I should take a crack at reducing the code in it.
+&lt;/p&gt;
+&lt;h2&gt;The Results May Be Misleading&lt;/h2&gt;
+&lt;table class='mts'&gt;
+  &lt;thead&gt;
+    &lt;th&gt;File&lt;/th&gt;
+    &lt;th&gt;Expanded&lt;/th&gt;
+    &lt;th&gt;Minified&lt;/th&gt;
+    &lt;th&gt;Images&lt;/th&gt;
+    &lt;th&gt;Total&lt;/th&gt;
+  &lt;/thead&gt;
+  &lt;tr&gt;
+    &lt;td data-th='File'&gt;clover.html&lt;/td&gt;
+    &lt;td data-th='Expanded'&gt;134kb&lt;/td&gt;
+    &lt;td data-th='Minified'&gt;74kb&lt;/td&gt;
+    &lt;td data-th='Images'&gt;436kb&lt;/td&gt;
+    &lt;td data-th='Total'&gt;570kb&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td data-th='File'&gt;clover-alt.html&lt;/td&gt;
+    &lt;td data-th='Expanded'&gt;42kb&lt;/td&gt;
+    &lt;td data-th='Minified'&gt;33kb&lt;/td&gt;
+    &lt;td data-th='Images'&gt;356kb&lt;/td&gt;
+    &lt;td data-th='Total'&gt;398kb&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p class='mtm'&gt;
+  I was able to reduce the amount of code significantly, from 134kb to 42kb by picking through it and &lt;a href="https://imageoptim.com/mac"&gt;ImageOptim&lt;/a&gt; took care of the images. This seems great and like I should just share it with them, right? Not so fast...
+&lt;/p&gt;
+&lt;h2&gt;The Formula for Redundancy&lt;/h2&gt;
+&lt;p&gt;
+  A template created for general use and a non-developer adding content will almost always result in redundant code. It's probably the most common problem in CMS-driven content because it's so hard to solve. It's the reason we switched to me creating all of the HTML emails that we send at Code School and why the front-end team handles the formatting of all blog posts there as well. I'll break down the good, the "coulde be better", and the fixes in this particular instance.
+&lt;/p&gt;
+&lt;h2&gt;The Good&lt;/h2&gt;
+&lt;p&gt;
+  The template is really well done. The code is great and it works well across all screen sizes. They were able to customize it to the look and feel that they wanted and maintain consistency in their data entry, too.
+&lt;/p&gt;
+&lt;h2&gt;The "Could Be Better"&lt;/h2&gt;
+&lt;h4 class='mbf mts'&gt;Some CSS is not being utilized&lt;/h4&gt;
+&lt;p class='mtf'&gt;
+  The template is intended to have content entered using HTML elements for titles and text (H1, H2, H3, H4, H5, p). However, none of that is being used.
+&lt;/p&gt;
+&lt;h4 class='mbf'&gt;Nesting could be reduced&lt;/h4&gt;
+&lt;p class='mtf'&gt;
+  There are some deeply nested tables that could be moved up a few levels.
+&lt;/p&gt;
+&lt;h4 class='mbf'&gt;Spongy vs. multiple cell approach&lt;/h4&gt;
+&lt;p class='mtf'&gt;
+  There are a few ways to mark up templates that will work well across multiple resolutions. This one is using the spongy approach, which has code for ghost tables.
+&lt;/p&gt;
+&lt;h4 class='mbf'&gt;Too many styles are inlined&lt;/h4&gt;
+&lt;p class='mtf'&gt;
+  There is some code that only works in specific clients which could be only in the head. Admittedly, this is tricky depending on what is handling the inlining.
+&lt;/p&gt;
+&lt;h4 class='mbf'&gt;Style fights&lt;/h4&gt;
+&lt;p class='mtf'&gt;
+  There is code in the template to handle size, colors, etc. for content, but it isn't the desired styles. Each bit of text has styles added to counter the existing ones.
+&lt;/p&gt;
+&lt;h2&gt;Possible Fixes&lt;/h2&gt;
+&lt;p&gt;
+  I'm going to share what I did to trim things down, but I can't stress enough that this isn't "the way". These could trim things down but ultimately it would be a balance of tailoring the template to the content and ensuring that no extra styles are added each time content is entered. The real fix is process.
+&lt;/p&gt;
+&lt;h4 class='mbf'&gt;Unutilized CSS&lt;/h4&gt;
+&lt;p&gt;
+  Since the title and paragraph elements aren't beind used, I removed all of the CSS in the template for them. Ultimately the better fix is to use them in content entry but I admit that I don't use them in our emails. Here's a little bit of it:
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-css'&gt;h1 {&amp;#x000A;	color:#000000 !important;&amp;#x000A;	display:block;&amp;#x000A;	font-family:Helvetica;&amp;#x000A;	font-size:60px;&amp;#x000A;	font-style:normal;&amp;#x000A;	font-weight:normal;&amp;#x000A;	line-height:125%;&amp;#x000A;	letter-spacing:normal;&amp;#x000A;	margin:0;&amp;#x000A;	text-align:center; }&amp;#x000A;&amp;#x000A;h2 {&amp;#x000A;	color:#000000 !important;&amp;#x000A;	display:block;&amp;#x000A;	font-family:Helvetica;&amp;#x000A;	font-size:26px;&amp;#x000A;	font-style:normal;&amp;#x000A;	font-weight:normal;&amp;#x000A;	line-height:125%;&amp;#x000A;	letter-spacing:normal;&amp;#x000A;	margin:0;&amp;#x000A;	text-align:center; }&amp;#x000A;&amp;#x000A;h3 {&amp;#x000A;	color:#000000 !important;&amp;#x000A;	display:block;&amp;#x000A;	font-family:Helvetica;&amp;#x000A;	font-size:20px;&amp;#x000A;	font-style:normal;&amp;#x000A;	font-weight:normal;&amp;#x000A;	line-height:125%;&amp;#x000A;	letter-spacing:normal;&amp;#x000A;	margin:0;&amp;#x000A;	text-align:center; }&amp;#x000A;&amp;#x000A;h4 {&amp;#x000A;	color:#000000 !important;&amp;#x000A;	display:block;&amp;#x000A;	font-family:Helvetica;&amp;#x000A;	font-size:16px;&amp;#x000A;	font-style:normal;&amp;#x000A;	font-weight:normal;&amp;#x000A;	line-height:125%;&amp;#x000A;	letter-spacing:normal;&amp;#x000A;	margin:0;&amp;#x000A;	text-align:left; }&amp;#x000A;&amp;#x000A;@media only screen and (max-width: 480px){&amp;#x000A;	h1 {&amp;#x000A;		font-size:24px !important;&amp;#x000A;		line-height:125% !important;&amp;#x000A;	} }&amp;#x000A;&amp;#x000A;@media only screen and (max-width: 480px){&amp;#x000A;	h2 {&amp;#x000A;		font-size:20px !important;&amp;#x000A;		line-height:125% !important;&amp;#x000A;	} }&amp;#x000A;&amp;#x000A;@media only screen and (max-width: 480px){&amp;#x000A;	h3 {&amp;#x000A;		font-size:18px !important;&amp;#x000A;		line-height:125% !important;&amp;#x000A;	} }&amp;#x000A;&amp;#x000A;@media only screen and (max-width: 480px){&amp;#x000A;	h4 {&amp;#x000A;		font-size:16px !important;&amp;#x000A;		line-height:125% !important;&amp;#x000A;	} }&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 class='mbf mtm'&gt;Nesting&lt;/h4&gt;
+&lt;p&gt;
+  To reduce nesting and to divide up the areas that you're editing, I divided the template into 3 sections: header, content, footer.
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-markup'&gt;&amp;lt;!-- HEADER --&amp;gt;&amp;#x000A;&amp;lt;table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;...&amp;#x000A;&amp;#x000A;&amp;lt;!-- CONTENT --&amp;gt;&amp;#x000A;&amp;lt;table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;...&amp;#x000A;&amp;#x000A;&amp;lt;!-- FOOTER --&amp;gt;&amp;#x000A;&amp;lt;table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;...&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 class='mbf mtm'&gt;The multiple cell approach&lt;/h4&gt;
+&lt;p&gt;
+  It's a small amount of code per table, but the combination of saving lines without the ghose tables and reducing nesting helps reduce the overall code.
+&lt;/p&gt;
+&lt;p class='mbf'&gt;
+  &lt;strong&gt;Ghost Tables&lt;/strong&gt;
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-markup'&gt;&amp;lt;!--[if mso]&amp;gt;&amp;#x000A;	&amp;lt;table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"&amp;gt;&amp;#x000A;		&amp;lt;tr&amp;gt;&amp;#x000A;&amp;lt;![endif]--&amp;gt;&amp;#x000A;&amp;lt;!--[if mso]&amp;gt;&amp;#x000A;	&amp;lt;td valign="top" width="600" style="width:600px;"&amp;gt;&amp;#x000A;&amp;lt;![endif]--&amp;gt;&amp;#x000A;&amp;lt;table style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;&amp;#x000A;	&amp;lt;tbody&amp;gt;&amp;#x000A;		&amp;lt;tr&amp;gt;&amp;#x000A;			&amp;lt;td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 15px;line-height: 200%;text-align: left;" valign="top"&amp;gt;&amp;#x000A;				&amp;lt;div style="text-align: center;"&amp;gt;&amp;#x000A;					&amp;lt;span style="font-size:18px; line-height:22px"&amp;gt;&amp;lt;strong&amp;gt;Let’s be real: We know you spent yesterday Amazon Prime-ing your way to happiness. Here’s what you missed while you were trying to score fancy headphones and half-priced Kindles.&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;#x000A;				&amp;lt;/div&amp;gt;&amp;#x000A;			&amp;lt;/td&amp;gt;&amp;#x000A;		&amp;lt;/tr&amp;gt;&amp;#x000A;	&amp;lt;/tbody&amp;gt;&amp;#x000A;&amp;lt;/table&amp;gt;&amp;#x000A;&amp;lt;!--[if mso]&amp;gt;&amp;#x000A;&amp;lt;/td&amp;gt;&amp;#x000A;&amp;lt;![endif]--&amp;gt;&amp;#x000A;&amp;lt;!--[if mso]&amp;gt;&amp;#x000A;	&amp;lt;/tr&amp;gt;&amp;#x000A;&amp;lt;/table&amp;gt;&amp;#x000A;&amp;lt;![endif]--&amp;gt;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class='mbf mtm'&gt;
+  &lt;strong&gt;Multiple cells&lt;/strong&gt;
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-html'&gt;&amp;lt;!-- Content Container --&amp;gt;&amp;#x000A;&amp;lt;table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size"&amp;gt;&amp;#x000A;	&amp;lt;tr&amp;gt;&amp;#x000A;		&amp;lt;td style="font-size: 0;"&amp;gt;&amp;nbsp;&amp;lt;/td&amp;gt;&amp;#x000A;		&amp;lt;td width="564"&amp;gt;&amp;#x000A;&amp;#x000A;			&amp;lt;!--- Content Content ---&amp;gt;&amp;#x000A;			&amp;lt;table border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;&amp;#x000A;				&amp;lt;tr&amp;gt;&amp;#x000A;					&amp;lt;td class="mcnTextContent" style="color: #000000; font-family: Helvetica; font-size: 18px; line-height: 30px; -ms-text-size-adjust: 100%; text-align: center; word-break: break-word; padding-top: 36px;"&amp;gt;&amp;#x000A;						&amp;lt;strong&amp;gt;Let's be real: We know you spent yesterday Amazon Prime-ing your way to happiness. Here's what you missed while you were trying to score fancy headphones and half-priced Kindles.&amp;lt;/strong&amp;gt;&amp;#x000A;					&amp;lt;/td&amp;gt;&amp;#x000A;				&amp;lt;/tr&amp;gt;&amp;#x000A;			&amp;lt;/table&amp;gt;&amp;#x000A;&amp;#x000A;		&amp;lt;td style="font-size: 0;"&amp;gt;&amp;nbsp;&amp;lt;/td&amp;gt;&amp;#x000A;	&amp;lt;/tr&amp;gt;&amp;#x000A;&amp;lt;/table&amp;gt;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 class='mbf mtm'&gt;Reducing inlined styles&lt;/h4&gt;
+&lt;p&gt;
+  This is a little challenging if you're using MailChimp templates. You have to add the code to a campaign and turn off their CSS inlining to be sure that these don't get inlined. (Or use another tool like Builder and assign the value to not inline them and then paste into a campaign.)
+&lt;/p&gt;
+&lt;p&gt;
+  These two rules are in the code 112 times. The lack of gzip in email clients means that is 111 times too many (but only because these two targeted clients will read from a &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;). For giggles, I saved 111 into a file and it's 7kb. (There's also a "ms" rule but I'm not entirely sure if microsoft phone clients read the &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag.)
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-css'&gt;mso-line-height-rule: exactly;&amp;#x000A;&amp;dash;webkit-text-size-adjust: 100%;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 class='mbf mtm'&gt;Reducing style fights&lt;/h4&gt;
+&lt;p&gt;
+  While my fixes work in this one-off context, it would require editing the main template and then discussing the process for creating content. The correct styles would need to be in the containing cell and it would need to be clear that styles shouldn't be added via the UI.
+&lt;/p&gt;
+&lt;p&gt;
+  In this sample, you can see that the sizes and colors are set in the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;, but they're being countered by a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;, and a &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;.
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-html'&gt;&amp;lt;td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: center;"&amp;#x000A;valign="top"&amp;gt;&amp;#x000A;	&amp;lt;div style="text-align: left;"&amp;gt;&amp;lt;span style="font-size:18px; line-height:22px"&amp;gt;&amp;lt;strong&amp;gt;Bernie Says He's “Proud To Stand” with Hillary&amp;lt;/strong&amp;gt;&amp;#x000A;		&amp;lt;br&amp;gt;&amp;#x000A;		&amp;lt;br&amp;gt;&amp;#x000A;		Bernie Sanders, progressive millennial hero and America’s favorite grandpa, officially endorsed his longtime frenemy Hillary Clinton. "Let me begin by thanking the 13 million Americans who voted for me during the Democratic primaries," he said, &amp;lt;a href="http://www.cnn.com/2016/07/11/politics/hillary-clinton-bernie-sanders/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;"&amp;gt;&amp;lt;span style="color:#1cc7f2"&amp;gt;before eventually congratulating Clinton on her victory&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class='mts'&gt;
+  Here you can see that the styles to match the desired look are in the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; and that only specific styles to the link are put on the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;.
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-html'&gt;&amp;lt;td class="mcnTextContent" style="color: #000000; font-family: Helvetica; font-size: 18px; line-height: 22px; -ms-text-size-adjust: 100%; padding-top: 18px; word-break: break-word;"&amp;gt;&amp;#x000A;	Bernie Sanders, progressive millennial hero and America's favorite grandpa, officially endorsed his longtime frenemy Hillary Clinton. "Let me begin by thanking the 13 million Americans who voted for me during the Democratic primaries," he said, &amp;lt;a href="http://www.cnn.com/2016/07/11/politics/hillary-clinton-bernie-sanders/" target="_blank" style="color: #1cc7f2; font-weight: bold; text-decoration: none;"&amp;gt;before eventually congratulating Clinton on her victory&amp;lt;/a&amp;gt;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 class='mtm'&gt;The Comparison&lt;/h2&gt;
+&lt;p&gt;
+  My alternative takes all of these into play and I tried to do them in a way that would be repeatable within the original template and still be edited from the UI. It's not perfect, I seemingly deleted some style that reduces the header text on small screens but I didn't want to track that down. This was more about what would happen if you trimmed code.
+&lt;/p&gt;
+&lt;p class='mbf'&gt;
+  &lt;strong&gt;The Original&lt;/strong&gt;
+&lt;/p&gt;
+&lt;div class='stretch stretch--b'&gt;
+  &lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="9306f30"&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;p class='mbf'&gt;
+  &lt;strong&gt;My Alternative&lt;/strong&gt;
+&lt;/p&gt;
+&lt;div class='stretch stretch--b'&gt;
+  &lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="b896771"&gt;&lt;/script&gt;
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <title>Rethinking My eMMail Workflow</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow"/>
     <id>http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow</id>
     <published>2016-06-29T20:00:00-04:00</published>
-    <updated>2016-06-30T22:21:42-04:00</updated>
+    <updated>2016-07-16T12:44:16-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -155,7 +359,7 @@
         Variables have other uses but are super handy for setting analytics trackers throughout your links, &lt;a href="https://litmus.com/help/testing/litmus-builder-guide/#tracking-manager"&gt;which they added&lt;/a&gt;. Plus, the on-the-fly CSS inlining removes a lot of the need for variables if you're using classes.
       &lt;/p&gt;
       &lt;p&gt;
-        Partials are now in beta and working well. This was the big one for me as I maintain 40+ transactional emails. When something needs to change in our header or footer, it has to change in every file. This was the primary reason I was using Middleman and it's in Builder now.
+        I had access to the Partials beta and they're now live for everyone and working well. This was the big one for me as I maintain 40+ transactional emails. When something needs to change in our header or footer, it has to change in every file. This was the primary reason I was using Middleman and it's in Builder now.
       &lt;/p&gt;
       &lt;p&gt;
         I doubt they'll tackle the reporting bit anytime soon since that's more related to your ESP, but I hit a wall with mine. I want historical data to show performance of an email over time and that isn't straight-forward when hijacking the frontmatter in Middleman. It's super easy and readable in a Google Docs spreadsheet, though.
@@ -242,7 +446,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree"/>
     <id>http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree</id>
     <published>2016-06-25T20:00:00-04:00</published>
-    <updated>2016-06-30T20:35:17-04:00</updated>
+    <updated>2016-07-16T12:44:16-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -567,42 +771,6 @@ end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;
   We have a &lt;a href='http://frontendconf.com'&gt;new landing page&lt;/a&gt; whipped up by the team, with some of Giovanni's awesome artistry. Be sure to sign up for updates for when we have details...
 &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Give Back</title>
-    <link rel="alternate" href="http://blog.url.com/posts/general/give-back"/>
-    <id>http://blog.url.com/posts/general/give-back</id>
-    <published>2014-10-06T20:00:00-04:00</published>
-    <updated>2016-03-03T16:52:01-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p class='center'&gt;
-  &lt;img class="mhc" width="640" height="640" src="assets/images/posts/general/give-back/give-back.jpg" /&gt;
-  &lt;br&gt;
-  &lt;small&gt;Two of my favorite people &lt;a href="https://twitter.com/carlsmith"&gt;Carl Smith&lt;/a&gt; and &lt;a href="https://twitter.com/andigrahambsd"&gt;Andi Graham&lt;/a&gt;, who are always giving back to the community.&lt;/small&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  Some wonderful got together and made us an &lt;a href="http://frontendthanks.com"&gt;awesome site&lt;/a&gt; and printed off t-shirts. Thank you again to everyone involved and specifically to &lt;a href="https://twitter.com/michigangraham"&gt;Matt Graham&lt;/a&gt; and &lt;a href="https://twitter.com/bencallahan"&gt;Ben Callahan&lt;/a&gt; for heading things up. They also donated the proceeds from Cotton Bureau to us. Needless to say, we never planned on pocketing that.
-&lt;/p&gt;
-&lt;h2 class='mbf'&gt;Giving It Back&lt;/h2&gt;
-&lt;p&gt;
-  There's an awesome opportunity to give back in a couple of ways. We really want this project to get funded: &lt;a href="https://www.indiegogo.com/projects/code-debugging-the-gender-gap"&gt;CODE: Debugging the Gender Gap&lt;/a&gt;. Additionally, one of the rewards gets someone 6 months of &lt;a href="http:codeschool.com"&gt;Code School&lt;/a&gt;. I love working there and the idea of someone getting 6 months to increase their skills.
-&lt;/p&gt;
-&lt;p&gt;
-  So, we bought 2 of the $100 levels where someone gets the Code School reward and I want to give the rewards away.
-&lt;/p&gt;
-&lt;h2 class='mbf'&gt;We Need Your Help&lt;/h2&gt;
-&lt;h5 class='mbf'&gt;Step one:&lt;/h5&gt;
-&lt;p class='mtf'&gt;
-  We need to know who to give these 2 rewards to. Are you in a point in your career where this could really make a difference? Or, do you know someone that it could really make a difference to? Pop your or their name in the form below and I'll do a random draw on Friday (October 10th).
-&lt;/p&gt;
-&lt;h5 class='mbf'&gt;Step two:&lt;/h5&gt;
-&lt;p class='mtf mbl'&gt;
-  &lt;a href="https://www.indiegogo.com/projects/code-debugging-the-gender-gap"&gt;Share the project!&lt;/a&gt; It has 4 days left and only needs $1,750 (at this moment).
-&lt;/p&gt;
-&lt;h4&gt;Congratulations to Fasina and Ryan, our winners!&lt;/h4&gt;
 </content>
   </entry>
 </feed>
