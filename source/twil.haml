@@ -7,8 +7,6 @@ layout: twil
     color: #535353
     font-family: 'Raleway', sans-serif
     font-weight: 400
-    margin: 0 auto
-    max-width: 600px
 
   h1,
   h2,
@@ -31,22 +29,63 @@ layout: twil
   a
     color: #b51f24
 
+  img
+    max-width: 100%
+
+  blockquote
+    font-size: 20px
+
+  .container
+    margin: 0 auto
+    max-width: 480px
+    padding: 0 40px
+
+  .heading
+    margin: 0 auto
+    max-width: 600px
+    padding: 60px 0 15px 0
+
 %h1 TWIL
 
-%blockquote
+.container
 
-  “Formal education will make you a living; self-education will make you a fortune.”
-  %br
-  ― Jim Rohn
+  %blockquote
 
-%h2 Section title
+    “Formal education will make you a living; self-education will make you a fortune.”
+    %br
+    ― Jim Rohn
 
-%h3
-  %a{ href: 'https://medium.com/cm-engineering/coding-mobile-first-emails-1513ac4673e#.q9e9xogm3' } Coding mobile-first emails
-%p
-  You may have read our announcement on the Campaign Monitor blog that email campaigns created with our Email Builder now render beautifully across all major devices and clients. This includes the Gmail and Yahoo! Mail apps on Android and iOS.
+.heading
 
-%h3
-  %a{ href: 'https://medium.com/cm-engineering/coding-mobile-first-emails-1513ac4673e#.q9e9xogm3' } Coding mobile-first emails
-%p
-  You may have read our announcement on the Campaign Monitor blog that email campaigns created with our Email Builder now render beautifully across all major devices and clients. This includes the Gmail and Yahoo! Mail apps on Android and iOS.
+  %img{ alt: 'Front-end', src: '/assets/images/twil/front-end.png', width: '100%' }
+
+.container
+
+  %h3
+    %a{ href: 'https://uxdesign.cc/design-better-forms-96fadca0f49c#.ibkcrv5mw' } Design Better Forms
+  %p
+    I've been working on a Udacity Nanodegree and forms are at the heart of it, so this was a welcome read. The most interesting tip to me was "show all selection options if under 6". I kinda dig it. Most of the rest of it was reenforcing things that I already learned, which is still always good.
+
+  %h3
+    %a{ href: 'https://github.com/showcases/fonts' } GitHub Font Showcase
+  %p
+    Tons of fonts are stored in GitHub, including all of the Google Fonts files. Who knew?
+
+.heading
+
+  %img{ alt: 'HTML Email', src: '/assets/images/twil/html-email.png', width: '100%' }
+
+.container
+
+  %h3
+    %a{ href: 'https://medium.com/cm-engineering/coding-mobile-first-emails-1513ac4673e#.q9e9xogm3' } Coding mobile-first emails
+  %p
+    Stig is an HTML email legend and he's been working on a new technique for Campaign Monitor customers to send mobile-first emails. My biggest takeaway was the unique use of <code>calc()</code>. I mean, these are cray cray:
+
+  %pre
+    %code
+      width: calc((600px - 320px) * 100% - (600px - 320px) * 620 - 600px);
+
+  %pre
+    %code
+      width: calc(28000% - 173000px);
