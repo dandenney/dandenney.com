@@ -5,16 +5,131 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2016-07-15T20:00:00-04:00</updated>
+  <updated>2016-08-07T20:00:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>I'm Learning How to Solve Problems with JavaScript</title>
+    <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving"/>
+    <id>http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving</id>
+    <published>2016-08-07T20:00:00-04:00</published>
+    <updated>2016-08-08T19:11:25-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;style&gt;
+  /* line 1, (__TEMPLATE__) */
+  .stretch {
+    border: 10px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: relative; }
+    @media screen and (min-width: 840px) {
+      /* line 1, (__TEMPLATE__) */
+      .stretch {
+        left: -40px;
+        max-width: 800px;
+        width: 800px; } }
+  
+  /* line 12, (__TEMPLATE__) */
+  .stretch--a {
+    border: 10px solid #f9f9f9; }
+  
+  /* line 15, (__TEMPLATE__) */
+  .stretch--b {
+    border: 0;
+    box-shadow: none; }
+  
+  /* line 19, (__TEMPLATE__) */
+  strong {
+    font-weight: 600; }
+  
+  /* line 22, (__TEMPLATE__) */
+  code {
+    font-size: 16px; }
+&lt;/style&gt;
+&lt;img src='/assets/images/posts/front-end-dev/learning-javascript-problem-solving/crash-js.svg'&gt;
+&lt;article&gt;
+  &lt;div class='row'&gt;
+    &lt;div class='cell cell--s'&gt;
+      &lt;h1&gt;&lt;/h1&gt;
+      &lt;p&gt;
+        &lt;strong&gt;Disclaimer:&lt;/strong&gt;
+        In this post, I am sharing something that I've been learning. It's in no way a how-to and in fact I'd love feedback on better ways to do what I've done.
+      &lt;/p&gt;
+      &lt;p&gt;
+        I've been focused on learning functional or programmatic JavaScript lately, trying to step up my game from the presentational side of things. Without a Comp Sci background, there's more to learn than syntax. I have to think about how to approach problems and that is as big of a learning curve as the syntax is for me.
+      &lt;/p&gt;
+      &lt;p&gt;
+        While driving around my daughter and her boyfriend this weekend, he popped out one of those school questions: "2 trains are 1000 feet apart. One train is going 80 miles per hour, one is going 60 miles per hour. How long before they crash?" (It turns out he was using it as a riddle because he said feet, but my mind was already running.)
+      &lt;/p&gt;
+      &lt;h2&gt;Which came first, the solution or the code?&lt;/h2&gt;
+      &lt;p&gt;
+        In thinking about miles instead, this seemed like the perfect small thing to work through solving. The first step required figuring out a way to solve the problem before thinking about how to code it.
+      &lt;/p&gt;
+      &lt;p&gt;
+        My thinking was that if I add the 2 speeds together, they are a "cycle". Then it would be a matter of dividing the total number by the number of cycles. To make sure it would work, I created a spreadsheet to test it. (Not while I was in the car)
+      &lt;/p&gt;
+      &lt;img src='/assets/images/posts/front-end-dev/learning-javascript-problem-solving/spreadsheet.png'&gt;
+      &lt;h2 class='mtm'&gt;"How do I code this?"&lt;/h2&gt;
+      &lt;p&gt;
+        My first step was thinking about how to do small portions of this. My former self (like before right now), would have wrote this in one loooong function. I've learned bits and pieces about organization and creating functions that handle one specific thing from &lt;a href="http://drewbarontini.com"&gt;Drew&lt;/a&gt; and want to start putting that to use.
+      &lt;/p&gt;
+      &lt;h2&gt;Step One: Calculate the number of cycles&lt;/h2&gt;
+      &lt;p&gt;
+        Like in the spreadsheet, I want code that will add 80 + 60, divide that number into 1000 and output 7.14. I also want each of those numbers to be able to be changed, but I started with the exact ones to check accuracy.
+      &lt;/p&gt;
+      &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateCycles(distance, speedA, speedB) {&amp;#x000A;  var distance = distance;&amp;#x000A;  var speedA = speedA;&amp;#x000A;  var speedB = speedB;&amp;#x000A;  var cycle = speedA + speedB;&amp;#x000A;  var cycleCount = distance / cycle;&amp;#x000A;  return cycleCount;&amp;#x000A;};&amp;#x000A;&amp;#x000A;calculateCycles(1000, 80, 60);&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+      &lt;p class='mtm'&gt;
+        If you copy and paste that into the console, you should get 7.142857142857143. Technically speaking that's the answer, but I doubt any teacher would accept 7.14 hours and it's not very friendly. I wanted the answer in hours, minutes, and seconds.
+      &lt;/p&gt;
+      &lt;p&gt;
+        To avoid my one giant function, I'm returning the value at the end of the function so that I can call it elsewhere. I had to search for &lt;a href="http://stackoverflow.com/questions/19674992/javascript-using-a-return-value-in-another-function"&gt;a reminder&lt;/a&gt; on how to do that.
+      &lt;/p&gt;
+      &lt;h2&gt;Step Two: Calculate the time of the cycles&lt;/h2&gt;
+      &lt;p&gt;
+        Converting the number into hours, minutes, and seconds was a multi-step process and I was glad I had learned about the remainder functions. Again, I needed &lt;a href="http://stackoverflow.com/questions/4228356/integer-division-in-javascript"&gt;a reminder&lt;/a&gt; on the best way to handle that. The conversion is somewhat backwards, then forwards. I first needed to get the total number of seconds using the number of cycles.
+      &lt;/p&gt;
+      &lt;p&gt;
+        That total number could be divided by number of seconds in hours, using the remainder to do the same for minutes and then seconds. The answer requires 3 values: a number of hours, minutes, and seconds. So, the output of of this function is an array of those 3 values.
+      &lt;/p&gt;
+      &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateTime() {&amp;#x000A;  var cycles = calculateCycles(1000, 80, 60);&amp;#x000A;  var secondsPerHour = 60 * 60;&amp;#x000A;  var secondsTotal = secondsPerHour * cycles;&amp;#x000A;  var hoursRemainder = cycles % 1;&amp;#x000A;  var hoursResult = (secondsTotal / secondsPerHour &gt;&gt; 0);&amp;#x000A;  var minutesInitial = hoursRemainder * 60;&amp;#x000A;  var minutesRemainder = minutesInitial % 1;&amp;#x000A;  var minutesResult = (minutesInitial &gt;&gt; 0);&amp;#x000A;  var secondsResult = (minutesRemainder * 60) &gt;&gt; 0;&amp;#x000A;  return [hoursResult, minutesResult, secondsResult];&amp;#x000A;}&amp;#x000A;&amp;#x000A;calculateTime();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+      &lt;p class='mtm'&gt;
+        This one can be pasted into the console, too, but you'll need to have all the code from before for it to run. If you do, you should get &lt;code&gt;[7, 8, 34]&lt;/code&gt;. I have a CodePen at the end of the post that you can play with instead of trying to copy and paste these into the console.
+      &lt;/p&gt;
+      &lt;h2&gt;Step Three: Output the answer&lt;/h2&gt;
+      &lt;p&gt;
+        For the most part, the output was something I've been doing a lot lately. However, I was accessing the array incorrectly and had to &lt;a href=""&gt;look that up&lt;/a&gt;. Once I had that in a variable I could map each item in the array to an HTML element.
+      &lt;/p&gt;
+      &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function outputAnswer() {&amp;#x000A;  var times = calculateTime();&amp;#x000A;  var hours = times[0];&amp;#x000A;  var minutes = times[1];&amp;#x000A;  var seconds = times[2];&amp;#x000A;  var hoursOutput = document.querySelector('#hours');&amp;#x000A;  var minutesOutput = document.querySelector('#minutes');&amp;#x000A;  var secondsOutput = document.querySelector('#seconds');&amp;#x000A;  hoursOutput.innerHTML = hours;&amp;#x000A;  minutesOutput.innerHTML = minutes;&amp;#x000A;  secondsOutput.innerHTML = seconds;&amp;#x000A;};&amp;#x000A;&amp;#x000A;outputAnswer();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+      &lt;h2 class='mtm'&gt;Solution&lt;/h2&gt;
+      &lt;p&gt;
+        Here's the pen that I did it in and I used cars instead of trains because I liked the classic car vectors better.
+      &lt;/p&gt;
+      &lt;p data-height="265" data-theme-id="0" data-slug-hash="OXaWqP" data-default-tab="js,result" data-user="dandenney" data-embed-version="2" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/dandenney/pen/OXaWqP/"&gt;Trains&lt;/a&gt; by Dan Denney (&lt;a href="http://codepen.io/dandenney"&gt;@dandenney&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+      &lt;script async src="//assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
+      &lt;h2 class='mtm'&gt;Conclusion&lt;/h2&gt;
+      &lt;p&gt;
+        The good part is that this worked! So I know that I can conjure up a problem, find a solution, and work towards building that solution out in code. In applying what I've been learning, this is a big win.
+      &lt;/p&gt;
+      &lt;p&gt;
+        Ultimately, my goal is to learn how to build web apps. In that regard, I know that there's a lot more that could be done to this to make it better. There's likely more efficient ways to write it and to do the conversions. If I was making it editable, I'd have to write code that ensured that 0 or negative values wouldn't break it, etc.
+      &lt;/p&gt;
+      &lt;p&gt;
+        If there's something in here that you know I could do better, please let me know and share it for other folks to learn.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</content>
+  </entry>
   <entry>
     <title>Reducing HTML Email Code</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/reducing-html-email-code"/>
     <id>http://blog.url.com/posts/front-end-dev/reducing-html-email-code</id>
     <published>2016-07-15T20:00:00-04:00</published>
-    <updated>2016-07-16T16:23:37-04:00</updated>
+    <updated>2016-08-08T14:53:29-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -122,7 +237,7 @@
 &lt;/p&gt;
 &lt;h2&gt;The Formula for Redundancy&lt;/h2&gt;
 &lt;p&gt;
-  A template created for general use and a non-developer adding content will almost always result in redundant code. It's probably the most common problem in CMS-driven content because it's so hard to solve. It's the reason we switched to me creating all of the HTML emails that we send at Code School and why the front-end team handles the formatting of all blog posts there as well. I'll break down the good, the "coulde be better", and the fixes in this particular instance.
+  A template created for general use and a non-developer adding content will almost always result in redundant code. It's probably the most common problem in CMS-driven content because it's so hard to solve. It's the reason we switched to me creating all of the HTML emails that we send at Code School and why the front-end team handles the formatting of all blog posts there as well. I'll break down the good, the "could be better", and the fixes in this particular instance.
 &lt;/p&gt;
 &lt;h2&gt;The Good&lt;/h2&gt;
 &lt;p&gt;
@@ -218,7 +333,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow"/>
     <id>http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow</id>
     <published>2016-06-29T20:00:00-04:00</published>
-    <updated>2016-07-16T12:44:16-04:00</updated>
+    <updated>2016-08-08T14:53:29-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -446,7 +561,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree"/>
     <id>http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree</id>
     <published>2016-06-25T20:00:00-04:00</published>
-    <updated>2016-07-16T12:44:16-04:00</updated>
+    <updated>2016-08-08T14:53:29-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -740,37 +855,6 @@ end&lt;/code&gt;&lt;/pre&gt;
     THANK YOU to all of the attendees and speakers for making this a special event. I hope to keep in touch and see everyone next year!
   &lt;/p&gt;
 &lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Front-End Conf Lives!</title>
-    <link rel="alternate" href="http://blog.url.com/posts/conferences/front-end-conf-lives"/>
-    <id>http://blog.url.com/posts/conferences/front-end-conf-lives</id>
-    <published>2014-10-22T20:00:00-04:00</published>
-    <updated>2016-03-03T16:52:01-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;style&gt;
-  h1, h2, h3, h4 { color: #b51f24; }
-&lt;/style&gt;
-&lt;p class='center'&gt;
-  &lt;img class='db mhc' src='/assets/images/posts/conferences/front-end-conf-lives/plan-comes-together.jpg' width='400'&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  The decision to stop running Front-End Conf was a very tough one and the reaction of the people both in St. Petersburg and Portland made it even more hard. Luckily, I knew it was going to be tough and I decided to call out a few of my friends. The awesome crew from &lt;a href='http://unmatchedstyle.com/'&gt;Unmatched Style&lt;/a&gt;, who run &lt;a href='http://convergese.com/'&gt;ConvergeSE&lt;/a&gt;, &lt;a href='http://convergefl.com/'&gt;ConvergeFL&lt;/a&gt;, &lt;a href='http://convergerva.com/'&gt;ConvergeRVA&lt;/a&gt;, and the &lt;a href='https://bdconf.com/'&gt;Breaking Development confs&lt;/a&gt; (amongst other things) came up on stage to give me a gift. I returned the favor by calling them out on the possibility of running a conf in St. Pete because that's the kind of thing friends can get away with. We've been chatting since and they're officially taking over!
-&lt;/p&gt;
-&lt;p class='center'&gt;
-  &lt;img src='/assets/images/posts/conferences/front-end-conf-lives/converge-crew.jpg' width='100%'&gt;
-&lt;/p&gt;
-&lt;h2&gt;The Best Possible Outcome&lt;/h2&gt;
-&lt;p&gt;
-  Front-End Conf will continue on and will be in St. Petersburg in 2015! They will be handling all of the logistics and running the conf, which is the part Cherrie and I were struggling to keep up with. They're pros and I've learned so much from them as we've been sharing our conf running experiences over the past 6 years. (We missed each other's first confs, but I've traveled up for every ConvergeSE since 2010 and they've come down to St. Pete for every one since then as well.) The best part is that they still want us to be involved! So, we'll be helping out in every way that we can to work on the conf with friends to continue celebrating with this awesome community.
-&lt;/p&gt;
-&lt;h2&gt;Stay in the loop!&lt;/h2&gt;
-&lt;p&gt;
-  We have a &lt;a href='http://frontendconf.com'&gt;new landing page&lt;/a&gt; whipped up by the team, with some of Giovanni's awesome artistry. Be sure to sign up for updates for when we have details...
-&lt;/p&gt;
 </content>
   </entry>
 </feed>
