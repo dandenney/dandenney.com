@@ -32,14 +32,28 @@ code-sample: true
 	code
 		font-size: 16px
 
+	.refactor
+		background: #f5f5f5
+		padding: 20px
+
+	@media screen and (min-width: 1040px)
+
+		.title-shift
+			background: #fff
+			border: 20px solid #fff
+			margin: -120px -20px 0 -20px
+
+		.row.ov
+			overflow: visible
+
 %img{ src: '/assets/images/posts/front-end-dev/learning-javascript-problem-solving/crash-js.svg' }
 
 %article
 
-	.row
+	.row.ov
 		.cell.cell--s
 
-			%h1= current_page.data.title
+			%h1.title-shift.mtm= current_page.data.title
 
 			%p
 				%strong Disclaimer:
@@ -82,6 +96,22 @@ code-sample: true
 						  var cycleCount = distance / cycle;
 						  return cycleCount;
 						};
+
+						calculateCycles(1000, 80, 60);
+
+			%blockquote.refactor.mbm.mlf.mrf.mtm
+
+				%h3.mtf Refactor
+
+				%p.mbf
+					Jon Roberts shared something that instantly makes this more efficient. I was wrong in thinking that I had to explicitly declare arguments that are passed into variables.
+
+			%pre.stretch.stretch--b
+				%code.language-js
+					:preserve
+						function calculateCycles(distance, speedA, speedB) {
+							return distance / (speedA + speedB)
+						}
 
 						calculateCycles(1000, 80, 60);
 

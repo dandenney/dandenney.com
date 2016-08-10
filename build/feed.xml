@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving"/>
     <id>http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving</id>
     <published>2016-08-07T20:00:00-04:00</published>
-    <updated>2016-08-08T19:11:25-04:00</updated>
+    <updated>2016-08-09T18:49:37-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -48,12 +48,28 @@
   /* line 22, (__TEMPLATE__) */
   code {
     font-size: 16px; }
+  
+  /* line 25, (__TEMPLATE__) */
+  .refactor {
+    background: #f5f5f5;
+    padding: 20px; }
+  
+  @media screen and (min-width: 1040px) {
+    /* line 31, (__TEMPLATE__) */
+    .title-shift {
+      background: #fff;
+      border: 20px solid #fff;
+      margin: -120px -20px 0 -20px; }
+  
+    /* line 36, (__TEMPLATE__) */
+    .row.ov {
+      overflow: visible; } }
 &lt;/style&gt;
 &lt;img src='/assets/images/posts/front-end-dev/learning-javascript-problem-solving/crash-js.svg'&gt;
 &lt;article&gt;
-  &lt;div class='row'&gt;
+  &lt;div class='row ov'&gt;
     &lt;div class='cell cell--s'&gt;
-      &lt;h1&gt;&lt;/h1&gt;
+      &lt;h1 class='title-shift mtm'&gt;&lt;/h1&gt;
       &lt;p&gt;
         &lt;strong&gt;Disclaimer:&lt;/strong&gt;
         In this post, I am sharing something that I've been learning. It's in no way a how-to and in fact I'd love feedback on better ways to do what I've done.
@@ -81,6 +97,13 @@
         Like in the spreadsheet, I want code that will add 80 + 60, divide that number into 1000 and output 7.14. I also want each of those numbers to be able to be changed, but I started with the exact ones to check accuracy.
       &lt;/p&gt;
       &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateCycles(distance, speedA, speedB) {&amp;#x000A;  var distance = distance;&amp;#x000A;  var speedA = speedA;&amp;#x000A;  var speedB = speedB;&amp;#x000A;  var cycle = speedA + speedB;&amp;#x000A;  var cycleCount = distance / cycle;&amp;#x000A;  return cycleCount;&amp;#x000A;};&amp;#x000A;&amp;#x000A;calculateCycles(1000, 80, 60);&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+      &lt;blockquote class='refactor mbm mlf mrf mtm'&gt;
+        &lt;h3 class='mtf'&gt;Refactor&lt;/h3&gt;
+        &lt;p class='mbf'&gt;
+          Jon Roberts shared something that instantly makes this more efficient. I was wrong in thinking that I had to explicitly declare arguments that are passed into variables.
+        &lt;/p&gt;
+      &lt;/blockquote&gt;
+      &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateCycles(distance, speedA, speedB) {&amp;#x000A;	return distance / (speedA + speedB)&amp;#x000A;}&amp;#x000A;&amp;#x000A;calculateCycles(1000, 80, 60);&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
       &lt;p class='mtm'&gt;
         If you copy and paste that into the console, you should get 7.142857142857143. Technically speaking that's the answer, but I doubt any teacher would accept 7.14 hours and it's not very friendly. I wanted the answer in hours, minutes, and seconds.
       &lt;/p&gt;
@@ -129,7 +152,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/reducing-html-email-code"/>
     <id>http://blog.url.com/posts/front-end-dev/reducing-html-email-code</id>
     <published>2016-07-15T20:00:00-04:00</published>
-    <updated>2016-08-08T14:53:29-04:00</updated>
+    <updated>2016-08-09T18:31:10-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -333,7 +356,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow"/>
     <id>http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow</id>
     <published>2016-06-29T20:00:00-04:00</published>
-    <updated>2016-08-08T14:53:29-04:00</updated>
+    <updated>2016-08-09T18:31:10-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -561,7 +584,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree"/>
     <id>http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree</id>
     <published>2016-06-25T20:00:00-04:00</published>
-    <updated>2016-08-08T14:53:29-04:00</updated>
+    <updated>2016-08-09T18:31:10-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
