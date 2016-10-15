@@ -5,16 +5,106 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2016-08-07T20:00:00-04:00</updated>
+  <updated>2016-09-14T20:00:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Stumbling Through Learning About Event Listeners</title>
+    <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/stumbling-through-learning-about-event-listeners"/>
+    <id>http://blog.url.com/posts/front-end-dev/stumbling-through-learning-about-event-listeners</id>
+    <published>2016-09-14T20:00:00-04:00</published>
+    <updated>2016-10-15T12:02:18-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;style&gt;
+  /* line 1, (__TEMPLATE__) */
+  .stretch {
+    border: 10px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: relative; }
+    @media screen and (min-width: 840px) {
+      /* line 1, (__TEMPLATE__) */
+      .stretch {
+        left: -40px;
+        max-width: 800px;
+        width: 800px; } }
+  
+  /* line 12, (__TEMPLATE__) */
+  .stretch--a {
+    border: 10px solid #f9f9f9; }
+  
+  /* line 15, (__TEMPLATE__) */
+  .stretch--b {
+    border: 0;
+    box-shadow: none; }
+  
+  /* line 19, (__TEMPLATE__) */
+  strong {
+    font-weight: 600; }
+  
+  /* line 22, (__TEMPLATE__) */
+  code {
+    font-size: 16px; }
+  
+  /* line 25, (__TEMPLATE__) */
+  .refactor {
+    background: #f5f5f5;
+    padding: 20px; }
+&lt;/style&gt;
+&lt;article&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Disclaimer:&lt;/strong&gt;
+    In this post, I am sharing something that I've been learning. It's in no way a how-to and in fact I'd love feedback on better ways to do what I've done.
+  &lt;/p&gt;
+  &lt;p&gt;
+    I had been progressing pretty well lately in learning vanilla JS and it felt awesome. I hit a wall recently in doing something that I thought was straight forward. I ended up putting about 5-6 hours into grokking how to get a value out of an event listener, that time being split between attempts, googling, reading Stack Overflows, reading the docs, pairing with a coworker, and &lt;em&gt;maybe&lt;/em&gt; an hour sitting like this.
+  &lt;/p&gt;
+  &lt;img class='mbm db mhc' src='/assets/images/posts/front-end-dev/stumbling-through-learning-about-event-listeners/gif-matt-damon-crying.gif'&gt;
+  &lt;h2&gt;(If this, then that) * 999&lt;/h2&gt;
+  &lt;p&gt;
+    The fun part of front-end development is that there are likely 999 ways to solve the problem that I was facing. Having chosen one, I then tried about 423 ways to achieve it before getting it to work. If I wasn’t so focused on improving my skills I might have switched away to a different solution, but I had to know that I could do this.
+  &lt;/p&gt;
+  &lt;h2&gt;A reduced test case&lt;/h2&gt;
+  &lt;p&gt;
+    The original problem was that I wanted to validate 2 datetime-local inputs. If the second datetime value is after the first, then submit a form to Firebase. The problem with sharing that for help was that there was so much unnecessary code (the date conversions, Firebase submission, etc.)
+  &lt;/p&gt;
+  &lt;p&gt;
+    In this pen I simplified it and named the variables and functions in a way to describe what I was trying to achieve because I knew I needed help.
+  &lt;/p&gt;
+  &lt;p data-height="265" data-theme-id="0" data-slug-hash="OREBzg" data-default-tab="js,result" data-user="dandenney" data-embed-version="2" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/dandenney/pen/OREBzg/"&gt;Closure issue?&lt;/a&gt; by Dan Denney (&lt;a href="http://codepen.io/dandenney"&gt;@dandenney&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+  &lt;p class='mts'&gt;
+    To make it simple, this is comparing the value of two selects with numbers from 1-4. I knew how to get those values and compare them within the event listener, but I didn’t know how to get that value to bubble up to the parent function. (I wanted to do this because I knew I could then conditionally submit the form based on the true/false result of the comparison.) It turns out &lt;a href="http://stackoverflow.com/questions/26373208/returning-a-variable-from-a-listener-function-javascript"&gt;that you can’t&lt;/a&gt;, at least not directly. I had stumbled into some &lt;a href="http://stackoverflow.com/questions/23667086/why-is-my-variable-unaltered-after-i-modify-it-inside-of-a-function-asynchron"&gt;complex territory&lt;/a&gt;, obliviously.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Reiterating from above, I could have opted to do something different like disable/enable the submit button from the event listeners. However, this became more about learning how to get that value out of there because it seems like an important concept to understand.
+  &lt;/p&gt;
+  &lt;h2&gt;A solution&lt;/h2&gt;
+  &lt;p&gt;
+    I know about 422 ways that you cannot return a value out of an event listener and use it in a separate function. I now know one way that you can and I’m sharing it here. It’s not elegant and it may not even be "right", but it works. Hopefully a few people more advanced than I am will chime in with 1 of the 999 other ways that you can do this.
+  &lt;/p&gt;
+  &lt;p data-height="265" data-theme-id="0" data-slug-hash="OREBzg" data-default-tab="js,result" data-user="dandenney" data-embed-version="2" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/dandenney/pen/OREBzg/"&gt;Closure issue?&lt;/a&gt; by Dan Denney (&lt;a href="http://codepen.io/dandenney"&gt;@dandenney&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+  &lt;p class='mts'&gt;
+    The “solution” was creating a retrieval function that can be shared between the two. The least technical explanation of this ever is that it is necessary because nothing is “listening” for updates from the event listener. I was trying to update the parent function or variables in it, but that can’t work without calling the function again.
+  &lt;/p&gt;
+  &lt;p&gt;
+    As a workaround, I created a retrieval function to sit in the middle of the two. It runs when the select event happens and its value is then updated. Since that function now has an updated value, it can be used as a check on whether or not to proceed in a separate function.
+  &lt;/p&gt;
+  &lt;p&gt;
+    In this example, if the second select value is greater than the first, then sending should be allowed. If not, then it shouldn’t. 5-6 hours and a blog post later, the “simple” thing that I was trying to do is working.
+  &lt;/p&gt;
+  &lt;script async src="//assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
+&lt;/article&gt;
+</content>
+  </entry>
   <entry>
     <title>I'm Learning How to Solve Problems with JavaScript</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving"/>
     <id>http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving</id>
     <published>2016-08-07T20:00:00-04:00</published>
-    <updated>2016-08-14T19:40:23-04:00</updated>
+    <updated>2016-10-13T12:52:36-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -152,7 +242,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/reducing-html-email-code"/>
     <id>http://blog.url.com/posts/front-end-dev/reducing-html-email-code</id>
     <published>2016-07-15T20:00:00-04:00</published>
-    <updated>2016-08-14T19:40:23-04:00</updated>
+    <updated>2016-10-13T12:52:36-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -356,7 +446,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow"/>
     <id>http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow</id>
     <published>2016-06-29T20:00:00-04:00</published>
-    <updated>2016-08-14T19:40:23-04:00</updated>
+    <updated>2016-10-13T12:52:36-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -584,7 +674,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree"/>
     <id>http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree</id>
     <published>2016-06-25T20:00:00-04:00</published>
-    <updated>2016-08-14T19:40:23-04:00</updated>
+    <updated>2016-10-13T12:52:36-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -834,50 +924,6 @@ end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;
   Finding a solution, understanding it, and working with my teammate on it was a blast. Look for these opportunities and take advantage of them when you can. Then, share what you learned.
 &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Email Design Conference 2015</title>
-    <link rel="alternate" href="http://blog.url.com/posts/conferences/tedc-15-boston"/>
-    <id>http://blog.url.com/posts/conferences/tedc-15-boston</id>
-    <published>2015-08-28T20:00:00-04:00</published>
-    <updated>2016-03-03T16:52:01-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class='row'&gt;
-  &lt;div class='well'&gt;
-    &lt;svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 577.3 38.5"&gt;&lt;style&gt;.st0{fill:#535453;} .st1{font-family:&amp;apos;Gibson-SemiBold&amp;apos;;} .st2{font-size:36.5918px;}&lt;/style&gt;&lt;text transform="translate(0 30.92)" class="st0 st1 st2"&gt;The Email Design Conference 2015&lt;/text&gt;&lt;/svg&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class='cell cell--s'&gt;
-  &lt;div class='video-wrapper'&gt;
-    &lt;iframe src="https://player.vimeo.com/video/137720165?color=b51f24&amp;byline=0" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-  &lt;p class='mtm'&gt;
-    I'm headed home from an amazing time at this year's
-    &lt;a href="https://litmus.com/conference/boston"&gt;Email Design Conference in Boston&lt;/a&gt;, organized by the wonderful people at &lt;a href="https://litmus.com"&gt;Litmus&lt;/a&gt;.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Having heard so many great things about the event, I had high hopes that were blown away. The Litmus team puts so much love and attention into the organization and details, making it feel both professional and personal all at once. I'm not sure of the final count but I'd guess there was between 400-500 people overall, but it felt completely welcoming and friendly. There was a lot going on with 2 tracks and some additional events, but you always knew where and when everything was because they made sure you could get the schedule in 4-5 ways at any time.
-  &lt;/p&gt;
-  &lt;h2&gt;Presentations&lt;/h2&gt;
-  &lt;p&gt;
-    There was a lot of thought and planning put into the chosen presentations and their order/pairing in the tracks. There was a wealth of knowledge shared and a great balance between what should be divided into breakout sessions and what everyone should be together for. I met a lot of people who's mind were blown with all of the information that they learned.
-  &lt;/p&gt;
-  &lt;h2&gt;Emphasis on Community&lt;/h2&gt;
-  &lt;p&gt;
-    While most conferences are filled with information, this one is special in that they found ways to ensure that we were talking to each other. There were plenty of breaks allowing time for meeting people, but the addition of the group discussions during the workshops and the “email speed dating” sessions made it very comfortable for people to talk with speakers. I met a ton of nice people with interesting backgrounds and issues in building emails. The talks were awesome, but this was my favorite part.
-  &lt;/p&gt;
-  &lt;h2&gt;Thank You to Litmus&lt;/h2&gt;
-  &lt;p&gt;
-    I want to say a giant THANK YOU to Litmus not only for putting this event together, but for letting me be a part of it. I was honored to get to share some of my email experience and the speed dating sessions let me really talk through some things with people for when they get back to work. I hope everyone takes me up on my offer to ping me with their templates so we can chat about setting up snippets.
-  &lt;/p&gt;
-  &lt;h2&gt;Thank you to everyone&lt;/h2&gt;
-  &lt;p&gt;
-    THANK YOU to all of the attendees and speakers for making this a special event. I hope to keep in touch and see everyone next year!
-  &lt;/p&gt;
-&lt;/div&gt;
 </content>
   </entry>
 </feed>
