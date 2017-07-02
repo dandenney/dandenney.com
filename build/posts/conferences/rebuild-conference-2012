@@ -1,279 +1,284 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>re:build Conference 2012</title>
-    <!-- Typekit -->
-    <script src="//use.typekit.net/ddg5xff.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-    <link href="../../assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
-    <link href="../../assets/stylesheets/vendor/prism.css" rel="stylesheet" type="text/css" />
-    <link href="../../assets/stylesheets/posts/rebuild-conf-2012.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body class='posts posts_conferences posts_conferences_rebuild-conference-2012'>
-    <header>
-      <p class='dib'>
-        Dan Denney
-      </p>
-      <nav class='dib'>
-        <a class="mls" href="/posts">Posts</a>
-        <a class="mls" href="/blips">Blips</a>
-        <a class="mls" href="/tinkerings">Tinkerings</a>
-        <a class="mls" href="/">Home</a>
-      </nav>
-    </header>
-    <div class='container ptm'>
-      <h1>re:build Conference 2012</h1>
-      <p>
-        I was recently lucky enough to tag along with
-        <a href='http://twitter.com/jasonvanlue'>Jason VanLue</a>
-        up to Indianapolis to attend
-        <a href='http://rebuildconf.com'>re:build 2012.</a>
-        Big, big thank you to Jason for working it out,
-        <a href='http://envylabs.com'>Envy Labs</a>
-        for sending me and to the re:build team for their hospitality.
-      </p>
-      <h2>Indy</h2>
-      <p>
-        Prior to heading up, I really didn't know much about Indianapolis or the web community in the area. The city is absolutely charming and the people are warm and friendly. The architecture is gorgeous, there is a bustling downtown and they have a penchant for craft beer (which is near and dear to my heart and belly).
-      </p>
-      <img src='/assets/images/posts/conferences/rebuild-conference-2012/slogan.jpg'>
-      <p>
-        Before leaving, Jason and I roamed around downtown for a bit and I took this pic from a monument. I knew I'd be writing up my thoughts on the conf and that the words etched into stone here seem to be amongst the Indy core values and are definitely a part of re:build.
-      </p>
-      <h2>Overall Thoughts</h2>
-      <p>
-        The event is coordinated by
-        <a href='https://twitter.com/jlharter'>Justin Harter</a>
-        and
-        <a href='https://twitter.com/tonydewan'>Tony Dewan.</a>
-        They absolutely know how to make everyone feel special. Their attention to detail, clear communication and calm demeanors set the tone for the whole event. I was extra lucky in that I was an attendee but I also got to see how they took care of the speakers. They are fantastic hosts on both sides so I highly recommend attending and accepting speaking invitations from them.
-      </p>
-      <h2>The Pre-Party</h2>
-      <p>
-        I attend (and Twitter stalk) many conferences. A popular 'problem' is that people arrive to the area the night before the event and want to meet up with people. You'll often see pockets of tweets with hashtags looking for other attendees. Understanding this, the re:build team put together a pre-party at this awesome place called
-        <a href='http://www.speakeasyindy.com'>The Speakeasy.</a>
-        It is a local hub with a startup focus that has a wonderful industrial design. Conversations were helped along by some local microbrew, thanks to
-        <a href='http://www.exacttarget.com'>ExactTarget</a>
-        sponsoring the evening (and the speaker dinner). From what I saw, people took it pretty easy so they were still ready for some inspiration and learning the next day.
-      </p>
-      <h2>Registration</h2>
-      <p>
-        Getting a couple hundred people checked in can be tricky but having registration available at the pre-party helped reduce the crowd in the morning. They also had a big room filled with coffee, snacks and tall tables for people to eat and converse around. Thank you very much to
-        <a href='http://getharvest.com'>Harvest</a>
-        for sponsoring the goodies.
-      </p>
-      <img alt='Harvest Sponsored Area' src='/assets/images/posts/conferences/rebuild-conference-2012/harvest-room.jpg'>
-      <h2>The Location</h2>
-      <p>
-        Character and attention to detail were present in everything, but the location was the 'biggest' example of it. The presentations were done in the gymnasium of a community center which hosts local artists. It also is an active gym for the church (which I believe is a school) next-door. There were so many natural aesthetic plusses and the team made sure that it also was a great place for A/V.
-      </p>
-      <p>
-        As you roamed the halls, they were filled with the work of local artists and you could actually see and hear people working in their studios. The architecture was fantastic and the gym felt like we were in the movie
-        <a href='http://www.imdb.com/title/tt0091217'>Hoosiers.</a>
-        They rigged the place with a large amount of tech, with a giant screen on each side of the stage and numerous video cameras. Sound quality and visibility were excellent no matter where you were. I believe they will be releasing the videos later on so keep an eye out for updates.
-      </p>
-      <h2>Food and Drinks</h2>
-      <p>
-        Coffee was available all day, which is my ultimate test of a good conference. I'm mostly kidding, but as a coffee junkie it is really appreciated. They had a good mix of healthy and yummy snacks available all day and they also provided lunch via food trucks. Big thank you to
-        <a href='http://www.smallboxweb.com'>SmallBox</a>
-        for sponsoring lunch!
-      </p>
-      <p>
-        I happened to pick the busiest (and possibly slowest) of the 3 trucks, so it took the full hour-and-a-half to get through the line. Having the choice and providing the trucks was really awesome, though. It was one less thing to think about and I was able to have a really awesome conversation with
-        <a href='https://twitter.com/robertHarr'>Rob</a>
-        and
-        <a href='https://twitter.com/jeremyloyd'>Jeremy</a>
-        from
-        <a href='http://sparkbox.com'>Sparkbox</a>
-        while waiting in line.
-      </p>
-      <h2>The After-Party</h2>
-      <p>
-        The after-party was back at The Speakeasy and started right after the event, which is awesome. Some people like to go chat for a bit and then leave while others like to eat and then hit the party. Starting right away always accommodates both. Big thank you to
-        <a href='http://github.com'>Github</a>
-        for sponsoring the party!
-      </p>
-      <p>
-        Part of The Speakeasy building is a place called Developer Town, which I had to take a pic of for you to believe. It is a big space where developers rent out little sheds inside to work in.
-      </p>
-      <img alt='Developer Town' src='/assets/images/posts/conferences/rebuild-conference-2012/developer-town.jpg'>
-      <h2>The Presentations</h2>
-      <p>
-        On top of setting up a great environment and personal feel, the re:build guys stacked up a diverse lineup of speakers and presentations. Topics covered the range of industry topics from working environments to design samples, UX and code implementations. Here are some tidbits and takeaways from each one.
-      </p>
-      <p>
-        You can check out their full bios, plus Twitter and website links on the
-        <a href='http://www.rebuildconf.com#speakers'>re:build site.</a>
-      </p>
-      <small>
-        I thought I should use a little hover love in them since Jenn's talk was so much fun.
-      </small>
-    </div>
-    <div class='block-speaker'>
-      <div class='rebuild-speaker'>
-        <h3>Zach Holman</h3>
-        <img alt='Zach Holman at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-zach-holman.jpg'>
-      </div>
-      <p>
-        Zach hails from
-        <a href='http://github.com'>Github</a>
-        and he shared many of the things that go into putting together a great team of creatives. He gave examples of how to create a culture that you want and how to deal with the "internet dicks" that spring up as you release things. You can check out the slides and audio already on
-        <a href='https://speakerdeck.com/u/holman/p/the-product-is-the-byproduct'>Speaker Deck.</a>
-        My favorite piece was that you want fixers on your team, so hire those that are "bothered by suck".
-      </p>
-    </div>
-    <div class='block-speaker'>
-      <div class='rebuild-speaker'>
-        <h3>David Kadavy</h3>
-        <img alt='David Kadavy at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-david-kadavy.jpg'>
-      </div>
-      <p>
-        David is the author of
-        <a href=''>Design for Developers</a>
-        and his talk focused on an intro to some UX principles, namely use cases and user personas. He used some good examples of the difference in experiences between Craigslist vs. Airbnb, typical weather app experiences vs. the Dark Cloud app and typical online clothiers vs. Gilt. He also gave a quick sample of applying some possible user personas to how the Twitter iPad app was designed. He had a relaxed, conversational style and is quite funny off the stage.
-      </p>
-    </div>
-    <div class='block-speaker'>
-      <div class='rebuild-speaker'>
-        <h3>Jason VanLue</h3>
-        <img alt='Jason VanLue at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-jason-vanlue.jpg'>
-      </div>
-      <p>
-        I hadn't heard of this guy before so I was curious what he'd bring to the table. I kid, I kid. I work with Jason at
-        <a href='http://envylabs.com'>Envy Labs,</a>
-        where he is the Hovering Director of Art. Jason is a great speaker and I really enjoy his take on design as a way to solve problems. There are lots of great takeaways throughout his talk, but the main theme is that screens could be as life changing as the automobile was for humankind. We should be focusing on problems that we want to solve for people and on designing for the other side of the screen. The history in his talk is fantastic and it is great to get so much inspiration from people outside of our industry.
-      </p>
-    </div>
-    <div class='block-speaker'>
-      <div class='rebuild-speaker'>
-        <h3>Willo O'Brien</h3>
-        <img alt="Willo O'Brien at re:build" src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-willo-obrien.jpg'>
-      </div>
-      <p>
-        Willo has a great story of how she has gone from creating clothing to co-founding and consulting for startups for creatives. Her presentation was primarily about figuring out "how you work best". She highly recommends making time for serendipity and to manage energy, not time. For her, this has been a matter of taking breaks that she calls art dates and establishing personal relationships with the people that she works with. A few resources that she recommends are:
-        <a href='http://www.amazon.com/StrengthsFinder-2-0-Tom-Rath/dp/159562015X'>Book: Strengths Finder,</a>
-        <a href='https://s3.amazonaws.com/skillshare/assets/hybrid/project-briefs/MEValuesExercise.pdf'>Me Values Exercise</a>
-        and the
-        <a href='https://www.superbetter.com/'>Super Better App.</a>
-      </p>
-    </div>
-    <div class='block-speaker'>
-      <div class='rebuild-speaker'>
-        <h3>Patrick Filler</h3>
-        <img alt='Patrick Filler at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-patrick-filler.jpg'>
-      </div>
-      <p>
-        Patrick is a front-end dev at
-        <a href='http://www.getharvest.com'>Harvest,</a>
-        where he was part of the development of the
-        <a href='http://harvesthq.github.com/chosen'>Chosen JavaScript Plugin.</a>
-        He shared how they had originally made it for Harvest in order to improve their forms and the decision to open source it. The best part of open sourcing projects is that anyone can do it. There are no connections necessary, it is a meritocracy. Put yourself out there and release some things that you're working on or volunteer your skills to help out projects that you're interested in!
-      </p>
-    </div>
-    <div class='block-speaker'>
-      <div class='rebuild-speaker'>
-        <h3>David Sleight</h3>
-        <img alt='David Sleight at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-david-sleight.jpg'>
-      </div>
-      <p>
-        David is the product lead at
-        <a href='http://readability.com'>Readability</a>
-        and he shared how publishing has been evolving via technology. Basically, there is a bigger demand for content in the world than in any time in history. The audience is huge, but diffuse. He shared that the keys items that differentiate good resources are APIs, content planning and flexible design. Also, he shared how natural language processing is impacting the future of content. Here are some recommended reads from his presentation:
-        <a href='http://www.alistapart.com/articles/orbital-content'>Orbital Content,</a>
-        <a href='http://contentsmagazine.com'>Contents Magazine,</a>
-        <a href='http://qz.com'>Quartz,</a>
-        <a href='http://evening-edition.com'>The Evening Edition,</a>
-        <a href='http://www.thesilenthistory.com'>The Silent History,</a>
-        and
-        <a href='https://www.atavist.com/stories'>The Atavist.</a>
-      </p>
-    </div>
-    <div class='block-speaker'>
-      <div class='rebuild-speaker'>
-        <h3>Jenn Lukas</h3>
-        <img alt='Jenn Lukas at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-jenn-lukas.jpg'>
-      </div>
-      <p>
-        Jenn is a front-end dev at Happy Cog and I was especially looking forward to seeing her present. (I hope to see her speak at this cool event in Florida sometime.) She shared many ways to surprise and delight your users with hover-based interactions. She shared many great examples of hovers in action and then followed that up with how to use the dev tools to learn how they were achieved. Each example also came with code samples so her slides will be really helpful. One quote that I can't leave out is "Color fade is the smooth jazz of hovers". She shared a cool way of animating height by using max-height: 0 and encouraged everyone to check out
-        <a href='http://css-tricks.com/almanac/properties/b/backface-visibility'>backface-visibility.</a>
-        Her excitement for these things was infectious and there were lots of cats!
-      </p>
-    </div>
-    <div class='block-speaker'>
-      <div class='rebuild-speaker'>
-        <h3>Mark Otto</h3>
-        <img alt='Mark Otto at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-mark-otto.jpg'>
-      </div>
-      <p>
-        Mark is one of the creators of
-        <a href='http://twitter.github.com/bootstrap'>Bootstrap</a>
-        and has recently left Twitter and joined Github. He shared how important it is to design how stuff works and the 5 principles behind creating Bootstrap. They were: treat the docs like they're the product, say no all the time, educate by enforcing coding styles, help folks avoid writing JavaScript and reach every person on the planet. Everything is a design system and theirs consisted of base classes, prefix modifiers, formatting, property order and compiling. Going forward, his main goal is to help awesome poeple do awesome stuff.
-      </p>
-    </div>
-    <div class='block-speaker'>
-      <div class='rebuild-speaker'>
-        <h3>Dave Shea</h3>
-        <img alt='Dave Shea at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-dave-shea.jpg'>
-      </div>
-      <p>
-        Dave is O.G. when it comes to the design and dev community. He wrapped up the conference with a walk through how we got to where we are today. Part of this is his work with
-        <a href='http://www.csszengarden.com'>CSS Zen Garden,</a>
-        which really helped push CSS layout. One of the more interesting things was about how the original purpose behind the web was to create structure for CERN information. Early users of the web showed pretty quickly that we were more interested in visuals than order. CSS Zen Garden was created to help display what could be done visually with CSS. It had an agenda, a place and a time.
-      </p>
-      <div class='container'>
-        <p>
-          I had a really great time and it was awesome to also get to meet some people that use
-          <a href='http://codeschool.com'>Code School.</a>
-          I really love to learn about the people that use it and what types of positions that they have. Thank you specifically to
-          <a href='https://twitter.com/mtheoryx'>David Poindexter</a>
-          and
-          <a href='https://twitter.com/samkligerman'>Sam Kligerman</a>
-          for sharing their stories.
-        </p>
-      </div>
-    </div>
-    <section class='row'>
-      <div class='cell cell--s'>
-        <div id="disqus_thread" class="well">
-        <script type="text/javascript">
-        var disqus_shortname = 'dandenney';
-        (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <p class='dib'>
-        Dan Denney
-      </p>
-      <nav class='dib'>
-        <a class="mls" href="/posts">Posts</a>
-        <a class="mls" href="/blips">Blips</a>
-        <a class="mls" href="/tinkerings">Tinkerings</a>
-        <a class="mls" href="/">Home</a>
-      </nav>
-    </footer>
-    <!-- = javascript_include_tag  'vendor' -->
-    <!-- = javascript_include_tag  'application' -->
-    <!-- = javascript_include_tag  'vendor' -->
-    <script src="../../assets/javascripts/vendor/prism.js" type="text/javascript"></script>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-3589831-2', 'auto');
-    ga('send', 'pageview');
-    </script>
-  </body>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>re:build Conference 2012</title>
+<!-- Typekit -->
+<script src="//use.typekit.net/ddg5xff.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<link href="../../assets/stylesheets/application.css" rel="stylesheet" />
+<link href="../../assets/stylesheets/vendor/prism.css" rel="stylesheet" />
+<link href="../../assets/stylesheets/posts/rebuild-conf-2012.css" rel="stylesheet" />
+</head>
+<body class='posts posts_conferences posts_conferences_rebuild-conference-2012'>
+<header>
+<p class='dib'>
+Dan Denney
+</p>
+<nav class='dib'>
+<a class="mls" href="/posts">Posts</a>
+<a class="mls" href="/blips">Blips</a>
+<a class="mls" href="/tinkerings">Tinkerings</a>
+<a class="mls" href="/">Home</a>
+</nav>
+</header>
+
+<div class='container ptm'>
+<h1>re:build Conference 2012</h1>
+<p>
+I was recently lucky enough to tag along with
+<a href='http://twitter.com/jasonvanlue'>Jason VanLue</a>
+up to Indianapolis to attend
+<a href='http://rebuildconf.com'>re:build 2012.</a>
+Big, big thank you to Jason for working it out,
+<a href='http://envylabs.com'>Envy Labs</a>
+for sending me and to the re:build team for their hospitality.
+</p>
+<h2>Indy</h2>
+<p>
+Prior to heading up, I really didn't know much about Indianapolis or the web community in the area. The city is absolutely charming and the people are warm and friendly. The architecture is gorgeous, there is a bustling downtown and they have a penchant for craft beer (which is near and dear to my heart and belly).
+</p>
+<img src='/assets/images/posts/conferences/rebuild-conference-2012/slogan.jpg'>
+<p>
+Before leaving, Jason and I roamed around downtown for a bit and I took this pic from a monument. I knew I'd be writing up my thoughts on the conf and that the words etched into stone here seem to be amongst the Indy core values and are definitely a part of re:build.
+</p>
+<h2>Overall Thoughts</h2>
+<p>
+The event is coordinated by
+<a href='https://twitter.com/jlharter'>Justin Harter</a>
+and
+<a href='https://twitter.com/tonydewan'>Tony Dewan.</a>
+They absolutely know how to make everyone feel special. Their attention to detail, clear communication and calm demeanors set the tone for the whole event. I was extra lucky in that I was an attendee but I also got to see how they took care of the speakers. They are fantastic hosts on both sides so I highly recommend attending and accepting speaking invitations from them.
+</p>
+<h2>The Pre-Party</h2>
+<p>
+I attend (and Twitter stalk) many conferences. A popular 'problem' is that people arrive to the area the night before the event and want to meet up with people. You'll often see pockets of tweets with hashtags looking for other attendees. Understanding this, the re:build team put together a pre-party at this awesome place called
+<a href='http://www.speakeasyindy.com'>The Speakeasy.</a>
+It is a local hub with a startup focus that has a wonderful industrial design. Conversations were helped along by some local microbrew, thanks to
+<a href='http://www.exacttarget.com'>ExactTarget</a>
+sponsoring the evening (and the speaker dinner). From what I saw, people took it pretty easy so they were still ready for some inspiration and learning the next day.
+</p>
+<h2>Registration</h2>
+<p>
+Getting a couple hundred people checked in can be tricky but having registration available at the pre-party helped reduce the crowd in the morning. They also had a big room filled with coffee, snacks and tall tables for people to eat and converse around. Thank you very much to
+<a href='http://getharvest.com'>Harvest</a>
+for sponsoring the goodies.
+</p>
+<img alt='Harvest Sponsored Area' src='/assets/images/posts/conferences/rebuild-conference-2012/harvest-room.jpg'>
+<h2>The Location</h2>
+<p>
+Character and attention to detail were present in everything, but the location was the 'biggest' example of it. The presentations were done in the gymnasium of a community center which hosts local artists. It also is an active gym for the church (which I believe is a school) next-door. There were so many natural aesthetic plusses and the team made sure that it also was a great place for A/V.
+</p>
+<p>
+As you roamed the halls, they were filled with the work of local artists and you could actually see and hear people working in their studios. The architecture was fantastic and the gym felt like we were in the movie
+<a href='http://www.imdb.com/title/tt0091217'>Hoosiers.</a>
+They rigged the place with a large amount of tech, with a giant screen on each side of the stage and numerous video cameras. Sound quality and visibility were excellent no matter where you were. I believe they will be releasing the videos later on so keep an eye out for updates.
+</p>
+<h2>Food and Drinks</h2>
+<p>
+Coffee was available all day, which is my ultimate test of a good conference. I'm mostly kidding, but as a coffee junkie it is really appreciated. They had a good mix of healthy and yummy snacks available all day and they also provided lunch via food trucks. Big thank you to
+<a href='http://www.smallboxweb.com'>SmallBox</a>
+for sponsoring lunch!
+</p>
+<p>
+I happened to pick the busiest (and possibly slowest) of the 3 trucks, so it took the full hour-and-a-half to get through the line. Having the choice and providing the trucks was really awesome, though. It was one less thing to think about and I was able to have a really awesome conversation with
+<a href='https://twitter.com/robertHarr'>Rob</a>
+and
+<a href='https://twitter.com/jeremyloyd'>Jeremy</a>
+from
+<a href='http://sparkbox.com'>Sparkbox</a>
+while waiting in line.
+</p>
+<h2>The After-Party</h2>
+<p>
+The after-party was back at The Speakeasy and started right after the event, which is awesome. Some people like to go chat for a bit and then leave while others like to eat and then hit the party. Starting right away always accommodates both. Big thank you to
+<a href='http://github.com'>Github</a>
+for sponsoring the party!
+</p>
+<p>
+Part of The Speakeasy building is a place called Developer Town, which I had to take a pic of for you to believe. It is a big space where developers rent out little sheds inside to work in.
+</p>
+<img alt='Developer Town' src='/assets/images/posts/conferences/rebuild-conference-2012/developer-town.jpg'>
+<h2>The Presentations</h2>
+<p>
+On top of setting up a great environment and personal feel, the re:build guys stacked up a diverse lineup of speakers and presentations. Topics covered the range of industry topics from working environments to design samples, UX and code implementations. Here are some tidbits and takeaways from each one.
+</p>
+<p>
+You can check out their full bios, plus Twitter and website links on the
+<a href='http://www.rebuildconf.com#speakers'>re:build site.</a>
+</p>
+<small>
+I thought I should use a little hover love in them since Jenn's talk was so much fun.
+</small>
+</div>
+<div class='block-speaker'>
+<div class='rebuild-speaker'>
+<h3>Zach Holman</h3>
+<img alt='Zach Holman at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-zach-holman.jpg'>
+</div>
+<p>
+Zach hails from
+<a href='http://github.com'>Github</a>
+and he shared many of the things that go into putting together a great team of creatives. He gave examples of how to create a culture that you want and how to deal with the "internet dicks" that spring up as you release things. You can check out the slides and audio already on
+<a href='https://speakerdeck.com/u/holman/p/the-product-is-the-byproduct'>Speaker Deck.</a>
+My favorite piece was that you want fixers on your team, so hire those that are "bothered by suck".
+</p>
+</div>
+<div class='block-speaker'>
+<div class='rebuild-speaker'>
+<h3>David Kadavy</h3>
+<img alt='David Kadavy at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-david-kadavy.jpg'>
+</div>
+<p>
+David is the author of
+<a href=''>Design for Developers</a>
+and his talk focused on an intro to some UX principles, namely use cases and user personas. He used some good examples of the difference in experiences between Craigslist vs. Airbnb, typical weather app experiences vs. the Dark Cloud app and typical online clothiers vs. Gilt. He also gave a quick sample of applying some possible user personas to how the Twitter iPad app was designed. He had a relaxed, conversational style and is quite funny off the stage.
+</p>
+</div>
+<div class='block-speaker'>
+<div class='rebuild-speaker'>
+<h3>Jason VanLue</h3>
+<img alt='Jason VanLue at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-jason-vanlue.jpg'>
+</div>
+<p>
+I hadn't heard of this guy before so I was curious what he'd bring to the table. I kid, I kid. I work with Jason at
+<a href='http://envylabs.com'>Envy Labs,</a>
+where he is the Hovering Director of Art. Jason is a great speaker and I really enjoy his take on design as a way to solve problems. There are lots of great takeaways throughout his talk, but the main theme is that screens could be as life changing as the automobile was for humankind. We should be focusing on problems that we want to solve for people and on designing for the other side of the screen. The history in his talk is fantastic and it is great to get so much inspiration from people outside of our industry.
+</p>
+</div>
+<div class='block-speaker'>
+<div class='rebuild-speaker'>
+<h3>Willo O'Brien</h3>
+<img alt='Willo O&#39;Brien at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-willo-obrien.jpg'>
+</div>
+<p>
+Willo has a great story of how she has gone from creating clothing to co-founding and consulting for startups for creatives. Her presentation was primarily about figuring out "how you work best". She highly recommends making time for serendipity and to manage energy, not time. For her, this has been a matter of taking breaks that she calls art dates and establishing personal relationships with the people that she works with. A few resources that she recommends are:
+<a href='http://www.amazon.com/StrengthsFinder-2-0-Tom-Rath/dp/159562015X'>Book: Strengths Finder,</a>
+<a href='https://s3.amazonaws.com/skillshare/assets/hybrid/project-briefs/MEValuesExercise.pdf'>Me Values Exercise</a>
+and the
+<a href='https://www.superbetter.com/'>Super Better App.</a>
+</p>
+</div>
+<div class='block-speaker'>
+<div class='rebuild-speaker'>
+<h3>Patrick Filler</h3>
+<img alt='Patrick Filler at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-patrick-filler.jpg'>
+</div>
+<p>
+Patrick is a front-end dev at
+<a href='http://www.getharvest.com'>Harvest,</a>
+where he was part of the development of the
+<a href='http://harvesthq.github.com/chosen'>Chosen JavaScript Plugin.</a>
+He shared how they had originally made it for Harvest in order to improve their forms and the decision to open source it. The best part of open sourcing projects is that anyone can do it. There are no connections necessary, it is a meritocracy. Put yourself out there and release some things that you're working on or volunteer your skills to help out projects that you're interested in!
+</p>
+</div>
+<div class='block-speaker'>
+<div class='rebuild-speaker'>
+<h3>David Sleight</h3>
+<img alt='David Sleight at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-david-sleight.jpg'>
+</div>
+<p>
+David is the product lead at
+<a href='http://readability.com'>Readability</a>
+and he shared how publishing has been evolving via technology. Basically, there is a bigger demand for content in the world than in any time in history. The audience is huge, but diffuse. He shared that the keys items that differentiate good resources are APIs, content planning and flexible design. Also, he shared how natural language processing is impacting the future of content. Here are some recommended reads from his presentation:
+<a href='http://www.alistapart.com/articles/orbital-content'>Orbital Content,</a>
+<a href='http://contentsmagazine.com'>Contents Magazine,</a>
+<a href='http://qz.com'>Quartz,</a>
+<a href='http://evening-edition.com'>The Evening Edition,</a>
+<a href='http://www.thesilenthistory.com'>The Silent History,</a>
+and
+<a href='https://www.atavist.com/stories'>The Atavist.</a>
+</p>
+</div>
+<div class='block-speaker'>
+<div class='rebuild-speaker'>
+<h3>Jenn Lukas</h3>
+<img alt='Jenn Lukas at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-jenn-lukas.jpg'>
+</div>
+<p>
+Jenn is a front-end dev at Happy Cog and I was especially looking forward to seeing her present. (I hope to see her speak at this cool event in Florida sometime.) She shared many ways to surprise and delight your users with hover-based interactions. She shared many great examples of hovers in action and then followed that up with how to use the dev tools to learn how they were achieved. Each example also came with code samples so her slides will be really helpful. One quote that I can't leave out is "Color fade is the smooth jazz of hovers". She shared a cool way of animating height by using max-height: 0 and encouraged everyone to check out
+<a href='http://css-tricks.com/almanac/properties/b/backface-visibility'>backface-visibility.</a>
+Her excitement for these things was infectious and there were lots of cats!
+</p>
+</div>
+<div class='block-speaker'>
+<div class='rebuild-speaker'>
+<h3>Mark Otto</h3>
+<img alt='Mark Otto at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-mark-otto.jpg'>
+</div>
+<p>
+Mark is one of the creators of
+<a href='http://twitter.github.com/bootstrap'>Bootstrap</a>
+and has recently left Twitter and joined Github. He shared how important it is to design how stuff works and the 5 principles behind creating Bootstrap. They were: treat the docs like they're the product, say no all the time, educate by enforcing coding styles, help folks avoid writing JavaScript and reach every person on the planet. Everything is a design system and theirs consisted of base classes, prefix modifiers, formatting, property order and compiling. Going forward, his main goal is to help awesome poeple do awesome stuff.
+</p>
+</div>
+<div class='block-speaker'>
+<div class='rebuild-speaker'>
+<h3>Dave Shea</h3>
+<img alt='Dave Shea at re:build' src='/assets/images/posts/conferences/rebuild-conference-2012/speaker-dave-shea.jpg'>
+</div>
+<p>
+Dave is O.G. when it comes to the design and dev community. He wrapped up the conference with a walk through how we got to where we are today. Part of this is his work with
+<a href='http://www.csszengarden.com'>CSS Zen Garden,</a>
+which really helped push CSS layout. One of the more interesting things was about how the original purpose behind the web was to create structure for CERN information. Early users of the web showed pretty quickly that we were more interested in visuals than order. CSS Zen Garden was created to help display what could be done visually with CSS. It had an agenda, a place and a time.
+</p>
+<div class='container'>
+<p>
+I had a really great time and it was awesome to also get to meet some people that use
+<a href='http://codeschool.com'>Code School.</a>
+I really love to learn about the people that use it and what types of positions that they have. Thank you specifically to
+<a href='https://twitter.com/mtheoryx'>David Poindexter</a>
+and
+<a href='https://twitter.com/samkligerman'>Sam Kligerman</a>
+for sharing their stories.
+</p>
+</div>
+</div>
+
+<section class='row'>
+<div class='cell cell--s'>
+<div id="disqus_thread" class="well">
+<script type="text/javascript">
+var disqus_shortname = 'dandenney';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+</div>
+</section>
+
+<footer>
+<p class='dib'>
+Dan Denney
+</p>
+<nav class='dib'>
+<a class="mls" href="/posts">Posts</a>
+<a class="mls" href="/blips">Blips</a>
+<a class="mls" href="/tinkerings">Tinkerings</a>
+<a class="mls" href="/">Home</a>
+</nav>
+</footer>
+
+<!-- = javascript_include_tag  'vendor' -->
+<!-- = javascript_include_tag  'application' -->
+<!-- = javascript_include_tag  'vendor' -->
+<script src="../../assets/javascripts/vendor/prism.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3589831-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
 </html>

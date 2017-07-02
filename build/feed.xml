@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/stumbling-through-learning-about-event-listeners"/>
     <id>http://blog.url.com/posts/front-end-dev/stumbling-through-learning-about-event-listeners</id>
     <published>2016-09-14T20:00:00-04:00</published>
-    <updated>2016-10-15T12:02:18-04:00</updated>
+    <updated>2017-07-01T14:35:59-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -55,47 +55,47 @@
     padding: 20px; }
 &lt;/style&gt;
 &lt;article&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Disclaimer:&lt;/strong&gt;
-    In this post, I am sharing something that I've been learning. It's in no way a how-to and in fact I'd love feedback on better ways to do what I've done.
-  &lt;/p&gt;
-  &lt;p&gt;
-    I had been progressing pretty well lately in learning vanilla JS and it felt awesome. I hit a wall recently in doing something that I thought was straight forward. I ended up putting about 5-6 hours into grokking how to get a value out of an event listener, that time being split between attempts, googling, reading Stack Overflows, reading the docs, pairing with a coworker, and &lt;em&gt;maybe&lt;/em&gt; an hour sitting like this.
-  &lt;/p&gt;
-  &lt;img class='mbm db mhc' src='/assets/images/posts/front-end-dev/stumbling-through-learning-about-event-listeners/gif-matt-damon-crying.gif'&gt;
-  &lt;h2&gt;(If this, then that) * 999&lt;/h2&gt;
-  &lt;p&gt;
-    The fun part of front-end development is that there are likely 999 ways to solve the problem that I was facing. Having chosen one, I then tried about 423 ways to achieve it before getting it to work. If I wasn’t so focused on improving my skills I might have switched away to a different solution, but I had to know that I could do this.
-  &lt;/p&gt;
-  &lt;h2&gt;A reduced test case&lt;/h2&gt;
-  &lt;p&gt;
-    The original problem was that I wanted to validate 2 datetime-local inputs. If the second datetime value is after the first, then submit a form to Firebase. The problem with sharing that for help was that there was so much unnecessary code (the date conversions, Firebase submission, etc.)
-  &lt;/p&gt;
-  &lt;p&gt;
-    In this pen I simplified it and named the variables and functions in a way to describe what I was trying to achieve because I knew I needed help.
-  &lt;/p&gt;
-  &lt;p data-height="265" data-theme-id="0" data-slug-hash="OREBzg" data-default-tab="js,result" data-user="dandenney" data-embed-version="2" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/dandenney/pen/OREBzg/"&gt;Closure issue?&lt;/a&gt; by Dan Denney (&lt;a href="http://codepen.io/dandenney"&gt;@dandenney&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-  &lt;p class='mts'&gt;
-    To make it simple, this is comparing the value of two selects with numbers from 1-4. I knew how to get those values and compare them within the event listener, but I didn’t know how to get that value to bubble up to the parent function. (I wanted to do this because I knew I could then conditionally submit the form based on the true/false result of the comparison.) It turns out &lt;a href="http://stackoverflow.com/questions/26373208/returning-a-variable-from-a-listener-function-javascript"&gt;that you can’t&lt;/a&gt;, at least not directly. I had stumbled into some &lt;a href="http://stackoverflow.com/questions/23667086/why-is-my-variable-unaltered-after-i-modify-it-inside-of-a-function-asynchron"&gt;complex territory&lt;/a&gt;, obliviously.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Reiterating from above, I could have opted to do something different like disable/enable the submit button from the event listeners. However, this became more about learning how to get that value out of there because it seems like an important concept to understand.
-  &lt;/p&gt;
-  &lt;h2&gt;A solution&lt;/h2&gt;
-  &lt;p&gt;
-    I know about 422 ways that you cannot return a value out of an event listener and use it in a separate function. I now know one way that you can and I’m sharing it here. It’s not elegant and it may not even be "right", but it works. Hopefully a few people more advanced than I am will chime in with 1 of the 999 other ways that you can do this.
-  &lt;/p&gt;
-  &lt;p data-height="265" data-theme-id="0" data-slug-hash="OREBzg" data-default-tab="js,result" data-user="dandenney" data-embed-version="2" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/dandenney/pen/OREBzg/"&gt;Closure issue?&lt;/a&gt; by Dan Denney (&lt;a href="http://codepen.io/dandenney"&gt;@dandenney&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-  &lt;p class='mts'&gt;
-    The “solution” was creating a retrieval function that can be shared between the two. The least technical explanation of this ever is that it is necessary because nothing is “listening” for updates from the event listener. I was trying to update the parent function or variables in it, but that can’t work without calling the function again.
-  &lt;/p&gt;
-  &lt;p&gt;
-    As a workaround, I created a retrieval function to sit in the middle of the two. It runs when the select event happens and its value is then updated. Since that function now has an updated value, it can be used as a check on whether or not to proceed in a separate function.
-  &lt;/p&gt;
-  &lt;p&gt;
-    In this example, if the second select value is greater than the first, then sending should be allowed. If not, then it shouldn’t. 5-6 hours and a blog post later, the “simple” thing that I was trying to do is working.
-  &lt;/p&gt;
-  &lt;script async src="//assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
+&lt;p&gt;
+&lt;strong&gt;Disclaimer:&lt;/strong&gt;
+In this post, I am sharing something that I've been learning. It's in no way a how-to and in fact I'd love feedback on better ways to do what I've done.
+&lt;/p&gt;
+&lt;p&gt;
+I had been progressing pretty well lately in learning vanilla JS and it felt awesome. Then I hit a wall in doing something that I thought was straight forward. I ended up putting about 5-6 hours into grokking how to get a value out of an event listener, that time being split between attempts, googling, reading Stack Overflows, reading the docs, pairing with a coworker, and &lt;em&gt;maybe&lt;/em&gt; an hour sitting like this.
+&lt;/p&gt;
+&lt;img class='mbm db mhc' src='/assets/images/posts/front-end-dev/stumbling-through-learning-about-event-listeners/gif-matt-damon-crying.gif'&gt;
+&lt;h2&gt;(If this, then that) * 999&lt;/h2&gt;
+&lt;p&gt;
+The fun part of front-end development is that there are likely 999 ways to solve the problem that I was facing. Having chosen one, I then tried about 423 ways to achieve it before getting it to work. If I wasn’t so focused on improving my skills I might have switched away to a different solution, but I had to know that I could do this.
+&lt;/p&gt;
+&lt;h2&gt;A reduced test case&lt;/h2&gt;
+&lt;p&gt;
+The original problem was that I wanted to validate 2 datetime-local inputs. If the second datetime value is after the first, then submit a form to Firebase. The problem with sharing that for help was that there was so much unnecessary code (the date conversions, Firebase submission, etc.)
+&lt;/p&gt;
+&lt;p&gt;
+In this pen I simplified it and named the variables and functions in a way to describe what I was trying to achieve because I knew I needed help.
+&lt;/p&gt;
+&lt;p data-height="265" data-theme-id="0" data-slug-hash="OREBzg" data-default-tab="js,result" data-user="dandenney" data-embed-version="2" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/dandenney/pen/OREBzg/"&gt;Closure issue?&lt;/a&gt; by Dan Denney (&lt;a href="http://codepen.io/dandenney"&gt;@dandenney&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p class='mts'&gt;
+To make it simple, this is comparing the value of two selects with numbers from 1-4. I knew how to get those values and compare them within the event listener, but I didn’t know how to get that value to bubble up to the parent function. (I wanted to do this because I knew I could then conditionally submit the form based on the true/false result of the comparison.) It turns out &lt;a href="http://stackoverflow.com/questions/26373208/returning-a-variable-from-a-listener-function-javascript"&gt;that you can’t&lt;/a&gt;, at least not directly. I had stumbled into some &lt;a href="http://stackoverflow.com/questions/23667086/why-is-my-variable-unaltered-after-i-modify-it-inside-of-a-function-asynchron"&gt;complex territory&lt;/a&gt;, obliviously.
+&lt;/p&gt;
+&lt;p&gt;
+Reiterating from above, I could have opted to do something different like disable/enable the submit button from the event listeners. However, this became more about learning how to get that value out of there because it seems like an important concept to understand.
+&lt;/p&gt;
+&lt;h2&gt;A solution&lt;/h2&gt;
+&lt;p&gt;
+I know about 422 ways that you cannot return a value out of an event listener and use it in a separate function. I now know one way that you can and I’m sharing it here. It’s not elegant and it may not even be "right", but it works. Hopefully a few people more advanced than I am will chime in with 1 of the 999 other ways that you can do this.
+&lt;/p&gt;
+&lt;p data-height="265" data-theme-id="0" data-slug-hash="OREBzg" data-default-tab="js,result" data-user="dandenney" data-embed-version="2" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/dandenney/pen/OREBzg/"&gt;Closure issue?&lt;/a&gt; by Dan Denney (&lt;a href="http://codepen.io/dandenney"&gt;@dandenney&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;p class='mts'&gt;
+The “solution” was creating a retrieval function that can be shared between the two. The least technical explanation of this ever is that it is necessary because nothing is “listening” for updates from the event listener. I was trying to update the parent function or variables in it, but that can’t work without calling the function again.
+&lt;/p&gt;
+&lt;p&gt;
+As a workaround, I created a retrieval function to sit in the middle of the two. It runs when the select event happens and its value is then updated. Since that function now has an updated value, it can be used as a check on whether or not to proceed in a separate function.
+&lt;/p&gt;
+&lt;p&gt;
+In this example, if the second select value is greater than the first, then sending should be allowed. If not, then it shouldn’t. 5-6 hours and a blog post later, the “simple” thing that I was trying to do is working.
+&lt;/p&gt;
+&lt;script async src="//assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
 &lt;/article&gt;
 </content>
   </entry>
@@ -104,7 +104,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving"/>
     <id>http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving</id>
     <published>2016-08-07T20:00:00-04:00</published>
-    <updated>2016-10-13T12:52:36-04:00</updated>
+    <updated>2017-07-01T14:35:59-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -157,83 +157,83 @@
 &lt;/style&gt;
 &lt;img src='/assets/images/posts/front-end-dev/learning-javascript-problem-solving/crash-js.svg'&gt;
 &lt;article&gt;
-  &lt;div class='row ov'&gt;
-    &lt;div class='cell cell--s'&gt;
-      &lt;h1 class='title-shift mtm'&gt;&lt;/h1&gt;
-      &lt;p&gt;
-        &lt;strong&gt;Disclaimer:&lt;/strong&gt;
-        In this post, I am sharing something that I've been learning. It's in no way a how-to and in fact I'd love feedback on better ways to do what I've done.
-      &lt;/p&gt;
-      &lt;p&gt;
-        I've been focused on learning functional or programmatic JavaScript lately, trying to step up my game from the presentational side of things. Without a Comp Sci background, there's more to learn than syntax. I have to think about how to approach problems and that is as big of a learning curve as the syntax is for me.
-      &lt;/p&gt;
-      &lt;p&gt;
-        While driving around my daughter and her boyfriend this weekend, he popped out one of those school questions: "2 trains are 1000 feet apart. One train is going 80 miles per hour, one is going 60 miles per hour. How long before they crash?" (It turns out he was using it as a riddle because he said feet, but my mind was already running.)
-      &lt;/p&gt;
-      &lt;h2&gt;Which came first, the solution or the code?&lt;/h2&gt;
-      &lt;p&gt;
-        In thinking about miles instead, this seemed like the perfect small thing to work through solving. The first step required figuring out a way to solve the problem before thinking about how to code it.
-      &lt;/p&gt;
-      &lt;p&gt;
-        My thinking was that if I add the 2 speeds together, they are a "cycle". Then it would be a matter of dividing the total number by the number of cycles. To make sure it would work, I created a spreadsheet to test it. (Not while I was in the car)
-      &lt;/p&gt;
-      &lt;img src='/assets/images/posts/front-end-dev/learning-javascript-problem-solving/spreadsheet.png'&gt;
-      &lt;h2 class='mtm'&gt;"How do I code this?"&lt;/h2&gt;
-      &lt;p&gt;
-        My first step was thinking about how to do small portions of this. My former self (like before right now), would have wrote this in one loooong function. I've learned bits and pieces about organization and creating functions that handle one specific thing from &lt;a href="http://drewbarontini.com"&gt;Drew&lt;/a&gt; and want to start putting that to use.
-      &lt;/p&gt;
-      &lt;h2&gt;Step One: Calculate the number of cycles&lt;/h2&gt;
-      &lt;p&gt;
-        Like in the spreadsheet, I want code that will add 80 + 60, divide that number into 1000 and output 7.14. I also want each of those numbers to be able to be changed, but I started with the exact ones to check accuracy.
-      &lt;/p&gt;
-      &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateCycles(distance, speedA, speedB) {&amp;#x000A;  var distance = distance;&amp;#x000A;  var speedA = speedA;&amp;#x000A;  var speedB = speedB;&amp;#x000A;  var cycle = speedA + speedB;&amp;#x000A;  var cycleCount = distance / cycle;&amp;#x000A;  return cycleCount;&amp;#x000A;};&amp;#x000A;&amp;#x000A;calculateCycles(1000, 80, 60);&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
-      &lt;blockquote class='refactor mbm mlf mrf mtm'&gt;
-        &lt;h3 class='mtf'&gt;Refactor&lt;/h3&gt;
-        &lt;p class='mbf'&gt;
-          Jon Roberts shared something that instantly makes this more efficient. I was wrong in thinking that I had to explicitly declare arguments that are passed into variables.
-        &lt;/p&gt;
-      &lt;/blockquote&gt;
-      &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateCycles(distance, speedA, speedB) {&amp;#x000A;	return distance / (speedA + speedB)&amp;#x000A;}&amp;#x000A;&amp;#x000A;calculateCycles(1000, 80, 60);&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
-      &lt;p class='mtm'&gt;
-        If you copy and paste that into the console, you should get 7.142857142857143. Technically speaking that's the answer, but I doubt any teacher would accept 7.14 hours and it's not very friendly. I wanted the answer in hours, minutes, and seconds.
-      &lt;/p&gt;
-      &lt;p&gt;
-        To avoid my one giant function, I'm returning the value at the end of the function so that I can call it elsewhere. I had to search for &lt;a href="http://stackoverflow.com/questions/19674992/javascript-using-a-return-value-in-another-function"&gt;a reminder&lt;/a&gt; on how to do that.
-      &lt;/p&gt;
-      &lt;h2&gt;Step Two: Calculate the time of the cycles&lt;/h2&gt;
-      &lt;p&gt;
-        Converting the number into hours, minutes, and seconds was a multi-step process and I was glad I had learned about the remainder functions. Again, I needed &lt;a href="http://stackoverflow.com/questions/4228356/integer-division-in-javascript"&gt;a reminder&lt;/a&gt; on the best way to handle that. The conversion is somewhat backwards, then forwards. I first needed to get the total number of seconds using the number of cycles.
-      &lt;/p&gt;
-      &lt;p&gt;
-        That total number could be divided by number of seconds in hours, using the remainder to do the same for minutes and then seconds. The answer requires 3 values: a number of hours, minutes, and seconds. So, the output of of this function is an array of those 3 values.
-      &lt;/p&gt;
-      &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateTime() {&amp;#x000A;  var cycles = calculateCycles(1000, 80, 60);&amp;#x000A;  var secondsPerHour = 60 * 60;&amp;#x000A;  var secondsTotal = secondsPerHour * cycles;&amp;#x000A;  var hoursRemainder = cycles % 1;&amp;#x000A;  var hoursResult = (secondsTotal / secondsPerHour &gt;&gt; 0);&amp;#x000A;  var minutesInitial = hoursRemainder * 60;&amp;#x000A;  var minutesRemainder = minutesInitial % 1;&amp;#x000A;  var minutesResult = (minutesInitial &gt;&gt; 0);&amp;#x000A;  var secondsResult = (minutesRemainder * 60) &gt;&gt; 0;&amp;#x000A;  return [hoursResult, minutesResult, secondsResult];&amp;#x000A;}&amp;#x000A;&amp;#x000A;calculateTime();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
-      &lt;p class='mtm'&gt;
-        This one can be pasted into the console, too, but you'll need to have all the code from before for it to run. If you do, you should get &lt;code&gt;[7, 8, 34]&lt;/code&gt;. I have a CodePen at the end of the post that you can play with instead of trying to copy and paste these into the console.
-      &lt;/p&gt;
-      &lt;h2&gt;Step Three: Output the answer&lt;/h2&gt;
-      &lt;p&gt;
-        For the most part, the output was something I've been doing a lot lately. However, I was accessing the array incorrectly and had to &lt;a href=""&gt;look that up&lt;/a&gt;. Once I had that in a variable I could map each item in the array to an HTML element.
-      &lt;/p&gt;
-      &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function outputAnswer() {&amp;#x000A;  var times = calculateTime();&amp;#x000A;  var hours = times[0];&amp;#x000A;  var minutes = times[1];&amp;#x000A;  var seconds = times[2];&amp;#x000A;  var hoursOutput = document.querySelector('#hours');&amp;#x000A;  var minutesOutput = document.querySelector('#minutes');&amp;#x000A;  var secondsOutput = document.querySelector('#seconds');&amp;#x000A;  hoursOutput.innerHTML = hours;&amp;#x000A;  minutesOutput.innerHTML = minutes;&amp;#x000A;  secondsOutput.innerHTML = seconds;&amp;#x000A;};&amp;#x000A;&amp;#x000A;outputAnswer();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
-      &lt;h2 class='mtm'&gt;Solution&lt;/h2&gt;
-      &lt;p&gt;
-        Here's the pen that I did it in and I used cars instead of trains because I liked the classic car vectors better.
-      &lt;/p&gt;
-      &lt;p data-height="265" data-theme-id="0" data-slug-hash="OXaWqP" data-default-tab="js,result" data-user="dandenney" data-embed-version="2" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/dandenney/pen/OXaWqP/"&gt;Trains&lt;/a&gt; by Dan Denney (&lt;a href="http://codepen.io/dandenney"&gt;@dandenney&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-      &lt;script async src="//assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
-      &lt;h2 class='mtm'&gt;Conclusion&lt;/h2&gt;
-      &lt;p&gt;
-        The good part is that this worked! So I know that I can conjure up a problem, find a solution, and work towards building that solution out in code. In applying what I've been learning, this is a big win.
-      &lt;/p&gt;
-      &lt;p&gt;
-        Ultimately, my goal is to learn how to build web apps. In that regard, I know that there's a lot more that could be done to this to make it better. There's likely more efficient ways to write it and to do the conversions. If I was making it editable, I'd have to write code that ensured that 0 or negative values wouldn't break it, etc.
-      &lt;/p&gt;
-      &lt;p&gt;
-        If there's something in here that you know I could do better, please let me know and share it for other folks to learn.
-      &lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+&lt;div class='row ov'&gt;
+&lt;div class='cell cell--s'&gt;
+&lt;h1 class='title-shift mtm'&gt;&lt;/h1&gt;
+&lt;p&gt;
+&lt;strong&gt;Disclaimer:&lt;/strong&gt;
+In this post, I am sharing something that I've been learning. It's in no way a how-to and in fact I'd love feedback on better ways to do what I've done.
+&lt;/p&gt;
+&lt;p&gt;
+I've been focused on learning functional or programmatic JavaScript lately, trying to step up my game from the presentational side of things. Without a Comp Sci background, there's more to learn than syntax. I have to think about how to approach problems and that is as big of a learning curve as the syntax is for me.
+&lt;/p&gt;
+&lt;p&gt;
+While driving around my daughter and her boyfriend this weekend, he popped out one of those school questions: "2 trains are 1000 feet apart. One train is going 80 miles per hour, one is going 60 miles per hour. How long before they crash?" (It turns out he was using it as a riddle because he said feet, but my mind was already running.)
+&lt;/p&gt;
+&lt;h2&gt;Which came first, the solution or the code?&lt;/h2&gt;
+&lt;p&gt;
+In thinking about miles instead, this seemed like the perfect small thing to work through solving. The first step required figuring out a way to solve the problem before thinking about how to code it.
+&lt;/p&gt;
+&lt;p&gt;
+My thinking was that if I add the 2 speeds together, they are a "cycle". Then it would be a matter of dividing the total number by the number of cycles. To make sure it would work, I created a spreadsheet to test it. (Not while I was in the car)
+&lt;/p&gt;
+&lt;img src='/assets/images/posts/front-end-dev/learning-javascript-problem-solving/spreadsheet.png'&gt;
+&lt;h2 class='mtm'&gt;"How do I code this?"&lt;/h2&gt;
+&lt;p&gt;
+My first step was thinking about how to do small portions of this. My former self (like before right now), would have wrote this in one loooong function. I've learned bits and pieces about organization and creating functions that handle one specific thing from &lt;a href="http://drewbarontini.com"&gt;Drew&lt;/a&gt; and want to start putting that to use.
+&lt;/p&gt;
+&lt;h2&gt;Step One: Calculate the number of cycles&lt;/h2&gt;
+&lt;p&gt;
+Like in the spreadsheet, I want code that will add 80 + 60, divide that number into 1000 and output 7.14. I also want each of those numbers to be able to be changed, but I started with the exact ones to check accuracy.
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateCycles(distance, speedA, speedB) {&amp;#x000A;  var distance = distance;&amp;#x000A;  var speedA = speedA;&amp;#x000A;  var speedB = speedB;&amp;#x000A;  var cycle = speedA + speedB;&amp;#x000A;  var cycleCount = distance / cycle;&amp;#x000A;  return cycleCount;&amp;#x000A;};&amp;#x000A;&amp;#x000A;calculateCycles(1000, 80, 60);&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote class='refactor mbm mlf mrf mtm'&gt;
+&lt;h3 class='mtf'&gt;Refactor&lt;/h3&gt;
+&lt;p class='mbf'&gt;
+Jon Roberts shared something that instantly makes this more efficient. I was wrong in thinking that I had to explicitly declare arguments that are passed into variables.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateCycles(distance, speedA, speedB) {&amp;#x000A;	return distance / (speedA + speedB)&amp;#x000A;}&amp;#x000A;&amp;#x000A;calculateCycles(1000, 80, 60);&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class='mtm'&gt;
+If you copy and paste that into the console, you should get 7.142857142857143. Technically speaking that's the answer, but I doubt any teacher would accept 7.14 hours and it's not very friendly. I wanted the answer in hours, minutes, and seconds.
+&lt;/p&gt;
+&lt;p&gt;
+To avoid my one giant function, I'm returning the value at the end of the function so that I can call it elsewhere. I had to search for &lt;a href="http://stackoverflow.com/questions/19674992/javascript-using-a-return-value-in-another-function"&gt;a reminder&lt;/a&gt; on how to do that.
+&lt;/p&gt;
+&lt;h2&gt;Step Two: Calculate the time of the cycles&lt;/h2&gt;
+&lt;p&gt;
+Converting the number into hours, minutes, and seconds was a multi-step process and I was glad I had learned about the remainder functions. Again, I needed &lt;a href="http://stackoverflow.com/questions/4228356/integer-division-in-javascript"&gt;a reminder&lt;/a&gt; on the best way to handle that. The conversion is somewhat backwards, then forwards. I first needed to get the total number of seconds using the number of cycles.
+&lt;/p&gt;
+&lt;p&gt;
+That total number could be divided by number of seconds in hours, using the remainder to do the same for minutes and then seconds. The answer requires 3 values: a number of hours, minutes, and seconds. So, the output of of this function is an array of those 3 values.
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function calculateTime() {&amp;#x000A;  var cycles = calculateCycles(1000, 80, 60);&amp;#x000A;  var secondsPerHour = 60 * 60;&amp;#x000A;  var secondsTotal = secondsPerHour * cycles;&amp;#x000A;  var hoursRemainder = cycles % 1;&amp;#x000A;  var hoursResult = (secondsTotal / secondsPerHour &gt;&gt; 0);&amp;#x000A;  var minutesInitial = hoursRemainder * 60;&amp;#x000A;  var minutesRemainder = minutesInitial % 1;&amp;#x000A;  var minutesResult = (minutesInitial &gt;&gt; 0);&amp;#x000A;  var secondsResult = (minutesRemainder * 60) &gt;&gt; 0;&amp;#x000A;  return [hoursResult, minutesResult, secondsResult];&amp;#x000A;}&amp;#x000A;&amp;#x000A;calculateTime();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class='mtm'&gt;
+This one can be pasted into the console, too, but you'll need to have all the code from before for it to run. If you do, you should get &lt;code&gt;[7, 8, 34]&lt;/code&gt;. I have a CodePen at the end of the post that you can play with instead of trying to copy and paste these into the console.
+&lt;/p&gt;
+&lt;h2&gt;Step Three: Output the answer&lt;/h2&gt;
+&lt;p&gt;
+For the most part, the output was something I've been doing a lot lately. However, I was accessing the array incorrectly and had to &lt;a href=""&gt;look that up&lt;/a&gt;. Once I had that in a variable I could map each item in the array to an HTML element.
+&lt;/p&gt;
+&lt;pre class='stretch stretch--b'&gt;&lt;code class='language-js'&gt;function outputAnswer() {&amp;#x000A;  var times = calculateTime();&amp;#x000A;  var hours = times[0];&amp;#x000A;  var minutes = times[1];&amp;#x000A;  var seconds = times[2];&amp;#x000A;  var hoursOutput = document.querySelector('#hours');&amp;#x000A;  var minutesOutput = document.querySelector('#minutes');&amp;#x000A;  var secondsOutput = document.querySelector('#seconds');&amp;#x000A;  hoursOutput.innerHTML = hours;&amp;#x000A;  minutesOutput.innerHTML = minutes;&amp;#x000A;  secondsOutput.innerHTML = seconds;&amp;#x000A;};&amp;#x000A;&amp;#x000A;outputAnswer();&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 class='mtm'&gt;Solution&lt;/h2&gt;
+&lt;p&gt;
+Here's the pen that I did it in and I used cars instead of trains because I liked the classic car vectors better.
+&lt;/p&gt;
+&lt;p data-height="265" data-theme-id="0" data-slug-hash="OXaWqP" data-default-tab="js,result" data-user="dandenney" data-embed-version="2" class="codepen"&gt;See the Pen &lt;a href="http://codepen.io/dandenney/pen/OXaWqP/"&gt;Trains&lt;/a&gt; by Dan Denney (&lt;a href="http://codepen.io/dandenney"&gt;@dandenney&lt;/a&gt;) on &lt;a href="http://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async src="//assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
+&lt;h2 class='mtm'&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;
+The good part is that this worked! So I know that I can conjure up a problem, find a solution, and work towards building that solution out in code. In applying what I've been learning, this is a big win.
+&lt;/p&gt;
+&lt;p&gt;
+Ultimately, my goal is to learn how to build web apps. In that regard, I know that there's a lot more that could be done to this to make it better. There's likely more efficient ways to write it and to do the conversions. If I was making it editable, I'd have to write code that ensured that 0 or negative values wouldn't break it, etc.
+&lt;/p&gt;
+&lt;p&gt;
+If there's something in here that you know I could do better, please let me know and share it for other folks to learn.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/article&gt;
 </content>
   </entry>
@@ -242,7 +242,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/reducing-html-email-code"/>
     <id>http://blog.url.com/posts/front-end-dev/reducing-html-email-code</id>
     <published>2016-07-15T20:00:00-04:00</published>
-    <updated>2016-10-13T12:52:36-04:00</updated>
+    <updated>2017-07-01T14:35:59-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -311,133 +311,133 @@
         width: 50%; } }
 &lt;/style&gt;
 &lt;p&gt;
-  I recently came across an article, &lt;a href="https://medium.com/@cloverfounders/the-problem-with-email-newsletters-f606a485ccc1#.56k4k0uh3"&gt;The Problem with Email Newsletters&lt;/a&gt;. I was really curious about the problems that people run into with creating them, but I was surprised by the main problem that this one covered:
+I recently came across an article, &lt;a href="https://medium.com/@cloverfounders/the-problem-with-email-newsletters-f606a485ccc1#.56k4k0uh3"&gt;The Problem with Email Newsletters&lt;/a&gt;. I was really curious about the problems that people run into with creating them, but I was surprised by the main problem that this one covered:
 &lt;/p&gt;
 &lt;div class='stretch stretch--a'&gt;
-  &lt;blockquote class='tsl'&gt;
-    "The problem is that 102KB is tiny. An email with a little bit of text and a single photo is larger than 102KB. For Clover, we would need to delete 75% of the content in our current letter in order to squeak in under Gmail’s clipping restrictions."
-  &lt;/blockquote&gt;
+&lt;blockquote class='tsl'&gt;
+"The problem is that 102KB is tiny. An email with a little bit of text and a single photo is larger than 102KB. For Clover, we would need to delete 75% of the content in our current letter in order to squeak in under Gmail’s clipping restrictions."
+&lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;p class='mtm'&gt;
-  The only time that I could remember running into this problem is when I was doing extreme stuff like converting images into tables filled with colors and creating data visualizations using table colors. I peeked at all of my Code School emails and the largest one I had created was 54kb, so I thought I should take a crack at reducing the code in it.
+The only time that I could remember running into this problem is when I was doing extreme stuff like converting images into tables filled with colors and creating data visualizations using table colors. I peeked at all of my Code School emails and the largest one I had created was 54kb, so I thought I should take a crack at reducing the code in it.
 &lt;/p&gt;
 &lt;h2&gt;The Results May Be Misleading&lt;/h2&gt;
 &lt;table class='mts'&gt;
-  &lt;thead&gt;
-    &lt;th&gt;File&lt;/th&gt;
-    &lt;th&gt;Expanded&lt;/th&gt;
-    &lt;th&gt;Minified&lt;/th&gt;
-    &lt;th&gt;Images&lt;/th&gt;
-    &lt;th&gt;Total&lt;/th&gt;
-  &lt;/thead&gt;
-  &lt;tr&gt;
-    &lt;td data-th='File'&gt;clover.html&lt;/td&gt;
-    &lt;td data-th='Expanded'&gt;134kb&lt;/td&gt;
-    &lt;td data-th='Minified'&gt;74kb&lt;/td&gt;
-    &lt;td data-th='Images'&gt;436kb&lt;/td&gt;
-    &lt;td data-th='Total'&gt;570kb&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td data-th='File'&gt;clover-alt.html&lt;/td&gt;
-    &lt;td data-th='Expanded'&gt;42kb&lt;/td&gt;
-    &lt;td data-th='Minified'&gt;33kb&lt;/td&gt;
-    &lt;td data-th='Images'&gt;356kb&lt;/td&gt;
-    &lt;td data-th='Total'&gt;398kb&lt;/td&gt;
-  &lt;/tr&gt;
+&lt;thead&gt;
+&lt;th&gt;File&lt;/th&gt;
+&lt;th&gt;Expanded&lt;/th&gt;
+&lt;th&gt;Minified&lt;/th&gt;
+&lt;th&gt;Images&lt;/th&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;/thead&gt;
+&lt;tr&gt;
+&lt;td data-th='File'&gt;clover.html&lt;/td&gt;
+&lt;td data-th='Expanded'&gt;134kb&lt;/td&gt;
+&lt;td data-th='Minified'&gt;74kb&lt;/td&gt;
+&lt;td data-th='Images'&gt;436kb&lt;/td&gt;
+&lt;td data-th='Total'&gt;570kb&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td data-th='File'&gt;clover-alt.html&lt;/td&gt;
+&lt;td data-th='Expanded'&gt;42kb&lt;/td&gt;
+&lt;td data-th='Minified'&gt;33kb&lt;/td&gt;
+&lt;td data-th='Images'&gt;356kb&lt;/td&gt;
+&lt;td data-th='Total'&gt;398kb&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/table&gt;
 &lt;p class='mtm'&gt;
-  I was able to reduce the amount of code significantly, from 134kb to 42kb by picking through it and &lt;a href="https://imageoptim.com/mac"&gt;ImageOptim&lt;/a&gt; took care of the images. This seems great and like I should just share it with them, right? Not so fast...
+I was able to reduce the amount of code significantly, from 134kb to 42kb by picking through it and &lt;a href="https://imageoptim.com/mac"&gt;ImageOptim&lt;/a&gt; took care of the images. This seems great and like I should just share it with them, right? Not so fast...
 &lt;/p&gt;
 &lt;h2&gt;The Formula for Redundancy&lt;/h2&gt;
 &lt;p&gt;
-  A template created for general use and a non-developer adding content will almost always result in redundant code. It's probably the most common problem in CMS-driven content because it's so hard to solve. It's the reason we switched to me creating all of the HTML emails that we send at Code School and why the front-end team handles the formatting of all blog posts there as well. I'll break down the good, the "could be better", and the fixes in this particular instance.
+A template created for general use and a non-developer adding content will almost always result in redundant code. It's probably the most common problem in CMS-driven content because it's so hard to solve. It's the reason we switched to me creating all of the HTML emails that we send at Code School and why the front-end team handles the formatting of all blog posts there as well. I'll break down the good, the "could be better", and the fixes in this particular instance.
 &lt;/p&gt;
 &lt;h2&gt;The Good&lt;/h2&gt;
 &lt;p&gt;
-  The template is really well done. The code is great and it works well across all screen sizes. They were able to customize it to the look and feel that they wanted and maintain consistency in their data entry, too.
+The template is really well done. The code is great and it works well across all screen sizes. They were able to customize it to the look and feel that they wanted and maintain consistency in their data entry, too.
 &lt;/p&gt;
 &lt;h2&gt;The "Could Be Better"&lt;/h2&gt;
 &lt;h4 class='mbf mts'&gt;Some CSS is not being utilized&lt;/h4&gt;
 &lt;p class='mtf'&gt;
-  The template is intended to have content entered using HTML elements for titles and text (H1, H2, H3, H4, H5, p). However, none of that is being used.
+The template is intended to have content entered using HTML elements for titles and text (H1, H2, H3, H4, H5, p). However, none of that is being used.
 &lt;/p&gt;
 &lt;h4 class='mbf'&gt;Nesting could be reduced&lt;/h4&gt;
 &lt;p class='mtf'&gt;
-  There are some deeply nested tables that could be moved up a few levels.
+There are some deeply nested tables that could be moved up a few levels.
 &lt;/p&gt;
 &lt;h4 class='mbf'&gt;Spongy vs. multiple cell approach&lt;/h4&gt;
 &lt;p class='mtf'&gt;
-  There are a few ways to mark up templates that will work well across multiple resolutions. This one is using the spongy approach, which has code for ghost tables.
+There are a few ways to mark up templates that will work well across multiple resolutions. This one is using the spongy approach, which has code for ghost tables.
 &lt;/p&gt;
 &lt;h4 class='mbf'&gt;Too many styles are inlined&lt;/h4&gt;
 &lt;p class='mtf'&gt;
-  There is some code that only works in specific clients which could be only in the head. Admittedly, this is tricky depending on what is handling the inlining.
+There is some code that only works in specific clients which could be only in the head. Admittedly, this is tricky depending on what is handling the inlining.
 &lt;/p&gt;
 &lt;h4 class='mbf'&gt;Style fights&lt;/h4&gt;
 &lt;p class='mtf'&gt;
-  There is code in the template to handle size, colors, etc. for content, but it isn't the desired styles. Each bit of text has styles added to counter the existing ones.
+There is code in the template to handle size, colors, etc. for content, but it isn't the desired styles. Each bit of text has styles added to counter the existing ones.
 &lt;/p&gt;
 &lt;h2&gt;Possible Fixes&lt;/h2&gt;
 &lt;p&gt;
-  I'm going to share what I did to trim things down, but I can't stress enough that this isn't "the way". These could trim things down but ultimately it would be a balance of tailoring the template to the content and ensuring that no extra styles are added each time content is entered. The real fix is process.
+I'm going to share what I did to trim things down, but I can't stress enough that this isn't "the way". These could trim things down but ultimately it would be a balance of tailoring the template to the content and ensuring that no extra styles are added each time content is entered. The real fix is process.
 &lt;/p&gt;
 &lt;h4 class='mbf'&gt;Unutilized CSS&lt;/h4&gt;
 &lt;p&gt;
-  Since the title and paragraph elements aren't beind used, I removed all of the CSS in the template for them. Ultimately the better fix is to use them in content entry but I admit that I don't use them in our emails. Here's a little bit of it:
+Since the title and paragraph elements aren't beind used, I removed all of the CSS in the template for them. Ultimately the better fix is to use them in content entry but I admit that I don't use them in our emails. Here's a little bit of it:
 &lt;/p&gt;
 &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-css'&gt;h1 {&amp;#x000A;	color:#000000 !important;&amp;#x000A;	display:block;&amp;#x000A;	font-family:Helvetica;&amp;#x000A;	font-size:60px;&amp;#x000A;	font-style:normal;&amp;#x000A;	font-weight:normal;&amp;#x000A;	line-height:125%;&amp;#x000A;	letter-spacing:normal;&amp;#x000A;	margin:0;&amp;#x000A;	text-align:center; }&amp;#x000A;&amp;#x000A;h2 {&amp;#x000A;	color:#000000 !important;&amp;#x000A;	display:block;&amp;#x000A;	font-family:Helvetica;&amp;#x000A;	font-size:26px;&amp;#x000A;	font-style:normal;&amp;#x000A;	font-weight:normal;&amp;#x000A;	line-height:125%;&amp;#x000A;	letter-spacing:normal;&amp;#x000A;	margin:0;&amp;#x000A;	text-align:center; }&amp;#x000A;&amp;#x000A;h3 {&amp;#x000A;	color:#000000 !important;&amp;#x000A;	display:block;&amp;#x000A;	font-family:Helvetica;&amp;#x000A;	font-size:20px;&amp;#x000A;	font-style:normal;&amp;#x000A;	font-weight:normal;&amp;#x000A;	line-height:125%;&amp;#x000A;	letter-spacing:normal;&amp;#x000A;	margin:0;&amp;#x000A;	text-align:center; }&amp;#x000A;&amp;#x000A;h4 {&amp;#x000A;	color:#000000 !important;&amp;#x000A;	display:block;&amp;#x000A;	font-family:Helvetica;&amp;#x000A;	font-size:16px;&amp;#x000A;	font-style:normal;&amp;#x000A;	font-weight:normal;&amp;#x000A;	line-height:125%;&amp;#x000A;	letter-spacing:normal;&amp;#x000A;	margin:0;&amp;#x000A;	text-align:left; }&amp;#x000A;&amp;#x000A;@media only screen and (max-width: 480px){&amp;#x000A;	h1 {&amp;#x000A;		font-size:24px !important;&amp;#x000A;		line-height:125% !important;&amp;#x000A;	} }&amp;#x000A;&amp;#x000A;@media only screen and (max-width: 480px){&amp;#x000A;	h2 {&amp;#x000A;		font-size:20px !important;&amp;#x000A;		line-height:125% !important;&amp;#x000A;	} }&amp;#x000A;&amp;#x000A;@media only screen and (max-width: 480px){&amp;#x000A;	h3 {&amp;#x000A;		font-size:18px !important;&amp;#x000A;		line-height:125% !important;&amp;#x000A;	} }&amp;#x000A;&amp;#x000A;@media only screen and (max-width: 480px){&amp;#x000A;	h4 {&amp;#x000A;		font-size:16px !important;&amp;#x000A;		line-height:125% !important;&amp;#x000A;	} }&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
 &lt;h4 class='mbf mtm'&gt;Nesting&lt;/h4&gt;
 &lt;p&gt;
-  To reduce nesting and to divide up the areas that you're editing, I divided the template into 3 sections: header, content, footer.
+To reduce nesting and to divide up the areas that you're editing, I divided the template into 3 sections: header, content, footer.
 &lt;/p&gt;
 &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-markup'&gt;&amp;lt;!-- HEADER --&amp;gt;&amp;#x000A;&amp;lt;table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;...&amp;#x000A;&amp;#x000A;&amp;lt;!-- CONTENT --&amp;gt;&amp;#x000A;&amp;lt;table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;...&amp;#x000A;&amp;#x000A;&amp;lt;!-- FOOTER --&amp;gt;&amp;#x000A;&amp;lt;table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;...&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
 &lt;h4 class='mbf mtm'&gt;The multiple cell approach&lt;/h4&gt;
 &lt;p&gt;
-  It's a small amount of code per table, but the combination of saving lines without the ghose tables and reducing nesting helps reduce the overall code.
+It's a small amount of code per table, but the combination of saving lines without the ghose tables and reducing nesting helps reduce the overall code.
 &lt;/p&gt;
 &lt;p class='mbf'&gt;
-  &lt;strong&gt;Ghost Tables&lt;/strong&gt;
+&lt;strong&gt;Ghost Tables&lt;/strong&gt;
 &lt;/p&gt;
 &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-markup'&gt;&amp;lt;!--[if mso]&amp;gt;&amp;#x000A;	&amp;lt;table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;"&amp;gt;&amp;#x000A;		&amp;lt;tr&amp;gt;&amp;#x000A;&amp;lt;![endif]--&amp;gt;&amp;#x000A;&amp;lt;!--[if mso]&amp;gt;&amp;#x000A;	&amp;lt;td valign="top" width="600" style="width:600px;"&amp;gt;&amp;#x000A;&amp;lt;![endif]--&amp;gt;&amp;#x000A;&amp;lt;table style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;&amp;#x000A;	&amp;lt;tbody&amp;gt;&amp;#x000A;		&amp;lt;tr&amp;gt;&amp;#x000A;			&amp;lt;td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 15px;line-height: 200%;text-align: left;" valign="top"&amp;gt;&amp;#x000A;				&amp;lt;div style="text-align: center;"&amp;gt;&amp;#x000A;					&amp;lt;span style="font-size:18px; line-height:22px"&amp;gt;&amp;lt;strong&amp;gt;Let’s be real: We know you spent yesterday Amazon Prime-ing your way to happiness. Here’s what you missed while you were trying to score fancy headphones and half-priced Kindles.&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;#x000A;				&amp;lt;/div&amp;gt;&amp;#x000A;			&amp;lt;/td&amp;gt;&amp;#x000A;		&amp;lt;/tr&amp;gt;&amp;#x000A;	&amp;lt;/tbody&amp;gt;&amp;#x000A;&amp;lt;/table&amp;gt;&amp;#x000A;&amp;lt;!--[if mso]&amp;gt;&amp;#x000A;&amp;lt;/td&amp;gt;&amp;#x000A;&amp;lt;![endif]--&amp;gt;&amp;#x000A;&amp;lt;!--[if mso]&amp;gt;&amp;#x000A;	&amp;lt;/tr&amp;gt;&amp;#x000A;&amp;lt;/table&amp;gt;&amp;#x000A;&amp;lt;![endif]--&amp;gt;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
 &lt;p class='mbf mtm'&gt;
-  &lt;strong&gt;Multiple cells&lt;/strong&gt;
+&lt;strong&gt;Multiple cells&lt;/strong&gt;
 &lt;/p&gt;
 &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-html'&gt;&amp;lt;!-- Content Container --&amp;gt;&amp;#x000A;&amp;lt;table align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size"&amp;gt;&amp;#x000A;	&amp;lt;tr&amp;gt;&amp;#x000A;		&amp;lt;td style="font-size: 0;"&amp;gt;&amp;nbsp;&amp;lt;/td&amp;gt;&amp;#x000A;		&amp;lt;td width="564"&amp;gt;&amp;#x000A;&amp;#x000A;			&amp;lt;!--- Content Content ---&amp;gt;&amp;#x000A;			&amp;lt;table border="0" cellpadding="0" cellspacing="0" width="100%"&amp;gt;&amp;#x000A;				&amp;lt;tr&amp;gt;&amp;#x000A;					&amp;lt;td class="mcnTextContent" style="color: #000000; font-family: Helvetica; font-size: 18px; line-height: 30px; -ms-text-size-adjust: 100%; text-align: center; word-break: break-word; padding-top: 36px;"&amp;gt;&amp;#x000A;						&amp;lt;strong&amp;gt;Let's be real: We know you spent yesterday Amazon Prime-ing your way to happiness. Here's what you missed while you were trying to score fancy headphones and half-priced Kindles.&amp;lt;/strong&amp;gt;&amp;#x000A;					&amp;lt;/td&amp;gt;&amp;#x000A;				&amp;lt;/tr&amp;gt;&amp;#x000A;			&amp;lt;/table&amp;gt;&amp;#x000A;&amp;#x000A;		&amp;lt;td style="font-size: 0;"&amp;gt;&amp;nbsp;&amp;lt;/td&amp;gt;&amp;#x000A;	&amp;lt;/tr&amp;gt;&amp;#x000A;&amp;lt;/table&amp;gt;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
 &lt;h4 class='mbf mtm'&gt;Reducing inlined styles&lt;/h4&gt;
 &lt;p&gt;
-  This is a little challenging if you're using MailChimp templates. You have to add the code to a campaign and turn off their CSS inlining to be sure that these don't get inlined. (Or use another tool like Builder and assign the value to not inline them and then paste into a campaign.)
+This is a little challenging if you're using MailChimp templates. You have to add the code to a campaign and turn off their CSS inlining to be sure that these don't get inlined. (Or use another tool like Builder and assign the value to not inline them and then paste into a campaign.)
 &lt;/p&gt;
 &lt;p&gt;
-  These two rules are in the code 112 times. The lack of gzip in email clients means that is 111 times too many (but only because these two targeted clients will read from a &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;). For giggles, I saved 111 into a file and it's 7kb. (There's also a "ms" rule but I'm not entirely sure if microsoft phone clients read the &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag.)
+These two rules are in the code 112 times. The lack of gzip in email clients means that is 111 times too many (but only because these two targeted clients will read from a &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;). For giggles, I saved 111 into a file and it's 7kb. (There's also a "ms" rule but I'm not entirely sure if microsoft phone clients read the &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag.)
 &lt;/p&gt;
 &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-css'&gt;mso-line-height-rule: exactly;&amp;#x000A;&amp;dash;webkit-text-size-adjust: 100%;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
 &lt;h4 class='mbf mtm'&gt;Reducing style fights&lt;/h4&gt;
 &lt;p&gt;
-  While my fixes work in this one-off context, it would require editing the main template and then discussing the process for creating content. The correct styles would need to be in the containing cell and it would need to be clear that styles shouldn't be added via the UI.
+While my fixes work in this one-off context, it would require editing the main template and then discussing the process for creating content. The correct styles would need to be in the containing cell and it would need to be clear that styles shouldn't be added via the UI.
 &lt;/p&gt;
 &lt;p&gt;
-  In this sample, you can see that the sizes and colors are set in the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;, but they're being countered by a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;, and a &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;.
+In this sample, you can see that the sizes and colors are set in the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;, but they're being countered by a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, an &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;, and a &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;.
 &lt;/p&gt;
 &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-html'&gt;&amp;lt;td class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: center;"&amp;#x000A;valign="top"&amp;gt;&amp;#x000A;	&amp;lt;div style="text-align: left;"&amp;gt;&amp;lt;span style="font-size:18px; line-height:22px"&amp;gt;&amp;lt;strong&amp;gt;Bernie Says He's “Proud To Stand” with Hillary&amp;lt;/strong&amp;gt;&amp;#x000A;		&amp;lt;br&amp;gt;&amp;#x000A;		&amp;lt;br&amp;gt;&amp;#x000A;		Bernie Sanders, progressive millennial hero and America’s favorite grandpa, officially endorsed his longtime frenemy Hillary Clinton. "Let me begin by thanking the 13 million Americans who voted for me during the Democratic primaries," he said, &amp;lt;a href="http://www.cnn.com/2016/07/11/politics/hillary-clinton-bernie-sanders/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;"&amp;gt;&amp;lt;span style="color:#1cc7f2"&amp;gt;before eventually congratulating Clinton on her victory&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
 &lt;p class='mts'&gt;
-  Here you can see that the styles to match the desired look are in the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; and that only specific styles to the link are put on the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;.
+Here you can see that the styles to match the desired look are in the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; and that only specific styles to the link are put on the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;.
 &lt;/p&gt;
 &lt;pre class='stretch stretch--b'&gt;&lt;code class='language-html'&gt;&amp;lt;td class="mcnTextContent" style="color: #000000; font-family: Helvetica; font-size: 18px; line-height: 22px; -ms-text-size-adjust: 100%; padding-top: 18px; word-break: break-word;"&amp;gt;&amp;#x000A;	Bernie Sanders, progressive millennial hero and America's favorite grandpa, officially endorsed his longtime frenemy Hillary Clinton. "Let me begin by thanking the 13 million Americans who voted for me during the Democratic primaries," he said, &amp;lt;a href="http://www.cnn.com/2016/07/11/politics/hillary-clinton-bernie-sanders/" target="_blank" style="color: #1cc7f2; font-weight: bold; text-decoration: none;"&amp;gt;before eventually congratulating Clinton on her victory&amp;lt;/a&amp;gt;&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 class='mtm'&gt;The Comparison&lt;/h2&gt;
 &lt;p&gt;
-  My alternative takes all of these into play and I tried to do them in a way that would be repeatable within the original template and still be edited from the UI. It's not perfect, I seemingly deleted some style that reduces the header text on small screens but I didn't want to track that down. This was more about what would happen if you trimmed code.
+My alternative takes all of these into play and I tried to do them in a way that would be repeatable within the original template and still be edited from the UI. It's not perfect, I seemingly deleted some style that reduces the header text on small screens but I didn't want to track that down. This was more about what would happen if you trimmed code.
 &lt;/p&gt;
 &lt;p class='mbf'&gt;
-  &lt;strong&gt;The Original&lt;/strong&gt;
+&lt;strong&gt;The Original&lt;/strong&gt;
 &lt;/p&gt;
 &lt;div class='stretch stretch--b'&gt;
-  &lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="9306f30"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="9306f30"&gt;&lt;/script&gt;
 &lt;/div&gt;
 &lt;p class='mbf'&gt;
-  &lt;strong&gt;My Alternative&lt;/strong&gt;
+&lt;strong&gt;My Alternative&lt;/strong&gt;
 &lt;/p&gt;
 &lt;div class='stretch stretch--b'&gt;
-  &lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="b896771"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="b896771"&gt;&lt;/script&gt;
 &lt;/div&gt;
 </content>
   </entry>
@@ -446,7 +446,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow"/>
     <id>http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow</id>
     <published>2016-06-29T20:00:00-04:00</published>
-    <updated>2016-10-13T12:52:36-04:00</updated>
+    <updated>2017-07-01T14:35:59-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -471,8 +471,8 @@
   
   /* line 16, (__TEMPLATE__) */
   blockquote {
-    background: #fcfdfd;
-    border: 1px solid #e9eaeb;
+    background: #fdfdfd;
+    border: 1px solid #eaebec;
     padding: 20px; }
     /* line 20, (__TEMPLATE__) */
     blockquote a {
@@ -526,7 +526,7 @@
     transition: color 0.3s linear; }
     /* line 67, (__TEMPLATE__) */
     article a:hover {
-      color: #b95930; }
+      color: #ba5a31; }
     /* line 70, (__TEMPLATE__) */
     article a::before, article a::after {
       background: #dfe2e5; }
@@ -570,102 +570,102 @@
       width: 900px; } }
 &lt;/style&gt;
 &lt;div class='intro'&gt;
-  &lt;svg class="mask-tri" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1002 216"&gt;&lt;defs&gt;&lt;clipPath id="clip-path" transform="translate(2)"&gt;&lt;polygon points="-1 0 -1 216 1001 85 1001 0 -1 0" style="fill:none"/&gt;&lt;/clipPath&gt;&lt;/defs&gt;&lt;title&gt;rethinking&lt;/title&gt;&lt;polygon points="0 0 0 216 1002 85 1002 0 0 0" style="fill:#fff"/&gt;&lt;g style="clip-path:url(#clip-path)"&gt;&lt;text transform="translate(145 136.67)" style="font-size:118.29645538330078px;fill:#616f7d;font-family:'canada-type-gibson' serif;font-weight:700"&gt;RETHINKING&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;
+&lt;svg class="mask-tri" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1002 216"&gt;&lt;defs&gt;&lt;clipPath id="clip-path" transform="translate(2)"&gt;&lt;polygon points="-1 0 -1 216 1001 85 1001 0 -1 0" style="fill:none"/&gt;&lt;/clipPath&gt;&lt;/defs&gt;&lt;title&gt;rethinking&lt;/title&gt;&lt;polygon points="0 0 0 216 1002 85 1002 0 0 0" style="fill:#fff"/&gt;&lt;g style="clip-path:url(#clip-path)"&gt;&lt;text transform="translate(145 136.67)" style="font-size:118.29645538330078px;fill:#616f7d;font-family:'canada-type-gibson' serif;font-weight:700"&gt;RETHINKING&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;
 &lt;/div&gt;
 &lt;section class='row nudge post-wrap'&gt;
-  &lt;div class='cell cell--s'&gt;
-    &lt;article&gt;
-      &lt;svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 669.63 72.74"&gt;&lt;title&gt;my-emmail-workflow&lt;/title&gt;&lt;text transform="translate(0 58.43)" style="font-size:63.5px;fill:#616f7d;font-family:'canada-type-gibson' serif;font-weight:700"&gt;My eMMail Workflow&lt;/text&gt;&lt;/svg&gt;
-      &lt;p&gt;
-        In 2015, I was lucky enough to get to share &lt;a href="https://speakerdeck.com/dandenney/the-organized-chaos-of-email-creation"&gt;The Organized Chaos of Email&lt;/a&gt; Creation at &lt;a href="https://litmus.com/conference"&gt;The Email Design Conference&lt;/a&gt;. While I was on stage talking about an offline workflow, people from the Litmus team were in the lobby demoing a game-changer: live client previews built into &lt;a href="https://litmus.com/email-builder"&gt;Builder&lt;/a&gt;.
-      &lt;/p&gt;
-      &lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-live-previews.png' width='800'&gt;
-      &lt;p class='mts'&gt;
-        It instantly became a part of my workflow and since then I don't send an email without it. (Well I have, but it ended up borked in Gmail, sooo.) In my talk, I touted the benefits of building offline in a Middleman app I dubbed &lt;a href="https://github.com/dandenney/eMMail"&gt;eMMail&lt;/a&gt;. The perks of doing so were reusable variables, partials, and custom reporting. Throughout the year, the Litmus folks have added a couple of those into Builder as well.
-      &lt;/p&gt;
-      &lt;p&gt;
-        Variables have other uses but are super handy for setting analytics trackers throughout your links, &lt;a href="https://litmus.com/help/testing/litmus-builder-guide/#tracking-manager"&gt;which they added&lt;/a&gt;. Plus, the on-the-fly CSS inlining removes a lot of the need for variables if you're using classes.
-      &lt;/p&gt;
-      &lt;p&gt;
-        I had access to the Partials beta and they're now live for everyone and working well. This was the big one for me as I maintain 40+ transactional emails. When something needs to change in our header or footer, it has to change in every file. This was the primary reason I was using Middleman and it's in Builder now.
-      &lt;/p&gt;
-      &lt;p&gt;
-        I doubt they'll tackle the reporting bit anytime soon since that's more related to your ESP, but I hit a wall with mine. I want historical data to show performance of an email over time and that isn't straight-forward when hijacking the frontmatter in Middleman. It's super easy and readable in a Google Docs spreadsheet, though.
-      &lt;/p&gt;
-      &lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-spreadsheet.png' width='800'&gt;
-      &lt;h2 class='mtm'&gt;I'm Out of Excuses&lt;/h2&gt;
-      &lt;p&gt;
-        At this point, I don't have any excuses left to be building/maintaining my own system. Every email I create now ends up in Builder, so it makes sense to just start there. There's only a few small trade-offs: no Haml/Sass, no global variables, and I have to be online to build.
-      &lt;/p&gt;
-      &lt;p&gt;
-        I've been debating dropping Haml and Sass since it's hard to share my code with others who don't use them. Variables can mostly be handled by classes and snippets and I've built a handful of emails without them already. I do a fair amount of traveling so the online bit will require a little bit of maneuvering, but I already have it covered in the flow adjustments.
-      &lt;/p&gt;
-      &lt;h2 class='mtm'&gt;My New Flow&lt;/h2&gt;
-      &lt;p&gt;
-        As always, this is a work-in-progress. I'm a couple months in to the tracking portion and only a few weeks into the building. Things will change but it's been feeling gooooood.
-      &lt;/p&gt;
-      &lt;h3&gt;Create a Master Doc&lt;/h3&gt;
-      &lt;p&gt;
-        In studying successful product teams, I've found that most of them document projects (features, campaigns, etc.). I also saw that our teammates at Pluralsight create great kickoff docs for email campaigns. So I kind of made a frankenbaby of them for each of our emails. (I have not gone through and done them for all existing emails yet, but it's a bucket list item.)
-      &lt;/p&gt;
-      &lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-master-doc.png' width='800'&gt;
-      &lt;p class='mts'&gt;
-        These docs become increasingly important as we are doing more event-driven transactional emails. It is super easy to lose track of them and for only 1-2 people to know how they work. Writing the docs is mundane but an excellent feature for your team.
-      &lt;/p&gt;
-      &lt;h3&gt;Build and Organize in Builder&lt;/h3&gt;
-      &lt;p&gt;
-        Each email starts in Builder and I'm slowly cleaning up my folders. I was pretty haphazard about them before because I was primarily using it for testing right before sending. Now that I need to be able to access emails for updates, so organization is a major key to success.
-      &lt;/p&gt;
-      &lt;p class='mbs'&gt;
-        Each email starts with my &lt;a href="https://litmus.com/community/snippets/86-base"&gt;base snippet&lt;/a&gt; and then I build using a series of snippets. Here's what the base looks like:
-      &lt;/p&gt;
-      &lt;div class='embed-stretch'&gt;
-        &lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="7b54bd1"&gt;&lt;/script&gt;
-      &lt;/div&gt;
-      &lt;p class='mts'&gt;
-        Another unexpectedly useful feature is the grid view. Enabling it outlines all of your tables and clicking in the preview takes you to that bit of code. It's a popular feature in some editors and I've grown to love it. It's at least 10 times faster than scrolling through code for edits.
-      &lt;/p&gt;
-      &lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-grid-view.png' width='800'&gt;
-      &lt;h3 class='mts'&gt;Present and Iterate in Builder&lt;/h3&gt;
-      &lt;p&gt;
-        Each email goes through an internal review process. It's usually 3 of us: our marketing lead, copywriter, and me (but it can include lots of people). I had been handling previews and changes by editing locally, running a build, and deploying to GitHub pages. Now, I can make changes that are instantly viewable in the shareable URLs.
-      &lt;/p&gt;
-      &lt;p&gt;
-        As an example, I pop something like this into our #cs-emails channel in Slack:
-        &lt;blockquote&gt;
-          Draft for the Angular 2 announcement, pending copy review: &lt;a href="https://litmus.com/builder/95c2a75"&gt;https://litmus.com/builder/95c2a75&lt;/a&gt;
-        &lt;/blockquote&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-        There's also a benefit that I hadn't planned on: anyone can grab the code. Since Corey (our marketing lead) handles the actual sends, this has reduced the need for him to occasionally remind me to "pop the code into MailChimp".
-      &lt;/p&gt;
-      &lt;p class='mbs'&gt;
-        As an example, this was our most recent one:
-      &lt;/p&gt;
-      &lt;div class='embed-stretch'&gt;
-        &lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="95c2a75"&gt;&lt;/script&gt;
-      &lt;/div&gt;
-      &lt;h3 class='mts'&gt;Track in Google Docs&lt;/h3&gt;
-      &lt;p&gt;
-        Reporting must be the hardest thing for ESPs to perfect. I'm sure I'm not alone in having specific metrics that I'm interested in, but it's unlikely that I want them the same way and for the same time ranges as others. I've found that creating my own reports is the most efficient and something about manually handling the data imprints it in my brain so I can remember stats to share with the team. Our team works heavily in Google Drive so I actually brought it to them instead of having them use my GitHub pages reports, too.
-      &lt;/p&gt;
-      &lt;h3&gt;Backup in GitHub&lt;/h3&gt;
-      &lt;p&gt;
-        This is vital. I have great faith in the Litmus team, but we're all one major server failure away from losing things. Once an email is sent, edited, or in production as a transactional, I commit a copy to our emails repo. I also keep this repo locally which will handle my offline needs. I'll always be able to get one going offline using a prior email as a starting ground.
-      &lt;/p&gt;
-      &lt;h3&gt;My Wishlist&lt;/h3&gt;
-      &lt;p&gt;
-        The Litmus team have covered most of my needs already, but I have a couple small things I'm hoping for. I'll keep my fingers crossed for a few small code formatting things (2 spaces as tabs) and some kind of variables. The formatting is just my pickiness, but the variables could alleviate an issue. I have been so reliant on a Haml one that puts the URL into both spots for bulletproof buttons and I sent one with a dud in the MSO button this week. Eek. A couple more emails and putting it in both will be my new muscle memory, though.
-      &lt;/p&gt;
-      &lt;h3&gt;And Then I Emailed Happily Ever After...&lt;/h3&gt;
-      &lt;p&gt;
-        If you are an #emailgeek, &lt;a href="http://twitter.com/dandenney"&gt;@dandenney&lt;/a&gt; if you have things that you do that could help me improve or if you have questions!
-      &lt;/p&gt;
-    &lt;/article&gt;
-  &lt;/div&gt;
+&lt;div class='cell cell--s'&gt;
+&lt;article&gt;
+&lt;svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 669.63 72.74"&gt;&lt;title&gt;my-emmail-workflow&lt;/title&gt;&lt;text transform="translate(0 58.43)" style="font-size:63.5px;fill:#616f7d;font-family:'canada-type-gibson' serif;font-weight:700"&gt;My eMMail Workflow&lt;/text&gt;&lt;/svg&gt;
+&lt;p&gt;
+In 2015, I was lucky enough to get to share &lt;a href="https://speakerdeck.com/dandenney/the-organized-chaos-of-email-creation"&gt;The Organized Chaos of Email&lt;/a&gt; Creation at &lt;a href="https://litmus.com/conference"&gt;The Email Design Conference&lt;/a&gt;. While I was on stage talking about an offline workflow, people from the Litmus team were in the lobby demoing a game-changer: live client previews built into &lt;a href="https://litmus.com/email-builder"&gt;Builder&lt;/a&gt;.
+&lt;/p&gt;
+&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-live-previews.png' width='800'&gt;
+&lt;p class='mts'&gt;
+It instantly became a part of my workflow and since then I don't send an email without it. (Well I have, but it ended up borked in Gmail, sooo.) In my talk, I touted the benefits of building offline in a Middleman app I dubbed &lt;a href="https://github.com/dandenney/eMMail"&gt;eMMail&lt;/a&gt;. The perks of doing so were reusable variables, partials, and custom reporting. Throughout the year, the Litmus folks have added a couple of those into Builder as well.
+&lt;/p&gt;
+&lt;p&gt;
+Variables have other uses but are super handy for setting analytics trackers throughout your links, &lt;a href="https://litmus.com/help/testing/litmus-builder-guide/#tracking-manager"&gt;which they added&lt;/a&gt;. Plus, the on-the-fly CSS inlining removes a lot of the need for variables if you're using classes.
+&lt;/p&gt;
+&lt;p&gt;
+I had access to the Partials beta and they're now live for everyone and working well. This was the big one for me as I maintain 40+ transactional emails. When something needs to change in our header or footer, it has to change in every file. This was the primary reason I was using Middleman and it's in Builder now.
+&lt;/p&gt;
+&lt;p&gt;
+I doubt they'll tackle the reporting bit anytime soon since that's more related to your ESP, but I hit a wall with mine. I want historical data to show performance of an email over time and that isn't straight-forward when hijacking the frontmatter in Middleman. It's super easy and readable in a Google Docs spreadsheet, though.
+&lt;/p&gt;
+&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-spreadsheet.png' width='800'&gt;
+&lt;h2 class='mtm'&gt;I'm Out of Excuses&lt;/h2&gt;
+&lt;p&gt;
+At this point, I don't have any excuses left to be building/maintaining my own system. Every email I create now ends up in Builder, so it makes sense to just start there. There's only a few small trade-offs: no Haml/Sass, no global variables, and I have to be online to build.
+&lt;/p&gt;
+&lt;p&gt;
+I've been debating dropping Haml and Sass since it's hard to share my code with others who don't use them. Variables can mostly be handled by classes and snippets and I've built a handful of emails without them already. I do a fair amount of traveling so the online bit will require a little bit of maneuvering, but I already have it covered in the flow adjustments.
+&lt;/p&gt;
+&lt;h2 class='mtm'&gt;My New Flow&lt;/h2&gt;
+&lt;p&gt;
+As always, this is a work-in-progress. I'm a couple months in to the tracking portion and only a few weeks into the building. Things will change but it's been feeling gooooood.
+&lt;/p&gt;
+&lt;h3&gt;Create a Master Doc&lt;/h3&gt;
+&lt;p&gt;
+In studying successful product teams, I've found that most of them document projects (features, campaigns, etc.). I also saw that our teammates at Pluralsight create great kickoff docs for email campaigns. So I kind of made a frankenbaby of them for each of our emails. (I have not gone through and done them for all existing emails yet, but it's a bucket list item.)
+&lt;/p&gt;
+&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-master-doc.png' width='800'&gt;
+&lt;p class='mts'&gt;
+These docs become increasingly important as we are doing more event-driven transactional emails. It is super easy to lose track of them and for only 1-2 people to know how they work. Writing the docs is mundane but an excellent feature for your team.
+&lt;/p&gt;
+&lt;h3&gt;Build and Organize in Builder&lt;/h3&gt;
+&lt;p&gt;
+Each email starts in Builder and I'm slowly cleaning up my folders. I was pretty haphazard about them before because I was primarily using it for testing right before sending. Now that I need to be able to access emails for updates, so organization is a major key to success.
+&lt;/p&gt;
+&lt;p class='mbs'&gt;
+Each email starts with my &lt;a href="https://litmus.com/community/snippets/86-base"&gt;base snippet&lt;/a&gt; and then I build using a series of snippets. Here's what the base looks like:
+&lt;/p&gt;
+&lt;div class='embed-stretch'&gt;
+&lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="7b54bd1"&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;p class='mts'&gt;
+Another unexpectedly useful feature is the grid view. Enabling it outlines all of your tables and clicking in the preview takes you to that bit of code. It's a popular feature in some editors and I've grown to love it. It's at least 10 times faster than scrolling through code for edits.
+&lt;/p&gt;
+&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-grid-view.png' width='800'&gt;
+&lt;h3 class='mts'&gt;Present and Iterate in Builder&lt;/h3&gt;
+&lt;p&gt;
+Each email goes through an internal review process. It's usually 3 of us: our marketing lead, copywriter, and me (but it can include lots of people). I had been handling previews and changes by editing locally, running a build, and deploying to GitHub pages. Now, I can make changes that are instantly viewable in the shareable URLs.
+&lt;/p&gt;
+&lt;p&gt;
+As an example, I pop something like this into our #cs-emails channel in Slack:
+&lt;blockquote&gt;
+Draft for the Angular 2 announcement, pending copy review: &lt;a href="https://litmus.com/builder/95c2a75"&gt;https://litmus.com/builder/95c2a75&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+&lt;p&gt;
+There's also a benefit that I hadn't planned on: anyone can grab the code. Since Corey (our marketing lead) handles the actual sends, this has reduced the need for him to occasionally remind me to "pop the code into MailChimp".
+&lt;/p&gt;
+&lt;p class='mbs'&gt;
+As an example, this was our most recent one:
+&lt;/p&gt;
+&lt;div class='embed-stretch'&gt;
+&lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="95c2a75"&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;h3 class='mts'&gt;Track in Google Docs&lt;/h3&gt;
+&lt;p&gt;
+Reporting must be the hardest thing for ESPs to perfect. I'm sure I'm not alone in having specific metrics that I'm interested in, but it's unlikely that I want them the same way and for the same time ranges as others. I've found that creating my own reports is the most efficient and something about manually handling the data imprints it in my brain so I can remember stats to share with the team. Our team works heavily in Google Drive so I actually brought it to them instead of having them use my GitHub pages reports, too.
+&lt;/p&gt;
+&lt;h3&gt;Backup in GitHub&lt;/h3&gt;
+&lt;p&gt;
+This is vital. I have great faith in the Litmus team, but we're all one major server failure away from losing things. Once an email is sent, edited, or in production as a transactional, I commit a copy to our emails repo. I also keep this repo locally which will handle my offline needs. I'll always be able to get one going offline using a prior email as a starting ground.
+&lt;/p&gt;
+&lt;h3&gt;My Wishlist&lt;/h3&gt;
+&lt;p&gt;
+The Litmus team have covered most of my needs already, but I have a couple small things I'm hoping for. I'll keep my fingers crossed for a few small code formatting things (2 spaces as tabs) and some kind of variables. The formatting is just my pickiness, but the variables could alleviate an issue. I have been so reliant on a Haml one that puts the URL into both spots for bulletproof buttons and I sent one with a dud in the MSO button this week. Eek. A couple more emails and putting it in both will be my new muscle memory, though.
+&lt;/p&gt;
+&lt;h3&gt;And Then I Emailed Happily Ever After...&lt;/h3&gt;
+&lt;p&gt;
+If you are an #emailgeek, &lt;a href="http://twitter.com/dandenney"&gt;@dandenney&lt;/a&gt; if you have things that you do that could help me improve or if you have questions!
+&lt;/p&gt;
+&lt;/article&gt;
+&lt;/div&gt;
 &lt;/section&gt;
 &lt;div class='outro oh'&gt;
-  &lt;svg class="mask-tri-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1000 216"&gt;&lt;style&gt;.st0-b{fill:#FFFFFF;}&lt;/style&gt;&lt;title&gt;rethinking&lt;/title&gt;&lt;path class="st0-b" d="M1000 215.8V.2L0 131v84.8z"/&gt;&lt;defs&gt;&lt;path id="SVGID_1_" d="M1 .2v215.6L1001 85V.2z"/&gt;&lt;/defs&gt;&lt;clipPath id="SVGID_2_"&gt;&lt;use xlink:href="#SVGID_1_" overflow="visible"/&gt;&lt;/clipPath&gt;&lt;/svg&gt;
+&lt;svg class="mask-tri-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1000 216"&gt;&lt;style&gt;.st0-b{fill:#FFFFFF;}&lt;/style&gt;&lt;title&gt;rethinking&lt;/title&gt;&lt;path class="st0-b" d="M1000 215.8V.2L0 131v84.8z"/&gt;&lt;defs&gt;&lt;path id="SVGID_1_" d="M1 .2v215.6L1001 85V.2z"/&gt;&lt;/defs&gt;&lt;clipPath id="SVGID_2_"&gt;&lt;use xlink:href="#SVGID_1_" overflow="visible"/&gt;&lt;/clipPath&gt;&lt;/svg&gt;
 &lt;/div&gt;
 </content>
   </entry>
@@ -674,7 +674,7 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree"/>
     <id>http://blog.url.com/posts/front-end-dev/pursuing-a-nanodegree</id>
     <published>2016-06-25T20:00:00-04:00</published>
-    <updated>2016-10-13T12:52:36-04:00</updated>
+    <updated>2017-07-01T14:35:59-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -692,77 +692,77 @@
         max-width: 800px; } }
 &lt;/style&gt;
 &lt;p&gt;
-  I've been wanting to learn functional JavaScript for a while. I've stocked up on some books, we've released some great &lt;a href="https://codeschool.com/paths/javascript"&gt;JavaScript courses at Code School&lt;/a&gt;, we have a team account at &lt;a href="https://frontendmasters.com"&gt;Front-end Masters&lt;/a&gt;, and I grabbed Wes Bos' &lt;a href="https://reactforbeginners.com"&gt;React for Beginners&lt;/a&gt;. Basically, I have all the things.
+I've been wanting to learn functional JavaScript for a while. I've stocked up on some books, we've released some great &lt;a href="https://codeschool.com/paths/javascript"&gt;JavaScript courses at Code School&lt;/a&gt;, we have a team account at &lt;a href="https://frontendmasters.com"&gt;Front-end Masters&lt;/a&gt;, and I grabbed Wes Bos' &lt;a href="https://reactforbeginners.com"&gt;React for Beginners&lt;/a&gt;. Basically, I have all the things.
 &lt;/p&gt;
 &lt;p&gt;
-  What I've been missing was the right motivation. Of course being better at it will help some of tasks on our .com, but the impact I'd have is minimal so it hasn't felt pressing. I tried psyching myself up with a 30-day challenge but I'm not one of those folks. I think I made it about 4 days before I went on a random trip and lost momentum. Again, there wasn't a true goal. I'm a firm believer in Chris Coyier's reasoning on when and what to learn: &lt;a href="http://justbuildwebsites.com"&gt;Just Build Websites&lt;/a&gt;.
+What I've been missing was the right motivation. Of course being better at it will help some of tasks on our .com, but the impact I'd have is minimal so it hasn't felt pressing. I tried psyching myself up with a 30-day challenge but I'm not one of those folks. I think I made it about 4 days before I went on a random trip and lost momentum. Again, there wasn't a true goal. I'm a firm believer in Chris Coyier's reasoning on when and what to learn: &lt;a href="http://justbuildwebsites.com"&gt;Just Build Websites&lt;/a&gt;.
 &lt;/p&gt;
 &lt;h2&gt;Inspiration, Courtesy of a Buzzword&lt;/h2&gt;
 &lt;p&gt;
-  Progressive web apps are so hot right now. I was curious, so I dove into some posts and &lt;a href="https://www.youtube.com/watch?v=cmGr0RszHc8"&gt;Jake Archibald's talk&lt;/a&gt;. I love the ideas behind them and want to take a crack at building one. Somewhere in the mix I ended up on &lt;a href="https://www.udacity.com/course/senior-web-developer-nanodegree--nd802#"&gt;Udacity's Senior Web Developer Nanodgree&lt;/a&gt; and something clicked! They packaged up the motivation that I needed: a clear flow of tasks and interesting projects to build using technologies that I want to learn. Not sure if there's much motivation for me behind the actual nanodegree, but it's a perk. The final selling point was that it's a bit pricey and there's a reward for finishing early. Spending the money will be an extra kick in the ass to make progress.
+Progressive web apps are so hot right now. I was curious, so I dove into some posts and &lt;a href="https://www.youtube.com/watch?v=cmGr0RszHc8"&gt;Jake Archibald's talk&lt;/a&gt;. I love the ideas behind them and want to take a crack at building one. Somewhere in the mix I ended up on &lt;a href="https://www.udacity.com/course/senior-web-developer-nanodegree--nd802#"&gt;Udacity's Senior Web Developer Nanodgree&lt;/a&gt; and something clicked! They packaged up the motivation that I needed: a clear flow of tasks and interesting projects to build using technologies that I want to learn. Not sure if there's much motivation for me behind the actual nanodegree, but it's a perk. The final selling point was that it's a bit pricey and there's a reward for finishing early. Spending the money will be an extra kick in the ass to make progress.
 &lt;/p&gt;
 &lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/syllabus.png' width='800'&gt;
 &lt;h2 class='mtm'&gt;Ulterior Motive&lt;/h2&gt;
 &lt;p&gt;
-  I'm also extremely interested in the teaching format itself. I'm a lifelong learner and I love sharing/teaching. So on top of learning, I'm learning about learning (yo dawg). I've been active in meetups, conferences and workshops and I work for Code School and (really) Pluralsight. The first few years of the explosion of online learning sites have been pretty freeform. We're starting to see multiple approaches into guided learning paths. I get to see a few firsthand, peeked at Treehouse's, and am now giving Udacity's a whirl.
+I'm also extremely interested in the teaching format itself. I'm a lifelong learner and I love sharing/teaching. So on top of learning, I'm learning about learning (yo dawg). I've been active in meetups, conferences and workshops and I work for Code School and (really) Pluralsight. The first few years of the explosion of online learning sites have been pretty freeform. We're starting to see multiple approaches into guided learning paths. I get to see a few firsthand, peeked at Treehouse's, and am now giving Udacity's a whirl.
 &lt;/p&gt;
 &lt;h2&gt;Sharing My Experience&lt;/h2&gt;
 &lt;p&gt;
-  So, I'll be sharing my experience as I go. This will be a series of posts as I take on each section. I'll be sharing what I'm learning as well as my take on the nanodegree program itself.
+So, I'll be sharing my experience as I go. This will be a series of posts as I take on each section. I'll be sharing what I'm learning as well as my take on the nanodegree program itself.
 &lt;/p&gt;
 &lt;h2&gt;Onboarding&lt;/h2&gt;
 &lt;p&gt;
-  The onboarding flow was really well done. The folks at &lt;a href="http://focuslabllc.com/"&gt;Focus Lab&lt;/a&gt; recently overhauled Udacity and they did an awesome job. The intro video was very human and there were a series of videos and modals explaining the benefits of the process as well as what you'll be learning.
+The onboarding flow was really well done. The folks at &lt;a href="http://focuslabllc.com/"&gt;Focus Lab&lt;/a&gt; recently overhauled Udacity and they did an awesome job. The intro video was very human and there were a series of videos and modals explaining the benefits of the process as well as what you'll be learning.
 &lt;/p&gt;
 &lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/video.png' width='800'&gt;
 &lt;p class='mtm'&gt;
-  I took some quick notes along the way:
+I took some quick notes along the way:
 &lt;/p&gt;
 &lt;ul class='list-bulleted'&gt;
-  &lt;li&gt;Gorgeous payment form, very human (optional) video&lt;/li&gt;
-  &lt;li&gt;The features modal had key points but wasn’t necessary for me&lt;/li&gt;
-  &lt;li&gt;The Syllabus has a well-done intro video (ugh, they say learning by doing in the course intro video)&lt;/li&gt;
-  &lt;li&gt;They mix video with on-page content which is an awesome experience. (A couple small things are out of sync, I imagine that's a challenge when updating.)&lt;/li&gt;
-  &lt;li&gt;You're strongly encouraged to setup a profile (which I'd usually skip) but the flow was great and it seems important for feedback on progress&lt;/li&gt;
-  &lt;li&gt;There's a community for students in a forum and Slack&lt;/li&gt;
-  &lt;li&gt;Honor Code is an excellent idea, they talk through the importance of doing this to learn, not just to earn the nanodegree.&lt;/li&gt;
-  &lt;li&gt;"Be relentless in finding an answer on your own" was my favorite line in the explanation of how important it is for you to be learning, not just progressing.&lt;/li&gt;
+&lt;li&gt;Gorgeous payment form, very human (optional) video&lt;/li&gt;
+&lt;li&gt;The features modal had key points but wasn’t necessary for me&lt;/li&gt;
+&lt;li&gt;The Syllabus has a well-done intro video (ugh, they say learning by doing in the course intro video)&lt;/li&gt;
+&lt;li&gt;They mix video with on-page content which is an awesome experience. (A couple small things are out of sync, I imagine that's a challenge when updating.)&lt;/li&gt;
+&lt;li&gt;You're strongly encouraged to setup a profile (which I'd usually skip) but the flow was great and it seems important for feedback on progress&lt;/li&gt;
+&lt;li&gt;There's a community for students in a forum and Slack&lt;/li&gt;
+&lt;li&gt;Honor Code is an excellent idea, they talk through the importance of doing this to learn, not just to earn the nanodegree.&lt;/li&gt;
+&lt;li&gt;"Be relentless in finding an answer on your own" was my favorite line in the explanation of how important it is for you to be learning, not just progressing.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
-  My take at the end of the introductory session: I’m loving this, the videos are well done and lead off with a critical thinking exercise. That solidified things for me because it means they're walking the walk. I'm all in.
+My take at the end of the introductory session: I’m loving this, the videos are well done and lead off with a critical thinking exercise. That solidified things for me because it means they're walking the walk. I'm all in.
 &lt;/p&gt;
 &lt;h2&gt;Project 1: Meet-up Event Planner&lt;/h2&gt;
 &lt;p&gt;
-  The goal of this will be to create a small app that allows somoene to create an event, using some cool tech. This was super interesting to me since I do so many events and because I can see how the functionality can be used in many other ways. Since it's form-based, you start off learning about best practices for building forms. Cameron Pittman and Ido Green lead the way, with visits from the guy who literally wrote the &lt;a href="http://www.lukew.com/resources/web_form_design.asp"&gt;book on forms&lt;/a&gt;, Luke Wroblewski.
+The goal of this will be to create a small app that allows somoene to create an event, using some cool tech. This was super interesting to me since I do so many events and because I can see how the functionality can be used in many other ways. Since it's form-based, you start off learning about best practices for building forms. Cameron Pittman and Ido Green lead the way, with visits from the guy who literally wrote the &lt;a href="http://www.lukew.com/resources/web_form_design.asp"&gt;book on forms&lt;/a&gt;, Luke Wroblewski.
 &lt;/p&gt;
 &lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/cameron-ido.jpg' width='800'&gt;
 &lt;p class='mtm'&gt;
-  The challenges are integrated well within the video space: you watch a bit, then answer a question or do a little bit of code in that same space. I was pretty used to this and it works well, but they took it to another level. The initial project is doing form validation with &lt;code&gt;setCustomValidity&lt;/code&gt; and they built a Chrome extension that runs tests on your code. Here's my first run:
+The challenges are integrated well within the video space: you watch a bit, then answer a question or do a little bit of code in that same space. I was pretty used to this and it works well, but they took it to another level. The initial project is doing form validation with &lt;code&gt;setCustomValidity&lt;/code&gt; and they built a Chrome extension that runs tests on your code. Here's my first run:
 &lt;/p&gt;
 &lt;img class='img-stretch mbm' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/extension.png' width='800'&gt;
 &lt;p&gt;
-  Again, I took some notes along the way:
+Again, I took some notes along the way:
 &lt;/p&gt;
 &lt;ul class='list-bulleted'&gt;
-  &lt;li&gt;Quiz: Validate Some Inputs, things ramp up fast here. Having never done any regex for validations, I need to learn how to check for letter grades allowing punctuation (A, A+, A-, etc.). I got close, but Cameron's example was way better because I wasn't proofing for no marks on F.&lt;/li&gt;
-  &lt;li&gt;Had to install, learn to run Grunt for the local quiz on customValidity (based on forum suggestions). Kinda weird to do this before the next section on tooling, though arguably I could have run it in Middleman if I wanted to.&lt;/li&gt;
-  &lt;li&gt;I went down a dark hole of git commits trying to not commit the local node-modules, but that was a misstep on my part. I was so focused on the challenge that I accidentally committed it all.&lt;/li&gt;
-  &lt;li&gt;Had to learn the syntax for using regex to validate an input’s value, aka .test() &lt;a href="http://stackoverflow.com/questions/6603015/check-whether-a-string-matches-a-regex"&gt;Stack Overflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;By the time I was really ready, I was so close! I was missing one small thing: needing to set the nil validity for the second input and one big thing: needing to concatenate all of the errors into one message.&lt;/li&gt;
-  &lt;li&gt;The array idea from the forums was awesome and I know there’s a much better way to write what I did, but I got it working.&lt;/li&gt;
-  &lt;li&gt;Absolutely loved Luke’s breakdown of The Culture of Delivery.&lt;/li&gt;
+&lt;li&gt;Quiz: Validate Some Inputs, things ramp up fast here. Having never done any regex for validations, I need to learn how to check for letter grades allowing punctuation (A, A+, A-, etc.). I got close, but Cameron's example was way better because I wasn't proofing for no marks on F.&lt;/li&gt;
+&lt;li&gt;Had to install, learn to run Grunt for the local quiz on customValidity (based on forum suggestions). Kinda weird to do this before the next section on tooling, though arguably I could have run it in Middleman if I wanted to.&lt;/li&gt;
+&lt;li&gt;I went down a dark hole of git commits trying to not commit the local node-modules, but that was a misstep on my part. I was so focused on the challenge that I accidentally committed it all.&lt;/li&gt;
+&lt;li&gt;Had to learn the syntax for using regex to validate an input’s value, aka .test() &lt;a href="http://stackoverflow.com/questions/6603015/check-whether-a-string-matches-a-regex"&gt;Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;By the time I was really ready, I was so close! I was missing one small thing: needing to set the nil validity for the second input and one big thing: needing to concatenate all of the errors into one message.&lt;/li&gt;
+&lt;li&gt;The array idea from the forums was awesome and I know there’s a much better way to write what I did, but I got it working.&lt;/li&gt;
+&lt;li&gt;Absolutely loved Luke’s breakdown of The Culture of Delivery.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Things I need to learn from the solution code:&lt;/h3&gt;
 &lt;ul class='list-bulleted mtm'&gt;
-  &lt;li&gt;.prototype&lt;/li&gt;
-  &lt;li&gt;switch functions&lt;/li&gt;
-  &lt;li&gt;defining functions in prototype and invoking them in another function (this is what I was trying to do with my initial individual pushes, but didn’t nail the syntax)&lt;/li&gt;
-  &lt;li&gt;The function for capturing the illegal character that was used and displaying it. I’m glad I thought of it, but should have fought through an attempt to make it happen.&lt;/li&gt;
-  &lt;li&gt;Efficient logic (his code only runs when the 2 passwords match, while mine runs regardless)&lt;/li&gt;
-  &lt;li&gt;\n&lt;/li&gt;
+&lt;li&gt;.prototype&lt;/li&gt;
+&lt;li&gt;switch functions&lt;/li&gt;
+&lt;li&gt;defining functions in prototype and invoking them in another function (this is what I was trying to do with my initial individual pushes, but didn’t nail the syntax)&lt;/li&gt;
+&lt;li&gt;The function for capturing the illegal character that was used and displaying it. I’m glad I thought of it, but should have fought through an attempt to make it happen.&lt;/li&gt;
+&lt;li&gt;Efficient logic (his code only runs when the 2 passwords match, while mine runs regardless)&lt;/li&gt;
+&lt;li&gt;\n&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
-  That's it for the first section. I'm hooked now and this felt so good:
+That's it for the first section. I'm hooked now and this felt so good:
 &lt;/p&gt;
 &lt;img class='img-stretch mbm' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/success-form.png' width='800'&gt;
 </content>
@@ -772,82 +772,82 @@
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/til-executing-local-ruby"/>
     <id>http://blog.url.com/posts/front-end-dev/til-executing-local-ruby</id>
     <published>2015-11-19T19:00:00-05:00</published>
-    <updated>2016-03-03T16:51:56-05:00</updated>
+    <updated>2017-07-01T14:35:59-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;p class='tss'&gt;
-  IA Writer says this is a 5:47 minute read and Hemingway App says I'm ugly and I can't write good. Read at your own peril.
+IA Writer says this is a 5:47 minute read and Hemingway App says I'm ugly and I can't write good. Read at your own peril.
 &lt;/p&gt;
 &lt;h2&gt;The Problem&lt;/h2&gt;
 &lt;p&gt;
-  I needed to do something unusual: take one big email list and remove any emails that exist in it from a smaller email list. At Code School, we use MailChimp so I started by finding out if they had a way to do it. They do, but for business purposes (security and expenses) I wanted to handle this offline if possible. I have 2 CSVs and I need one that is effectively one.csv minus two.csv.
+I needed to do something unusual: take one big email list and remove any emails that exist in it from a smaller email list. At Code School, we use MailChimp so I started by finding out if they had a way to do it. They do, but for business purposes (security and expenses) I wanted to handle this offline if possible. I have 2 CSVs and I need one that is effectively one.csv minus two.csv.
 &lt;/p&gt;
 &lt;h2&gt;A Job Made for Computers&lt;/h2&gt;
 &lt;p&gt;
-  The big list is ~1.5m and the little list is around 80k, so throwing them into Numbers and sorting/removing was clearly out of the question. So I bugged &lt;a href="http://drewbarontini.com"&gt;Drew&lt;/a&gt;, our resident efficiency expert. His eyes lit up at the challenge and about 5 minutes later he had a proof of concept working in Terminal. This guy.
+The big list is ~1.5m and the little list is around 80k, so throwing them into Numbers and sorting/removing was clearly out of the question. So I bugged &lt;a href="http://drewbarontini.com"&gt;Drew&lt;/a&gt;, our resident efficiency expert. His eyes lit up at the challenge and about 5 minutes later he had a proof of concept working in Terminal. This guy.
 &lt;/p&gt;
 &lt;h2&gt;The Solution (Thought)&lt;/h2&gt;
 &lt;p&gt;
-  I am not a programmer and I have never done any official training in programming. The hard part for me initially is thinking through how something would work and how I would communicate that to the computer. So I thought I’d share a roundabout way of thinking through this one.
+I am not a programmer and I have never done any official training in programming. The hard part for me initially is thinking through how something would work and how I would communicate that to the computer. So I thought I’d share a roundabout way of thinking through this one.
 &lt;/p&gt;
 &lt;p&gt;
-  If I had to do this manually, here’s a guess on how I’d do it.
+If I had to do this manually, here’s a guess on how I’d do it.
 &lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;
-    Make a copy of the large list (to be edited).
-  &lt;/li&gt;
-  &lt;li&gt;
-    Open each CSV in an app and sort alphabetically by email name.
-  &lt;/li&gt;
-  &lt;li&gt;
-    Check each email in the small list by looking at the large list to see if it exists.
-  &lt;/li&gt;
-  &lt;li&gt;
-    If it does exist in the large list, delete it.
-  &lt;/li&gt;
+&lt;li&gt;
+Make a copy of the large list (to be edited).
+&lt;/li&gt;
+&lt;li&gt;
+Open each CSV in an app and sort alphabetically by email name.
+&lt;/li&gt;
+&lt;li&gt;
+Check each email in the small list by looking at the large list to see if it exists.
+&lt;/li&gt;
+&lt;li&gt;
+If it does exist in the large list, delete it.
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
-  Just for giggles, if I got in a groove and averaged 10 seconds per entry, that’d be around 800,000 seconds or 13,333 minutes, or 222 hours or 5–6 weeks of full-time work (without overtime). It’s a job for computers, but the important thing is knowing how to make the computer think the way that you want it to.
+Just for giggles, if I got in a groove and averaged 10 seconds per entry, that’d be around 800,000 seconds or 13,333 minutes, or 222 hours or 5–6 weeks of full-time work (without overtime). It’s a job for computers, but the important thing is knowing how to make the computer think the way that you want it to.
 &lt;/p&gt;
 &lt;h2&gt;Ruby to the Rescue&lt;/h2&gt;
 &lt;p&gt;
-  Drew knew right away that Ruby could handle this very well. (If you’re one of &lt;em&gt;those&lt;/em&gt; people and you’ve actually made it this far in the article, yes &lt;em&gt;x&lt;/em&gt; language can also do this very well. I just saved you a Medium post. :troll:) So let’s talk through how this would happen. Ruby would do things &lt;em&gt;pretty close&lt;/em&gt; to our list, but in a different order.
+Drew knew right away that Ruby could handle this very well. (If you’re one of &lt;em&gt;those&lt;/em&gt; people and you’ve actually made it this far in the article, yes &lt;em&gt;x&lt;/em&gt; language can also do this very well. I just saved you a Medium post. :troll:) So let’s talk through how this would happen. Ruby would do things &lt;em&gt;pretty close&lt;/em&gt; to our list, but in a different order.
 &lt;/p&gt;
 &lt;p&gt;
-  It is very fast when working with arrays, which are basically a comma-separated list of items wrapped in [ ]. This is super close to what our CSV looks like and there are functions for working with arrays built into Ruby.
+It is very fast when working with arrays, which are basically a comma-separated list of items wrapped in [ ]. This is super close to what our CSV looks like and there are functions for working with arrays built into Ruby.
 &lt;/p&gt;
 &lt;p&gt;
-  Here’s my loose interpretation of how Ruby will approach it (once you write the code).
+Here’s my loose interpretation of how Ruby will approach it (once you write the code).
 &lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;
-    Load each CSV into an array (big, little)
-  &lt;/li&gt;
-  &lt;li&gt;
-    Create a new array (lessbig)
-  &lt;/li&gt;
-  &lt;li&gt;
-    Compare the two original arrays and write only the emails that exist solely in the first array (big) into the new array (lessbig)
-  &lt;/li&gt;
-  &lt;li&gt;
-    Create a CSV from the newly created array
-  &lt;/li&gt;
+&lt;li&gt;
+Load each CSV into an array (big, little)
+&lt;/li&gt;
+&lt;li&gt;
+Create a new array (lessbig)
+&lt;/li&gt;
+&lt;li&gt;
+Compare the two original arrays and write only the emails that exist solely in the first array (big) into the new array (lessbig)
+&lt;/li&gt;
+&lt;li&gt;
+Create a CSV from the newly created array
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
-  It’s pretty close to the way we would do it except for the order and that it takes about &lt;em&gt;1–2 minutes&lt;/em&gt; to run.
+It’s pretty close to the way we would do it except for the order and that it takes about &lt;em&gt;1–2 minutes&lt;/em&gt; to run.
 &lt;/p&gt;
 &lt;h2&gt;I Wanted to Try!&lt;/h2&gt;
 &lt;p&gt;
-  I had no idea where to even start with this (even after seeing Drew run it in Terminal in IRB). So over lunch I stole a couple of hints (make a file, run it with “x”). It was a few days after that when I started on it and I couldn’t remember the details but our community puts our wealth of knowledge in things like Stack Overflow, &lt;a href="http://stackoverflow.com/questions/8721369/how-to-execute-a-ruby-script-in-terminal"&gt;so I found that pretty quickly&lt;/a&gt;. You make a &lt;code&gt;.rb&lt;/code&gt; or &lt;code&gt;.irb&lt;/code&gt; file, then in terminal you type &lt;code&gt;ruby filename.rb&lt;/code&gt;. This works for what I need to do as the end goal is a CSV. (There are ways that you can print out the results in Terminal if you don’t need a file.)
+I had no idea where to even start with this (even after seeing Drew run it in Terminal in IRB). So over lunch I stole a couple of hints (make a file, run it with “x”). It was a few days after that when I started on it and I couldn’t remember the details but our community puts our wealth of knowledge in things like Stack Overflow, &lt;a href="http://stackoverflow.com/questions/8721369/how-to-execute-a-ruby-script-in-terminal"&gt;so I found that pretty quickly&lt;/a&gt;. You make a &lt;code&gt;.rb&lt;/code&gt; or &lt;code&gt;.irb&lt;/code&gt; file, then in terminal you type &lt;code&gt;ruby filename.rb&lt;/code&gt;. This works for what I need to do as the end goal is a CSV. (There are ways that you can print out the results in Terminal if you don’t need a file.)
 &lt;/p&gt;
 &lt;p&gt;
-  &lt;a href="http://stackoverflow.com/questions/20205023/ruby-find-element-not-in-common-for-two-arrays"&gt;Comparing the arrays&lt;/a&gt; and creating CSVs are also on Stack Overflow, but I mostly used the &lt;a href="http://ruby-doc.org/stdlib-1.9.3/libdoc/csv/rdoc/CSV.html#method-i-read"&gt;docs&lt;/a&gt; for the CSV part.
+&lt;a href="http://stackoverflow.com/questions/20205023/ruby-find-element-not-in-common-for-two-arrays"&gt;Comparing the arrays&lt;/a&gt; and creating CSVs are also on Stack Overflow, but I mostly used the &lt;a href="http://ruby-doc.org/stdlib-1.9.3/libdoc/csv/rdoc/CSV.html#method-i-read"&gt;docs&lt;/a&gt; for the CSV part.
 &lt;/p&gt;
 &lt;h2&gt;I Got Close&lt;/h2&gt;
 &lt;p&gt;
-  Ok, with my memory of what Drew had created and some Stack Overflow I was able to get my own POC working locally. My mind was seriously blown! A few lines of code and I had a new file with exactly what I wanted. It was insane to type that in and see a new file pop into finder.
+Ok, with my memory of what Drew had created and some Stack Overflow I was able to get my own POC working locally. My mind was seriously blown! A few lines of code and I had a new file with exactly what I wanted. It was insane to type that in and see a new file pop into finder.
 &lt;/p&gt;
 &lt;pre&gt;&lt;code class='language-ruby'&gt;# Tell Ruby to use its CSV library of functions
 require &amp;quot;csv&amp;quot;
@@ -873,18 +873,18 @@ CSV.open(&amp;quot;lessbig.csv&amp;quot;, &amp;quot;wb&amp;quot;) do |csv|
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 class='mtm'&gt;WTF&lt;/h2&gt;
 &lt;p&gt;
-  When I switched to using CSVs, things were formatted differently (an array of arrays). I fought through by throwing some of the various options from the doc into the code but nothing worked. So I used a lifeline and asked to see Drew’s example.
+When I switched to using CSVs, things were formatted differently (an array of arrays). I fought through by throwing some of the various options from the doc into the code but nothing worked. So I used a lifeline and asked to see Drew’s example.
 &lt;/p&gt;
 &lt;h2&gt;Drewwwwww&lt;/h2&gt;
 &lt;p&gt;
-  There were 2 problems that he had figured out. You need to use an each loop and output each row and you need the CSV to be multi-line for the way that we were writing.
+There were 2 problems that he had figured out. You need to use an each loop and output each row and you need the CSV to be multi-line for the way that we were writing.
 &lt;/p&gt;
 &lt;p&gt;
-  Then there’s the part where he actually organized it like a developer. You can see his &lt;a href="https://github.com/drewbarontini/splitter"&gt;splitter&lt;/a&gt; on GitHub.
+Then there’s the part where he actually organized it like a developer. You can see his &lt;a href="https://github.com/drewbarontini/splitter"&gt;splitter&lt;/a&gt; on GitHub.
 &lt;/p&gt;
 &lt;h2&gt;Frankencode&lt;/h2&gt;
 &lt;p&gt;
-  While his example is what someone would probably want to ship, I wanted to get it working in something more basic. So, I took his loops and tweaked them into my code. It was still borked, so I formatted my CSVs to be multi-line and Boom!
+While his example is what someone would probably want to ship, I wanted to get it working in something more basic. So, I took his loops and tweaked them into my code. It was still borked, so I formatted my CSVs to be multi-line and Boom!
 &lt;/p&gt;
 &lt;pre&gt;&lt;code class='language-ruby'&gt;# Tell Ruby to use its CSV library of functions
 require &amp;quot;csv&amp;quot;
@@ -912,17 +912,17 @@ CSV.open(&amp;quot;lessbig.csv&amp;quot;, &amp;quot;wb&amp;quot;) do |row|
 end&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 class='mtm'&gt;WTF Aside&lt;/h2&gt;
 &lt;p&gt;
-  Soooooo I had opened and cleaned up unnecessary data from the CSVs using Numbers. It turns out Numbers has a max of 65535 rows so now both of my CSVs were that many rows long. &lt;strong&gt;Don’t do that&lt;/strong&gt;. In this case, it turned out to be unnecessary anyways because Drew’s loops only take from the single email column and only output one column of emails. Him and his efficiency. :eyeroll:
+Soooooo I had opened and cleaned up unnecessary data from the CSVs using Numbers. It turns out Numbers has a max of 65535 rows so now both of my CSVs were that many rows long. &lt;strong&gt;Don’t do that&lt;/strong&gt;. In this case, it turned out to be unnecessary anyways because Drew’s loops only take from the single email column and only output one column of emails. Him and his efficiency. :eyeroll:
 &lt;/p&gt;
 &lt;h2&gt;My Takeaways&lt;/h2&gt;
 &lt;p&gt;
-  As with most things in web development, executing Ruby functions locally was extremely intimidating before I tried it. Admittedly, I wouldn’t have gotten anywhere by just reading docs and stumbling along. Having that tiny kickstart of seeing it run locally in Terminal got me rolling, but that’s what peers are for! I won’t be diving into writing Ruby on the reg, but I’m no longer afraid of it and I’ll know it’s a viable option when I need to do something requiring lots of processing.
+As with most things in web development, executing Ruby functions locally was extremely intimidating before I tried it. Admittedly, I wouldn’t have gotten anywhere by just reading docs and stumbling along. Having that tiny kickstart of seeing it run locally in Terminal got me rolling, but that’s what peers are for! I won’t be diving into writing Ruby on the reg, but I’m no longer afraid of it and I’ll know it’s a viable option when I need to do something requiring lots of processing.
 &lt;/p&gt;
 &lt;p&gt;
-  Time can be a concern, of course. This example was lucky in that it saved ~$900 to $1000 dollars by being done offline. I wouldn’t be able to justify this for everything that came up, but we are strongly encouraged to find creative solutions and learn as necessary to improve our skills. Hopefully good examples of this in the wild can lead to every company/team encouraging that.
+Time can be a concern, of course. This example was lucky in that it saved ~$900 to $1000 dollars by being done offline. I wouldn’t be able to justify this for everything that came up, but we are strongly encouraged to find creative solutions and learn as necessary to improve our skills. Hopefully good examples of this in the wild can lead to every company/team encouraging that.
 &lt;/p&gt;
 &lt;p&gt;
-  Finding a solution, understanding it, and working with my teammate on it was a blast. Look for these opportunities and take advantage of them when you can. Then, share what you learned.
+Finding a solution, understanding it, and working with my teammate on it was a blast. Look for these opportunities and take advantage of them when you can. Then, share what you learned.
 &lt;/p&gt;
 </content>
   </entry>

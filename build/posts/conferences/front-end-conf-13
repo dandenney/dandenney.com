@@ -1,208 +1,213 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Front-End Conf '13</title>
-    <!-- Typekit -->
-    <script src="//use.typekit.net/ddg5xff.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-    <link href="../../assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
-    <link href="../../assets/stylesheets/vendor/prism.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body class='posts posts_conferences posts_conferences_front-end-conf-13'>
-    <header>
-      <p class='dib'>
-        Dan Denney
-      </p>
-      <nav class='dib'>
-        <a class="mls" href="/posts">Posts</a>
-        <a class="mls" href="/blips">Blips</a>
-        <a class="mls" href="/tinkerings">Tinkerings</a>
-        <a class="mls" href="/">Home</a>
-      </nav>
-    </header>
-    <section class='row'>
-      <div class='cell cell--s'>
-        <article class='well'>
-          <h1>Front-End Conf '13</h1>
-          <img alt="Front-End Conf photo booth" width="800" height="533" src="../../assets/images/posts/conferences/front-end-conf-13/131.jpg" />
-          <p>
-            We recently wrapped up Front-End Conf 13 and it was awesome. We can't thank everyone enough for all that they do to make it such a good time. While it's a very busy few days, they are filled with these wonderful moments. I can't even explain how awesome it is to meet people attending their first event and see the excitement on their face or to hear the stories of people's paths over the past year. It is truly inspiring.
-          </p>
-          <h2>Scaling is Hard</h2>
-          <p>
-            We really wanted to go all out for our fifth event and we pulled off a few things that we hadn't done before. With so much information sharing jammed into 3 days, there was less time for getting to meet new people. I know this was true for us and I'm pretty sure that it was for attendees as well.
-          </p>
-          <p>
-            The people are why we do this and we love to get to spend time chatting and hanging out. We'll likely slow things back down a bit for future events.
-          </p>
-          <p>
-            The speakers on Day 2 killed it this year and it has grown to be nearly the size of Day 1, which makes me so happy! I'll need to rethink how to determine who gets the spots next year as I'd like to improve the overall flow of the day.
-          </p>
-          <p>
-            I got a tad too excited about the awesome talks planned for this year's Day 2 and I assumed that things would run similarly to previous ones. We all know what happens when you assume. I'll need to rework the schedule next round so that there is time for Q&A, attendee chatting, and smooth speaker transitions.
-          </p>
-          <h2>Future Plans</h2>
-          <p>
-            Before I share this next bit, I want to be sure to say that as long as we are running Front-End Conf there will be an annual event in St. Petersburg. We have a huge group of people that have supported us and we won't take it away. That said, we do have ideas for other cities and for different events as well. You'll likely see the first location at the end of the video...
-          </p>
-          <div class='video-wrapper'>
-            <iframe allowfullscreen='' frameborder='0' height='387' mozallowfullscreen='' src='http://player.vimeo.com/video/70512830?byline=0&amp;portrait=0' webkitallowfullscreen='' width='688'></iframe>
-          </div>
-          <h2>Thank you Github and MailChimp</h2>
-          <div class='split'>
-            <img alt="Front-End Conftocat" width="896" height="896" src="../../assets/images/posts/conferences/front-end-conf-13/front-end-conftocat.png" />
-          </div>
-          <div class='split'>
-            <img alt="Freddie" width="500" height="550" src="../../assets/images/posts/conferences/front-end-conf-13/freddie-wink.png" />
-          </div>
-          <p>
-            All of the sponsors help make the day rock, but we'd like to give an extra thank you to
-            <a href='http://github.com'>Github</a>
-            and
-            <a href='http://mailchimp.com'>MailChimp</a>
-            for the extra support to make things like the after party and the full bacon bar happen!
-          </p>
-          <h2>More Thank Yous</h2>
-          <p>
-            I start off each year by thanking the team, the speakers, sponsors and the attendees. However, I want to be sure to list off a few more people that helped make things rock.
-          </p>
-          <p>
-            Thank you to everyone who
-            <a href='http://www.indiegogo.com/projects/help-us-record-the-2013-front-end-design-conference-presentations?c=pledges' title='http://www.indiegogo.com/projects/help-us-record-the-2013-front-end-design-conference-presentations?c=pledges'>backed the videos</a>
-            and an extra big thank you goes to
-            <a href='http://lessaccounting.com' title='http://lessaccounting.com'>Less Accounting</a>,
-            <a href='http://lessfilms.com' title='http://lessfilms.com'>Less Films</a>
-            and
-            <a href='http://appendto.com' title='http://appendto.com'>appendTo</a>
-            for all that they did!
-          </p>
-          <p>
-            Thank you to the Palladium team for always keeping things smooth. They handled that power issue with the quickness and even made a little splint for one of the stage characters that had a broken shadow.
-          </p>
-          <p>
-            There are some sizable teams that come out, so thank you lots to
-            <a href='http://designzillas.com' title='http://designzillas.com'>Designzillas</a>,
-            <a href='http://envylabs.com' title='http://envylabs.com'>Envy Labs</a>,
-            <a href='http://bigseadesign.com' title='http://bigseadesign.com'>Big Sea</a>
-            and
-            <a href='http://www.wihphotels.com' title='http://www.wihphotels.com'>WIHP</a>
-            for bringing out groups the size of sports teams.
-          </p>
-          <p>
-            Thank you to
-            <a href='https://twitter.com/benmarte'>Ben Marte</a>
-            for helping so much with the workshop breakdown in spite of being told not to.
-          </p>
-          <p>
-            We love students as they are the future of our industry. Thank you to the squads that came out from Full Sail University, St. Petersburg PTEC and Clemson University. Special thank you to our head cheerleader,
-            <a href='http://twitter.com/bybrandonbrown' title='http://twitter.com/bybrandonbrown'>Brandon Brown</a>
-            at Full Sail as well as
-            <a href='http://twitter.com/ojbravo' title='http://twitter.com/ojbravo'>Omar Bravo</a>
-            at PTEC and
-            <a href='http://twitter.com/davidleininger' title='http://twitter.com/davidleininger'>David Leininger</a>
-            for sharing with the Clemson people.
-          </p>
-          <p>
-            Thank you to
-            <a href='http://natecroft.com' title='http://natecroft.com'>Nate Croft</a>
-            for coming out on such short notice to capture the day. You can see his
-            <a href='http://www.flickr.com/photos/natecroft/sets/72157634330782555/'>awesome pics</a>
-            on Flickr!
-          </p>
-          <p>
-            While I thanked the speakers on stage, I'm not sure that
-            <a href='http://twitter.com/nickawalsh' title='http://twitter.com/nickawalsh'>Nick Walsh</a>
-            and
-            <a href='http://twitter.com/drewbarontini' title='http://twitter.com/drewbarontini'>Drew Barontini</a>
-            were automatically in everyone's minds. So, I'm saying thank you very much for all the  hard work they put into the first workshop we've had!
-          </p>
-          <p>
-            Once again, thank you to
-            <a href='http://twitter.com/bencallahan' title='http://twitter.com/bencallahan'>Ben Callahan</a>
-            for rocking the conf on shorter notice.
-          </p>
-          <p>
-            Thank you to everyone that sang Happy Birthday to
-            <a href='http://twitter.com/parenteau' title='http://twitter.com/parenteau'>Michael Parenteau's</a>
-            daughter.
-          </p>
-          <p>
-            Thank you to everyone that submitted a
-            <a href='http://shoptalkshow.com/episodes/live-from-front-end-conf' title='http://shoptalkshow.com/episodes/live-from-front-end-conf'>Live Shop Talk Show</a>
-            question.
-          </p>
-          <p>
-            Thank you to
-            <a href='http://www.datztampa.com/dough' title='http://www.datztampa.com/dough'>Datz Dough</a>
-            for being such fun and professional vendors. They're the ones that made Cherrie's bacon dessert bar idea come to life.
-          </p>
-          <p>
-            Thank you to the
-            <a href='http://www.usfsp.edu/usc' title='http://www.usfsp.edu/usc'>USFSP Student Center</a>
-            for allowing us to extend Day 2 and get in a few more presentations.
-          </p>
-          <p>
-            Thank you to
-            <a href='https://vimeo.com/javifick' title='https://vimeo.com/javifick'>Javi Fick</a>
-            for being so awesome with scoring the video coverage and making our awesome wrap-up videos.
-          </p>
-          <p>
-            For the one person who instigated the awesome community gift, thank you. (You know who you are.)
-          </p>
-          <p>
-            Thank you to Push for always being so accommodating with the crazy weather that we have had for the past couple events.
-          </p>
-          <p>
-            A bow and thank you to all of the people that got up on stage at Octave and sang their hearts out.
-          </p>
-          <p>
-            Since I can never say it enough, thank you very much to
-            <a href='http://twitter.com/cherriedenney' title='http://twitter.com/cherriedenney'>Cherrie</a>
-            for all of the hard work that she does to make the days special.
-          </p>
-        </article>
-      </div>
-    </section>
-    <section class='row'>
-      <div class='cell cell--s'>
-        <div id="disqus_thread" class="well">
-        <script type="text/javascript">
-        var disqus_shortname = 'dandenney';
-        (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <p class='dib'>
-        Dan Denney
-      </p>
-      <nav class='dib'>
-        <a class="mls" href="/posts">Posts</a>
-        <a class="mls" href="/blips">Blips</a>
-        <a class="mls" href="/tinkerings">Tinkerings</a>
-        <a class="mls" href="/">Home</a>
-      </nav>
-    </footer>
-    <!-- = javascript_include_tag  'vendor' -->
-    <script src="../../assets/javascripts/vendor/prism.js" type="text/javascript"></script>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-3589831-2', 'auto');
-    ga('send', 'pageview');
-    </script>
-  </body>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>Front-End Conf '13</title>
+<!-- Typekit -->
+<script src="//use.typekit.net/ddg5xff.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<link href="../../assets/stylesheets/application.css" rel="stylesheet" />
+<link href="../../assets/stylesheets/vendor/prism.css" rel="stylesheet" />
+</head>
+<body class='posts posts_conferences posts_conferences_front-end-conf-13'>
+<header>
+<p class='dib'>
+Dan Denney
+</p>
+<nav class='dib'>
+<a class="mls" href="/posts">Posts</a>
+<a class="mls" href="/blips">Blips</a>
+<a class="mls" href="/tinkerings">Tinkerings</a>
+<a class="mls" href="/">Home</a>
+</nav>
+</header>
+
+<section class='row'>
+<div class='cell cell--s'>
+<article class='well'>
+<h1>Front-End Conf '13</h1>
+<img alt="Front-End Conf photo booth" width="800" height="533" src="../../assets/images/posts/conferences/front-end-conf-13/131.jpg" />
+<p>
+We recently wrapped up Front-End Conf 13 and it was awesome. We can't thank everyone enough for all that they do to make it such a good time. While it's a very busy few days, they are filled with these wonderful moments. I can't even explain how awesome it is to meet people attending their first event and see the excitement on their face or to hear the stories of people's paths over the past year. It is truly inspiring.
+</p>
+<h2>Scaling is Hard</h2>
+<p>
+We really wanted to go all out for our fifth event and we pulled off a few things that we hadn't done before. With so much information sharing jammed into 3 days, there was less time for getting to meet new people. I know this was true for us and I'm pretty sure that it was for attendees as well.
+</p>
+<p>
+The people are why we do this and we love to get to spend time chatting and hanging out. We'll likely slow things back down a bit for future events.
+</p>
+<p>
+The speakers on Day 2 killed it this year and it has grown to be nearly the size of Day 1, which makes me so happy! I'll need to rethink how to determine who gets the spots next year as I'd like to improve the overall flow of the day.
+</p>
+<p>
+I got a tad too excited about the awesome talks planned for this year's Day 2 and I assumed that things would run similarly to previous ones. We all know what happens when you assume. I'll need to rework the schedule next round so that there is time for Q&A, attendee chatting, and smooth speaker transitions.
+</p>
+<h2>Future Plans</h2>
+<p>
+Before I share this next bit, I want to be sure to say that as long as we are running Front-End Conf there will be an annual event in St. Petersburg. We have a huge group of people that have supported us and we won't take it away. That said, we do have ideas for other cities and for different events as well. You'll likely see the first location at the end of the video...
+</p>
+<div class='video-wrapper'>
+<iframe allowfullscreen='' frameborder='0' height='387' mozallowfullscreen='' src='http://player.vimeo.com/video/70512830?byline=0&amp;portrait=0' webkitallowfullscreen='' width='688'></iframe>
+</div>
+<h2>Thank you Github and MailChimp</h2>
+<div class='split'>
+<img alt="Front-End Conftocat" width="896" height="896" src="../../assets/images/posts/conferences/front-end-conf-13/front-end-conftocat.png" />
+</div>
+<div class='split'>
+<img alt="Freddie" width="500" height="550" src="../../assets/images/posts/conferences/front-end-conf-13/freddie-wink.png" />
+</div>
+<p>
+All of the sponsors help make the day rock, but we'd like to give an extra thank you to
+<a href='http://github.com'>Github</a>
+and
+<a href='http://mailchimp.com'>MailChimp</a>
+for the extra support to make things like the after party and the full bacon bar happen!
+</p>
+<h2>More Thank Yous</h2>
+<p>
+I start off each year by thanking the team, the speakers, sponsors and the attendees. However, I want to be sure to list off a few more people that helped make things rock.
+</p>
+<p>
+Thank you to everyone who
+<a href='http://www.indiegogo.com/projects/help-us-record-the-2013-front-end-design-conference-presentations?c=pledges' title='http://www.indiegogo.com/projects/help-us-record-the-2013-front-end-design-conference-presentations?c=pledges'>backed the videos</a>
+and an extra big thank you goes to
+<a href='http://lessaccounting.com' title='http://lessaccounting.com'>Less Accounting</a>,
+<a href='http://lessfilms.com' title='http://lessfilms.com'>Less Films</a>
+and
+<a href='http://appendto.com' title='http://appendto.com'>appendTo</a>
+for all that they did!
+</p>
+<p>
+Thank you to the Palladium team for always keeping things smooth. They handled that power issue with the quickness and even made a little splint for one of the stage characters that had a broken shadow.
+</p>
+<p>
+There are some sizable teams that come out, so thank you lots to
+<a href='http://designzillas.com' title='http://designzillas.com'>Designzillas</a>,
+<a href='http://envylabs.com' title='http://envylabs.com'>Envy Labs</a>,
+<a href='http://bigseadesign.com' title='http://bigseadesign.com'>Big Sea</a>
+and
+<a href='http://www.wihphotels.com' title='http://www.wihphotels.com'>WIHP</a>
+for bringing out groups the size of sports teams.
+</p>
+<p>
+Thank you to
+<a href='https://twitter.com/benmarte'>Ben Marte</a>
+for helping so much with the workshop breakdown in spite of being told not to.
+</p>
+<p>
+We love students as they are the future of our industry. Thank you to the squads that came out from Full Sail University, St. Petersburg PTEC and Clemson University. Special thank you to our head cheerleader,
+<a href='http://twitter.com/bybrandonbrown' title='http://twitter.com/bybrandonbrown'>Brandon Brown</a>
+at Full Sail as well as
+<a href='http://twitter.com/ojbravo' title='http://twitter.com/ojbravo'>Omar Bravo</a>
+at PTEC and
+<a href='http://twitter.com/davidleininger' title='http://twitter.com/davidleininger'>David Leininger</a>
+for sharing with the Clemson people.
+</p>
+<p>
+Thank you to
+<a href='http://natecroft.com' title='http://natecroft.com'>Nate Croft</a>
+for coming out on such short notice to capture the day. You can see his
+<a href='http://www.flickr.com/photos/natecroft/sets/72157634330782555/'>awesome pics</a>
+on Flickr!
+</p>
+<p>
+While I thanked the speakers on stage, I'm not sure that
+<a href='http://twitter.com/nickawalsh' title='http://twitter.com/nickawalsh'>Nick Walsh</a>
+and
+<a href='http://twitter.com/drewbarontini' title='http://twitter.com/drewbarontini'>Drew Barontini</a>
+were automatically in everyone's minds. So, I'm saying thank you very much for all the  hard work they put into the first workshop we've had!
+</p>
+<p>
+Once again, thank you to
+<a href='http://twitter.com/bencallahan' title='http://twitter.com/bencallahan'>Ben Callahan</a>
+for rocking the conf on shorter notice.
+</p>
+<p>
+Thank you to everyone that sang Happy Birthday to
+<a href='http://twitter.com/parenteau' title='http://twitter.com/parenteau'>Michael Parenteau's</a>
+daughter.
+</p>
+<p>
+Thank you to everyone that submitted a
+<a href='http://shoptalkshow.com/episodes/live-from-front-end-conf' title='http://shoptalkshow.com/episodes/live-from-front-end-conf'>Live Shop Talk Show</a>
+question.
+</p>
+<p>
+Thank you to
+<a href='http://www.datztampa.com/dough' title='http://www.datztampa.com/dough'>Datz Dough</a>
+for being such fun and professional vendors. They're the ones that made Cherrie's bacon dessert bar idea come to life.
+</p>
+<p>
+Thank you to the
+<a href='http://www.usfsp.edu/usc' title='http://www.usfsp.edu/usc'>USFSP Student Center</a>
+for allowing us to extend Day 2 and get in a few more presentations.
+</p>
+<p>
+Thank you to
+<a href='https://vimeo.com/javifick' title='https://vimeo.com/javifick'>Javi Fick</a>
+for being so awesome with scoring the video coverage and making our awesome wrap-up videos.
+</p>
+<p>
+For the one person who instigated the awesome community gift, thank you. (You know who you are.)
+</p>
+<p>
+Thank you to Push for always being so accommodating with the crazy weather that we have had for the past couple events.
+</p>
+<p>
+A bow and thank you to all of the people that got up on stage at Octave and sang their hearts out.
+</p>
+<p>
+Since I can never say it enough, thank you very much to
+<a href='http://twitter.com/cherriedenney' title='http://twitter.com/cherriedenney'>Cherrie</a>
+for all of the hard work that she does to make the days special.
+</p>
+
+</article>
+</div>
+</section>
+<section class='row'>
+<div class='cell cell--s'>
+<div id="disqus_thread" class="well">
+<script type="text/javascript">
+var disqus_shortname = 'dandenney';
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+</div>
+</section>
+
+<footer>
+<p class='dib'>
+Dan Denney
+</p>
+<nav class='dib'>
+<a class="mls" href="/posts">Posts</a>
+<a class="mls" href="/blips">Blips</a>
+<a class="mls" href="/tinkerings">Tinkerings</a>
+<a class="mls" href="/">Home</a>
+</nav>
+</footer>
+
+<!-- = javascript_include_tag  'vendor' -->
+<script src="../../assets/javascripts/vendor/prism.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3589831-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
 </html>
