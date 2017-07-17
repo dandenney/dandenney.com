@@ -5,10 +5,93 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2016-09-14T20:00:00-04:00</updated>
+  <updated>2017-07-01T20:00:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Turning the Page</title>
+    <link rel="alternate" href="http://blog.url.com/posts/general/turning-the-page"/>
+    <id>http://blog.url.com/posts/general/turning-the-page</id>
+    <published>2017-07-01T20:00:00-04:00</published>
+    <updated>2017-07-02T19:54:36-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;style&gt;
+  /* line 1, (__TEMPLATE__) */
+  .shrug {
+    font-size: 300%;
+    text-align: center; }
+  
+  /* line 4, (__TEMPLATE__) */
+  .lyrics {
+    background: #f9f9f9;
+    padding: 1.5rem; }
+&lt;/style&gt;
+&lt;article&gt;
+&lt;p class='mbxs tac'&gt;
+&lt;img class='db' src='/assets/images/posts/general/turning-the-page/in-memoriam.jpg' width='700'&gt;
+&lt;div class='tss'&gt;
+I use a :tombstone: in Slack and say RIP a lot, so this was my going away message :)
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+A short while ago, I was &lt;a href='https://twitter.com/i/web/status/859761496464773120'&gt;joking with Fabio Carneiro&lt;/a&gt; about writing a post when you leave your position with a company, and now I find myself doing it. The past five years have been the best of my life, and a lot of that is due to the people I've worked with at Envy Labs, Code School, and Pluralsight. I can't name everyone because this would just be a long list of the people that I've directly worked with.
+&lt;/p&gt;
+&lt;p&gt;
+Throughout those years, I have learned so much about building the web, growing a digital product, adjusting the size and scope of teams, and the challenges involved with shifting markets. The most important part is that I had so much fun doing it. I've made friendships that I will cherish forever and had countless incredible moments with awesome people. Thank you to each and every one of you for the laughs, the camaraderie, and for teaching me.
+&lt;/p&gt;
+&lt;p&gt;
+There's no way that I could write this without a specific "Thank You" to &lt;a href='https://twitter.com/greggpollack'&gt;Gregg Pollack&lt;/a&gt; for creating things that have had a hugely positive impact on all the people that I've worked with and millions around the world. Gregg is one of the kindest and most generous people that I have ever met, and my whole family has benefitted from the companies that he created.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;img src='/assets/images/posts/general/turning-the-page/comfort-wants-you-dead.jpg'&gt;
+&lt;/p&gt;
+&lt;h2&gt;"Comfort Wants You Dead"&lt;/h2&gt;
+&lt;p&gt;
+I bought this &lt;a href='https://dribbble.com/shots/1746603-Comfort-Wants-You-Dead'&gt;t-shirt from Nathan Yoder&lt;/a&gt; as soon as I saw it and it's the best explanation that I can give for how I could leave this role with all these people who I care about. I've been comfortable. I have a good salary, generous benefits, an insanely flexible schedule, and I work from home.
+&lt;/p&gt;
+&lt;p&gt;
+I was comfortable in my position when an unfortunate scenario led to a fantastic person (who hired me) losing his job. I was comfortable when our founder left, our team structures changed, and for the past few months after two friends (and two of the three front-end people I worked with directly for years) left.
+&lt;/p&gt;
+&lt;p&gt;
+Recently, I realized that I have been viewing things through the lens of my comfort level and forgetting a bit of what's important to me. There's this fantastic song by Passenger, "&lt;a href='https://open.spotify.com/track/1Sb0F7I9bGa4VfPbgm0BoL'&gt;All The Little Lights&lt;/a&gt;", with this hook:
+&lt;/p&gt;
+&lt;p class='lyrics'&gt;
+We're born with millions
+&lt;br&gt;
+Of little lights shining in the dark
+&lt;br&gt;
+And they show us the way
+&lt;br&gt;
+One lights up, every time you feel love in your heart
+&lt;br&gt;
+One dies when it moves away
+&lt;/p&gt;
+&lt;p&gt;
+I hadn't been recognizing (or maybe prioritizing) that a lot of my little lights had burned out in the last couple of years. I was comfortable, and it was slowly killing me. So, I decided to change it.
+&lt;/p&gt;
+&lt;h2&gt;"What's Next?"&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class='shrug'&gt;¯\_(ツ)_/¯&lt;/div&gt;
+I truly don't know. I talked with my manager (another person that I'll miss) and gave notice without a plan.
+&lt;/p&gt;
+&lt;p&gt;
+I know what makes me come alive: working with good people towards a goal, building things for the web that benefit people, and sharing knowledge.
+&lt;/p&gt;
+&lt;p&gt;
+I know that the industry has shifted a lot in the time that I've been working on Code School and that I need to deepen my JS knowledge to stay competitive.
+&lt;/p&gt;
+&lt;p&gt;
+I know that I'm going to spend a little time learning, sharing, and shipping a few small things that I've been tinkering on.
+&lt;/p&gt;
+&lt;p&gt;
+I hope that will lead me to what's next...
+&lt;/p&gt;
+&lt;/article&gt;
+</content>
+  </entry>
   <entry>
     <title>Stumbling Through Learning About Event Listeners</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/stumbling-through-learning-about-event-listeners"/>
@@ -765,165 +848,6 @@ Again, I took some notes along the way:
 That's it for the first section. I'm hooked now and this felt so good:
 &lt;/p&gt;
 &lt;img class='img-stretch mbm' src='/assets/images/posts/front-end-dev/pursuing-a-nanodegree/success-form.png' width='800'&gt;
-</content>
-  </entry>
-  <entry>
-    <title>TIL Executing Local Ruby</title>
-    <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/til-executing-local-ruby"/>
-    <id>http://blog.url.com/posts/front-end-dev/til-executing-local-ruby</id>
-    <published>2015-11-19T19:00:00-05:00</published>
-    <updated>2017-07-01T14:35:59-04:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p class='tss'&gt;
-IA Writer says this is a 5:47 minute read and Hemingway App says I'm ugly and I can't write good. Read at your own peril.
-&lt;/p&gt;
-&lt;h2&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;
-I needed to do something unusual: take one big email list and remove any emails that exist in it from a smaller email list. At Code School, we use MailChimp so I started by finding out if they had a way to do it. They do, but for business purposes (security and expenses) I wanted to handle this offline if possible. I have 2 CSVs and I need one that is effectively one.csv minus two.csv.
-&lt;/p&gt;
-&lt;h2&gt;A Job Made for Computers&lt;/h2&gt;
-&lt;p&gt;
-The big list is ~1.5m and the little list is around 80k, so throwing them into Numbers and sorting/removing was clearly out of the question. So I bugged &lt;a href="http://drewbarontini.com"&gt;Drew&lt;/a&gt;, our resident efficiency expert. His eyes lit up at the challenge and about 5 minutes later he had a proof of concept working in Terminal. This guy.
-&lt;/p&gt;
-&lt;h2&gt;The Solution (Thought)&lt;/h2&gt;
-&lt;p&gt;
-I am not a programmer and I have never done any official training in programming. The hard part for me initially is thinking through how something would work and how I would communicate that to the computer. So I thought I’d share a roundabout way of thinking through this one.
-&lt;/p&gt;
-&lt;p&gt;
-If I had to do this manually, here’s a guess on how I’d do it.
-&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-Make a copy of the large list (to be edited).
-&lt;/li&gt;
-&lt;li&gt;
-Open each CSV in an app and sort alphabetically by email name.
-&lt;/li&gt;
-&lt;li&gt;
-Check each email in the small list by looking at the large list to see if it exists.
-&lt;/li&gt;
-&lt;li&gt;
-If it does exist in the large list, delete it.
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-Just for giggles, if I got in a groove and averaged 10 seconds per entry, that’d be around 800,000 seconds or 13,333 minutes, or 222 hours or 5–6 weeks of full-time work (without overtime). It’s a job for computers, but the important thing is knowing how to make the computer think the way that you want it to.
-&lt;/p&gt;
-&lt;h2&gt;Ruby to the Rescue&lt;/h2&gt;
-&lt;p&gt;
-Drew knew right away that Ruby could handle this very well. (If you’re one of &lt;em&gt;those&lt;/em&gt; people and you’ve actually made it this far in the article, yes &lt;em&gt;x&lt;/em&gt; language can also do this very well. I just saved you a Medium post. :troll:) So let’s talk through how this would happen. Ruby would do things &lt;em&gt;pretty close&lt;/em&gt; to our list, but in a different order.
-&lt;/p&gt;
-&lt;p&gt;
-It is very fast when working with arrays, which are basically a comma-separated list of items wrapped in [ ]. This is super close to what our CSV looks like and there are functions for working with arrays built into Ruby.
-&lt;/p&gt;
-&lt;p&gt;
-Here’s my loose interpretation of how Ruby will approach it (once you write the code).
-&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-Load each CSV into an array (big, little)
-&lt;/li&gt;
-&lt;li&gt;
-Create a new array (lessbig)
-&lt;/li&gt;
-&lt;li&gt;
-Compare the two original arrays and write only the emails that exist solely in the first array (big) into the new array (lessbig)
-&lt;/li&gt;
-&lt;li&gt;
-Create a CSV from the newly created array
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-It’s pretty close to the way we would do it except for the order and that it takes about &lt;em&gt;1–2 minutes&lt;/em&gt; to run.
-&lt;/p&gt;
-&lt;h2&gt;I Wanted to Try!&lt;/h2&gt;
-&lt;p&gt;
-I had no idea where to even start with this (even after seeing Drew run it in Terminal in IRB). So over lunch I stole a couple of hints (make a file, run it with “x”). It was a few days after that when I started on it and I couldn’t remember the details but our community puts our wealth of knowledge in things like Stack Overflow, &lt;a href="http://stackoverflow.com/questions/8721369/how-to-execute-a-ruby-script-in-terminal"&gt;so I found that pretty quickly&lt;/a&gt;. You make a &lt;code&gt;.rb&lt;/code&gt; or &lt;code&gt;.irb&lt;/code&gt; file, then in terminal you type &lt;code&gt;ruby filename.rb&lt;/code&gt;. This works for what I need to do as the end goal is a CSV. (There are ways that you can print out the results in Terminal if you don’t need a file.)
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="http://stackoverflow.com/questions/20205023/ruby-find-element-not-in-common-for-two-arrays"&gt;Comparing the arrays&lt;/a&gt; and creating CSVs are also on Stack Overflow, but I mostly used the &lt;a href="http://ruby-doc.org/stdlib-1.9.3/libdoc/csv/rdoc/CSV.html#method-i-read"&gt;docs&lt;/a&gt; for the CSV part.
-&lt;/p&gt;
-&lt;h2&gt;I Got Close&lt;/h2&gt;
-&lt;p&gt;
-Ok, with my memory of what Drew had created and some Stack Overflow I was able to get my own POC working locally. My mind was seriously blown! A few lines of code and I had a new file with exactly what I wanted. It was insane to type that in and see a new file pop into finder.
-&lt;/p&gt;
-&lt;pre&gt;&lt;code class='language-ruby'&gt;# Tell Ruby to use its CSV library of functions
-require &amp;quot;csv&amp;quot;
-
-# Create an array from big values
-big = [&amp;quot;one@email.com&amp;quot;, &amp;quot;two@email.com&amp;quot;, &amp;quot;three@email.com&amp;quot;, &amp;quot;four@email.com&amp;quot;, &amp;quot;five@email.com&amp;quot;]
-
-# Create an array from little values
-little = [&amp;quot;four@email.com&amp;quot;, &amp;quot;five@email.com&amp;quot;, &amp;quot;six@email.com&amp;quot;, &amp;quot;seven@email.com&amp;quot;, &amp;quot;eight@email.com&amp;quot;]
-
-# Remove any entries in little from big and make a new array with the result
-lessbig = big - little
-
-# Create a CSV from the new array
-CSV.open(&amp;quot;lessbig.csv&amp;quot;, &amp;quot;wb&amp;quot;) do |row|
-  lessbig.each do |data|
-    row &amp;lt;&amp;lt; [data]
-  end
-end
-
-CSV.open(&amp;quot;lessbig.csv&amp;quot;, &amp;quot;wb&amp;quot;) do |csv|
-  csv &amp;lt;&amp;lt; lessbig
-end&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 class='mtm'&gt;WTF&lt;/h2&gt;
-&lt;p&gt;
-When I switched to using CSVs, things were formatted differently (an array of arrays). I fought through by throwing some of the various options from the doc into the code but nothing worked. So I used a lifeline and asked to see Drew’s example.
-&lt;/p&gt;
-&lt;h2&gt;Drewwwwww&lt;/h2&gt;
-&lt;p&gt;
-There were 2 problems that he had figured out. You need to use an each loop and output each row and you need the CSV to be multi-line for the way that we were writing.
-&lt;/p&gt;
-&lt;p&gt;
-Then there’s the part where he actually organized it like a developer. You can see his &lt;a href="https://github.com/drewbarontini/splitter"&gt;splitter&lt;/a&gt; on GitHub.
-&lt;/p&gt;
-&lt;h2&gt;Frankencode&lt;/h2&gt;
-&lt;p&gt;
-While his example is what someone would probably want to ship, I wanted to get it working in something more basic. So, I took his loops and tweaked them into my code. It was still borked, so I formatted my CSVs to be multi-line and Boom!
-&lt;/p&gt;
-&lt;pre&gt;&lt;code class='language-ruby'&gt;# Tell Ruby to use its CSV library of functions
-require &amp;quot;csv&amp;quot;
-
-# Create an array from big.csv
-big = []
-CSV.foreach(&amp;quot;big.csv&amp;quot;) do |row|
-  big &amp;lt;&amp;lt; row[0]
-end
-
-# Create an array from little.csv
-little = []
-CSV.foreach(&amp;quot;little.csv&amp;quot;) do |row|
-  little &amp;lt;&amp;lt; row[0]
-end
-
-# Remove any entries in little from big and make a new array with the result
-lessbig = big - little
-
-# Create a CSV from the new array
-CSV.open(&amp;quot;lessbig.csv&amp;quot;, &amp;quot;wb&amp;quot;) do |row|
-  lessbig.each do |data|
-    row &amp;lt;&amp;lt; [data]
-  end
-end&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 class='mtm'&gt;WTF Aside&lt;/h2&gt;
-&lt;p&gt;
-Soooooo I had opened and cleaned up unnecessary data from the CSVs using Numbers. It turns out Numbers has a max of 65535 rows so now both of my CSVs were that many rows long. &lt;strong&gt;Don’t do that&lt;/strong&gt;. In this case, it turned out to be unnecessary anyways because Drew’s loops only take from the single email column and only output one column of emails. Him and his efficiency. :eyeroll:
-&lt;/p&gt;
-&lt;h2&gt;My Takeaways&lt;/h2&gt;
-&lt;p&gt;
-As with most things in web development, executing Ruby functions locally was extremely intimidating before I tried it. Admittedly, I wouldn’t have gotten anywhere by just reading docs and stumbling along. Having that tiny kickstart of seeing it run locally in Terminal got me rolling, but that’s what peers are for! I won’t be diving into writing Ruby on the reg, but I’m no longer afraid of it and I’ll know it’s a viable option when I need to do something requiring lots of processing.
-&lt;/p&gt;
-&lt;p&gt;
-Time can be a concern, of course. This example was lucky in that it saved ~$900 to $1000 dollars by being done offline. I wouldn’t be able to justify this for everything that came up, but we are strongly encouraged to find creative solutions and learn as necessary to improve our skills. Hopefully good examples of this in the wild can lead to every company/team encouraging that.
-&lt;/p&gt;
-&lt;p&gt;
-Finding a solution, understanding it, and working with my teammate on it was a blast. Look for these opportunities and take advantage of them when you can. Then, share what you learned.
-&lt;/p&gt;
 </content>
   </entry>
 </feed>
