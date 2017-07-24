@@ -48,9 +48,11 @@ code-sample: true
     width: 3em
 
   .code-inline
+    background: #f5f5f5
+    color: #535353
     display: inline-block
     font-size: 75%
-    padding: 0 0.5em !important
+    padding: 0 0.5em
 
   strong
     font-weight: 600
@@ -65,65 +67,133 @@ code-sample: true
     @media screen and (min-width: 840px)
       padding: 4em
 
+  .quick-links
+    align-items: center
+    border: 1px solid #f5f5f5
+    display: flex
+    justify-content: space-between
+
+    a
+      padding: 0.5em 1em
+      text-align: center
+      width: 50%
+      
+      + a
+        border-left: 1px solid #f5f5f5
+
+  .toc
+    background: #fff
+    border: 1px solid #f5f5f5
+    padding: 1em
+
+    ol
+      margin: 0
+      padding: 0
+
+    li
+      margin: 0 0 0.5em 0
+      padding: 0
+
+    @media screen and (min-width: 1260px)
+      font-size: 67%
+      padding: 0.5em
+      position: fixed
+      right: 0.5em
+      top: 7em
+      z-index: 1
+
+  .temp-toc
+    margin: 0 0 1em 0
+    padding: 0
+    li
+      margin: 0 0 0.5em 0
+      padding: 0
 
 .row
   .cell.cell--s
 
-    %h1 Building a Small PWA with Preact and Firebase
+    %h1.mbf Building a Small PWA with Preact and Firebase
 
-    %p.mbxs More important than what this post is, here is a short list of what it is not:
-    %ul.list.mbxs
-      %li.mbxs A quick read while you’re in line at the cashier (sorry)
-      %li.mbf
-        A tutorial (to thoroughly teach you concepts). If you’re looking for one, I learned from
-        = succeed "," do
-          %a{:href => "https://reactforbeginners.com"} React for Beginners
-        = succeed "," do
-          %a{:href => "https://egghead.io/courses/up-and-running-with-preact"} Up and running with Preact
-        = succeed "," do
-          %a{:href => "https://frontendmasters.com/courses/firebase-react"} Firebase + React: Real-time, Serverless Web Apps
-        and
-        = succeed "." do
-          %a{:href => "https://css-tricks.com/intro-firebase-react"} Intro to Firebase and React
+    %small.db.mbs Read time: 29:33
+
+    .quick-links
+      %a{href: 'https://pwa-preact-firebase.firebaseapp.com/'} Live Version
+      %a{href: 'https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase'} GitHub Repo
+
+    %p.h4.mbxs.mtm#intro Disclaimer: This is not a tutorial!
+    %p
+      I have a ton of respect for the hard work that goes into using a project to teach the fundamentals of a technology. This isn't that, it's me sharing a process of learning by building something of my own.
+
+    %p 
+      If you’re looking for related tutorials, I learned from
+      = succeed "," do
+        %a{:href => "https://reactforbeginners.com"} React for Beginners
+      = succeed "," do
+        %a{:href => "https://egghead.io/courses/up-and-running-with-preact"} Up and running with Preact
+      = succeed "," do
+        %a{:href => "https://frontendmasters.com/courses/firebase-react"} Firebase + React: Real-time, Serverless Web Apps
+      and
+      = succeed "." do
+        %a{:href => "https://css-tricks.com/intro-firebase-react"} Intro to Firebase and React
 
     %p
       In this post, I’m sharing how I did something, and it is currently at the “
       %a{:href => "http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast"}> make it work
-      ” level. I’m 100% open to feedback on how to improve it, and I’ve taken extra steps in the process to make it easy. If you know of a way to make it better, please leave a comment on the post or a commit,
+      ” level. I’m 100% open to feedback on how to improve it, and I’ve taken extra steps in the process to make giving feedback easy. This doesn't just help me, but also anyone who reads this in the future. If you know of a way to make it better, please leave a comment on the post or a commit,
       = succeed "," do
         %a{:href => "https://twitter.com/dandenney"} @ me
       = succeed "," do
         %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase"} create a PR
       or write up a reaction post.
 
-    %h2 Post Goals
+    %h2 Sections
+  
+    %ol.temp-toc
+      %li 
+        %a{href: '#intro'} Intro (1:45)
+      %li 
+        %a{href: '#getting-started'} Getting Started (1:40)
+      %li 
+        %a{href: '#adding-firebase'} Adding Firebase for Auth (3:45)
+      %li 
+        %a{href: '#removing-boilerplate'} Preact Auth and Organization (5:23)
+      %li 
+        %a{href: '#planning-data'} Retrieving Data from Firebase (4:25)
+      %li 
+        %a{href: '#connecting-a-form-to-firebase'} Saving Data to Firebase (5:44)
+      %li 
+        %a{href: '#adding-global-styles'} Styling (1:45)
+      %li 
+        %a{href: '#deploying-to-firebase'} Wrapping Up (1:44)
 
-    %p The goals for this post are to share what I’ve learned, try out some new features (for me) in a blog post. It seems like a long post sharing open-source code could benefit from a Table of Contents, read time indicators, and commit links.
+    %h2#post-goals Post Goals
 
-    %h2 Project Goals
+    %p The goals for this post are to share what I’ve learned, try out some new features (for me) in a blog post. It seems like a long post sharing open-source code could benefit from a Table of Contents, read time indicators, and commit links (41 of em).
+
+    %h2#project-goals Project Goals
 
     %p The goals of this project were: reading/writing/manipulating data, designing a mobile UI and learning Preact. Preact is overkill for the base functionality, but the CLI version has features that are very beneficial.
 
-    %h2 App Goals
+    %h2#app-goals App Goals
 
     %p
       I exercise because I greatly enjoy beer and food. I'm not that into it, but since I'm going to do it, I should follow a system created by people who are. I'm simplifying, but a handful of the systems tell you to set an initial weight, do a specific number of reps, and then raise the weight after 5 sessions of reps. (Some useful apps exist, like <a href="https://stronglifts.com">Strong Lifts</a>, but I wanted a customized version.) Most importantly, I wanted a dead simple UI that makes it clear what weight or speed I need to set when I get to the machine.
 
-    %h2 Getting Started With a Project
+    %h2#getting-started Getting Started With a Project
 
     %p
       Since this was an app being designed for a demographic of 1 person, research was limited. I knew what was missing for me in other apps, and the style that I wanted. I use
       %a{:href => "http://www.bear-writer.com"} Bear
       for project details, and this had requirements, inspiration images, and my best guess at the data structure.
 
-    %img.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/notes.jpg'}
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/notes.jpg'}
 
     %p
       To allow for continually working on my version, I’m sharing the steps as I recreate the app in a
       %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase"} repo
       specifically for this post.
 
-    %h2 Initializing a Project with Preact CLI
+    %h2#preact-cli Initializing a Project with Preact CLI
 
     %p
       I was inspired by
@@ -141,7 +211,7 @@ code-sample: true
 
     %p
       Sass support requires a flag, so after installing the CLI, I ran
-      %code.code-inline.language-js preact create app --sass
+      %code.code-inline preact create app --sass
       and then dragged the files out to my main folder.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/ba21e66db288a85e0ad8910f0e312b4347b7b937"} commit
 
@@ -151,36 +221,36 @@ code-sample: true
 
       %p.mbf
         In my first build, the 1.3 version would enable Sass support but still generate
-        %code.code-inline.language-js .less
+        %code.code-inline .less
         files. In getting the link to the issue, I found that it was
         %a{:href => "https://github.com/developit/preact-cli/issues/32"} closed and fixed
         with 1.4, so I updated and regenerated.
         %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/89b5c0fc507980aa66fda4805c1da269d33f959a"} commit
 
-    %h2 It’s alive!
+    %h2#its-alive It’s alive!
 
     %p
       Running
-      %code.code-inline.language-js preact watch
+      %code.code-inline preact watch
       (or the command of your choice) fires up a server on
-      %code.code-inline.language-js 0.0.0.0:8080
+      %code.code-inline 0.0.0.0:8080
       and the starter app is visible.
 
-    %img.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/preact-cli-home.jpg'}
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/preact-cli-home.jpg'}
 
-    %p The out-of-the-box Lighthouse scores are fantastic. (Lighthouse is a tool for rating the code for a PWA. The service worker seems only to be enabled in production, so the PWA score is low locally, but 91 once you deploy. The important one to watch locally is Performance. Since Preact is so light, your code is what makes the difference. We’re starting off with 3.7s to a meaningful paint.
+    %p The out-of-the-box Lighthouse scores are fantastic. (<a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a> is a tool for rating the code for a PWA. The service worker seems only to be enabled in production, so the PWA score is low locally, but 91 once you deploy. The important one to watch locally is Performance. Since Preact is so light, your code is what makes the difference. We’re starting off with 3.7s to a meaningful paint.
 
-    %img.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/cli-default-perf.jpg'}
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/cli-default-perf.jpg'}
 
-    %h2 Adding Firebase
+    %h2#adding-firebase Adding Firebase
 
     %p To get rolling with Firebase, I created a project “pwa-preact-firebase” (cause 30 character restriction) and grabbed the config info from “web setup” on the authentication page.
 
-    %img.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/firebase-config.jpg'}
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/firebase-config.jpg'}
 
     %p If you haven’t used Firebase, it will seem scary that I posted a screenshot of that information, but it’s available in the UI. Firebase handles security via permissions and many tutorials start by changing them to being wide open to get started. I’m skipping that because I know I want authed users.
 
-    %h3 Config
+    %h3#config Config
 
     %p
       I learned this organization technique from
@@ -189,10 +259,6 @@ code-sample: true
         
       The gist is that you install and include Firebase (<a href="https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/be29e2abdec3020c1d3351eeebb5b2f4644d70ff">commit</a>), set the config, and then add named exports of the pieces that you want to use.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/e906d1cf35032992377f4da9dee4094a43b7d99c"} commit 
-
-    %p I’m only using Google Auth because it doesn’t require an API key and I’m always logged in on my phone. There are other options (Twitter, FB, email/password) as well.
-
-    %img.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/auth-options.jpg'}
 
 %pre
   %code.language-js
@@ -218,9 +284,13 @@ code-sample: true
 .row
   .cell.cell--s
 
+    %p I’m only using Google Auth because it doesn’t require an API key and I’m always logged in on my phone. There are other options (Twitter, FB, email/password) as well.
+
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/auth-options.jpg'}
+
     %p With that configured, the methods in Firebase are available anywhere that you import them. The next part is the first decision as to where that is.
 
-    %h2 Questionable Organizational Decision
+    %h2#questionable-organizational-decision Questionable Organizational Decision
 
     %p In my initial version, I put all of the code for the UI in the home folder (within routes) and kept firebase in the global components folder. This led to lengthy imports whenever I imported Firebase. I’m fixing that in this version by adding an ExercisesList component.
 
@@ -246,22 +316,22 @@ code-sample: true
 
     %p
       And it’s imported like this (depending on its location)
-      %code.code-inline.language-js import ExercisesList from '../../components/ExercisesList';
+      %code.code-inline import ExercisesList from '../../components/ExercisesList';
 
     %p
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/9959c25db94cb7827acfc73e13f213c50e5dea82"} commit
 
-    %h2 You Shall Not Get Data
+    %h2#you-shall-not-get-data You Shall Not Get Data
 
     %p By default, no one can read or write to a Firebase database unless they are authed. One way of making sure that it’s installed and working is to use logic to toggle an auth UI or the content of a component.
 
     %p
       In ExercisesList, I imported auth and database from Firebase. At that point I only needed auth, but I knew that the reason that I was using auth was to access the database, so I brought them both in at the same time.
-      %code.code-inline.language-js import ExercisesList from '../../components/ExercisesList';
+      %code.code-inline import { auth, database } from '../../firebase';
 
     %p I needed auth available for the logic, but there a few steps to “toggle” them based on auth status.
 
-    %h3 Creating Child Components
+    %h3#creating-child-components Creating Child Components
 
     %p It’s a personal preference, but my workflow when I’m going to need new components is to start by making them, adding placeholder copy, and then import them. So, I added an Exercises component and a SignIn component.
 
@@ -269,10 +339,10 @@ code-sample: true
 
     %p
       The only reason this app will exist is to track individual progress, so it’s intentionally useless if you’re not authed. To enable that, I imported
-      %code.code-inline.language-js auth
+      %code.code-inline auth
       and
       = succeed "." do
-        %code.code-inline.language-js googleAuthProvider
+        %code.code-inline googleAuthProvider
 
 %pre
   %code.language-js
@@ -299,51 +369,51 @@ code-sample: true
     %p
       For auth, this is where the magic happens:
       = succeed "." do
-        %code.code-inline.language-js onClick={() => auth.signInWithRedirect(googleAuthProvider)}
-      %code.code-inline.language-js signInWithRedirect
+        %code.code-inline onClick={() => auth.signInWithRedirect(googleAuthProvider)}
+      %code.code-inline signInWithRedirect
       is one of a few auth methods from Firebase and I’m passing the Google option. That’s all it takes for the transaction to happen, which is pretty amazing to me.
 
     %p
       I’m very visual, so my next step was importing the SignIn component to see it on the page. Because SignIn isn’t directly related to ExercisesList, I made it a sibling component. I don’t see a need to use it any other way yet, but it didn’t feel right nesting it in the folder structure. I am calling it from ExercisesList, though, replacing the placeholder copy.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/3d8b1b394baf61052b9e2ed870601e8df1d3c933"} commit
 
-    %p [Image of app with button]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/sign-in-button.jpg'}
 
-    %h3 Mo Versions, Mo Problems
+    %h3#mo-versions-mo-problems Mo Versions, Mo Problems
 
     %p
       It seems that with the new version, the default URL locally is 0.0.0.0:8080 instead of localhost:8080 and 0.0.0.0 isn’t whitelisted for Firebase for OAuth. There were two options for fixing this: change the default host with a flag, like
-      %code.code-inline.language-js preact watch --host localhost
+      %code.code-inline preact watch --host localhost
       or changing it in Firebase’s admin. Since I’d have to type that about “fifty eleven” times or add an alias, I made the change in Firebase. (I also assumed it was changed for a good reason that I’m not aware of.)
 
-    %h3 Removing Boilerplate
+    %h3#removing-boilerplate Removing Boilerplate
 
     %p
       The default header in the default Preact-CLI template (there are other options) is awesome for getting started, but there won’t be a header in this app until v2, if ever. So, I killed it.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/88a71fbb809d77e3e000eba71c64b3f6c732c49d"} commit
 
-    %p [Image no header]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/no-header.jpg'}
 
     %p The alignment and lack of style looked funky, and that was killing me, but I held strong on leaving CSS for later.
 
-    %h3 A Snafu
+    %h3#a-snafu A Snafu
 
     %p
       At this point, I realized ExercisesList wasn’t a great name for the primary container since it also contained SignIn. So, I swapped it for Exercises.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/12ca272fa08c366b9448b0060211f16032c586c2"} commit
 
-    %h3 Adding an Exercises List for Reals
+    %h3#adding-an-exercises-list Adding an Exercises List for Reals
 
     %p
       I kinda looked like
       %a{:href => "https://media3.giphy.com/media/VKtsOAHDx1Luo/giphy.gif"} Larry David
-      as I tried to decide between Exercises List and Exercise List. This job would be great if it weren’t for naming. Ultimately, I wanted the relationship of the word list to be closer to the child Exercise than the parent. ¯_(ツ)_/¯
+      as I tried to decide between Exercises List and Exercise List. This job would be great if it weren’t for naming. Ultimately, I wanted the relationship of the word list to be closer to the child Exercise than the parent. ¯\_(ツ)_/¯
 
     %p For that same reason, I nested ExerciseList in Exercises. I can imagine SignIn possibly being separated in the future, but not Exercises.
 
     %p
       Anyhow, I use a
-      %code.code-inline.language-js pc
+      %code.code-inline pc
       snippet for a generic Preact component, which looks like this.
 
 %pre
@@ -368,20 +438,20 @@ code-sample: true
       I left the constructor cause I knew I’d need it later and added a placeholder list, simulating the map that I’ll need eventually. Importing that into Exercises made this feel like I was finally getting somewhere.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/7341165085cd6341b890e9cd8b122fe90c7e6f98"} commit
 
-    %p [Image of Sign In Button and Exercise list]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/rendered-data.jpg'}
 
-    %h3 Time to Use Preact
+    %h3#time-to-use-preact Time to Use Preact
 
     %p Up until this point, I had been putting HTML into JavaScript. To apply logic, though, I needed to use one of the features of Preact. Technically, state is a feature of React that Preact shrinks down, but I digress.
 
     %p
       The gist is that I want to show the SignIn component when there is no authed user and the ExerciseList when there is. To do this, I set a
-      %code.code-inline.language-js currentUser
+      %code.code-inline currentUser
       to null by default, listen for Firebase auth changes, and render based on the value of
-      %code.code-inline.language-js currentUser
+      %code.code-inline currentUser
       in state.
 
-    %h4 The State of the User
+    %h4#state-of-the-user The State of the User
 
     %p State is a concept that I don’t understand well enough to explain yet, but I’m no longer hung up on the OG front-end definition of it being a visual change to an element. Without a Shadow DOM framework, I would toggle a class on a parent element and use CSS to show the SignIn or ExerciseList HTML. Instead, I can assign values to keys in state to help Preact decide what to render (and when to re-render). We pay the price of learning a new system (and others building and maintaining new systems) to provide a better experience for users.
 
@@ -416,30 +486,30 @@ code-sample: true
 
     %p
       Viewing that in the React Developer Tools confirmed that it worked and that I had messed up. When I refactored, I forgot to assign a name to the class in ExerciseList, so it was rendering a
-      %code.code-inline.language-js <_default>
+      %code.code-inline <_default>
       component. Fixed that.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/ef267755b9ebaed6f5153d51f612aa7217bd8883"} commit
 
-    %h4 Adding a LifeCycle Event
+    %h4#adding-a-lifecycle-event Adding a LifeCycle Event
 
     %p
       Another significant difference in Shadow DOM frameworks is lifecycle methods. They are another way of helping to decide what and when to render. In this case, I’m using
-      %code.code-inline.language-js componentDidMount
+      %code.code-inline componentDidMount
       to listen for Firebase auth methods. I also had to bring in
-      %code.code-inline.language-js auth
+      %code.code-inline auth
       from Firebase.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/d44ca9c668cc2ded666556b6a480ff067ec009ac"} commit
 
     %p
       At this point, clicking the Sign In button changes the state of
-      %code.code-inline.language-js currentUser
+      %code.code-inline currentUser
       from
-      %code.code-inline.language-js null
+      %code.code-inline null
       to an object that Firebase returns for the current user.
 
-    %p [Image of my current user details]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/user-attributes.jpg'}
 
-    %h4 Render and Re-render
+    %h4#render-and-rerender Render and Re-render
 
     %p The final bit to make this work was some conditional logic in the Exercises component’s render function. For that to work, it needed to bring in state and assign it within the render function.
 
@@ -477,7 +547,7 @@ code-sample: true
 
     %p With a user signed in, the UI is showing the ExerciseList component.
 
-    %p [Image of Exercise List rendering]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/exercises-only.jpg'}
 
     %p
       While that would eventually be enough to complete the actions that I’ll want, it seemed like adding an avatar and a sign out button was in order. So, I added a CurrentUser component with some placeholders to start.
@@ -487,48 +557,48 @@ code-sample: true
       Since this was an additional component within Exercises, I needed to wrap them in a single element (a JSX thing).
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/23227651e423f18e462b2776b4c2924409aaf35f"} commit
 
-    %h4 Passing Data with Props
+    %h4#passing-data-with-props Passing Data with Props
 
     %p
       Since CurrentUser is a child of Exercises, it doesn’t have access to the
-      %code.code-inline.language-js currentUser
+      %code.code-inline currentUser
       state. (I know the naming is getting confusing.) Rather than declare and update state within CurrentUser, I passed it in via props as
       = succeed "." do
-        %code.code-inline.language-js user
+        %code.code-inline user
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/9684a229780fbb424b9dc4d7cbccd471221df579"} commit
 
-    %p [Image of props with null]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/null-user.jpg'}
 
     %p
-      It was at this point that I realized I had messed up. State had a value for currentUser, but it was passing
-      %code.code-inline.language-js null
+      It was at this point that I realized I had messed up again. State had a value for currentUser, but it was passing
+      %code.code-inline null
       to props. I can’t explain why, but I put the componentDidMount code in ExercisesList instead of Exercises. Fixing that made it so that the props was getting my user object.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/c5280a88a536f9801c5e4cb370e82eb48103c6d1"} commit
 
     %p
       I also had explicitly rebound the
-      %code.code-inline.language-js currentUser
+      %code.code-inline currentUser
       constant in Exercises, which was adding a child object. I had done
-      %code.code-inline.language-js const currentUser = this.state;
+      %code.code-inline const currentUser = this.state;
       instead of
       = succeed "." do
-        %code.code-inline.language-js const { currentUser } = this.state;
+        %code.code-inline const { currentUser } = this.state;
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/f6d7c96b7343e1270eceee90a0628584a1a83544"} fixed
 
-    %p [Image of props with user]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/current-user.jpg'}
 
-    %h4 User Attributes from Google Auth
+    %h4#user-attributes-from-google-auth User Attributes from Google Auth
 
     %p
       Now that I had access to the user object via Firebase, I could access the attributes. A
-      %code.code-inline.language-js console.log
+      %code.code-inline console.log
       revealed all of them, so I used the
-      %code.code-inline.language-js photoURL
+      %code.code-inline photoURL
       and
-      %code.code-inline.language-js displayName
+      %code.code-inline displayName
       for the alt attribute. This is to give some basic feedback that I’m in the correct account when I auth.
 
-    %p [Image of console.log of user]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/console-log-user.jpg'}
 
     %p
       Preact passes props to the render functions, so I shortened up the attributes and added them to the image.
@@ -558,11 +628,11 @@ code-sample: true
 .row
   .cell.cell--s
 
-    %h4 Adding Sign Out Functionality
+    %h4#adding-sign-out-functionality Adding Sign Out Functionality
 
     %p
       Arguably, I’d never want to sign out aside from testing, but it feels awful to not have the option. Even more so when it’s 2 lines of code to make it happen. The CurrentUser component needed access to Firebase auth and then the
-      %code.code-inline.language-js auth.signOut()
+      %code.code-inline auth.signOut()
       method.
 
 %pre
@@ -592,16 +662,16 @@ code-sample: true
 
     %p Whew. I now had a fully-functional Preact app with auth, all to see 2 lines of static HTML. It was time for the fun.
 
-    %h2 Planning Data
+    %h2#planning-data Planning Data
 
-    %p Knowing that Firebase stores data in JS objects, I imagined what the structure for the data would be in the planning portion of the project. I needed a series of exercises, which would have a title, settingType. Those would have sessions with a setting and a flippable completed key. Each session would have an individual set with a timestamp and a completed key. I came up with:
+    %p Knowing that Firebase stores data in JS objects, I imagined what the structure for the data would be in the planning portion of the project. I needed a series of exercises, which would have a name and a settingType. Those would have sessions with a setting and a flippable completed key. Each session would have an individual set with a timestamp and a completed key. I came up with:
 
 %pre
   %code.language-markdown
     :preserve
       - exercises
         - exercise
-          - title
+          - name
           - settingType
           - sessions
             - setting
@@ -613,7 +683,7 @@ code-sample: true
 .row
   .cell.cell--s
 
-    %h3 No plan survives contact with code
+    %h3#no-plan-survives-contact-with-code No Plan Survives Contact with Code
 
     %p While that’s a misquote of a classic, it’s very true for me, and it was true for my plan for data. If you want a small test, peek at it and yell out what I’m missing. (It’s ok, the people around you will understand.)
 
@@ -651,28 +721,28 @@ code-sample: true
 
     %p One of the awesome features about Firebase is that you can create the data in their UI to test it out before needing to hook up a form. (Kinda how you’d mock up with local JSON).
 
-    %p [Image of Firebase database UI]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/firebase-db-ui.jpg'}
 
     %p I added 2 to make sure a loop works.
 
-    %p [Image of Firebase data]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/firebase-objects.jpg'}
 
-    %h2 Getting State In Order
+    %h2#getting-state-in-order Getting State In Order
 
     %p I learned the hard way to make sure that you get state configured correctly in your app before trying to render or create a form to add the data. In this app, data will be sent directly to Firebase. The data is then retrieved from Firebase and pushed into the local state.
 
-    %h3 Retrieving Data from Firebase
+    %h3#retrieving-data-from-firebase Retrieving Data from Firebase
 
     %p
       Since I’m an authed user, Firebase will allow me to read and write to the database. Reading is done via a URL acting as an endpoint. In this case, it’s
       = succeed "." do
-        %code.code-inline.language-js https://pwa-preact-firebase.firebaseio.com/user01
+        %code.code-inline https://pwa-preact-firebase.firebaseio.com/user01
 
     %p
       I added
-      %code.code-inline.language-js exercises: null
-      to state so that it can be updated once the data is retrieved. Some of the URL is in the config, so I access it by piecing together bits with my UID. That doesn’t match the dummy data that I added, so I’m hard coded
-      %code.code-inline.language-js user01
+      %code.code-inline exercises: null
+      to state so that it can be updated once the data is retrieved. Some of the URL is in the config, so I access it by piecing together bits with my UID. That doesn’t match the dummy data that I added, so I hard-coded
+      %code.code-inline user01
       to test.
 
 %pre
@@ -697,20 +767,24 @@ code-sample: true
       Boom! Data coming from Firebase was now getting pushed directly into state, which would later determine what and when to render.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/765f2e221400d73ecabbd551d875289cf56c53a6"} commit
 
-    %p [Image of state]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/initial-state.jpg'}
 
-    %p
-      Speaking of rendering, this was where everything fell apart for me. I didn’t know what I didn’t know, so I thought I needed to manually update state. I
-      %a{:href => "https://stackoverflow.com/questions/44912152/how-to-push-child-arrays-into-items-in-an-array-to-local-react-state-via-a-fire/44912797#44912797"} asked on SO
-      and had an expensive first try of
-      %a{:href => "codementor.io"} Code Mentor
-      without resolution. I was stuck for like three days straight, and it made me stop trying to make this a “build with me” video. The issue was that I was supposed to just push state and output from it. It was Steve Kinney’s explanation of how Firebase stores data and why to use Lodash that finally made it click.
+    .stretch.stretch--a.mbm
+      %h4#a-learning-curveball A Learning Curveball
+      %p.mbxs
+        Speaking of rendering, this was where everything fell apart for me. I didn’t know what I didn’t know, so I thought I needed to manually update state. I
+        %a{:href => "https://stackoverflow.com/questions/44912152/how-to-push-child-arrays-into-items-in-an-array-to-local-react-state-via-a-fire/44912797#44912797"} asked on SO
+        and had an expensive first try of
+        %a{:href => "codementor.io"} Code Mentor
+        without resolution. I was stuck for like three days straight, and it made me stop trying to make this a “build with me” video. 
+        
+      %p.mbf The issue was that I was supposed to just push state and output from it, but I had been trying to build a nested local state. It was Steve Kinney’s explanation of how Firebase stores data (and why to use Lodash) that finally made it click.
 
-    %h3 Rendering Data from Firebase
+    %h3#rendering-data-from-firebase Rendering Data from Firebase
 
     %p
       Lodash’s map method works with nested objects like
-      %code.code-inline.language-js .map()
+      %code.code-inline .map()
       does for arrays. Installing and importing that was the first step to rendering data.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/802932a538e5a6b167c8e33e74f0b4991c106aa2"} commit
 
@@ -756,11 +830,11 @@ code-sample: true
 .row
   .cell.cell--s
 
-    %p [Image of titles]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/render-titles.jpg'}
 
     %p
       I knew that I was going to be adding a lot (well some) more functionality, so I wanted to push the HTML for an individual Exercise into its own component. That required passing the user, the key, and all of the attributes of an exercise in via props. This spread operator
-      %code.code-inline.language-js {...exercise}
+      %code.code-inline {...exercise}
       made that easy.
 
 %pre
@@ -775,7 +849,7 @@ code-sample: true
 
     %p
       To render them I added each of the ones that I wanted as constants before calling them in the HTML.
-      %a{:href => ""} commit
+      %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/d1bf95980bf1059dd726fac2f9297b186e38017c"} commit
 
 %pre
   %code.language-js
@@ -807,12 +881,12 @@ code-sample: true
 
     %p At this point, the skeleton was in place. I knew auth was working and I could retrieve and render data from Firebase. It was time to start adding data from the app.
 
-    %h2 Connecting a Form to Firebase
+    %h2#connecting-a-form-to-firebase Connecting a Form to Firebase
 
     %p
       The data (exercises) needed to be tied to an account and only able to be created by signed in users, so I added NewExercise and rendered it when there was a
       = succeed "." do
-        %code.code-inline.language-js currentUser
+        %code.code-inline currentUser
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/8fda67a4af19b00d6a1e495b4afc5909724ce05a"} commit
 
     %p To save this data, I needed to get all the values from the inputs, assign them to keys/values that match up with the data structure and send that structure to Firebase. It turned out that local state was great for handling the first part.
@@ -871,18 +945,18 @@ code-sample: true
       I had learned this technique from tutorials. A function is used as a listener (handleChange) for changes to an input. When it’s changed, local state is updated.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/68888063a715ac0d9f55fa4578e43bdfe6977321"} commit
 
-    %p [Image of name in state]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/dynamic-name.jpg'}
 
     %p
       With that working, I added the rest of the data inputs. This meant adding each as empty to state by default, assign them to a variable from state, and creating an input to listen for events.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/7765fd1ee3ecfeb55d077ad1ba561019266f788d"} commit
 
-    %p [Image of all new exercise items in state]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/state-attributes.jpg'}
 
     %p
       My favorite little bit (and something I had recently learned) was chaining all of the items into one
       = succeed "." do
-        %code.code-inline.language-js const
+        %code.code-inline const
 
 %pre
   %code.language-js
@@ -901,15 +975,15 @@ code-sample: true
 
     %p
       With the data in state, I now could use that and Firebase’s
-      %code.code-inline.language-js push
+      %code.code-inline push
       method to handle the submission of the form. The impressive thing about
-      %code.code-inline.language-js push
+      %code.code-inline push
       is that it creates a unique identifier, so I don’t have to things like “exercise01”. To do this, I needed to import the database and allow NewExercise to have access to the current user’s UID.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/1433ebed3c85cdc379efb175e2a5e453a5f682d8"} commit
 
     %p
       This
-      %code.code-inline.language-js handleSubmit
+      %code.code-inline handleSubmit
       function blocks the default behavior of the form and sends data to the URL specified, which is based on the UID of the current user.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/3531509bf6009ce12da25421d135b134ab7efdaf"} commit
 
@@ -935,9 +1009,9 @@ code-sample: true
 
     %p After submitting the form, I could see that the core data structure was the same, with the added benefit of unique keys.
 
-    %p [Image of data in Firebase]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/dynamic-ids.jpg'}
 
-    %h2 Adding to Existing Data in Firebase
+    %h2#adding-to-existing-data-in-firebase Adding to Existing Data in Firebase
 
     %p Now that an exercise existed, I needed to hook up the inputs to add sets to it. Since the bulk of the data that I needed to interact with was in ExerciseList, it seemed best to add the functions there and pass them into Exercise.
 
@@ -945,8 +1019,8 @@ code-sample: true
 
     %p
       I created a
-      %code.code-inline.language-js handleFailed
-      function with a slightly more complex URL to point to in Firebase. It looks up the user, then the setting of the current exercise, and pushes data to it and the function itself is passed into Exercise, which requires binding props in the constructor.
+      %code.code-inline handleFailed
+      function with a slightly more complex URL to point to in Firebase. It looks up the user, then the setting of the current exercise, and pushes data to it. The function itself is passed into Exercise, which requires binding props in the constructor.
 
 %pre
   %code.language-js
@@ -972,21 +1046,21 @@ code-sample: true
 
     %p
       The hard-coded
-      %code.code-inline.language-js user01
+      %code.code-inline user01
       that I had used for ensuring the FB data worked earlier came back into play here, so I had to update it to use the current user as well:
-
+      %code.code-inline const exercisesRef = database.ref( '/' + this.state.currentUser.uid + '/exercises' );
+      
     %p
-      %code> const exercisesRef = database.ref( '/' + this.state.currentUser.uid + '/exercises' );
-      \. Since I was looking for that UID too early, I had to move that within Firebase’s
-      %code.code-inline.language-js onAuthStateChanged
+      Since I was looking for that UID too early, I had to move that within Firebase’s
+      %code.code-inline onAuthStateChanged
       method.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/eaa4bf534cc47b70604f50ca3546df9a61bfa5b0"} commit
 
     %p With that in place, clicking the Fail button adds data with a unique identifier to the current exercise.
 
-    %p [Image of data in the exercise]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/fail-data.jpg'}
 
-    %h3 Adding Data Conditionally
+    %h3#adding-data-conditionally Adding Data Conditionally
 
     %p Adding data for completions required some logic, and I don’t love the organization of this function, but it works. The gist is that before sending the data, the total number of completions needs to be compared to the number of completions to “raise after.” Once the number of completions is 1 less than the “raise after,” it needs to push the completion data and update the setting by the “raise by” amount.
 
@@ -1073,18 +1147,19 @@ code-sample: true
     %p
       Similar to
       = succeed "," do
-        %code.code-inline.language-js handleFailed
+        %code.code-inline handleFailed
+      I then needed to pass a function into Exercise and call it on the button in there.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/5f84e9564c3f4c665c6b33b22d075106da13c873"} commit
 
     %p This part felt magical because it’s so fast. On clicking the “complete” button, it pushes the new setting. Because Preact is always listening for state changes, it grabs that new setting and renders it.
 
-    %p [Video of clicking and updating]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/setting-update.gif'}
 
     %p
       The final bit of functionality for this version was outputting an indicator that the data was updated. As a progress tracker, I wanted visual feedback of progress. To do this, I needed to use
-      %code.code-inline.language-js filter
+      %code.code-inline filter
       to only output completed sets and
-      %code.code-inline.language-js map
+      %code.code-inline map
       to loop over the filtered results.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/31d0d1ecf4f6b648047c36cc0b53cc294865eea4"} commit
 
@@ -1140,15 +1215,15 @@ code-sample: true
 .row
   .cell.cell--s
 
-    %p To verify it was working without opening Dev Tools, I rendered a list with the key, knowing that I’d make that more like “eye candy” with CSS.
+    %p To verify it was working without digging through Dev Tools, I rendered a list with the key, knowing that I’d make that more like “eye candy” with CSS.
 
-    %p [Image of keys in an exercise]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/render-keys.jpg'}
 
-    %h2 Adding Global Styles
+    %h2#adding-global-styles Adding Global Styles
 
     %p
       CSS in JS is new to me, and I don’t have a clear methodology yet. However, this was small enough that it doesn’t matter much. I made a
-      %code.code-inline.language-js variables.scss
+      %code.code-inline variables.scss
       for a few colors, and it felt like overkill for this, but something I would want to do for future projects.
 
 %pre
@@ -1167,78 +1242,95 @@ code-sample: true
       I then added a font from Google Fonts, reset font weights, and added default styles to inputs and buttons. I usually set a variable for spacing and use rems, but I stayed with pixels. Those styles got it headed in the right direction, and I wanted to try component-level styles for the rest.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2a46dc62d08169bc8ae66ab03fab99df6626c09f"} commit
 
-    %h2 Adding Component-Level Styles
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/base-styles.jpg'}
 
-    %h3 Individual Exercise
+    %h2#adding-component-level-styles Adding Component-Level Styles
+
+    %h3#individual-exercise Individual Exercise
 
     %p
       The individual exercise got the most work, and it felt a little weird to duplicate so many styles. I’m used to modifier classes, but it was also awesome to use basic names and have them get unique names automatically.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2f19737e4022e7f92732007d4af92b9bbed18ff8"} commit
 
-    %h3 New Exercise Form
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/individual-exercise.jpg'}
+
+    %h3#new-exercise-form New Exercise Form
 
     %p
       This form will have minimal use going forward, so I’ll likely tuck it away in a future version, but meanwhile, I wanted it to be a little more usable.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2f19737e4022e7f92732007d4af92b9bbed18ff8"} commit
 
-    %p [Image of form]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/new-exercise-form.jpg'}
 
-    %h3 Current User
+    %h3#current-user Current User
 
     %p
       This part is just for sanity’s sake, so I just gave it a touch of alignment.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/c411f534e2c8846f519ee4ee383914802b68c831"} commit
 
-    %h3 “Home”
+    %h3#home “Home”
 
     %p
       The signed out experience needed some love, and I set a max-width in case I ever bring my laptop to the gym. (JK)
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/a17d2d6ac207f3fa74c361a4aa410c20d9fabda3"} commit
 
-    %h3 Cleaning Up Some SCSS
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/full-screen.jpg'}
+
+    %h3#cleaning-up-some-scss Cleaning Up Some SCSS
 
     %p
       In my original version, I was designing in the browser, so the CSS was being written on the fly. In this, I went through and applied the variables just so that I know it can be done.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2f5b98f393e39fc20022abd155d502192d7b4ca3"} commit
 
-    %h2 Save to Home Assets
+    %h2#save-to-home-assets Save to Home Assets
 
     %p
       This web app will be saved on my phone, and there are some settings and icons that can be displayed that make it feel native. I didn’t put much time into it but made the colors match and put an icon of some weights. I have some ideas for v2 that will make this more fun.
       %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/f0b434e760a5d93555236296eebfb867b4b312b5"} commit
 
-    %h2 Deploying to Firebase
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/pixel.jpg'}
+
+    %h2#deploying-to-firebase Deploying to Firebase
 
     %p
       Firebase is perfect for side projects like this. In addition to all of the other features, hosting via HTTPS is part of the
       = succeed "." do
         %a{:href => "https://firebase.google.com/pricing/"} free plan
+      Their CLI makes it seamless, as well. Don't be like me and get so excited about it that you forget to build your app with Preact and deploy nothing, which is what I did just now.
 
-    %h2 Ok, Build First, Then Deploy
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/firebase-cli.jpg'}
+
+    %h2#build-first-then-deploy Ok, Build First, Then Deploy
 
     %p
-      After running a build with Preact is
-      %code.code-inline.language-js preact build
-      and I saw that I had done something (used lodash) that added a lot of weight to my app. That will have to wait for later.
+      After running a build with 
+      %code.code-inline preact build
+      I saw that I had done something (probably the combo of Firebase and lodash) that added a lot of weight to my app. That will have to wait for later.
 
-    %h2 Lighthouse Test
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/build-warning.jpg'}
+
+    %h2#lighthouse-test Lighthouse Test
 
     %p The results of this test are why the CLI was valuable. I didn’t have to do any of the service worker and manifest setup, so I have a smooth 100. If you haven’t done that stuff before, you should try it manually, though.
 
-    %p [Image of Test]
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/pwa-score.jpg'}
 
-    %p The performance dropped over 10 points from the default, and I’ll have to figure out what is causing that. It won’t matter to me for this app, but I want to learn how to troubleshoot it. My gut says it’s a combo of the font request, the FB data request, and lodash.
+    %p The performance dropped over 10 points from the default, and I’ll have to figure out what is causing that. It won’t matter to me for this app, but I want to learn how to troubleshoot it. My gut says it’s a combo of the font request, the Firebase data request, and lodash.
 
-    %h2 Make It Better
+    %img.stretch.stretch--b.mbs{ src: '/assets/images/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/perf-score.jpg'}
 
-    %p At this point, it is usable, but not a great experience. When you auth, there is some downtime as it transitions and it feels janky. Once it’s loaded, it’s good, though. Goals for v2 improvements:
-    %ul
-      %li Fix the console errors when you are signed out
-      %li Over 80 in Lighthouse perf score
-      %li Loading animation with a smooth transition from sign in and on load
+    %h2#make-it-better Make It Better
 
-    %p I also want to add some reporting because I’m all about that data, that data. It’d be overkill to do full graphs, but I want some sparklines that show when I struggle to advance a setting and counts of the total number exercises done.
+    %p At this point, it is usable, but not an experience I'd ship to others. When you auth, there is some downtime as it transitions, which feels janky. Once it’s loaded, it’s good, though. Goals for v2 improvements:
+    
+    %ul.list
+      %li.mbf Fix the console errors when you are signed out
+      %li.mbf Over 80 in Lighthouse perf score
+      %li.mbf Loading animation with a smooth transition from sign in and on load
+      %li Visual indicator for failures (they save with no feedback)
 
-    %h2 Thank You
+    %p I also want to add some reporting because I’m all about that data, that data. It’d be overkill to do full graphs, but I want some sparklines that show when I struggle to advance a setting and counts of the total number of exercises done.
+
+    %h2#thank-you Thank You
 
     %p If you made it this far, wow, thank you. When you’ve had a nice long rest, I’d love to know that you thought.
