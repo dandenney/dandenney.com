@@ -26,20 +26,12 @@ code-sample: true
     border: 0
     box-shadow: none
 
-  table
-    border-collapse: collapse
-    width: 100%
-
-  th
-    background: #f1f1f1
-    border: 1px solid #f1f1f1
-    font-weight: 600
-    padding: 0 4px
-    text-align: left
-
-  td
-    border: 1px solid #f1f1f1
-    padding: 0 4px
+  .commit
+    background: #f5f5f5
+    cursor: pointer
+    font-size: 16px
+    display: inline-block
+    padding: 0 16px
 
   strong
     font-weight: 600
@@ -93,7 +85,7 @@ code-sample: true
 %p [Insert notes or screenshots of notes]
 
 %p
-  To allow for continually working on my version, I’m sharing the steps as I recreate the app in a
+  To allow for c.commitontinually working on my version, I’m sharing the steps as I recreate the app in a
   %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase"} repo
   specifically for this post.
 
@@ -110,13 +102,13 @@ code-sample: true
 
 %p
   My first step is always creating a repo via GitHub’s UI. It’s a personal preference, but it adds a step when you’re using a generator. That’s still preferable to me vs. initializing from the command line after generating.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/b3692cb0267ed7f1a1075ded896f58a5be39aa1f"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/b3692cb0267ed7f1a1075ded896f58a5be39aa1f"} commit
 
 %p
   Sass support requires a flag, so after installing the CLI, I ran
   %code preact create app --sass
   and then dragged the files out to my main folder.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/ba21e66db288a85e0ad8910f0e312b4347b7b937"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/ba21e66db288a85e0ad8910f0e312b4347b7b937"} commit
 
 %p A known fixed issue
 
@@ -126,7 +118,7 @@ code-sample: true
   files. In getting the link to the issue, I found that it was
   %a{:href => "https://github.com/developit/preact-cli/issues/32"} closed and fixed
   with 1.4, so I updated and regenerated.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/89b5c0fc507980aa66fda4805c1da269d33f959a"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/89b5c0fc507980aa66fda4805c1da269d33f959a"} commit
 
 %h2 It’s alive!
 
@@ -158,8 +150,8 @@ code-sample: true
   = succeed "." do
     %a{:href => "https://twitter.com/stevekinney"} Steve Kinney
   = succeed ")," do
-    %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/be29e2abdec3020c1d3351eeebb5b2f4644d70ff"} commit
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/e906d1cf35032992377f4da9dee4094a43b7d99c"} commit
+    %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/be29e2abdec3020c1d3351eeebb5b2f4644d70ff"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/e906d1cf35032992377f4da9dee4094a43b7d99c"} commit
 
 %p I’m only using Google Auth because it doesn’t require an API key and I’m always logged in on my phone. There are other options (Twitter, FB, email/password) as well.
 
@@ -216,7 +208,7 @@ code-sample: true
   %code import ExercisesList from '../../components/ExercisesList';
 
 %p
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/9959c25db94cb7827acfc73e13f213c50e5dea82"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/9959c25db94cb7827acfc73e13f213c50e5dea82"} commit
 
 %h2 You Shall Not Get Data
 
@@ -269,7 +261,7 @@ code-sample: true
 
 %p
   I’m very visual, so my next step was importing the SignIn component to see it on the page. Because SignIn isn’t directly related to ExercisesList, I made it a sibling component. I don’t see a need to use it any other way yet, but it didn’t feel right nesting it in the folder structure. I am calling it from ExercisesList, though, replacing the placeholder copy.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/3d8b1b394baf61052b9e2ed870601e8df1d3c933"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/3d8b1b394baf61052b9e2ed870601e8df1d3c933"} commit
 
 %p [Image of app with button]
 
@@ -284,7 +276,7 @@ code-sample: true
 
 %p
   The default header in the default Preact-CLI template (there are other options) is awesome for getting started, but there won’t be a header in this app until v2, if ever. So, I killed it.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/88a71fbb809d77e3e000eba71c64b3f6c732c49d"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/88a71fbb809d77e3e000eba71c64b3f6c732c49d"} commit
 
 %p [Image no header]
 
@@ -294,7 +286,7 @@ code-sample: true
 
 %p
   At this point, I realized ExercisesList wasn’t a great name for the primary container since it also contained SignIn. So, I swapped it for Exercises.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/12ca272fa08c366b9448b0060211f16032c586c2"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/12ca272fa08c366b9448b0060211f16032c586c2"} commit
 
 %h3 Adding an Exercises List for Reals
 
@@ -327,7 +319,7 @@ code-sample: true
 
 %p
   I left the constructor cause I knew I’d need it later and added a placeholder list, simulating the map that I’ll need eventually. Importing that into Exercises made this feel like I was finally getting somewhere.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/7341165085cd6341b890e9cd8b122fe90c7e6f98"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/7341165085cd6341b890e9cd8b122fe90c7e6f98"} commit
 
 %p [Image of Sign In Button and Exercise list]
 
@@ -376,7 +368,7 @@ code-sample: true
   Viewing that in the React Developer Tools confirmed that it worked and that I had messed up. When I refactored, I forgot to assign a name to the class in ExerciseList, so it was rendering a
   %code <_default>
   component. Fixed that.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/ef267755b9ebaed6f5153d51f612aa7217bd8883"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/ef267755b9ebaed6f5153d51f612aa7217bd8883"} commit
 
 %h4 Adding a LifeCycle Event
 
@@ -386,7 +378,7 @@ code-sample: true
   to listen for Firebase auth methods. I also had to bring in
   %code auth
   from Firebase.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/d44ca9c668cc2ded666556b6a480ff067ec009ac"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/d44ca9c668cc2ded666556b6a480ff067ec009ac"} commit
 
 %p
   At this point, clicking the Sign In button changes the state of
@@ -436,11 +428,11 @@ code-sample: true
 
 %p
   While that would eventually be enough to complete the actions that I’ll want, it seemed like adding an avatar and a sign out button was in order. So, I added a CurrentUser component with some placeholders to start.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/67b99cd73b8ebe575bde7e7ac9926665febac5d1"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/67b99cd73b8ebe575bde7e7ac9926665febac5d1"} commit
 
 %p
   Since this was an additional component within Exercises, I needed to wrap them in a single element (a JSX thing).
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/23227651e423f18e462b2776b4c2924409aaf35f"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/23227651e423f18e462b2776b4c2924409aaf35f"} commit
 
 %h4 Passing Data with Props
 
@@ -450,7 +442,7 @@ code-sample: true
   state. (I know the naming is getting confusing.) Rather than declare and update state within CurrentUser, I passed it in via props as
   = succeed "." do
     %code user
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/9684a229780fbb424b9dc4d7cbccd471221df579"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/9684a229780fbb424b9dc4d7cbccd471221df579"} commit
 
 %p [Image of props with null]
 
@@ -458,7 +450,7 @@ code-sample: true
   It was at this point that I realized I had messed up. State had a value for currentUser, but it was passing
   %code null
   to props. I can’t explain why, but I put the componentDidMount code in ExercisesList instead of Exercises. Fixing that made it so that the props was getting my user object.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/c5280a88a536f9801c5e4cb370e82eb48103c6d1"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/c5280a88a536f9801c5e4cb370e82eb48103c6d1"} commit
 
 %p
   I also had explicitly rebound the
@@ -468,7 +460,7 @@ code-sample: true
   instead of
   = succeed "." do
     %code const { currentUser } = this.state;
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/f6d7c96b7343e1270eceee90a0628584a1a83544"} fixed
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/f6d7c96b7343e1270eceee90a0628584a1a83544"} fixed
 
 %p [Image of props with user]
 
@@ -487,7 +479,7 @@ code-sample: true
 
 %p
   Preact passes props to the render functions, so I shortened up the attributes and added them to the image.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/ba9f3e2bee1f716f6ca597c7246049686e184fdd"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/ba9f3e2bee1f716f6ca597c7246049686e184fdd"} commit
 
 %pre.stretch.stretch--b
   %code.language-js
@@ -635,7 +627,7 @@ code-sample: true
 
 %p
   Boom! Data coming from Firebase was now getting pushed directly into state, which would later determine what and when to render.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/765f2e221400d73ecabbd551d875289cf56c53a6"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/765f2e221400d73ecabbd551d875289cf56c53a6"} commit
 
 %p [Image of state]
 
@@ -652,7 +644,7 @@ code-sample: true
   Lodash’s map method works with nested objects like
   %code .map()
   does for arrays. Installing and importing that was the first step to rendering data.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/802932a538e5a6b167c8e33e74f0b4991c106aa2"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/802932a538e5a6b167c8e33e74f0b4991c106aa2"} commit
 
 %p Since I wanted to loop over a user and their exercises, I needed both of those accessible within ExercisesList. I updated the render function in Exercises to include exercises and then assigned both as props.
 
@@ -676,7 +668,7 @@ code-sample: true
 
 %p
   To ensure this worked, I rendered a single attribute in ExercisesList.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/d202ed355e4c59bbbaca034eba82ccbf5a74b679"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/d202ed355e4c59bbbaca034eba82ccbf5a74b679"} commit
 
 %pre.stretch.stretch--b
   %code.language-js
@@ -741,7 +733,7 @@ code-sample: true
   The data (exercises) needed to be tied to an account and only able to be created by signed in users, so I added NewExercise and rendered it when there was a
   = succeed "." do
     %code currentUser
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/8fda67a4af19b00d6a1e495b4afc5909724ce05a"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/8fda67a4af19b00d6a1e495b4afc5909724ce05a"} commit
 
 %p To save this data, I needed to get all the values from the inputs, assign them to keys/values that match up with the data structure and send that structure to Firebase. It turned out that local state was great for handling the first part.
 
@@ -794,13 +786,13 @@ code-sample: true
 
 %p
   I had learned this technique from tutorials. A function is used as a listener (handleChange) for changes to an input. When it’s changed, local state is updated.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/68888063a715ac0d9f55fa4578e43bdfe6977321"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/68888063a715ac0d9f55fa4578e43bdfe6977321"} commit
 
 %p [Image of name in state]
 
 %p
   With that working, I added the rest of the data inputs. This meant adding each as empty to state by default, assign them to a variable from state, and creating an input to listen for events.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/7765fd1ee3ecfeb55d077ad1ba561019266f788d"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/7765fd1ee3ecfeb55d077ad1ba561019266f788d"} commit
 
 %p [Image of all new exercise items in state]
 
@@ -827,13 +819,13 @@ code-sample: true
   method to handle the submission of the form. The impressive thing about
   %code push
   is that it creates a unique identifier, so I don’t have to things like “exercise01”. To do this, I needed to import the database and allow NewExercise to have access to the current user’s UID.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/1433ebed3c85cdc379efb175e2a5e453a5f682d8"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/1433ebed3c85cdc379efb175e2a5e453a5f682d8"} commit
 
 %p
   This
   %code handleSubmit
   function blocks the default behavior of the form and sends data to the URL specified, which is based on the UID of the current user.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/3531509bf6009ce12da25421d135b134ab7efdaf"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/3531509bf6009ce12da25421d135b134ab7efdaf"} commit
 
 %pre.stretch.stretch--b
   %code.language-js
@@ -896,7 +888,7 @@ code-sample: true
   \. Since I was looking for that UID too early, I had to move that within Firebase’s
   %code onAuthStateChanged
   method.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/eaa4bf534cc47b70604f50ca3546df9a61bfa5b0"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/eaa4bf534cc47b70604f50ca3546df9a61bfa5b0"} commit
 
 %p With that in place, clicking the Fail button adds data with a unique identifier to the current exercise.
 
@@ -978,7 +970,7 @@ code-sample: true
   Similar to
   = succeed "," do
     %code handleFailed
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/5f84e9564c3f4c665c6b33b22d075106da13c873"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/5f84e9564c3f4c665c6b33b22d075106da13c873"} commit
 
 %p This part felt magical because it’s so fast. On clicking the “complete” button, it pushes the new setting. Because Preact is always listening for state changes, it grabs that new setting and renders it.
 
@@ -990,7 +982,7 @@ code-sample: true
   to only output completed sets and
   %code map
   to loop over the filtered results.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/31d0d1ecf4f6b648047c36cc0b53cc294865eea4"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/31d0d1ecf4f6b648047c36cc0b53cc294865eea4"} commit
 
 %pre.stretch.stretch--b
   %code.language-js
@@ -1063,7 +1055,7 @@ code-sample: true
 
 %p
   I then added a font from Google Fonts, reset font weights, and added default styles to inputs and buttons. I usually set a variable for spacing and use rems, but I stayed with pixels. Those styles got it headed in the right direction, and I wanted to try component-level styles for the rest.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2a46dc62d08169bc8ae66ab03fab99df6626c09f"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2a46dc62d08169bc8ae66ab03fab99df6626c09f"} commit
 
 %h2 Adding Component-Level Styles
 
@@ -1071,13 +1063,13 @@ code-sample: true
 
 %p
   The individual exercise got the most work, and it felt a little weird to duplicate so many styles. I’m used to modifier classes, but it was also awesome to use basic names and have them get unique names automatically.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2f19737e4022e7f92732007d4af92b9bbed18ff8"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2f19737e4022e7f92732007d4af92b9bbed18ff8"} commit
 
 %h3 New Exercise Form
 
 %p
   This form will have minimal use going forward, so I’ll likely tuck it away in a future version, but meanwhile, I wanted it to be a little more usable.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2f19737e4022e7f92732007d4af92b9bbed18ff8"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2f19737e4022e7f92732007d4af92b9bbed18ff8"} commit
 
 %p [Image of form]
 
@@ -1085,25 +1077,25 @@ code-sample: true
 
 %p
   This part is just for sanity’s sake, so I just gave it a touch of alignment.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/c411f534e2c8846f519ee4ee383914802b68c831"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/c411f534e2c8846f519ee4ee383914802b68c831"} commit
 
 %h3 “Home”
 
 %p
   The signed out experience needed some love, and I set a max-width in case I ever bring my laptop to the gym. (JK)
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/a17d2d6ac207f3fa74c361a4aa410c20d9fabda3"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/a17d2d6ac207f3fa74c361a4aa410c20d9fabda3"} commit
 
 %h3 Cleaning Up Some SCSS
 
 %p
   In my original version, I was designing in the browser, so the CSS was being written on the fly. In this, I went through and applied the variables just so that I know it can be done.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2f5b98f393e39fc20022abd155d502192d7b4ca3"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/2f5b98f393e39fc20022abd155d502192d7b4ca3"} commit
 
 %h2 Save to Home Assets
 
 %p
   This web app will be saved on my phone, and there are some settings and icons that can be displayed that make it feel native. I didn’t put much time into it but made the colors match and put an icon of some weights. I have some ideas for v2 that will make this more fun.
-  %a{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/f0b434e760a5d93555236296eebfb867b4b312b5"} commit
+  %a.commit{:href => "https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/f0b434e760a5d93555236296eebfb867b4b312b5"} commit
 
 %h2 Deploying to Firebase
 
