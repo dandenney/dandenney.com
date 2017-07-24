@@ -666,22 +666,19 @@ code-sample: true
 
     %p Knowing that Firebase stores data in JS objects, I imagined what the structure for the data would be in the planning portion of the project. I needed a series of exercises, which would have a name and a settingType. Those would have sessions with a setting and a flippable completed key. Each session would have an individual set with a timestamp and a completed key. I came up with:
 
-%pre
-  %code.language-markdown
-    :preserve
-      - exercises
-        - exercise
-          - name
-          - settingType
-          - sessions
-            - setting
-            - completed
-            - sets
-              - timestamp
-              - completed
-
-.row
-  .cell.cell--s
+    %pre
+      %code.language-markdown
+        :preserve
+          - exercises
+            - exercise
+              - name
+              - settingType
+              - sessions
+                - setting
+                - completed
+                - sets
+                  - timestamp
+                  - completed
 
     %h3#no-plan-survives-contact-with-code No Plan Survives Contact with Code
 
@@ -699,22 +696,22 @@ code-sample: true
 
     %p The timestamp is unnecessary for the basic functionality, but I knew that I’d want to graph these in a future version and wanted to be sure to have the data. I ended up with:
 
-%pre
-  %code.language-markdown
-    :preserve
-      - user
-        - exercise
-          - name
-          - setting
-          - settingType
-          - reps
-          - raiseAfter
-          - raiseBy
-          - sets
-            - set
+    %pre
+      %code.language-markdown
+        :preserve
+          - user
+            - exercise
+              - name
               - setting
-              - completed
-              - completedDate
+              - settingType
+              - reps
+              - raiseAfter
+              - raiseBy
+              - sets
+                - set
+                  - setting
+                  - completed
+                  - completedDate
 
 .row
   .cell.cell--s
