@@ -5,7 +5,7 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2017-08-31T20:00:00-04:00</updated>
+  <updated>2017-09-10T02:00:00+02:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
@@ -13,8 +13,8 @@
     <title>A New Adventure</title>
     <link rel="alternate" href="http://blog.url.com/posts/general/a-new-adventure"/>
     <id>http://blog.url.com/posts/general/a-new-adventure</id>
-    <published>2017-08-31T20:00:00-04:00</published>
-    <updated>2017-09-09T12:48:18-04:00</updated>
+    <published>2017-09-10T02:00:00+02:00</published>
+    <updated>2017-09-10T18:53:17+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -210,8 +210,8 @@ In this downtime, I've learned a lot. I spent some time learning Preact, dove fu
     <title>Building a Small PWA with Preact and Firebase</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase"/>
     <id>http://blog.url.com/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase</id>
-    <published>2017-07-22T20:00:00-04:00</published>
-    <updated>2017-07-24T13:49:31-04:00</updated>
+    <published>2017-07-23T02:00:00+02:00</published>
+    <updated>2017-07-24T19:49:31+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -985,8 +985,8 @@ I saw that I had done something (probably the combo of Firebase and lodash) that
     <title>Turning the Page</title>
     <link rel="alternate" href="http://blog.url.com/posts/general/turning-the-page"/>
     <id>http://blog.url.com/posts/general/turning-the-page</id>
-    <published>2017-07-01T20:00:00-04:00</published>
-    <updated>2017-07-02T19:54:36-04:00</updated>
+    <published>2017-07-02T02:00:00+02:00</published>
+    <updated>2017-07-03T01:54:36+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1068,8 +1068,8 @@ I hope that will lead me to what's next...
     <title>Stumbling Through Learning About Event Listeners</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/stumbling-through-learning-about-event-listeners"/>
     <id>http://blog.url.com/posts/front-end-dev/stumbling-through-learning-about-event-listeners</id>
-    <published>2016-09-14T20:00:00-04:00</published>
-    <updated>2017-07-01T14:35:59-04:00</updated>
+    <published>2016-09-15T02:00:00+02:00</published>
+    <updated>2017-07-01T20:35:59+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1158,8 +1158,8 @@ In this example, if the second select value is greater than the first, then send
     <title>I'm Learning How to Solve Problems with JavaScript</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving"/>
     <id>http://blog.url.com/posts/front-end-dev/learning-javascript-problem-solving</id>
-    <published>2016-08-07T20:00:00-04:00</published>
-    <updated>2017-07-01T14:35:59-04:00</updated>
+    <published>2016-08-08T02:00:00+02:00</published>
+    <updated>2017-07-01T20:35:59+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1296,8 +1296,8 @@ If there's something in here that you know I could do better, please let me know
     <title>Reducing HTML Email Code</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/reducing-html-email-code"/>
     <id>http://blog.url.com/posts/front-end-dev/reducing-html-email-code</id>
-    <published>2016-07-15T20:00:00-04:00</published>
-    <updated>2017-07-01T14:35:59-04:00</updated>
+    <published>2016-07-16T02:00:00+02:00</published>
+    <updated>2017-07-01T20:35:59+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
