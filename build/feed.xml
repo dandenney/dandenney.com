@@ -5,10 +5,207 @@
   <id>http://blog.url.com/posts</id>
   <link href="http://blog.url.com/posts"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2017-07-22T20:00:00-04:00</updated>
+  <updated>2017-08-31T20:00:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>A New Adventure</title>
+    <link rel="alternate" href="http://blog.url.com/posts/general/a-new-adventure"/>
+    <id>http://blog.url.com/posts/general/a-new-adventure</id>
+    <published>2017-08-31T20:00:00-04:00</published>
+    <updated>2017-09-09T12:48:18-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;style&gt;
+  /* line 1, (__TEMPLATE__) */
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: calc(100% + 91px);
+    background-color: #2c9cc0;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    top: -91px; }
+  
+  /* line 11, (__TEMPLATE__) */
+  section {
+    position: relative;
+    z-index: 1; }
+  
+  /* line 14, (__TEMPLATE__) */
+  article {
+    background: #ffffff;
+    padding: 20px; }
+  
+  /* line 17, (__TEMPLATE__) */
+  #disqus_thread {
+    background: #ffffff;
+    padding: 20px; }
+  
+  /* line 20, (__TEMPLATE__) */
+  header {
+    position: relative;
+    z-index: 1; }
+&lt;/style&gt;
+&lt;div id='particles-js'&gt;&lt;/div&gt;
+&lt;section class='row nudge post-wrap ptl'&gt;
+&lt;div class='cell'&gt;
+&lt;article&gt;
+&lt;div class='cell cell--s'&gt;
+&lt;h1 class='mtm'&gt;A New Adventure&lt;/h1&gt;
+&lt;p&gt;
+Backstory: After leaving my job at the end of June, I started with a little vacation time, in California and upstate New York for family weddings. Since then, I've had the benefit of working with the awesome folks at &lt;a href='http://www.bridgeandbloom.com/'&gt;Bridge + Bloom&lt;/a&gt; on a project. If you're a freelance developer, I can't recommend them enough. They do fantastic design work, they're fun people, and they're highly organized.
+&lt;/p&gt;
+&lt;h2&gt;And now...&lt;/h2&gt;
+&lt;p&gt;
+I've joined the team at &lt;a href='https://www.datacamp.com/'&gt;DataCamp&lt;/a&gt;! As you're reading this, I'm in Belgium starting two weeks of working with the engineering team in their Leuven office. I'm pretty excited, for lots of reasons.
+&lt;/p&gt;
+&lt;p&gt;
+As a "Lead Front End Web Developer," I get to stay focused on the part of the web that I love the most while working in very familiar systems. Because they're also in the online education space, there are a lot of crossovers, and the focus on data science is exciting. A handful of my side projects in the past couple of years have been around data tracking and visualization, so it's a field that I'm intrigued by. I'm eager to learn more about how people are using DataCamp in their work.
+&lt;/p&gt;
+&lt;p&gt;
+They align perfectly with the things that are important to me: working with good people towards a goal, building things for the web that benefit people, and sharing knowledge. Throughout the interview process, everyone was so kind and communicated so well. I'm looking forward to getting to know everyone.
+&lt;/p&gt;
+&lt;p&gt;
+Did I mention they have an office in Belgium? If you didn't know, Belgium is the home of humanity's greatest invention: Delerium Tremens. I'll certainly be celebrating this first day with a glass of that. After onboarding, I'll still be remote, but I am looking forward to many opportunities to spend time with the team here, in NYC, and on our two retreats per year.
+&lt;/p&gt;
+&lt;h2&gt;So, everything is Rainbows and Sunshine?&lt;/h2&gt;
+&lt;p&gt;
+No way! Working with a new group of people on new projects is always intimidating. I have at least my fair share of Imposter Syndrome and who knows, maybe this is when I get found out.
+&lt;/p&gt;
+&lt;p&gt;
+What I do know is that this team wants me to succeed and they're going to get my best. I also know that I have this wonderful community that shares information about their work, helping to lift me up. Finally, I have plenty of friends that I can reach out to who will share their experiences with challenges that I find. If you're reading this from my tweet, you're one of them. Thank you to all of you who reached out, too!
+&lt;/p&gt;
+&lt;p&gt;
+I'd like to give an extra thank you to Christopher Schmitt for having me &lt;a href='https://goodstuff.fm/nbsp/127'&gt;on Non-Breaking Space&lt;/a&gt; to chat. That convo helped reinforce how much I enjoyed the visual portions of front-end development.
+&lt;/p&gt;
+&lt;h2&gt;What I've Learned Recently&lt;/h2&gt;
+&lt;p&gt;
+In this downtime, I've learned a lot. I spent some time learning Preact, dove further into React, built two things with Craft CMS, and soft-launched a side project. Most importantly, though, I learned that if you continue to work hard, be kind, and share your knowledge, the right people notice. Results may vary, but I can't recommend that workflow enough.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;script src="assets/javascripts/posts/a-new-adventure/particles.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 0.5,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+&lt;/script&gt;
+</content>
+  </entry>
   <entry>
     <title>Building a Small PWA with Preact and Firebase</title>
     <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase"/>
@@ -1296,234 +1493,6 @@ My alternative takes all of these into play and I tried to do them in a way that
 &lt;/p&gt;
 &lt;div class='stretch stretch--b'&gt;
 &lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="b896771"&gt;&lt;/script&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Rethinking My eMMail Workflow</title>
-    <link rel="alternate" href="http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow"/>
-    <id>http://blog.url.com/posts/front-end-dev/rethinking-my-emmail-workflow</id>
-    <published>2016-06-29T20:00:00-04:00</published>
-    <updated>2017-07-01T14:35:59-04:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;style&gt;
-  /* line 1, (__TEMPLATE__) */
-  * {
-    box-sizing: border-box; }
-  
-  /* line 4, (__TEMPLATE__) */
-  .intro,
-  .post-wrap,
-  .outro {
-    background: #f6f7f8; }
-  
-  /* line 9, (__TEMPLATE__) */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: #616f7d; }
-  
-  /* line 16, (__TEMPLATE__) */
-  blockquote {
-    background: #fdfdfd;
-    border: 1px solid #eaebec;
-    padding: 20px; }
-    /* line 20, (__TEMPLATE__) */
-    blockquote a {
-      word-break: break-all; }
-  
-  /* line 23, (__TEMPLATE__) */
-  .intro {
-    overflow: hidden;
-    position: relative; }
-    /* line 27, (__TEMPLATE__) */
-    .intro .mask-tri {
-      position: relative;
-      z-index: 1; }
-    /* line 31, (__TEMPLATE__) */
-    .intro:after {
-      bottom: 40%;
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-      content: "";
-      left: -25%;
-      position: absolute;
-      right: -25%;
-      transform: rotate(-7deg);
-      top: 0; }
-  
-  /* line 41, (__TEMPLATE__) */
-  .outro {
-    overflow: hidden;
-    padding-top: 5px;
-    position: relative;
-    z-index: 1; }
-    /* line 47, (__TEMPLATE__) */
-    .outro .mask-tri-bottom {
-      margin-bottom: -15px;
-      position: relative;
-      z-index: 2; }
-    /* line 52, (__TEMPLATE__) */
-    .outro:before {
-      bottom: 0;
-      box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.05);
-      content: "";
-      left: 0;
-      position: absolute;
-      right: -25%;
-      transform: rotate(-7.5deg);
-      top: 34%;
-      z-index: 1; }
-  
-  /* line 63, (__TEMPLATE__) */
-  article a {
-    color: #e8703d;
-    transition: color 0.3s linear; }
-    /* line 67, (__TEMPLATE__) */
-    article a:hover {
-      color: #ba5a31; }
-    /* line 70, (__TEMPLATE__) */
-    article a::before, article a::after {
-      background: #dfe2e5; }
-  
-  /* line 74, (__TEMPLATE__) */
-  .img-stretch {
-    border: 10px solid #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    position: relative; }
-  
-  /* line 79, (__TEMPLATE__) */
-  .embed-stretch {
-    position: relative; }
-  
-  @media screen and (min-width: 840px) {
-    /* line 86, (__TEMPLATE__) */
-    .intro:after {
-      bottom: 35%;
-      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
-  
-    /* line 90, (__TEMPLATE__) */
-    .outro {
-      padding-top: 50px; }
-      /* line 93, (__TEMPLATE__) */
-      .outro:before {
-        bottom: 0;
-        box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.05); }
-  
-    /* line 97, (__TEMPLATE__) */
-    .nudge {
-      margin-top: -3.5em; }
-  
-    /* line 100, (__TEMPLATE__) */
-    .img-stretch {
-      left: -50px;
-      max-width: 800px; }
-  
-    /* line 104, (__TEMPLATE__) */
-    .embed-stretch {
-      left: -75px;
-      width: 900px; } }
-&lt;/style&gt;
-&lt;div class='intro'&gt;
-&lt;svg class="mask-tri" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1002 216"&gt;&lt;defs&gt;&lt;clipPath id="clip-path" transform="translate(2)"&gt;&lt;polygon points="-1 0 -1 216 1001 85 1001 0 -1 0" style="fill:none"/&gt;&lt;/clipPath&gt;&lt;/defs&gt;&lt;title&gt;rethinking&lt;/title&gt;&lt;polygon points="0 0 0 216 1002 85 1002 0 0 0" style="fill:#fff"/&gt;&lt;g style="clip-path:url(#clip-path)"&gt;&lt;text transform="translate(145 136.67)" style="font-size:118.29645538330078px;fill:#616f7d;font-family:'canada-type-gibson' serif;font-weight:700"&gt;RETHINKING&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;
-&lt;/div&gt;
-&lt;section class='row nudge post-wrap'&gt;
-&lt;div class='cell cell--s'&gt;
-&lt;article&gt;
-&lt;svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 669.63 72.74"&gt;&lt;title&gt;my-emmail-workflow&lt;/title&gt;&lt;text transform="translate(0 58.43)" style="font-size:63.5px;fill:#616f7d;font-family:'canada-type-gibson' serif;font-weight:700"&gt;My eMMail Workflow&lt;/text&gt;&lt;/svg&gt;
-&lt;p&gt;
-In 2015, I was lucky enough to get to share &lt;a href="https://speakerdeck.com/dandenney/the-organized-chaos-of-email-creation"&gt;The Organized Chaos of Email&lt;/a&gt; Creation at &lt;a href="https://litmus.com/conference"&gt;The Email Design Conference&lt;/a&gt;. While I was on stage talking about an offline workflow, people from the Litmus team were in the lobby demoing a game-changer: live client previews built into &lt;a href="https://litmus.com/email-builder"&gt;Builder&lt;/a&gt;.
-&lt;/p&gt;
-&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-live-previews.png' width='800'&gt;
-&lt;p class='mts'&gt;
-It instantly became a part of my workflow and since then I don't send an email without it. (Well I have, but it ended up borked in Gmail, sooo.) In my talk, I touted the benefits of building offline in a Middleman app I dubbed &lt;a href="https://github.com/dandenney/eMMail"&gt;eMMail&lt;/a&gt;. The perks of doing so were reusable variables, partials, and custom reporting. Throughout the year, the Litmus folks have added a couple of those into Builder as well.
-&lt;/p&gt;
-&lt;p&gt;
-Variables have other uses but are super handy for setting analytics trackers throughout your links, &lt;a href="https://litmus.com/help/testing/litmus-builder-guide/#tracking-manager"&gt;which they added&lt;/a&gt;. Plus, the on-the-fly CSS inlining removes a lot of the need for variables if you're using classes.
-&lt;/p&gt;
-&lt;p&gt;
-I had access to the Partials beta and they're now live for everyone and working well. This was the big one for me as I maintain 40+ transactional emails. When something needs to change in our header or footer, it has to change in every file. This was the primary reason I was using Middleman and it's in Builder now.
-&lt;/p&gt;
-&lt;p&gt;
-I doubt they'll tackle the reporting bit anytime soon since that's more related to your ESP, but I hit a wall with mine. I want historical data to show performance of an email over time and that isn't straight-forward when hijacking the frontmatter in Middleman. It's super easy and readable in a Google Docs spreadsheet, though.
-&lt;/p&gt;
-&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-spreadsheet.png' width='800'&gt;
-&lt;h2 class='mtm'&gt;I'm Out of Excuses&lt;/h2&gt;
-&lt;p&gt;
-At this point, I don't have any excuses left to be building/maintaining my own system. Every email I create now ends up in Builder, so it makes sense to just start there. There's only a few small trade-offs: no Haml/Sass, no global variables, and I have to be online to build.
-&lt;/p&gt;
-&lt;p&gt;
-I've been debating dropping Haml and Sass since it's hard to share my code with others who don't use them. Variables can mostly be handled by classes and snippets and I've built a handful of emails without them already. I do a fair amount of traveling so the online bit will require a little bit of maneuvering, but I already have it covered in the flow adjustments.
-&lt;/p&gt;
-&lt;h2 class='mtm'&gt;My New Flow&lt;/h2&gt;
-&lt;p&gt;
-As always, this is a work-in-progress. I'm a couple months in to the tracking portion and only a few weeks into the building. Things will change but it's been feeling gooooood.
-&lt;/p&gt;
-&lt;h3&gt;Create a Master Doc&lt;/h3&gt;
-&lt;p&gt;
-In studying successful product teams, I've found that most of them document projects (features, campaigns, etc.). I also saw that our teammates at Pluralsight create great kickoff docs for email campaigns. So I kind of made a frankenbaby of them for each of our emails. (I have not gone through and done them for all existing emails yet, but it's a bucket list item.)
-&lt;/p&gt;
-&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-master-doc.png' width='800'&gt;
-&lt;p class='mts'&gt;
-These docs become increasingly important as we are doing more event-driven transactional emails. It is super easy to lose track of them and for only 1-2 people to know how they work. Writing the docs is mundane but an excellent feature for your team.
-&lt;/p&gt;
-&lt;h3&gt;Build and Organize in Builder&lt;/h3&gt;
-&lt;p&gt;
-Each email starts in Builder and I'm slowly cleaning up my folders. I was pretty haphazard about them before because I was primarily using it for testing right before sending. Now that I need to be able to access emails for updates, so organization is a major key to success.
-&lt;/p&gt;
-&lt;p class='mbs'&gt;
-Each email starts with my &lt;a href="https://litmus.com/community/snippets/86-base"&gt;base snippet&lt;/a&gt; and then I build using a series of snippets. Here's what the base looks like:
-&lt;/p&gt;
-&lt;div class='embed-stretch'&gt;
-&lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="7b54bd1"&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;p class='mts'&gt;
-Another unexpectedly useful feature is the grid view. Enabling it outlines all of your tables and clicking in the preview takes you to that bit of code. It's a popular feature in some editors and I've grown to love it. It's at least 10 times faster than scrolling through code for edits.
-&lt;/p&gt;
-&lt;img class='img-stretch' src='/assets/images/posts/front-end-dev/rethinking-my-emmail-workflow/screenshot-grid-view.png' width='800'&gt;
-&lt;h3 class='mts'&gt;Present and Iterate in Builder&lt;/h3&gt;
-&lt;p&gt;
-Each email goes through an internal review process. It's usually 3 of us: our marketing lead, copywriter, and me (but it can include lots of people). I had been handling previews and changes by editing locally, running a build, and deploying to GitHub pages. Now, I can make changes that are instantly viewable in the shareable URLs.
-&lt;/p&gt;
-&lt;p&gt;
-As an example, I pop something like this into our #cs-emails channel in Slack:
-&lt;blockquote&gt;
-Draft for the Angular 2 announcement, pending copy review: &lt;a href="https://litmus.com/builder/95c2a75"&gt;https://litmus.com/builder/95c2a75&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;/p&gt;
-&lt;p&gt;
-There's also a benefit that I hadn't planned on: anyone can grab the code. Since Corey (our marketing lead) handles the actual sends, this has reduced the need for him to occasionally remind me to "pop the code into MailChimp".
-&lt;/p&gt;
-&lt;p class='mbs'&gt;
-As an example, this was our most recent one:
-&lt;/p&gt;
-&lt;div class='embed-stretch'&gt;
-&lt;script type="text/javascript" src="https://litmus.com/builder/embed/v1.js" class="builder-embed" data-token="95c2a75"&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;h3 class='mts'&gt;Track in Google Docs&lt;/h3&gt;
-&lt;p&gt;
-Reporting must be the hardest thing for ESPs to perfect. I'm sure I'm not alone in having specific metrics that I'm interested in, but it's unlikely that I want them the same way and for the same time ranges as others. I've found that creating my own reports is the most efficient and something about manually handling the data imprints it in my brain so I can remember stats to share with the team. Our team works heavily in Google Drive so I actually brought it to them instead of having them use my GitHub pages reports, too.
-&lt;/p&gt;
-&lt;h3&gt;Backup in GitHub&lt;/h3&gt;
-&lt;p&gt;
-This is vital. I have great faith in the Litmus team, but we're all one major server failure away from losing things. Once an email is sent, edited, or in production as a transactional, I commit a copy to our emails repo. I also keep this repo locally which will handle my offline needs. I'll always be able to get one going offline using a prior email as a starting ground.
-&lt;/p&gt;
-&lt;h3&gt;My Wishlist&lt;/h3&gt;
-&lt;p&gt;
-The Litmus team have covered most of my needs already, but I have a couple small things I'm hoping for. I'll keep my fingers crossed for a few small code formatting things (2 spaces as tabs) and some kind of variables. The formatting is just my pickiness, but the variables could alleviate an issue. I have been so reliant on a Haml one that puts the URL into both spots for bulletproof buttons and I sent one with a dud in the MSO button this week. Eek. A couple more emails and putting it in both will be my new muscle memory, though.
-&lt;/p&gt;
-&lt;h3&gt;And Then I Emailed Happily Ever After...&lt;/h3&gt;
-&lt;p&gt;
-If you are an #emailgeek, &lt;a href="http://twitter.com/dandenney"&gt;@dandenney&lt;/a&gt; if you have things that you do that could help me improve or if you have questions!
-&lt;/p&gt;
-&lt;/article&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-&lt;div class='outro oh'&gt;
-&lt;svg class="mask-tri-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1000 216"&gt;&lt;style&gt;.st0-b{fill:#FFFFFF;}&lt;/style&gt;&lt;title&gt;rethinking&lt;/title&gt;&lt;path class="st0-b" d="M1000 215.8V.2L0 131v84.8z"/&gt;&lt;defs&gt;&lt;path id="SVGID_1_" d="M1 .2v215.6L1001 85V.2z"/&gt;&lt;/defs&gt;&lt;clipPath id="SVGID_2_"&gt;&lt;use xlink:href="#SVGID_1_" overflow="visible"/&gt;&lt;/clipPath&gt;&lt;/svg&gt;
 &lt;/div&gt;
 </content>
   </entry>
