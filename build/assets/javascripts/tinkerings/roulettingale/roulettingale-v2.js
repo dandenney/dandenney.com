@@ -1,1 +1,0 @@
-(function(){var t,n;n=function(){return $(".js-toggler").on("click",function(){return $(this).toggleClass("is-toggled"),$(this).parent().parent().next().toggleClass("is-hidden")})},n(),(t=function(){return $(".session:first-of-type").find(".js-toggler").trigger("click")})()}).call(this);
