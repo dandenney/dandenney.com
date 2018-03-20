@@ -15,18 +15,103 @@
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || 'Dan Denney'
 
-    %link{ rel: 'stylesheet', href: '/assets/javascripts/vendor/chartist/dist/chartist.min.css' }
-    = stylesheet_link_tag 'application'
+    :scss
+      $aquahaze: #f8fafb;
+      $frontendred: #b51f24;
+      $white: #ffffff;
+
+      $easing: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: $aquahaze;
+        color: #3a5765;
+        font-family: "canada-type-gibson", serif;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+
+      .dd-h1,
+      .dd-h2,
+      .dd-h3,
+      .dd-h4 {
+        font-weight: 600;
+        line-height: 1.5;
+        margin-top: 0;
+      }
+
+      .dd-link {
+        color: $frontendred;
+        position: relative;
+        text-decoration: none;
+        transition: color 0.3s $easing;
+
+        &::after {
+          border-bottom: 2px solid transparent;
+          bottom: -3px;
+          content: "";
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: scale(0);
+          transition: border-color 0.3s $easing, transform 0.3s $easing;
+        }
+
+        &:hover::after {
+          border-color: $frontendred;
+          transform: scale(1);
+        }
+      }
+
+      .dd-logo {
+        margin: 48px auto;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .dd-split {
+        display: flex;
+      }
+
+      .dd-split-item {
+        width: 50%;
+      }
+
+      .dd-img--oversize {
+        max-width: 125%;
+        width: 125%;
+      }
+
+      .dd-u-fx-center {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .dd-u-bs {
+        box-shadow: 0 2px 5px rgba(#3a5765, 0.15);
+      }
+
+      .dd-u-oh {
+        overflow: hidden;
+      }
 
   %body{ class: page_classes }
 
     = yield
 
     = partial 'partials/footer'
-
-    = javascript_include_tag  'vendor'
-    / = javascript_include_tag  'application'
-    - if current_page.data.js
-      = javascript_include_tag 'home'
 
     = partial 'partials/analytics'
