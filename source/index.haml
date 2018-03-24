@@ -2,173 +2,167 @@
 js: home
 ---
 
+:scss
+
+  .home-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .home-nav-item {
+    align-items: center;
+    display: flex;
+  }
+
+  .home-count {
+    color: #95b6c5;
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  .gangster {
+    align-items: center;
+    background: #f2e9da;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+  }
+
+  .gangster-title {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .gangster-link {
+    color: #f34c31;
+
+    &:hover::after {
+      border-color: #f34c31;
+    }
+  }
+
+  .datacamp {
+    background: #ebf4f7;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .datacamp-logo {
+    flex-shrink: 0;
+    margin-bottom: 40px;
+  }
+
+  .datacamp-link {
+    color: #33aacc;
+
+    &:hover::after {
+      border-color: #33aacc;
+    }
+  }
+
+  .datacamp-screenshot {
+    background: url('/assets/images/home/screenshot-datacamp.jpg') no-repeat center top / cover;
+    flex-grow: 1;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .datacamp-card {
+    flex-shrink: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    
+    .gangster { 
+      padding: 40px 40px 0 40px;
+    }
+  
+    .gangster-title {
+      font-size: 36px;
+    }
+
+    .datacamp {
+      align-items: center;
+      padding: 40px 40px 0 40px;
+    }
+
+    .datcamp-card {
+      position: relative;
+      z-index: 1;
+
+      p {
+        margin: 0;
+
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
+      }
+    }
+  
+  }
+
 %section.row.split.split--center
 
-  .split-item.pbl_m.prl_m.ptl_m
+  .dd-logo
 
-    .dd-logo.dd-u-fx-center
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 944 478.5" width="100%">
+    <defs><clipPath id="clip-path"><path d="M639.1,145s-30.4-33.6-59.6,4.7C579.6,149.7,605,173,639.1,145Z" style="fill:none"/></clipPath><clipPath id="clip-path-4"><path d="M691.3,141.5s-25-27.7-49,3.8C642.3,145.3,663.2,164.4,691.3,141.5Z" style="fill:none"/></clipPath></defs><title>Artboard 1</title><path d="M662.8,246.7s129,74.1,47.9,89.4l-.5,7.9s114.7-10.7-46.4-106.5Z" style="fill:#e9c09b"/><g style="isolation:isolate"><text transform="translate(-11 212.89)" style="isolation:isolate;font-size:252.13600158691406px;fill:#e2ebef;font-family:Gibson-Bold, Gibson;font-weight:700">Dan</text><text transform="translate(-11 426.09)" style="isolation:isolate;font-size:252.13600158691406px;fill:#e2ebef;font-family:Gibson-Bold, Gibson;font-weight:700">Denney</text></g><polygon points="604.3 344.9 669.7 341.9 667.3 419.9 661.7 419.4 663.1 361.1 612.7 357 611.3 419.4 604.3 419.4 604.3 344.9" style="fill:#24416b"/><path d="M666.5,415.8s4.8,7.7,16.5,7.7l.3,2.4s-14.9,1.2-19.5-6l.3,5.5-5-.5,1.6-9.9Z" style="fill:#231f20"/><path d="M604.3,415.7s-4.8,7.7-16.5,7.7l-.3,2.4s14.9,1.2,19.5-6l-.3,5.5,5-.5-1.6-9.9Z" style="fill:#231f20"/><path d="M715.4,336c1.5,4.7.7,9.5-1.8,10.6s-5.1,5.4-5.9,9.4-3.4,7-5.8,6.6-3.2-4.2-1.8-8.4-1.2-6-5.8-4.1l-2.7,1.1c-4.6,1.9-9.1,1.3-10.1-1.2s2-6,6.7-7.7l2.7-1c4.6-1.7,4.7-3.7.1-4.5s-8.3-3.3-8.2-5.5,4.1-3.4,9-2.7l4.9.7c4.9.7,7.9-.9,6.6-3.6s-.5-6,1.8-7.3,5.3,1.5,6.7,6.2Z" style="fill:#e9c09b"/><path d="M676.1,232.9a434.06,434.06,0,0,1,36,27.8l-15.9,15.7-22-17.4Z" style="fill:#272826"/><path d="M617.9,243.4s-168,46.1-108.1-32.1l-5.4-6.7s-92.6,102,119.4,47Z" style="fill:#e9c09b"/><path d="M622.3,257s-50.9,15.9-63.5,12.7l-1.7-23.2,38.7-4h10.9Z" style="fill:#272826"/><path d="M502.4,213c-4.6-1.9-7.6-5.5-6.7-8s-.2-7.1-2.4-10.1-2.4-6.8-.6-8.3,4.9.2,6.8,3.8,4.9,2.7,6.7-1.9l1-2.4c1.8-4.6,5.2-7.7,7.6-6.9s2.7,5.2.7,9.7l-1.1,2.4c-2,4.5-.7,5.8,2.9,2.9s7.7-4.2,9.2-2.8-.4,5.2-4.2,8.4l-3.7,3.2c-3.7,3.2-4.6,6.4-2,7.1a4.86,4.86,0,0,1,3.7,5.7c-.6,2.4-4.8,2.9-9.4,1Z" style="fill:#e9c09b"/><polyline points="627.7 348.7 602.1 348.1 593.9 227.4 679.1 224.4 671.4 350.7 638.2 348.8" style="fill:#272826"/><path d="M599,256.4s38.6,31.8,77.5-9.4Z" style="fill:#121212"/><path d="M679.4,164.3c4.9,12.9,14.7,15.5,21.8,6.4s9-26.1,4.5-38.2-14.1-15.3-21.5-6.9S674.5,151.4,679.4,164.3Z" style="fill:#d09f78"/><path d="M575.6,102.1s43.1-25.6,54.7,6.5l-2.2,3.6S616.2,95.8,575.6,102.1Z" style="fill:#231f20"/><path d="M695.6,101.7c-2.3,27.3-1.3,69.8,2.3,94.4s-11.6,50.5-33.7,57.5-51.7,8.3-65.6,2.9-31-33.2-38-61.8-10.5-72.2-7.9-96.9,14.3-51.3,25.9-59,40.6-8.4,64.3-1.4,46.2,13.1,50,13.6C696.7,51.7,697.9,74.4,695.6,101.7Z" style="fill:#e9c09b"/><path d="M623.9,171.3s16.3,12.9,42.5,0C666.4,171.3,645.1,204.7,623.9,171.3Z" style="fill:#d09f78"/><path d="M561.5,167.4c-7,16.3-20,18.2-28.9,4.7s-10.6-36.4-4.1-51.7,19.2-18,28.6-5.5S568.5,151.1,561.5,167.4Z" style="fill:#e9c09b"/><path d="M549.8,158.7s9.4-54.4-18.6-21.5C531.1,137.2,551.8,121.3,549.8,158.7Z" style="fill:#d09f78"/><path d="M549.9,158.9s-.7-29.6-16.3.6C533.5,159.5,546,141.3,549.9,158.9Z" style="fill:#d09f78"/><path d="M624.2,201.5s-7.5,28.5,5.3,37.7c0,0-22.6,5.5-25.2,3.8,0,0-3.6-1.6-4-11.5,0,0,.7-31.9,4-41.3C604.3,190.2,619.3,201.8,624.2,201.5Z" style="fill:#ca8b84"/><path d="M617.7,241.4s-8.3-27.3-17-20.7c0,0-1.8,24,6,22.7Z" style="fill:#6c2e29"/><path d="M645.7,236l-3.1-10.8-40.8,14.7a5.32,5.32,0,0,0,6.1,4Z" style="fill:#fff"/><path d="M613.5,183.5s-15.2-4.2-17.4,14C596.1,197.5,599.5,184.8,613.5,183.5Z" style="fill:#a58060"/><path d="M668.6,201.8l2.7,10.6s-39.6,21.6-69-11.6l2-10.5C604.3,190.2,639.6,220.4,668.6,201.8Z" style="fill:#fff"/><path d="M644.8,243.7c9.8,1,3.5-8.3,3.5-8.3s-28.6,6.6-41.6,8.2-2.4-53.2-2.4-53.2c38.7,27.2,60.8,17.7,72.8,3.8" style="fill:none;stroke:#a58060;stroke-width:2.598099946975708px"/><polygon points="602.2 218.8 603.1 226.2 601.5 226.6 601.8 228.3 607.3 227.3 606.7 224.8 604.7 224.9 604.3 219.9 602.2 218.8" style="fill:#ca8b84"/><path d="M556,176.1s6.5-8,7.1-13.2c0,0,.7,12.9-5.9,18.3Z" style="fill:#d09f78"/><path d="M633.8,145s-28.1-39.4-50.6,4.5C583.2,149.5,614.5,187,633.8,145Z" style="fill:#d09f78"/><path d="M633.8,145s-25-27.6-48.9,3.8C584.8,148.9,605.7,168,633.8,145Z" style="fill:#fff"/><g style="clip-path:url(#clip-path)"><path d="M599.7,147.7a9,9,0,0,1,5.8-11,8.4,8.4,0,0,1,10.4,6.1,9,9,0,0,1-5.8,11A8.45,8.45,0,0,1,599.7,147.7Z" style="fill:#096d7a"/></g><g style="clip-path:url(#clip-path)"><path d="M604.4,146.3a3.76,3.76,0,0,1,2.5-4.6,3.5,3.5,0,0,1,4.4,2.6,3.76,3.76,0,0,1-2.5,4.6A3.5,3.5,0,0,1,604.4,146.3Z"/></g><g style="clip-path:url(#clip-path)"><path d="M602.4,143.8a2.15,2.15,0,0,1,1.4-2.6,1.94,1.94,0,0,1,2.4,1.4,2.15,2.15,0,0,1-1.4,2.6A1.86,1.86,0,0,1,602.4,143.8Z" style="fill:#fff"/></g><path d="M690.4,141.1s-23.7-33.3-42.8,3.8C647.6,144.9,674,176.5,690.4,141.1Z" style="fill:#d09f78"/><path d="M690.4,141.1s-21.1-23.4-41.4,3.2C649,144.3,666.6,160.5,690.4,141.1Z" style="fill:#fff"/><path d="M575.3,132l-3.1-8s27.9-28.2,56.6-2l-1.1,1.2C627.7,123.3,594.6,108.6,575.3,132Z" style="fill:#3b2416"/><path d="M693.2,127.5l3-8.3s-26.7-22.1-49.6,3.5l.3,1S674.4,108.8,693.2,127.5Z" style="fill:#3b2416"/><g style="clip-path:url(#clip-path-4)"><path d="M658.9,143.6a7.37,7.37,0,0,1,4.8-9,7,7,0,0,1,8.6,5,7.37,7.37,0,0,1-4.8,9A6.8,6.8,0,0,1,658.9,143.6Z" style="fill:#096d7a"/></g><g style="clip-path:url(#clip-path-4)"><path d="M662.7,142.5a3.16,3.16,0,0,1,2-3.8,2.85,2.85,0,0,1,3.6,2.1,3.16,3.16,0,0,1-2,3.8A2.93,2.93,0,0,1,662.7,142.5Z"/></g><g style="clip-path:url(#clip-path-4)"><path d="M661,140.4a1.83,1.83,0,0,1,1.1-2.1,1.61,1.61,0,0,1,2,1.2,1.83,1.83,0,0,1-1.1,2.1A1.65,1.65,0,0,1,661,140.4Z" style="fill:#fff"/></g><path d="M556,176.1l5.2-.9,2.3-93.9L691,63.1l3.2,54.1S696.3,47.1,718.7,5c0,0-26.3,19.5-46.3,29.7L656.7,0,647,17.8,633.5,6.7,622.9,18.5s-15.3-10.5-43-3.4c0,0,5.5,4.6,8.5,6.6,0,0-41.8,3.8-52.7,26.1,0,0,6.1-5.7,12.1-5.7,0,0-16.3,38.9-4.2,58,0,0,6.7,7.6,6.7,14.7Z" style="fill:#3b2416"/><polyline points="564.2 95.4 691 63.1 563.5 81.3 564.2 96.5" style="fill:#d09f78;opacity:0.550000011920929;isolation:isolate"/><path d="M644.17,287a5.64,5.64,0,0,0-.39-3.79s1,.39.92-.4-1.24-1.62-2.09-2.15a10.24,10.24,0,0,0-2.76-1l.25-.57-.07,0a6.4,6.4,0,0,0-4.58-.09l-.07,0,.24.64a8.36,8.36,0,0,0-2.06.76c-5.74,3-2.83,9-1,10.39s1,4.3,0,6.91h7.72a9.9,9.9,0,0,0,.37-1.71c.36-1.95,1.75-1.23,2.84-1.29s.92-.82.91-1.67c.53-.24.53-.49.18-.8.46-.43.39-.43.14-.84s-.07-.61-.07-.61.74-.14.85-.53c0-.85-1.57-2.05-1.28-3.22Zm-1.6-.24-1.14-.39c-.06.16-.65,1.6-1.4,1.85l-.72-.94a2.25,2.25,0,0,1-1.52.39v0h0l0,2.61a5,5,0,0,1-4.2-2l-.94.71a5.93,5.93,0,0,1-1.26-3.75h1.27a5.56,5.56,0,0,1,.94-3l1,.7a4.47,4.47,0,0,1,1.84-1.32h0l-.72-1.89a5.69,5.69,0,0,1,3.85,0l.11.05v0l-.21.56a5.53,5.53,0,0,1,1.2.72l.27-.37a4.6,4.6,0,0,1,2,2.72l-.42.15h0a5.87,5.87,0,0,1,0,3.22Z" style="fill:#fff"/><path d="M637.72,283.27a1.28,1.28,0,0,0-1.18.78,1.27,1.27,0,1,0,2.44.48,1.26,1.26,0,0,0-1.27-1.26Z" style="fill:#fff"/><path d="M638,305.93a1,1,0,0,1-.51-.13L625,299a1.08,1.08,0,0,1-.54-.81l-2-19a1.06,1.06,0,0,1,.7-1.11l14.33-5a1.05,1.05,0,0,1,.7,0l14.65,5a1,1,0,0,1,.7,1.12l-2.33,19a1,1,0,0,1-.53.79l-12.16,6.83a1.18,1.18,0,0,1-.52.13Zm-11.87-8.27,11.87,6.5,11.57-6.49,2.23-18.18-13.95-4.77-13.66,4.77Z" style="fill:#fff"/>
+    </svg>
 
-      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 944 478.5" width="100%">
-      <defs><clipPath id="clip-path"><path d="M639.1,145s-30.4-33.6-59.6,4.7C579.6,149.7,605,173,639.1,145Z" style="fill:none"/></clipPath><clipPath id="clip-path-4"><path d="M691.3,141.5s-25-27.7-49,3.8C642.3,145.3,663.2,164.4,691.3,141.5Z" style="fill:none"/></clipPath></defs><title>Artboard 1</title><path d="M662.8,246.7s129,74.1,47.9,89.4l-.5,7.9s114.7-10.7-46.4-106.5Z" style="fill:#e9c09b"/><g style="isolation:isolate"><text transform="translate(-11 212.89)" style="isolation:isolate;font-size:252.13600158691406px;fill:#e2ebef;font-family:Gibson-Bold, Gibson;font-weight:700">Dan</text><text transform="translate(-11 426.09)" style="isolation:isolate;font-size:252.13600158691406px;fill:#e2ebef;font-family:Gibson-Bold, Gibson;font-weight:700">Denney</text></g><polygon points="604.3 344.9 669.7 341.9 667.3 419.9 661.7 419.4 663.1 361.1 612.7 357 611.3 419.4 604.3 419.4 604.3 344.9" style="fill:#24416b"/><path d="M666.5,415.8s4.8,7.7,16.5,7.7l.3,2.4s-14.9,1.2-19.5-6l.3,5.5-5-.5,1.6-9.9Z" style="fill:#231f20"/><path d="M604.3,415.7s-4.8,7.7-16.5,7.7l-.3,2.4s14.9,1.2,19.5-6l-.3,5.5,5-.5-1.6-9.9Z" style="fill:#231f20"/><path d="M715.4,336c1.5,4.7.7,9.5-1.8,10.6s-5.1,5.4-5.9,9.4-3.4,7-5.8,6.6-3.2-4.2-1.8-8.4-1.2-6-5.8-4.1l-2.7,1.1c-4.6,1.9-9.1,1.3-10.1-1.2s2-6,6.7-7.7l2.7-1c4.6-1.7,4.7-3.7.1-4.5s-8.3-3.3-8.2-5.5,4.1-3.4,9-2.7l4.9.7c4.9.7,7.9-.9,6.6-3.6s-.5-6,1.8-7.3,5.3,1.5,6.7,6.2Z" style="fill:#e9c09b"/><path d="M676.1,232.9a434.06,434.06,0,0,1,36,27.8l-15.9,15.7-22-17.4Z" style="fill:#272826"/><path d="M617.9,243.4s-168,46.1-108.1-32.1l-5.4-6.7s-92.6,102,119.4,47Z" style="fill:#e9c09b"/><path d="M622.3,257s-50.9,15.9-63.5,12.7l-1.7-23.2,38.7-4h10.9Z" style="fill:#272826"/><path d="M502.4,213c-4.6-1.9-7.6-5.5-6.7-8s-.2-7.1-2.4-10.1-2.4-6.8-.6-8.3,4.9.2,6.8,3.8,4.9,2.7,6.7-1.9l1-2.4c1.8-4.6,5.2-7.7,7.6-6.9s2.7,5.2.7,9.7l-1.1,2.4c-2,4.5-.7,5.8,2.9,2.9s7.7-4.2,9.2-2.8-.4,5.2-4.2,8.4l-3.7,3.2c-3.7,3.2-4.6,6.4-2,7.1a4.86,4.86,0,0,1,3.7,5.7c-.6,2.4-4.8,2.9-9.4,1Z" style="fill:#e9c09b"/><polyline points="627.7 348.7 602.1 348.1 593.9 227.4 679.1 224.4 671.4 350.7 638.2 348.8" style="fill:#272826"/><path d="M599,256.4s38.6,31.8,77.5-9.4Z" style="fill:#121212"/><path d="M679.4,164.3c4.9,12.9,14.7,15.5,21.8,6.4s9-26.1,4.5-38.2-14.1-15.3-21.5-6.9S674.5,151.4,679.4,164.3Z" style="fill:#d09f78"/><path d="M575.6,102.1s43.1-25.6,54.7,6.5l-2.2,3.6S616.2,95.8,575.6,102.1Z" style="fill:#231f20"/><path d="M695.6,101.7c-2.3,27.3-1.3,69.8,2.3,94.4s-11.6,50.5-33.7,57.5-51.7,8.3-65.6,2.9-31-33.2-38-61.8-10.5-72.2-7.9-96.9,14.3-51.3,25.9-59,40.6-8.4,64.3-1.4,46.2,13.1,50,13.6C696.7,51.7,697.9,74.4,695.6,101.7Z" style="fill:#e9c09b"/><path d="M623.9,171.3s16.3,12.9,42.5,0C666.4,171.3,645.1,204.7,623.9,171.3Z" style="fill:#d09f78"/><path d="M561.5,167.4c-7,16.3-20,18.2-28.9,4.7s-10.6-36.4-4.1-51.7,19.2-18,28.6-5.5S568.5,151.1,561.5,167.4Z" style="fill:#e9c09b"/><path d="M549.8,158.7s9.4-54.4-18.6-21.5C531.1,137.2,551.8,121.3,549.8,158.7Z" style="fill:#d09f78"/><path d="M549.9,158.9s-.7-29.6-16.3.6C533.5,159.5,546,141.3,549.9,158.9Z" style="fill:#d09f78"/><path d="M624.2,201.5s-7.5,28.5,5.3,37.7c0,0-22.6,5.5-25.2,3.8,0,0-3.6-1.6-4-11.5,0,0,.7-31.9,4-41.3C604.3,190.2,619.3,201.8,624.2,201.5Z" style="fill:#ca8b84"/><path d="M617.7,241.4s-8.3-27.3-17-20.7c0,0-1.8,24,6,22.7Z" style="fill:#6c2e29"/><path d="M645.7,236l-3.1-10.8-40.8,14.7a5.32,5.32,0,0,0,6.1,4Z" style="fill:#fff"/><path d="M613.5,183.5s-15.2-4.2-17.4,14C596.1,197.5,599.5,184.8,613.5,183.5Z" style="fill:#a58060"/><path d="M668.6,201.8l2.7,10.6s-39.6,21.6-69-11.6l2-10.5C604.3,190.2,639.6,220.4,668.6,201.8Z" style="fill:#fff"/><path d="M644.8,243.7c9.8,1,3.5-8.3,3.5-8.3s-28.6,6.6-41.6,8.2-2.4-53.2-2.4-53.2c38.7,27.2,60.8,17.7,72.8,3.8" style="fill:none;stroke:#a58060;stroke-width:2.598099946975708px"/><polygon points="602.2 218.8 603.1 226.2 601.5 226.6 601.8 228.3 607.3 227.3 606.7 224.8 604.7 224.9 604.3 219.9 602.2 218.8" style="fill:#ca8b84"/><path d="M556,176.1s6.5-8,7.1-13.2c0,0,.7,12.9-5.9,18.3Z" style="fill:#d09f78"/><path d="M633.8,145s-28.1-39.4-50.6,4.5C583.2,149.5,614.5,187,633.8,145Z" style="fill:#d09f78"/><path d="M633.8,145s-25-27.6-48.9,3.8C584.8,148.9,605.7,168,633.8,145Z" style="fill:#fff"/><g style="clip-path:url(#clip-path)"><path d="M599.7,147.7a9,9,0,0,1,5.8-11,8.4,8.4,0,0,1,10.4,6.1,9,9,0,0,1-5.8,11A8.45,8.45,0,0,1,599.7,147.7Z" style="fill:#096d7a"/></g><g style="clip-path:url(#clip-path)"><path d="M604.4,146.3a3.76,3.76,0,0,1,2.5-4.6,3.5,3.5,0,0,1,4.4,2.6,3.76,3.76,0,0,1-2.5,4.6A3.5,3.5,0,0,1,604.4,146.3Z"/></g><g style="clip-path:url(#clip-path)"><path d="M602.4,143.8a2.15,2.15,0,0,1,1.4-2.6,1.94,1.94,0,0,1,2.4,1.4,2.15,2.15,0,0,1-1.4,2.6A1.86,1.86,0,0,1,602.4,143.8Z" style="fill:#fff"/></g><path d="M690.4,141.1s-23.7-33.3-42.8,3.8C647.6,144.9,674,176.5,690.4,141.1Z" style="fill:#d09f78"/><path d="M690.4,141.1s-21.1-23.4-41.4,3.2C649,144.3,666.6,160.5,690.4,141.1Z" style="fill:#fff"/><path d="M575.3,132l-3.1-8s27.9-28.2,56.6-2l-1.1,1.2C627.7,123.3,594.6,108.6,575.3,132Z" style="fill:#3b2416"/><path d="M693.2,127.5l3-8.3s-26.7-22.1-49.6,3.5l.3,1S674.4,108.8,693.2,127.5Z" style="fill:#3b2416"/><g style="clip-path:url(#clip-path-4)"><path d="M658.9,143.6a7.37,7.37,0,0,1,4.8-9,7,7,0,0,1,8.6,5,7.37,7.37,0,0,1-4.8,9A6.8,6.8,0,0,1,658.9,143.6Z" style="fill:#096d7a"/></g><g style="clip-path:url(#clip-path-4)"><path d="M662.7,142.5a3.16,3.16,0,0,1,2-3.8,2.85,2.85,0,0,1,3.6,2.1,3.16,3.16,0,0,1-2,3.8A2.93,2.93,0,0,1,662.7,142.5Z"/></g><g style="clip-path:url(#clip-path-4)"><path d="M661,140.4a1.83,1.83,0,0,1,1.1-2.1,1.61,1.61,0,0,1,2,1.2,1.83,1.83,0,0,1-1.1,2.1A1.65,1.65,0,0,1,661,140.4Z" style="fill:#fff"/></g><path d="M556,176.1l5.2-.9,2.3-93.9L691,63.1l3.2,54.1S696.3,47.1,718.7,5c0,0-26.3,19.5-46.3,29.7L656.7,0,647,17.8,633.5,6.7,622.9,18.5s-15.3-10.5-43-3.4c0,0,5.5,4.6,8.5,6.6,0,0-41.8,3.8-52.7,26.1,0,0,6.1-5.7,12.1-5.7,0,0-16.3,38.9-4.2,58,0,0,6.7,7.6,6.7,14.7Z" style="fill:#3b2416"/><polyline points="564.2 95.4 691 63.1 563.5 81.3 564.2 96.5" style="fill:#d09f78;opacity:0.550000011920929;isolation:isolate"/><path d="M644.17,287a5.64,5.64,0,0,0-.39-3.79s1,.39.92-.4-1.24-1.62-2.09-2.15a10.24,10.24,0,0,0-2.76-1l.25-.57-.07,0a6.4,6.4,0,0,0-4.58-.09l-.07,0,.24.64a8.36,8.36,0,0,0-2.06.76c-5.74,3-2.83,9-1,10.39s1,4.3,0,6.91h7.72a9.9,9.9,0,0,0,.37-1.71c.36-1.95,1.75-1.23,2.84-1.29s.92-.82.91-1.67c.53-.24.53-.49.18-.8.46-.43.39-.43.14-.84s-.07-.61-.07-.61.74-.14.85-.53c0-.85-1.57-2.05-1.28-3.22Zm-1.6-.24-1.14-.39c-.06.16-.65,1.6-1.4,1.85l-.72-.94a2.25,2.25,0,0,1-1.52.39v0h0l0,2.61a5,5,0,0,1-4.2-2l-.94.71a5.93,5.93,0,0,1-1.26-3.75h1.27a5.56,5.56,0,0,1,.94-3l1,.7a4.47,4.47,0,0,1,1.84-1.32h0l-.72-1.89a5.69,5.69,0,0,1,3.85,0l.11.05v0l-.21.56a5.53,5.53,0,0,1,1.2.72l.27-.37a4.6,4.6,0,0,1,2,2.72l-.42.15h0a5.87,5.87,0,0,1,0,3.22Z" style="fill:#fff"/><path d="M637.72,283.27a1.28,1.28,0,0,0-1.18.78,1.27,1.27,0,1,0,2.44.48,1.26,1.26,0,0,0-1.27-1.26Z" style="fill:#fff"/><path d="M638,305.93a1,1,0,0,1-.51-.13L625,299a1.08,1.08,0,0,1-.54-.81l-2-19a1.06,1.06,0,0,1,.7-1.11l14.33-5a1.05,1.05,0,0,1,.7,0l14.65,5a1,1,0,0,1,.7,1.12l-2.33,19a1,1,0,0,1-.53.79l-12.16,6.83a1.18,1.18,0,0,1-.52.13Zm-11.87-8.27,11.87,6.5,11.57-6.49,2.23-18.18-13.95-4.77-13.66,4.77Z" style="fill:#fff"/>
-      </svg>
+    %nav.home-nav
+      .home-nav-item
+        .home-count= blog('posts').articles.count 
+        =link_to 'Blog Posts', '/posts', class: 'dd-link'
+
+      .home-nav-item
+        .home-count= blog('blips').articles.count
+        =link_to 'Short Blips', '/blips', class: 'dd-link'  
+      
+      .home-nav-item
+        .home-count= blog('tinkerings').articles.count
+        =link_to 'Tinkerings', '/tinkerings', class: 'dd-link'
+
+.dd-container
 
   .dd-split
 
-    .dd-split-item
-      %p
-        As the lead Front-end Developer at <a class="dd-link" href="https://www.datacamp.com">DataCamp</a>, I'm currently working with awesome people to implement a design system across multiple apps with various tech stacks.
+    %section#gangster.dd-split-item.gangster
+      
+      %h2.gangster-title 
+        "Ever since I was a kid, I always wanted to be a gangster."
 
       %p
-        If you would enjoy building educational products with an awesome group of people, we're <a class="link datacamp-link" href="https://www.datacamp.com/careers">hiring!</a>
+        But instead, <a class="dd-link gangster-link" href="#datacamp">I'm a front-end developer</a>.
+          
+      =image_tag 'home/gangster.svg'
 
-    .dd-split-item.dd-u-oh
+    %section#datcamp.dd-split-item.datacamp
 
-      =image_tag 'home/screenshot-datacamp.jpg', class: 'dd-u-bs dd-img--oversize'
+      =image_tag 'home/datacamp-logo.svg', class: 'dd-db dd-mhc datacamp-logo', width: '340'
 
-  .split-item.pbl_m.pll_m.ptl_m
+      .dd-card.datcamp-card
 
-    %h1.dd-h2.fitText--17
-      <strike>I'm a</strike> I was a front-end dev at <a class="dd-link" href='http://codeschool.com'>Code School</a>.
+        %p
+          As the lead Front-end Developer at <a class="dd-link datacamp-link" href="https://www.datacamp.com">DataCamp</a>, I'm currently working with awesome people to implement a design system across multiple apps with various tech stacks.
 
-    %p.twl
-      I have been working closely with designers and writing HTML/CSS and JS since 2008ish. I'm currently building my skills as a front-end engineer and looking for a great team to work with.
+        %p
+          If you would enjoy building educational products with an awesome group of people, we're <a class="dd-link datacamp-link" href="https://www.datacamp.com/careers">hiring!</a>
 
-%section.row.row--a
+      .datacamp-screenshot
 
-  .well.por
+%section#frontendconf
+  
+  =image_tag 'home/dan-cherrie-stage.svg'
 
-    .title-bg
+%section#projects
 
-      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 72.2"><style>.ots-st0{fill:#fff;} .ots-st1{font-family: 'canada-type-gibson'; font-weight: 700;} .ots-st2{font-size:99.5991px;}</style><text transform="translate(0 70.462)" class="ots-st0 ots-st1 ots-st2">ON THIS SITE</text></svg>
-
-    .ptxl.por.z1
-
-      .trio.trio--center
-
-        .trio-item
-
-          %h2.dd-h2.tac.mbs
-            .lh1.tsxxxl.twb= blog('posts').articles.count
-            =link_to 'Posts', '/posts', class: 'lh1 tsxxl'
-
-          - blog('posts').articles[0...1].each_with_index do | article,i |
-            .row
-              %p.bc-white.paxs.tac
-                %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
-                = link_to article.title, article
-
-        .trio-item
-
-          %h2.dd-h2.tac.mbs
-            .lh1.tsxxxl.twb= blog('blips').articles.count
-            =link_to 'Blips', '/blips', class: 'lh1 tsxxl'
-
-          - blog('blips').articles[0...1].each_with_index do | article,i |
-            .row
-              %p.bc-white.paxs.tac
-
-                %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
-                = link_to article.title, article
-
-        .trio-item
-
-          %h2.dd-h2.tac.mbs
-            .lh1.tsxxxl.twb= blog('tinkerings').articles.count
-            =link_to 'Tinkerings', '/tinkerings', class: 'lh1 tsxxl'
-
-          - blog('tinkerings').articles[0...1].each_with_index do | article,i |
-            .row
-              %p.bc-white.paxs.tac
-                %span.db.tcs.tsxs.ttu= article.date.strftime('%b %e')
-                = link_to article.title, article
-
-%section.row
-
-  .well.well--l.por
-
-    .title-bg
-      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 608.7 137.6"><style>.work-st0{fill:#F5F5F5;} .work-st1{font-family:'canada-type-gibson'; font-weight: 700; } .work-st2{font-size:192.9441px;}</style><text transform="translate(1.928 133.606)" class="work-st0 work-st1 work-st2">WORK</text></svg>
-
-    .ptxl.por.z1
-
-      .split.split--center
-
-        .split-item.pbl_m.prl_m.ptl_m.tac
-
-          =image_tag 'home/logo-code-school-ps.svg', width: '50%'
-
-          %p.dib.ptxs.tal.tac_m
-            At Code School I work on <a href="https://www.codeschool.com/">codeschool.com</a>, which includes course UIs on what we call Campus. Learning how to build our HTML emails led to me helping teach a course as well: <a href="https://www.codeschool.com/courses/unmasking-html-emails">Unmasking HTML Emails</a>.
-
-        .split-item.pbl_m.pll_m.ptl_m.oh
-
-          =image_tag 'home/screenshot-unmasking-html-emails.png'
-
--# %section.bch.oh
--#   .g
--#
--#     .g-b.g-b--m--1of2.pbl.pll.prl.ptm
--#
--#       .profile
--#
--#         = image_tag 'dan-denney-avatar.png', alt: 'Dan Denney illustration by Ricardo Gimenes', class: 'db mhc mtm', width: '200'
--#
--#         %h1.mtm.tsm.tcti
--#           I'm Dan Denney, a front-end dev at
--#           = link_to 'Code School', 'http://codeschool.com', class: 'tcti'
--#           and founder of <a href="http://frontendconf.com" class="tcti">Front-End Conf</a>.
--#
--#     .g-b.g-b--m--1of2.bci.pal
--#
--#       .g
--#         .g-b.g-b--l--1of3
--#
--#           %h2.mbf
--#             %span.tsxl= blog('posts').articles.count
--#             =link_to 'Posts', '/posts', class: 'tss'
--#
--#         .g-b.g-b--l--2of3
--#
--#
--#
--#           - blog('posts').articles[0...1].each_with_index do | article,i |
--#             %p
--#               %span.db.tcs.tss Most recent:
--#               = link_to article.title, article
--#               %span.tcs.tsxs.twn= article.date.strftime('%b %e')
--#
--#       .ct-chart.ct-posts
--#
--#       .g.ptl
--#         .g-b.g-b--l--1of3
--#
--#           %h2.mbf
--#             %span.tsxl= blog('blips').articles.count
--#             =link_to 'Blips', '/blips', class: 'tss'
--#
--#         .g-b.g-b--l--2of3
--#
--#           - blog('blips').articles[0...1].each_with_index do | article,i |
--#             %p
--#               %span.db.tcs.tss Most recent:
--#               = link_to article.title, article
--#               %span.tcs.tsxs.twn= article.date.strftime('%b %e')
--#
--#       .ct-chart.ct-blips
--#
--#       .g.ptl
--#         .g-b.g-b--l--1of3
--#
--#           %h2.mbf
--#             %span.tsxl= blog('tinkerings').articles.count
--#             =link_to 'Tinkerings', '/tinkerings', class: 'tss'
--#
--#         .g-b.g-b--l--2of3
--#
--#           - blog('tinkerings').articles[0...1].each_with_index do | article,i |
--#             %p
--#               %span.db.tcs.tss Most recent:
--#               = link_to article.title, article
--#               %span.tcs.tsxs.twn= article.date.strftime('%b %e')
--#
--#       .ct-chart.ct-tinkerings
