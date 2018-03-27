@@ -23,38 +23,17 @@ js: home
   }
 
   .gangster {
-    align-items: center;
-    background: #f2e9da;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px 20px 0 20px;
+    text-align: center;
   }
 
   .gangster-title {
     font-size: 24px;
-    margin: 0;
+    margin: 0 0 40px 0;
     text-align: center;
   }
 
-  .gangster-link {
-    color: #f34c31;
-
-    &:hover::after {
-      border-color: #f34c31;
-    }
-  }
-
-  .datacamp {
-    background: #ebf4f7;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 20px 0 20px;
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-      transform: scale(1.05);
-    }
+  .instead {
+    font-size: 18px;
   }
 
   .datacamp-logo {
@@ -71,32 +50,51 @@ js: home
   }
 
   .datacamp-screenshot {
-    background: url('/assets/images/home/screenshot-datacamp.jpg') no-repeat center top / cover;
-    flex-grow: 1;
     margin-top: 40px;
-    width: 100%;
   }
 
-  .datacamp-card {
-    flex-shrink: 0;
+  .frontendconf-title {
+    font-size: 24px;
+    margin: 20px 0 40px;
+    text-align: center;
+  }
+
+  .raisercise {
+    background: #313742;
+    color: #ffffff;
+  }
+
+  .track-life {
+    background: linear-gradient(33deg, #89253e, #3a6186);
+    color: #ffffff;
+  }
+
+  .roulettingale {
+    background: #ecf1ec;
   }
 
   @media screen and (min-width: 768px) {
-    
-    .gangster { 
-      padding: 40px 40px 0 40px;
-    }
-  
+
     .gangster-title {
-      font-size: 36px;
+      font-size: 42px;
+    }
+
+    .instead {
+      font-size: 24px;
     }
 
     .datacamp {
       align-items: center;
-      padding: 40px 40px 0 40px;
+      display: flex;
+      flex-direction: column;
     }
 
-    .datcamp-card {
+    .datacamp-screenshot {
+      margin-top: 60px;
+    }
+
+    .datacamp-card {
+      max-width: 600px;
       position: relative;
       z-index: 1;
 
@@ -108,7 +106,81 @@ js: home
         }
       }
     }
+
+    .frontendconf-title {
+      font-size: 32px;
+      margin: 40px 0 20px;
+    }
   
+  }
+
+  @media screen and (min-width: 900px) {
+    .gangster-title {
+      font-size: 56px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .datacamp {
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .datacamp-card {
+      margin-right: -40px;
+    }
+    
+    .datacamp-screenshot {
+      margin-top: 0;
+      width: 70%;
+    }
+
+    .frontendconf-title {
+      font-size: 48px;
+      margin-top: 120px;
+    }
+  }
+
+  @media screen and (min-width: 1240px) {
+    
+    .gangster-title {
+      font-size: 72px;
+    }
+
+    .instead {
+      font-size: 32px;
+    }
+
+    .dd-trio {
+      display: flex;
+    }
+
+    .dd-trio-item {
+      display: flex;
+      flex-direction: column;
+      width: 33.333333%;
+
+      &:not(:first-child) {
+        margin-left: 40px;
+      }
+    }
+  
+  }
+
+  @media screen and (min-width: 1400px) {
+    .gangster-title {
+      font-size: 80px;
+    }
+
+    .datacamp-card {
+      margin-right: -80px;
+    }
+    
+    .datacamp-screenshot {
+      margin-top: 0;
+      width: 60%;
+    }
   }
 
 %section.row.split.split--center
@@ -132,37 +204,84 @@ js: home
         .home-count= blog('tinkerings').articles.count
         =link_to 'Tinkerings', '/tinkerings', class: 'dd-link'
 
-.dd-container
 
-  .dd-split
-
-    %section#gangster.dd-split-item.gangster
+%section#gangster.gangster.dd-container
       
-      %h2.gangster-title 
-        "Ever since I was a kid, I always wanted to be a gangster."
+  %h2.gangster-title 
+    "Ever since I was a kid, I always wanted to be a gangster."
+      
+  =image_tag 'home/gangster.svg'
+
+  %p.instead
+    But instead, I'm a front-end developer...
+
+%section#datacamp.dd-container
+  
+  =image_tag 'home/datacamp-logo.svg', class: 'dd-db dd-mhc datacamp-logo', width: '340'
+  
+  .datacamp
+    
+    .dd-card.datacamp-card
 
       %p
-        But instead, <a class="dd-link gangster-link" href="#datacamp">I'm a front-end developer</a>.
-          
-      =image_tag 'home/gangster.svg'
+        As the lead Front-end Developer at <a class="dd-link datacamp-link" href="https://www.datacamp.com">DataCamp</a>, I'm currently working with awesome people to implement a design system across multiple apps with various tech stacks.
 
-    %section#datcamp.dd-split-item.datacamp
+      %p
+        If you would enjoy building educational products with an awesome group of people, we're <a class="dd-link datacamp-link" href="https://www.datacamp.com/careers">hiring!</a>
 
-      =image_tag 'home/datacamp-logo.svg', class: 'dd-db dd-mhc datacamp-logo', width: '340'
+    .datacamp-screenshot
 
-      .dd-card.datcamp-card
+      =image_tag 'home/screenshot-datacamp.jpg'
 
-        %p
-          As the lead Front-end Developer at <a class="dd-link datacamp-link" href="https://www.datacamp.com">DataCamp</a>, I'm currently working with awesome people to implement a design system across multiple apps with various tech stacks.
 
-        %p
-          If you would enjoy building educational products with an awesome group of people, we're <a class="dd-link datacamp-link" href="https://www.datacamp.com/careers">hiring!</a>
+%section#frontendconf.dd-container.frontendconf
 
-      .datacamp-screenshot
-
-%section#frontendconf
+  %h2.dd-h2.frontendconf-title
+    We used to run a conference...
   
   =image_tag 'home/dan-cherrie-stage.svg'
 
-%section#projects
+  %p.dd-measure-660
+    My wife, Cherrie, and I co-founded the <a class="dd-link" href="http://frontenddesignconference.com">Front-End Design Conference</a> in St. Pete, Florida, in 2009 and ran it through 2015. These days we're glorified attendees, but it's still going! 
 
+%section#projects.projects
+
+  .projects-content
+  
+    .dd-container
+
+      %h2.dd-h2 A few of my favorite personal projects
+
+      .dd-trio
+        
+        .dd-trio-item
+          .raisercise.dd-u-fx-fg1.dd-pa-40
+
+            = image_tag 'http://placehold.it/800x600'
+            
+            %h3.dd-h3.dd-mt-20.dd-tac 
+              Raisercise
+            
+            %p
+              I learned how to build a small PWA with Preact and Firebase, in order to make an app that could tell me when to increase weights at the gym.
+
+        .dd-trio-item
+          .track-life.dd-u-fx-fg1.dd-pa-40
+
+            = image_tag 'http://placehold.it/800x600'
+
+            %h3.dd-h3.dd-mt-20.dd-tac 
+              Track Life
+
+            %p
+              I love music, I dig data, and I wanted to make an app with vanilla JavaScript. This show's track peformance of the top 10 in Spotify for a short range of time.
+
+        .dd-trio-item
+          .roulettingale.dd-u-fx-fg1.dd-pa-40
+
+            = image_tag 'http://placehold.it/800x600'
+            
+            %h3.dd-h3.dd-mt-20.dd-tac Roulettingale
+
+            %p
+              In addition to wanting being a gangster, I've been fascinated by gambling systems since I was young. This is a (non-responsive) log of testing one in Roulette.
